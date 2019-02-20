@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
 
 
 public class GUI {
@@ -85,16 +86,12 @@ public class GUI {
 
     }
 
-    public static void main(String[] args){
-        GUI g = new GUI();
-        JFrame frame = new JFrame("Chess Board");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(300, 300);
-        frame.add(g.chessboard);
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        frame.pack();
-        frame.setMinimumSize(frame.getSize());
-        frame.setVisible(true);
+    public void addBtnListener(JButton button, ActionListener a){
+        button.addActionListener(a);
+    }
+
+    public JButton[][] getSpaces(){
+        return this.spaces;
     }
 }
 
