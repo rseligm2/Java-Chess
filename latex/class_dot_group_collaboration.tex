@@ -1,0 +1,58 @@
+\hypertarget{class_dot_group_collaboration}{}\section{Dot\+Group\+Collaboration Class Reference}
+\label{class_dot_group_collaboration}\index{DotGroupCollaboration@{DotGroupCollaboration}}
+
+
+{\ttfamily \#include $<$dot.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_dot_group_collaboration_1_1_edge}{Edge}}
+\item 
+class \mbox{\hyperlink{class_dot_group_collaboration_1_1_link}{Link}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dot_group_collaboration_ab83aa11b8617398a50923c04c2541624}\label{class_dot_group_collaboration_ab83aa11b8617398a50923c04c2541624}} 
+enum {\bfseries Edge\+Type} \{ \newline
+{\bfseries tmember} = 0, 
+{\bfseries tclass}, 
+{\bfseries tnamespace}, 
+{\bfseries tfile}, 
+\newline
+{\bfseries tpages}, 
+{\bfseries tdir}, 
+{\bfseries thierarchy}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dot_group_collaboration_aa113b5a55446f4ea4aeab03a4b268387}\label{class_dot_group_collaboration_aa113b5a55446f4ea4aeab03a4b268387}} 
+{\bfseries Dot\+Group\+Collaboration} (\mbox{\hyperlink{class_group_def}{Group\+Def}} $\ast$gd)
+\item 
+\mbox{\Hypertarget{class_dot_group_collaboration_aed62be44e8e82e2d8b2ab132cc44cf2b}\label{class_dot_group_collaboration_aed62be44e8e82e2d8b2ab132cc44cf2b}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries write\+Graph} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, Graph\+Output\+Format gf, Embedded\+Output\+Format ef, const char $\ast$path, const char $\ast$file\+Name, const char $\ast$rel\+Path, bool write\+Image\+Map=T\+R\+UE, int graph\+Id=-\/1) const
+\item 
+\mbox{\Hypertarget{class_dot_group_collaboration_a5d03d883816436706f414dd734013629}\label{class_dot_group_collaboration_a5d03d883816436706f414dd734013629}} 
+void {\bfseries build\+Graph} (\mbox{\hyperlink{class_group_def}{Group\+Def}} $\ast$gd)
+\item 
+\mbox{\Hypertarget{class_dot_group_collaboration_aff85d0009e3f7499e83ec7c346025a9e}\label{class_dot_group_collaboration_aff85d0009e3f7499e83ec7c346025a9e}} 
+bool {\bfseries is\+Trivial} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dot_group_collaboration_a274b41718744101a281ff37a8acf1247}\label{class_dot_group_collaboration_a274b41718744101a281ff37a8acf1247}} 
+static void {\bfseries reset\+Numbering} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Representation of a group collaboration graph 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/dot.\+h\item 
+doxygen/src/dot.\+cpp\end{DoxyCompactItemize}

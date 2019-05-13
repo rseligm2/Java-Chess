@@ -1,0 +1,86 @@
+\hypertarget{class_string_impl}{}\section{String\+Impl Class Reference}
+\label{class_string_impl}\index{StringImpl@{StringImpl}}
+Inheritance diagram for String\+Impl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_string_impl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_string_impl_a706bd009849da2787615fbd20d1494b1}\label{class_string_impl_a706bd009849da2787615fbd20d1494b1}} 
+{\bfseries String\+Impl} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&str)
+\item 
+\mbox{\Hypertarget{class_string_impl_a38a349596d9bd22b2dd14d2ea02edbc1}\label{class_string_impl_a38a349596d9bd22b2dd14d2ea02edbc1}} 
+\mbox{\hyperlink{class_string_impl}{String\+Impl}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&str)
+\item 
+const char $\ast$ \mbox{\hyperlink{class_string_impl_a4a71f742026854a0941e7fa829b47203}{latin1}} () const
+\item 
+const char $\ast$ \mbox{\hyperlink{class_string_impl_a9e7c386a3cd20feb6dea3d98b559535c}{utf8}} () const
+\item 
+unsigned short \mbox{\hyperlink{class_string_impl_a002b2e0e2a91769a583437b6510ed409}{unicode\+Char\+At}} (int index) const
+\item 
+bool \mbox{\hyperlink{class_string_impl_a96cd2f042d397934171ebde8dd6f61ad}{is\+Empty}} () const
+\item 
+int \mbox{\hyperlink{class_string_impl_a52096f97ab17336a71a81e3c81e759ca}{length}} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_string_impl_a96cd2f042d397934171ebde8dd6f61ad}\label{class_string_impl_a96cd2f042d397934171ebde8dd6f61ad}} 
+\index{StringImpl@{StringImpl}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!StringImpl@{StringImpl}}
+\subsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool String\+Impl\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns true if this string is empty or false otherwise 
+
+Implements \mbox{\hyperlink{class_i_string_a85fee593e5cae3324834b6c02ceb6ae1}{I\+String}}.
+
+\mbox{\Hypertarget{class_string_impl_a4a71f742026854a0941e7fa829b47203}\label{class_string_impl_a4a71f742026854a0941e7fa829b47203}} 
+\index{StringImpl@{StringImpl}!latin1@{latin1}}
+\index{latin1@{latin1}!StringImpl@{StringImpl}}
+\subsubsection{\texorpdfstring{latin1()}{latin1()}}
+{\footnotesize\ttfamily const char$\ast$ String\+Impl\+::latin1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns a latin1 character representation of the string. 
+
+Implements \mbox{\hyperlink{class_i_string_aa4961cf1dde87d3308ec95430045b7db}{I\+String}}.
+
+\mbox{\Hypertarget{class_string_impl_a52096f97ab17336a71a81e3c81e759ca}\label{class_string_impl_a52096f97ab17336a71a81e3c81e759ca}} 
+\index{StringImpl@{StringImpl}!length@{length}}
+\index{length@{length}!StringImpl@{StringImpl}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily int String\+Impl\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of characters in the string. 
+
+Implements \mbox{\hyperlink{class_i_string_acbd29581b11e69494ce0141e2425071a}{I\+String}}.
+
+\mbox{\Hypertarget{class_string_impl_a002b2e0e2a91769a583437b6510ed409}\label{class_string_impl_a002b2e0e2a91769a583437b6510ed409}} 
+\index{StringImpl@{StringImpl}!unicodeCharAt@{unicodeCharAt}}
+\index{unicodeCharAt@{unicodeCharAt}!StringImpl@{StringImpl}}
+\subsubsection{\texorpdfstring{unicodeCharAt()}{unicodeCharAt()}}
+{\footnotesize\ttfamily unsigned short String\+Impl\+::unicode\+Char\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns a 16-\/bit unicode character representation of the character at position {\itshape index} in the string. The first character is at index 0. 
+
+Implements \mbox{\hyperlink{class_i_string_a7a3b84f1621cb087e22b4c8b4246b7d1}{I\+String}}.
+
+\mbox{\Hypertarget{class_string_impl_a9e7c386a3cd20feb6dea3d98b559535c}\label{class_string_impl_a9e7c386a3cd20feb6dea3d98b559535c}} 
+\index{StringImpl@{StringImpl}!utf8@{utf8}}
+\index{utf8@{utf8}!StringImpl@{StringImpl}}
+\subsubsection{\texorpdfstring{utf8()}{utf8()}}
+{\footnotesize\ttfamily const char$\ast$ String\+Impl\+::utf8 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns a utf8 character representation of the string. 
+
+Implements \mbox{\hyperlink{class_i_string_a552cdb2900b094a432a8608df7bcce8c}{I\+String}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/addon/doxmlparser/src/stringimpl.\+h\end{DoxyCompactItemize}

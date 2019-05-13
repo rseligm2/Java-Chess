@@ -1,0 +1,83 @@
+\hypertarget{class_space}{}\section{Space Class Reference}
+\label{class_space}\index{Space@{Space}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_space_afe9f3c2c73789f807e598d06c60515ca}{Space}} ()
+\item 
+boolean \mbox{\hyperlink{class_space_a7450bdf13ff2dc4dbbe89573d467f579}{take\+Space}} (\mbox{\hyperlink{class_piece}{Piece}} new\+Piece)
+\item 
+void \mbox{\hyperlink{class_space_abdbc9be1450dc19348b7889e8265ee5c}{leave\+Space}} ()
+\item 
+\mbox{\hyperlink{class_piece}{Piece}} \mbox{\hyperlink{class_space_a6ca21c64ae7fe878d4f574e47d9d28c2}{get\+Piece}} ()
+\item 
+boolean \mbox{\hyperlink{class_space_acd19ec863f80b21419430fb34e51bf08}{is\+Occupied}} ()
+\item 
+void \mbox{\hyperlink{class_space_a3216bbe73ee02cf97a2b4c90ccf88e7f}{place\+Piece}} (\mbox{\hyperlink{class_piece}{Piece}} new\+Piece, int x, int y)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_space_afe9f3c2c73789f807e598d06c60515ca}\label{class_space_afe9f3c2c73789f807e598d06c60515ca}} 
+\index{Space@{Space}!Space@{Space}}
+\index{Space@{Space}!Space@{Space}}
+\subsubsection{\texorpdfstring{Space()}{Space()}}
+{\footnotesize\ttfamily Space.\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for \mbox{\hyperlink{class_space}{Space}} object that represents space on board piece default set to null, as no piece is initially on space occupied defualt set to false, no piece initially on space 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_space_a6ca21c64ae7fe878d4f574e47d9d28c2}\label{class_space_a6ca21c64ae7fe878d4f574e47d9d28c2}} 
+\index{Space@{Space}!getPiece@{getPiece}}
+\index{getPiece@{getPiece}!Space@{Space}}
+\subsubsection{\texorpdfstring{getPiece()}{getPiece()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_piece}{Piece}} Space.\+get\+Piece (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get method for piece occupying space \begin{DoxyReturn}{Returns}
+piece on space, could be N\+U\+LL 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_space_acd19ec863f80b21419430fb34e51bf08}\label{class_space_acd19ec863f80b21419430fb34e51bf08}} 
+\index{Space@{Space}!isOccupied@{isOccupied}}
+\index{isOccupied@{isOccupied}!Space@{Space}}
+\subsubsection{\texorpdfstring{isOccupied()}{isOccupied()}}
+{\footnotesize\ttfamily boolean Space.\+is\+Occupied (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get method for if space contains a piece \begin{DoxyReturn}{Returns}
+true if contains piece, false if doesn\textquotesingle{}t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_space_abdbc9be1450dc19348b7889e8265ee5c}\label{class_space_abdbc9be1450dc19348b7889e8265ee5c}} 
+\index{Space@{Space}!leaveSpace@{leaveSpace}}
+\index{leaveSpace@{leaveSpace}!Space@{Space}}
+\subsubsection{\texorpdfstring{leaveSpace()}{leaveSpace()}}
+{\footnotesize\ttfamily void Space.\+leave\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method to remove a piece from a space on board \mbox{\Hypertarget{class_space_a3216bbe73ee02cf97a2b4c90ccf88e7f}\label{class_space_a3216bbe73ee02cf97a2b4c90ccf88e7f}} 
+\index{Space@{Space}!placePiece@{placePiece}}
+\index{placePiece@{placePiece}!Space@{Space}}
+\subsubsection{\texorpdfstring{placePiece()}{placePiece()}}
+{\footnotesize\ttfamily void Space.\+place\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_piece}{Piece}}}]{new\+Piece,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method for testing purposes, places a piece directly into space 
+\begin{DoxyParams}{Parameters}
+{\em new\+Piece} & to be placed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_space_a7450bdf13ff2dc4dbbe89573d467f579}\label{class_space_a7450bdf13ff2dc4dbbe89573d467f579}} 
+\index{Space@{Space}!takeSpace@{takeSpace}}
+\index{takeSpace@{takeSpace}!Space@{Space}}
+\subsubsection{\texorpdfstring{takeSpace()}{takeSpace()}}
+{\footnotesize\ttfamily boolean Space.\+take\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_piece}{Piece}}}]{new\+Piece }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method to execute when one piece moves to a space, checks if space is empty or if a piece occupies the space already and if piece is enemy piece then it is killed 
+\begin{DoxyParams}{Parameters}
+{\em new\+Piece} & piece to be moved to new spot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean if newpiece was able to move to space 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Space.\+java\end{DoxyCompactItemize}

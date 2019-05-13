@@ -1,0 +1,96 @@
+\hypertarget{class_doc_style_change}{}\section{Doc\+Style\+Change Class Reference}
+\label{class_doc_style_change}\index{DocStyleChange@{DocStyleChange}}
+
+
+{\ttfamily \#include $<$docparser.\+h$>$}
+
+Inheritance diagram for Doc\+Style\+Change\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_doc_style_change}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_style_change_a97757d2d85c39228c90693491a56d277}\label{class_doc_style_change_a97757d2d85c39228c90693491a56d277}} 
+enum {\bfseries Style} \{ \newline
+{\bfseries Bold} = (1$<$$<$0), 
+{\bfseries Italic} = (1$<$$<$1), 
+{\bfseries Code} = (1$<$$<$2), 
+{\bfseries Center} = (1$<$$<$3), 
+\newline
+{\bfseries Small} = (1$<$$<$4), 
+{\bfseries Subscript} = (1$<$$<$5), 
+{\bfseries Superscript} = (1$<$$<$6), 
+{\bfseries Preformatted} = (1$<$$<$7), 
+\newline
+{\bfseries Span} = (1$<$$<$8), 
+{\bfseries Div} = (1$<$$<$9), 
+{\bfseries Strike} = (1$<$$<$10), 
+{\bfseries Underline} = (1$<$$<$11)
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_style_change_a2b3b84ba022c755b0cb9be7da8383bb4}\label{class_doc_style_change_a2b3b84ba022c755b0cb9be7da8383bb4}} 
+{\bfseries Doc\+Style\+Change} (\mbox{\hyperlink{class_doc_node}{Doc\+Node}} $\ast$\mbox{\hyperlink{class_doc_node_a73e8ad29a91cfceb0968eb00db71a23d}{parent}}, uint position, Style s, bool enable, const \mbox{\hyperlink{class_html_attrib_list}{Html\+Attrib\+List}} $\ast$attribs=0)
+\item 
+\mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} \mbox{\hyperlink{class_doc_style_change_afcb88a076f2cabaeb4b6b10571d1a6b4}{kind}} () const
+\item 
+\mbox{\Hypertarget{class_doc_style_change_a56d079390f264e34af453a015bd2e2c9}\label{class_doc_style_change_a56d079390f264e34af453a015bd2e2c9}} 
+Style {\bfseries style} () const
+\item 
+\mbox{\Hypertarget{class_doc_style_change_a21689e3e2c3b35c3d438ebfff8f35da9}\label{class_doc_style_change_a21689e3e2c3b35c3d438ebfff8f35da9}} 
+const char $\ast$ {\bfseries style\+String} () const
+\item 
+\mbox{\Hypertarget{class_doc_style_change_ac8a8c808b962cc17665ab52937b8bd78}\label{class_doc_style_change_ac8a8c808b962cc17665ab52937b8bd78}} 
+bool {\bfseries enable} () const
+\item 
+\mbox{\Hypertarget{class_doc_style_change_af25a06edeb876f6589ad1de28cff84b8}\label{class_doc_style_change_af25a06edeb876f6589ad1de28cff84b8}} 
+uint {\bfseries position} () const
+\item 
+void \mbox{\hyperlink{class_doc_style_change_aa6c460a097e12a52603f4560daf1125f}{accept}} (\mbox{\hyperlink{class_doc_visitor}{Doc\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{class_doc_style_change_a9135e06181ecabdfce9c787fb4b44a71}\label{class_doc_style_change_a9135e06181ecabdfce9c787fb4b44a71}} 
+const \mbox{\hyperlink{class_html_attrib_list}{Html\+Attrib\+List}} \& {\bfseries attribs} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Node representing a style change 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_doc_style_change_aa6c460a097e12a52603f4560daf1125f}\label{class_doc_style_change_aa6c460a097e12a52603f4560daf1125f}} 
+\index{DocStyleChange@{DocStyleChange}!accept@{accept}}
+\index{accept@{accept}!DocStyleChange@{DocStyleChange}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily void Doc\+Style\+Change\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_doc_visitor}{Doc\+Visitor}} $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Acceptor function for node visitors. Part of the visitor pattern. 
+\begin{DoxyParams}{Parameters}
+{\em v} & Abstract visitor. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_doc_node_a5303a550cbe6395663bf9b9dad28cbf1}{Doc\+Node}}.
+
+\mbox{\Hypertarget{class_doc_style_change_afcb88a076f2cabaeb4b6b10571d1a6b4}\label{class_doc_style_change_afcb88a076f2cabaeb4b6b10571d1a6b4}} 
+\index{DocStyleChange@{DocStyleChange}!kind@{kind}}
+\index{kind@{kind}!DocStyleChange@{DocStyleChange}}
+\subsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} Doc\+Style\+Change\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the kind of node. Provides runtime type information 
+
+Implements \mbox{\hyperlink{class_doc_node_a108ffd214a72ba6e93dac084a8f58049}{Doc\+Node}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/docparser.\+h\item 
+doxygen/src/docparser.\+cpp\end{DoxyCompactItemize}

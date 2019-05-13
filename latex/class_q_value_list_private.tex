@@ -1,0 +1,91 @@
+\hypertarget{class_q_value_list_private}{}\section{Q\+Value\+List\+Private$<$ T $>$ Class Template Reference}
+\label{class_q_value_list_private}\index{QValueListPrivate$<$ T $>$@{QValueListPrivate$<$ T $>$}}
+Inheritance diagram for Q\+Value\+List\+Private$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_value_list_private}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_q_value_list_iterator}{Q\+Value\+List\+Iterator}}$<$ T $>$ \mbox{\hyperlink{class_q_value_list_private_aef9e14569c19defeaa2b6c8e636fafde}{Iterator}}
+\item 
+\mbox{\Hypertarget{class_q_value_list_private_aeaccf04652d772f634ba78357a915b5c}\label{class_q_value_list_private_aeaccf04652d772f634ba78357a915b5c}} 
+typedef \mbox{\hyperlink{class_q_value_list_const_iterator}{Q\+Value\+List\+Const\+Iterator}}$<$ T $>$ {\bfseries Const\+Iterator}
+\item 
+\mbox{\Hypertarget{class_q_value_list_private_a70ca1830018ed991cbd8d957ff62d10a}\label{class_q_value_list_private_a70ca1830018ed991cbd8d957ff62d10a}} 
+typedef \mbox{\hyperlink{class_q_value_list_node}{Q\+Value\+List\+Node}}$<$ T $>$ {\bfseries Node}
+\item 
+\mbox{\Hypertarget{class_q_value_list_private_a63f9e5099e8c8445e00af7e3f4d7e274}\label{class_q_value_list_private_a63f9e5099e8c8445e00af7e3f4d7e274}} 
+typedef \mbox{\hyperlink{class_q_value_list_node}{Q\+Value\+List\+Node}}$<$ T $>$ $\ast$ {\bfseries Node\+Ptr}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_value_list_private_a4bc6b1cd9fef45a3d1915efcc871d908}{Q\+Value\+List\+Private}} ()
+\item 
+\mbox{\Hypertarget{class_q_value_list_private_ad8a661568ebec3ed2f94b5c70c8400c1}\label{class_q_value_list_private_ad8a661568ebec3ed2f94b5c70c8400c1}} 
+{\bfseries Q\+Value\+List\+Private} (const \mbox{\hyperlink{class_q_value_list_private}{Q\+Value\+List\+Private}}$<$ T $>$ \&\+\_\+p)
+\item 
+\mbox{\Hypertarget{class_q_value_list_private_a4f5de8641a836057ec25301cd6937379}\label{class_q_value_list_private_a4f5de8641a836057ec25301cd6937379}} 
+void {\bfseries deref\+And\+Delete} ()
+\item 
+\mbox{\Hypertarget{class_q_value_list_private_a17ef275bde3ca8dddb1a180d2f492990}\label{class_q_value_list_private_a17ef275bde3ca8dddb1a180d2f492990}} 
+\mbox{\hyperlink{class_q_value_list_private_aef9e14569c19defeaa2b6c8e636fafde}{Iterator}} {\bfseries insert} (\mbox{\hyperlink{class_q_value_list_private_aef9e14569c19defeaa2b6c8e636fafde}{Iterator}} it, const T \&x)
+\item 
+\mbox{\Hypertarget{class_q_value_list_private_ad8c240552b9a418f7cd604e19cbb4917}\label{class_q_value_list_private_ad8c240552b9a418f7cd604e19cbb4917}} 
+\mbox{\hyperlink{class_q_value_list_private_aef9e14569c19defeaa2b6c8e636fafde}{Iterator}} {\bfseries remove} (\mbox{\hyperlink{class_q_value_list_private_aef9e14569c19defeaa2b6c8e636fafde}{Iterator}} it)
+\item 
+\mbox{\Hypertarget{class_q_value_list_private_ab14b89cb33b215b938a60992380490f8}\label{class_q_value_list_private_ab14b89cb33b215b938a60992380490f8}} 
+\mbox{\hyperlink{class_q_value_list_node}{Node\+Ptr}} {\bfseries find} (\mbox{\hyperlink{class_q_value_list_node}{Node\+Ptr}} start, const T \&x) const
+\item 
+\mbox{\Hypertarget{class_q_value_list_private_ad9c297185eb9231705865017c525b7ce}\label{class_q_value_list_private_ad9c297185eb9231705865017c525b7ce}} 
+int {\bfseries find\+Index} (\mbox{\hyperlink{class_q_value_list_node}{Node\+Ptr}} start, const T \&x) const
+\item 
+\mbox{\Hypertarget{class_q_value_list_private_ab79da2939b5de307acf76c4b574fc830}\label{class_q_value_list_private_ab79da2939b5de307acf76c4b574fc830}} 
+uint {\bfseries contains} (const T \&x) const
+\item 
+\mbox{\Hypertarget{class_q_value_list_private_aeec88498050bea418f0d2f35fa9e7f9f}\label{class_q_value_list_private_aeec88498050bea418f0d2f35fa9e7f9f}} 
+void {\bfseries remove} (const T \&x)
+\item 
+\mbox{\Hypertarget{class_q_value_list_private_a7ab3a5eaedde2b62dcf9c227ddb9d3a2}\label{class_q_value_list_private_a7ab3a5eaedde2b62dcf9c227ddb9d3a2}} 
+\mbox{\hyperlink{class_q_value_list_node}{Node\+Ptr}} {\bfseries at} (uint i) const
+\item 
+\mbox{\Hypertarget{class_q_value_list_private_a4d3b3bceb36ae04887b37545929ddbdd}\label{class_q_value_list_private_a4d3b3bceb36ae04887b37545929ddbdd}} 
+void {\bfseries clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_value_list_private_a9ee977645abf7fa39646bf46208439fd}\label{class_q_value_list_private_a9ee977645abf7fa39646bf46208439fd}} 
+\mbox{\hyperlink{class_q_value_list_node}{Node\+Ptr}} {\bfseries node}
+\item 
+\mbox{\Hypertarget{class_q_value_list_private_a135ff8eff8b7a981761b17954c0a9b7a}\label{class_q_value_list_private_a135ff8eff8b7a981761b17954c0a9b7a}} 
+uint {\bfseries nodes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_q_value_list_private_aef9e14569c19defeaa2b6c8e636fafde}\label{class_q_value_list_private_aef9e14569c19defeaa2b6c8e636fafde}} 
+\index{QValueListPrivate$<$ T $>$@{QValueListPrivate$<$ T $>$}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!QValueListPrivate$<$ T $>$@{QValueListPrivate$<$ T $>$}}
+\subsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+typedef \mbox{\hyperlink{class_q_value_list_iterator}{Q\+Value\+List\+Iterator}}$<$T$>$ \mbox{\hyperlink{class_q_value_list_private}{Q\+Value\+List\+Private}}$<$ T $>$\+::\mbox{\hyperlink{class_q_value_list_private_aef9e14569c19defeaa2b6c8e636fafde}{Iterator}}}
+
+Typedefs 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_value_list_private_a4bc6b1cd9fef45a3d1915efcc871d908}\label{class_q_value_list_private_a4bc6b1cd9fef45a3d1915efcc871d908}} 
+\index{QValueListPrivate$<$ T $>$@{QValueListPrivate$<$ T $>$}!QValueListPrivate@{QValueListPrivate}}
+\index{QValueListPrivate@{QValueListPrivate}!QValueListPrivate$<$ T $>$@{QValueListPrivate$<$ T $>$}}
+\subsubsection{\texorpdfstring{QValueListPrivate()}{QValueListPrivate()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{class_q_value_list_private}{Q\+Value\+List\+Private}}$<$ T $>$\+::\mbox{\hyperlink{class_q_value_list_private}{Q\+Value\+List\+Private}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Functions 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qvaluelist.\+h\end{DoxyCompactItemize}

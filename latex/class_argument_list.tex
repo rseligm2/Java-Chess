@@ -1,0 +1,134 @@
+\hypertarget{class_argument_list}{}\section{Argument\+List Class Reference}
+\label{class_argument_list}\index{ArgumentList@{ArgumentList}}
+
+
+This class represents an function or template argument list.  
+
+
+
+
+{\ttfamily \#include $<$arguments.\+h$>$}
+
+Inheritance diagram for Argument\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_argument_list}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_argument_list_a2f46f024604fbd06eb4f2d18f97f74c0}{Argument\+List}} ()
+\item 
+\mbox{\hyperlink{class_argument_list_a208ee05222465738505facb0b24e0380}{$\sim$\+Argument\+List}} ()
+\item 
+\mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$ \mbox{\hyperlink{class_argument_list_a9c87ea86c299ce39b3818548e38f6cad}{deep\+Copy}} () const
+\item 
+bool \mbox{\hyperlink{class_argument_list_a3d2726240dff68120149845452e1d1ec}{has\+Documentation}} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_argument_list_afa737f8c786a4ea7e3e14d7baf063aea}\label{class_argument_list_afa737f8c786a4ea7e3e14d7baf063aea}} 
+static \mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$ {\bfseries unmarshal} (\mbox{\hyperlink{class_storage_intf}{Storage\+Intf}} $\ast$s)
+\item 
+\mbox{\Hypertarget{class_argument_list_ab46945cd744a8c28a8c30c40849d32d1}\label{class_argument_list_ab46945cd744a8c28a8c30c40849d32d1}} 
+static void {\bfseries marshal} (\mbox{\hyperlink{class_storage_intf}{Storage\+Intf}} $\ast$s, \mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$arg\+List)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_argument_list_ae466c241240301ea30065310134ab639}{const\+Specifier}}
+\item 
+bool \mbox{\hyperlink{class_argument_list_ae058c8cda0c6ce8837aab723e0af62bd}{volatile\+Specifier}}
+\item 
+bool \mbox{\hyperlink{class_argument_list_a3f023c090551e0ecaa588b25f895c047}{pure\+Specifier}}
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_argument_list_ac41ea581a7578480e4bed0d6c5e1af78}{trailing\+Return\+Type}}
+\item 
+bool \mbox{\hyperlink{class_argument_list_a0fd4d40dd62fb9f798d99cb63f966183}{is\+Deleted}}
+\item 
+Ref\+Qualifier\+Type \mbox{\hyperlink{class_argument_list_a007abb992ff51e8e205423ce9af1fce2}{ref\+Qualifier}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents an function or template argument list. 
+
+This class also stores some information about member that is typically put after the argument list, such as whether the member is const, volatile or pure virtual. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_argument_list_a2f46f024604fbd06eb4f2d18f97f74c0}\label{class_argument_list_a2f46f024604fbd06eb4f2d18f97f74c0}} 
+\index{ArgumentList@{ArgumentList}!ArgumentList@{ArgumentList}}
+\index{ArgumentList@{ArgumentList}!ArgumentList@{ArgumentList}}
+\subsubsection{\texorpdfstring{ArgumentList()}{ArgumentList()}}
+{\footnotesize\ttfamily Argument\+List\+::\+Argument\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates an empty argument list \mbox{\Hypertarget{class_argument_list_a208ee05222465738505facb0b24e0380}\label{class_argument_list_a208ee05222465738505facb0b24e0380}} 
+\index{ArgumentList@{ArgumentList}!````~ArgumentList@{$\sim$ArgumentList}}
+\index{````~ArgumentList@{$\sim$ArgumentList}!ArgumentList@{ArgumentList}}
+\subsubsection{\texorpdfstring{$\sim$ArgumentList()}{~ArgumentList()}}
+{\footnotesize\ttfamily Argument\+List\+::$\sim$\+Argument\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destroys the argument list 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_argument_list_a9c87ea86c299ce39b3818548e38f6cad}\label{class_argument_list_a9c87ea86c299ce39b3818548e38f6cad}} 
+\index{ArgumentList@{ArgumentList}!deepCopy@{deepCopy}}
+\index{deepCopy@{deepCopy}!ArgumentList@{ArgumentList}}
+\subsubsection{\texorpdfstring{deepCopy()}{deepCopy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$ Argument\+List\+::deep\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Makes a deep copy of this object \mbox{\Hypertarget{class_argument_list_a3d2726240dff68120149845452e1d1ec}\label{class_argument_list_a3d2726240dff68120149845452e1d1ec}} 
+\index{ArgumentList@{ArgumentList}!hasDocumentation@{hasDocumentation}}
+\index{hasDocumentation@{hasDocumentation}!ArgumentList@{ArgumentList}}
+\subsubsection{\texorpdfstring{hasDocumentation()}{hasDocumentation()}}
+{\footnotesize\ttfamily bool Argument\+List\+::has\+Documentation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Does any argument of this list have documentation?
+
+the argument list is documented if one of its arguments is documented 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_argument_list_ae466c241240301ea30065310134ab639}\label{class_argument_list_ae466c241240301ea30065310134ab639}} 
+\index{ArgumentList@{ArgumentList}!constSpecifier@{constSpecifier}}
+\index{constSpecifier@{constSpecifier}!ArgumentList@{ArgumentList}}
+\subsubsection{\texorpdfstring{constSpecifier}{constSpecifier}}
+{\footnotesize\ttfamily bool Argument\+List\+::const\+Specifier}
+
+Does the member modify the state of the class? default\+: F\+A\+L\+SE. \mbox{\Hypertarget{class_argument_list_a0fd4d40dd62fb9f798d99cb63f966183}\label{class_argument_list_a0fd4d40dd62fb9f798d99cb63f966183}} 
+\index{ArgumentList@{ArgumentList}!isDeleted@{isDeleted}}
+\index{isDeleted@{isDeleted}!ArgumentList@{ArgumentList}}
+\subsubsection{\texorpdfstring{isDeleted}{isDeleted}}
+{\footnotesize\ttfamily bool Argument\+List\+::is\+Deleted}
+
+method with =delete \mbox{\Hypertarget{class_argument_list_a3f023c090551e0ecaa588b25f895c047}\label{class_argument_list_a3f023c090551e0ecaa588b25f895c047}} 
+\index{ArgumentList@{ArgumentList}!pureSpecifier@{pureSpecifier}}
+\index{pureSpecifier@{pureSpecifier}!ArgumentList@{ArgumentList}}
+\subsubsection{\texorpdfstring{pureSpecifier}{pureSpecifier}}
+{\footnotesize\ttfamily bool Argument\+List\+::pure\+Specifier}
+
+Is this a pure virtual member? default\+: F\+A\+L\+SE \mbox{\Hypertarget{class_argument_list_a007abb992ff51e8e205423ce9af1fce2}\label{class_argument_list_a007abb992ff51e8e205423ce9af1fce2}} 
+\index{ArgumentList@{ArgumentList}!refQualifier@{refQualifier}}
+\index{refQualifier@{refQualifier}!ArgumentList@{ArgumentList}}
+\subsubsection{\texorpdfstring{refQualifier}{refQualifier}}
+{\footnotesize\ttfamily Ref\+Qualifier\+Type Argument\+List\+::ref\+Qualifier}
+
+C++11 ref qualifier \mbox{\Hypertarget{class_argument_list_ac41ea581a7578480e4bed0d6c5e1af78}\label{class_argument_list_ac41ea581a7578480e4bed0d6c5e1af78}} 
+\index{ArgumentList@{ArgumentList}!trailingReturnType@{trailingReturnType}}
+\index{trailingReturnType@{trailingReturnType}!ArgumentList@{ArgumentList}}
+\subsubsection{\texorpdfstring{trailingReturnType}{trailingReturnType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Argument\+List\+::trailing\+Return\+Type}
+
+C++11 style Trailing return type? \mbox{\Hypertarget{class_argument_list_ae058c8cda0c6ce8837aab723e0af62bd}\label{class_argument_list_ae058c8cda0c6ce8837aab723e0af62bd}} 
+\index{ArgumentList@{ArgumentList}!volatileSpecifier@{volatileSpecifier}}
+\index{volatileSpecifier@{volatileSpecifier}!ArgumentList@{ArgumentList}}
+\subsubsection{\texorpdfstring{volatileSpecifier}{volatileSpecifier}}
+{\footnotesize\ttfamily bool Argument\+List\+::volatile\+Specifier}
+
+Is the member volatile? default\+: F\+A\+L\+SE. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/arguments.\+h\item 
+doxygen/src/arguments.\+cpp\end{DoxyCompactItemize}

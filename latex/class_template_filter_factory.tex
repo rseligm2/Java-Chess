@@ -1,0 +1,41 @@
+\hypertarget{class_template_filter_factory}{}\section{Template\+Filter\+Factory Class Reference}
+\label{class_template_filter_factory}\index{TemplateFilterFactory@{TemplateFilterFactory}}
+
+
+Factory singleton for registering and creating filters.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_template_filter_factory_1_1_auto_register}{Auto\+Register}}
+\begin{DoxyCompactList}\small\item\em Helper class for registering a filter function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_template_filter_factory_a55706e7732e3cffde3d4a81bdc1b02f3}\label{class_template_filter_factory_a55706e7732e3cffde3d4a81bdc1b02f3}} 
+typedef \mbox{\hyperlink{class_template_variant}{Template\+Variant}}() {\bfseries Filter\+Function}(const \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \&v, const \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \&arg)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_template_filter_factory_a7d6386ee3984212371e66efaa44f6ffa}\label{class_template_filter_factory_a7d6386ee3984212371e66efaa44f6ffa}} 
+\mbox{\hyperlink{class_template_variant}{Template\+Variant}} {\bfseries apply} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name, const \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \&v, const \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \&arg, bool \&ok)
+\item 
+\mbox{\Hypertarget{class_template_filter_factory_a3f8c7b962da1c89d8d2839faf19e688f}\label{class_template_filter_factory_a3f8c7b962da1c89d8d2839faf19e688f}} 
+void {\bfseries register\+Filter} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name, Filter\+Function $\ast$\mbox{\hyperlink{070__ref__variadic__template_8cpp_abb1e0338f72ae46a1240ada65d6a397c}{func}})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_template_filter_factory_a553dc85390cf5bffc2dff949fb2e6963}\label{class_template_filter_factory_a553dc85390cf5bffc2dff949fb2e6963}} 
+static \mbox{\hyperlink{class_template_filter_factory}{Template\+Filter\+Factory}} $\ast$ {\bfseries instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Factory singleton for registering and creating filters. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/template.\+cpp\end{DoxyCompactItemize}

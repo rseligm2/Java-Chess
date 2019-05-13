@@ -1,0 +1,62 @@
+\hypertarget{class_debug}{}\section{Debug Class Reference}
+\label{class_debug}\index{Debug@{Debug}}
+
+
+{\ttfamily \#include $<$debug.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_debug_a9e0b892a8030a4f64076850777991c96}\label{class_debug_a9e0b892a8030a4f64076850777991c96}} 
+enum {\bfseries Debug\+Mask} \{ \newline
+{\bfseries Quiet} = 0x00000000, 
+{\bfseries Find\+Members} = 0x00000001, 
+{\bfseries Functions} = 0x00000002, 
+{\bfseries Variables} = 0x00000004, 
+\newline
+{\bfseries Preprocessor} = 0x00000008, 
+{\bfseries Classes} = 0x00000010, 
+{\bfseries Comment\+Cnv} = 0x00000020, 
+{\bfseries Comment\+Scan} = 0x00000040, 
+\newline
+{\bfseries Validate} = 0x00000080, 
+{\bfseries Print\+Tree} = 0x00000100, 
+{\bfseries Time} = 0x00000200, 
+{\bfseries Ext\+Cmd} = 0x00000400, 
+\newline
+{\bfseries Markdown} = 0x00000800, 
+{\bfseries Filter\+Output} = 0x00001000, 
+{\bfseries Lex} = 0x00002000, 
+{\bfseries Plantuml} = 0x00004000
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_debug_a5d86ffebf96f9f75b6c957db5f831da3}\label{class_debug_a5d86ffebf96f9f75b6c957db5f831da3}} 
+static void {\bfseries print} (Debug\+Mask mask, int prio, const char $\ast$fmt,...)
+\item 
+\mbox{\Hypertarget{class_debug_a24711079b52ca1e61539e7caa4ca61d8}\label{class_debug_a24711079b52ca1e61539e7caa4ca61d8}} 
+static int {\bfseries set\+Flag} (const char $\ast$label)
+\item 
+\mbox{\Hypertarget{class_debug_a1e78a9cfc37f50990e7701d56f7bf207}\label{class_debug_a1e78a9cfc37f50990e7701d56f7bf207}} 
+static void {\bfseries clear\+Flag} (const char $\ast$label)
+\item 
+\mbox{\Hypertarget{class_debug_a92b0668ebfb43903d82ad112bf6c84e1}\label{class_debug_a92b0668ebfb43903d82ad112bf6c84e1}} 
+static bool {\bfseries is\+Flag\+Set} (Debug\+Mask mask)
+\item 
+\mbox{\Hypertarget{class_debug_a9a7dd2cc5af4551bf2d34ce8ba5a78b7}\label{class_debug_a9a7dd2cc5af4551bf2d34ce8ba5a78b7}} 
+static void {\bfseries print\+Flags} (void)
+\item 
+\mbox{\Hypertarget{class_debug_a666b610770dd7b7c0a87f2415aefe7d9}\label{class_debug_a666b610770dd7b7c0a87f2415aefe7d9}} 
+static void {\bfseries set\+Priority} (int p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class containing a print function for diagnostics. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/debug.\+h\item 
+doxygen/src/debug.\+cpp\end{DoxyCompactItemize}

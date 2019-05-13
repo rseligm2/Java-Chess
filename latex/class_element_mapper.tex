@@ -1,0 +1,46 @@
+\hypertarget{class_element_mapper}{}\section{Element\+Mapper$<$ T $>$ Class Template Reference}
+\label{class_element_mapper}\index{ElementMapper$<$ T $>$@{ElementMapper$<$ T $>$}}
+Inheritance diagram for Element\+Mapper$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_element_mapper}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_element_mapper_afca37050650c0a9d475f4c87b9189eac}\label{class_element_mapper_afca37050650c0a9d475f4c87b9189eac}} 
+typedef Start\+Element\+Handler {\bfseries Start\+Element\+HandlerT}
+\item 
+\mbox{\Hypertarget{class_element_mapper_a3d3ef233834e26837676018b71f5d1aa}\label{class_element_mapper_a3d3ef233834e26837676018b71f5d1aa}} 
+typedef End\+Element\+Handler {\bfseries End\+Element\+HandlerT}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_element_mapper_a8cb3260e99bb20970dd7a295d5553b70}\label{class_element_mapper_a8cb3260e99bb20970dd7a295d5553b70}} 
+void {\bfseries add\+Start\+Handler} (const char $\ast$key)
+\item 
+\mbox{\Hypertarget{class_element_mapper_a3dee79deae8ce5172e558679385032ed}\label{class_element_mapper_a3dee79deae8ce5172e558679385032ed}} 
+void {\bfseries add\+Start\+Handler} (const char $\ast$key, T $\ast$obj, void(T\+::$\ast$handler)(const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&))
+\item 
+\mbox{\Hypertarget{class_element_mapper_accc283d02d0481be43a98662006ca80a}\label{class_element_mapper_accc283d02d0481be43a98662006ca80a}} 
+void {\bfseries add\+End\+Handler} (const char $\ast$key)
+\item 
+\mbox{\Hypertarget{class_element_mapper_a7d2ce3844784f2040576adbdfe55068d}\label{class_element_mapper_a7d2ce3844784f2040576adbdfe55068d}} 
+void {\bfseries add\+End\+Handler} (const char $\ast$key, T $\ast$obj, void(T\+::$\ast$handler)())
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_element_mapper_ac65b2d91a218457be0013a5b34ce6b60}\label{class_element_mapper_ac65b2d91a218457be0013a5b34ce6b60}} 
+Q\+Dict$<$ Start\+Element\+HandlerT $>$ {\bfseries m\+\_\+start\+Handlers}
+\item 
+\mbox{\Hypertarget{class_element_mapper_acc10714885fecc41c06efd87a3277b71}\label{class_element_mapper_acc10714885fecc41c06efd87a3277b71}} 
+Q\+Dict$<$ End\+Element\+HandlerT $>$ {\bfseries m\+\_\+end\+Handlers}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/addon/doxmlparser/src/basehandler.\+h\end{DoxyCompactItemize}

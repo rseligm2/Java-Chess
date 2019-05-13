@@ -1,0 +1,115 @@
+\hypertarget{class_translator_korean_en}{}\section{Translator\+Korean\+En Class Reference}
+\label{class_translator_korean_en}\index{TranslatorKoreanEn@{TranslatorKoreanEn}}
+Inheritance diagram for Translator\+Korean\+En\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_translator_korean_en}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_translator_korean_en_a255647e0edbc0550871133c143cc08a7}{id\+Language}} ()
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_translator_korean_en_a0db5fe9ae0843e3f89b0b9770ba32d32}{latex\+Language\+Support\+Command}} ()
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_translator_korean_en_ac60d57743cc1cd0a7b6bc6c57a445b7e}{tr\+R\+T\+Fansicp}} ()
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_translator_korean_en_a3b71d2ee009c7e529e60cb43898bcce7}{latex\+Command\+Name}} ()
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_translator_korean_en_ad0ac561385e4e2583eb5f3aaf5303f4d}{tr\+R\+T\+F\+Char\+Set}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_translator_korean_en_a255647e0edbc0550871133c143cc08a7}\label{class_translator_korean_en_a255647e0edbc0550871133c143cc08a7}} 
+\index{TranslatorKoreanEn@{TranslatorKoreanEn}!idLanguage@{idLanguage}}
+\index{idLanguage@{idLanguage}!TranslatorKoreanEn@{TranslatorKoreanEn}}
+\subsubsection{\texorpdfstring{idLanguage()}{idLanguage()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Translator\+Korean\+En\+::id\+Language (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Used for identification of the language. The identification should not be translated. It should be replaced by the name of the language in English using lower-\/case characters only (e.\+g. \char`\"{}czech\char`\"{}, \char`\"{}japanese\char`\"{}, \char`\"{}russian\char`\"{}, etc.). It should be equal to the identification used in language.\+cpp. 
+
+Reimplemented from \mbox{\hyperlink{class_translator_english_a940d6ef2aa0aa8a8011426219d145a53}{Translator\+English}}.
+
+\mbox{\Hypertarget{class_translator_korean_en_a3b71d2ee009c7e529e60cb43898bcce7}\label{class_translator_korean_en_a3b71d2ee009c7e529e60cb43898bcce7}} 
+\index{TranslatorKoreanEn@{TranslatorKoreanEn}!latexCommandName@{latexCommandName}}
+\index{latexCommandName@{latexCommandName}!TranslatorKoreanEn@{TranslatorKoreanEn}}
+\subsubsection{\texorpdfstring{latexCommandName()}{latexCommandName()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Translator\+Korean\+En\+::latex\+Command\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Set the name to be used as latex command. 
+
+Reimplemented from \mbox{\hyperlink{class_translator_a9e87df46e59ca15713f43205aeb17ea0}{Translator}}.
+
+\mbox{\Hypertarget{class_translator_korean_en_a0db5fe9ae0843e3f89b0b9770ba32d32}\label{class_translator_korean_en_a0db5fe9ae0843e3f89b0b9770ba32d32}} 
+\index{TranslatorKoreanEn@{TranslatorKoreanEn}!latexLanguageSupportCommand@{latexLanguageSupportCommand}}
+\index{latexLanguageSupportCommand@{latexLanguageSupportCommand}!TranslatorKoreanEn@{TranslatorKoreanEn}}
+\subsubsection{\texorpdfstring{latexLanguageSupportCommand()}{latexLanguageSupportCommand()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Translator\+Korean\+En\+::latex\+Language\+Support\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Used to get the La\+TeX command(s) for the language support. This method should return string with commands that switch La\+TeX to the desired language. For example 
+\begin{DoxyPre}"\(\backslash\)\(\backslash\)usepackage[german]\{babel\}\(\backslash\)n"
+ \end{DoxyPre}
+ or 
+\begin{DoxyPre}"\(\backslash\)\(\backslash\)usepackage\{polski\}\(\backslash\)n"
+ "\(\backslash\)\(\backslash\)usepackage[latin2]\{inputenc\}\(\backslash\)n"
+ "\(\backslash\)\(\backslash\)usepackage[T1]\{fontenc\}\(\backslash\)n"
+ \end{DoxyPre}
+
+
+The English La\+TeX does not use such commands. Because of this the empty string is returned in this implementation. 
+
+Reimplemented from \mbox{\hyperlink{class_translator_english_a48ecd4aaa9aa68947257ff29016a808a}{Translator\+English}}.
+
+\mbox{\Hypertarget{class_translator_korean_en_ac60d57743cc1cd0a7b6bc6c57a445b7e}\label{class_translator_korean_en_ac60d57743cc1cd0a7b6bc6c57a445b7e}} 
+\index{TranslatorKoreanEn@{TranslatorKoreanEn}!trRTFansicp@{trRTFansicp}}
+\index{trRTFansicp@{trRTFansicp}!TranslatorKoreanEn@{TranslatorKoreanEn}}
+\subsubsection{\texorpdfstring{trRTFansicp()}{trRTFansicp()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Translator\+Korean\+En\+::tr\+R\+T\+Fansicp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Used as ansicpg for R\+TF file
+
+The following table shows the correlation of Charset name, Charset Value and 
+\begin{DoxyPre}
+Codepage number:
+Charset Name       Charset Value(hex)  Codepage number
+------------------------------------------------------
+DEFAULT\_CHARSET           1 (x01)
+SYMBOL\_CHARSET            2 (x02)
+OEM\_CHARSET             255 (xFF)
+ANSI\_CHARSET              0 (x00)            1252
+RUSSIAN\_CHARSET         204 (xCC)            1251
+EE\_CHARSET              238 (xEE)            1250
+GREEK\_CHARSET           161 (xA1)            1253
+TURKISH\_CHARSET         162 (xA2)            1254
+BALTIC\_CHARSET          186 (xBA)            1257
+HEBREW\_CHARSET          177 (xB1)            1255
+ARABIC \_CHARSET         178 (xB2)            1256
+SHIFTJIS\_CHARSET        128 (x80)             932
+HANGEUL\_CHARSET         129 (x81)             949
+GB2313\_CHARSET          134 (x86)             936
+CHINESEBIG5\_CHARSET     136 (x88)             950
+\end{DoxyPre}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_translator_english_a58d43df9c7e82cf874f2d0ac64547a3a}{Translator\+English}}.
+
+\mbox{\Hypertarget{class_translator_korean_en_ad0ac561385e4e2583eb5f3aaf5303f4d}\label{class_translator_korean_en_ad0ac561385e4e2583eb5f3aaf5303f4d}} 
+\index{TranslatorKoreanEn@{TranslatorKoreanEn}!trRTFCharSet@{trRTFCharSet}}
+\index{trRTFCharSet@{trRTFCharSet}!TranslatorKoreanEn@{TranslatorKoreanEn}}
+\subsubsection{\texorpdfstring{trRTFCharSet()}{trRTFCharSet()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Translator\+Korean\+En\+::tr\+R\+T\+F\+Char\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Used as ansicpg for R\+TF fcharset \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_translator_korean_en_ac60d57743cc1cd0a7b6bc6c57a445b7e}{tr\+R\+T\+Fansicp()}} for a table of possible values. 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_translator_english_a5c66e7339c73f03d5cae6291c21b98b8}{Translator\+English}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/translator\+\_\+ke.\+h\end{DoxyCompactItemize}

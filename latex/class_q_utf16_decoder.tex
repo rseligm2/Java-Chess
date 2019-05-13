@@ -1,0 +1,33 @@
+\hypertarget{class_q_utf16_decoder}{}\section{Q\+Utf16\+Decoder Class Reference}
+\label{class_q_utf16_decoder}\index{QUtf16Decoder@{QUtf16Decoder}}
+Inheritance diagram for Q\+Utf16\+Decoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_utf16_decoder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_utf16_decoder_aa341683deb31e2670a369ee26058f6c4}{to\+Unicode}} (const char $\ast$chars, int len)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_utf16_decoder_aa341683deb31e2670a369ee26058f6c4}\label{class_q_utf16_decoder_aa341683deb31e2670a369ee26058f6c4}} 
+\index{QUtf16Decoder@{QUtf16Decoder}!toUnicode@{toUnicode}}
+\index{toUnicode@{toUnicode}!QUtf16Decoder@{QUtf16Decoder}}
+\subsubsection{\texorpdfstring{toUnicode()}{toUnicode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Utf16\+Decoder\+::to\+Unicode (\begin{DoxyParamCaption}\item[{const char $\ast$}]{chars,  }\item[{int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Converts the first {\itshape len} bytes at {\itshape chars} to Unicode, returning the result.
+
+If not all characters are used (eg. only part of a multi-\/byte encoding is at the end of the characters), the decoder remembers enough state to continue with the next call to this function. 
+
+Implements \mbox{\hyperlink{class_q_text_decoder_aec543f7f6670dfda14164268e2da879d}{Q\+Text\+Decoder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qutfcodec.\+cpp\end{DoxyCompactItemize}

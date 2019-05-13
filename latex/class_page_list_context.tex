@@ -1,0 +1,97 @@
+\hypertarget{class_page_list_context}{}\section{Page\+List\+Context Class Reference}
+\label{class_page_list_context}\index{PageListContext@{PageListContext}}
+Inheritance diagram for Page\+List\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_page_list_context}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_page_list_context_1_1_private}{Private}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_page_list_context_aeb9332b426d2dc8639fbbbbc1f54b30c}{count}} () const
+\item 
+virtual \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_page_list_context_adb8538bc8c1206e15372209d7e3379dc}{at}} (int index) const
+\item 
+virtual \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ \mbox{\hyperlink{class_page_list_context_ac137e9b79bdc80c05ce4030c59c5057b}{create\+Iterator}} () const
+\item 
+virtual int \mbox{\hyperlink{class_page_list_context_afd248c2c11a415e6e62150580d3ec366}{add\+Ref}} ()
+\item 
+virtual int \mbox{\hyperlink{class_page_list_context_aec001e0a201e3d1c168a67c80ffc8f06}{release}} ()
+\item 
+\mbox{\Hypertarget{class_page_list_context_a591d4a2e5eb5827755d0d944482d51b8}\label{class_page_list_context_a591d4a2e5eb5827755d0d944482d51b8}} 
+void {\bfseries add\+Pages} (const \mbox{\hyperlink{class_page_s_dict}{Page\+S\+Dict}} \&pages)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_page_list_context_a7d69ff1bb4178520525520060ab567af}\label{class_page_list_context_a7d69ff1bb4178520525520060ab567af}} 
+static \mbox{\hyperlink{class_page_list_context}{Page\+List\+Context}} $\ast$ {\bfseries alloc} (const \mbox{\hyperlink{class_page_s_dict}{Page\+S\+Dict}} $\ast$pages)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_page_list_context_afd248c2c11a415e6e62150580d3ec366}\label{class_page_list_context_afd248c2c11a415e6e62150580d3ec366}} 
+\index{PageListContext@{PageListContext}!addRef@{addRef}}
+\index{addRef@{addRef}!PageListContext@{PageListContext}}
+\subsubsection{\texorpdfstring{addRef()}{addRef()}}
+{\footnotesize\ttfamily virtual int Page\+List\+Context\+::add\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Increase object\textquotesingle{}s reference count 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a4b4973e2e15396d10bc4e3085462ca2b}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_page_list_context_adb8538bc8c1206e15372209d7e3379dc}\label{class_page_list_context_adb8538bc8c1206e15372209d7e3379dc}} 
+\index{PageListContext@{PageListContext}!at@{at}}
+\index{at@{at}!PageListContext@{PageListContext}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_variant}{Template\+Variant}} Page\+List\+Context\+::at (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the element at index position {\itshape index}. 
+
+Implements \mbox{\hyperlink{class_template_list_intf_aa51e57e72eacf4e8ce1055ee30a0f7f8}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_page_list_context_aeb9332b426d2dc8639fbbbbc1f54b30c}\label{class_page_list_context_aeb9332b426d2dc8639fbbbbc1f54b30c}} 
+\index{PageListContext@{PageListContext}!count@{count}}
+\index{count@{count}!PageListContext@{PageListContext}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Page\+List\+Context\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the number of elements in the list 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a329e49e33484c2aa5106aac1bf4e5216}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_page_list_context_ac137e9b79bdc80c05ce4030c59c5057b}\label{class_page_list_context_ac137e9b79bdc80c05ce4030c59c5057b}} 
+\index{PageListContext@{PageListContext}!createIterator@{createIterator}}
+\index{createIterator@{createIterator}!PageListContext@{PageListContext}}
+\subsubsection{\texorpdfstring{createIterator()}{createIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ Page\+List\+Context\+::create\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a new iterator for this list. \begin{DoxyNote}{Note}
+the user should call delete on the returned pointer. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_template_list_intf_a56b82384db24c3e121076a1da046d378}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_page_list_context_aec001e0a201e3d1c168a67c80ffc8f06}\label{class_page_list_context_aec001e0a201e3d1c168a67c80ffc8f06}} 
+\index{PageListContext@{PageListContext}!release@{release}}
+\index{release@{release}!PageListContext@{PageListContext}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual int Page\+List\+Context\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Decreases object\textquotesingle{}s reference count, destroy object if 0 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a0c53169c740c09dac47efc62bbe39674}{Template\+List\+Intf}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/context.\+h\item 
+doxygen/src/context.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,45 @@
+\hypertarget{class_q_t_s_manip}{}\section{Q\+T\+S\+Manip Class Reference}
+\label{class_q_t_s_manip}\index{QTSManip@{QTSManip}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_t_s_manip_a35cc537423248be4cbc121985fc13e43}{Q\+T\+S\+Manip}} (Q\+T\+S\+M\+FI m, int a)
+\item 
+void \mbox{\hyperlink{class_q_t_s_manip_ab314976728bf3e96ea881ba137d3ff37}{exec}} (\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \&s)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_t_s_manip_a35cc537423248be4cbc121985fc13e43}\label{class_q_t_s_manip_a35cc537423248be4cbc121985fc13e43}} 
+\index{QTSManip@{QTSManip}!QTSManip@{QTSManip}}
+\index{QTSManip@{QTSManip}!QTSManip@{QTSManip}}
+\subsubsection{\texorpdfstring{QTSManip()}{QTSManip()}}
+{\footnotesize\ttfamily Q\+T\+S\+Manip\+::\+Q\+T\+S\+Manip (\begin{DoxyParamCaption}\item[{Q\+T\+S\+M\+FI}]{m,  }\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a \mbox{\hyperlink{class_q_t_s_manip}{Q\+T\+S\+Manip}} object which will call {\itshape m} (a member function in \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} which accepts a single int) with argument {\itshape a} when \mbox{\hyperlink{class_q_t_s_manip_ab314976728bf3e96ea881ba137d3ff37}{Q\+T\+S\+Manip\+::exec()}} is called. Used internally in e.\+g. endl\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{s << \textcolor{stringliteral}{"some text"} << endl << \textcolor{stringliteral}{"more text"};}
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_t_s_manip_ab314976728bf3e96ea881ba137d3ff37}\label{class_q_t_s_manip_ab314976728bf3e96ea881ba137d3ff37}} 
+\index{QTSManip@{QTSManip}!exec@{exec}}
+\index{exec@{exec}!QTSManip@{QTSManip}}
+\subsubsection{\texorpdfstring{exec()}{exec()}}
+{\footnotesize\ttfamily void Q\+T\+S\+Manip\+::exec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calls the member function specified in the constructor, for object {\itshape s}. Used internally in e.\+g. endl\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{s << \textcolor{stringliteral}{"some text"} << endl << \textcolor{stringliteral}{"more text"};}
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qtextstream.\+h\item 
+doxygen/qtools/qtextstream.\+cpp\end{DoxyCompactItemize}

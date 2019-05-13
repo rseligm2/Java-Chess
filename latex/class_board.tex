@@ -1,0 +1,98 @@
+\hypertarget{class_board}{}\section{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_board_ab5e792f71e2fbff747bf7b52859f2a98}{Board}} ()
+\item 
+boolean \mbox{\hyperlink{class_board_ad734e5041e051a8bd8a3e9d0547b9cf8}{move\+Piece}} (\mbox{\hyperlink{class_piece}{Piece}} movingpiece, int x, int y)
+\item 
+int \mbox{\hyperlink{class_board_a75f6d9258dc139f36c39075f3fe8491d}{is\+King\+Dead}} ()
+\item 
+int \mbox{\hyperlink{class_board_a137320ef896262f5d1f65e946b3395ca}{player\+Check}} ()
+\item 
+\mbox{\hyperlink{class_space}{Space}} \mbox{\hyperlink{class_board_a84de355cd8a8b969a6f931f77914c7d3}{get\+Space}} (int x, int y)
+\item 
+void \mbox{\hyperlink{class_board_ab44e7c91927bdfd4f07852c0cc48e1b8}{clear\+Board}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_board_a5e7ffdb70768a90d75e6417ae97507fb}\label{class_board_a5e7ffdb70768a90d75e6417ae97507fb}} 
+final int {\bfseries B\+O\+A\+R\+D\+S\+I\+ZE} = 8
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_board_ab5e792f71e2fbff747bf7b52859f2a98}\label{class_board_ab5e792f71e2fbff747bf7b52859f2a98}} 
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\subsubsection{\texorpdfstring{Board()}{Board()}}
+{\footnotesize\ttfamily Board.\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for \mbox{\hyperlink{class_board}{Board}} object Creates \mbox{\hyperlink{class_space}{Space}} objects for entire spaces array Puts pieces on spaces array 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_board_ab44e7c91927bdfd4f07852c0cc48e1b8}\label{class_board_ab44e7c91927bdfd4f07852c0cc48e1b8}} 
+\index{Board@{Board}!clearBoard@{clearBoard}}
+\index{clearBoard@{clearBoard}!Board@{Board}}
+\subsubsection{\texorpdfstring{clearBoard()}{clearBoard()}}
+{\footnotesize\ttfamily void Board.\+clear\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method used to clear entire board for testing purposes \mbox{\Hypertarget{class_board_a84de355cd8a8b969a6f931f77914c7d3}\label{class_board_a84de355cd8a8b969a6f931f77914c7d3}} 
+\index{Board@{Board}!getSpace@{getSpace}}
+\index{getSpace@{getSpace}!Board@{Board}}
+\subsubsection{\texorpdfstring{getSpace()}{getSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_space}{Space}} Board.\+get\+Space (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get method for \mbox{\hyperlink{class_space}{Space}} object on board 
+\begin{DoxyParams}{Parameters}
+{\em x} & Coordinate of \mbox{\hyperlink{class_space}{Space}} on board \\
+\hline
+{\em y} & Coordinate of \mbox{\hyperlink{class_space}{Space}} on board \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_space}{Space}} object accessed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a75f6d9258dc139f36c39075f3fe8491d}\label{class_board_a75f6d9258dc139f36c39075f3fe8491d}} 
+\index{Board@{Board}!isKingDead@{isKingDead}}
+\index{isKingDead@{isKingDead}!Board@{Board}}
+\subsubsection{\texorpdfstring{isKingDead()}{isKingDead()}}
+{\footnotesize\ttfamily int Board.\+is\+King\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if white or black\textquotesingle{}s king is dead \begin{DoxyReturn}{Returns}
+0 if white king dead, 1 if black king dead, -\/1 if both alive 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_ad734e5041e051a8bd8a3e9d0547b9cf8}\label{class_board_ad734e5041e051a8bd8a3e9d0547b9cf8}} 
+\index{Board@{Board}!movePiece@{movePiece}}
+\index{movePiece@{movePiece}!Board@{Board}}
+\subsubsection{\texorpdfstring{movePiece()}{movePiece()}}
+{\footnotesize\ttfamily boolean Board.\+move\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_piece}{Piece}}}]{movingpiece,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method to move a piece from one part of the board to another Only able to move piece if take\+Space is successful 
+\begin{DoxyParams}{Parameters}
+{\em movingpiece} & \mbox{\hyperlink{class_piece}{Piece}} object being moved \\
+\hline
+{\em x} & Coordinate of destination \mbox{\hyperlink{class_space}{Space}} \\
+\hline
+{\em y} & Coordinate of destination \mbox{\hyperlink{class_space}{Space}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if piece moved, false if invalid 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a137320ef896262f5d1f65e946b3395ca}\label{class_board_a137320ef896262f5d1f65e946b3395ca}} 
+\index{Board@{Board}!playerCheck@{playerCheck}}
+\index{playerCheck@{playerCheck}!Board@{Board}}
+\subsubsection{\texorpdfstring{playerCheck()}{playerCheck()}}
+{\footnotesize\ttfamily int Board.\+player\+Check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method that goes through every move on board and checks if an enemy \mbox{\hyperlink{class_king}{King}} can be attacked \begin{DoxyReturn}{Returns}
+1 if black player check, 0 if white player check, -\/1 if neither 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Board.\+java\end{DoxyCompactItemize}

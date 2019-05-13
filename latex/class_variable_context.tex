@@ -1,0 +1,45 @@
+\hypertarget{class_variable_context}{}\section{Variable\+Context Class Reference}
+\label{class_variable_context}\index{VariableContext@{VariableContext}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_variable_context_1_1_scope}{Scope}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_variable_context_ae1d858d3ad4778e79ac69a021474edab}\label{class_variable_context_ae1d858d3ad4778e79ac69a021474edab}} 
+void {\bfseries push\+Scope} ()
+\item 
+\mbox{\Hypertarget{class_variable_context_a648ebfb9146a61b70dffe684aec77940}\label{class_variable_context_a648ebfb9146a61b70dffe684aec77940}} 
+void {\bfseries pop\+Scope} ()
+\item 
+\mbox{\Hypertarget{class_variable_context_a37579e37d7d730884861f71a1b9f0439}\label{class_variable_context_a37579e37d7d730884861f71a1b9f0439}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{class_variable_context_af762830da74924aa08900310e554e253}\label{class_variable_context_af762830da74924aa08900310e554e253}} 
+void {\bfseries clear\+Except\+Global} ()
+\item 
+\mbox{\Hypertarget{class_variable_context_a290a97ba9049c9c00c2a9fcef5f12083}\label{class_variable_context_a290a97ba9049c9c00c2a9fcef5f12083}} 
+void {\bfseries add\+Variable} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&type, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name)
+\item 
+\mbox{\Hypertarget{class_variable_context_ac6643c9a7fbfa30d341efe5c62c862fb}\label{class_variable_context_ac6643c9a7fbfa30d341efe5c62c862fb}} 
+\mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$ {\bfseries find\+Variable} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name)
+\item 
+\mbox{\Hypertarget{class_variable_context_a7b35e3003661658788c75b9b0281f23f}\label{class_variable_context_a7b35e3003661658788c75b9b0281f23f}} 
+int {\bfseries count} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_variable_context_aeca8de524f06142f5a49a0a8f87467b0}\label{class_variable_context_aeca8de524f06142f5a49a0a8f87467b0}} 
+static const \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$ {\bfseries dummy\+Context} = (\mbox{\hyperlink{class_class_def}{Class\+Def}}$\ast$)0x8
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a stack of variable to class mappings as found in the code. Each scope is enclosed in push\+Scope() and pop\+Scope() calls. Variables are added by calling add\+Variables() and one can search for variable using find\+Variable(). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/build/generated\+\_\+src/code.\+cpp\end{DoxyCompactItemize}

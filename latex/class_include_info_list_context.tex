@@ -1,0 +1,94 @@
+\hypertarget{class_include_info_list_context}{}\section{Include\+Info\+List\+Context Class Reference}
+\label{class_include_info_list_context}\index{IncludeInfoListContext@{IncludeInfoListContext}}
+Inheritance diagram for Include\+Info\+List\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_include_info_list_context}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_include_info_list_context_1_1_private}{Private}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_include_info_list_context_ac641c82aaf5644cfcfc1e1650f536096}{count}} () const
+\item 
+virtual \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_include_info_list_context_abdbdfb96f30dc9a64e42e01154fd30ff}{at}} (int index) const
+\item 
+virtual \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ \mbox{\hyperlink{class_include_info_list_context_a205c178e2b416a8fc6779eca9aaddf33}{create\+Iterator}} () const
+\item 
+virtual int \mbox{\hyperlink{class_include_info_list_context_ab45ef3751c5ce2e342a23d8a240cee07}{add\+Ref}} ()
+\item 
+virtual int \mbox{\hyperlink{class_include_info_list_context_a8791d673ef9ceb58785f1bf729d53ed1}{release}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_include_info_list_context_a79ba6505025ee45f00a897b816f145a3}\label{class_include_info_list_context_a79ba6505025ee45f00a897b816f145a3}} 
+static \mbox{\hyperlink{class_include_info_list_context}{Include\+Info\+List\+Context}} $\ast$ {\bfseries alloc} (const \mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{struct_include_info}{Include\+Info}} $>$ \&list, \mbox{\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\+Lang\+Ext}} lang)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_include_info_list_context_ab45ef3751c5ce2e342a23d8a240cee07}\label{class_include_info_list_context_ab45ef3751c5ce2e342a23d8a240cee07}} 
+\index{IncludeInfoListContext@{IncludeInfoListContext}!addRef@{addRef}}
+\index{addRef@{addRef}!IncludeInfoListContext@{IncludeInfoListContext}}
+\subsubsection{\texorpdfstring{addRef()}{addRef()}}
+{\footnotesize\ttfamily virtual int Include\+Info\+List\+Context\+::add\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Increase object\textquotesingle{}s reference count 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a4b4973e2e15396d10bc4e3085462ca2b}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_include_info_list_context_abdbdfb96f30dc9a64e42e01154fd30ff}\label{class_include_info_list_context_abdbdfb96f30dc9a64e42e01154fd30ff}} 
+\index{IncludeInfoListContext@{IncludeInfoListContext}!at@{at}}
+\index{at@{at}!IncludeInfoListContext@{IncludeInfoListContext}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_variant}{Template\+Variant}} Include\+Info\+List\+Context\+::at (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the element at index position {\itshape index}. 
+
+Implements \mbox{\hyperlink{class_template_list_intf_aa51e57e72eacf4e8ce1055ee30a0f7f8}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_include_info_list_context_ac641c82aaf5644cfcfc1e1650f536096}\label{class_include_info_list_context_ac641c82aaf5644cfcfc1e1650f536096}} 
+\index{IncludeInfoListContext@{IncludeInfoListContext}!count@{count}}
+\index{count@{count}!IncludeInfoListContext@{IncludeInfoListContext}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Include\+Info\+List\+Context\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the number of elements in the list 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a329e49e33484c2aa5106aac1bf4e5216}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_include_info_list_context_a205c178e2b416a8fc6779eca9aaddf33}\label{class_include_info_list_context_a205c178e2b416a8fc6779eca9aaddf33}} 
+\index{IncludeInfoListContext@{IncludeInfoListContext}!createIterator@{createIterator}}
+\index{createIterator@{createIterator}!IncludeInfoListContext@{IncludeInfoListContext}}
+\subsubsection{\texorpdfstring{createIterator()}{createIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ Include\+Info\+List\+Context\+::create\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a new iterator for this list. \begin{DoxyNote}{Note}
+the user should call delete on the returned pointer. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_template_list_intf_a56b82384db24c3e121076a1da046d378}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_include_info_list_context_a8791d673ef9ceb58785f1bf729d53ed1}\label{class_include_info_list_context_a8791d673ef9ceb58785f1bf729d53ed1}} 
+\index{IncludeInfoListContext@{IncludeInfoListContext}!release@{release}}
+\index{release@{release}!IncludeInfoListContext@{IncludeInfoListContext}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual int Include\+Info\+List\+Context\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Decreases object\textquotesingle{}s reference count, destroy object if 0 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a0c53169c740c09dac47efc62bbe39674}{Template\+List\+Intf}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/context.\+h\item 
+doxygen/src/context.\+cpp\end{DoxyCompactItemize}

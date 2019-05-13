@@ -1,0 +1,111 @@
+\hypertarget{struct_layout_nav_entry}{}\section{Layout\+Nav\+Entry Struct Reference}
+\label{struct_layout_nav_entry}\index{LayoutNavEntry@{LayoutNavEntry}}
+
+
+Base class for the layout of a navigation item at the top of the H\+T\+ML pages.  
+
+
+
+
+{\ttfamily \#include $<$layout.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_layout_nav_entry_aef36305dd829f7cde87ca203ae647c7c}\label{struct_layout_nav_entry_aef36305dd829f7cde87ca203ae647c7c}} 
+enum {\bfseries Kind} \{ \newline
+{\bfseries None} = -\/1, 
+{\bfseries Main\+Page}, 
+{\bfseries Pages}, 
+{\bfseries Modules}, 
+\newline
+{\bfseries Namespaces}, 
+{\bfseries Namespace\+List}, 
+{\bfseries Namespace\+Members}, 
+{\bfseries Classes}, 
+\newline
+{\bfseries Class\+List}, 
+{\bfseries Class\+Index}, 
+{\bfseries Class\+Hierarchy}, 
+{\bfseries Class\+Members}, 
+\newline
+{\bfseries Interfaces}, 
+{\bfseries Interface\+List}, 
+{\bfseries Interface\+Index}, 
+{\bfseries Interface\+Hierarchy}, 
+\newline
+{\bfseries Structs}, 
+{\bfseries Struct\+List}, 
+{\bfseries Struct\+Index}, 
+{\bfseries Exceptions}, 
+\newline
+{\bfseries Exception\+List}, 
+{\bfseries Exception\+Index}, 
+{\bfseries Exception\+Hierarchy}, 
+{\bfseries Files}, 
+\newline
+{\bfseries File\+List}, 
+{\bfseries File\+Globals}, 
+{\bfseries Examples}, 
+{\bfseries User}, 
+\newline
+{\bfseries User\+Group}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_layout_nav_entry_a03d5b37b6adad3a11d42164cd39fd58f}\label{struct_layout_nav_entry_a03d5b37b6adad3a11d42164cd39fd58f}} 
+{\bfseries Layout\+Nav\+Entry} (\mbox{\hyperlink{struct_layout_nav_entry}{Layout\+Nav\+Entry}} $\ast$parent, Kind k, bool vs, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&bf, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&tl, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&intro, bool prepend=F\+A\+L\+SE)
+\item 
+\mbox{\Hypertarget{struct_layout_nav_entry_a2e3de33177e988b5f411c6660135baa0}\label{struct_layout_nav_entry_a2e3de33177e988b5f411c6660135baa0}} 
+\mbox{\hyperlink{struct_layout_nav_entry}{Layout\+Nav\+Entry}} $\ast$ {\bfseries parent} () const
+\item 
+\mbox{\Hypertarget{struct_layout_nav_entry_abc02648d40526f9a5675f78aac5f2773}\label{struct_layout_nav_entry_abc02648d40526f9a5675f78aac5f2773}} 
+Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{struct_layout_nav_entry_ab16c1e7918e22efc6c62837a0e37551d}\label{struct_layout_nav_entry_ab16c1e7918e22efc6c62837a0e37551d}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries base\+File} () const
+\item 
+\mbox{\Hypertarget{struct_layout_nav_entry_a006dfaa93d3dee670dd4ae22d28a1db7}\label{struct_layout_nav_entry_a006dfaa93d3dee670dd4ae22d28a1db7}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries title} () const
+\item 
+\mbox{\Hypertarget{struct_layout_nav_entry_aa298e94a9e75f9d394fd7a1121f89d84}\label{struct_layout_nav_entry_aa298e94a9e75f9d394fd7a1121f89d84}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries intro} () const
+\item 
+\mbox{\Hypertarget{struct_layout_nav_entry_a1c873f2a034fd33d3c1ddcfcd0c2ecf0}\label{struct_layout_nav_entry_a1c873f2a034fd33d3c1ddcfcd0c2ecf0}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries url} () const
+\item 
+\mbox{\Hypertarget{struct_layout_nav_entry_a14dabfdf60d47142677768a4b0735214}\label{struct_layout_nav_entry_a14dabfdf60d47142677768a4b0735214}} 
+bool {\bfseries visible} ()
+\item 
+\mbox{\Hypertarget{struct_layout_nav_entry_ac705591582b67407e51fbb366eab2c4d}\label{struct_layout_nav_entry_ac705591582b67407e51fbb366eab2c4d}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{struct_layout_nav_entry_a17dc5d09c4df07c0d49275ed2d95e789}\label{struct_layout_nav_entry_a17dc5d09c4df07c0d49275ed2d95e789}} 
+void {\bfseries add\+Child} (\mbox{\hyperlink{struct_layout_nav_entry}{Layout\+Nav\+Entry}} $\ast$e)
+\item 
+\mbox{\Hypertarget{struct_layout_nav_entry_a39a0c214375c9766d91d79ef80365ab6}\label{struct_layout_nav_entry_a39a0c214375c9766d91d79ef80365ab6}} 
+void {\bfseries prepend\+Child} (\mbox{\hyperlink{struct_layout_nav_entry}{Layout\+Nav\+Entry}} $\ast$e)
+\item 
+\mbox{\Hypertarget{struct_layout_nav_entry_a7a89a17fe61ef8b1269d5bfccea38868}\label{struct_layout_nav_entry_a7a89a17fe61ef8b1269d5bfccea38868}} 
+const \mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{struct_layout_nav_entry}{Layout\+Nav\+Entry}} $>$ \& {\bfseries children} () const
+\item 
+\mbox{\Hypertarget{struct_layout_nav_entry_ae2f5ea2dca923decb8500f78760b34f3}\label{struct_layout_nav_entry_ae2f5ea2dca923decb8500f78760b34f3}} 
+\mbox{\hyperlink{struct_layout_nav_entry}{Layout\+Nav\+Entry}} $\ast$ {\bfseries find} (Layout\+Nav\+Entry\+::\+Kind k, const char $\ast$file=0) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_layout_nav_entry_af6431c54f9737e0168be5926d2d9b5e9}\label{struct_layout_nav_entry_af6431c54f9737e0168be5926d2d9b5e9}} 
+class {\bfseries Layout\+Doc\+Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for the layout of a navigation item at the top of the H\+T\+ML pages. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/layout.\+h\item 
+doxygen/src/layout.\+cpp\end{DoxyCompactItemize}

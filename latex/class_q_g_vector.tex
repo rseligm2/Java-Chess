@@ -1,0 +1,208 @@
+\hypertarget{class_q_g_vector}{}\section{Q\+G\+Vector Class Reference}
+\label{class_q_g_vector}\index{QGVector@{QGVector}}
+
+
+The \mbox{\hyperlink{class_q_g_vector}{Q\+G\+Vector}} class is an internal class for implementing Qt collection classes.  
+
+
+
+
+{\ttfamily \#include $<$qgvector.\+h$>$}
+
+Inheritance diagram for Q\+G\+Vector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_q_g_vector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a9023b4232fc0b7bd6e8e14f5af5090d8}\label{class_q_g_vector_a9023b4232fc0b7bd6e8e14f5af5090d8}} 
+\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& {\bfseries read} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&)
+\item 
+\mbox{\Hypertarget{class_q_g_vector_af81f0f1719b2ef4215cd6014d72c7f44}\label{class_q_g_vector_af81f0f1719b2ef4215cd6014d72c7f44}} 
+\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& {\bfseries write} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&) const
+\item 
+virtual int \mbox{\hyperlink{class_q_g_vector_a65a79a6de037a4033ead55891622f5e2}{compare\+Items}} (Item, Item)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a13dcf494445ce742cb6e71fe5cf1b747}\label{class_q_g_vector_a13dcf494445ce742cb6e71fe5cf1b747}} 
+{\bfseries Q\+G\+Vector} (uint size)
+\item 
+\mbox{\Hypertarget{class_q_g_vector_aabb624cce7dbdbcc63335f25e089228a}\label{class_q_g_vector_aabb624cce7dbdbcc63335f25e089228a}} 
+{\bfseries Q\+G\+Vector} (const \mbox{\hyperlink{class_q_g_vector}{Q\+G\+Vector}} \&v)
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a460c0560413d93cf0e51f0a01b64b5ef}\label{class_q_g_vector_a460c0560413d93cf0e51f0a01b64b5ef}} 
+\mbox{\hyperlink{class_q_g_vector}{Q\+G\+Vector}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_q_g_vector}{Q\+G\+Vector}} \&v)
+\item 
+\mbox{\Hypertarget{class_q_g_vector_ab74c24a97f56844d61408fd90ddd9314}\label{class_q_g_vector_ab74c24a97f56844d61408fd90ddd9314}} 
+Item $\ast$ {\bfseries data} () const
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a1c004fbe24a98b7656e3913a17ae6ed7}\label{class_q_g_vector_a1c004fbe24a98b7656e3913a17ae6ed7}} 
+uint {\bfseries size} () const
+\item 
+uint \mbox{\hyperlink{class_q_g_vector_a24cdcea0593a3c9334d130e66c8e2043}{count}} () const
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a1c047eefbab23bd18ac724d7bf31f7eb}\label{class_q_g_vector_a1c047eefbab23bd18ac724d7bf31f7eb}} 
+bool {\bfseries insert} (uint index, Item)
+\item 
+\mbox{\Hypertarget{class_q_g_vector_ac2192d68c03bbf2b79100fb260bf2e94}\label{class_q_g_vector_ac2192d68c03bbf2b79100fb260bf2e94}} 
+bool {\bfseries remove} (uint index)
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a3b47c58132f741705a4c1b86dccbbef5}\label{class_q_g_vector_a3b47c58132f741705a4c1b86dccbbef5}} 
+Item {\bfseries take} (uint index)
+\item 
+void \mbox{\hyperlink{class_q_g_vector_aefe0a7fe991a79788cc3317eb3e5daa1}{clear}} ()
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a101a62984a6e013ef2b1f210cb848dca}\label{class_q_g_vector_a101a62984a6e013ef2b1f210cb848dca}} 
+bool {\bfseries resize} (uint newsize)
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a00faa8dfe03f9148b87086def2c75f5d}\label{class_q_g_vector_a00faa8dfe03f9148b87086def2c75f5d}} 
+bool {\bfseries fill} (Item, int flen)
+\item 
+\mbox{\Hypertarget{class_q_g_vector_ab43b21e4cb61c798ea3fbfbd11cab659}\label{class_q_g_vector_ab43b21e4cb61c798ea3fbfbd11cab659}} 
+void {\bfseries sort} ()
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a402afaa88784fb5b03ffd0b50af6799e}\label{class_q_g_vector_a402afaa88784fb5b03ffd0b50af6799e}} 
+int {\bfseries bsearch} (Item) const
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a5880d2fd6502616bee706e035c5f7395}\label{class_q_g_vector_a5880d2fd6502616bee706e035c5f7395}} 
+int {\bfseries find\+Ref} (Item, uint index) const
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a0115ca3b2cd76905e5d5896ae037f164}\label{class_q_g_vector_a0115ca3b2cd76905e5d5896ae037f164}} 
+int {\bfseries find} (Item, uint index) const
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a41c23424203379d69bb1a88ee864e4c2}\label{class_q_g_vector_a41c23424203379d69bb1a88ee864e4c2}} 
+uint {\bfseries contains\+Ref} (Item) const
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a763d499783b36d6951f47fb185164b22}\label{class_q_g_vector_a763d499783b36d6951f47fb185164b22}} 
+uint {\bfseries contains} (Item) const
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a939a986752dff4e679961354e2d798fe}\label{class_q_g_vector_a939a986752dff4e679961354e2d798fe}} 
+Item {\bfseries at} (uint index) const
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a241de736b4e5073454342d9dbf060fdb}\label{class_q_g_vector_a241de736b4e5073454342d9dbf060fdb}} 
+bool {\bfseries insert\+Expand} (uint index, Item)
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a3dd5cc73b1f0756d0c28791632b23590}\label{class_q_g_vector_a3dd5cc73b1f0756d0c28791632b23590}} 
+void {\bfseries to\+List} (\mbox{\hyperlink{class_q_g_list}{Q\+G\+List}} $\ast$) const
+\item 
+virtual \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& \mbox{\hyperlink{class_q_g_vector_a6ffba6b62053655e2d5aec0138a2e128}{read}} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&, Item \&)
+\item 
+virtual \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& \mbox{\hyperlink{class_q_g_vector_a0cdc8ad2beacd1077fd68f03ed8492e8}{write}} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&, Item) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_g_vector_a9bfde3c3259271cb86b87bd78b399dd5}\label{class_q_g_vector_a9bfde3c3259271cb86b87bd78b399dd5}} 
+class {\bfseries Q\+G\+List}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_q_g_vector}{Q\+G\+Vector}} class is an internal class for implementing Qt collection classes. 
+
+\mbox{\hyperlink{class_q_g_vector}{Q\+G\+Vector}} is a strictly internal class that acts as a base class for the \mbox{\hyperlink{class_q_vector}{Q\+Vector}} collection class.
+
+\mbox{\hyperlink{class_q_g_vector}{Q\+G\+Vector}} has some virtual functions that may be reimplemented in subclasses to customize behavior.
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_q_g_vector_a65a79a6de037a4033ead55891622f5e2}{compare\+Items()}} compares two collection/vector items. 
+\item \mbox{\hyperlink{structcmd_8h_a9c7b76d5266903891c803132d51ccb90}{read()}} reads a collection/vector item from a \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}}. 
+\item \mbox{\hyperlink{structcmd_8h_af2a3ea719b83f672637febdd87c36c36}{write()}} writes a collection/vector item to a \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}}. 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_g_vector_aefe0a7fe991a79788cc3317eb3e5daa1}\label{class_q_g_vector_aefe0a7fe991a79788cc3317eb3e5daa1}} 
+\index{QGVector@{QGVector}!clear@{clear}}
+\index{clear@{clear}!QGVector@{QGVector}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Q\+G\+Vector\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Removes all objects from the collection. The objects will be deleted if auto-\/delete has been enabled. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_collection_a6ed41913c76bfba54be6da26015ee3f3}{set\+Auto\+Delete()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_collection_a92416cc22907550389aad04c26be2f77}{Q\+Collection}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_q_vector_a1d9f67e27cf360cfec05312fd014da7a}{Q\+Vector$<$ type $>$}}, and \mbox{\hyperlink{class_q_vector_a1d9f67e27cf360cfec05312fd014da7a}{Q\+Vector$<$ Q\+List$<$ Index\+Word $>$ $>$}}.
+
+\mbox{\Hypertarget{class_q_g_vector_a65a79a6de037a4033ead55891622f5e2}\label{class_q_g_vector_a65a79a6de037a4033ead55891622f5e2}} 
+\index{QGVector@{QGVector}!compareItems@{compareItems}}
+\index{compareItems@{compareItems}!QGVector@{QGVector}}
+\subsubsection{\texorpdfstring{compareItems()}{compareItems()}}
+{\footnotesize\ttfamily int Q\+G\+Vector\+::compare\+Items (\begin{DoxyParamCaption}\item[{Item}]{d1,  }\item[{Item}]{d2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This virtual function compares two list items.
+
+Returns\+: 
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item non-\/zero if {\itshape item1} != {\itshape item2} 
+\end{DoxyItemize}
+
+This function returns {\itshape int} rather than {\itshape bool} so that reimplementations can return one of three values and use it to sort by\+:
+
+
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item $>$ 0 (positive integer) if {\itshape item1} $>$ {\itshape item2} 
+\item $<$ 0 (negative integer) if {\itshape item1} $<$ {\itshape item2} 
+\end{DoxyItemize}
+
+The Q\+Vector\+::sort() and Q\+Vector\+::bsearch() functions require that \mbox{\hyperlink{class_q_g_vector_a65a79a6de037a4033ead55891622f5e2}{compare\+Items()}} is implemented as described here.
+
+This function should not modify the vector because some const functions call \mbox{\hyperlink{class_q_g_vector_a65a79a6de037a4033ead55891622f5e2}{compare\+Items()}}. \mbox{\Hypertarget{class_q_g_vector_a24cdcea0593a3c9334d130e66c8e2043}\label{class_q_g_vector_a24cdcea0593a3c9334d130e66c8e2043}} 
+\index{QGVector@{QGVector}!count@{count}}
+\index{count@{count}!QGVector@{QGVector}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily uint Q\+G\+Vector\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Returns the number of objects in the collection. 
+
+Implements \mbox{\hyperlink{class_q_collection_a6441adbfb3ffb6f55ed834c0c0bcc6cb}{Q\+Collection}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_q_vector_a7fa63591f2256a78f5ba439cc858b09d}{Q\+Vector$<$ type $>$}}, and \mbox{\hyperlink{class_q_vector_a7fa63591f2256a78f5ba439cc858b09d}{Q\+Vector$<$ Q\+List$<$ Index\+Word $>$ $>$}}.
+
+\mbox{\Hypertarget{class_q_g_vector_a6ffba6b62053655e2d5aec0138a2e128}\label{class_q_g_vector_a6ffba6b62053655e2d5aec0138a2e128}} 
+\index{QGVector@{QGVector}!read@{read}}
+\index{read@{read}!QGVector@{QGVector}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& Q\+G\+Vector\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&}]{s,  }\item[{Item \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Reads a collection/vector item from the stream {\itshape s} and returns a reference to the stream.
+
+The default implementation sets {\itshape item} to 0.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structcmd_8h_af2a3ea719b83f672637febdd87c36c36}{write()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_g_vector_a0cdc8ad2beacd1077fd68f03ed8492e8}\label{class_q_g_vector_a0cdc8ad2beacd1077fd68f03ed8492e8}} 
+\index{QGVector@{QGVector}!write@{write}}
+\index{write@{write}!QGVector@{QGVector}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& Q\+G\+Vector\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&}]{s,  }\item[{Item}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Writes a collection/vector item to the stream {\itshape s} and returns a reference to the stream.
+
+The default implementation does nothing.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structcmd_8h_a9c7b76d5266903891c803132d51ccb90}{read()}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qgvector.\+h\item 
+doxygen/qtools/qgvector.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,440 @@
+\hypertarget{class_doc_symbol}{}\section{Doc\+Symbol Class Reference}
+\label{class_doc_symbol}\index{DocSymbol@{DocSymbol}}
+
+
+{\ttfamily \#include $<$docparser.\+h$>$}
+
+Inheritance diagram for Doc\+Symbol\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_doc_symbol}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_doc_symbol_1_1_perl_symb}{Perl\+Symb}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_symbol_abea9ba345564542cc6b65ae4c76be6c2}\label{class_doc_symbol_abea9ba345564542cc6b65ae4c76be6c2}} 
+enum {\bfseries Sym\+Type} \{ \newline
+{\bfseries Sym\+\_\+\+Unknown} = -\/1, 
+{\bfseries Sym\+\_\+nbsp}, 
+{\bfseries Sym\+\_\+iexcl}, 
+{\bfseries Sym\+\_\+cent}, 
+\newline
+{\bfseries Sym\+\_\+pound}, 
+{\bfseries Sym\+\_\+curren}, 
+{\bfseries Sym\+\_\+yen}, 
+{\bfseries Sym\+\_\+brvbar}, 
+\newline
+{\bfseries Sym\+\_\+sect}, 
+{\bfseries Sym\+\_\+uml}, 
+{\bfseries Sym\+\_\+copy}, 
+{\bfseries Sym\+\_\+ordf}, 
+\newline
+{\bfseries Sym\+\_\+laquo}, 
+{\bfseries Sym\+\_\+not}, 
+{\bfseries Sym\+\_\+shy}, 
+{\bfseries Sym\+\_\+reg}, 
+\newline
+{\bfseries Sym\+\_\+macr}, 
+{\bfseries Sym\+\_\+deg}, 
+{\bfseries Sym\+\_\+plusmn}, 
+{\bfseries Sym\+\_\+sup2}, 
+\newline
+{\bfseries Sym\+\_\+sup3}, 
+{\bfseries Sym\+\_\+acute}, 
+{\bfseries Sym\+\_\+micro}, 
+{\bfseries Sym\+\_\+para}, 
+\newline
+{\bfseries Sym\+\_\+middot}, 
+{\bfseries Sym\+\_\+cedil}, 
+{\bfseries Sym\+\_\+sup1}, 
+{\bfseries Sym\+\_\+ordm}, 
+\newline
+{\bfseries Sym\+\_\+raquo}, 
+{\bfseries Sym\+\_\+frac14}, 
+{\bfseries Sym\+\_\+frac12}, 
+{\bfseries Sym\+\_\+frac34}, 
+\newline
+{\bfseries Sym\+\_\+iquest}, 
+{\bfseries Sym\+\_\+\+Agrave}, 
+{\bfseries Sym\+\_\+\+Aacute}, 
+{\bfseries Sym\+\_\+\+Acirc}, 
+\newline
+{\bfseries Sym\+\_\+\+Atilde}, 
+{\bfseries Sym\+\_\+\+Auml}, 
+{\bfseries Sym\+\_\+\+Aring}, 
+{\bfseries Sym\+\_\+\+A\+Elig}, 
+\newline
+{\bfseries Sym\+\_\+\+Ccedil}, 
+{\bfseries Sym\+\_\+\+Egrave}, 
+{\bfseries Sym\+\_\+\+Eacute}, 
+{\bfseries Sym\+\_\+\+Ecirc}, 
+\newline
+{\bfseries Sym\+\_\+\+Euml}, 
+{\bfseries Sym\+\_\+\+Igrave}, 
+{\bfseries Sym\+\_\+\+Iacute}, 
+{\bfseries Sym\+\_\+\+Icirc}, 
+\newline
+{\bfseries Sym\+\_\+\+Iuml}, 
+{\bfseries Sym\+\_\+\+E\+TH}, 
+{\bfseries Sym\+\_\+\+Ntilde}, 
+{\bfseries Sym\+\_\+\+Ograve}, 
+\newline
+{\bfseries Sym\+\_\+\+Oacute}, 
+{\bfseries Sym\+\_\+\+Ocirc}, 
+{\bfseries Sym\+\_\+\+Otilde}, 
+{\bfseries Sym\+\_\+\+Ouml}, 
+\newline
+{\bfseries Sym\+\_\+times}, 
+{\bfseries Sym\+\_\+\+Oslash}, 
+{\bfseries Sym\+\_\+\+Ugrave}, 
+{\bfseries Sym\+\_\+\+Uacute}, 
+\newline
+{\bfseries Sym\+\_\+\+Ucirc}, 
+{\bfseries Sym\+\_\+\+Uuml}, 
+{\bfseries Sym\+\_\+\+Yacute}, 
+{\bfseries Sym\+\_\+\+T\+H\+O\+RN}, 
+\newline
+{\bfseries Sym\+\_\+szlig}, 
+{\bfseries Sym\+\_\+agrave}, 
+{\bfseries Sym\+\_\+aacute}, 
+{\bfseries Sym\+\_\+acirc}, 
+\newline
+{\bfseries Sym\+\_\+atilde}, 
+{\bfseries Sym\+\_\+auml}, 
+{\bfseries Sym\+\_\+aring}, 
+{\bfseries Sym\+\_\+aelig}, 
+\newline
+{\bfseries Sym\+\_\+ccedil}, 
+{\bfseries Sym\+\_\+egrave}, 
+{\bfseries Sym\+\_\+eacute}, 
+{\bfseries Sym\+\_\+ecirc}, 
+\newline
+{\bfseries Sym\+\_\+euml}, 
+{\bfseries Sym\+\_\+igrave}, 
+{\bfseries Sym\+\_\+iacute}, 
+{\bfseries Sym\+\_\+icirc}, 
+\newline
+{\bfseries Sym\+\_\+iuml}, 
+{\bfseries Sym\+\_\+eth}, 
+{\bfseries Sym\+\_\+ntilde}, 
+{\bfseries Sym\+\_\+ograve}, 
+\newline
+{\bfseries Sym\+\_\+oacute}, 
+{\bfseries Sym\+\_\+ocirc}, 
+{\bfseries Sym\+\_\+otilde}, 
+{\bfseries Sym\+\_\+ouml}, 
+\newline
+{\bfseries Sym\+\_\+divide}, 
+{\bfseries Sym\+\_\+oslash}, 
+{\bfseries Sym\+\_\+ugrave}, 
+{\bfseries Sym\+\_\+uacute}, 
+\newline
+{\bfseries Sym\+\_\+ucirc}, 
+{\bfseries Sym\+\_\+uuml}, 
+{\bfseries Sym\+\_\+yacute}, 
+{\bfseries Sym\+\_\+thorn}, 
+\newline
+{\bfseries Sym\+\_\+yuml}, 
+{\bfseries Sym\+\_\+fnof}, 
+{\bfseries Sym\+\_\+\+Alpha}, 
+{\bfseries Sym\+\_\+\+Beta}, 
+\newline
+{\bfseries Sym\+\_\+\+Gamma}, 
+{\bfseries Sym\+\_\+\+Delta}, 
+{\bfseries Sym\+\_\+\+Epsilon}, 
+{\bfseries Sym\+\_\+\+Zeta}, 
+\newline
+{\bfseries Sym\+\_\+\+Eta}, 
+{\bfseries Sym\+\_\+\+Theta}, 
+{\bfseries Sym\+\_\+\+Iota}, 
+{\bfseries Sym\+\_\+\+Kappa}, 
+\newline
+{\bfseries Sym\+\_\+\+Lambda}, 
+{\bfseries Sym\+\_\+\+Mu}, 
+{\bfseries Sym\+\_\+\+Nu}, 
+{\bfseries Sym\+\_\+\+Xi}, 
+\newline
+{\bfseries Sym\+\_\+\+Omicron}, 
+{\bfseries Sym\+\_\+\+Pi}, 
+{\bfseries Sym\+\_\+\+Rho}, 
+{\bfseries Sym\+\_\+\+Sigma}, 
+\newline
+{\bfseries Sym\+\_\+\+Tau}, 
+{\bfseries Sym\+\_\+\+Upsilon}, 
+{\bfseries Sym\+\_\+\+Phi}, 
+{\bfseries Sym\+\_\+\+Chi}, 
+\newline
+{\bfseries Sym\+\_\+\+Psi}, 
+{\bfseries Sym\+\_\+\+Omega}, 
+{\bfseries Sym\+\_\+alpha}, 
+{\bfseries Sym\+\_\+beta}, 
+\newline
+{\bfseries Sym\+\_\+gamma}, 
+{\bfseries Sym\+\_\+delta}, 
+{\bfseries Sym\+\_\+epsilon}, 
+{\bfseries Sym\+\_\+zeta}, 
+\newline
+{\bfseries Sym\+\_\+eta}, 
+{\bfseries Sym\+\_\+theta}, 
+{\bfseries Sym\+\_\+iota}, 
+{\bfseries Sym\+\_\+kappa}, 
+\newline
+{\bfseries Sym\+\_\+lambda}, 
+{\bfseries Sym\+\_\+mu}, 
+{\bfseries Sym\+\_\+nu}, 
+{\bfseries Sym\+\_\+xi}, 
+\newline
+{\bfseries Sym\+\_\+omicron}, 
+{\bfseries Sym\+\_\+pi}, 
+{\bfseries Sym\+\_\+rho}, 
+{\bfseries Sym\+\_\+sigmaf}, 
+\newline
+{\bfseries Sym\+\_\+sigma}, 
+{\bfseries Sym\+\_\+tau}, 
+{\bfseries Sym\+\_\+upsilon}, 
+{\bfseries Sym\+\_\+phi}, 
+\newline
+{\bfseries Sym\+\_\+chi}, 
+{\bfseries Sym\+\_\+psi}, 
+{\bfseries Sym\+\_\+omega}, 
+{\bfseries Sym\+\_\+thetasym}, 
+\newline
+{\bfseries Sym\+\_\+upsih}, 
+{\bfseries Sym\+\_\+piv}, 
+{\bfseries Sym\+\_\+bull}, 
+{\bfseries Sym\+\_\+hellip}, 
+\newline
+{\bfseries Sym\+\_\+prime}, 
+{\bfseries Sym\+\_\+\+Prime}, 
+{\bfseries Sym\+\_\+oline}, 
+{\bfseries Sym\+\_\+frasl}, 
+\newline
+{\bfseries Sym\+\_\+weierp}, 
+{\bfseries Sym\+\_\+image}, 
+{\bfseries Sym\+\_\+real}, 
+{\bfseries Sym\+\_\+trade}, 
+\newline
+{\bfseries Sym\+\_\+alefsym}, 
+{\bfseries Sym\+\_\+larr}, 
+{\bfseries Sym\+\_\+uarr}, 
+{\bfseries Sym\+\_\+rarr}, 
+\newline
+{\bfseries Sym\+\_\+darr}, 
+{\bfseries Sym\+\_\+harr}, 
+{\bfseries Sym\+\_\+crarr}, 
+{\bfseries Sym\+\_\+l\+Arr}, 
+\newline
+{\bfseries Sym\+\_\+u\+Arr}, 
+{\bfseries Sym\+\_\+r\+Arr}, 
+{\bfseries Sym\+\_\+d\+Arr}, 
+{\bfseries Sym\+\_\+h\+Arr}, 
+\newline
+{\bfseries Sym\+\_\+forall}, 
+{\bfseries Sym\+\_\+part}, 
+{\bfseries Sym\+\_\+exist}, 
+{\bfseries Sym\+\_\+empty}, 
+\newline
+{\bfseries Sym\+\_\+nabla}, 
+{\bfseries Sym\+\_\+isin}, 
+{\bfseries Sym\+\_\+notin}, 
+{\bfseries Sym\+\_\+ni}, 
+\newline
+{\bfseries Sym\+\_\+prod}, 
+{\bfseries Sym\+\_\+sum}, 
+{\bfseries Sym\+\_\+minus}, 
+{\bfseries Sym\+\_\+lowast}, 
+\newline
+{\bfseries Sym\+\_\+radic}, 
+{\bfseries Sym\+\_\+prop}, 
+{\bfseries Sym\+\_\+infin}, 
+{\bfseries Sym\+\_\+ang}, 
+\newline
+{\bfseries Sym\+\_\+and}, 
+{\bfseries Sym\+\_\+or}, 
+{\bfseries Sym\+\_\+cap}, 
+{\bfseries Sym\+\_\+cup}, 
+\newline
+{\bfseries Sym\+\_\+int}, 
+{\bfseries Sym\+\_\+there4}, 
+{\bfseries Sym\+\_\+sim}, 
+{\bfseries Sym\+\_\+cong}, 
+\newline
+{\bfseries Sym\+\_\+asymp}, 
+{\bfseries Sym\+\_\+ne}, 
+{\bfseries Sym\+\_\+equiv}, 
+{\bfseries Sym\+\_\+le}, 
+\newline
+{\bfseries Sym\+\_\+ge}, 
+{\bfseries Sym\+\_\+sub}, 
+{\bfseries Sym\+\_\+sup}, 
+{\bfseries Sym\+\_\+nsub}, 
+\newline
+{\bfseries Sym\+\_\+sube}, 
+{\bfseries Sym\+\_\+supe}, 
+{\bfseries Sym\+\_\+oplus}, 
+{\bfseries Sym\+\_\+otimes}, 
+\newline
+{\bfseries Sym\+\_\+perp}, 
+{\bfseries Sym\+\_\+sdot}, 
+{\bfseries Sym\+\_\+lceil}, 
+{\bfseries Sym\+\_\+rceil}, 
+\newline
+{\bfseries Sym\+\_\+lfloor}, 
+{\bfseries Sym\+\_\+rfloor}, 
+{\bfseries Sym\+\_\+lang}, 
+{\bfseries Sym\+\_\+rang}, 
+\newline
+{\bfseries Sym\+\_\+loz}, 
+{\bfseries Sym\+\_\+spades}, 
+{\bfseries Sym\+\_\+clubs}, 
+{\bfseries Sym\+\_\+hearts}, 
+\newline
+{\bfseries Sym\+\_\+diams}, 
+{\bfseries Sym\+\_\+quot}, 
+{\bfseries Sym\+\_\+amp}, 
+{\bfseries Sym\+\_\+lt}, 
+\newline
+{\bfseries Sym\+\_\+gt}, 
+{\bfseries Sym\+\_\+\+O\+Elig}, 
+{\bfseries Sym\+\_\+oelig}, 
+{\bfseries Sym\+\_\+\+Scaron}, 
+\newline
+{\bfseries Sym\+\_\+scaron}, 
+{\bfseries Sym\+\_\+\+Yuml}, 
+{\bfseries Sym\+\_\+circ}, 
+{\bfseries Sym\+\_\+tilde}, 
+\newline
+{\bfseries Sym\+\_\+ensp}, 
+{\bfseries Sym\+\_\+emsp}, 
+{\bfseries Sym\+\_\+thinsp}, 
+{\bfseries Sym\+\_\+zwnj}, 
+\newline
+{\bfseries Sym\+\_\+zwj}, 
+{\bfseries Sym\+\_\+lrm}, 
+{\bfseries Sym\+\_\+rlm}, 
+{\bfseries Sym\+\_\+ndash}, 
+\newline
+{\bfseries Sym\+\_\+mdash}, 
+{\bfseries Sym\+\_\+lsquo}, 
+{\bfseries Sym\+\_\+rsquo}, 
+{\bfseries Sym\+\_\+sbquo}, 
+\newline
+{\bfseries Sym\+\_\+ldquo}, 
+{\bfseries Sym\+\_\+rdquo}, 
+{\bfseries Sym\+\_\+bdquo}, 
+{\bfseries Sym\+\_\+dagger}, 
+\newline
+{\bfseries Sym\+\_\+\+Dagger}, 
+{\bfseries Sym\+\_\+permil}, 
+{\bfseries Sym\+\_\+lsaquo}, 
+{\bfseries Sym\+\_\+rsaquo}, 
+\newline
+{\bfseries Sym\+\_\+euro}, 
+{\bfseries Sym\+\_\+tm}, 
+{\bfseries Sym\+\_\+apos}, 
+{\bfseries Sym\+\_\+\+B\+Slash}, 
+\newline
+{\bfseries Sym\+\_\+\+At}, 
+{\bfseries Sym\+\_\+\+Less}, 
+{\bfseries Sym\+\_\+\+Greater}, 
+{\bfseries Sym\+\_\+\+Amp}, 
+\newline
+{\bfseries Sym\+\_\+\+Dollar}, 
+{\bfseries Sym\+\_\+\+Hash}, 
+{\bfseries Sym\+\_\+\+Double\+Colon}, 
+{\bfseries Sym\+\_\+\+Percent}, 
+\newline
+{\bfseries Sym\+\_\+\+Pipe}, 
+{\bfseries Sym\+\_\+\+Quot}, 
+{\bfseries Sym\+\_\+\+Minus}, 
+{\bfseries Sym\+\_\+\+Plus}, 
+\newline
+{\bfseries Sym\+\_\+\+Dot}, 
+{\bfseries Sym\+\_\+\+Colon}, 
+{\bfseries Sym\+\_\+\+Equal}
+ \}
+\item 
+\mbox{\Hypertarget{class_doc_symbol_a513eebcda007c5999064ab5de1d1e847}\label{class_doc_symbol_a513eebcda007c5999064ab5de1d1e847}} 
+enum {\bfseries Perl\+Type} \{ \newline
+{\bfseries Perl\+\_\+unknown} = 0, 
+{\bfseries Perl\+\_\+string}, 
+{\bfseries Perl\+\_\+char}, 
+{\bfseries Perl\+\_\+symbol}, 
+\newline
+{\bfseries Perl\+\_\+umlaut}, 
+{\bfseries Perl\+\_\+acute}, 
+{\bfseries Perl\+\_\+grave}, 
+{\bfseries Perl\+\_\+circ}, 
+\newline
+{\bfseries Perl\+\_\+slash}, 
+{\bfseries Perl\+\_\+tilde}, 
+{\bfseries Perl\+\_\+cedilla}, 
+{\bfseries Perl\+\_\+ring}
+ \}
+\item 
+\mbox{\Hypertarget{class_doc_symbol_af5533835fd3653c5f05411a0d9930d4c}\label{class_doc_symbol_af5533835fd3653c5f05411a0d9930d4c}} 
+typedef struct \mbox{\hyperlink{struct_doc_symbol_1_1_perl_symb}{Doc\+Symbol\+::\+Perl\+Symb}} {\bfseries Perl\+Symb}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_symbol_abb5e5a543fcc160981cd239248f5de40}\label{class_doc_symbol_abb5e5a543fcc160981cd239248f5de40}} 
+{\bfseries Doc\+Symbol} (\mbox{\hyperlink{class_doc_node}{Doc\+Node}} $\ast$\mbox{\hyperlink{class_doc_node_a73e8ad29a91cfceb0968eb00db71a23d}{parent}}, Sym\+Type s)
+\item 
+\mbox{\Hypertarget{class_doc_symbol_ab1515ee01e367634026acfc75dcab5ac}\label{class_doc_symbol_ab1515ee01e367634026acfc75dcab5ac}} 
+Sym\+Type {\bfseries symbol} () const
+\item 
+\mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} \mbox{\hyperlink{class_doc_symbol_a721838cea5944bbdc1b8dfddc0242062}{kind}} () const
+\item 
+void \mbox{\hyperlink{class_doc_symbol_ab7e27f7abdd4004918f6b39c09a05fd8}{accept}} (\mbox{\hyperlink{class_doc_visitor}{Doc\+Visitor}} $\ast$v)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_symbol_ae9924eba60c6ee0590b1fa8be11a7b0e}\label{class_doc_symbol_ae9924eba60c6ee0590b1fa8be11a7b0e}} 
+static Sym\+Type {\bfseries decode\+Symbol} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&sym\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Node representing a special symbol 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_doc_symbol_ab7e27f7abdd4004918f6b39c09a05fd8}\label{class_doc_symbol_ab7e27f7abdd4004918f6b39c09a05fd8}} 
+\index{DocSymbol@{DocSymbol}!accept@{accept}}
+\index{accept@{accept}!DocSymbol@{DocSymbol}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily void Doc\+Symbol\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_doc_visitor}{Doc\+Visitor}} $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Acceptor function for node visitors. Part of the visitor pattern. 
+\begin{DoxyParams}{Parameters}
+{\em v} & Abstract visitor. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_doc_node_a5303a550cbe6395663bf9b9dad28cbf1}{Doc\+Node}}.
+
+\mbox{\Hypertarget{class_doc_symbol_a721838cea5944bbdc1b8dfddc0242062}\label{class_doc_symbol_a721838cea5944bbdc1b8dfddc0242062}} 
+\index{DocSymbol@{DocSymbol}!kind@{kind}}
+\index{kind@{kind}!DocSymbol@{DocSymbol}}
+\subsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} Doc\+Symbol\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the kind of node. Provides runtime type information 
+
+Implements \mbox{\hyperlink{class_doc_node_a108ffd214a72ba6e93dac084a8f58049}{Doc\+Node}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/docparser.\+h\item 
+doxygen/src/docparser.\+cpp\end{DoxyCompactItemize}

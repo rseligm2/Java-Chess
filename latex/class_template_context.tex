@@ -1,0 +1,158 @@
+\hypertarget{class_template_context}{}\section{Template\+Context Class Reference}
+\label{class_template_context}\index{TemplateContext@{TemplateContext}}
+
+
+Abstract interface for a template context.  
+
+
+
+
+{\ttfamily \#include $<$template.\+h$>$}
+
+Inheritance diagram for Template\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_template_context}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_template_context_aac3a3e3c8e604db05e74cba7b1ce8554}{push}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_template_context_a853868792ccd7f9c5fed55338d23d019}{pop}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_template_context_a99d037bab858efc4fa8602fae3a5af9c}{set}} (const char $\ast$name, const \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \&v)=0
+\item 
+virtual \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_template_context_a6d65a9047de8ec4363612e576031e781}{get}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name) const =0
+\item 
+virtual const \mbox{\hyperlink{class_template_variant}{Template\+Variant}} $\ast$ \mbox{\hyperlink{class_template_context_ac73a3e85149ff072aea9e3ab091c4ed1}{get\+Ref}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name) const =0
+\item 
+virtual void \mbox{\hyperlink{class_template_context_ab3aaaa03df934615ccfa3209420cd93d}{set\+Output\+Directory}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&dir)=0
+\item 
+virtual void \mbox{\hyperlink{class_template_context_afad803f8d522fb63ad4b91a2034b06a0}{set\+Escape\+Intf}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&extension, \mbox{\hyperlink{class_template_escape_intf}{Template\+Escape\+Intf}} $\ast$intf)=0
+\item 
+virtual void \mbox{\hyperlink{class_template_context_a11e64f588d21aeda2b57a4bc4e06ecc7}{set\+Spaceless\+Intf}} (\mbox{\hyperlink{class_template_spaceless_intf}{Template\+Spaceless\+Intf}} $\ast$intf)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract interface for a template context. 
+
+\mbox{\hyperlink{class_a}{A}} Context consists of a stack of dictionaries. \mbox{\hyperlink{class_a}{A}} dictionary consists of a mapping of string keys onto \mbox{\hyperlink{class_template_variant}{Template\+Variant}} values. \mbox{\hyperlink{class_a}{A}} key is searched starting with the dictionary at the top of the stack and searching downwards until it is found. The stack is used to create local scopes. \begin{DoxyNote}{Note}
+This object must be created by \mbox{\hyperlink{class_template_engine_a2c0d83df212c210406dc78f74fe3f2ad}{Template\+Engine\+::create\+Context()}} 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_template_context_a6d65a9047de8ec4363612e576031e781}\label{class_template_context_a6d65a9047de8ec4363612e576031e781}} 
+\index{TemplateContext@{TemplateContext}!get@{get}}
+\index{get@{get}!TemplateContext@{TemplateContext}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_template_variant}{Template\+Variant}} Template\+Context\+::get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the value for a given key 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & The name of key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value, which can be an invalid variant in case the key was not found. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_template_context_impl_a0609e62251b223bbd14851738fa10727}{Template\+Context\+Impl}}.
+
+\mbox{\Hypertarget{class_template_context_ac73a3e85149ff072aea9e3ab091c4ed1}\label{class_template_context_ac73a3e85149ff072aea9e3ab091c4ed1}} 
+\index{TemplateContext@{TemplateContext}!getRef@{getRef}}
+\index{getRef@{getRef}!TemplateContext@{TemplateContext}}
+\subsubsection{\texorpdfstring{getRef()}{getRef()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{class_template_variant}{Template\+Variant}}$\ast$ Template\+Context\+::get\+Ref (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a pointer to the value corresponding to a given key. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & The name of key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_a}{A}} pointer to the value, or 0 in case the key was not found. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_template_context_impl_aba8ebc4a96d6a1a52f0f16d00a658770}{Template\+Context\+Impl}}.
+
+\mbox{\Hypertarget{class_template_context_a853868792ccd7f9c5fed55338d23d019}\label{class_template_context_a853868792ccd7f9c5fed55338d23d019}} 
+\index{TemplateContext@{TemplateContext}!pop@{pop}}
+\index{pop@{pop}!TemplateContext@{TemplateContext}}
+\subsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily virtual void Template\+Context\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Pop the current scope from the stack. 
+
+Implemented in \mbox{\hyperlink{class_template_context_impl_af8856e3207a53fad3f700353d71b575e}{Template\+Context\+Impl}}.
+
+\mbox{\Hypertarget{class_template_context_aac3a3e3c8e604db05e74cba7b1ce8554}\label{class_template_context_aac3a3e3c8e604db05e74cba7b1ce8554}} 
+\index{TemplateContext@{TemplateContext}!push@{push}}
+\index{push@{push}!TemplateContext@{TemplateContext}}
+\subsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily virtual void Template\+Context\+::push (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Push a new scope on the stack. 
+
+Implemented in \mbox{\hyperlink{class_template_context_impl_a006f67f94724147908dda84dd8522d34}{Template\+Context\+Impl}}.
+
+\mbox{\Hypertarget{class_template_context_a99d037bab858efc4fa8602fae3a5af9c}\label{class_template_context_a99d037bab858efc4fa8602fae3a5af9c}} 
+\index{TemplateContext@{TemplateContext}!set@{set}}
+\index{set@{set}!TemplateContext@{TemplateContext}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily virtual void Template\+Context\+::set (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets a value in the current scope. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & The name of the value; the key in the dictionary. \\
+\hline
+\mbox{\texttt{ in}}  & {\em v} & The value associated with the key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+When a given key is already present, its value will be replaced by {\itshape v} 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_template_context_impl_a1ff06ac572e4d0456bca3feeac5f96f7}{Template\+Context\+Impl}}.
+
+\mbox{\Hypertarget{class_template_context_afad803f8d522fb63ad4b91a2034b06a0}\label{class_template_context_afad803f8d522fb63ad4b91a2034b06a0}} 
+\index{TemplateContext@{TemplateContext}!setEscapeIntf@{setEscapeIntf}}
+\index{setEscapeIntf@{setEscapeIntf}!TemplateContext@{TemplateContext}}
+\subsubsection{\texorpdfstring{setEscapeIntf()}{setEscapeIntf()}}
+{\footnotesize\ttfamily virtual void Template\+Context\+::set\+Escape\+Intf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{extension,  }\item[{\mbox{\hyperlink{class_template_escape_intf}{Template\+Escape\+Intf}} $\ast$}]{intf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the interface that will be used for escaping the result of variable expansion before writing it to the output. 
+
+Implemented in \mbox{\hyperlink{class_template_context_impl_a812fdb58baecd7830e42ef8508a005e8}{Template\+Context\+Impl}}.
+
+\mbox{\Hypertarget{class_template_context_ab3aaaa03df934615ccfa3209420cd93d}\label{class_template_context_ab3aaaa03df934615ccfa3209420cd93d}} 
+\index{TemplateContext@{TemplateContext}!setOutputDirectory@{setOutputDirectory}}
+\index{setOutputDirectory@{setOutputDirectory}!TemplateContext@{TemplateContext}}
+\subsubsection{\texorpdfstring{setOutputDirectory()}{setOutputDirectory()}}
+{\footnotesize\ttfamily virtual void Template\+Context\+::set\+Output\+Directory (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+When files are created (i.\+e. by \{\% create ... \%\}) they written to the directory {\itshape dir}. 
+
+Implemented in \mbox{\hyperlink{class_template_context_impl_a1178c98a679ecb3e02722b4e8f39c1e3}{Template\+Context\+Impl}}.
+
+\mbox{\Hypertarget{class_template_context_a11e64f588d21aeda2b57a4bc4e06ecc7}\label{class_template_context_a11e64f588d21aeda2b57a4bc4e06ecc7}} 
+\index{TemplateContext@{TemplateContext}!setSpacelessIntf@{setSpacelessIntf}}
+\index{setSpacelessIntf@{setSpacelessIntf}!TemplateContext@{TemplateContext}}
+\subsubsection{\texorpdfstring{setSpacelessIntf()}{setSpacelessIntf()}}
+{\footnotesize\ttfamily virtual void Template\+Context\+::set\+Spaceless\+Intf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_template_spaceless_intf}{Template\+Spaceless\+Intf}} $\ast$}]{intf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the interface that will be used inside a spaceless block to remove any redundant whitespace. 
+
+Implemented in \mbox{\hyperlink{class_template_context_impl_a70bde90b2b3c08769cd0c7587ffaf33a}{Template\+Context\+Impl}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/template.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,351 @@
+\hypertarget{class_q_c_string}{}\section{Q\+C\+String Class Reference}
+\label{class_q_c_string}\index{QCString@{QCString}}
+
+
+{\ttfamily \#include $<$qcstring.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_string_ac81b67245a4667f5f257e75b2f99e278}{Q\+C\+String}} ()
+\item 
+\mbox{\hyperlink{class_q_c_string_a285551aa9238c4ee4473ba136bf4431a}{$\sim$\+Q\+C\+String}} ()
+\item 
+\mbox{\hyperlink{class_q_c_string_abf5e7eee86ecd3982c4b1315bc181cff}{Q\+C\+String}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&s)
+\item 
+\mbox{\hyperlink{class_q_c_string_a5a6639003e7bb8bb95189445649e0c2a}{Q\+C\+String}} (int \mbox{\hyperlink{class_q_c_string_ac084f55ab51f8b277cf01bb6e04f16ed}{size}})
+\item 
+\mbox{\hyperlink{class_q_c_string_a2286f03edc20befca29cd2b2f57de1f6}{Q\+C\+String}} (const char $\ast$str)
+\item 
+\mbox{\hyperlink{class_q_c_string_a0a7f38230a080e7583bf2747d587cc7d}{Q\+C\+String}} (const char $\ast$str, uint maxlen)
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& \mbox{\hyperlink{class_q_c_string_a2f76b7f0c570b83ed75e8891cf2736b6}{operator=}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&s)
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& \mbox{\hyperlink{class_q_c_string_aff5d046c512aee21b575abb2b7528282}{operator=}} (const char $\ast$str)
+\item 
+bool \mbox{\hyperlink{class_q_c_string_a31246261e7f2ae130c9235969b79075a}{is\+Null}} () const
+\item 
+bool \mbox{\hyperlink{class_q_c_string_a621c4090d69ad7d05ef8e5234376c3d8}{is\+Empty}} () const
+\item 
+uint \mbox{\hyperlink{class_q_c_string_ac52596733e9110b778019946d73fb268}{length}} () const
+\item 
+uint \mbox{\hyperlink{class_q_c_string_ac084f55ab51f8b277cf01bb6e04f16ed}{size}} () const
+\item 
+const char $\ast$ \mbox{\hyperlink{class_q_c_string_a84a5aa4da9147a687fa291c844fb5fc1}{data}} () const
+\item 
+char $\ast$ \mbox{\hyperlink{class_q_c_string_aefbe03789d0fe05302adae84c54c3243}{raw\+Data}} () const
+\item 
+bool \mbox{\hyperlink{class_q_c_string_a8402bb62a3a1c6a79130c3b3cf38b52c}{resize}} (uint newlen)
+\item 
+bool \mbox{\hyperlink{class_q_c_string_a5644b56f807df5375dba545abca25f40}{truncate}} (uint pos)
+\item 
+bool \mbox{\hyperlink{class_q_c_string_a2061c09e8d70cd279d9cc9feef33d2bb}{fill}} (char c, int len=-\/1)
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_q_c_string_a78c5504b7c222e907fa0cd6e13391b05}{copy}} () const
+\item 
+\mbox{\Hypertarget{class_q_c_string_aa2dccf89cb25346c3ee81d75aa5859da}\label{class_q_c_string_aa2dccf89cb25346c3ee81d75aa5859da}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries sprintf} (const char $\ast$format,...)
+\item 
+\mbox{\Hypertarget{class_q_c_string_a0182ece6b76dad6475dafb53e2faaf10}\label{class_q_c_string_a0182ece6b76dad6475dafb53e2faaf10}} 
+int {\bfseries find} (char c, int index=0, bool cs=T\+R\+UE) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_a5381d8547e101adef3ee87f8d54c9925}\label{class_q_c_string_a5381d8547e101adef3ee87f8d54c9925}} 
+int {\bfseries find} (const char $\ast$str, int index=0, bool cs=T\+R\+UE) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_a7227fa9c8db91de17b12305d5a6ca984}\label{class_q_c_string_a7227fa9c8db91de17b12305d5a6ca984}} 
+int {\bfseries find} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&str, int index=0, bool cs=T\+R\+UE) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_a35d94f04a36f5133d3fca3ff5a4f9f44}\label{class_q_c_string_a35d94f04a36f5133d3fca3ff5a4f9f44}} 
+int {\bfseries find} (const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&rx, int index=0) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_ab47a6435c16d61d04fb448f1080b4e26}\label{class_q_c_string_ab47a6435c16d61d04fb448f1080b4e26}} 
+int {\bfseries find\+Rev} (char c, int index=-\/1, bool cs=T\+R\+UE) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_ab6cbf7f8b8943606766d6e3d2e26fc70}\label{class_q_c_string_ab6cbf7f8b8943606766d6e3d2e26fc70}} 
+int {\bfseries find\+Rev} (const char $\ast$str, int index=-\/1, bool cs=T\+R\+UE) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_af9aa6521260dc9cfa6c35453963c0ec0}\label{class_q_c_string_af9aa6521260dc9cfa6c35453963c0ec0}} 
+int {\bfseries find\+Rev} (const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&rx, int index=-\/1) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_aeeedb2810a85c682c2f2a86bcd2355a7}\label{class_q_c_string_aeeedb2810a85c682c2f2a86bcd2355a7}} 
+int {\bfseries contains} (char c, bool cs=T\+R\+UE) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_ab2617e8fdb6c52fb762a52f7252d61ed}\label{class_q_c_string_ab2617e8fdb6c52fb762a52f7252d61ed}} 
+int {\bfseries contains} (const char $\ast$str, bool cs=T\+R\+UE) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_a3ac96659cea402b26e7464890f4ef836}\label{class_q_c_string_a3ac96659cea402b26e7464890f4ef836}} 
+int {\bfseries contains} (const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&rx) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_a3524dfec9219699243b6baf0f33bd0f1}\label{class_q_c_string_a3524dfec9219699243b6baf0f33bd0f1}} 
+bool {\bfseries strip\+Prefix} (const char $\ast$prefix)
+\item 
+\mbox{\Hypertarget{class_q_c_string_a8a20d55c0facb1bc0b821ebdfbe55f6d}\label{class_q_c_string_a8a20d55c0facb1bc0b821ebdfbe55f6d}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries left} (uint len) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_ad908b11f3f22ad5f7a58675cd7072e7b}\label{class_q_c_string_ad908b11f3f22ad5f7a58675cd7072e7b}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries right} (uint len) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_ad6cc33bdd4cf4bf4f1c11ddc109ce917}\label{class_q_c_string_ad6cc33bdd4cf4bf4f1c11ddc109ce917}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries mid} (uint index, uint len=0xffffffff) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_a33688239622e659cfb469fbd62c9cccb}\label{class_q_c_string_a33688239622e659cfb469fbd62c9cccb}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries lower} () const
+\item 
+\mbox{\Hypertarget{class_q_c_string_a113ff6fe5b14585eebdcafbf2fe88cc4}\label{class_q_c_string_a113ff6fe5b14585eebdcafbf2fe88cc4}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries upper} () const
+\item 
+\mbox{\Hypertarget{class_q_c_string_a66269a694d9e6961bfd145bb4ca72f42}\label{class_q_c_string_a66269a694d9e6961bfd145bb4ca72f42}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries strip\+White\+Space} () const
+\item 
+\mbox{\Hypertarget{class_q_c_string_a8d6ace0deb439b916b9f97f54a6c9cc2}\label{class_q_c_string_a8d6ace0deb439b916b9f97f54a6c9cc2}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries simplify\+White\+Space} () const
+\item 
+\mbox{\Hypertarget{class_q_c_string_a3d5edf23543be731297cd5dccbf29c22}\label{class_q_c_string_a3d5edf23543be731297cd5dccbf29c22}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries assign} (const char $\ast$str)
+\item 
+\mbox{\Hypertarget{class_q_c_string_af076f8a173eb13ab76516c407150d370}\label{class_q_c_string_af076f8a173eb13ab76516c407150d370}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries insert} (uint index, const char $\ast$s)
+\item 
+\mbox{\Hypertarget{class_q_c_string_aa17bc879a1a58d5403aea176bdab6373}\label{class_q_c_string_aa17bc879a1a58d5403aea176bdab6373}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries insert} (uint index, char c)
+\item 
+\mbox{\Hypertarget{class_q_c_string_a303cf8f6a8f57a92e3bda9423ca643aa}\label{class_q_c_string_a303cf8f6a8f57a92e3bda9423ca643aa}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries append} (const char $\ast$s)
+\item 
+\mbox{\Hypertarget{class_q_c_string_a0a6a8fe99e596b149ee15138fa8dcf0c}\label{class_q_c_string_a0a6a8fe99e596b149ee15138fa8dcf0c}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries prepend} (const char $\ast$s)
+\item 
+\mbox{\Hypertarget{class_q_c_string_a20a194da8d31240b28256b6aebd78097}\label{class_q_c_string_a20a194da8d31240b28256b6aebd78097}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries remove} (uint index, uint len)
+\item 
+\mbox{\Hypertarget{class_q_c_string_a08cba3c984525d07704bbdfd42ea6267}\label{class_q_c_string_a08cba3c984525d07704bbdfd42ea6267}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries replace} (uint index, uint len, const char $\ast$s)
+\item 
+\mbox{\Hypertarget{class_q_c_string_a7091182ef7ed99948596505fb4666e87}\label{class_q_c_string_a7091182ef7ed99948596505fb4666e87}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries replace} (const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&rx, const char $\ast$str)
+\item 
+\mbox{\Hypertarget{class_q_c_string_ae111ca51635d7ef1eb009bfd1439bacf}\label{class_q_c_string_ae111ca51635d7ef1eb009bfd1439bacf}} 
+short {\bfseries to\+Short} (bool $\ast$ok=0) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_a649f4a07c797aea9924383284e119413}\label{class_q_c_string_a649f4a07c797aea9924383284e119413}} 
+ushort {\bfseries to\+U\+Short} (bool $\ast$ok=0) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_ada27540a0219c6cd64aa7f397d467090}\label{class_q_c_string_ada27540a0219c6cd64aa7f397d467090}} 
+int {\bfseries to\+Int} (bool $\ast$ok=0) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_a2bb39962c90acd23d25671ff0b2a6169}\label{class_q_c_string_a2bb39962c90acd23d25671ff0b2a6169}} 
+uint {\bfseries to\+U\+Int} (bool $\ast$ok=0) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_ab4c7c051d9e8be10d15d0f3fcee55420}\label{class_q_c_string_ab4c7c051d9e8be10d15d0f3fcee55420}} 
+long {\bfseries to\+Long} (bool $\ast$ok=0) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_a044645f142412fc6dc43c1ae28afae0f}\label{class_q_c_string_a044645f142412fc6dc43c1ae28afae0f}} 
+ulong {\bfseries to\+U\+Long} (bool $\ast$ok=0) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_a3bd11dd76b3e5d20061ffc199f354362}\label{class_q_c_string_a3bd11dd76b3e5d20061ffc199f354362}} 
+uint64 {\bfseries to\+U\+Int64} (bool $\ast$ok=0) const
+\item 
+\mbox{\Hypertarget{class_q_c_string_a87d2bfa3fcbf407c32fab784df368b2d}\label{class_q_c_string_a87d2bfa3fcbf407c32fab784df368b2d}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries set\+Num} (short n)
+\item 
+\mbox{\Hypertarget{class_q_c_string_a4d574918e9537bcccc0a9fa1d0bc768b}\label{class_q_c_string_a4d574918e9537bcccc0a9fa1d0bc768b}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries set\+Num} (ushort n)
+\item 
+\mbox{\Hypertarget{class_q_c_string_a985317d53986ff869f6200eba01da503}\label{class_q_c_string_a985317d53986ff869f6200eba01da503}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries set\+Num} (int n)
+\item 
+\mbox{\Hypertarget{class_q_c_string_ac5b0c4579e3b07fcaad843477941cacd}\label{class_q_c_string_ac5b0c4579e3b07fcaad843477941cacd}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries set\+Num} (uint n)
+\item 
+\mbox{\Hypertarget{class_q_c_string_a258a420449cd4af46dca39fc4d5966ee}\label{class_q_c_string_a258a420449cd4af46dca39fc4d5966ee}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries set\+Num} (long n)
+\item 
+\mbox{\Hypertarget{class_q_c_string_a4ca37c090965c69bdc470a7f94a45b69}\label{class_q_c_string_a4ca37c090965c69bdc470a7f94a45b69}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries set\+Num} (ulong n)
+\item 
+\mbox{\hyperlink{class_q_c_string_adf09db1887736ab6432cf0fff1cd9aec}{operator const char $\ast$}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& \mbox{\hyperlink{class_q_c_string_a2ebe64838cf88c7206b76c3c431d0adc}{operator+=}} (const char $\ast$str)
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& \mbox{\hyperlink{class_q_c_string_a62d09e50a2a9ea29e7dfc5eb98f8d837}{operator+=}} (char c)
+\item 
+char \& \mbox{\hyperlink{class_q_c_string_a3917c144e26bc525d588c1dff602be00}{at}} (uint i) const
+\item 
+char \& \mbox{\hyperlink{class_q_c_string_a095b0b79476f7a92b63e10d7880b4e83}{operator\mbox{[}$\,$\mbox{]}}} (int i) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is an alternative implementation of \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}}. It provides basically the same functions but uses reference counting and copy on write. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_c_string_ac81b67245a4667f5f257e75b2f99e278}\label{class_q_c_string_ac81b67245a4667f5f257e75b2f99e278}} 
+\index{QCString@{QCString}!QCString@{QCString}}
+\index{QCString@{QCString}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{QCString()}{QCString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Q\+C\+String\+::\+Q\+C\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+creates an empty string \mbox{\Hypertarget{class_q_c_string_a285551aa9238c4ee4473ba136bf4431a}\label{class_q_c_string_a285551aa9238c4ee4473ba136bf4431a}} 
+\index{QCString@{QCString}!````~QCString@{$\sim$QCString}}
+\index{````~QCString@{$\sim$QCString}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{$\sim$QCString()}{~QCString()}}
+{\footnotesize\ttfamily Q\+C\+String\+::$\sim$\+Q\+C\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+destroys the string \mbox{\Hypertarget{class_q_c_string_abf5e7eee86ecd3982c4b1315bc181cff}\label{class_q_c_string_abf5e7eee86ecd3982c4b1315bc181cff}} 
+\index{QCString@{QCString}!QCString@{QCString}}
+\index{QCString@{QCString}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{QCString()}{QCString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Q\+C\+String\+::\+Q\+C\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+makes a copy of a string. \mbox{\Hypertarget{class_q_c_string_a5a6639003e7bb8bb95189445649e0c2a}\label{class_q_c_string_a5a6639003e7bb8bb95189445649e0c2a}} 
+\index{QCString@{QCString}!QCString@{QCString}}
+\index{QCString@{QCString}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{QCString()}{QCString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Q\+C\+String\+::\+Q\+C\+String (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+creates a string with room for size characters 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em size} & the number of character to allocate (including the 0-\/terminator) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_q_c_string_a2286f03edc20befca29cd2b2f57de1f6}\label{class_q_c_string_a2286f03edc20befca29cd2b2f57de1f6}} 
+\index{QCString@{QCString}!QCString@{QCString}}
+\index{QCString@{QCString}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{QCString()}{QCString()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Q\+C\+String\+::\+Q\+C\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+creates a string from a plain \mbox{\hyperlink{class_c}{C}} string. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em str} & \mbox{\hyperlink{class_a}{A}} zero terminated \mbox{\hyperlink{class_c}{C}} string. When 0 an empty string is created. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_q_c_string_a0a7f38230a080e7583bf2747d587cc7d}\label{class_q_c_string_a0a7f38230a080e7583bf2747d587cc7d}} 
+\index{QCString@{QCString}!QCString@{QCString}}
+\index{QCString@{QCString}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{QCString()}{QCString()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Q\+C\+String\+::\+Q\+C\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str,  }\item[{uint}]{maxlen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+creates a string from {\itshape str} and copies over the first {\itshape maxlen} characters. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_c_string_a3917c144e26bc525d588c1dff602be00}\label{class_q_c_string_a3917c144e26bc525d588c1dff602be00}} 
+\index{QCString@{QCString}!at@{at}}
+\index{at@{at}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily char\& Q\+C\+String\+::at (\begin{DoxyParamCaption}\item[{uint}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the character at index {\itshape i}. \mbox{\Hypertarget{class_q_c_string_a78c5504b7c222e907fa0cd6e13391b05}\label{class_q_c_string_a78c5504b7c222e907fa0cd6e13391b05}} 
+\index{QCString@{QCString}!copy@{copy}}
+\index{copy@{copy}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Q\+C\+String\+::copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a deep copy of the string. \mbox{\Hypertarget{class_q_c_string_a84a5aa4da9147a687fa291c844fb5fc1}\label{class_q_c_string_a84a5aa4da9147a687fa291c844fb5fc1}} 
+\index{QCString@{QCString}!data@{data}}
+\index{data@{data}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily const char$\ast$ Q\+C\+String\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a pointer to the contents of the string in the form of a 0-\/terminated \mbox{\hyperlink{class_c}{C}} string \mbox{\Hypertarget{class_q_c_string_a2061c09e8d70cd279d9cc9feef33d2bb}\label{class_q_c_string_a2061c09e8d70cd279d9cc9feef33d2bb}} 
+\index{QCString@{QCString}!fill@{fill}}
+\index{fill@{fill}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily bool Q\+C\+String\+::fill (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{int}]{len = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Fills a string with a predefined character 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em c} & the character used to fill the string with. \\
+\hline
+\mbox{\texttt{ in}}  & {\em len} & the number of character to fill. Use -\/1 to fill the whole string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+the string will be resized to contain {\itshape len} characters. The contents of the string will be lost. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_q_c_string_a621c4090d69ad7d05ef8e5234376c3d8}\label{class_q_c_string_a621c4090d69ad7d05ef8e5234376c3d8}} 
+\index{QCString@{QCString}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Q\+C\+String\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE iff the string is empty \mbox{\Hypertarget{class_q_c_string_a31246261e7f2ae130c9235969b79075a}\label{class_q_c_string_a31246261e7f2ae130c9235969b79075a}} 
+\index{QCString@{QCString}!isNull@{isNull}}
+\index{isNull@{isNull}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{isNull()}{isNull()}}
+{\footnotesize\ttfamily bool Q\+C\+String\+::is\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE iff the string is empty. Equivalent to \mbox{\hyperlink{class_q_c_string_a621c4090d69ad7d05ef8e5234376c3d8}{is\+Empty()}}. \mbox{\Hypertarget{class_q_c_string_ac52596733e9110b778019946d73fb268}\label{class_q_c_string_ac52596733e9110b778019946d73fb268}} 
+\index{QCString@{QCString}!length@{length}}
+\index{length@{length}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily uint Q\+C\+String\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the length of the string, excluding the 0-\/terminator. Equivalent to \mbox{\hyperlink{class_q_c_string_ac084f55ab51f8b277cf01bb6e04f16ed}{size()}}. \mbox{\Hypertarget{class_q_c_string_adf09db1887736ab6432cf0fff1cd9aec}\label{class_q_c_string_adf09db1887736ab6432cf0fff1cd9aec}} 
+\index{QCString@{QCString}!operator const char $\ast$@{operator const char $\ast$}}
+\index{operator const char $\ast$@{operator const char $\ast$}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{operator const char $\ast$()}{operator const char *()}}
+{\footnotesize\ttfamily Q\+C\+String\+::operator const char $\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Converts the string to a plain \mbox{\hyperlink{class_c}{C}} string \mbox{\Hypertarget{class_q_c_string_a62d09e50a2a9ea29e7dfc5eb98f8d837}\label{class_q_c_string_a62d09e50a2a9ea29e7dfc5eb98f8d837}} 
+\index{QCString@{QCString}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}}\& Q\+C\+String\+::operator+= (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Appends character {\itshape c} to this string and returns a reference to the result. \mbox{\Hypertarget{class_q_c_string_a2ebe64838cf88c7206b76c3c431d0adc}\label{class_q_c_string_a2ebe64838cf88c7206b76c3c431d0adc}} 
+\index{QCString@{QCString}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}}\& Q\+C\+String\+::operator+= (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Appends string {\itshape str} to this string and returns a reference to the result. \mbox{\Hypertarget{class_q_c_string_aff5d046c512aee21b575abb2b7528282}\label{class_q_c_string_aff5d046c512aee21b575abb2b7528282}} 
+\index{QCString@{QCString}!operator=@{operator=}}
+\index{operator=@{operator=}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}}\& Q\+C\+String\+::operator= (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+replaces the contents by that of \mbox{\hyperlink{class_c}{C}} string {\itshape str}. \mbox{\Hypertarget{class_q_c_string_a2f76b7f0c570b83ed75e8891cf2736b6}\label{class_q_c_string_a2f76b7f0c570b83ed75e8891cf2736b6}} 
+\index{QCString@{QCString}!operator=@{operator=}}
+\index{operator=@{operator=}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}}\& Q\+C\+String\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+replaces the contents by that of string {\itshape s}. \mbox{\Hypertarget{class_q_c_string_a095b0b79476f7a92b63e10d7880b4e83}\label{class_q_c_string_a095b0b79476f7a92b63e10d7880b4e83}} 
+\index{QCString@{QCString}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily char\& Q\+C\+String\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Indexing operator. Equavalent to \mbox{\hyperlink{class_q_c_string_a3917c144e26bc525d588c1dff602be00}{at()}}. \mbox{\Hypertarget{class_q_c_string_aefbe03789d0fe05302adae84c54c3243}\label{class_q_c_string_aefbe03789d0fe05302adae84c54c3243}} 
+\index{QCString@{QCString}!rawData@{rawData}}
+\index{rawData@{rawData}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{rawData()}{rawData()}}
+{\footnotesize\ttfamily char$\ast$ Q\+C\+String\+::raw\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a writable pointer to the data. \begin{DoxyWarning}{Warning}
+if the string is shared it will modifying the string directly and this will overwrite all copies as well! 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_q_c_string_a8402bb62a3a1c6a79130c3b3cf38b52c}\label{class_q_c_string_a8402bb62a3a1c6a79130c3b3cf38b52c}} 
+\index{QCString@{QCString}!resize@{resize}}
+\index{resize@{resize}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily bool Q\+C\+String\+::resize (\begin{DoxyParamCaption}\item[{uint}]{newlen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resizes the string to hold {\itshape newlen} characters (this value should include the 0-\/terminator). If the string is enlarged the contents will be left unmodified. \mbox{\Hypertarget{class_q_c_string_ac084f55ab51f8b277cf01bb6e04f16ed}\label{class_q_c_string_ac084f55ab51f8b277cf01bb6e04f16ed}} 
+\index{QCString@{QCString}!size@{size}}
+\index{size@{size}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily uint Q\+C\+String\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the length of the string, excluding the 0-\/terminator. \mbox{\Hypertarget{class_q_c_string_a5644b56f807df5375dba545abca25f40}\label{class_q_c_string_a5644b56f807df5375dba545abca25f40}} 
+\index{QCString@{QCString}!truncate@{truncate}}
+\index{truncate@{truncate}!QCString@{QCString}}
+\subsubsection{\texorpdfstring{truncate()}{truncate()}}
+{\footnotesize\ttfamily bool Q\+C\+String\+::truncate (\begin{DoxyParamCaption}\item[{uint}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Truncates the string at position {\itshape pos}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qcstring.\+h\item 
+doxygen/qtools/qcstring.\+cpp\end{DoxyCompactItemize}

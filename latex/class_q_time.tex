@@ -1,0 +1,403 @@
+\hypertarget{class_q_time}{}\section{Q\+Time Class Reference}
+\label{class_q_time}\index{QTime@{QTime}}
+
+
+The \mbox{\hyperlink{class_q_time}{Q\+Time}} class provides clock time functions.  
+
+
+
+
+{\ttfamily \#include $<$qdatetime.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_time_acf8e9864d7d793eda72d68481e9c2387}{Q\+Time}} ()
+\item 
+\mbox{\hyperlink{class_q_time_a02d9df9fff2be1e261ae9a4b60742f5f}{Q\+Time}} (int h, int m, int s=0, int ms=0)
+\item 
+bool \mbox{\hyperlink{class_q_time_a05bdf71ae9a3fd858f48cafd94f31240}{is\+Null}} () const
+\item 
+bool \mbox{\hyperlink{class_q_time_a4f54e1193a12519a7bd9efb7ea16fdca}{is\+Valid}} () const
+\item 
+int \mbox{\hyperlink{class_q_time_a228b4c7467705db31821dadd5ec9101b}{hour}} () const
+\item 
+int \mbox{\hyperlink{class_q_time_a229f09c7a639dc11990463d827fa5137}{minute}} () const
+\item 
+int \mbox{\hyperlink{class_q_time_ab313147e79b92a374963a0e238acb071}{second}} () const
+\item 
+int \mbox{\hyperlink{class_q_time_a88ab10ec33b877a15bb0d0c7971de90e}{msec}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_time_a87ef6af883b329327e1665cc639d403c}{to\+String}} () const
+\item 
+bool \mbox{\hyperlink{class_q_time_a9c52b0963595ba4acd9b5922a5beeb06}{set\+H\+MS}} (int h, int m, int s, int ms=0)
+\item 
+\mbox{\hyperlink{class_q_time}{Q\+Time}} \mbox{\hyperlink{class_q_time_ae5ba40307760c49c56896da08d69c363}{add\+Secs}} (int secs) const
+\item 
+int \mbox{\hyperlink{class_q_time_a8193498cc40d7386b23df740fa326b2b}{secs\+To}} (const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&) const
+\item 
+\mbox{\hyperlink{class_q_time}{Q\+Time}} \mbox{\hyperlink{class_q_time_a1b43598c5d992242f13afe4e13a1e59f}{add\+M\+Secs}} (int ms) const
+\item 
+int \mbox{\hyperlink{class_q_time_acc9338f7c222afcf5cf29d7bb6d40667}{msecs\+To}} (const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&) const
+\item 
+bool \mbox{\hyperlink{class_q_time_af55053d7624bbd615bcb33d5b50c8457}{operator==}} (const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&d) const
+\item 
+bool \mbox{\hyperlink{class_q_time_acee0fbf86444e6c7ea66d6f3660fb317}{operator!=}} (const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&d) const
+\item 
+bool \mbox{\hyperlink{class_q_time_ace31b73f8c2fbdf5bf0547772fd7adc1}{operator$<$}} (const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&d) const
+\item 
+bool \mbox{\hyperlink{class_q_time_a49da85ecd800447b794f11b2990c228e}{operator$<$=}} (const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&d) const
+\item 
+bool \mbox{\hyperlink{class_q_time_a9f86ebe31550d3f6d0992459fb3170db}{operator$>$}} (const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&d) const
+\item 
+bool \mbox{\hyperlink{class_q_time_a32c25cd11888aded5d05c4ac339a3d52}{operator$>$=}} (const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&d) const
+\item 
+void \mbox{\hyperlink{class_q_time_aafacb3c8da8d383b7e688f6df20c8835}{start}} ()
+\item 
+int \mbox{\hyperlink{class_q_time_ae4031d9d548cfa663c03d64ac6eb32f6}{restart}} ()
+\item 
+int \mbox{\hyperlink{class_q_time_ae6223ec2c678edc4c0b4e8b4d51091c8}{elapsed}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_q_time}{Q\+Time}} \mbox{\hyperlink{class_q_time_a39b156ef7067e581f9fd70de6ef9ea4d}{current\+Time}} ()
+\item 
+static bool \mbox{\hyperlink{class_q_time_ac4290605812fb2c716e443bbe0409f60}{is\+Valid}} (int h, int m, int s, int ms=0)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_time_a9d2632bde958bcaf78a589a11578452e}\label{class_q_time_a9d2632bde958bcaf78a589a11578452e}} 
+class {\bfseries Q\+Date\+Time}
+\item 
+Q\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& \mbox{\hyperlink{class_q_time_ac9b1103cf5f3deed4e057628fceca24d}{operator$<$$<$}} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&, const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&)
+\item 
+Q\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& \mbox{\hyperlink{class_q_time_a6b14dcf689d047394691ac627c5d2074}{operator$>$$>$}} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&, \mbox{\hyperlink{class_q_time}{Q\+Time}} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_q_time}{Q\+Time}} class provides clock time functions. 
+
+\mbox{\hyperlink{class_a}{A}} \mbox{\hyperlink{class_q_time}{Q\+Time}} object contains a clock time, i.\+e. a number of hours, minutes, seconds and milliseconds since midnight. It can read the current time from the system clock, and measure a span of elapsed time. It provides functions for comparing times and for manipulating a time by adding a number of (milli)seconds.
+
+\mbox{\hyperlink{class_q_time}{Q\+Time}} operates with 24-\/hour clock format; it has no concept of A\+M/\+PM. It operates with local time; it does not know anything about time zones or daylight savings time.
+
+\mbox{\hyperlink{class_a}{A}} \mbox{\hyperlink{class_q_time}{Q\+Time}} object is typically created either by giving the number of hours, minutes, seconds, and milliseconds explicitly, or by using the static function \mbox{\hyperlink{class_q_time_a39b156ef7067e581f9fd70de6ef9ea4d}{current\+Time()}}, which makes a \mbox{\hyperlink{class_q_time}{Q\+Time}} object which contains the system\textquotesingle{}s clock time. Note that the accuracy depends on the accuracy of the underlying operating system; not all systems provide 1-\/millisecond accuracy.
+
+The \mbox{\hyperlink{class_q_time_a228b4c7467705db31821dadd5ec9101b}{hour()}}, \mbox{\hyperlink{class_q_time_a229f09c7a639dc11990463d827fa5137}{minute()}}, \mbox{\hyperlink{class_q_time_ab313147e79b92a374963a0e238acb071}{second()}}, and \mbox{\hyperlink{class_q_time_a88ab10ec33b877a15bb0d0c7971de90e}{msec()}} functions provide access to the number of hours, minutes, seconds, and milliseconds of the time. The same information is provided in textual format by the \mbox{\hyperlink{class_q_time_a87ef6af883b329327e1665cc639d403c}{to\+String()}} function.
+
+\mbox{\hyperlink{class_q_time}{Q\+Time}} provides a full set of operators to compare two \mbox{\hyperlink{class_q_time}{Q\+Time}} objects. \mbox{\hyperlink{class_a}{A}} time is considered smaller than another if it is earlier than the other.
+
+The time a given number of seconds or milliseconds later than a given time can be found using the \mbox{\hyperlink{class_q_time_ae5ba40307760c49c56896da08d69c363}{add\+Secs()}} or \mbox{\hyperlink{class_q_time_a1b43598c5d992242f13afe4e13a1e59f}{add\+M\+Secs()}} functions. Correspondingly, the number of (milli)seconds between two times can be found using the \mbox{\hyperlink{class_q_time_a8193498cc40d7386b23df740fa326b2b}{secs\+To()}} or \mbox{\hyperlink{class_q_time_acc9338f7c222afcf5cf29d7bb6d40667}{msecs\+To()}} functions.
+
+\mbox{\hyperlink{class_q_time}{Q\+Time}} can be used to measure a span of elapsed time using the \mbox{\hyperlink{class_q_time_aafacb3c8da8d383b7e688f6df20c8835}{start()}}, \mbox{\hyperlink{class_q_time_ae4031d9d548cfa663c03d64ac6eb32f6}{restart()}}, and \mbox{\hyperlink{class_q_time_ae6223ec2c678edc4c0b4e8b4d51091c8}{elapsed()}} functions.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date}{Q\+Date}}, \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_time_acf8e9864d7d793eda72d68481e9c2387}\label{class_q_time_acf8e9864d7d793eda72d68481e9c2387}} 
+\index{QTime@{QTime}!QTime@{QTime}}
+\index{QTime@{QTime}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{QTime()}{QTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Q\+Time\+::\+Q\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs the time 0 hours, minutes, seconds and milliseconds, i.\+e. 00\+:00\+:00.\+000 (midnight). This is a valid time.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_time_a4f54e1193a12519a7bd9efb7ea16fdca}{is\+Valid()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_time_a02d9df9fff2be1e261ae9a4b60742f5f}\label{class_q_time_a02d9df9fff2be1e261ae9a4b60742f5f}} 
+\index{QTime@{QTime}!QTime@{QTime}}
+\index{QTime@{QTime}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{QTime()}{QTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Q\+Time\+::\+Q\+Time (\begin{DoxyParamCaption}\item[{int}]{h,  }\item[{int}]{m,  }\item[{int}]{s = {\ttfamily 0},  }\item[{int}]{ms = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Constructs a time with hour {\itshape h}, minute {\itshape m}, seconds {\itshape s} and milliseconds {\itshape ms}.
+
+{\itshape h} must be in the range 0-\/23, {\itshape m} and {\itshape s} must be in the range 0-\/59, and {\itshape ms} must be in the range 0-\/999.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_time_a4f54e1193a12519a7bd9efb7ea16fdca}{is\+Valid()}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_time_a1b43598c5d992242f13afe4e13a1e59f}\label{class_q_time_a1b43598c5d992242f13afe4e13a1e59f}} 
+\index{QTime@{QTime}!addMSecs@{addMSecs}}
+\index{addMSecs@{addMSecs}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{addMSecs()}{addMSecs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_time}{Q\+Time}} Q\+Time\+::add\+M\+Secs (\begin{DoxyParamCaption}\item[{int}]{ms }\end{DoxyParamCaption}) const}
+
+Returns a \mbox{\hyperlink{class_q_time}{Q\+Time}} object containing a time {\itshape ms} milliseconds later than the time of this object (or earlier if {\itshape ms} is negative).
+
+Note that the time will wrap if it passes midnight. See \mbox{\hyperlink{class_q_time_ae5ba40307760c49c56896da08d69c363}{add\+Secs()}} for an example.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_time_ae5ba40307760c49c56896da08d69c363}{add\+Secs()}}, \mbox{\hyperlink{class_q_time_acc9338f7c222afcf5cf29d7bb6d40667}{msecs\+To()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_time_ae5ba40307760c49c56896da08d69c363}\label{class_q_time_ae5ba40307760c49c56896da08d69c363}} 
+\index{QTime@{QTime}!addSecs@{addSecs}}
+\index{addSecs@{addSecs}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{addSecs()}{addSecs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_time}{Q\+Time}} Q\+Time\+::add\+Secs (\begin{DoxyParamCaption}\item[{int}]{nsecs }\end{DoxyParamCaption}) const}
+
+Returns a \mbox{\hyperlink{class_q_time}{Q\+Time}} object containing a time {\itshape nsecs} seconds later than the time of this object (or earlier if {\itshape ms} is negative).
+
+Note that the time will wrap if it passes midnight.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_time}{QTime}} n( 14, 0, 0 );                \textcolor{comment}{// n == 14:00:00}}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_time}{QTime}} t;}
+\DoxyCodeLine{t = n.addSecs( 70 );                \textcolor{comment}{// t == 14:01:10}}
+\DoxyCodeLine{t = n.addSecs( -70 );               \textcolor{comment}{// t == 13:58:50}}
+\DoxyCodeLine{t = n.addSecs( 10*60*60 + 5 );      \textcolor{comment}{// t == 00:00:05}}
+\DoxyCodeLine{t = n.addSecs( -15*60*60 );         \textcolor{comment}{// t == 23:00:00}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_time_a1b43598c5d992242f13afe4e13a1e59f}{add\+M\+Secs()}}, \mbox{\hyperlink{class_q_time_a8193498cc40d7386b23df740fa326b2b}{secs\+To()}}, \mbox{\hyperlink{class_q_date_time_a7b48ae870775460aec8791465c2e5056}{Q\+Date\+Time\+::add\+Secs()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_time_a39b156ef7067e581f9fd70de6ef9ea4d}\label{class_q_time_a39b156ef7067e581f9fd70de6ef9ea4d}} 
+\index{QTime@{QTime}!currentTime@{currentTime}}
+\index{currentTime@{currentTime}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{currentTime()}{currentTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_time}{Q\+Time}} Q\+Time\+::current\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the current time, as reported by the system clock.
+
+Note that the accuracy depends on the accuracy of the underlying operating system; not all systems provide 1-\/millisecond accuracy. \mbox{\Hypertarget{class_q_time_ae6223ec2c678edc4c0b4e8b4d51091c8}\label{class_q_time_ae6223ec2c678edc4c0b4e8b4d51091c8}} 
+\index{QTime@{QTime}!elapsed@{elapsed}}
+\index{elapsed@{elapsed}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{elapsed()}{elapsed()}}
+{\footnotesize\ttfamily int Q\+Time\+::elapsed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the number of milliseconds that have elapsed since the last time \mbox{\hyperlink{class_q_time_aafacb3c8da8d383b7e688f6df20c8835}{start()}} or \mbox{\hyperlink{class_q_time_ae4031d9d548cfa663c03d64ac6eb32f6}{restart()}} was called.
+
+Note that the counter wraps to zero 24 hours after the last call to \mbox{\hyperlink{class_q_time_aafacb3c8da8d383b7e688f6df20c8835}{start()}} or restart.
+
+Note that the accuracy depends on the accuracy of the underlying operating system; not all systems provide 1-\/millisecond accuracy.
+
+\begin{DoxyWarning}{Warning}
+If the system\textquotesingle{}s clock setting has been changed since the last time \mbox{\hyperlink{class_q_time_aafacb3c8da8d383b7e688f6df20c8835}{start()}} or \mbox{\hyperlink{class_q_time_ae4031d9d548cfa663c03d64ac6eb32f6}{restart()}} was called, the result is undefined. This can happen e.\+g. when daylight saving is turned on or off.
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_time_aafacb3c8da8d383b7e688f6df20c8835}{start()}}, \mbox{\hyperlink{class_q_time_ae4031d9d548cfa663c03d64ac6eb32f6}{restart()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_time_a228b4c7467705db31821dadd5ec9101b}\label{class_q_time_a228b4c7467705db31821dadd5ec9101b}} 
+\index{QTime@{QTime}!hour@{hour}}
+\index{hour@{hour}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{hour()}{hour()}}
+{\footnotesize\ttfamily int Q\+Time\+::hour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the hour part (0..23) of the time. \mbox{\Hypertarget{class_q_time_a05bdf71ae9a3fd858f48cafd94f31240}\label{class_q_time_a05bdf71ae9a3fd858f48cafd94f31240}} 
+\index{QTime@{QTime}!isNull@{isNull}}
+\index{isNull@{isNull}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{isNull()}{isNull()}}
+{\footnotesize\ttfamily bool Q\+Time\+::is\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the time is equal to 00\+:00\+:00.\+000. \mbox{\hyperlink{class_a}{A}} null time is valid.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_time_a4f54e1193a12519a7bd9efb7ea16fdca}{is\+Valid()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_time_a4f54e1193a12519a7bd9efb7ea16fdca}\label{class_q_time_a4f54e1193a12519a7bd9efb7ea16fdca}} 
+\index{QTime@{QTime}!isValid@{isValid}}
+\index{isValid@{isValid}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{isValid()}{isValid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Q\+Time\+::is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE if the time is valid, or F\+A\+L\+SE if the time is invalid. The time 23\+:30\+:55.\+746 is valid, while 24\+:12\+:30 is invalid.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_time_a05bdf71ae9a3fd858f48cafd94f31240}{is\+Null()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_time_ac4290605812fb2c716e443bbe0409f60}\label{class_q_time_ac4290605812fb2c716e443bbe0409f60}} 
+\index{QTime@{QTime}!isValid@{isValid}}
+\index{isValid@{isValid}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{isValid()}{isValid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Q\+Time\+::is\+Valid (\begin{DoxyParamCaption}\item[{int}]{h,  }\item[{int}]{m,  }\item[{int}]{s,  }\item[{int}]{ms = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns T\+R\+UE if the specified time is valid, otherwise F\+A\+L\+SE.
+
+The time is valid if {\itshape h} is in the range 0-\/23, {\itshape m} and {\itshape s} are in the range 0-\/59, and {\itshape ms} is in the range 0-\/999.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_time_a4f54e1193a12519a7bd9efb7ea16fdca}{QTime::isValid}}(21, 10, 30);       \textcolor{comment}{// returns TRUE}}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_time_a4f54e1193a12519a7bd9efb7ea16fdca}{QTime::isValid}}(22, 5,  62);       \textcolor{comment}{// returns FALSE}}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_q_time_a229f09c7a639dc11990463d827fa5137}\label{class_q_time_a229f09c7a639dc11990463d827fa5137}} 
+\index{QTime@{QTime}!minute@{minute}}
+\index{minute@{minute}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{minute()}{minute()}}
+{\footnotesize\ttfamily int Q\+Time\+::minute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the minute part (0..59) of the time. \mbox{\Hypertarget{class_q_time_a88ab10ec33b877a15bb0d0c7971de90e}\label{class_q_time_a88ab10ec33b877a15bb0d0c7971de90e}} 
+\index{QTime@{QTime}!msec@{msec}}
+\index{msec@{msec}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{msec()}{msec()}}
+{\footnotesize\ttfamily int Q\+Time\+::msec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the millisecond part (0..999) of the time. \mbox{\Hypertarget{class_q_time_acc9338f7c222afcf5cf29d7bb6d40667}\label{class_q_time_acc9338f7c222afcf5cf29d7bb6d40667}} 
+\index{QTime@{QTime}!msecsTo@{msecsTo}}
+\index{msecsTo@{msecsTo}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{msecsTo()}{msecsTo()}}
+{\footnotesize\ttfamily int Q\+Time\+::msecs\+To (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&}]{t }\end{DoxyParamCaption}) const}
+
+Returns the number of milliseconds from this time to {\itshape t} (which is negative if {\itshape t} is earlier than this time).
+
+Since \mbox{\hyperlink{class_q_time}{Q\+Time}} measures time within a day and there are 86400000 milliseconds in a day, the result is between -\/86400000 and 86400000.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_time_a8193498cc40d7386b23df740fa326b2b}{secs\+To()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_time_acee0fbf86444e6c7ea66d6f3660fb317}\label{class_q_time_acee0fbf86444e6c7ea66d6f3660fb317}} 
+\index{QTime@{QTime}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Q\+Time\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if this time is different from {\itshape t}, or F\+A\+L\+SE if they are equal. \mbox{\Hypertarget{class_q_time_ace31b73f8c2fbdf5bf0547772fd7adc1}\label{class_q_time_ace31b73f8c2fbdf5bf0547772fd7adc1}} 
+\index{QTime@{QTime}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Q\+Time\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if this time is earlier than {\itshape t}, otherwise F\+A\+L\+SE. \mbox{\Hypertarget{class_q_time_a49da85ecd800447b794f11b2990c228e}\label{class_q_time_a49da85ecd800447b794f11b2990c228e}} 
+\index{QTime@{QTime}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Q\+Time\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if this time is earlier than or equal to {\itshape t}, otherwise F\+A\+L\+SE. \mbox{\Hypertarget{class_q_time_af55053d7624bbd615bcb33d5b50c8457}\label{class_q_time_af55053d7624bbd615bcb33d5b50c8457}} 
+\index{QTime@{QTime}!operator==@{operator==}}
+\index{operator==@{operator==}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Q\+Time\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if this time is equal to {\itshape t}, or F\+A\+L\+SE if they are different. \mbox{\Hypertarget{class_q_time_a9f86ebe31550d3f6d0992459fb3170db}\label{class_q_time_a9f86ebe31550d3f6d0992459fb3170db}} 
+\index{QTime@{QTime}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Q\+Time\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if this time is later than {\itshape t}, otherwise F\+A\+L\+SE. \mbox{\Hypertarget{class_q_time_a32c25cd11888aded5d05c4ac339a3d52}\label{class_q_time_a32c25cd11888aded5d05c4ac339a3d52}} 
+\index{QTime@{QTime}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Q\+Time\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if this time is later than or equal to {\itshape t}, otherwise F\+A\+L\+SE. \mbox{\Hypertarget{class_q_time_ae4031d9d548cfa663c03d64ac6eb32f6}\label{class_q_time_ae4031d9d548cfa663c03d64ac6eb32f6}} 
+\index{QTime@{QTime}!restart@{restart}}
+\index{restart@{restart}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily int Q\+Time\+::restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets this time to the current time, and returns the number of milliseconds that have elapsed since the last time \mbox{\hyperlink{class_q_time_aafacb3c8da8d383b7e688f6df20c8835}{start()}} or \mbox{\hyperlink{class_q_time_ae4031d9d548cfa663c03d64ac6eb32f6}{restart()}} was called.
+
+This function is guaranteed to be atomic, and is thus very handy for repeated measurements\+: call \mbox{\hyperlink{class_q_time_aafacb3c8da8d383b7e688f6df20c8835}{start()}} to start the first measurement, then \mbox{\hyperlink{class_q_time_ae4031d9d548cfa663c03d64ac6eb32f6}{restart()}} for each later measurement.
+
+Note that the counter wraps to zero 24 hours after the last call to \mbox{\hyperlink{class_q_time_aafacb3c8da8d383b7e688f6df20c8835}{start()}} or \mbox{\hyperlink{class_q_time_ae4031d9d548cfa663c03d64ac6eb32f6}{restart()}}.
+
+\begin{DoxyWarning}{Warning}
+If the system\textquotesingle{}s clock setting has been changed since the last time \mbox{\hyperlink{class_q_time_aafacb3c8da8d383b7e688f6df20c8835}{start()}} or \mbox{\hyperlink{class_q_time_ae4031d9d548cfa663c03d64ac6eb32f6}{restart()}} was called, the result is undefined. This can happen e.\+g. when daylight saving is turned on or off.
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_time_aafacb3c8da8d383b7e688f6df20c8835}{start()}}, \mbox{\hyperlink{class_q_time_ae6223ec2c678edc4c0b4e8b4d51091c8}{elapsed()}}, \mbox{\hyperlink{class_q_time_a39b156ef7067e581f9fd70de6ef9ea4d}{current\+Time()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_time_ab313147e79b92a374963a0e238acb071}\label{class_q_time_ab313147e79b92a374963a0e238acb071}} 
+\index{QTime@{QTime}!second@{second}}
+\index{second@{second}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{second()}{second()}}
+{\footnotesize\ttfamily int Q\+Time\+::second (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the second part (0..59) of the time. \mbox{\Hypertarget{class_q_time_a8193498cc40d7386b23df740fa326b2b}\label{class_q_time_a8193498cc40d7386b23df740fa326b2b}} 
+\index{QTime@{QTime}!secsTo@{secsTo}}
+\index{secsTo@{secsTo}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{secsTo()}{secsTo()}}
+{\footnotesize\ttfamily int Q\+Time\+::secs\+To (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&}]{t }\end{DoxyParamCaption}) const}
+
+Returns the number of seconds from this time to {\itshape t} (which is negative if {\itshape t} is earlier than this time).
+
+Since \mbox{\hyperlink{class_q_time}{Q\+Time}} measures time within a day and there are 86400 seconds in a day, the result is between -\/86400 and 86400.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_time_ae5ba40307760c49c56896da08d69c363}{add\+Secs()}} \mbox{\hyperlink{class_q_date_time_a3b697a289865bc96bd339acaa75880b3}{Q\+Date\+Time\+::secs\+To()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_time_a9c52b0963595ba4acd9b5922a5beeb06}\label{class_q_time_a9c52b0963595ba4acd9b5922a5beeb06}} 
+\index{QTime@{QTime}!setHMS@{setHMS}}
+\index{setHMS@{setHMS}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{setHMS()}{setHMS()}}
+{\footnotesize\ttfamily bool Q\+Time\+::set\+H\+MS (\begin{DoxyParamCaption}\item[{int}]{h,  }\item[{int}]{m,  }\item[{int}]{s,  }\item[{int}]{ms = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Sets the time to hour {\itshape h}, minute {\itshape m}, seconds {\itshape s} and milliseconds {\itshape ms}.
+
+{\itshape h} must be in the range 0-\/23, {\itshape m} and {\itshape s} must be in the range 0-\/59, and {\itshape ms} must be in the range 0-\/999. Returns T\+R\+UE if the set time is valid, otherwise F\+A\+L\+SE.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_time_a4f54e1193a12519a7bd9efb7ea16fdca}{is\+Valid()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_time_aafacb3c8da8d383b7e688f6df20c8835}\label{class_q_time_aafacb3c8da8d383b7e688f6df20c8835}} 
+\index{QTime@{QTime}!start@{start}}
+\index{start@{start}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Q\+Time\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets this time to the current time. This is practical for timing\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_time}{QTime}} t;}
+\DoxyCodeLine{t.start();                \textcolor{comment}{// start clock}}
+\DoxyCodeLine{... \textcolor{comment}{// some lengthy task}}
+\DoxyCodeLine{qDebug( \textcolor{stringliteral}{"\%d\(\backslash\)n"}, t.elapsed() );    \textcolor{comment}{// prints \# msecs elapsed}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_time_ae4031d9d548cfa663c03d64ac6eb32f6}{restart()}}, \mbox{\hyperlink{class_q_time_ae6223ec2c678edc4c0b4e8b4d51091c8}{elapsed()}}, \mbox{\hyperlink{class_q_time_a39b156ef7067e581f9fd70de6ef9ea4d}{current\+Time()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_time_a87ef6af883b329327e1665cc639d403c}\label{class_q_time_a87ef6af883b329327e1665cc639d403c}} 
+\index{QTime@{QTime}!toString@{toString}}
+\index{toString@{toString}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Time\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the time of this object in a textual format. Milliseconds are not included. The string format is H\+H\+:\+MM\+:SS, e.\+g. 1 second before midnight would be \char`\"{}23\+:59\+:59\char`\"{}. 
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_q_time_ac9b1103cf5f3deed4e057628fceca24d}\label{class_q_time_ac9b1103cf5f3deed4e057628fceca24d}} 
+\index{QTime@{QTime}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&}]{s,  }\item[{const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Writes a time to the stream.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{}{Format of the Q\+Data\+Stream operators }} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_time_a6b14dcf689d047394691ac627c5d2074}\label{class_q_time_a6b14dcf689d047394691ac627c5d2074}} 
+\index{QTime@{QTime}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QTime@{QTime}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&}]{s,  }\item[{\mbox{\hyperlink{class_q_time}{Q\+Time}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Reads a time from the stream.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{}{Format of the Q\+Data\+Stream operators }} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qdatetime.\+h\item 
+doxygen/qtools/qdatetime.\+cpp\end{DoxyCompactItemize}

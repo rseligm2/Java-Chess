@@ -1,0 +1,59 @@
+\hypertarget{class_property_mapper}{}\section{Property\+Mapper$<$ T $>$ Class Template Reference}
+\label{class_property_mapper}\index{PropertyMapper$<$ T $>$@{PropertyMapper$<$ T $>$}}
+
+
+Helper class to map a property name to a handler member function.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_property_mapper_a24cd857dc07114050338338964006e5f}{add\+Property}} (const char $\ast$name, typename Property\+Func\+::\+Handler handle)
+\item 
+\mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_property_mapper_a7e712b52a909dbaea00d8cca2b4bc0d4}{get}} (const T $\ast$obj, const char $\ast$name) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Property\+Mapper$<$ T $>$}
+
+Helper class to map a property name to a handler member function. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_property_mapper_a24cd857dc07114050338338964006e5f}\label{class_property_mapper_a24cd857dc07114050338338964006e5f}} 
+\index{PropertyMapper$<$ T $>$@{PropertyMapper$<$ T $>$}!addProperty@{addProperty}}
+\index{addProperty@{addProperty}!PropertyMapper$<$ T $>$@{PropertyMapper$<$ T $>$}}
+\subsubsection{\texorpdfstring{addProperty()}{addProperty()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_property_mapper}{Property\+Mapper}}$<$ T $>$\+::add\+Property (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{typename Property\+Func\+::\+Handler}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a property to the map 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & The name of the property to add. \\
+\hline
+\mbox{\texttt{ in}}  & {\em handle} & The method to call when the property is accessed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_property_mapper_a7e712b52a909dbaea00d8cca2b4bc0d4}\label{class_property_mapper_a7e712b52a909dbaea00d8cca2b4bc0d4}} 
+\index{PropertyMapper$<$ T $>$@{PropertyMapper$<$ T $>$}!get@{get}}
+\index{get@{get}!PropertyMapper$<$ T $>$@{PropertyMapper$<$ T $>$}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_property_mapper}{Property\+Mapper}}$<$ T $>$\+::get (\begin{DoxyParamCaption}\item[{const T $\ast$}]{obj,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the value of a property. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em obj} & The object handling access to the property. \\
+\hline
+\mbox{\texttt{ in}}  & {\em name} & The name of the property. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_a}{A}} variant representing the properties value or an invalid variant if it was not found. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/context.\+cpp\end{DoxyCompactItemize}

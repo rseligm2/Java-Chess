@@ -1,0 +1,122 @@
+\hypertarget{class_q_map_private}{}\section{Q\+Map\+Private$<$ Key, T $>$ Class Template Reference}
+\label{class_q_map_private}\index{QMapPrivate$<$ Key, T $>$@{QMapPrivate$<$ Key, T $>$}}
+Inheritance diagram for Q\+Map\+Private$<$ Key, T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_q_map_private}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_q_map_iterator}{Q\+Map\+Iterator}}$<$ Key, T $>$ \mbox{\hyperlink{class_q_map_private_a5326545ba578532909650c2f4a8d4d34}{Iterator}}
+\item 
+\mbox{\Hypertarget{class_q_map_private_a579a86f244015186e41bfa3cf85a5054}\label{class_q_map_private_a579a86f244015186e41bfa3cf85a5054}} 
+typedef \mbox{\hyperlink{class_q_map_const_iterator}{Q\+Map\+Const\+Iterator}}$<$ Key, T $>$ {\bfseries Const\+Iterator}
+\item 
+\mbox{\Hypertarget{class_q_map_private_a14bbee368a168ea06680b51eef901c27}\label{class_q_map_private_a14bbee368a168ea06680b51eef901c27}} 
+typedef \mbox{\hyperlink{struct_q_map_node}{Q\+Map\+Node}}$<$ Key, T $>$ {\bfseries Node}
+\item 
+\mbox{\Hypertarget{class_q_map_private_a6b529a90a461f2d2df3e1b2356250fb4}\label{class_q_map_private_a6b529a90a461f2d2df3e1b2356250fb4}} 
+typedef \mbox{\hyperlink{struct_q_map_node}{Q\+Map\+Node}}$<$ Key, T $>$ $\ast$ {\bfseries Node\+Ptr}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_map_private_a4e52679058c7c68f4e188dbb1f81ddf2}{Q\+Map\+Private}} ()
+\item 
+\mbox{\Hypertarget{class_q_map_private_a40c49fe36d6aac5a585ff81f219e484a}\label{class_q_map_private_a40c49fe36d6aac5a585ff81f219e484a}} 
+{\bfseries Q\+Map\+Private} (const \mbox{\hyperlink{class_q_map_private}{Q\+Map\+Private}}$<$ Key, T $>$ $\ast$\+\_\+map)
+\item 
+\mbox{\Hypertarget{class_q_map_private_ac3ec38438d60e749d58dd6e8d87f8231}\label{class_q_map_private_ac3ec38438d60e749d58dd6e8d87f8231}} 
+\mbox{\hyperlink{struct_q_map_node}{Node\+Ptr}} {\bfseries copy} (\mbox{\hyperlink{struct_q_map_node}{Node\+Ptr}} p)
+\item 
+\mbox{\Hypertarget{class_q_map_private_a57cf7714f6cd6ce302f6869f61217e03}\label{class_q_map_private_a57cf7714f6cd6ce302f6869f61217e03}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{class_q_map_private_a0317f0056ee635561c57577291950cba}\label{class_q_map_private_a0317f0056ee635561c57577291950cba}} 
+void {\bfseries clear} (\mbox{\hyperlink{struct_q_map_node}{Node\+Ptr}} p)
+\item 
+\mbox{\Hypertarget{class_q_map_private_a33ad6dc5d5c7c5292c6206445f7ec54a}\label{class_q_map_private_a33ad6dc5d5c7c5292c6206445f7ec54a}} 
+\mbox{\hyperlink{class_q_map_private_a5326545ba578532909650c2f4a8d4d34}{Iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{class_q_map_private_ad1b27b1ce057ef786f0d122dc3e71d12}\label{class_q_map_private_ad1b27b1ce057ef786f0d122dc3e71d12}} 
+\mbox{\hyperlink{class_q_map_private_a5326545ba578532909650c2f4a8d4d34}{Iterator}} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{class_q_map_private_ad28141759039945809e2976be8d58ccb}\label{class_q_map_private_ad28141759039945809e2976be8d58ccb}} 
+\mbox{\hyperlink{class_q_map_const_iterator}{Const\+Iterator}} {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{class_q_map_private_a87c89fffc9db1d29125ba0d8e408b795}\label{class_q_map_private_a87c89fffc9db1d29125ba0d8e408b795}} 
+\mbox{\hyperlink{class_q_map_const_iterator}{Const\+Iterator}} {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{class_q_map_private_ad27cf130fd86323896fb2d7a8d3f23b0}\label{class_q_map_private_ad27cf130fd86323896fb2d7a8d3f23b0}} 
+\mbox{\hyperlink{class_q_map_const_iterator}{Const\+Iterator}} {\bfseries find} (const Key \&k) const
+\item 
+\mbox{\Hypertarget{class_q_map_private_a7f2f689ac684d8577f79e12cab91dbd4}\label{class_q_map_private_a7f2f689ac684d8577f79e12cab91dbd4}} 
+void {\bfseries remove} (\mbox{\hyperlink{class_q_map_private_a5326545ba578532909650c2f4a8d4d34}{Iterator}} it)
+\item 
+\mbox{\Hypertarget{class_q_map_private_a5d4b166c2058946aec5335ca777b7949}\label{class_q_map_private_a5d4b166c2058946aec5335ca777b7949}} 
+\mbox{\hyperlink{class_q_map_private_a5326545ba578532909650c2f4a8d4d34}{Iterator}} {\bfseries insert\+Multi} (const Key \&v)
+\item 
+\mbox{\Hypertarget{class_q_map_private_a241ba6529b73bda8e8293227837bae76}\label{class_q_map_private_a241ba6529b73bda8e8293227837bae76}} 
+\mbox{\hyperlink{class_q_map_private_a5326545ba578532909650c2f4a8d4d34}{Iterator}} {\bfseries insert\+Single} (const Key \&k)
+\item 
+\mbox{\Hypertarget{class_q_map_private_a5cc8d79a81cca31f59d697a120d7319d}\label{class_q_map_private_a5cc8d79a81cca31f59d697a120d7319d}} 
+\mbox{\hyperlink{class_q_map_private_a5326545ba578532909650c2f4a8d4d34}{Iterator}} {\bfseries insert} (\mbox{\hyperlink{struct_q_map_node_base}{Q\+Map\+Node\+Base}} $\ast$x, \mbox{\hyperlink{struct_q_map_node_base}{Q\+Map\+Node\+Base}} $\ast$y, const Key \&k)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const Key \& \mbox{\hyperlink{class_q_map_private_a7038ee57f0ed7677e495ee04760f8641}{key}} (\mbox{\hyperlink{struct_q_map_node_base}{Q\+Map\+Node\+Base}} $\ast$b) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_q_map_node}{Node\+Ptr}} \mbox{\hyperlink{class_q_map_private_a68a9e07ff34146b090cbac239851139e}{header}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_q_map_private_a5326545ba578532909650c2f4a8d4d34}\label{class_q_map_private_a5326545ba578532909650c2f4a8d4d34}} 
+\index{QMapPrivate$<$ Key, T $>$@{QMapPrivate$<$ Key, T $>$}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!QMapPrivate$<$ Key, T $>$@{QMapPrivate$<$ Key, T $>$}}
+\subsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$class Key, class T$>$ \\
+typedef \mbox{\hyperlink{class_q_map_iterator}{Q\+Map\+Iterator}}$<$ Key, T $>$ \mbox{\hyperlink{class_q_map_private}{Q\+Map\+Private}}$<$ Key, T $>$\+::\mbox{\hyperlink{class_q_map_private_a5326545ba578532909650c2f4a8d4d34}{Iterator}}}
+
+Typedefs 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_map_private_a4e52679058c7c68f4e188dbb1f81ddf2}\label{class_q_map_private_a4e52679058c7c68f4e188dbb1f81ddf2}} 
+\index{QMapPrivate$<$ Key, T $>$@{QMapPrivate$<$ Key, T $>$}!QMapPrivate@{QMapPrivate}}
+\index{QMapPrivate@{QMapPrivate}!QMapPrivate$<$ Key, T $>$@{QMapPrivate$<$ Key, T $>$}}
+\subsubsection{\texorpdfstring{QMapPrivate()}{QMapPrivate()}}
+{\footnotesize\ttfamily template$<$class Key, class T$>$ \\
+\mbox{\hyperlink{class_q_map_private}{Q\+Map\+Private}}$<$ Key, T $>$\+::\mbox{\hyperlink{class_q_map_private}{Q\+Map\+Private}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Functions 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_map_private_a7038ee57f0ed7677e495ee04760f8641}\label{class_q_map_private_a7038ee57f0ed7677e495ee04760f8641}} 
+\index{QMapPrivate$<$ Key, T $>$@{QMapPrivate$<$ Key, T $>$}!key@{key}}
+\index{key@{key}!QMapPrivate$<$ Key, T $>$@{QMapPrivate$<$ Key, T $>$}}
+\subsubsection{\texorpdfstring{key()}{key()}}
+{\footnotesize\ttfamily template$<$class Key, class T$>$ \\
+const Key\& \mbox{\hyperlink{class_q_map_private}{Q\+Map\+Private}}$<$ Key, T $>$\+::key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_q_map_node_base}{Q\+Map\+Node\+Base}} $\ast$}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Helpers 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_q_map_private_a68a9e07ff34146b090cbac239851139e}\label{class_q_map_private_a68a9e07ff34146b090cbac239851139e}} 
+\index{QMapPrivate$<$ Key, T $>$@{QMapPrivate$<$ Key, T $>$}!header@{header}}
+\index{header@{header}!QMapPrivate$<$ Key, T $>$@{QMapPrivate$<$ Key, T $>$}}
+\subsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily template$<$class Key, class T$>$ \\
+\mbox{\hyperlink{struct_q_map_node}{Node\+Ptr}} \mbox{\hyperlink{class_q_map_private}{Q\+Map\+Private}}$<$ Key, T $>$\+::header\hspace{0.3cm}{\ttfamily [protected]}}
+
+Variables 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qmap.\+h\end{DoxyCompactItemize}

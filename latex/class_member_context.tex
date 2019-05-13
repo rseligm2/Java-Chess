@@ -1,0 +1,72 @@
+\hypertarget{class_member_context}{}\section{Member\+Context Class Reference}
+\label{class_member_context}\index{MemberContext@{MemberContext}}
+Inheritance diagram for Member\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_member_context}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_member_context_1_1_private}{Private}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_member_context_ab9b8559215dd4bcfef722c04c0d4a375}{get}} (const char $\ast$name) const
+\item 
+virtual int \mbox{\hyperlink{class_member_context_abe50fc6291c9d139677b7a8263831d89}{add\+Ref}} ()
+\item 
+virtual int \mbox{\hyperlink{class_member_context_a92d2b4bfdec4af678bf20c69891fac29}{release}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_member_context_a2ec32013bfbba2255c64937529d5d5d6}\label{class_member_context_a2ec32013bfbba2255c64937529d5d5d6}} 
+static \mbox{\hyperlink{class_member_context}{Member\+Context}} $\ast$ {\bfseries alloc} (\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$md)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_member_context_abe50fc6291c9d139677b7a8263831d89}\label{class_member_context_abe50fc6291c9d139677b7a8263831d89}} 
+\index{MemberContext@{MemberContext}!addRef@{addRef}}
+\index{addRef@{addRef}!MemberContext@{MemberContext}}
+\subsubsection{\texorpdfstring{addRef()}{addRef()}}
+{\footnotesize\ttfamily virtual int Member\+Context\+::add\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Increase object\textquotesingle{}s reference count 
+
+Implements \mbox{\hyperlink{class_template_struct_intf_a05fe97ad47633beb326f69686faed581}{Template\+Struct\+Intf}}.
+
+\mbox{\Hypertarget{class_member_context_ab9b8559215dd4bcfef722c04c0d4a375}\label{class_member_context_ab9b8559215dd4bcfef722c04c0d4a375}} 
+\index{MemberContext@{MemberContext}!get@{get}}
+\index{get@{get}!MemberContext@{MemberContext}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_variant}{Template\+Variant}} Member\+Context\+::get (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Gets the value for a field name. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & The name of the field. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_template_struct_intf_a3d610cb81b4adbb531ebed3aa3d09b51}{Template\+Struct\+Intf}}.
+
+\mbox{\Hypertarget{class_member_context_a92d2b4bfdec4af678bf20c69891fac29}\label{class_member_context_a92d2b4bfdec4af678bf20c69891fac29}} 
+\index{MemberContext@{MemberContext}!release@{release}}
+\index{release@{release}!MemberContext@{MemberContext}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual int Member\+Context\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Decreases object\textquotesingle{}s reference count, destroy object if 0 
+
+Implements \mbox{\hyperlink{class_template_struct_intf_a3dce7dd29d3f66a8080b40578e8a5045}{Template\+Struct\+Intf}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/context.\+h\item 
+doxygen/src/context.\+cpp\end{DoxyCompactItemize}

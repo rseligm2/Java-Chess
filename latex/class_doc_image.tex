@@ -1,0 +1,86 @@
+\hypertarget{class_doc_image}{}\section{Doc\+Image Class Reference}
+\label{class_doc_image}\index{DocImage@{DocImage}}
+
+
+{\ttfamily \#include $<$docparser.\+h$>$}
+
+Inheritance diagram for Doc\+Image\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_doc_image}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_image_aaa49d1dad195745ff9d470c5335be93e}\label{class_doc_image_aaa49d1dad195745ff9d470c5335be93e}} 
+enum {\bfseries Type} \{ {\bfseries Html}, 
+{\bfseries Latex}, 
+{\bfseries Rtf}, 
+{\bfseries Doc\+Book}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_image_ab5fb5d2b3d9defec16f33b8303e7e72a}\label{class_doc_image_ab5fb5d2b3d9defec16f33b8303e7e72a}} 
+{\bfseries Doc\+Image} (\mbox{\hyperlink{class_doc_node}{Doc\+Node}} $\ast$\mbox{\hyperlink{class_doc_node_a73e8ad29a91cfceb0968eb00db71a23d}{parent}}, const \mbox{\hyperlink{class_html_attrib_list}{Html\+Attrib\+List}} \&attribs, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name, Type t, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&url=\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}}(), bool inline\+Image=T\+R\+UE)
+\item 
+\mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} \mbox{\hyperlink{class_doc_image_ad4716e09dfb45878f06d20e07d1ccf32}{kind}} () const
+\item 
+\mbox{\Hypertarget{class_doc_image_a4a7abc635cfbbb0824b1a482b6cb42e9}\label{class_doc_image_a4a7abc635cfbbb0824b1a482b6cb42e9}} 
+Type {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{class_doc_image_a0c62b3e12569fac905243b891a62d81a}\label{class_doc_image_a0c62b3e12569fac905243b891a62d81a}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries name} () const
+\item 
+\mbox{\Hypertarget{class_doc_image_af627e9312a4cc758736ebaff6619990e}\label{class_doc_image_af627e9312a4cc758736ebaff6619990e}} 
+bool {\bfseries has\+Caption} () const
+\item 
+\mbox{\Hypertarget{class_doc_image_a79d36f165096668a3d6631efb6e0b4f0}\label{class_doc_image_a79d36f165096668a3d6631efb6e0b4f0}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries width} () const
+\item 
+\mbox{\Hypertarget{class_doc_image_a434782653279e9f1d823656d48fe3e26}\label{class_doc_image_a434782653279e9f1d823656d48fe3e26}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries height} () const
+\item 
+\mbox{\Hypertarget{class_doc_image_a07a0f3e6897e73d26b36ad4430b885e5}\label{class_doc_image_a07a0f3e6897e73d26b36ad4430b885e5}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries rel\+Path} () const
+\item 
+\mbox{\Hypertarget{class_doc_image_a0e32f1e888da6279104a2fb515c620de}\label{class_doc_image_a0e32f1e888da6279104a2fb515c620de}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries url} () const
+\item 
+\mbox{\Hypertarget{class_doc_image_ae52199cbb5da4e10ccb3a9b53c4978ac}\label{class_doc_image_ae52199cbb5da4e10ccb3a9b53c4978ac}} 
+bool {\bfseries is\+Inline\+Image} () const
+\item 
+\mbox{\Hypertarget{class_doc_image_ae604f9461d7685908488ead7a6d72ca0}\label{class_doc_image_ae604f9461d7685908488ead7a6d72ca0}} 
+bool {\bfseries is\+S\+VG} () const
+\item 
+\mbox{\Hypertarget{class_doc_image_a01ac4792c4a17232af299b7c473ff1e8}\label{class_doc_image_a01ac4792c4a17232af299b7c473ff1e8}} 
+const \mbox{\hyperlink{class_html_attrib_list}{Html\+Attrib\+List}} \& {\bfseries attribs} () const
+\item 
+\mbox{\Hypertarget{class_doc_image_acbcccdba0822fb5c0776ca318cbfd631}\label{class_doc_image_acbcccdba0822fb5c0776ca318cbfd631}} 
+void {\bfseries parse} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Node representing an image 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_doc_image_ad4716e09dfb45878f06d20e07d1ccf32}\label{class_doc_image_ad4716e09dfb45878f06d20e07d1ccf32}} 
+\index{DocImage@{DocImage}!kind@{kind}}
+\index{kind@{kind}!DocImage@{DocImage}}
+\subsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} Doc\+Image\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the kind of node. Provides runtime type information 
+
+Implements \mbox{\hyperlink{class_doc_node_a108ffd214a72ba6e93dac084a8f58049}{Doc\+Node}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/docparser.\+h\item 
+doxygen/src/docparser.\+cpp\end{DoxyCompactItemize}

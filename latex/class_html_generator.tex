@@ -1,0 +1,1037 @@
+\hypertarget{class_html_generator}{}\section{Html\+Generator Class Reference}
+\label{class_html_generator}\index{HtmlGenerator@{HtmlGenerator}}
+
+
+{\ttfamily \#include $<$htmlgen.\+h$>$}
+
+Inheritance diagram for Html\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_html_generator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_html_generator_a329452241150ab304dc08438851521de}\label{class_html_generator_a329452241150ab304dc08438851521de}} 
+void {\bfseries enable} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_abbcaec5ceb199f2c5f91c983d6482692}\label{class_html_generator_abbcaec5ceb199f2c5f91c983d6482692}} 
+void {\bfseries disable} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_aee9e3887cd11cb8457f2549df91dadf1}\label{class_html_generator_aee9e3887cd11cb8457f2549df91dadf1}} 
+void {\bfseries enable\+If} (Output\+Type o)
+\item 
+\mbox{\Hypertarget{class_html_generator_a93a1f46b032bba0f0971ca648d011b09}\label{class_html_generator_a93a1f46b032bba0f0971ca648d011b09}} 
+void {\bfseries disable\+If} (Output\+Type o)
+\item 
+\mbox{\Hypertarget{class_html_generator_a25743230b0993020e7962d589a242676}\label{class_html_generator_a25743230b0993020e7962d589a242676}} 
+void {\bfseries disable\+If\+Not} (Output\+Type o)
+\item 
+\mbox{\Hypertarget{class_html_generator_a22b1c974e6510a41a082d801606cefa0}\label{class_html_generator_a22b1c974e6510a41a082d801606cefa0}} 
+bool {\bfseries is\+Enabled} (Output\+Type o)
+\item 
+\mbox{\Hypertarget{class_html_generator_add83ad0454d010cc31da65d1bfff3c8a}\label{class_html_generator_add83ad0454d010cc31da65d1bfff3c8a}} 
+\mbox{\hyperlink{class_output_generator}{Output\+Generator}} $\ast$ {\bfseries get} (Output\+Type o)
+\item 
+void \mbox{\hyperlink{class_html_generator_a574ab87e7aa9b92c11248027912851bc}{codify}} (const char $\ast$text)
+\item 
+void \mbox{\hyperlink{class_html_generator_a91b156be8ac84d8a2a8a88e7adf0869b}{write\+Code\+Link}} (const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, const char $\ast$name, const char $\ast$tooltip)
+\item 
+void \mbox{\hyperlink{class_html_generator_a042fed032c729b4a5e44b9a7c86385a7}{write\+Line\+Number}} (const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, int line\+Number)
+\item 
+void \mbox{\hyperlink{class_html_generator_ad21a9b170d8f644619f287a233c6b549}{write\+Tooltip}} (const char $\ast$id, const \mbox{\hyperlink{struct_doc_link_info}{Doc\+Link\+Info}} \&doc\+Info, const char $\ast$decl, const char $\ast$desc, const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&def\+Info, const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&decl\+Info)
+\item 
+\mbox{\Hypertarget{class_html_generator_ab89f82b354a626585bf1ff5a793ad5db}\label{class_html_generator_ab89f82b354a626585bf1ff5a793ad5db}} 
+void {\bfseries start\+Code\+Line} (bool has\+Line\+Numbers)
+\item 
+void \mbox{\hyperlink{class_html_generator_a509e9b78f035f58e533cef4f79bf5401}{end\+Code\+Line}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_aa600cc24896060a68612e3db6efb7dbf}{start\+Font\+Class}} (const char $\ast$s)
+\item 
+void \mbox{\hyperlink{class_html_generator_aca25e58aa19b44b41de489dc966e4b5d}{end\+Font\+Class}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_a9e2528347c04b6f07dd9263441dbcf4f}{write\+Code\+Anchor}} (const char $\ast$anchor)
+\item 
+\mbox{\Hypertarget{class_html_generator_a36829b23efe3855373db99bac3e9998d}\label{class_html_generator_a36829b23efe3855373db99bac3e9998d}} 
+void {\bfseries set\+Current\+Doc} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$context, const char $\ast$anchor, bool is\+Source\+File)
+\item 
+\mbox{\Hypertarget{class_html_generator_ab80e35069bed2aadfd28912897ff59c8}\label{class_html_generator_ab80e35069bed2aadfd28912897ff59c8}} 
+void {\bfseries add\+Word} (const char $\ast$word, bool hi\+Priority)
+\item 
+\mbox{\Hypertarget{class_html_generator_afb2332948f5e53d82d8299fe158da0a9}\label{class_html_generator_afb2332948f5e53d82d8299fe158da0a9}} 
+void {\bfseries write\+Doc} (\mbox{\hyperlink{class_doc_node}{Doc\+Node}} $\ast$, \mbox{\hyperlink{class_definition}{Definition}} $\ast$, \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_html_generator_ab0a5eb800f902fc308dd418901bf8c0f}\label{class_html_generator_ab0a5eb800f902fc308dd418901bf8c0f}} 
+void {\bfseries start\+File} (const char $\ast$name, const char $\ast$man\+Name, const char $\ast$title)
+\item 
+\mbox{\Hypertarget{class_html_generator_a53e64fb26be1bf0e61e5f8d6fe1f1509}\label{class_html_generator_a53e64fb26be1bf0e61e5f8d6fe1f1509}} 
+void {\bfseries write\+Footer} (const char $\ast$nav\+Path)
+\item 
+\mbox{\Hypertarget{class_html_generator_aecd9da9f7e9201df51cfe46ab71c6e30}\label{class_html_generator_aecd9da9f7e9201df51cfe46ab71c6e30}} 
+void {\bfseries end\+File} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_af0be36300dc3636e212df095e2b31397}\label{class_html_generator_af0be36300dc3636e212df095e2b31397}} 
+void {\bfseries clear\+Buffer} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_aa60e46a4d67ca28c8676a97ad0968069}\label{class_html_generator_aa60e46a4d67ca28c8676a97ad0968069}} 
+void {\bfseries write\+Search\+Info} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a686b599d09c8254a8d28589aa18e2ca1}\label{class_html_generator_a686b599d09c8254a8d28589aa18e2ca1}} 
+void {\bfseries start\+Index\+Section} (Index\+Sections)
+\item 
+\mbox{\Hypertarget{class_html_generator_a4f525285e864992a9e9004293c6dcf72}\label{class_html_generator_a4f525285e864992a9e9004293c6dcf72}} 
+void {\bfseries end\+Index\+Section} (Index\+Sections)
+\item 
+\mbox{\Hypertarget{class_html_generator_a17175f9f54dbfcc611c728ef0efdcfb3}\label{class_html_generator_a17175f9f54dbfcc611c728ef0efdcfb3}} 
+void {\bfseries write\+Page\+Link} (const char $\ast$, bool)
+\item 
+\mbox{\Hypertarget{class_html_generator_a68e4cfb8ef2701dd7a6d6bceeda1e55a}\label{class_html_generator_a68e4cfb8ef2701dd7a6d6bceeda1e55a}} 
+void {\bfseries start\+Project\+Number} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a56bb1fc7587fe00fbe3fb3cf6c9973ac}\label{class_html_generator_a56bb1fc7587fe00fbe3fb3cf6c9973ac}} 
+void {\bfseries end\+Project\+Number} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a67494e4d92c2b6f4bf19a51ab9417659}\label{class_html_generator_a67494e4d92c2b6f4bf19a51ab9417659}} 
+void {\bfseries write\+Style\+Info} (int part)
+\item 
+\mbox{\Hypertarget{class_html_generator_aa2d4c7b39f08d95acd0b73d0ba7a2c64}\label{class_html_generator_aa2d4c7b39f08d95acd0b73d0ba7a2c64}} 
+void {\bfseries start\+Title\+Head} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_html_generator_a44202d0de92814df8521f373adc257d9}\label{class_html_generator_a44202d0de92814df8521f373adc257d9}} 
+void {\bfseries end\+Title\+Head} (const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_html_generator_a0fd5a2e848ea16b025b1fb07b4b307fc}\label{class_html_generator_a0fd5a2e848ea16b025b1fb07b4b307fc}} 
+void {\bfseries start\+Title} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_ae1337adbb5ad6cea03fcee0d5a7cdfce}\label{class_html_generator_ae1337adbb5ad6cea03fcee0d5a7cdfce}} 
+void {\bfseries end\+Title} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_ab00abe0fbb8b668d3f8fd73b7c1216b0}{start\+Paragraph}} (const char $\ast$class\+Def)
+\item 
+void \mbox{\hyperlink{class_html_generator_a48e5516f348a9ec6ed456a6a3b003af3}{end\+Paragraph}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_ad54dd4f0dda0e22574149cfb4415ae4a}{write\+String}} (const char $\ast$text)
+\item 
+\mbox{\Hypertarget{class_html_generator_a528f8a53cd93274bdbb70c93be532101}\label{class_html_generator_a528f8a53cd93274bdbb70c93be532101}} 
+void {\bfseries start\+Index\+List\+Item} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a219b3a869630c6155761687cdf8a4965}\label{class_html_generator_a219b3a869630c6155761687cdf8a4965}} 
+void {\bfseries end\+Index\+List\+Item} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a72550760e6a0c1c45a5667923b08f736}\label{class_html_generator_a72550760e6a0c1c45a5667923b08f736}} 
+void {\bfseries start\+Index\+List} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_ab387bea7212012b16c44c1a3fdae04e3}\label{class_html_generator_ab387bea7212012b16c44c1a3fdae04e3}} 
+void {\bfseries end\+Index\+List} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a61aabe55582849829fd4197d389f5843}\label{class_html_generator_a61aabe55582849829fd4197d389f5843}} 
+void {\bfseries start\+Index\+Key} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a5f89e089a71b9463223efd7ad08a5d37}\label{class_html_generator_a5f89e089a71b9463223efd7ad08a5d37}} 
+void {\bfseries end\+Index\+Key} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a5a650d7a723ffd19f31485454ca3d2ff}\label{class_html_generator_a5a650d7a723ffd19f31485454ca3d2ff}} 
+void {\bfseries start\+Index\+Value} (bool)
+\item 
+\mbox{\Hypertarget{class_html_generator_a7693faad26cf924dd428b9ad0d7e95a0}\label{class_html_generator_a7693faad26cf924dd428b9ad0d7e95a0}} 
+void {\bfseries end\+Index\+Value} (const char $\ast$, bool)
+\item 
+void \mbox{\hyperlink{class_html_generator_aedec2c1429139e4fd713df22e5636879}{start\+Item\+List}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_aa5dc9b6c49ebf68dd54942d258716206}{end\+Item\+List}} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a02517c155d2b9fe903d33424927a95ac}\label{class_html_generator_a02517c155d2b9fe903d33424927a95ac}} 
+void {\bfseries start\+Index\+Item} (const char $\ast$ref, const char $\ast$file)
+\item 
+\mbox{\Hypertarget{class_html_generator_af6cae0eaf27fd2124f46fe009a045e51}\label{class_html_generator_af6cae0eaf27fd2124f46fe009a045e51}} 
+void {\bfseries end\+Index\+Item} (const char $\ast$ref, const char $\ast$file)
+\item 
+void \mbox{\hyperlink{class_html_generator_a1f33982a4ce6eac13224197e91f057d8}{docify}} (const char $\ast$text)
+\item 
+void \mbox{\hyperlink{class_html_generator_a26b15cf05292634e086ec26cede20f2e}{write\+Object\+Link}} (const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, const char $\ast$name)
+\item 
+\mbox{\Hypertarget{class_html_generator_a61a18a9d5cfa300f91af10bd72f4f51b}\label{class_html_generator_a61a18a9d5cfa300f91af10bd72f4f51b}} 
+void {\bfseries start\+Text\+Link} (const char $\ast$file, const char $\ast$anchor)
+\item 
+\mbox{\Hypertarget{class_html_generator_ab2b0bff4d5587ad095832783fdba8064}\label{class_html_generator_ab2b0bff4d5587ad095832783fdba8064}} 
+void {\bfseries end\+Text\+Link} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_a5fdd7ff7fcabd4e301b8fec2b9c72b85}{start\+Html\+Link}} (const char $\ast$url)
+\item 
+void \mbox{\hyperlink{class_html_generator_af6ca967739e45755318c78058115c27a}{end\+Html\+Link}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_ae3174a7318289e8f7042f2d10345c419}{start\+Typewriter}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_a574b29296b93ffa4c3b119cbee70269c}{end\+Typewriter}} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a1368991b5988b527dc0c5b0b05cbb5b1}\label{class_html_generator_a1368991b5988b527dc0c5b0b05cbb5b1}} 
+void {\bfseries start\+Group\+Header} (int)
+\item 
+\mbox{\Hypertarget{class_html_generator_abfe85b944b5ebe2ca5455d44ea755c8d}\label{class_html_generator_abfe85b944b5ebe2ca5455d44ea755c8d}} 
+void {\bfseries end\+Group\+Header} (int)
+\item 
+void \mbox{\hyperlink{class_html_generator_aaa5091e04c77ea310e0c5dee4cc04e94}{start\+Item\+List\+Item}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_a91f6100cb025e52c1cef35b8749761b2}{end\+Item\+List\+Item}} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_ab81f4238abee6baf6234c1a94a03df18}\label{class_html_generator_ab81f4238abee6baf6234c1a94a03df18}} 
+void {\bfseries start\+Member\+Sections} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a60d8489e48efdf2a04d56ff3fcadbe1c}\label{class_html_generator_a60d8489e48efdf2a04d56ff3fcadbe1c}} 
+void {\bfseries end\+Member\+Sections} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a966c1d75a00ae4494356fd94b2d2c1bf}\label{class_html_generator_a966c1d75a00ae4494356fd94b2d2c1bf}} 
+void {\bfseries start\+Header\+Section} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a164f820134d45aaac56a60fe05b62963}\label{class_html_generator_a164f820134d45aaac56a60fe05b62963}} 
+void {\bfseries end\+Header\+Section} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_ade3e0b0ba0fa975c5e1db1c1f4ee2110}\label{class_html_generator_ade3e0b0ba0fa975c5e1db1c1f4ee2110}} 
+void {\bfseries start\+Member\+Header} (const char $\ast$, int)
+\item 
+\mbox{\Hypertarget{class_html_generator_a9188640d2baf3775008ebcde5d94873d}\label{class_html_generator_a9188640d2baf3775008ebcde5d94873d}} 
+void {\bfseries end\+Member\+Header} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a71af5b3b4b0ffb7f7f664a7d8205547d}\label{class_html_generator_a71af5b3b4b0ffb7f7f664a7d8205547d}} 
+void {\bfseries start\+Member\+Subtitle} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a3f449b4e7f55848442238528a7c19931}\label{class_html_generator_a3f449b4e7f55848442238528a7c19931}} 
+void {\bfseries end\+Member\+Subtitle} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a1d6acde43c3f5608a64cc8f3ec90738d}\label{class_html_generator_a1d6acde43c3f5608a64cc8f3ec90738d}} 
+void {\bfseries start\+Member\+Doc\+List} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_aadbd63f36bef8a7c5f34bf64ff656276}\label{class_html_generator_aadbd63f36bef8a7c5f34bf64ff656276}} 
+void {\bfseries end\+Member\+Doc\+List} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a0d33ac771fd697fbc6eaf4991d340b08}\label{class_html_generator_a0d33ac771fd697fbc6eaf4991d340b08}} 
+void {\bfseries start\+Member\+List} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_abc6943cf14aadd65c338ef5664e22975}\label{class_html_generator_abc6943cf14aadd65c338ef5664e22975}} 
+void {\bfseries end\+Member\+List} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_ad5d757feeb81868a9cf577256b29cdb4}\label{class_html_generator_ad5d757feeb81868a9cf577256b29cdb4}} 
+void {\bfseries start\+Inline\+Header} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_ad6bac26d91f76820e6776ab3d8a09558}\label{class_html_generator_ad6bac26d91f76820e6776ab3d8a09558}} 
+void {\bfseries end\+Inline\+Header} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_af9db4bdc3231e939587cce7efbc1e56e}\label{class_html_generator_af9db4bdc3231e939587cce7efbc1e56e}} 
+void {\bfseries start\+Anon\+Type\+Scope} (int)
+\item 
+\mbox{\Hypertarget{class_html_generator_ac6ab49e31bbc29399c976e5049fdbd2a}\label{class_html_generator_ac6ab49e31bbc29399c976e5049fdbd2a}} 
+void {\bfseries end\+Anon\+Type\+Scope} (int)
+\item 
+\mbox{\Hypertarget{class_html_generator_a47a6941c01a7eeee2002cad26423562e}\label{class_html_generator_a47a6941c01a7eeee2002cad26423562e}} 
+void {\bfseries start\+Member\+Item} (const char $\ast$anchor, int, const char $\ast$inherit\+Id)
+\item 
+\mbox{\Hypertarget{class_html_generator_ade88472c29491eace2d40696d9566ddd}\label{class_html_generator_ade88472c29491eace2d40696d9566ddd}} 
+void {\bfseries end\+Member\+Item} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a70e7950bdda5af04b71a58bc3f6e368f}\label{class_html_generator_a70e7950bdda5af04b71a58bc3f6e368f}} 
+void {\bfseries start\+Member\+Template\+Params} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a00ef5d813c7c390a878bde39fff5cf89}\label{class_html_generator_a00ef5d813c7c390a878bde39fff5cf89}} 
+void {\bfseries end\+Member\+Template\+Params} (const char $\ast$anchor, const char $\ast$inherit\+Id)
+\item 
+\mbox{\Hypertarget{class_html_generator_ad543e576da74cbcbe768b364d774f95c}\label{class_html_generator_ad543e576da74cbcbe768b364d774f95c}} 
+void {\bfseries start\+Member\+Group\+Header} (bool)
+\item 
+\mbox{\Hypertarget{class_html_generator_ace78ed06d9ae28b81837172a3a5fc167}\label{class_html_generator_ace78ed06d9ae28b81837172a3a5fc167}} 
+void {\bfseries end\+Member\+Group\+Header} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a70302c8014e5ddb69b5d90181de906d0}\label{class_html_generator_a70302c8014e5ddb69b5d90181de906d0}} 
+void {\bfseries start\+Member\+Group\+Docs} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a9881dc5213e18e6423d421326f833116}\label{class_html_generator_a9881dc5213e18e6423d421326f833116}} 
+void {\bfseries end\+Member\+Group\+Docs} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_aec0d118a7c03a3d6a4253110e35ed48e}\label{class_html_generator_aec0d118a7c03a3d6a4253110e35ed48e}} 
+void {\bfseries start\+Member\+Group} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a35213747d61865984f261d3fb7487e9d}\label{class_html_generator_a35213747d61865984f261d3fb7487e9d}} 
+void {\bfseries end\+Member\+Group} (bool)
+\item 
+\mbox{\Hypertarget{class_html_generator_a9342c375b88fae1c32c8aa9620142ee1}\label{class_html_generator_a9342c375b88fae1c32c8aa9620142ee1}} 
+void {\bfseries insert\+Member\+Align} (bool)
+\item 
+\mbox{\Hypertarget{class_html_generator_a2162c8cab2978da211b0ec1662863f5d}\label{class_html_generator_a2162c8cab2978da211b0ec1662863f5d}} 
+void {\bfseries insert\+Member\+Align\+Left} (int, bool)
+\item 
+\mbox{\Hypertarget{class_html_generator_a7dadf4c726a67a11fd7e879a70a347a8}\label{class_html_generator_a7dadf4c726a67a11fd7e879a70a347a8}} 
+void {\bfseries start\+Member\+Description} (const char $\ast$anchor, const char $\ast$inherit\+Id, bool typ)
+\item 
+\mbox{\Hypertarget{class_html_generator_a8a2091bbac16931ce0f519f43658cf37}\label{class_html_generator_a8a2091bbac16931ce0f519f43658cf37}} 
+void {\bfseries end\+Member\+Description} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a16eb9767a8460f94d578bc9c0e62b581}\label{class_html_generator_a16eb9767a8460f94d578bc9c0e62b581}} 
+void {\bfseries start\+Member\+Declaration} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a9b8cedda7c063179e583296294606469}\label{class_html_generator_a9b8cedda7c063179e583296294606469}} 
+void {\bfseries end\+Member\+Declaration} (const char $\ast$anchor, const char $\ast$inherit\+Id)
+\item 
+\mbox{\Hypertarget{class_html_generator_a125754fb3b5f8986ed030a33e8d53de0}\label{class_html_generator_a125754fb3b5f8986ed030a33e8d53de0}} 
+void {\bfseries write\+Inherited\+Section\+Title} (const char $\ast$id, const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, const char $\ast$title, const char $\ast$name)
+\item 
+void \mbox{\hyperlink{class_html_generator_aa8f5d1eab68eb5fd43f2529c947f0a02}{write\+Ruler}} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a9bc82a247269f9294be37a72460f5ff8}\label{class_html_generator_a9bc82a247269f9294be37a72460f5ff8}} 
+void {\bfseries write\+Anchor} (const char $\ast$, const char $\ast$name)
+\item 
+void \mbox{\hyperlink{class_html_generator_ac071e1f57eb6e4b2d4baeae1723186bd}{start\+Code\+Fragment}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_a6df6ede2137490c79228b9825df3b263}{end\+Code\+Fragment}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_afa50b0bc75a1f73eb0e86d4718534d1b}{start\+Emphasis}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_a88c2f4c34f00161d34e4c1059d747381}{end\+Emphasis}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_a4785d0f1ac1828284aa1f21dbb1e3773}{start\+Bold}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_a8e60c605c5db7577e2e0256c0431dcb1}{end\+Bold}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_a8ae03ee5e64d705aeebbe605d3c05b0f}{start\+Description}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_aff598e78fc1ebaefb21fe94fda564e4d}{end\+Description}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_a7a4d4ef015bc9d8298a6c023f85737c5}{start\+Desc\+Item}} ()
+\item 
+void \mbox{\hyperlink{class_html_generator_a0354681e6d39ae7da41d33f88656e335}{end\+Desc\+Item}} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a760684d94139338dc683a816a6d59e3d}\label{class_html_generator_a760684d94139338dc683a816a6d59e3d}} 
+void {\bfseries start\+Desc\+For\+Item} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a67179d9c17833aacd71619f5046859b3}\label{class_html_generator_a67179d9c17833aacd71619f5046859b3}} 
+void {\bfseries end\+Desc\+For\+Item} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a0931c48e06fde3d6fca0940261ea8e4f}\label{class_html_generator_a0931c48e06fde3d6fca0940261ea8e4f}} 
+void {\bfseries line\+Break} (const char $\ast$style)
+\item 
+void \mbox{\hyperlink{class_html_generator_a71e6263d7ffef2cc600e289be06c4f33}{write\+Char}} (char c)
+\item 
+\mbox{\Hypertarget{class_html_generator_a513f63435525033bd0a3852d1fd19d00}\label{class_html_generator_a513f63435525033bd0a3852d1fd19d00}} 
+void {\bfseries start\+Member\+Doc} (const char $\ast$cl\+Name, const char $\ast$mem\+Name, const char $\ast$anchor, const char $\ast$title, int mem\+Count, int mem\+Total, bool show\+Inline)
+\item 
+\mbox{\Hypertarget{class_html_generator_a7f7fbce45b7f8eb55fb12fe3c4c1740a}\label{class_html_generator_a7f7fbce45b7f8eb55fb12fe3c4c1740a}} 
+void {\bfseries end\+Member\+Doc} (bool)
+\item 
+\mbox{\Hypertarget{class_html_generator_a677520cd44ba8306cbaf15387d34d1cd}\label{class_html_generator_a677520cd44ba8306cbaf15387d34d1cd}} 
+void {\bfseries start\+Doxy\+Anchor} (const char $\ast$f\+Name, const char $\ast$man\+Name, const char $\ast$anchor, const char $\ast$name, const char $\ast$args)
+\item 
+\mbox{\Hypertarget{class_html_generator_a30d8f13a6cd2cdebefe09ac764b6081e}\label{class_html_generator_a30d8f13a6cd2cdebefe09ac764b6081e}} 
+void {\bfseries end\+Doxy\+Anchor} (const char $\ast$f\+Name, const char $\ast$anchor)
+\item 
+\mbox{\Hypertarget{class_html_generator_a2dc6c95466bf497d2912cb15d184b53d}\label{class_html_generator_a2dc6c95466bf497d2912cb15d184b53d}} 
+void {\bfseries write\+Latex\+Spacing} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_ae9cfa1c13442d21af2b84dd56ee9667d}\label{class_html_generator_ae9cfa1c13442d21af2b84dd56ee9667d}} 
+void {\bfseries write\+Start\+Anno\+Item} (const char $\ast$type, const char $\ast$file, const char $\ast$path, const char $\ast$name)
+\item 
+\mbox{\Hypertarget{class_html_generator_a12fde29ab455bf9f9080a3b24fca5365}\label{class_html_generator_a12fde29ab455bf9f9080a3b24fca5365}} 
+void {\bfseries write\+End\+Anno\+Item} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_html_generator_ad5672bd4e2cf016436ce21392f366868}\label{class_html_generator_ad5672bd4e2cf016436ce21392f366868}} 
+void {\bfseries start\+Subsection} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_abc4bc4379bbff6450b129ac605dc9416}\label{class_html_generator_abc4bc4379bbff6450b129ac605dc9416}} 
+void {\bfseries end\+Subsection} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a36a9752e811198e008617ad624066be0}\label{class_html_generator_a36a9752e811198e008617ad624066be0}} 
+void {\bfseries start\+Subsubsection} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_af08ae4e64ba09f0e0d4afbf496011243}\label{class_html_generator_af08ae4e64ba09f0e0d4afbf496011243}} 
+void {\bfseries end\+Subsubsection} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a233402f133de12862b43bfdd202fd050}\label{class_html_generator_a233402f133de12862b43bfdd202fd050}} 
+void {\bfseries start\+Center} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_abc11851ba8f0b133e5c664ecd9504496}\label{class_html_generator_abc11851ba8f0b133e5c664ecd9504496}} 
+void {\bfseries end\+Center} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_abfec4f0b6bf47b4bf4635876f094363e}\label{class_html_generator_abfec4f0b6bf47b4bf4635876f094363e}} 
+void {\bfseries start\+Small} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_aae94afd45fc65086afdc6c3204e67a1f}\label{class_html_generator_aae94afd45fc65086afdc6c3204e67a1f}} 
+void {\bfseries end\+Small} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a5fd46956f97ff9a2fdb3b425229e0488}\label{class_html_generator_a5fd46956f97ff9a2fdb3b425229e0488}} 
+void {\bfseries start\+Examples} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_acc716c5b5ae303c1348eeaa39e872a58}\label{class_html_generator_acc716c5b5ae303c1348eeaa39e872a58}} 
+void {\bfseries end\+Examples} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a65ea430579ba2d902cfb1afbb740f225}\label{class_html_generator_a65ea430579ba2d902cfb1afbb740f225}} 
+void {\bfseries start\+Param\+List} (Param\+List\+Types, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_html_generator_a540b07cf18af5217bac8603e32c8586a}\label{class_html_generator_a540b07cf18af5217bac8603e32c8586a}} 
+void {\bfseries end\+Param\+List} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a8be287f3a8b68b1aaf0ce945a246ef32}\label{class_html_generator_a8be287f3a8b68b1aaf0ce945a246ef32}} 
+void {\bfseries start\+Section} (const char $\ast$, const char $\ast$, Section\+Info\+::\+Section\+Type)
+\item 
+\mbox{\Hypertarget{class_html_generator_a0f92a2fa1124ae02396ed560aa925b0f}\label{class_html_generator_a0f92a2fa1124ae02396ed560aa925b0f}} 
+void {\bfseries end\+Section} (const char $\ast$, Section\+Info\+::\+Section\+Type)
+\item 
+\mbox{\Hypertarget{class_html_generator_aa966249e9239eff3631f57211f314504}\label{class_html_generator_aa966249e9239eff3631f57211f314504}} 
+void {\bfseries add\+Index\+Item} (const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_html_generator_aafe5fc8d00e32357b60fd4e0b0c8e0e7}\label{class_html_generator_aafe5fc8d00e32357b60fd4e0b0c8e0e7}} 
+void {\bfseries start\+Indent} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_ac8a600145a8b33e3dc984a0cb834d859}\label{class_html_generator_ac8a600145a8b33e3dc984a0cb834d859}} 
+void {\bfseries end\+Indent} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a80d44096489c83020c550122705afd66}\label{class_html_generator_a80d44096489c83020c550122705afd66}} 
+void {\bfseries write\+Synopsis} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a1c8b9863208e217cf6642951ef006498}\label{class_html_generator_a1c8b9863208e217cf6642951ef006498}} 
+void {\bfseries start\+Class\+Diagram} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a3884a61305d09d1ecbddfb0bc0fe2733}\label{class_html_generator_a3884a61305d09d1ecbddfb0bc0fe2733}} 
+void {\bfseries end\+Class\+Diagram} (const \mbox{\hyperlink{class_class_diagram}{Class\+Diagram}} \&, const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_html_generator_a815ab026ba09dceca7ad84157e9eb4dc}\label{class_html_generator_a815ab026ba09dceca7ad84157e9eb4dc}} 
+void {\bfseries start\+Page\+Ref} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a0d8ff1d418517388be08b4cb8f63ef6e}\label{class_html_generator_a0d8ff1d418517388be08b4cb8f63ef6e}} 
+void {\bfseries end\+Page\+Ref} (const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_html_generator_ac19bda7a07fbdf7069a7601e97dc2276}\label{class_html_generator_ac19bda7a07fbdf7069a7601e97dc2276}} 
+void {\bfseries start\+Quick\+Indices} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a72052df688b371d1b3fe83ec95273e78}\label{class_html_generator_a72052df688b371d1b3fe83ec95273e78}} 
+void {\bfseries end\+Quick\+Indices} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a9856409be5e34cb9f7461e9c6076b8e9}\label{class_html_generator_a9856409be5e34cb9f7461e9c6076b8e9}} 
+void {\bfseries write\+Split\+Bar} (const char $\ast$name)
+\item 
+\mbox{\Hypertarget{class_html_generator_aea25a87c7877cf9a4bb04c4e63debacf}\label{class_html_generator_aea25a87c7877cf9a4bb04c4e63debacf}} 
+void {\bfseries write\+Navigation\+Path} (const char $\ast$s)
+\item 
+\mbox{\Hypertarget{class_html_generator_a6f2d8ea4be1a4586c32c8217d7716422}\label{class_html_generator_a6f2d8ea4be1a4586c32c8217d7716422}} 
+void {\bfseries write\+Logo} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_aa4c36c4fe46af1be803d39f7b1d95a41}\label{class_html_generator_aa4c36c4fe46af1be803d39f7b1d95a41}} 
+void {\bfseries write\+Quick\+Links} (bool compact, Highlighted\+Item hli, const char $\ast$file)
+\item 
+\mbox{\Hypertarget{class_html_generator_aea30e4c7f7f5ff602bdbee818d1f06cc}\label{class_html_generator_aea30e4c7f7f5ff602bdbee818d1f06cc}} 
+void {\bfseries write\+Summary\+Link} (const char $\ast$file, const char $\ast$anchor, const char $\ast$title, bool first)
+\item 
+\mbox{\Hypertarget{class_html_generator_a54eaa6e2b9fe8f3aee9eff264da2449e}\label{class_html_generator_a54eaa6e2b9fe8f3aee9eff264da2449e}} 
+void {\bfseries start\+Contents} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_ada62c0664d53d3e22fffae0503a860f2}\label{class_html_generator_ada62c0664d53d3e22fffae0503a860f2}} 
+void {\bfseries end\+Contents} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_add913ed083be344a99b74f35088771c3}\label{class_html_generator_add913ed083be344a99b74f35088771c3}} 
+void {\bfseries start\+Page\+Doc} (const char $\ast$page\+Title)
+\item 
+\mbox{\Hypertarget{class_html_generator_aea57ed1a242d65a2a5f5f37bca387194}\label{class_html_generator_aea57ed1a242d65a2a5f5f37bca387194}} 
+void {\bfseries end\+Page\+Doc} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_aca7f1402f6cc3d9efbe9815ab8de3cc5}\label{class_html_generator_aca7f1402f6cc3d9efbe9815ab8de3cc5}} 
+void {\bfseries write\+Non\+Breakable\+Space} (int)
+\item 
+\mbox{\Hypertarget{class_html_generator_ad238943ff33bd9b0ea5e566f0be9a168}\label{class_html_generator_ad238943ff33bd9b0ea5e566f0be9a168}} 
+void {\bfseries start\+Desc\+Table} (const char $\ast$title)
+\item 
+\mbox{\Hypertarget{class_html_generator_adc3d1eed2818cdd2a01eb1eacc0ad08d}\label{class_html_generator_adc3d1eed2818cdd2a01eb1eacc0ad08d}} 
+void {\bfseries end\+Desc\+Table} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a203e0dab89c356bf2afdd13ee368e893}\label{class_html_generator_a203e0dab89c356bf2afdd13ee368e893}} 
+void {\bfseries start\+Desc\+Table\+Row} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_af9ae96be3611a28b217f788f2e111d63}\label{class_html_generator_af9ae96be3611a28b217f788f2e111d63}} 
+void {\bfseries end\+Desc\+Table\+Row} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a3513b8c53063d076b85ffb8e0608cd9d}\label{class_html_generator_a3513b8c53063d076b85ffb8e0608cd9d}} 
+void {\bfseries start\+Desc\+Table\+Title} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_ac070a0a291e13f63c3d17294244960d6}\label{class_html_generator_ac070a0a291e13f63c3d17294244960d6}} 
+void {\bfseries end\+Desc\+Table\+Title} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_acf27d538b5edea06a1ec91813ca059fd}\label{class_html_generator_acf27d538b5edea06a1ec91813ca059fd}} 
+void {\bfseries start\+Desc\+Table\+Data} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a20750bdcf48a3104469275333d41f942}\label{class_html_generator_a20750bdcf48a3104469275333d41f942}} 
+void {\bfseries end\+Desc\+Table\+Data} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_ab0139c0d7abf7bca982e9d4360b4ed34}\label{class_html_generator_ab0139c0d7abf7bca982e9d4360b4ed34}} 
+void {\bfseries start\+Dot\+Graph} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a58adba1813ebabd879074371cd56819c}\label{class_html_generator_a58adba1813ebabd879074371cd56819c}} 
+void {\bfseries end\+Dot\+Graph} (const \mbox{\hyperlink{class_dot_class_graph}{Dot\+Class\+Graph}} \&g)
+\item 
+\mbox{\Hypertarget{class_html_generator_a681694b9fbcedc15903e51c95016f711}\label{class_html_generator_a681694b9fbcedc15903e51c95016f711}} 
+void {\bfseries start\+Incl\+Dep\+Graph} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a5ea9e86d0086fed794d619899f4014d7}\label{class_html_generator_a5ea9e86d0086fed794d619899f4014d7}} 
+void {\bfseries end\+Incl\+Dep\+Graph} (const \mbox{\hyperlink{class_dot_incl_dep_graph}{Dot\+Incl\+Dep\+Graph}} \&g)
+\item 
+\mbox{\Hypertarget{class_html_generator_a0c2ea1971421f937a4bceaea76aba95a}\label{class_html_generator_a0c2ea1971421f937a4bceaea76aba95a}} 
+void {\bfseries start\+Group\+Collaboration} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a9c522d8f611e8008f413d1887ee31d4a}\label{class_html_generator_a9c522d8f611e8008f413d1887ee31d4a}} 
+void {\bfseries end\+Group\+Collaboration} (const \mbox{\hyperlink{class_dot_group_collaboration}{Dot\+Group\+Collaboration}} \&g)
+\item 
+\mbox{\Hypertarget{class_html_generator_ad02b96924b42a2f2ac3e511dbbb587c2}\label{class_html_generator_ad02b96924b42a2f2ac3e511dbbb587c2}} 
+void {\bfseries start\+Call\+Graph} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a7a304cc5507fac3e1501a5d442c70157}\label{class_html_generator_a7a304cc5507fac3e1501a5d442c70157}} 
+void {\bfseries end\+Call\+Graph} (const \mbox{\hyperlink{class_dot_call_graph}{Dot\+Call\+Graph}} \&g)
+\item 
+\mbox{\Hypertarget{class_html_generator_ae98ba8c8ff63e688bc33af4114507335}\label{class_html_generator_ae98ba8c8ff63e688bc33af4114507335}} 
+void {\bfseries start\+Dir\+Dep\+Graph} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a6b8ce5266f910a0bec4fc48a41c35f49}\label{class_html_generator_a6b8ce5266f910a0bec4fc48a41c35f49}} 
+void {\bfseries end\+Dir\+Dep\+Graph} (const \mbox{\hyperlink{class_dot_dir_deps}{Dot\+Dir\+Deps}} \&g)
+\item 
+\mbox{\Hypertarget{class_html_generator_aa3618ecfc5f53f11a7f26bd4bb6d432f}\label{class_html_generator_aa3618ecfc5f53f11a7f26bd4bb6d432f}} 
+void {\bfseries write\+Graphical\+Hierarchy} (const \mbox{\hyperlink{class_dot_gfx_hierarchy_table}{Dot\+Gfx\+Hierarchy\+Table}} \&g)
+\item 
+\mbox{\Hypertarget{class_html_generator_ad3b0577be9211daec92334e0969b7530}\label{class_html_generator_ad3b0577be9211daec92334e0969b7530}} 
+void {\bfseries start\+Text\+Block} (bool)
+\item 
+\mbox{\Hypertarget{class_html_generator_a10c142119a0926773b499872108305db}\label{class_html_generator_a10c142119a0926773b499872108305db}} 
+void {\bfseries end\+Text\+Block} (bool)
+\item 
+\mbox{\Hypertarget{class_html_generator_a91b2b5d349350e74a92c1c51ff9eec8f}\label{class_html_generator_a91b2b5d349350e74a92c1c51ff9eec8f}} 
+void {\bfseries last\+Index\+Page} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_aafaa04b511a0cf5281d58f7700bf0c09}\label{class_html_generator_aafaa04b511a0cf5281d58f7700bf0c09}} 
+void {\bfseries start\+Member\+Doc\+Prefix\+Item} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a0cacf6a5a55ada9f6f8688e06ce831b7}\label{class_html_generator_a0cacf6a5a55ada9f6f8688e06ce831b7}} 
+void {\bfseries end\+Member\+Doc\+Prefix\+Item} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a9067c50404d75e969e8463bc4dbb98a5}\label{class_html_generator_a9067c50404d75e969e8463bc4dbb98a5}} 
+void {\bfseries start\+Member\+Doc\+Name} (bool)
+\item 
+\mbox{\Hypertarget{class_html_generator_a4b86a0067f27e69bbfedd0d97e6eb3d9}\label{class_html_generator_a4b86a0067f27e69bbfedd0d97e6eb3d9}} 
+void {\bfseries end\+Member\+Doc\+Name} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_abff728b4734da738d2e0deb552efce08}\label{class_html_generator_abff728b4734da738d2e0deb552efce08}} 
+void {\bfseries start\+Parameter\+Type} (bool first, const char $\ast$key)
+\item 
+\mbox{\Hypertarget{class_html_generator_a7acf2aede403e63af3a43d412894a480}\label{class_html_generator_a7acf2aede403e63af3a43d412894a480}} 
+void {\bfseries end\+Parameter\+Type} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a8da2ad5820039d49072240e3e1bdd582}\label{class_html_generator_a8da2ad5820039d49072240e3e1bdd582}} 
+void {\bfseries start\+Parameter\+Name} (bool)
+\item 
+\mbox{\Hypertarget{class_html_generator_abd64a3a25b75672c9944ec32d014f55a}\label{class_html_generator_abd64a3a25b75672c9944ec32d014f55a}} 
+void {\bfseries end\+Parameter\+Name} (bool last, bool empty\+List, bool close\+Bracket)
+\item 
+\mbox{\Hypertarget{class_html_generator_aaec3b60d1bf3226721458402a321c9fe}\label{class_html_generator_aaec3b60d1bf3226721458402a321c9fe}} 
+void {\bfseries start\+Parameter\+List} (bool)
+\item 
+\mbox{\Hypertarget{class_html_generator_a09ba0b9e2623bb31767342f4a8834451}\label{class_html_generator_a09ba0b9e2623bb31767342f4a8834451}} 
+void {\bfseries end\+Parameter\+List} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a74f27361593c1219f23c3b9f0cb49e66}\label{class_html_generator_a74f27361593c1219f23c3b9f0cb49e66}} 
+virtual void {\bfseries exception\+Entry} (const char $\ast$, bool)
+\item 
+\mbox{\Hypertarget{class_html_generator_aa5851d60541e79c0a0539e7206d85803}\label{class_html_generator_aa5851d60541e79c0a0539e7206d85803}} 
+void {\bfseries start\+Constraint\+List} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_html_generator_aac02dbee22fe7d3ff29081b4833981aa}\label{class_html_generator_aac02dbee22fe7d3ff29081b4833981aa}} 
+void {\bfseries start\+Constraint\+Param} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_ae0379d1142e0189d0f4a1d236b76501c}\label{class_html_generator_ae0379d1142e0189d0f4a1d236b76501c}} 
+void {\bfseries end\+Constraint\+Param} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a6fefa778c71da8dc9bd4a28461a1da52}\label{class_html_generator_a6fefa778c71da8dc9bd4a28461a1da52}} 
+void {\bfseries start\+Constraint\+Type} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_af424c10d553610d4a099e533632db5a8}\label{class_html_generator_af424c10d553610d4a099e533632db5a8}} 
+void {\bfseries end\+Constraint\+Type} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a5ec6842686db43cbb2eb75eaef551472}\label{class_html_generator_a5ec6842686db43cbb2eb75eaef551472}} 
+void {\bfseries start\+Constraint\+Docs} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a5bd3b6d393908c6fd052f52658df64bf}\label{class_html_generator_a5bd3b6d393908c6fd052f52658df64bf}} 
+void {\bfseries end\+Constraint\+Docs} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_aaa12c82f9806096e567f4441e89b4fbc}\label{class_html_generator_aaa12c82f9806096e567f4441e89b4fbc}} 
+void {\bfseries end\+Constraint\+List} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a11225f1d448b055ba7f5a5c4eb9c4415}\label{class_html_generator_a11225f1d448b055ba7f5a5c4eb9c4415}} 
+void {\bfseries start\+Member\+Doc\+Simple} (bool)
+\item 
+\mbox{\Hypertarget{class_html_generator_a87353b6f2da0c0ec144148771360a0e4}\label{class_html_generator_a87353b6f2da0c0ec144148771360a0e4}} 
+void {\bfseries end\+Member\+Doc\+Simple} (bool)
+\item 
+\mbox{\Hypertarget{class_html_generator_ad8d74d63c27a79721411b61f079b1d23}\label{class_html_generator_ad8d74d63c27a79721411b61f079b1d23}} 
+void {\bfseries start\+Inline\+Member\+Type} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_abf118ca2952e998a7bf92872cbd27d78}\label{class_html_generator_abf118ca2952e998a7bf92872cbd27d78}} 
+void {\bfseries end\+Inline\+Member\+Type} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_aea75d506f4ee65a94d2d168de6bd9344}\label{class_html_generator_aea75d506f4ee65a94d2d168de6bd9344}} 
+void {\bfseries start\+Inline\+Member\+Name} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a696f93dbb5aa57ed49c272049cff3bb2}\label{class_html_generator_a696f93dbb5aa57ed49c272049cff3bb2}} 
+void {\bfseries end\+Inline\+Member\+Name} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_aba254fc8b8e76527e995671a36619228}\label{class_html_generator_aba254fc8b8e76527e995671a36619228}} 
+void {\bfseries start\+Inline\+Member\+Doc} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_aa746fa4cf5bc3c2708a549b2fa4a4e78}\label{class_html_generator_aa746fa4cf5bc3c2708a549b2fa4a4e78}} 
+void {\bfseries end\+Inline\+Member\+Doc} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a117a5517c516573c07e780c560651619}\label{class_html_generator_a117a5517c516573c07e780c560651619}} 
+void {\bfseries start\+Labels} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a76009494c2f987f8a95cb79f0fc80250}\label{class_html_generator_a76009494c2f987f8a95cb79f0fc80250}} 
+void {\bfseries write\+Label} (const char $\ast$l, bool is\+Last)
+\item 
+\mbox{\Hypertarget{class_html_generator_a4a2190f8892cd76339ee7fcd827e48fc}\label{class_html_generator_a4a2190f8892cd76339ee7fcd827e48fc}} 
+void {\bfseries end\+Labels} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_html_generator_a0c4c6cd48e43f74bf258851f8b109faf}\label{class_html_generator_a0c4c6cd48e43f74bf258851f8b109faf}} 
+static void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_aa896f1b7868e05224e879ed987a122b8}\label{class_html_generator_aa896f1b7868e05224e879ed987a122b8}} 
+static void {\bfseries write\+Style\+Sheet\+File} (\mbox{\hyperlink{class_q_file}{Q\+File}} \&f)
+\item 
+\mbox{\Hypertarget{class_html_generator_af46285b4b32be613d4eece52b8b3cb45}\label{class_html_generator_af46285b4b32be613d4eece52b8b3cb45}} 
+static void {\bfseries write\+Header\+File} (\mbox{\hyperlink{class_q_file}{Q\+File}} \&f, const char $\ast$cssname)
+\item 
+\mbox{\Hypertarget{class_html_generator_acac3dc26b34a9cacb48aa1d7bc17e532}\label{class_html_generator_acac3dc26b34a9cacb48aa1d7bc17e532}} 
+static void {\bfseries write\+Footer\+File} (\mbox{\hyperlink{class_q_file}{Q\+File}} \&f)
+\item 
+\mbox{\Hypertarget{class_html_generator_a7306ef9abbceafd6074b4d883a59f033}\label{class_html_generator_a7306ef9abbceafd6074b4d883a59f033}} 
+static void \mbox{\hyperlink{class_html_generator_a7306ef9abbceafd6074b4d883a59f033}{write\+Tab\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Additional initialization after indices have been created. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_html_generator_a99699bc4962554bb35a111d75b13decb}\label{class_html_generator_a99699bc4962554bb35a111d75b13decb}} 
+static void {\bfseries write\+Search\+Info} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&rel\+Path)
+\item 
+\mbox{\Hypertarget{class_html_generator_a028225feab9ba17ccf8efe0ad3a41ee9}\label{class_html_generator_a028225feab9ba17ccf8efe0ad3a41ee9}} 
+static void {\bfseries write\+Search\+Data} (const char $\ast$dir)
+\item 
+\mbox{\Hypertarget{class_html_generator_a1fd6971ba73b744d9ceb90478194d61d}\label{class_html_generator_a1fd6971ba73b744d9ceb90478194d61d}} 
+static void {\bfseries write\+Search\+Page} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a9588784ebebaad9cb24e153c07aeb662}\label{class_html_generator_a9588784ebebaad9cb24e153c07aeb662}} 
+static void {\bfseries write\+External\+Search\+Page} ()
+\item 
+\mbox{\Hypertarget{class_html_generator_a3d4f21a27792ff6872ade682475a5661}\label{class_html_generator_a3d4f21a27792ff6872ade682475a5661}} 
+static \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries write\+Logo\+As\+String} (const char $\ast$path)
+\item 
+\mbox{\Hypertarget{class_html_generator_adfceb76ea8febf729a92331ffad0cf14}\label{class_html_generator_adfceb76ea8febf729a92331ffad0cf14}} 
+static \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries write\+Split\+Bar\+As\+String} (const char $\ast$name, const char $\ast$relpath)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Generator for H\+T\+ML output 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_html_generator_a574ab87e7aa9b92c11248027912851bc}\label{class_html_generator_a574ab87e7aa9b92c11248027912851bc}} 
+\index{HtmlGenerator@{HtmlGenerator}!codify@{codify}}
+\index{codify@{codify}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{codify()}{codify()}}
+{\footnotesize\ttfamily void Html\+Generator\+::codify (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Writes an code fragment to the output. This function should keep spaces visible, should break lines at a newline and should convert tabs to the right number of spaces. 
+
+Implements \mbox{\hyperlink{class_code_output_interface_aa29a5eedda08596ace50ed5b59c8ae7f}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a1f33982a4ce6eac13224197e91f057d8}\label{class_html_generator_a1f33982a4ce6eac13224197e91f057d8}} 
+\index{HtmlGenerator@{HtmlGenerator}!docify@{docify}}
+\index{docify@{docify}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{docify()}{docify()}}
+{\footnotesize\ttfamily void Html\+Generator\+::docify (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes an A\+S\+C\+II string to the output. Converts characters that have \mbox{\hyperlink{class_a}{A}} special meaning, like {\ttfamily \&} in html. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ad7d3f6631bd157739170690e669b3e75}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a8e60c605c5db7577e2e0256c0431dcb1}\label{class_html_generator_a8e60c605c5db7577e2e0256c0431dcb1}} 
+\index{HtmlGenerator@{HtmlGenerator}!endBold@{endBold}}
+\index{endBold@{endBold}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{endBold()}{endBold()}}
+{\footnotesize\ttfamily void Html\+Generator\+::end\+Bold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+End a section of text displayed in bold face. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a2a17911ba778f8efac83999fb5d190d9}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a6df6ede2137490c79228b9825df3b263}\label{class_html_generator_a6df6ede2137490c79228b9825df3b263}} 
+\index{HtmlGenerator@{HtmlGenerator}!endCodeFragment@{endCodeFragment}}
+\index{endCodeFragment@{endCodeFragment}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{endCodeFragment()}{endCodeFragment()}}
+{\footnotesize\ttfamily void Html\+Generator\+::end\+Code\+Fragment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Ends a source code fragment 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a08f032482a8f23ac1aab66552db43a81}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a509e9b78f035f58e533cef4f79bf5401}\label{class_html_generator_a509e9b78f035f58e533cef4f79bf5401}} 
+\index{HtmlGenerator@{HtmlGenerator}!endCodeLine@{endCodeLine}}
+\index{endCodeLine@{endCodeLine}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{endCodeLine()}{endCodeLine()}}
+{\footnotesize\ttfamily void Html\+Generator\+::end\+Code\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Ends a line of code started with start\+Code\+Line() 
+
+Implements \mbox{\hyperlink{class_code_output_interface_afac5763eafc78f93b82691fb9a6dcff7}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a0354681e6d39ae7da41d33f88656e335}\label{class_html_generator_a0354681e6d39ae7da41d33f88656e335}} 
+\index{HtmlGenerator@{HtmlGenerator}!endDescItem@{endDescItem}}
+\index{endDescItem@{endDescItem}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{endDescItem()}{endDescItem()}}
+{\footnotesize\ttfamily void Html\+Generator\+::end\+Desc\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Ends an item of a description list and starts the description itself\+: e.\+g. {\ttfamily $<$/dt$>$} in H\+T\+ML. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a09e3aa9d3faac55b2cc9290eaa69f55b}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_aff598e78fc1ebaefb21fe94fda564e4d}\label{class_html_generator_aff598e78fc1ebaefb21fe94fda564e4d}} 
+\index{HtmlGenerator@{HtmlGenerator}!endDescription@{endDescription}}
+\index{endDescription@{endDescription}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{endDescription()}{endDescription()}}
+{\footnotesize\ttfamily void Html\+Generator\+::end\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Ends a description list\+: e.\+g. {\ttfamily $<$/dl$>$} in H\+T\+ML 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ac25c565e9fd8aee6c2b0d9b71fcff380}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a88c2f4c34f00161d34e4c1059d747381}\label{class_html_generator_a88c2f4c34f00161d34e4c1059d747381}} 
+\index{HtmlGenerator@{HtmlGenerator}!endEmphasis@{endEmphasis}}
+\index{endEmphasis@{endEmphasis}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{endEmphasis()}{endEmphasis()}}
+{\footnotesize\ttfamily void Html\+Generator\+::end\+Emphasis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Ends a section of text displayed in italic. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_aed2cf04d82648509f97403bd4ce62590}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_aca25e58aa19b44b41de489dc966e4b5d}\label{class_html_generator_aca25e58aa19b44b41de489dc966e4b5d}} 
+\index{HtmlGenerator@{HtmlGenerator}!endFontClass@{endFontClass}}
+\index{endFontClass@{endFontClass}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{endFontClass()}{endFontClass()}}
+{\footnotesize\ttfamily void Html\+Generator\+::end\+Font\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Ends a block started with \mbox{\hyperlink{class_html_generator_aa600cc24896060a68612e3db6efb7dbf}{start\+Font\+Class()}} 
+
+Implements \mbox{\hyperlink{class_code_output_interface_a2b8ac05a391dae36793aa3aa8714a0f6}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_af6ca967739e45755318c78058115c27a}\label{class_html_generator_af6ca967739e45755318c78058115c27a}} 
+\index{HtmlGenerator@{HtmlGenerator}!endHtmlLink@{endHtmlLink}}
+\index{endHtmlLink@{endHtmlLink}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{endHtmlLink()}{endHtmlLink()}}
+{\footnotesize\ttfamily void Html\+Generator\+::end\+Html\+Link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ends a link started by \mbox{\hyperlink{class_html_generator_a5fdd7ff7fcabd4e301b8fec2b9c72b85}{start\+Html\+Link()}}. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_afb808c1c487135d4fb2156d0675b387e}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_aa5dc9b6c49ebf68dd54942d258716206}\label{class_html_generator_aa5dc9b6c49ebf68dd54942d258716206}} 
+\index{HtmlGenerator@{HtmlGenerator}!endItemList@{endItemList}}
+\index{endItemList@{endItemList}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{endItemList()}{endItemList()}}
+{\footnotesize\ttfamily void Html\+Generator\+::end\+Item\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Ends a bullet list\+: e.\+g. {\ttfamily $<$/ul$>$} in html 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a3493b65672bf134033bd3bb296acdff4}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a91f6100cb025e52c1cef35b8749761b2}\label{class_html_generator_a91f6100cb025e52c1cef35b8749761b2}} 
+\index{HtmlGenerator@{HtmlGenerator}!endItemListItem@{endItemListItem}}
+\index{endItemListItem@{endItemListItem}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{endItemListItem()}{endItemListItem()}}
+{\footnotesize\ttfamily void Html\+Generator\+::end\+Item\+List\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Writes a list item for a bullet or enumerated list\+: e.\+g. {\ttfamily $<$/li$>$} in html 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a90d290d7a06a9e7ecd968c8da90ed665}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a48e5516f348a9ec6ed456a6a3b003af3}\label{class_html_generator_a48e5516f348a9ec6ed456a6a3b003af3}} 
+\index{HtmlGenerator@{HtmlGenerator}!endParagraph@{endParagraph}}
+\index{endParagraph@{endParagraph}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{endParagraph()}{endParagraph()}}
+{\footnotesize\ttfamily void Html\+Generator\+::end\+Paragraph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ends a paragraph 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ab76280c2eb451ad160991707206b6c95}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a574b29296b93ffa4c3b119cbee70269c}\label{class_html_generator_a574b29296b93ffa4c3b119cbee70269c}} 
+\index{HtmlGenerator@{HtmlGenerator}!endTypewriter@{endTypewriter}}
+\index{endTypewriter@{endTypewriter}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{endTypewriter()}{endTypewriter()}}
+{\footnotesize\ttfamily void Html\+Generator\+::end\+Typewriter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+End a section of text displayed in typewriter style. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a9e987baf8aed76f0e5e6676b3238d2c8}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a4785d0f1ac1828284aa1f21dbb1e3773}\label{class_html_generator_a4785d0f1ac1828284aa1f21dbb1e3773}} 
+\index{HtmlGenerator@{HtmlGenerator}!startBold@{startBold}}
+\index{startBold@{startBold}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{startBold()}{startBold()}}
+{\footnotesize\ttfamily void Html\+Generator\+::start\+Bold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Changes the text font to bold face. The bold section ends with \mbox{\hyperlink{class_html_generator_a8e60c605c5db7577e2e0256c0431dcb1}{end\+Bold()}} 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_aa0bfe5ef08077a7191ba4666f47c441b}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_ac071e1f57eb6e4b2d4baeae1723186bd}\label{class_html_generator_ac071e1f57eb6e4b2d4baeae1723186bd}} 
+\index{HtmlGenerator@{HtmlGenerator}!startCodeFragment@{startCodeFragment}}
+\index{startCodeFragment@{startCodeFragment}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{startCodeFragment()}{startCodeFragment()}}
+{\footnotesize\ttfamily void Html\+Generator\+::start\+Code\+Fragment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Starts a source code fragment. The fragment will be fed to the code parser (see \mbox{\hyperlink{code_8h_source}{code.\+h}}) for syntax highlighting and cross-\/referencing. The fragment ends by a call to \mbox{\hyperlink{class_html_generator_a6df6ede2137490c79228b9825df3b263}{end\+Code\+Fragment()}} 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ab19fc767b08c25b0ca7c976d24799bda}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a7a4d4ef015bc9d8298a6c023f85737c5}\label{class_html_generator_a7a4d4ef015bc9d8298a6c023f85737c5}} 
+\index{HtmlGenerator@{HtmlGenerator}!startDescItem@{startDescItem}}
+\index{startDescItem@{startDescItem}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{startDescItem()}{startDescItem()}}
+{\footnotesize\ttfamily void Html\+Generator\+::start\+Desc\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Starts an item of a description list\+: e.\+g. {\ttfamily $<$dt$>$} in H\+T\+ML. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a5d1cc59d94c3f529c90e0a06704be181}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a8ae03ee5e64d705aeebbe605d3c05b0f}\label{class_html_generator_a8ae03ee5e64d705aeebbe605d3c05b0f}} 
+\index{HtmlGenerator@{HtmlGenerator}!startDescription@{startDescription}}
+\index{startDescription@{startDescription}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{startDescription()}{startDescription()}}
+{\footnotesize\ttfamily void Html\+Generator\+::start\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Starts a description list\+: e.\+g. {\ttfamily $<$dl$>$} in H\+T\+ML Items are surrounded by \mbox{\hyperlink{class_html_generator_a7a4d4ef015bc9d8298a6c023f85737c5}{start\+Desc\+Item()}} and \mbox{\hyperlink{class_html_generator_a0354681e6d39ae7da41d33f88656e335}{end\+Desc\+Item()}} 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ac9c801c3ad0b50e3e69be184b50c2fef}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_afa50b0bc75a1f73eb0e86d4718534d1b}\label{class_html_generator_afa50b0bc75a1f73eb0e86d4718534d1b}} 
+\index{HtmlGenerator@{HtmlGenerator}!startEmphasis@{startEmphasis}}
+\index{startEmphasis@{startEmphasis}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{startEmphasis()}{startEmphasis()}}
+{\footnotesize\ttfamily void Html\+Generator\+::start\+Emphasis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Changes the text font to italic. The italic section ends with \mbox{\hyperlink{class_html_generator_a88c2f4c34f00161d34e4c1059d747381}{end\+Emphasis()}} 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a21debc3a6c4c58791a41e715dc78f4ab}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_aa600cc24896060a68612e3db6efb7dbf}\label{class_html_generator_aa600cc24896060a68612e3db6efb7dbf}} 
+\index{HtmlGenerator@{HtmlGenerator}!startFontClass@{startFontClass}}
+\index{startFontClass@{startFontClass}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{startFontClass()}{startFontClass()}}
+{\footnotesize\ttfamily void Html\+Generator\+::start\+Font\+Class (\begin{DoxyParamCaption}\item[{const char $\ast$}]{cls\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Starts a block with a certain meaning. Used for syntax highlighting, which elements of the same type are rendered using the same \textquotesingle{}font class\textquotesingle{}. 
+\begin{DoxyParams}{Parameters}
+{\em cls\+Name} & The category name. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_ac90f75968cdcf127e0b02938bdb49d87}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a5fdd7ff7fcabd4e301b8fec2b9c72b85}\label{class_html_generator_a5fdd7ff7fcabd4e301b8fec2b9c72b85}} 
+\index{HtmlGenerator@{HtmlGenerator}!startHtmlLink@{startHtmlLink}}
+\index{startHtmlLink@{startHtmlLink}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{startHtmlLink()}{startHtmlLink()}}
+{\footnotesize\ttfamily void Html\+Generator\+::start\+Html\+Link (\begin{DoxyParamCaption}\item[{const char $\ast$}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Starts a (link to an) \mbox{\hyperlink{struct_u_r_l}{U\+RL}} found in the documentation. 
+\begin{DoxyParams}{Parameters}
+{\em url} & The \mbox{\hyperlink{struct_u_r_l}{U\+RL}} to link to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ab52dbf41ce337c701f9cd1e7794f80e7}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_aedec2c1429139e4fd713df22e5636879}\label{class_html_generator_aedec2c1429139e4fd713df22e5636879}} 
+\index{HtmlGenerator@{HtmlGenerator}!startItemList@{startItemList}}
+\index{startItemList@{startItemList}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{startItemList()}{startItemList()}}
+{\footnotesize\ttfamily void Html\+Generator\+::start\+Item\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Start of a bullet list\+: e.\+g. {\ttfamily $<$ul$>$} in html. \mbox{\hyperlink{class_html_generator_aaa5091e04c77ea310e0c5dee4cc04e94}{start\+Item\+List\+Item()}} is Used for the bullet items. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a54b169393594b6cf113977ccccaeb9ee}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_aaa5091e04c77ea310e0c5dee4cc04e94}\label{class_html_generator_aaa5091e04c77ea310e0c5dee4cc04e94}} 
+\index{HtmlGenerator@{HtmlGenerator}!startItemListItem@{startItemListItem}}
+\index{startItemListItem@{startItemListItem}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{startItemListItem()}{startItemListItem()}}
+{\footnotesize\ttfamily void Html\+Generator\+::start\+Item\+List\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Writes a list item for a bullet or enumerated list\+: e.\+g. {\ttfamily $<$li$>$} in html 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_aa1cbcadfedf8e6d52029d17526b5fa3f}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_ab00abe0fbb8b668d3f8fd73b7c1216b0}\label{class_html_generator_ab00abe0fbb8b668d3f8fd73b7c1216b0}} 
+\index{HtmlGenerator@{HtmlGenerator}!startParagraph@{startParagraph}}
+\index{startParagraph@{startParagraph}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{startParagraph()}{startParagraph()}}
+{\footnotesize\ttfamily void Html\+Generator\+::start\+Paragraph (\begin{DoxyParamCaption}\item[{const char $\ast$}]{class\+Def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Starts a new paragraph
+
+Starts a new paragraph 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a9f711f4ef8f48b9c7b1cae625578e7ff}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_ae3174a7318289e8f7042f2d10345c419}\label{class_html_generator_ae3174a7318289e8f7042f2d10345c419}} 
+\index{HtmlGenerator@{HtmlGenerator}!startTypewriter@{startTypewriter}}
+\index{startTypewriter@{startTypewriter}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{startTypewriter()}{startTypewriter()}}
+{\footnotesize\ttfamily void Html\+Generator\+::start\+Typewriter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Changes the text font to fixed size. The section ends with \mbox{\hyperlink{class_html_generator_a574b29296b93ffa4c3b119cbee70269c}{end\+Typewriter()}} 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_abde41a60b900d35b0b198f43731c1cd0}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a71e6263d7ffef2cc600e289be06c4f33}\label{class_html_generator_a71e6263d7ffef2cc600e289be06c4f33}} 
+\index{HtmlGenerator@{HtmlGenerator}!writeChar@{writeChar}}
+\index{writeChar@{writeChar}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{writeChar()}{writeChar()}}
+{\footnotesize\ttfamily void Html\+Generator\+::write\+Char (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes a single A\+S\+C\+II character to the output. Converts characters that have a special meaning. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a1577324720c1c71142dff84ae80b058d}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a9e2528347c04b6f07dd9263441dbcf4f}\label{class_html_generator_a9e2528347c04b6f07dd9263441dbcf4f}} 
+\index{HtmlGenerator@{HtmlGenerator}!writeCodeAnchor@{writeCodeAnchor}}
+\index{writeCodeAnchor@{writeCodeAnchor}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{writeCodeAnchor()}{writeCodeAnchor()}}
+{\footnotesize\ttfamily void Html\+Generator\+::write\+Code\+Anchor (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Write an anchor to a source listing. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the anchor. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a1f6394c4ef7c4143de90bcaf3a65c0b4}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a91b156be8ac84d8a2a8a88e7adf0869b}\label{class_html_generator_a91b156be8ac84d8a2a8a88e7adf0869b}} 
+\index{HtmlGenerator@{HtmlGenerator}!writeCodeLink@{writeCodeLink}}
+\index{writeCodeLink@{writeCodeLink}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{writeCodeLink()}{writeCodeLink()}}
+{\footnotesize\ttfamily void Html\+Generator\+::write\+Code\+Link (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ref,  }\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{anchor,  }\item[{const char $\ast$}]{name,  }\item[{const char $\ast$}]{tooltip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Writes a link to an object in a code fragment. 
+\begin{DoxyParams}{Parameters}
+{\em ref} & If this is non-\/zero, the object is to be found in an external documentation file. \\
+\hline
+{\em file} & The file in which the object is located. \\
+\hline
+{\em anchor} & The anchor uniquely identifying the object within the file. \\
+\hline
+{\em name} & The text to display as a placeholder for the link. \\
+\hline
+{\em tooltip} & The tooltip to display when the mouse is on the link. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a102e2b7f40916c75b79871307f5bb674}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a042fed032c729b4a5e44b9a7c86385a7}\label{class_html_generator_a042fed032c729b4a5e44b9a7c86385a7}} 
+\index{HtmlGenerator@{HtmlGenerator}!writeLineNumber@{writeLineNumber}}
+\index{writeLineNumber@{writeLineNumber}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{writeLineNumber()}{writeLineNumber()}}
+{\footnotesize\ttfamily void Html\+Generator\+::write\+Line\+Number (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ref,  }\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{anchor,  }\item[{int}]{line\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Writes the line number of a source listing 
+\begin{DoxyParams}{Parameters}
+{\em ref} & External reference (when imported from a tag file) \\
+\hline
+{\em file} & The file part of the \mbox{\hyperlink{struct_u_r_l}{U\+RL}} pointing to the docs. \\
+\hline
+{\em anchor} & The anchor part of the \mbox{\hyperlink{struct_u_r_l}{U\+RL}} pointing to the docs. \\
+\hline
+{\em line\+Number} & The line number to write \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a8115646785b65e292480c2e4e969b389}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_a26b15cf05292634e086ec26cede20f2e}\label{class_html_generator_a26b15cf05292634e086ec26cede20f2e}} 
+\index{HtmlGenerator@{HtmlGenerator}!writeObjectLink@{writeObjectLink}}
+\index{writeObjectLink@{writeObjectLink}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{writeObjectLink()}{writeObjectLink()}}
+{\footnotesize\ttfamily void Html\+Generator\+::write\+Object\+Link (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ref,  }\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{anchor,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes a link to an object in the documentation. 
+\begin{DoxyParams}{Parameters}
+{\em ref} & If this is non-\/zero, the object is to be found in an external documentation file. \\
+\hline
+{\em file} & The file in which the object is located. \\
+\hline
+{\em anchor} & The anchor uniquely identifying the object within the file. \\
+\hline
+{\em name} & The text to display as a placeholder for the link. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a3537423635807fe140ec5be1a2198060}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_aa8f5d1eab68eb5fd43f2529c947f0a02}\label{class_html_generator_aa8f5d1eab68eb5fd43f2529c947f0a02}} 
+\index{HtmlGenerator@{HtmlGenerator}!writeRuler@{writeRuler}}
+\index{writeRuler@{writeRuler}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{writeRuler()}{writeRuler()}}
+{\footnotesize\ttfamily void Html\+Generator\+::write\+Ruler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Writes a horizontal ruler to the output 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ade0d004fb6e8641c92f2f144d7242f0b}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_ad54dd4f0dda0e22574149cfb4415ae4a}\label{class_html_generator_ad54dd4f0dda0e22574149cfb4415ae4a}} 
+\index{HtmlGenerator@{HtmlGenerator}!writeString@{writeString}}
+\index{writeString@{writeString}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{writeString()}{writeString()}}
+{\footnotesize\ttfamily void Html\+Generator\+::write\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes an A\+S\+C\+II string to the output, {\itshape without} converting special characters. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a5737513ddf260787b5b79c84ae1059af}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_html_generator_ad21a9b170d8f644619f287a233c6b549}\label{class_html_generator_ad21a9b170d8f644619f287a233c6b549}} 
+\index{HtmlGenerator@{HtmlGenerator}!writeTooltip@{writeTooltip}}
+\index{writeTooltip@{writeTooltip}!HtmlGenerator@{HtmlGenerator}}
+\subsubsection{\texorpdfstring{writeTooltip()}{writeTooltip()}}
+{\footnotesize\ttfamily void Html\+Generator\+::write\+Tooltip (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{const \mbox{\hyperlink{struct_doc_link_info}{Doc\+Link\+Info}} \&}]{doc\+Info,  }\item[{const char $\ast$}]{decl,  }\item[{const char $\ast$}]{desc,  }\item[{const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&}]{def\+Info,  }\item[{const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&}]{decl\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Writes a tool tip definition 
+\begin{DoxyParams}{Parameters}
+{\em id} & unique identifier for the tooltip \\
+\hline
+{\em doc\+Info} & Info about the symbol\textquotesingle{}s documentation. \\
+\hline
+{\em decl} & full declaration of the symbol (for functions) \\
+\hline
+{\em desc} & brief description for the symbol \\
+\hline
+{\em def\+Info} & Info about the symbol\textquotesingle{}s definition in the source code \\
+\hline
+{\em decl\+Info} & Info about the symbol\textquotesingle{}s declaration in the source code \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a4326ca642f6ec228466ae310622f73ad}{Code\+Output\+Interface}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/htmlgen.\+h\item 
+doxygen/src/htmlgen.\+cpp\end{DoxyCompactItemize}

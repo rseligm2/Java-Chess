@@ -1,0 +1,139 @@
+\hypertarget{class_q_text_codec_from_i_o_d}{}\section{Q\+Text\+Codec\+From\+I\+OD Class Reference}
+\label{class_q_text_codec_from_i_o_d}\index{QTextCodecFromIOD@{QTextCodecFromIOD}}
+Inheritance diagram for Q\+Text\+Codec\+From\+I\+OD\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_text_codec_from_i_o_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_text_codec_from_i_o_d_a385183a568f0cf30c2296766e55dcfc9}\label{class_q_text_codec_from_i_o_d_a385183a568f0cf30c2296766e55dcfc9}} 
+{\bfseries Q\+Text\+Codec\+From\+I\+OD} (\mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} $\ast$iod)
+\item 
+\mbox{\Hypertarget{class_q_text_codec_from_i_o_d_adf27d26264ff1afae80fe3e047a5d9a8}\label{class_q_text_codec_from_i_o_d_adf27d26264ff1afae80fe3e047a5d9a8}} 
+bool {\bfseries ok} () const
+\item 
+\mbox{\hyperlink{class_q_text_decoder}{Q\+Text\+Decoder}} $\ast$ \mbox{\hyperlink{class_q_text_codec_from_i_o_d_ae5184561209ee0771ad28d3888a2a89c}{make\+Decoder}} () const
+\item 
+const char $\ast$ \mbox{\hyperlink{class_q_text_codec_from_i_o_d_ac80023588673bad8a8b0d6983832c884}{name}} () const
+\item 
+int \mbox{\hyperlink{class_q_text_codec_from_i_o_d_aa2a1123c86835c8395a058082c9fbdd3}{mib\+Enum}} () const
+\item 
+int \mbox{\hyperlink{class_q_text_codec_from_i_o_d_a5a3016db9b6c0f2ad76bbf74ce60a053}{heuristic\+Content\+Match}} (const char $\ast$, int) const
+\item 
+int \mbox{\hyperlink{class_q_text_codec_from_i_o_d_af7109ff23e3f6c34228eb046578c0357}{heuristic\+Name\+Match}} (const char $\ast$hint) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_text_codec_from_i_o_d_af43c97a602cfb4e7d8d74d7a93925f48}{to\+Unicode}} (const char $\ast$chars, int len) const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_q_text_codec_from_i_o_d_af5b4ad5ff7fbe98683b7bd7d54cd40c0}{from\+Unicode}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&uc, int \&len\+In\+Out) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_text_codec_from_i_o_d_a44b8249b6b6d2771f87288d20aedb28b}\label{class_q_text_codec_from_i_o_d_a44b8249b6b6d2771f87288d20aedb28b}} 
+class {\bfseries Q\+Text\+Codec\+From\+I\+O\+D\+Decoder}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_text_codec_from_i_o_d_af5b4ad5ff7fbe98683b7bd7d54cd40c0}\label{class_q_text_codec_from_i_o_d_af5b4ad5ff7fbe98683b7bd7d54cd40c0}} 
+\index{QTextCodecFromIOD@{QTextCodecFromIOD}!fromUnicode@{fromUnicode}}
+\index{fromUnicode@{fromUnicode}!QTextCodecFromIOD@{QTextCodecFromIOD}}
+\subsubsection{\texorpdfstring{fromUnicode()}{fromUnicode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Q\+Text\+Codec\+From\+I\+O\+D\+::from\+Unicode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{uc,  }\item[{int \&}]{len\+In\+Out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Subclasses of \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} must reimplement either this function or \mbox{\hyperlink{class_q_text_codec_aa7dccd7fc1b578de0b7599b040d98e11}{make\+Encoder()}}. It converts the first {\itshape len\+In\+Out} characters of {\itshape uc} from Unicode to the encoding of the subclass. If {\itshape len\+In\+Out} is negative or too large, the length of {\itshape uc} is used instead.
+
+The value returned is the property of the caller, which is responsible for deleting it with \char`\"{}delete \mbox{[}$\,$\mbox{]}\char`\"{}. The length of the resulting Unicode character sequence is returned in {\itshape len\+In\+Out}.
+
+The default implementation makes an encoder with \mbox{\hyperlink{class_q_text_codec_aa7dccd7fc1b578de0b7599b040d98e11}{make\+Encoder()}} and converts the input with that. Note that the default \mbox{\hyperlink{class_q_text_codec_aa7dccd7fc1b578de0b7599b040d98e11}{make\+Encoder()}} implementation makes an encoder that simply calls this function, hence subclasses {\itshape must} reimplement one function or the other to avoid infinite recursion. 
+
+Reimplemented from \mbox{\hyperlink{class_q_text_codec_a564dc8bf15241a165a38287c1d26e48c}{Q\+Text\+Codec}}.
+
+\mbox{\Hypertarget{class_q_text_codec_from_i_o_d_a5a3016db9b6c0f2ad76bbf74ce60a053}\label{class_q_text_codec_from_i_o_d_a5a3016db9b6c0f2ad76bbf74ce60a053}} 
+\index{QTextCodecFromIOD@{QTextCodecFromIOD}!heuristicContentMatch@{heuristicContentMatch}}
+\index{heuristicContentMatch@{heuristicContentMatch}!QTextCodecFromIOD@{QTextCodecFromIOD}}
+\subsubsection{\texorpdfstring{heuristicContentMatch()}{heuristicContentMatch()}}
+{\footnotesize\ttfamily int Q\+Text\+Codec\+From\+I\+O\+D\+::heuristic\+Content\+Match (\begin{DoxyParamCaption}\item[{const char $\ast$}]{chars,  }\item[{int}]{len }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Subclasses of \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} must reimplement this function. It examines the first {\itshape len} bytes of {\itshape chars} and returns a value indicating how likely it is that the string is a prefix of text encoded in the encoding of the subclass. Any negative return value indicates that the text is detectably not in the encoding (eg. it contains undefined characters). \mbox{\hyperlink{class_a}{A}} return value of 0 indicates that the text should be decoded with this codec rather than as A\+S\+C\+II, but there is no particular evidence. The value should range up to {\itshape len}. Thus, most decoders will return -\/1, 0, or -\/{\itshape len}.
+
+The characters are not null terminated.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_text_codec_aeb3ec365c6c4f1812689a2b66ed09e27}{codec\+For\+Content()}}. 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_text_codec_a4780a608d950994a927de727bb07b9fe}{Q\+Text\+Codec}}.
+
+\mbox{\Hypertarget{class_q_text_codec_from_i_o_d_af7109ff23e3f6c34228eb046578c0357}\label{class_q_text_codec_from_i_o_d_af7109ff23e3f6c34228eb046578c0357}} 
+\index{QTextCodecFromIOD@{QTextCodecFromIOD}!heuristicNameMatch@{heuristicNameMatch}}
+\index{heuristicNameMatch@{heuristicNameMatch}!QTextCodecFromIOD@{QTextCodecFromIOD}}
+\subsubsection{\texorpdfstring{heuristicNameMatch()}{heuristicNameMatch()}}
+{\footnotesize\ttfamily int Q\+Text\+Codec\+From\+I\+O\+D\+::heuristic\+Name\+Match (\begin{DoxyParamCaption}\item[{const char $\ast$}]{hint }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns a value indicating how likely this decoder is for decoding some format that has the given name.
+
+\mbox{\hyperlink{class_a}{A}} good match returns a positive number around the length of the string. \mbox{\hyperlink{class_a}{A}} bad match is negative.
+
+The default implementation calls \mbox{\hyperlink{class_q_text_codec_a16459bb8c9e7c502547f45e5387fbb03}{simple\+Heuristic\+Name\+Match()}} with the name of the codec. 
+
+Reimplemented from \mbox{\hyperlink{class_q_text_codec_a1bcf2f11fac6113fd6ae74dda55b2ca4}{Q\+Text\+Codec}}.
+
+\mbox{\Hypertarget{class_q_text_codec_from_i_o_d_ae5184561209ee0771ad28d3888a2a89c}\label{class_q_text_codec_from_i_o_d_ae5184561209ee0771ad28d3888a2a89c}} 
+\index{QTextCodecFromIOD@{QTextCodecFromIOD}!makeDecoder@{makeDecoder}}
+\index{makeDecoder@{makeDecoder}!QTextCodecFromIOD@{QTextCodecFromIOD}}
+\subsubsection{\texorpdfstring{makeDecoder()}{makeDecoder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_decoder}{Q\+Text\+Decoder}}$\ast$ Q\+Text\+Codec\+From\+I\+O\+D\+::make\+Decoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Creates a \mbox{\hyperlink{class_q_text_decoder}{Q\+Text\+Decoder}} which stores enough state to decode chunks of char$\ast$ data to create chunks of Unicode data. The default implementation creates a stateless decoder, which is sufficient for only the simplest encodings where each byte corresponds to exactly one Unicode character.
+
+The caller is responsible for deleting the returned object. 
+
+Reimplemented from \mbox{\hyperlink{class_q_text_codec_abb65882aa316a2ad49a10e9f86c4dc88}{Q\+Text\+Codec}}.
+
+\mbox{\Hypertarget{class_q_text_codec_from_i_o_d_aa2a1123c86835c8395a058082c9fbdd3}\label{class_q_text_codec_from_i_o_d_aa2a1123c86835c8395a058082c9fbdd3}} 
+\index{QTextCodecFromIOD@{QTextCodecFromIOD}!mibEnum@{mibEnum}}
+\index{mibEnum@{mibEnum}!QTextCodecFromIOD@{QTextCodecFromIOD}}
+\subsubsection{\texorpdfstring{mibEnum()}{mibEnum()}}
+{\footnotesize\ttfamily int Q\+Text\+Codec\+From\+I\+O\+D\+::mib\+Enum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Subclasses of \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} must reimplement this function. It returns the M\+I\+Benum (see \href{ftp://ftp.isi.edu/in-notes/iana/assignments/character-sets}{\texttt{ the I\+A\+NA character-\/sets encoding file}} for more information). It is important that each \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} subclass return the correct unique value for this function. 
+
+Implements \mbox{\hyperlink{class_q_text_codec_aa0118daa4f82235ae9d5bb70a168c992}{Q\+Text\+Codec}}.
+
+\mbox{\Hypertarget{class_q_text_codec_from_i_o_d_ac80023588673bad8a8b0d6983832c884}\label{class_q_text_codec_from_i_o_d_ac80023588673bad8a8b0d6983832c884}} 
+\index{QTextCodecFromIOD@{QTextCodecFromIOD}!name@{name}}
+\index{name@{name}!QTextCodecFromIOD@{QTextCodecFromIOD}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily const char$\ast$ Q\+Text\+Codec\+From\+I\+O\+D\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Subclasses of \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} must reimplement this function. It returns the name of the encoding supported by the subclass. When choosing a name for an encoding, consider these points\+: 
+\begin{DoxyItemize}
+\item On X11, heuristic\+Name\+Match( const char $\ast$ hint ) is used to test if a the \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} can convert between Unicode and the encoding of a font with encoding {\itshape hint}, such as \char`\"{}iso8859-\/1\char`\"{} for Latin-\/1 fonts, \char`\"{}koi8-\/r\char`\"{} for Russian K\+O\+I8 fonts. The default algorithm of \mbox{\hyperlink{class_q_text_codec_from_i_o_d_af7109ff23e3f6c34228eb046578c0357}{heuristic\+Name\+Match()}} uses \mbox{\hyperlink{class_q_text_codec_from_i_o_d_ac80023588673bad8a8b0d6983832c884}{name()}}. 
+\item Some applications may use this function to present encodings to the end user. 
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{class_q_text_codec_a5b735ce19dc6b0fb0e8858bd3f54f0e2}{Q\+Text\+Codec}}.
+
+\mbox{\Hypertarget{class_q_text_codec_from_i_o_d_af43c97a602cfb4e7d8d74d7a93925f48}\label{class_q_text_codec_from_i_o_d_af43c97a602cfb4e7d8d74d7a93925f48}} 
+\index{QTextCodecFromIOD@{QTextCodecFromIOD}!toUnicode@{toUnicode}}
+\index{toUnicode@{toUnicode}!QTextCodecFromIOD@{QTextCodecFromIOD}}
+\subsubsection{\texorpdfstring{toUnicode()}{toUnicode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Text\+Codec\+From\+I\+O\+D\+::to\+Unicode (\begin{DoxyParamCaption}\item[{const char $\ast$}]{chars,  }\item[{int}]{len }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Subclasses of \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} must reimplement this function or \mbox{\hyperlink{class_q_text_codec_from_i_o_d_ae5184561209ee0771ad28d3888a2a89c}{make\+Decoder()}}. It converts the first {\itshape len} characters of {\itshape chars} to Unicode.
+
+The default implementation makes a decoder with \mbox{\hyperlink{class_q_text_codec_from_i_o_d_ae5184561209ee0771ad28d3888a2a89c}{make\+Decoder()}} and converts the input with that. Note that the default \mbox{\hyperlink{class_q_text_codec_from_i_o_d_ae5184561209ee0771ad28d3888a2a89c}{make\+Decoder()}} implementation makes a decoder that simply calls this function, hence subclasses {\itshape must} reimplement one function or the other to avoid infinite recursion. 
+
+Reimplemented from \mbox{\hyperlink{class_q_text_codec_aafe2c454ae7cbbf3d84a7ca26f775c49}{Q\+Text\+Codec}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qtextcodec.\+cpp\end{DoxyCompactItemize}

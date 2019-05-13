@@ -1,0 +1,83 @@
+\hypertarget{class_doc_section_handler}{}\section{Doc\+Section\+Handler Class Reference}
+\label{class_doc_section_handler}\index{DocSectionHandler@{DocSectionHandler}}
+
+
+Node representing a section.  
+
+
+
+
+{\ttfamily \#include $<$dochandler.\+h$>$}
+
+Inheritance diagram for Doc\+Section\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.322314cm]{class_doc_section_handler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_a7680a0a87a269ba03cf57d62dca55220}\label{class_doc_section_handler_a7680a0a87a269ba03cf57d62dca55220}} 
+{\bfseries Doc\+Section\+Handler} (\mbox{\hyperlink{class_i_base_handler}{I\+Base\+Handler}} $\ast$parent, int level)
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_a07a328d00eaeb72191e5938b81c29638}\label{class_doc_section_handler_a07a328d00eaeb72191e5938b81c29638}} 
+virtual void {\bfseries start\+Doc\+Section} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_adbc298eb88b24c9f1cb5c2546f472ce7}\label{class_doc_section_handler_adbc298eb88b24c9f1cb5c2546f472ce7}} 
+virtual void {\bfseries end\+Doc\+Section} ()
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_aa3df7cfd45a2201e2d1cf67744911b34}\label{class_doc_section_handler_aa3df7cfd45a2201e2d1cf67744911b34}} 
+virtual void {\bfseries start\+Title} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_ac865e9293bd9cd735baf4a98cf4c46df}\label{class_doc_section_handler_ac865e9293bd9cd735baf4a98cf4c46df}} 
+virtual void {\bfseries start\+Sub\+Section} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_a4ea3da121fa3112a0728d187e1f1c2f6}\label{class_doc_section_handler_a4ea3da121fa3112a0728d187e1f1c2f6}} 
+virtual void {\bfseries start\+Paragraph} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_a0e82a6c353e8570170195e487c6f91bb}\label{class_doc_section_handler_a0e82a6c353e8570170195e487c6f91bb}} 
+virtual void {\bfseries start\+Internal} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_a124132d46ee237c4a820b065df44dfa0}\label{class_doc_section_handler_a124132d46ee237c4a820b065df44dfa0}} 
+virtual Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_a7e1cf291b50097ca4ca549408e298326}\label{class_doc_section_handler_a7e1cf291b50097ca4ca549408e298326}} 
+virtual const \mbox{\hyperlink{class_i_string}{I\+String}} $\ast$ {\bfseries id} () const
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_af8938e1bc010b3752e6a3a1f60af9852}\label{class_doc_section_handler_af8938e1bc010b3752e6a3a1f60af9852}} 
+virtual int {\bfseries level} () const
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_a69f9ec817d38a467da4d086b201bcb5d}\label{class_doc_section_handler_a69f9ec817d38a467da4d086b201bcb5d}} 
+virtual \mbox{\hyperlink{class_i_doc_title}{I\+Doc\+Title}} $\ast$ {\bfseries title} () const
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_add419e8baf3b8a4f3244a3ef91cf8d6d}\label{class_doc_section_handler_add419e8baf3b8a4f3244a3ef91cf8d6d}} 
+virtual \mbox{\hyperlink{class_i_doc_iterator}{I\+Doc\+Iterator}} $\ast$ {\bfseries paragraphs} () const
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_aa6cfe3fb36de0d55b3010c68fbe82c20}\label{class_doc_section_handler_aa6cfe3fb36de0d55b3010c68fbe82c20}} 
+virtual \mbox{\hyperlink{class_i_doc_iterator}{I\+Doc\+Iterator}} $\ast$ {\bfseries sub\+Sections} () const
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_a54154de33b045dbec1c64026f2317ab7}\label{class_doc_section_handler_a54154de33b045dbec1c64026f2317ab7}} 
+virtual \mbox{\hyperlink{class_i_doc_internal}{I\+Doc\+Internal}} $\ast$ {\bfseries internal} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_a00e1b67a8135cef1d0459b44297d45d6}\label{class_doc_section_handler_a00e1b67a8135cef1d0459b44297d45d6}} 
+class {\bfseries Doc\+Section\+Para\+Iterator}
+\item 
+\mbox{\Hypertarget{class_doc_section_handler_ab4008c030968a91d2d5e3a0f31baddcb}\label{class_doc_section_handler_ab4008c030968a91d2d5e3a0f31baddcb}} 
+class {\bfseries Doc\+Section\+Sub\+Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Node representing a section. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/addon/doxmlparser/src/dochandler.\+h\item 
+doxygen/addon/doxmlparser/src/dochandler.\+cpp\end{DoxyCompactItemize}

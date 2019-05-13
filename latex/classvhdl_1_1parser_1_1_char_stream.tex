@@ -1,0 +1,209 @@
+\hypertarget{classvhdl_1_1parser_1_1_char_stream}{}\section{vhdl\+::parser\+::Char\+Stream Class Reference}
+\label{classvhdl_1_1parser_1_1_char_stream}\index{vhdl::parser::CharStream@{vhdl::parser::CharStream}}
+
+
+{\ttfamily \#include $<$Char\+Stream.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a3b9ca593901a797f6076230835b64b08}\label{classvhdl_1_1parser_1_1_char_stream_a3b9ca593901a797f6076230835b64b08}} 
+void {\bfseries set\+Tab\+Size} (int i)
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_ad61bba1ec964d0ca48f36f71c7c465e3}\label{classvhdl_1_1parser_1_1_char_stream_ad61bba1ec964d0ca48f36f71c7c465e3}} 
+int {\bfseries get\+Tab\+Size} (int i)
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_aba9c006a8d5510d8054df8dc83c4f063}\label{classvhdl_1_1parser_1_1_char_stream_aba9c006a8d5510d8054df8dc83c4f063}} 
+virtual int {\bfseries get\+Column} ()
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a35f578cd3509a81008518b7effdefda1}\label{classvhdl_1_1parser_1_1_char_stream_a35f578cd3509a81008518b7effdefda1}} 
+virtual int {\bfseries get\+Line} ()
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a02054db796d1066becc894c70f429a3d}\label{classvhdl_1_1parser_1_1_char_stream_a02054db796d1066becc894c70f429a3d}} 
+virtual int {\bfseries get\+End\+Column} ()
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_abac99aec0fdf89f82387c205f5e55e5a}\label{classvhdl_1_1parser_1_1_char_stream_abac99aec0fdf89f82387c205f5e55e5a}} 
+virtual int {\bfseries get\+End\+Line} ()
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a3e0f2c3e5fa9250abf00696661639488}\label{classvhdl_1_1parser_1_1_char_stream_a3e0f2c3e5fa9250abf00696661639488}} 
+virtual int {\bfseries get\+Begin\+Column} ()
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a3f296517fa30b9728af5ec8a9417800d}\label{classvhdl_1_1parser_1_1_char_stream_a3f296517fa30b9728af5ec8a9417800d}} 
+virtual int {\bfseries get\+Begin\+Line} ()
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_aa34c97a27cde33d957e4f6eaabb025b1}\label{classvhdl_1_1parser_1_1_char_stream_aa34c97a27cde33d957e4f6eaabb025b1}} 
+virtual bool {\bfseries get\+Track\+Line\+Column} ()
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a12712c9866fb3495782fc0f28994d4d9}\label{classvhdl_1_1parser_1_1_char_stream_a12712c9866fb3495782fc0f28994d4d9}} 
+virtual void {\bfseries set\+Track\+Line\+Column} (bool val)
+\item 
+virtual void \mbox{\hyperlink{classvhdl_1_1parser_1_1_char_stream_aea30b248a3b05857e3e60101afd2617a}{backup}} (int amount)
+\item 
+virtual J\+A\+V\+A\+C\+C\+\_\+\+C\+H\+A\+R\+\_\+\+T\+Y\+PE \mbox{\hyperlink{classvhdl_1_1parser_1_1_char_stream_abfef003263c49f685bfd49610dc12a08}{Begin\+Token}} ()
+\item 
+virtual J\+A\+V\+A\+C\+C\+\_\+\+C\+H\+A\+R\+\_\+\+T\+Y\+PE \mbox{\hyperlink{classvhdl_1_1parser_1_1_char_stream_a555f81eb2fcb4bafbe692bc3a357d120}{read\+Char}} ()
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a5192ebe3a55d14f239233283ef78559d}\label{classvhdl_1_1parser_1_1_char_stream_a5192ebe3a55d14f239233283ef78559d}} 
+virtual void {\bfseries Expand\+Buff} (bool wrap\+Around)
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a4d019c2c4c72dc14b442de6ce40e9607}\label{classvhdl_1_1parser_1_1_char_stream_a4d019c2c4c72dc14b442de6ce40e9607}} 
+virtual void {\bfseries Fill\+Buff} ()
+\item 
+virtual J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE \mbox{\hyperlink{classvhdl_1_1parser_1_1_char_stream_a83b0313890fbf2fa4f8443039472db87}{Get\+Image}} ()
+\item 
+virtual J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE \mbox{\hyperlink{classvhdl_1_1parser_1_1_char_stream_a6a3f7e4e14d712f26aa3728c8e0e4dbf}{Get\+Suffix}} (int len)
+\item 
+virtual void \mbox{\hyperlink{classvhdl_1_1parser_1_1_char_stream_ade1113e8f90c93ce43cb949205f4746f}{Delete\+Buffers}} ()
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a6a84b589f280fbac29dbb2325196bb05}\label{classvhdl_1_1parser_1_1_char_stream_a6a84b589f280fbac29dbb2325196bb05}} 
+bool {\bfseries end\+Of\+Input} ()
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_acf7477162d40d6685ec22bbb9fe27cb5}\label{classvhdl_1_1parser_1_1_char_stream_acf7477162d40d6685ec22bbb9fe27cb5}} 
+{\bfseries Char\+Stream} (const J\+A\+V\+A\+C\+C\+\_\+\+C\+H\+A\+R\+\_\+\+T\+Y\+PE $\ast$buf, int sz, int startline, int startcolumn, int buffersize)
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a6c5b21048c7fc72980a39baf5cdda865}\label{classvhdl_1_1parser_1_1_char_stream_a6c5b21048c7fc72980a39baf5cdda865}} 
+{\bfseries Char\+Stream} (const J\+A\+V\+A\+C\+C\+\_\+\+C\+H\+A\+R\+\_\+\+T\+Y\+PE $\ast$buf, int sz, int startline, int startcolumn)
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_afdec6175c31615bddb10d937a740ff5d}\label{classvhdl_1_1parser_1_1_char_stream_afdec6175c31615bddb10d937a740ff5d}} 
+{\bfseries Char\+Stream} (const J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE \&str, int startline, int startcolumn, int buffersize)
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_aad7f99f71d1af1a9496f56e09a819333}\label{classvhdl_1_1parser_1_1_char_stream_aad7f99f71d1af1a9496f56e09a819333}} 
+{\bfseries Char\+Stream} (const J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE \&str, int startline, int startcolumn)
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a3da31e2203a8bcdf92b4726e83535104}\label{classvhdl_1_1parser_1_1_char_stream_a3da31e2203a8bcdf92b4726e83535104}} 
+{\bfseries Char\+Stream} (\mbox{\hyperlink{class_reader_stream}{Reader\+Stream}} $\ast$input\+\_\+stream, int startline, int startcolumn, int buffersize)
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a7a3b115d9cb6f671539a8db6630f515c}\label{classvhdl_1_1parser_1_1_char_stream_a7a3b115d9cb6f671539a8db6630f515c}} 
+{\bfseries Char\+Stream} (\mbox{\hyperlink{class_reader_stream}{Reader\+Stream}} $\ast$input\+\_\+stream, int startline, int startcolumn)
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a82949d505a06f19999787ee61f85f7a7}\label{classvhdl_1_1parser_1_1_char_stream_a82949d505a06f19999787ee61f85f7a7}} 
+{\bfseries Char\+Stream} (\mbox{\hyperlink{class_reader_stream}{Reader\+Stream}} $\ast$input\+\_\+stream)
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a2c28db2d646530d6fc446bbfbe3a1c9d}\label{classvhdl_1_1parser_1_1_char_stream_a2c28db2d646530d6fc446bbfbe3a1c9d}} 
+virtual void {\bfseries Re\+Init} (\mbox{\hyperlink{class_reader_stream}{Reader\+Stream}} $\ast$input\+\_\+stream, int startline, int startcolumn, int buffersize)
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a93c0e6b18d38b9df067c39ca157df86a}\label{classvhdl_1_1parser_1_1_char_stream_a93c0e6b18d38b9df067c39ca157df86a}} 
+virtual void {\bfseries Re\+Init} (\mbox{\hyperlink{class_reader_stream}{Reader\+Stream}} $\ast$input\+\_\+stream, int startline, int startcolumn)
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a147a1e6e2f7cc4d9dc423bc40a542a66}\label{classvhdl_1_1parser_1_1_char_stream_a147a1e6e2f7cc4d9dc423bc40a542a66}} 
+virtual void {\bfseries Re\+Init} (\mbox{\hyperlink{class_reader_stream}{Reader\+Stream}} $\ast$input\+\_\+stream)
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_aa63473f578fa18b87448b995e99b06b5}\label{classvhdl_1_1parser_1_1_char_stream_aa63473f578fa18b87448b995e99b06b5}} 
+virtual void {\bfseries Re\+Init} (const J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE \&str, int startline, int startcolumn, int buffersize)
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_afdf2ecf97212d2b2a48d630c3a8e5521}\label{classvhdl_1_1parser_1_1_char_stream_afdf2ecf97212d2b2a48d630c3a8e5521}} 
+virtual void {\bfseries Re\+Init} (const J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE \&str, int startline, int startcolumn)
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_adbbf03df44c5e7100b068945c6a318c0}\label{classvhdl_1_1parser_1_1_char_stream_adbbf03df44c5e7100b068945c6a318c0}} 
+virtual void {\bfseries adjust\+Begin\+Line\+Column} (int new\+Line, int new\+Col)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a854b05bdd3eb436307efd3e5bd14fd7d}\label{classvhdl_1_1parser_1_1_char_stream_a854b05bdd3eb436307efd3e5bd14fd7d}} 
+virtual void {\bfseries Update\+Line\+Column} (J\+A\+V\+A\+C\+C\+\_\+\+C\+H\+A\+R\+\_\+\+T\+Y\+PE c)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a6b825e1a3515c2d88228264d624d0379}\label{classvhdl_1_1parser_1_1_char_stream_a6b825e1a3515c2d88228264d624d0379}} 
+int $\ast$ {\bfseries bufline}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a3864d2bf9e3cfa405cab2026076cc3ad}\label{classvhdl_1_1parser_1_1_char_stream_a3864d2bf9e3cfa405cab2026076cc3ad}} 
+int $\ast$ {\bfseries bufcolumn}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_ae43ed68c768f19eb4a9bf8c393d9fb1d}\label{classvhdl_1_1parser_1_1_char_stream_ae43ed68c768f19eb4a9bf8c393d9fb1d}} 
+\mbox{\hyperlink{class_reader_stream}{Reader\+Stream}} $\ast$ {\bfseries input\+Stream}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_afcb58d2742ea23b5da0bbe3264d4f803}\label{classvhdl_1_1parser_1_1_char_stream_afcb58d2742ea23b5da0bbe3264d4f803}} 
+bool {\bfseries delete\+Stream}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a0214083112fc3ba8c31530cd83e8800d}\label{classvhdl_1_1parser_1_1_char_stream_a0214083112fc3ba8c31530cd83e8800d}} 
+J\+A\+V\+A\+C\+C\+\_\+\+C\+H\+A\+R\+\_\+\+T\+Y\+PE $\ast$ {\bfseries buffer}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_aa2cbb8b449e060850a7de5632f30cc25}\label{classvhdl_1_1parser_1_1_char_stream_aa2cbb8b449e060850a7de5632f30cc25}} 
+int {\bfseries bufpos}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a10f6a94a722bf34e5618d41d6072dbee}\label{classvhdl_1_1parser_1_1_char_stream_a10f6a94a722bf34e5618d41d6072dbee}} 
+int {\bfseries bufsize}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_aa9408d80c650063cb31f81c9a6cd590e}\label{classvhdl_1_1parser_1_1_char_stream_aa9408d80c650063cb31f81c9a6cd590e}} 
+int {\bfseries token\+Begin}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a50828bf79317ddff0b210023624b99ff}\label{classvhdl_1_1parser_1_1_char_stream_a50828bf79317ddff0b210023624b99ff}} 
+int {\bfseries column}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a1ec713a583a0ff2f32092c39101d14cb}\label{classvhdl_1_1parser_1_1_char_stream_a1ec713a583a0ff2f32092c39101d14cb}} 
+int {\bfseries line}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a3896c04ca5e2e67a6d6d76850c89ef54}\label{classvhdl_1_1parser_1_1_char_stream_a3896c04ca5e2e67a6d6d76850c89ef54}} 
+bool {\bfseries prev\+Char\+Is\+CR}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_ab6180061e753afda80477ce049c9fa64}\label{classvhdl_1_1parser_1_1_char_stream_ab6180061e753afda80477ce049c9fa64}} 
+bool {\bfseries prev\+Char\+Is\+LF}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a26311afec7fdd2e830f9021d93a07857}\label{classvhdl_1_1parser_1_1_char_stream_a26311afec7fdd2e830f9021d93a07857}} 
+int {\bfseries available}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a255ae084850ea92b02b420078c283490}\label{classvhdl_1_1parser_1_1_char_stream_a255ae084850ea92b02b420078c283490}} 
+int {\bfseries max\+Next\+Char\+Ind}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_afc3a2cee410152b326e23831f1f32453}\label{classvhdl_1_1parser_1_1_char_stream_afc3a2cee410152b326e23831f1f32453}} 
+int {\bfseries in\+Buf}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a53d2f0014c25f1bc4f8b94bba8659dec}\label{classvhdl_1_1parser_1_1_char_stream_a53d2f0014c25f1bc4f8b94bba8659dec}} 
+int {\bfseries tab\+Size}
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a0d812351e15796fd8ea5bb48257794a4}\label{classvhdl_1_1parser_1_1_char_stream_a0d812351e15796fd8ea5bb48257794a4}} 
+bool {\bfseries track\+Line\+Column}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class describes a character stream that maintains line and column number positions of the characters. It also has the capability to backup the stream to some extent. An implementation of this class is used in the \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_manager}{Token\+Manager}} implementation generated by Java\+C\+C\+Parser.
+
+All the methods except backup can be implemented in any fashion. backup needs to be implemented correctly for the correct operation of the lexer. Rest of the methods are all used to get information like line number, column number and the string that constitutes a token and are not used by the lexer. Hence their implementation won\textquotesingle{}t affect the generated lexer\textquotesingle{}s operation. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_aea30b248a3b05857e3e60101afd2617a}\label{classvhdl_1_1parser_1_1_char_stream_aea30b248a3b05857e3e60101afd2617a}} 
+\index{vhdl::parser::CharStream@{vhdl::parser::CharStream}!backup@{backup}}
+\index{backup@{backup}!vhdl::parser::CharStream@{vhdl::parser::CharStream}}
+\subsubsection{\texorpdfstring{backup()}{backup()}}
+{\footnotesize\ttfamily virtual void vhdl\+::parser\+::\+Char\+Stream\+::backup (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Backs up the input stream by amount steps. Lexer calls this method if it had already read some characters, but could not use them to match a (longer) token. So, they will be used again as the prefix of the next token and it is the implemetation\textquotesingle{}s responsibility to do this right. \mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_abfef003263c49f685bfd49610dc12a08}\label{classvhdl_1_1parser_1_1_char_stream_abfef003263c49f685bfd49610dc12a08}} 
+\index{vhdl::parser::CharStream@{vhdl::parser::CharStream}!BeginToken@{BeginToken}}
+\index{BeginToken@{BeginToken}!vhdl::parser::CharStream@{vhdl::parser::CharStream}}
+\subsubsection{\texorpdfstring{BeginToken()}{BeginToken()}}
+{\footnotesize\ttfamily virtual J\+A\+V\+A\+C\+C\+\_\+\+C\+H\+A\+R\+\_\+\+T\+Y\+PE vhdl\+::parser\+::\+Char\+Stream\+::\+Begin\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the next character that marks the beginning of the next token. All characters must remain in the buffer between two successive calls to this method to implement backup correctly. \mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_ade1113e8f90c93ce43cb949205f4746f}\label{classvhdl_1_1parser_1_1_char_stream_ade1113e8f90c93ce43cb949205f4746f}} 
+\index{vhdl::parser::CharStream@{vhdl::parser::CharStream}!DeleteBuffers@{DeleteBuffers}}
+\index{DeleteBuffers@{DeleteBuffers}!vhdl::parser::CharStream@{vhdl::parser::CharStream}}
+\subsubsection{\texorpdfstring{DeleteBuffers()}{DeleteBuffers()}}
+{\footnotesize\ttfamily void vhdl\+::parser\+::\+Char\+Stream\+::\+Delete\+Buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The lexer calls this function to indicate that it is done with the stream and hence implementations can free any resources held by this class. \mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a83b0313890fbf2fa4f8443039472db87}\label{classvhdl_1_1parser_1_1_char_stream_a83b0313890fbf2fa4f8443039472db87}} 
+\index{vhdl::parser::CharStream@{vhdl::parser::CharStream}!GetImage@{GetImage}}
+\index{GetImage@{GetImage}!vhdl::parser::CharStream@{vhdl::parser::CharStream}}
+\subsubsection{\texorpdfstring{GetImage()}{GetImage()}}
+{\footnotesize\ttfamily virtual J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE vhdl\+::parser\+::\+Char\+Stream\+::\+Get\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns a string made up of characters from the marked token beginning to the current buffer position. Implementations can return anything that they want to. For example, for efficiency, one might decide to just return N\+U\+LL, which is a valid implementation. \mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a6a3f7e4e14d712f26aa3728c8e0e4dbf}\label{classvhdl_1_1parser_1_1_char_stream_a6a3f7e4e14d712f26aa3728c8e0e4dbf}} 
+\index{vhdl::parser::CharStream@{vhdl::parser::CharStream}!GetSuffix@{GetSuffix}}
+\index{GetSuffix@{GetSuffix}!vhdl::parser::CharStream@{vhdl::parser::CharStream}}
+\subsubsection{\texorpdfstring{GetSuffix()}{GetSuffix()}}
+{\footnotesize\ttfamily virtual J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE vhdl\+::parser\+::\+Char\+Stream\+::\+Get\+Suffix (\begin{DoxyParamCaption}\item[{int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns an array of characters that make up the suffix of length \textquotesingle{}len\textquotesingle{} for the currently matched token. This is used to build up the matched string for use in actions in the case of M\+O\+RE. \mbox{\hyperlink{class_a}{A}} simple and inefficient implementation of this is as follows \+: \mbox{\Hypertarget{classvhdl_1_1parser_1_1_char_stream_a555f81eb2fcb4bafbe692bc3a357d120}\label{classvhdl_1_1parser_1_1_char_stream_a555f81eb2fcb4bafbe692bc3a357d120}} 
+\index{vhdl::parser::CharStream@{vhdl::parser::CharStream}!readChar@{readChar}}
+\index{readChar@{readChar}!vhdl::parser::CharStream@{vhdl::parser::CharStream}}
+\subsubsection{\texorpdfstring{readChar()}{readChar()}}
+{\footnotesize\ttfamily virtual J\+A\+V\+A\+C\+C\+\_\+\+C\+H\+A\+R\+\_\+\+T\+Y\+PE vhdl\+::parser\+::\+Char\+Stream\+::read\+Char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the next character from the selected input. The method of selecting the input is the responsibility of the class implementing this class. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/vhdlparser/Char\+Stream.\+h\item 
+doxygen/vhdlparser/Char\+Stream.\+cc\end{DoxyCompactItemize}

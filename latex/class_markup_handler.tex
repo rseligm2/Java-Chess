@@ -1,0 +1,125 @@
+\hypertarget{class_markup_handler}{}\section{Markup\+Handler Class Reference}
+\label{class_markup_handler}\index{MarkupHandler@{MarkupHandler}}
+
+
+Handles markup commands in the X\+ML input.  
+
+
+
+
+{\ttfamily \#include $<$dochandler.\+h$>$}
+
+Inheritance diagram for Markup\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_markup_handler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_markup_handler_a2779b00d597b8e3dc4bc0492a4e31c02}\label{class_markup_handler_a2779b00d597b8e3dc4bc0492a4e31c02}} 
+{\bfseries Markup\+Handler} (\mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{class_doc_impl}{Doc\+Impl}} $>$ \&children, \mbox{\hyperlink{class_q_string}{Q\+String}} \&cur\+String)
+\item 
+\mbox{\Hypertarget{class_markup_handler_aa1456ca99fe8f9eda6e37e22f91922b8}\label{class_markup_handler_aa1456ca99fe8f9eda6e37e22f91922b8}} 
+int {\bfseries markup} () const
+\item 
+\mbox{\Hypertarget{class_markup_handler_ad8c64762b04e595607bfbc7edabfeb20}\label{class_markup_handler_ad8c64762b04e595607bfbc7edabfeb20}} 
+int {\bfseries heading\+Level} () const
+\item 
+\mbox{\Hypertarget{class_markup_handler_afca0a2b1078d41b5031b1562b2674b42}\label{class_markup_handler_afca0a2b1078d41b5031b1562b2674b42}} 
+virtual void {\bfseries start\+Bold} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_markup_handler_ade017bb597346494bd6da7d7642ea33b}\label{class_markup_handler_ade017bb597346494bd6da7d7642ea33b}} 
+virtual void {\bfseries end\+Bold} ()
+\item 
+\mbox{\Hypertarget{class_markup_handler_ac1bfec64b91df892213a65ba45d0e87f}\label{class_markup_handler_ac1bfec64b91df892213a65ba45d0e87f}} 
+virtual void {\bfseries start\+Emphasis} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_markup_handler_a2a1613f12a7661c9555d679ca29264eb}\label{class_markup_handler_a2a1613f12a7661c9555d679ca29264eb}} 
+virtual void {\bfseries end\+Emphasis} ()
+\item 
+\mbox{\Hypertarget{class_markup_handler_a471c0bdb52b752560c8e398f0184a6bb}\label{class_markup_handler_a471c0bdb52b752560c8e398f0184a6bb}} 
+virtual void {\bfseries start\+Computer\+Output} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_markup_handler_a4041d6dcad8e3e3d7abb53b89b1471f2}\label{class_markup_handler_a4041d6dcad8e3e3d7abb53b89b1471f2}} 
+virtual void {\bfseries end\+Computer\+Output} ()
+\item 
+\mbox{\Hypertarget{class_markup_handler_acfd5b3daf72a1ebb3232e64740da37c6}\label{class_markup_handler_acfd5b3daf72a1ebb3232e64740da37c6}} 
+virtual void {\bfseries start\+Center} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_markup_handler_a8fe6abf006123e01d33f8fc66154a2f0}\label{class_markup_handler_a8fe6abf006123e01d33f8fc66154a2f0}} 
+virtual void {\bfseries end\+Center} ()
+\item 
+\mbox{\Hypertarget{class_markup_handler_a31e9c776ff9091c985f37ff1523886d2}\label{class_markup_handler_a31e9c776ff9091c985f37ff1523886d2}} 
+virtual void {\bfseries start\+Small\+Font} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_markup_handler_a80ee62220712713e289593d770b896a8}\label{class_markup_handler_a80ee62220712713e289593d770b896a8}} 
+virtual void {\bfseries end\+Small\+Font} ()
+\item 
+\mbox{\Hypertarget{class_markup_handler_aa15c2ef518eec3c545a3b36c47ee1829}\label{class_markup_handler_aa15c2ef518eec3c545a3b36c47ee1829}} 
+virtual void {\bfseries start\+Subscript} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_markup_handler_ad3f41776e690f126f6e11d1d41702e52}\label{class_markup_handler_ad3f41776e690f126f6e11d1d41702e52}} 
+virtual void {\bfseries end\+Subscript} ()
+\item 
+\mbox{\Hypertarget{class_markup_handler_a9e350d168cdee6d4a228193fedc7614b}\label{class_markup_handler_a9e350d168cdee6d4a228193fedc7614b}} 
+virtual void {\bfseries start\+Superscript} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_markup_handler_a470b54b87ea162a849f36e2aa218f55e}\label{class_markup_handler_a470b54b87ea162a849f36e2aa218f55e}} 
+virtual void {\bfseries end\+Superscript} ()
+\item 
+\mbox{\Hypertarget{class_markup_handler_a19d069d30a4cea68f962055f8fe3a39d}\label{class_markup_handler_a19d069d30a4cea68f962055f8fe3a39d}} 
+virtual void {\bfseries start\+Preformatted} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_markup_handler_a2bc9b48c59f35ef03c46420c7ccbdf0b}\label{class_markup_handler_a2bc9b48c59f35ef03c46420c7ccbdf0b}} 
+virtual void {\bfseries end\+Preformatted} ()
+\item 
+\mbox{\Hypertarget{class_markup_handler_abcdf1202f663ef0951133756678f118a}\label{class_markup_handler_abcdf1202f663ef0951133756678f118a}} 
+virtual void {\bfseries start\+Heading1} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_markup_handler_aaeefa2a13a61a726d76927d03d2a4c72}\label{class_markup_handler_aaeefa2a13a61a726d76927d03d2a4c72}} 
+virtual void {\bfseries end\+Heading1} ()
+\item 
+\mbox{\Hypertarget{class_markup_handler_a0ffb808feab8f54a140fb72a35e53ebe}\label{class_markup_handler_a0ffb808feab8f54a140fb72a35e53ebe}} 
+virtual void {\bfseries start\+Heading2} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_markup_handler_a98620a47e69a4e624183902316b5806d}\label{class_markup_handler_a98620a47e69a4e624183902316b5806d}} 
+virtual void {\bfseries end\+Heading2} ()
+\item 
+\mbox{\Hypertarget{class_markup_handler_a485e53a186a3325d8d68ab0afb56c870}\label{class_markup_handler_a485e53a186a3325d8d68ab0afb56c870}} 
+virtual void {\bfseries start\+Heading3} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_markup_handler_ad05665b0b5e9bd3caf1a42d1c3236349}\label{class_markup_handler_ad05665b0b5e9bd3caf1a42d1c3236349}} 
+virtual void {\bfseries end\+Heading3} ()
+\item 
+\mbox{\Hypertarget{class_markup_handler_a1e4e883a6fc9d36f6c2489d2b6904c75}\label{class_markup_handler_a1e4e883a6fc9d36f6c2489d2b6904c75}} 
+virtual void {\bfseries start\+Heading4} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_markup_handler_a64b4ee63bc504d88c588b3385df619b3}\label{class_markup_handler_a64b4ee63bc504d88c588b3385df619b3}} 
+virtual void {\bfseries end\+Heading4} ()
+\item 
+\mbox{\Hypertarget{class_markup_handler_ae64b0b9f8f63d0ef75df2f6bb244eb6d}\label{class_markup_handler_ae64b0b9f8f63d0ef75df2f6bb244eb6d}} 
+virtual void {\bfseries start\+Heading5} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_markup_handler_a1329b52681ccfb72f20dba6ff9306902}\label{class_markup_handler_a1329b52681ccfb72f20dba6ff9306902}} 
+virtual void {\bfseries end\+Heading5} ()
+\item 
+\mbox{\Hypertarget{class_markup_handler_a6069d241e1705f304aebdfea96b3c019}\label{class_markup_handler_a6069d241e1705f304aebdfea96b3c019}} 
+virtual void {\bfseries start\+Heading6} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_markup_handler_a584dff5704d39d6e701756f8b13a2257}\label{class_markup_handler_a584dff5704d39d6e701756f8b13a2257}} 
+virtual void {\bfseries end\+Heading6} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Handles markup commands in the X\+ML input. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/addon/doxmlparser/src/dochandler.\+h\item 
+doxygen/addon/doxmlparser/src/dochandler.\+cpp\end{DoxyCompactItemize}

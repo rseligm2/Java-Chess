@@ -1,0 +1,65 @@
+\hypertarget{class_config_string}{}\section{Config\+String Class Reference}
+\label{class_config_string}\index{ConfigString@{ConfigString}}
+
+
+{\ttfamily \#include $<$configimpl.\+h$>$}
+
+Inheritance diagram for Config\+String\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_config_string}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_config_string_a6d65e61d6dcbd73f014d16ef4b7721d1}\label{class_config_string_a6d65e61d6dcbd73f014d16ef4b7721d1}} 
+enum {\bfseries Widget\+Type} \{ {\bfseries String}, 
+{\bfseries File}, 
+{\bfseries Dir}, 
+{\bfseries Image}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_config_string_af35e791e48a93c96bdba2df9ca848f28}\label{class_config_string_af35e791e48a93c96bdba2df9ca848f28}} 
+{\bfseries Config\+String} (const char $\ast$name, const char $\ast$doc)
+\item 
+\mbox{\Hypertarget{class_config_string_a35abeb5e79ca5812affa17d5ff67f5ee}\label{class_config_string_a35abeb5e79ca5812affa17d5ff67f5ee}} 
+void {\bfseries set\+Widget\+Type} (Widget\+Type w)
+\item 
+\mbox{\Hypertarget{class_config_string_a7cad733ff76bb0fc898c9daffb578fd2}\label{class_config_string_a7cad733ff76bb0fc898c9daffb578fd2}} 
+Widget\+Type {\bfseries widget\+Type} () const
+\item 
+\mbox{\Hypertarget{class_config_string_aabfc2165fcdafd51ec0668d3fe4f7b35}\label{class_config_string_aabfc2165fcdafd51ec0668d3fe4f7b35}} 
+void {\bfseries set\+Default\+Value} (const char $\ast$v)
+\item 
+\mbox{\Hypertarget{class_config_string_ab3a24655083aa0ed8fb54bab4e060a68}\label{class_config_string_ab3a24655083aa0ed8fb54bab4e060a68}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} $\ast$ {\bfseries value\+Ref} ()
+\item 
+\mbox{\Hypertarget{class_config_string_a9ba817d1e46850c6000fe2dd6d03ff8e}\label{class_config_string_a9ba817d1e46850c6000fe2dd6d03ff8e}} 
+void {\bfseries write\+Template} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, bool sl, bool)
+\item 
+\mbox{\Hypertarget{class_config_string_a788e3fd75e97fa115bf530847066e314}\label{class_config_string_a788e3fd75e97fa115bf530847066e314}} 
+void {\bfseries compare\+Doxyfile} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t)
+\item 
+\mbox{\Hypertarget{class_config_string_a39a8a773cf8ef1c5b31fa1e02b49cb32}\label{class_config_string_a39a8a773cf8ef1c5b31fa1e02b49cb32}} 
+void {\bfseries subst\+Env\+Vars} ()
+\item 
+\mbox{\Hypertarget{class_config_string_ace07ea2ad1492f238771682286a7b79e}\label{class_config_string_ace07ea2ad1492f238771682286a7b79e}} 
+void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{class_config_string_a384bcc7b37cda8eefcfda7d341d11032}\label{class_config_string_a384bcc7b37cda8eefcfda7d341d11032}} 
+void {\bfseries empty\+Value\+To\+Default} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class representing a string type option. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/configimpl.\+h\item 
+doxygen/build/generated\+\_\+src/configimpl.\+cpp\end{DoxyCompactItemize}

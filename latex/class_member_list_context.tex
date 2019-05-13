@@ -1,0 +1,100 @@
+\hypertarget{class_member_list_context}{}\section{Member\+List\+Context Class Reference}
+\label{class_member_list_context}\index{MemberListContext@{MemberListContext}}
+Inheritance diagram for Member\+List\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_member_list_context}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_member_list_context_1_1_private}{Private}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_member_list_context_a1d77ef2461ae73437323716e0c7a9705}{count}} () const
+\item 
+virtual \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_member_list_context_a89dbead5ee65a69041998b3f58a9cf30}{at}} (int index) const
+\item 
+virtual \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ \mbox{\hyperlink{class_member_list_context_af9e965557d0f61f3634cca3ba13c9524}{create\+Iterator}} () const
+\item 
+virtual int \mbox{\hyperlink{class_member_list_context_a2ee8c2892871175c21a47ae4aaed9218}{add\+Ref}} ()
+\item 
+virtual int \mbox{\hyperlink{class_member_list_context_ada9f462753c6425d2912cd4cb02d4285}{release}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_member_list_context_ab6e43b0940cb35a1c826694a5ed9bece}\label{class_member_list_context_ab6e43b0940cb35a1c826694a5ed9bece}} 
+static \mbox{\hyperlink{class_member_list_context}{Member\+List\+Context}} $\ast$ {\bfseries alloc} ()
+\item 
+\mbox{\Hypertarget{class_member_list_context_aeb87e6f772040b1819247c00b72dff1b}\label{class_member_list_context_aeb87e6f772040b1819247c00b72dff1b}} 
+static \mbox{\hyperlink{class_member_list_context}{Member\+List\+Context}} $\ast$ {\bfseries alloc} (const \mbox{\hyperlink{class_member_list}{Member\+List}} $\ast$ml)
+\item 
+\mbox{\Hypertarget{class_member_list_context_ad231ed88d19218b0236800e6400f8ff3}\label{class_member_list_context_ad231ed88d19218b0236800e6400f8ff3}} 
+static \mbox{\hyperlink{class_member_list_context}{Member\+List\+Context}} $\ast$ {\bfseries alloc} (\mbox{\hyperlink{class_member_s_dict}{Member\+S\+Dict}} $\ast$ml, bool do\+Sort)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_member_list_context_a2ee8c2892871175c21a47ae4aaed9218}\label{class_member_list_context_a2ee8c2892871175c21a47ae4aaed9218}} 
+\index{MemberListContext@{MemberListContext}!addRef@{addRef}}
+\index{addRef@{addRef}!MemberListContext@{MemberListContext}}
+\subsubsection{\texorpdfstring{addRef()}{addRef()}}
+{\footnotesize\ttfamily virtual int Member\+List\+Context\+::add\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Increase object\textquotesingle{}s reference count 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a4b4973e2e15396d10bc4e3085462ca2b}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_member_list_context_a89dbead5ee65a69041998b3f58a9cf30}\label{class_member_list_context_a89dbead5ee65a69041998b3f58a9cf30}} 
+\index{MemberListContext@{MemberListContext}!at@{at}}
+\index{at@{at}!MemberListContext@{MemberListContext}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_variant}{Template\+Variant}} Member\+List\+Context\+::at (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the element at index position {\itshape index}. 
+
+Implements \mbox{\hyperlink{class_template_list_intf_aa51e57e72eacf4e8ce1055ee30a0f7f8}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_member_list_context_a1d77ef2461ae73437323716e0c7a9705}\label{class_member_list_context_a1d77ef2461ae73437323716e0c7a9705}} 
+\index{MemberListContext@{MemberListContext}!count@{count}}
+\index{count@{count}!MemberListContext@{MemberListContext}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Member\+List\+Context\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the number of elements in the list 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a329e49e33484c2aa5106aac1bf4e5216}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_member_list_context_af9e965557d0f61f3634cca3ba13c9524}\label{class_member_list_context_af9e965557d0f61f3634cca3ba13c9524}} 
+\index{MemberListContext@{MemberListContext}!createIterator@{createIterator}}
+\index{createIterator@{createIterator}!MemberListContext@{MemberListContext}}
+\subsubsection{\texorpdfstring{createIterator()}{createIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ Member\+List\+Context\+::create\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a new iterator for this list. \begin{DoxyNote}{Note}
+the user should call delete on the returned pointer. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_template_list_intf_a56b82384db24c3e121076a1da046d378}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_member_list_context_ada9f462753c6425d2912cd4cb02d4285}\label{class_member_list_context_ada9f462753c6425d2912cd4cb02d4285}} 
+\index{MemberListContext@{MemberListContext}!release@{release}}
+\index{release@{release}!MemberListContext@{MemberListContext}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual int Member\+List\+Context\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Decreases object\textquotesingle{}s reference count, destroy object if 0 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a0c53169c740c09dac47efc62bbe39674}{Template\+List\+Intf}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/context.\+h\item 
+doxygen/src/context.\+cpp\end{DoxyCompactItemize}

@@ -7,11 +7,13 @@ public class ChessControl extends JApplet {
     private int playerTurn;
     private Game currGame;
     private GUI display;
-    private JButton selected;
+    private DispSpace[][] dispBoard;
+    private Space selected;
 
     public void init(){
         display = new GUI();
         currGame = new Game("White", "Black", 0);
+        Board board = currGame.getBoard();
         JFrame frame = new JFrame("Chess Board");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300, 300);
@@ -21,15 +23,17 @@ public class ChessControl extends JApplet {
         frame.setMinimumSize(frame.getSize());
 
         JButton[][] guiBoard = display.getSpaces();
-
+        Space holdSpace;
         for(int i = 0; i < 8; i++){
             for(int j = 0; j < 8; j++){
+                holdSpace = board.getSpace(i,j);
                 display.addBtnListener(guiBoard[i][j], new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        selected = board.getSpace(i, j);
                     }
                 });
+                dispBoard[i][j] = new DispSpace(holdSpace, guiBoard[i][j]);
             }
         }
 

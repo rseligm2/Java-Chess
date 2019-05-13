@@ -1,0 +1,686 @@
+\hypertarget{class_q_i_o_device}{}\section{Q\+I\+O\+Device Class Reference}
+\label{class_q_i_o_device}\index{QIODevice@{QIODevice}}
+
+
+The \mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} class is the base class of I/O devices.  
+
+
+
+
+{\ttfamily \#include $<$qiodevice.\+h$>$}
+
+Inheritance diagram for Q\+I\+O\+Device\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_i_o_device}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_i_o_device_a6ccc9ce76acdca224d0c3ded7d303f02}{Q\+I\+O\+Device}} ()
+\item 
+virtual \mbox{\hyperlink{class_q_i_o_device_a2510afba0e06ba9edc0d518fa2a8d1fa}{$\sim$\+Q\+I\+O\+Device}} ()
+\item 
+int \mbox{\hyperlink{class_q_i_o_device_a3c3dd3eed081ff824acb10fa0eba9d91}{flags}} () const
+\item 
+int \mbox{\hyperlink{class_q_i_o_device_ad2a025933d4c1fc013f7c7f7ce2601ab}{mode}} () const
+\item 
+int \mbox{\hyperlink{class_q_i_o_device_a8529428353a81543a5a460797bf01c21}{state}} () const
+\item 
+bool \mbox{\hyperlink{class_q_i_o_device_ace782017b9a264d7d1759223add28ae7}{is\+Direct\+Access}} () const
+\item 
+bool \mbox{\hyperlink{class_q_i_o_device_ab0c6f50325bbf1e860aed41f3bfa498c}{is\+Sequential\+Access}} () const
+\item 
+bool \mbox{\hyperlink{class_q_i_o_device_a4cddfb1842e6392b0dbae21a217fef46}{is\+Combined\+Access}} () const
+\item 
+bool \mbox{\hyperlink{class_q_i_o_device_a643b4378bee07a7d8f6ab59dfd17df80}{is\+Buffered}} () const
+\item 
+bool \mbox{\hyperlink{class_q_i_o_device_a66e1eb78420a4ec15685871e2e773f68}{is\+Raw}} () const
+\item 
+bool \mbox{\hyperlink{class_q_i_o_device_ac425c50bec523a8f6bccfbe2c1934f19}{is\+Synchronous}} () const
+\item 
+bool \mbox{\hyperlink{class_q_i_o_device_a95291c3aa671e64d41e4320190f05f4e}{is\+Asynchronous}} () const
+\item 
+bool \mbox{\hyperlink{class_q_i_o_device_abf1df3cc1e0734c784c9d8eff82908c0}{is\+Translated}} () const
+\item 
+bool \mbox{\hyperlink{class_q_i_o_device_a3bba4665b92eabfeca6905e7561cc943}{is\+Readable}} () const
+\item 
+bool \mbox{\hyperlink{class_q_i_o_device_ab033a6ee76263214267daf8b62ade3c7}{is\+Writable}} () const
+\item 
+bool \mbox{\hyperlink{class_q_i_o_device_af362cdbc70c8cbd30bcb4aaaf7c8e9e2}{is\+Read\+Write}} () const
+\item 
+bool \mbox{\hyperlink{class_q_i_o_device_ac959646567aba4ad6c4e1f280e10bbdd}{is\+Inactive}} () const
+\item 
+bool \mbox{\hyperlink{class_q_i_o_device_a291d97cdb38c1cd261bfbaa67a9d3923}{is\+Open}} () const
+\item 
+int \mbox{\hyperlink{class_q_i_o_device_aa9079e73ab2403922c528523cdf2d4ef}{status}} () const
+\item 
+void \mbox{\hyperlink{class_q_i_o_device_a1cd60113e530d3202d6dadf12021374c}{reset\+Status}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_q_i_o_device_ae4046ae7bf4d4cee1010239973314e42}{open}} (int \mbox{\hyperlink{class_q_i_o_device_ad2a025933d4c1fc013f7c7f7ce2601ab}{mode}})=0
+\item 
+virtual void \mbox{\hyperlink{class_q_i_o_device_a01a9ddac5d964b5b6a1f10005bf28a4f}{close}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_q_i_o_device_a39eccb592ae076fbc42108a3d590fb43}{flush}} ()=0
+\item 
+virtual uint \mbox{\hyperlink{class_q_i_o_device_a60c4146763625213ac7aa29f1f071592}{size}} () const =0
+\item 
+virtual int \mbox{\hyperlink{class_q_i_o_device_a0dee1db4a9e506924ccac6982ffdf3df}{at}} () const
+\item 
+virtual bool \mbox{\hyperlink{class_q_i_o_device_a14643fc1c2e05c2addd1ecc03bd98017}{at}} (int)
+\item 
+virtual bool \mbox{\hyperlink{class_q_i_o_device_ac5a3fcc9349a98d8f260039c5fd58812}{at\+End}} () const
+\item 
+bool \mbox{\hyperlink{class_q_i_o_device_ac2f29866602352c08b3d3cb3f1fdc7e2}{reset}} ()
+\item 
+virtual int \mbox{\hyperlink{class_q_i_o_device_a71f10647e4bd98141f45362b9a06983a}{read\+Block}} (char $\ast$data, uint maxlen)=0
+\item 
+virtual int \mbox{\hyperlink{class_q_i_o_device_a5d937df1bde2f956872dd54e077807d1}{write\+Block}} (const char $\ast$data, uint len)=0
+\item 
+virtual int \mbox{\hyperlink{class_q_i_o_device_a4dc865ffcb5b7896ff8f9a1d828e4c0e}{read\+Line}} (char $\ast$data, uint maxlen)
+\item 
+int \mbox{\hyperlink{class_q_i_o_device_a17d3fa98dc9e5eab406a6fa728c4b656}{write\+Block}} (const \mbox{\hyperlink{class_q_array}{Q\+Byte\+Array}} \&data)
+\item 
+\mbox{\hyperlink{class_q_array}{Q\+Byte\+Array}} \mbox{\hyperlink{class_q_i_o_device_a2b93df374c6eea09c68a95cf99d66e6f}{read\+All}} ()
+\item 
+virtual int \mbox{\hyperlink{class_q_i_o_device_a7cef61d66023f9cda6b0912082bd19fc}{getch}} ()=0
+\item 
+virtual int \mbox{\hyperlink{class_q_i_o_device_a5de5c1c1cba7ca36ba93289e30cd3029}{putch}} (int)=0
+\item 
+virtual int \mbox{\hyperlink{class_q_i_o_device_aae3d67422103e8fc0411297b1d62c29a}{ungetch}} (int)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_i_o_device_a9ce695e889efa9145e47195fcc765bf5}\label{class_q_i_o_device_a9ce695e889efa9145e47195fcc765bf5}} 
+void {\bfseries set\+Flags} (int f)
+\item 
+\mbox{\Hypertarget{class_q_i_o_device_a16f5a19e0d5dde3ba5e9672974d44b1a}\label{class_q_i_o_device_a16f5a19e0d5dde3ba5e9672974d44b1a}} 
+void {\bfseries set\+Type} (int)
+\item 
+\mbox{\Hypertarget{class_q_i_o_device_a9a8d9bf655a71b5821699a97a78be6be}\label{class_q_i_o_device_a9a8d9bf655a71b5821699a97a78be6be}} 
+void {\bfseries set\+Mode} (int)
+\item 
+\mbox{\Hypertarget{class_q_i_o_device_ab8a455c1e81b3382c5db9a65ea70e615}\label{class_q_i_o_device_ab8a455c1e81b3382c5db9a65ea70e615}} 
+void {\bfseries set\+State} (int)
+\item 
+\mbox{\Hypertarget{class_q_i_o_device_a742d895b19b6809d67aa1643baf67639}\label{class_q_i_o_device_a742d895b19b6809d67aa1643baf67639}} 
+void {\bfseries set\+Status} (int)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_i_o_device_a577b65ea2ba37a2243de14143fa0878b}\label{class_q_i_o_device_a577b65ea2ba37a2243de14143fa0878b}} 
+int {\bfseries io\+Index}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} class is the base class of I/O devices. 
+
+An I/O device represents a medium that one can read bytes from and/or write bytes to. The \mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} class is the abstract superclass of all such devices; classes like \mbox{\hyperlink{class_q_file}{Q\+File}}, \mbox{\hyperlink{class_q_buffer}{Q\+Buffer}} and Q\+Socket inherit \mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} and implement virtual functions like \mbox{\hyperlink{structcmd_8h_af2a3ea719b83f672637febdd87c36c36}{write()}} appropriately.
+
+While applications sometimes use \mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} directly, mostly it is better to go through \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} and \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}}, which provide stream operations on any \mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} subclass. \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} provides text-\/oriented stream functionality (for human-\/readable A\+S\+C\+II files, for example), while \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} deals with binary data in a totally platform-\/independent manner.
+
+The public member functions in \mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} roughly fall into two groups\+: The action functions and the state access functions. The most important action functions are\+: 
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_q_i_o_device_ae4046ae7bf4d4cee1010239973314e42}{open()}} opens a device for reading and/or writing, depending on the argument to \mbox{\hyperlink{class_q_i_o_device_ae4046ae7bf4d4cee1010239973314e42}{open()}}.
+
+
+\item \mbox{\hyperlink{class_q_i_o_device_a01a9ddac5d964b5b6a1f10005bf28a4f}{close()}} closes the device and tidies up.
+
+
+\item \mbox{\hyperlink{class_q_i_o_device_a71f10647e4bd98141f45362b9a06983a}{read\+Block()}} reads a block of data from the device.
+
+
+\item \mbox{\hyperlink{class_q_i_o_device_a5d937df1bde2f956872dd54e077807d1}{write\+Block()}} writes a block of data to the device.
+
+
+\item \mbox{\hyperlink{class_q_i_o_device_a4dc865ffcb5b7896ff8f9a1d828e4c0e}{read\+Line()}} reads a line (of text, usually) from the device.
+
+
+\item \mbox{\hyperlink{class_q_i_o_device_a39eccb592ae076fbc42108a3d590fb43}{flush()}} ensures that all buffered data are written to the real device.
+
+
+\end{DoxyItemize}There are also some other, less used, action functions\+: 
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_q_i_o_device_a7cef61d66023f9cda6b0912082bd19fc}{getch()}} reads a single character.
+
+
+\item \mbox{\hyperlink{class_q_i_o_device_aae3d67422103e8fc0411297b1d62c29a}{ungetch()}} forgets the last call to \mbox{\hyperlink{class_q_i_o_device_a7cef61d66023f9cda6b0912082bd19fc}{getch()}}, if possible.
+
+
+\item \mbox{\hyperlink{class_q_i_o_device_a5de5c1c1cba7ca36ba93289e30cd3029}{putch()}} writes a single character.
+
+
+\item \mbox{\hyperlink{class_q_i_o_device_a60c4146763625213ac7aa29f1f071592}{size()}} returns the size of the device, if there is one.
+
+
+\item \mbox{\hyperlink{class_q_i_o_device_a0dee1db4a9e506924ccac6982ffdf3df}{at()}} returns the current read/write pointer, if there is one for this device, or it moves the pointer.
+
+
+\item \mbox{\hyperlink{class_q_i_o_device_ac5a3fcc9349a98d8f260039c5fd58812}{at\+End()}} says whether there is more to read, if that is a meaningful question for this device.
+
+
+\item \mbox{\hyperlink{class_q_i_o_device_ac2f29866602352c08b3d3cb3f1fdc7e2}{reset()}} moves the read/write pointer to the start of the device, if that is possible for this device.
+
+
+\end{DoxyItemize}The state access are all \char`\"{}get\char`\"{} functions. The \mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} subclass calls set\+State() to update the state, and simple access functions tell the user of the device what the device\textquotesingle{}s state is. Here are the settings, and their associated access functions\+: 
+\begin{DoxyItemize}
+\item Access type. Some devices are direct access (it is possible to read/write anywhere) while others are sequential. \mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} provides the access functions \mbox{\hyperlink{class_q_i_o_device_ace782017b9a264d7d1759223add28ae7}{is\+Direct\+Access()}}, \mbox{\hyperlink{class_q_i_o_device_ab0c6f50325bbf1e860aed41f3bfa498c}{is\+Sequential\+Access()}} and \mbox{\hyperlink{class_q_i_o_device_a4cddfb1842e6392b0dbae21a217fef46}{is\+Combined\+Access()}} to tell users what a given I/O device supports.
+
+
+\item Buffering. Some devices are accessed in raw mode while others are buffered. Buffering usually provides greater efficiency, particularly for small read/write operations. \mbox{\hyperlink{class_q_i_o_device_a643b4378bee07a7d8f6ab59dfd17df80}{is\+Buffered()}} tells the user whether a given device is buffered. (This can often be set by the application in the call to \mbox{\hyperlink{class_q_i_o_device_ae4046ae7bf4d4cee1010239973314e42}{open()}}.)
+
+
+\item Synchronicity. Synchronous devices work there and then, for example files. When you read from a file, the file delivers its data right away. Others, such as a socket connected to a H\+T\+TP server, may not deliver the data until seconds after you ask to read it. \mbox{\hyperlink{class_q_i_o_device_ac425c50bec523a8f6bccfbe2c1934f19}{is\+Synchronous()}} and \mbox{\hyperlink{class_q_i_o_device_a95291c3aa671e64d41e4320190f05f4e}{is\+Asynchronous()}} tells the user how this device operates.
+
+
+\item C\+R/\+LF translation. For simplicity, applications often like to see just a single C\+R/\+LF style, and \mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} subclasses can provide that. \mbox{\hyperlink{class_q_i_o_device_abf1df3cc1e0734c784c9d8eff82908c0}{is\+Translated()}} returns T\+R\+UE if this object translates C\+R/\+LF to just LF. (This can often be set by the application in the call to \mbox{\hyperlink{class_q_i_o_device_ae4046ae7bf4d4cee1010239973314e42}{open()}}.)
+
+
+\item Accessibility. Some files cannot be written, for example. \mbox{\hyperlink{class_q_i_o_device_a3bba4665b92eabfeca6905e7561cc943}{is\+Readable()}}, is\+Writable and \mbox{\hyperlink{class_q_i_o_device_af362cdbc70c8cbd30bcb4aaaf7c8e9e2}{is\+Read\+Write()}} tells the application whether it can read from and write to a given device. (This can often be set by the application in the call to \mbox{\hyperlink{class_q_i_o_device_ae4046ae7bf4d4cee1010239973314e42}{open()}}.)
+
+
+\item Finally, \mbox{\hyperlink{class_q_i_o_device_a291d97cdb38c1cd261bfbaa67a9d3923}{is\+Open()}} returns T\+R\+UE if the device is open. This can quite obviously be set using \mbox{\hyperlink{class_q_i_o_device_ae4046ae7bf4d4cee1010239973314e42}{open()}} \+:)
+
+
+\end{DoxyItemize}
+
+\mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} provides numerous pure virtual functions you need to implement when subclassing it. Here is a skeleton subclass with all the members you are certain to need, and some it\textquotesingle{}s likely that you will need\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }YourDevice : \textcolor{keyword}{public} \mbox{\hyperlink{class_q_i_o_device}{QIODevice}}}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{YourDevice();}
+\DoxyCodeLine{   ~YourDevice();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{bool} \mbox{\hyperlink{class_q_i_o_device_ae4046ae7bf4d4cee1010239973314e42}{open}}( \textcolor{keywordtype}{int} \mbox{\hyperlink{class_q_i_o_device_ad2a025933d4c1fc013f7c7f7ce2601ab}{mode}} );}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{class_q_i_o_device_a01a9ddac5d964b5b6a1f10005bf28a4f}{close}}();}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{class_q_i_o_device_a39eccb592ae076fbc42108a3d590fb43}{flush}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{uint \mbox{\hyperlink{class_q_i_o_device_a60c4146763625213ac7aa29f1f071592}{size}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\textcolor{keywordtype}{int}  \mbox{\hyperlink{class_q_i_o_device_a0dee1db4a9e506924ccac6982ffdf3df}{at}}() \textcolor{keyword}{const};  \textcolor{comment}{// not a pure virtual function}}
+\DoxyCodeLine{\textcolor{keywordtype}{bool} \mbox{\hyperlink{class_q_i_o_device_a0dee1db4a9e506924ccac6982ffdf3df}{at}}( \textcolor{keywordtype}{int} );       \textcolor{comment}{// not a pure virtual function}}
+\DoxyCodeLine{\textcolor{keywordtype}{bool} \mbox{\hyperlink{class_q_i_o_device_ac5a3fcc9349a98d8f260039c5fd58812}{atEnd}}() \textcolor{keyword}{const};   \textcolor{comment}{// not a pure virtual function}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{class_q_i_o_device_a71f10647e4bd98141f45362b9a06983a}{readBlock}}( \textcolor{keywordtype}{char} *data, uint maxlen );}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{class_q_i_o_device_a5d937df1bde2f956872dd54e077807d1}{writeBlock}}( \textcolor{keyword}{const} \textcolor{keywordtype}{char} *data, uint len );}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{class_q_i_o_device_a4dc865ffcb5b7896ff8f9a1d828e4c0e}{readLine}}( \textcolor{keywordtype}{char} *data, uint maxlen );}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{class_q_i_o_device_a7cef61d66023f9cda6b0912082bd19fc}{getch}}();}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{class_q_i_o_device_a5de5c1c1cba7ca36ba93289e30cd3029}{putch}}( \textcolor{keywordtype}{int} );}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{class_q_i_o_device_aae3d67422103e8fc0411297b1d62c29a}{ungetch}}( \textcolor{keywordtype}{int} );}
+\DoxyCodeLine{\};}
+\end{DoxyCode}
+
+
+The three non-\/pure virtual functions can be ignored if your device is sequential (e.\+g. an R\+S-\/232 port).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}}, \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_i_o_device_a6ccc9ce76acdca224d0c3ded7d303f02}\label{class_q_i_o_device_a6ccc9ce76acdca224d0c3ded7d303f02}} 
+\index{QIODevice@{QIODevice}!QIODevice@{QIODevice}}
+\index{QIODevice@{QIODevice}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{QIODevice()}{QIODevice()}}
+{\footnotesize\ttfamily Q\+I\+O\+Device\+::\+Q\+I\+O\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs an I/O device. \mbox{\Hypertarget{class_q_i_o_device_a2510afba0e06ba9edc0d518fa2a8d1fa}\label{class_q_i_o_device_a2510afba0e06ba9edc0d518fa2a8d1fa}} 
+\index{QIODevice@{QIODevice}!````~QIODevice@{$\sim$QIODevice}}
+\index{````~QIODevice@{$\sim$QIODevice}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{$\sim$QIODevice()}{~QIODevice()}}
+{\footnotesize\ttfamily Q\+I\+O\+Device\+::$\sim$\+Q\+I\+O\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructs the I/O device. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_i_o_device_a0dee1db4a9e506924ccac6982ffdf3df}\label{class_q_i_o_device_a0dee1db4a9e506924ccac6982ffdf3df}} 
+\index{QIODevice@{QIODevice}!at@{at}}
+\index{at@{at}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Q\+I\+O\+Device\+::at (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual function that returns the current I/O device index.
+
+This index is the data read/write head of the I/O device.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a60c4146763625213ac7aa29f1f071592}{size()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_q_string_buffer_ad5305aacadba80e595b741142f67538e}{Q\+String\+Buffer}}, \mbox{\hyperlink{class_q_file_aa156f3896b35b0c6f6e9cf9237bf34bf}{Q\+File}}, \mbox{\hyperlink{class_q_buffer_adbff1cb0375ac6bc27621d26450c6c0a}{Q\+Buffer}}, and \mbox{\hyperlink{class_q_g_string_buffer_a8aa888c83b2a77c20fb60fa7d07a143b}{Q\+G\+String\+Buffer}}.
+
+\mbox{\Hypertarget{class_q_i_o_device_a14643fc1c2e05c2addd1ecc03bd98017}\label{class_q_i_o_device_a14643fc1c2e05c2addd1ecc03bd98017}} 
+\index{QIODevice@{QIODevice}!at@{at}}
+\index{at@{at}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::at (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual function that sets the I/O device index to {\itshape pos}. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a60c4146763625213ac7aa29f1f071592}{size()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_q_file_aa2f5e380a549e7d3043cf41ac8c57eba}{Q\+File}}, \mbox{\hyperlink{class_q_buffer_a4b4cd4e092b55db973fa34f76403b65d}{Q\+Buffer}}, \mbox{\hyperlink{class_q_string_buffer_a36caaffb3e157196ce5201f0f7c9fa25}{Q\+String\+Buffer}}, and \mbox{\hyperlink{class_q_g_string_buffer_ab1bcf1133571fd71797ad11d5d7f3cb4}{Q\+G\+String\+Buffer}}.
+
+\mbox{\Hypertarget{class_q_i_o_device_ac5a3fcc9349a98d8f260039c5fd58812}\label{class_q_i_o_device_ac5a3fcc9349a98d8f260039c5fd58812}} 
+\index{QIODevice@{QIODevice}!atEnd@{atEnd}}
+\index{atEnd@{atEnd}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{atEnd()}{atEnd()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::at\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual function that returns T\+R\+UE if the I/O device index is at the end of the input. 
+
+Reimplemented in \mbox{\hyperlink{class_q_file_a285a896990bd1779c7b3a7066142446b}{Q\+File}}.
+
+\mbox{\Hypertarget{class_q_i_o_device_a01a9ddac5d964b5b6a1f10005bf28a4f}\label{class_q_i_o_device_a01a9ddac5d964b5b6a1f10005bf28a4f}} 
+\index{QIODevice@{QIODevice}!close@{close}}
+\index{close@{close}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Q\+I\+O\+Device\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Closes the I/O device.
+
+This virtual function must be reimplemented by all subclasses.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_ae4046ae7bf4d4cee1010239973314e42}{open()}} 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{class_q_string_buffer_aabc8736ce1f90cd66212c5a6b2e166ea}{Q\+String\+Buffer}}, \mbox{\hyperlink{class_q_file_ac0d8375a5ea7d4503545d7c68dcf58e1}{Q\+File}}, \mbox{\hyperlink{class_q_buffer_affd0b382476516b0d4e3adfaf27c0247}{Q\+Buffer}}, and \mbox{\hyperlink{class_q_g_string_buffer_a02458102f8968ef46bfaeab319f8e2fc}{Q\+G\+String\+Buffer}}.
+
+\mbox{\Hypertarget{class_q_i_o_device_a3c3dd3eed081ff824acb10fa0eba9d91}\label{class_q_i_o_device_a3c3dd3eed081ff824acb10fa0eba9d91}} 
+\index{QIODevice@{QIODevice}!flags@{flags}}
+\index{flags@{flags}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{flags()}{flags()}}
+{\footnotesize\ttfamily int Q\+I\+O\+Device\+::flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current I/O device flags setting.
+
+Flags consists of mode flags and state flags.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_ad2a025933d4c1fc013f7c7f7ce2601ab}{mode()}}, \mbox{\hyperlink{class_q_i_o_device_a8529428353a81543a5a460797bf01c21}{state()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_a39eccb592ae076fbc42108a3d590fb43}\label{class_q_i_o_device_a39eccb592ae076fbc42108a3d590fb43}} 
+\index{QIODevice@{QIODevice}!flush@{flush}}
+\index{flush@{flush}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void Q\+I\+O\+Device\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Flushes an open I/O device.
+
+This virtual function must be reimplemented by all subclasses. 
+
+Implemented in \mbox{\hyperlink{class_q_string_buffer_a2961ddd6de68bb9e681ae8e18b6b298b}{Q\+String\+Buffer}}, \mbox{\hyperlink{class_q_file_a6d450a55bc3a8145fd33a7ee08051830}{Q\+File}}, \mbox{\hyperlink{class_q_buffer_a5e16941f9973d0263ea1ef79b54bc88f}{Q\+Buffer}}, and \mbox{\hyperlink{class_q_g_string_buffer_a655d2990426c9a646fc4d14273fb89c0}{Q\+G\+String\+Buffer}}.
+
+\mbox{\Hypertarget{class_q_i_o_device_a7cef61d66023f9cda6b0912082bd19fc}\label{class_q_i_o_device_a7cef61d66023f9cda6b0912082bd19fc}} 
+\index{QIODevice@{QIODevice}!getch@{getch}}
+\index{getch@{getch}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{getch()}{getch()}}
+{\footnotesize\ttfamily int Q\+I\+O\+Device\+::getch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reads a single byte/character from the I/O device.
+
+Returns the byte/character read, or -\/1 if the end of the I/O device has been reached.
+
+This virtual function must be reimplemented by all subclasses.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a5de5c1c1cba7ca36ba93289e30cd3029}{putch()}}, \mbox{\hyperlink{class_q_i_o_device_aae3d67422103e8fc0411297b1d62c29a}{ungetch()}} 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{class_q_string_buffer_acebe86e5beeaff3863673fc56089e2da}{Q\+String\+Buffer}}, \mbox{\hyperlink{class_q_file_a1c18e1a16e6f92ba8f19177824707f78}{Q\+File}}, \mbox{\hyperlink{class_q_buffer_abec634737e1d5a9b314e822737e51992}{Q\+Buffer}}, and \mbox{\hyperlink{class_q_g_string_buffer_a20699e4c4ba6d7d68c4422d795412751}{Q\+G\+String\+Buffer}}.
+
+\mbox{\Hypertarget{class_q_i_o_device_a95291c3aa671e64d41e4320190f05f4e}\label{class_q_i_o_device_a95291c3aa671e64d41e4320190f05f4e}} 
+\index{QIODevice@{QIODevice}!isAsynchronous@{isAsynchronous}}
+\index{isAsynchronous@{isAsynchronous}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{isAsynchronous()}{isAsynchronous()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::is\+Asynchronous (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the I/O device is a asynchronous device, otherwise F\+A\+L\+SE.
+
+This mode is currently not in use.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_ac425c50bec523a8f6bccfbe2c1934f19}{is\+Synchronous()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_a643b4378bee07a7d8f6ab59dfd17df80}\label{class_q_i_o_device_a643b4378bee07a7d8f6ab59dfd17df80}} 
+\index{QIODevice@{QIODevice}!isBuffered@{isBuffered}}
+\index{isBuffered@{isBuffered}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{isBuffered()}{isBuffered()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::is\+Buffered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the I/O device is a buffered (not raw) device, otherwise F\+A\+L\+SE. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a66e1eb78420a4ec15685871e2e773f68}{is\+Raw()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_a4cddfb1842e6392b0dbae21a217fef46}\label{class_q_i_o_device_a4cddfb1842e6392b0dbae21a217fef46}} 
+\index{QIODevice@{QIODevice}!isCombinedAccess@{isCombinedAccess}}
+\index{isCombinedAccess@{isCombinedAccess}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{isCombinedAccess()}{isCombinedAccess()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::is\+Combined\+Access (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the I/O device is a combined access (both direct and sequential) device, otherwise F\+A\+L\+SE.
+
+This access method is currently not in use. \mbox{\Hypertarget{class_q_i_o_device_ace782017b9a264d7d1759223add28ae7}\label{class_q_i_o_device_ace782017b9a264d7d1759223add28ae7}} 
+\index{QIODevice@{QIODevice}!isDirectAccess@{isDirectAccess}}
+\index{isDirectAccess@{isDirectAccess}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{isDirectAccess()}{isDirectAccess()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::is\+Direct\+Access (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the I/O device is a direct access (not sequential) device, otherwise F\+A\+L\+SE. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_ab0c6f50325bbf1e860aed41f3bfa498c}{is\+Sequential\+Access()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_ac959646567aba4ad6c4e1f280e10bbdd}\label{class_q_i_o_device_ac959646567aba4ad6c4e1f280e10bbdd}} 
+\index{QIODevice@{QIODevice}!isInactive@{isInactive}}
+\index{isInactive@{isInactive}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{isInactive()}{isInactive()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::is\+Inactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the I/O device state is 0, i.\+e. the device is not open. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a291d97cdb38c1cd261bfbaa67a9d3923}{is\+Open()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_a291d97cdb38c1cd261bfbaa67a9d3923}\label{class_q_i_o_device_a291d97cdb38c1cd261bfbaa67a9d3923}} 
+\index{QIODevice@{QIODevice}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{isOpen()}{isOpen()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the I/O device state has been opened, otherwise F\+A\+L\+SE. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_ac959646567aba4ad6c4e1f280e10bbdd}{is\+Inactive()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_a66e1eb78420a4ec15685871e2e773f68}\label{class_q_i_o_device_a66e1eb78420a4ec15685871e2e773f68}} 
+\index{QIODevice@{QIODevice}!isRaw@{isRaw}}
+\index{isRaw@{isRaw}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{isRaw()}{isRaw()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::is\+Raw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the I/O device is a raw (not buffered) device, otherwise F\+A\+L\+SE. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a643b4378bee07a7d8f6ab59dfd17df80}{is\+Buffered()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_a3bba4665b92eabfeca6905e7561cc943}\label{class_q_i_o_device_a3bba4665b92eabfeca6905e7561cc943}} 
+\index{QIODevice@{QIODevice}!isReadable@{isReadable}}
+\index{isReadable@{isReadable}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{isReadable()}{isReadable()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::is\+Readable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the I/O device was opened using {\ttfamily I\+O\+\_\+\+Read\+Only} or {\ttfamily I\+O\+\_\+\+Read\+Write} mode. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_ab033a6ee76263214267daf8b62ade3c7}{is\+Writable()}}, \mbox{\hyperlink{class_q_i_o_device_af362cdbc70c8cbd30bcb4aaaf7c8e9e2}{is\+Read\+Write()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_af362cdbc70c8cbd30bcb4aaaf7c8e9e2}\label{class_q_i_o_device_af362cdbc70c8cbd30bcb4aaaf7c8e9e2}} 
+\index{QIODevice@{QIODevice}!isReadWrite@{isReadWrite}}
+\index{isReadWrite@{isReadWrite}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{isReadWrite()}{isReadWrite()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::is\+Read\+Write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the I/O device was opened using {\ttfamily I\+O\+\_\+\+Read\+Write} mode. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a3bba4665b92eabfeca6905e7561cc943}{is\+Readable()}}, \mbox{\hyperlink{class_q_i_o_device_ab033a6ee76263214267daf8b62ade3c7}{is\+Writable()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_ab0c6f50325bbf1e860aed41f3bfa498c}\label{class_q_i_o_device_ab0c6f50325bbf1e860aed41f3bfa498c}} 
+\index{QIODevice@{QIODevice}!isSequentialAccess@{isSequentialAccess}}
+\index{isSequentialAccess@{isSequentialAccess}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{isSequentialAccess()}{isSequentialAccess()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::is\+Sequential\+Access (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the I/O device is a sequential access (not direct) device, otherwise F\+A\+L\+SE. Operations involving \mbox{\hyperlink{class_q_i_o_device_a60c4146763625213ac7aa29f1f071592}{size()}} and \mbox{\hyperlink{class_q_i_o_device_a14643fc1c2e05c2addd1ecc03bd98017}{at(int)}} are not valid on sequential devices. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_ace782017b9a264d7d1759223add28ae7}{is\+Direct\+Access()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_ac425c50bec523a8f6bccfbe2c1934f19}\label{class_q_i_o_device_ac425c50bec523a8f6bccfbe2c1934f19}} 
+\index{QIODevice@{QIODevice}!isSynchronous@{isSynchronous}}
+\index{isSynchronous@{isSynchronous}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{isSynchronous()}{isSynchronous()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::is\+Synchronous (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the I/O device is a synchronous device, otherwise F\+A\+L\+SE. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a95291c3aa671e64d41e4320190f05f4e}{is\+Asynchronous()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_abf1df3cc1e0734c784c9d8eff82908c0}\label{class_q_i_o_device_abf1df3cc1e0734c784c9d8eff82908c0}} 
+\index{QIODevice@{QIODevice}!isTranslated@{isTranslated}}
+\index{isTranslated@{isTranslated}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{isTranslated()}{isTranslated()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::is\+Translated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the I/O device translates carriage-\/return and linefeed characters.
+
+\mbox{\hyperlink{class_a}{A}} \mbox{\hyperlink{class_q_file}{Q\+File}} is translated if it is opened with the {\ttfamily I\+O\+\_\+\+Translate} mode flag. \mbox{\Hypertarget{class_q_i_o_device_ab033a6ee76263214267daf8b62ade3c7}\label{class_q_i_o_device_ab033a6ee76263214267daf8b62ade3c7}} 
+\index{QIODevice@{QIODevice}!isWritable@{isWritable}}
+\index{isWritable@{isWritable}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{isWritable()}{isWritable()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::is\+Writable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the I/O device was opened using {\ttfamily I\+O\+\_\+\+Write\+Only} or {\ttfamily I\+O\+\_\+\+Read\+Write} mode. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a3bba4665b92eabfeca6905e7561cc943}{is\+Readable()}}, \mbox{\hyperlink{class_q_i_o_device_af362cdbc70c8cbd30bcb4aaaf7c8e9e2}{is\+Read\+Write()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_ad2a025933d4c1fc013f7c7f7ce2601ab}\label{class_q_i_o_device_ad2a025933d4c1fc013f7c7f7ce2601ab}} 
+\index{QIODevice@{QIODevice}!mode@{mode}}
+\index{mode@{mode}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{mode()}{mode()}}
+{\footnotesize\ttfamily int Q\+I\+O\+Device\+::mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns bits OR\textquotesingle{}ed together that specify the current operation mode.
+
+These are the flags that were given to the \mbox{\hyperlink{class_q_i_o_device_ae4046ae7bf4d4cee1010239973314e42}{open()}} function.
+
+The flags are\+: {\ttfamily I\+O\+\_\+\+Read\+Only}, {\ttfamily I\+O\+\_\+\+Write\+Only}, {\ttfamily I\+O\+\_\+\+Read\+Write}, {\ttfamily I\+O\+\_\+\+Append}, {\ttfamily I\+O\+\_\+\+Truncate} and {\ttfamily I\+O\+\_\+\+Translate}. \mbox{\Hypertarget{class_q_i_o_device_ae4046ae7bf4d4cee1010239973314e42}\label{class_q_i_o_device_ae4046ae7bf4d4cee1010239973314e42}} 
+\index{QIODevice@{QIODevice}!open@{open}}
+\index{open@{open}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::open (\begin{DoxyParamCaption}\item[{int}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Opens the I/O device using the specified {\itshape mode}. Returns T\+R\+UE if successful, or F\+A\+L\+SE if the device could not be opened.
+
+The mode parameter {\itshape m} must be a combination of the following flags. 
+\begin{DoxyItemize}
+\item {\ttfamily I\+O\+\_\+\+Raw} specified raw (unbuffered) file access. 
+\item {\ttfamily I\+O\+\_\+\+Read\+Only} opens a file in read-\/only mode. 
+\item {\ttfamily I\+O\+\_\+\+Write\+Only} opens a file in write-\/only mode. 
+\item {\ttfamily I\+O\+\_\+\+Read\+Write} opens a file in read/write mode. 
+\item {\ttfamily I\+O\+\_\+\+Append} sets the file index to the end of the file. 
+\item {\ttfamily I\+O\+\_\+\+Truncate} truncates the file. 
+\item {\ttfamily I\+O\+\_\+\+Translate} enables carriage returns and linefeed translation for text files under M\+S-\/\+D\+OS, Window, O\+S/2 and Macintosh. On Unix systems this flag has no effect. Use with caution as it will also transform every linefeed written to the file into a C\+R\+LF pair. This is likely to corrupt your file when writing binary data to it. Cannot be combined with {\ttfamily I\+O\+\_\+\+Raw}. 
+\end{DoxyItemize}
+
+This virtual function must be reimplemented by all subclasses.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a01a9ddac5d964b5b6a1f10005bf28a4f}{close()}} 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{class_q_file_af10aeafc303904f98b74be9752d2aa43}{Q\+File}}, \mbox{\hyperlink{class_q_buffer_aa3ceff2217a13a570e0dcec157b23b18}{Q\+Buffer}}, \mbox{\hyperlink{class_q_string_buffer_a593d2870764f6888dd1aabea55304a46}{Q\+String\+Buffer}}, and \mbox{\hyperlink{class_q_g_string_buffer_afcecb219691daf1fb5f18f7324fc52b7}{Q\+G\+String\+Buffer}}.
+
+\mbox{\Hypertarget{class_q_i_o_device_a5de5c1c1cba7ca36ba93289e30cd3029}\label{class_q_i_o_device_a5de5c1c1cba7ca36ba93289e30cd3029}} 
+\index{QIODevice@{QIODevice}!putch@{putch}}
+\index{putch@{putch}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{putch()}{putch()}}
+{\footnotesize\ttfamily int Q\+I\+O\+Device\+::putch (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Writes the character {\itshape ch} to the I/O device.
+
+Returns {\itshape ch}, or -\/1 if some error occurred.
+
+This virtual function must be reimplemented by all subclasses.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a7cef61d66023f9cda6b0912082bd19fc}{getch()}}, \mbox{\hyperlink{class_q_i_o_device_aae3d67422103e8fc0411297b1d62c29a}{ungetch()}} 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{class_q_file_af331c4e27024f12383958e65c6a828a3}{Q\+File}}, \mbox{\hyperlink{class_q_buffer_aa05ca49f73284ac1fa2b01ffb3be2874}{Q\+Buffer}}, \mbox{\hyperlink{class_q_string_buffer_ac95cff6e837ae523527b9d78cb6a4074}{Q\+String\+Buffer}}, and \mbox{\hyperlink{class_q_g_string_buffer_ae2265be83385ba58ff0e47880563bbb5}{Q\+G\+String\+Buffer}}.
+
+\mbox{\Hypertarget{class_q_i_o_device_a2b93df374c6eea09c68a95cf99d66e6f}\label{class_q_i_o_device_a2b93df374c6eea09c68a95cf99d66e6f}} 
+\index{QIODevice@{QIODevice}!readAll@{readAll}}
+\index{readAll@{readAll}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{readAll()}{readAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_array}{Q\+Byte\+Array}} Q\+I\+O\+Device\+::read\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This convenience function returns all of the remaining data in the device. Note that this only works for direct access devices, such as \mbox{\hyperlink{class_q_file}{Q\+File}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_ace782017b9a264d7d1759223add28ae7}{is\+Direct\+Access()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_a71f10647e4bd98141f45362b9a06983a}\label{class_q_i_o_device_a71f10647e4bd98141f45362b9a06983a}} 
+\index{QIODevice@{QIODevice}!readBlock@{readBlock}}
+\index{readBlock@{readBlock}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{readBlock()}{readBlock()}}
+{\footnotesize\ttfamily int Q\+I\+O\+Device\+::read\+Block (\begin{DoxyParamCaption}\item[{char $\ast$}]{data,  }\item[{uint}]{maxlen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reads at most {\itshape maxlen} bytes from the I/O device into {\itshape data} and returns the number of bytes actually read.
+
+This virtual function must be reimplemented by all subclasses.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a5d937df1bde2f956872dd54e077807d1}{write\+Block()}} 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{class_q_buffer_a7deacf4bbd599f075f3dad4b20cafeb0}{Q\+Buffer}}, \mbox{\hyperlink{class_q_string_buffer_a6cda82dda018af5291df80676eb037a4}{Q\+String\+Buffer}}, \mbox{\hyperlink{class_q_file_ab9a42e65a2fcd51bae5f2a186ff5bee5}{Q\+File}}, and \mbox{\hyperlink{class_q_g_string_buffer_aa5ab1052c6a1a9365418f55c55022fb2}{Q\+G\+String\+Buffer}}.
+
+\mbox{\Hypertarget{class_q_i_o_device_a4dc865ffcb5b7896ff8f9a1d828e4c0e}\label{class_q_i_o_device_a4dc865ffcb5b7896ff8f9a1d828e4c0e}} 
+\index{QIODevice@{QIODevice}!readLine@{readLine}}
+\index{readLine@{readLine}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{readLine()}{readLine()}}
+{\footnotesize\ttfamily int Q\+I\+O\+Device\+::read\+Line (\begin{DoxyParamCaption}\item[{char $\ast$}]{data,  }\item[{uint}]{maxlen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reads a line of text, up to {\itshape maxlen} bytes including a terminating \textbackslash{}0. If there is a newline at the end if the line, it is not stripped.
+
+Returns the number of bytes read, or -\/1 in case of error.
+
+This virtual function can be reimplemented much more efficiently by the most subclasses.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a71f10647e4bd98141f45362b9a06983a}{read\+Block()}}, \mbox{\hyperlink{class_q_text_stream_a0bed0242d7c3f17289df88fdecad6afa}{Q\+Text\+Stream\+::read\+Line()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_q_buffer_adcbf115b0d36683e6da2d3baa367382d}{Q\+Buffer}}, and \mbox{\hyperlink{class_q_file_af95c756ce6ff9f597ff1d21c8384d777}{Q\+File}}.
+
+\mbox{\Hypertarget{class_q_i_o_device_ac2f29866602352c08b3d3cb3f1fdc7e2}\label{class_q_i_o_device_ac2f29866602352c08b3d3cb3f1fdc7e2}} 
+\index{QIODevice@{QIODevice}!reset@{reset}}
+\index{reset@{reset}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily bool Q\+I\+O\+Device\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the device index to 0. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a0dee1db4a9e506924ccac6982ffdf3df}{at()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_a1cd60113e530d3202d6dadf12021374c}\label{class_q_i_o_device_a1cd60113e530d3202d6dadf12021374c}} 
+\index{QIODevice@{QIODevice}!resetStatus@{resetStatus}}
+\index{resetStatus@{resetStatus}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{resetStatus()}{resetStatus()}}
+{\footnotesize\ttfamily void Q\+I\+O\+Device\+::reset\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the I/O device status to {\ttfamily I\+O\+\_\+\+Ok}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_aa9079e73ab2403922c528523cdf2d4ef}{status()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_a60c4146763625213ac7aa29f1f071592}\label{class_q_i_o_device_a60c4146763625213ac7aa29f1f071592}} 
+\index{QIODevice@{QIODevice}!size@{size}}
+\index{size@{size}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily uint Q\+I\+O\+Device\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Virtual function that returns the size of the I/O device. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a0dee1db4a9e506924ccac6982ffdf3df}{at()}} 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{class_q_string_buffer_a914433284831ecca2b30f80a642d175e}{Q\+String\+Buffer}}, \mbox{\hyperlink{class_q_file_ae6d2d1ffc423701e6acfc7be48a11e73}{Q\+File}}, \mbox{\hyperlink{class_q_buffer_aa064f4e430cdd1babd400982881012a8}{Q\+Buffer}}, and \mbox{\hyperlink{class_q_g_string_buffer_ad7206e39b7cc87a42717ded03d700cd8}{Q\+G\+String\+Buffer}}.
+
+\mbox{\Hypertarget{class_q_i_o_device_a8529428353a81543a5a460797bf01c21}\label{class_q_i_o_device_a8529428353a81543a5a460797bf01c21}} 
+\index{QIODevice@{QIODevice}!state@{state}}
+\index{state@{state}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{state()}{state()}}
+{\footnotesize\ttfamily int Q\+I\+O\+Device\+::state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns bits OR\textquotesingle{}ed together that specify the current state.
+
+The flags are\+: {\ttfamily I\+O\+\_\+\+Open}.
+
+Subclasses may define more flags. \mbox{\Hypertarget{class_q_i_o_device_aa9079e73ab2403922c528523cdf2d4ef}\label{class_q_i_o_device_aa9079e73ab2403922c528523cdf2d4ef}} 
+\index{QIODevice@{QIODevice}!status@{status}}
+\index{status@{status}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily int Q\+I\+O\+Device\+::status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the I/O device status.
+
+The I/O device status returns an error code. If \mbox{\hyperlink{class_q_i_o_device_ae4046ae7bf4d4cee1010239973314e42}{open()}} returns F\+A\+L\+SE or \mbox{\hyperlink{class_q_i_o_device_a71f10647e4bd98141f45362b9a06983a}{read\+Block()}} or \mbox{\hyperlink{class_q_i_o_device_a5d937df1bde2f956872dd54e077807d1}{write\+Block()}} return -\/1, this function can be called to get the reason why the operation did not succeed.
+
+The status codes are\+: 
+\begin{DoxyItemize}
+\item {\ttfamily I\+O\+\_\+\+Ok} The operation was successful. 
+\item {\ttfamily I\+O\+\_\+\+Read\+Error} Could not read from the device. 
+\item {\ttfamily I\+O\+\_\+\+Write\+Error} Could not write to the device. 
+\item {\ttfamily I\+O\+\_\+\+Fatal\+Error} \mbox{\hyperlink{class_a}{A}} fatal unrecoverable error occurred. 
+\item {\ttfamily I\+O\+\_\+\+Open\+Error} Could not open the device. 
+\item {\ttfamily I\+O\+\_\+\+Connect\+Error} Could not connect to the device. 
+\item {\ttfamily I\+O\+\_\+\+Abort\+Error} The operation was unexpectedly aborted. 
+\item {\ttfamily I\+O\+\_\+\+Time\+Out\+Error} The operation timed out. 
+\item {\ttfamily I\+O\+\_\+\+On\+Close\+Error} An unspecified error happened on close. 
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a1cd60113e530d3202d6dadf12021374c}{reset\+Status()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_i_o_device_aae3d67422103e8fc0411297b1d62c29a}\label{class_q_i_o_device_aae3d67422103e8fc0411297b1d62c29a}} 
+\index{QIODevice@{QIODevice}!ungetch@{ungetch}}
+\index{ungetch@{ungetch}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{ungetch()}{ungetch()}}
+{\footnotesize\ttfamily int Q\+I\+O\+Device\+::ungetch (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Puts the character {\itshape ch} back into the I/O device and decrements the index if it is not zero.
+
+This function is normally called to \char`\"{}undo\char`\"{} a \mbox{\hyperlink{class_q_i_o_device_a7cef61d66023f9cda6b0912082bd19fc}{getch()}} operation.
+
+Returns {\itshape ch}, or -\/1 if some error occurred.
+
+This virtual function must be reimplemented by all subclasses.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a7cef61d66023f9cda6b0912082bd19fc}{getch()}}, \mbox{\hyperlink{class_q_i_o_device_a5de5c1c1cba7ca36ba93289e30cd3029}{putch()}} 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{class_q_file_afb01a04cda09b3cc61babb5d334a052c}{Q\+File}}, \mbox{\hyperlink{class_q_buffer_a52f9ebc674d0651e6fd89e148529bb50}{Q\+Buffer}}, \mbox{\hyperlink{class_q_g_string_buffer_a6e97e3b078054bdeb5ee62d6970e7863}{Q\+G\+String\+Buffer}}, and \mbox{\hyperlink{class_q_string_buffer_ad6e53fb9f2f2969b9f9a7a1daa2d7af2}{Q\+String\+Buffer}}.
+
+\mbox{\Hypertarget{class_q_i_o_device_a5d937df1bde2f956872dd54e077807d1}\label{class_q_i_o_device_a5d937df1bde2f956872dd54e077807d1}} 
+\index{QIODevice@{QIODevice}!writeBlock@{writeBlock}}
+\index{writeBlock@{writeBlock}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{writeBlock()}{writeBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Q\+I\+O\+Device\+::write\+Block (\begin{DoxyParamCaption}\item[{const char $\ast$}]{data,  }\item[{uint}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Writes {\itshape len} bytes from {\itshape p} to the I/O device and returns the number of bytes actually written.
+
+This virtual function must be reimplemented by all subclasses.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a71f10647e4bd98141f45362b9a06983a}{read\+Block()}} 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{class_q_buffer_ad8bdac07e525a782d0759d3082bb296a}{Q\+Buffer}}, \mbox{\hyperlink{class_q_string_buffer_a4c17bf2b2702b837ba614bd92ad0d7a2}{Q\+String\+Buffer}}, \mbox{\hyperlink{class_q_g_string_buffer_aab6c9a7bfbc048b4adff01f4bf920efa}{Q\+G\+String\+Buffer}}, and \mbox{\hyperlink{class_q_file_a47e0572e396a6e953d14ba69bf733cea}{Q\+File}}.
+
+\mbox{\Hypertarget{class_q_i_o_device_a17d3fa98dc9e5eab406a6fa728c4b656}\label{class_q_i_o_device_a17d3fa98dc9e5eab406a6fa728c4b656}} 
+\index{QIODevice@{QIODevice}!writeBlock@{writeBlock}}
+\index{writeBlock@{writeBlock}!QIODevice@{QIODevice}}
+\subsubsection{\texorpdfstring{writeBlock()}{writeBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Q\+I\+O\+Device\+::write\+Block (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_array}{Q\+Byte\+Array}} \&}]{data }\end{DoxyParamCaption})}
+
+This convenience function is the same as calling write\+Block( data.\+data(), data.\+size() ). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qiodevice.\+h\item 
+doxygen/qtools/qiodevice.\+cpp\end{DoxyCompactItemize}

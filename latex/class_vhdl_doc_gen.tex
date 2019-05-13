@@ -1,0 +1,422 @@
+\hypertarget{class_vhdl_doc_gen}{}\section{Vhdl\+Doc\+Gen Class Reference}
+\label{class_vhdl_doc_gen}\index{VhdlDocGen@{VhdlDocGen}}
+
+
+{\ttfamily \#include $<$vhdldocgen.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a010ab08982f29df8c0f3d3f0f642f0f0}\label{class_vhdl_doc_gen_a010ab08982f29df8c0f3d3f0f642f0f0}} 
+enum {\bfseries Vhdl\+Classes} \{ {\bfseries E\+N\+T\+I\+T\+Y\+C\+L\+A\+SS}, 
+{\bfseries P\+A\+C\+K\+B\+O\+D\+Y\+C\+L\+A\+SS}, 
+{\bfseries A\+R\+C\+H\+I\+T\+E\+C\+T\+U\+R\+E\+C\+L\+A\+SS}, 
+{\bfseries P\+A\+C\+K\+A\+G\+E\+C\+L\+A\+SS}
+ \}
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a3f46a86d0561edb71388774696f6cea6}\label{class_vhdl_doc_gen_a3f46a86d0561edb71388774696f6cea6}} 
+enum {\bfseries Vhdl\+Key\+Words} \{ \newline
+{\bfseries L\+I\+B\+R\+A\+RY} =1, 
+{\bfseries E\+N\+T\+I\+TY}, 
+{\bfseries P\+A\+C\+K\+A\+G\+E\+\_\+\+B\+O\+DY}, 
+{\bfseries A\+R\+C\+H\+I\+T\+E\+C\+T\+U\+RE}, 
+\newline
+{\bfseries P\+A\+C\+K\+A\+GE}, 
+{\bfseries A\+T\+T\+R\+I\+B\+U\+TE}, 
+{\bfseries S\+I\+G\+N\+AL}, 
+{\bfseries C\+O\+M\+P\+O\+N\+E\+NT}, 
+\newline
+{\bfseries C\+O\+N\+S\+T\+A\+NT}, 
+{\bfseries T\+Y\+PE}, 
+{\bfseries S\+U\+B\+T\+Y\+PE}, 
+{\bfseries F\+U\+N\+C\+T\+I\+ON}, 
+\newline
+{\bfseries R\+E\+C\+O\+RD}, 
+{\bfseries P\+R\+O\+C\+E\+D\+U\+RE}, 
+{\bfseries U\+SE}, 
+{\bfseries P\+R\+O\+C\+E\+SS}, 
+\newline
+{\bfseries P\+O\+RT}, 
+{\bfseries U\+N\+I\+TS}, 
+{\bfseries G\+E\+N\+E\+R\+IC}, 
+{\bfseries I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+ON}, 
+\newline
+{\bfseries G\+R\+O\+UP}, 
+{\bfseries V\+F\+I\+LE}, 
+{\bfseries S\+H\+A\+R\+E\+D\+V\+A\+R\+I\+A\+B\+LE}, 
+{\bfseries C\+O\+N\+F\+IG}, 
+\newline
+{\bfseries A\+L\+I\+AS}, 
+{\bfseries M\+I\+S\+C\+E\+L\+L\+A\+N\+E\+O\+US}, 
+{\bfseries U\+C\+F\+\_\+\+C\+O\+N\+ST}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a987fee1e906fac322dda62613525a8f9}\label{class_vhdl_doc_gen_a987fee1e906fac322dda62613525a8f9}} 
+static void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_ac5508320d1d3754b484107c49cfec5a7}\label{class_vhdl_doc_gen_ac5508320d1d3754b484107c49cfec5a7}} 
+static \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries convert\+File\+Name\+To\+Class\+Name} (\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} name)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_ac7d0f125a2bffca08e8c52644bf8c6f2}\label{class_vhdl_doc_gen_ac7d0f125a2bffca08e8c52644bf8c6f2}} 
+static bool {\bfseries is\+Sub\+Class} (\mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$cd, \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$scd, bool follow\+Instances, int level)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_aede8c70a47e630b7a4b562b599304121}\label{class_vhdl_doc_gen_aede8c70a47e630b7a4b562b599304121}} 
+static \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries get\+Index\+Word} (const char $\ast$, int index)
+\item 
+static bool \mbox{\hyperlink{class_vhdl_doc_gen_a82a05cf7bd081febd19a0065eed17098}{delete\+Char\+Rev}} (\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&s, char c)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_ae4bf0d0561d8ef807b56c1f29765713e}\label{class_vhdl_doc_gen_ae4bf0d0561d8ef807b56c1f29765713e}} 
+static void {\bfseries delete\+All\+Chars} (\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&s, char c)
+\item 
+static void \mbox{\hyperlink{class_vhdl_doc_gen_a42d423663159ccd360d8838005662343}{parse\+Func\+Proto}} (const char $\ast$text, \mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{struct_argument}{Argument}} $>$ \&, \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name, \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&ret, bool doc=false)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_ab8681769cd2f027fbf46a4836d3825e9}\label{class_vhdl_doc_gen_ab8681769cd2f027fbf46a4836d3825e9}} 
+static void {\bfseries compute\+Vhdl\+Component\+Relations} ()
+\item 
+static \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} $\ast$ \mbox{\hyperlink{class_vhdl_doc_gen_a0338d8a473042e0ce824cd33def75544}{find\+Key\+Word}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&word)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_ad890048820909df255f6ee3f95d6ed80}\label{class_vhdl_doc_gen_ad890048820909df255f6ee3f95d6ed80}} 
+static \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$ {\bfseries get\+Package\+Name} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_ac10fcedd625d329dc0013ee40e8546a7}\label{class_vhdl_doc_gen_ac10fcedd625d329dc0013ee40e8546a7}} 
+static \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$ {\bfseries find\+Member} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&class\+Name, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&mem\+Name)
+\item 
+static void \mbox{\hyperlink{class_vhdl_doc_gen_a00216e37afbb1841a9631a80379b7f0a}{find\+All\+Packages}} (\mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$)
+\item 
+static \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$ \mbox{\hyperlink{class_vhdl_doc_gen_a69d1010e9addd89076e51cb78ddf029f}{find\+Member\+Def}} (\mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$cd, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&key, Member\+List\+Type type)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_ac766b60a818a192ef5492bcee794a0ea}\label{class_vhdl_doc_gen_ac766b60a818a192ef5492bcee794a0ea}} 
+static \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$ {\bfseries get\+Class} (const char $\ast$name)
+\item 
+static \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$ \mbox{\hyperlink{class_vhdl_doc_gen_aded31b275385b372f3bb0d4182dd990e}{find\+Function}} (const \mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{struct_argument}{Argument}} $>$ \&ql, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&package, bool type)
+\item 
+static \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_vhdl_doc_gen_ad5d4c791af3f2943467c7c7af558d83a}{get\+Class\+Title}} (const \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$)
+\item 
+static void \mbox{\hyperlink{class_vhdl_doc_gen_a67f47b8dc11d967ee47e9bda86fff7e0}{write\+Inline\+Class\+Link}} (const \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$, \mbox{\hyperlink{class_output_list}{Output\+List}} \&ol)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_afc349098219c01208def69e00f05e0e2}\label{class_vhdl_doc_gen_afc349098219c01208def69e00f05e0e2}} 
+static void {\bfseries write\+Tag\+File} (\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef, \mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&tag\+File)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_adb04cd03e2039ecab3a0a8f31ee4c890}\label{class_vhdl_doc_gen_adb04cd03e2039ecab3a0a8f31ee4c890}} 
+static bool {\bfseries is\+Constraint} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a57efdf5bddd0b36667c8aa21256ebac7}\label{class_vhdl_doc_gen_a57efdf5bddd0b36667c8aa21256ebac7}} 
+static bool {\bfseries is\+Config} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_af13dd5eb831c1df008b0fd41928f4b7c}\label{class_vhdl_doc_gen_af13dd5eb831c1df008b0fd41928f4b7c}} 
+static bool {\bfseries is\+Alias} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a3f582b69841bae3ec6f1281604b6f0c8}\label{class_vhdl_doc_gen_a3f582b69841bae3ec6f1281604b6f0c8}} 
+static bool {\bfseries is\+Library} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_ae3c19429669d382581ba37aee5f39278}\label{class_vhdl_doc_gen_ae3c19429669d382581ba37aee5f39278}} 
+static bool {\bfseries is\+Generic} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a73186f5d1ba5e6c11c6f006708da79a6}\label{class_vhdl_doc_gen_a73186f5d1ba5e6c11c6f006708da79a6}} 
+static bool {\bfseries is\+Port} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_ad3fdc795bf951ef11221894512b8bc6c}\label{class_vhdl_doc_gen_ad3fdc795bf951ef11221894512b8bc6c}} 
+static bool {\bfseries is\+Component} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_aca017e059b8a2972c2cad968800c0564}\label{class_vhdl_doc_gen_aca017e059b8a2972c2cad968800c0564}} 
+static bool {\bfseries is\+Package} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a65218023c4970a90f3bce70938a99781}\label{class_vhdl_doc_gen_a65218023c4970a90f3bce70938a99781}} 
+static bool {\bfseries is\+Entity} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a2c3cdcd27394531385ccd8c56257edc1}\label{class_vhdl_doc_gen_a2c3cdcd27394531385ccd8c56257edc1}} 
+static bool {\bfseries is\+Constant} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a8ab98ceef0a36aea7a15c548ec9aa455}\label{class_vhdl_doc_gen_a8ab98ceef0a36aea7a15c548ec9aa455}} 
+static bool {\bfseries is\+V\+Type} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_ab57f7d02afdd7034f78894b20e6ff4aa}\label{class_vhdl_doc_gen_ab57f7d02afdd7034f78894b20e6ff4aa}} 
+static bool {\bfseries is\+Sub\+Type} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a8808d28bf43d889892a8b6bad0793d7d}\label{class_vhdl_doc_gen_a8808d28bf43d889892a8b6bad0793d7d}} 
+static bool {\bfseries is\+Vhdl\+Function} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a212ea7da7de8f22c3ca1dd14a38a67ef}\label{class_vhdl_doc_gen_a212ea7da7de8f22c3ca1dd14a38a67ef}} 
+static bool {\bfseries is\+Process} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a07199651d2f493ee3afe42975df77efb}\label{class_vhdl_doc_gen_a07199651d2f493ee3afe42975df77efb}} 
+static bool {\bfseries is\+Signal} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a2dc9e668acc7c79f211709e2a0eeccad}\label{class_vhdl_doc_gen_a2dc9e668acc7c79f211709e2a0eeccad}} 
+static bool {\bfseries is\+Attribute} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a7fb01b11d2a225ee8d8c43a56862be8b}\label{class_vhdl_doc_gen_a7fb01b11d2a225ee8d8c43a56862be8b}} 
+static bool {\bfseries is\+Signals} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_aed906dd71cdcb8aca1bc6e3f9fba9732}\label{class_vhdl_doc_gen_aed906dd71cdcb8aca1bc6e3f9fba9732}} 
+static bool {\bfseries is\+Procedure} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_ac0634a061165ad22c27eef2ac12057d0}\label{class_vhdl_doc_gen_ac0634a061165ad22c27eef2ac12057d0}} 
+static bool {\bfseries is\+Record} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a0281ffc4e374d27d703419ae289e3b8c}\label{class_vhdl_doc_gen_a0281ffc4e374d27d703419ae289e3b8c}} 
+static bool {\bfseries is\+Architecture} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a4861484cc952d96afcfe277cf958aff0}\label{class_vhdl_doc_gen_a4861484cc952d96afcfe277cf958aff0}} 
+static bool {\bfseries is\+Unit} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_ab6e9aff43352b39d31806d0616e2c7af}\label{class_vhdl_doc_gen_ab6e9aff43352b39d31806d0616e2c7af}} 
+static bool {\bfseries is\+Package\+Body} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a877e8a81695500e7ad5ed8d76fdbaffc}\label{class_vhdl_doc_gen_a877e8a81695500e7ad5ed8d76fdbaffc}} 
+static bool {\bfseries is\+Variable} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a7ac9c26b1b0fb7402cc58acaf569df89}\label{class_vhdl_doc_gen_a7ac9c26b1b0fb7402cc58acaf569df89}} 
+static bool {\bfseries is\+File} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a069c8ad206be372bd948cc8e964218ed}\label{class_vhdl_doc_gen_a069c8ad206be372bd948cc8e964218ed}} 
+static bool {\bfseries is\+Group} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_ab9e42b2cf2d969dcc943ec355d4fa6b2}\label{class_vhdl_doc_gen_ab9e42b2cf2d969dcc943ec355d4fa6b2}} 
+static bool {\bfseries is\+Comp\+Inst} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a55ef68e914c38033a48b6fdac2907689}\label{class_vhdl_doc_gen_a55ef68e914c38033a48b6fdac2907689}} 
+static bool {\bfseries is\+Misc} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef)
+\item 
+static void \mbox{\hyperlink{class_vhdl_doc_gen_a802a7b8116fa1b8b46895c25a32c5677}{prepare\+Comment}} (\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&)
+\item 
+static void \mbox{\hyperlink{class_vhdl_doc_gen_aacccadab8f7d60dc0e4b2892ea724c2b}{format\+String}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&, \mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$)
+\item 
+static void \mbox{\hyperlink{class_vhdl_doc_gen_a0b58904c2803fe64c007b6c3ddda086e}{write\+Format\+String}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&, \mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$)
+\item 
+static void \mbox{\hyperlink{class_vhdl_doc_gen_ab1d66321a2c118a9376b65aeb598a49c}{write\+Function\+Proto}} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const \mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$al, const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$)
+\item 
+static void \mbox{\hyperlink{class_vhdl_doc_gen_a94ad80db8536156393a701496506c052}{write\+Process\+Proto}} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const \mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$al, const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$)
+\item 
+static void \mbox{\hyperlink{class_vhdl_doc_gen_a94da80078b9bba291b1c1af056eca6a4}{write\+Procedure\+Proto}} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const \mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$al, const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$)
+\item 
+static bool \mbox{\hyperlink{class_vhdl_doc_gen_a8c40c856602e19b4fe421c9572d618b7}{write\+Func\+Proc\+Docu}} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef, \mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const \mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$al, bool type=false)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a4be0e9c1867f4bdc5a06f1ca54905d4b}\label{class_vhdl_doc_gen_a4be0e9c1867f4bdc5a06f1ca54905d4b}} 
+static void {\bfseries write\+Record\+Proto} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef, \mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const \mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$al)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a0218e5158efa51df8490073c645c9a79}\label{class_vhdl_doc_gen_a0218e5158efa51df8490073c645c9a79}} 
+static bool {\bfseries write\+V\+H\+D\+L\+Type\+Documentation} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef, const \mbox{\hyperlink{class_definition}{Definition}} $\ast$d, \mbox{\hyperlink{class_output_list}{Output\+List}} \&ol)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a26d6d3e1a28067a7a5c9f8624f642654}\label{class_vhdl_doc_gen_a26d6d3e1a28067a7a5c9f8624f642654}} 
+static void {\bfseries write\+Vhdl\+Declarations} (\mbox{\hyperlink{class_member_list}{Member\+List}} $\ast$, \mbox{\hyperlink{class_output_list}{Output\+List}} \&, \mbox{\hyperlink{class_group_def}{Group\+Def}} $\ast$, \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$, \mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$, \mbox{\hyperlink{class_namespace_def}{Namespace\+Def}} $\ast$)
+\item 
+static void \mbox{\hyperlink{class_vhdl_doc_gen_ac5c7235e2572f9dab6475d5af835e437}{write\+V\+H\+D\+L\+Declaration}} (\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef, \mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$cd, \mbox{\hyperlink{class_namespace_def}{Namespace\+Def}} $\ast$nd, \mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$fd, \mbox{\hyperlink{class_group_def}{Group\+Def}} $\ast$gd, bool in\+Group)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_ae7a0bfaf11295ea18c656b14fb54203a}\label{class_vhdl_doc_gen_ae7a0bfaf11295ea18c656b14fb54203a}} 
+static void {\bfseries write\+Plain\+V\+H\+D\+L\+Declarations} (\mbox{\hyperlink{class_member_list}{Member\+List}} $\ast$ml, \mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$cd, \mbox{\hyperlink{class_namespace_def}{Namespace\+Def}} $\ast$nd, \mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$fd, \mbox{\hyperlink{class_group_def}{Group\+Def}} $\ast$gd, int specifier)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a30ec463210e92bb4f1cdd02bf1893c86}\label{class_vhdl_doc_gen_a30ec463210e92bb4f1cdd02bf1893c86}} 
+static void {\bfseries write\+V\+H\+D\+L\+Declarations} (\mbox{\hyperlink{class_member_list}{Member\+List}} $\ast$ml, \mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$cd, \mbox{\hyperlink{class_namespace_def}{Namespace\+Def}} $\ast$nd, \mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$fd, \mbox{\hyperlink{class_group_def}{Group\+Def}} $\ast$gd, const char $\ast$title, const char $\ast$subtitle, bool show\+Enum\+Values, int type)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a201149bb595839029a622100737e0dea}\label{class_vhdl_doc_gen_a201149bb595839029a622100737e0dea}} 
+static bool {\bfseries write\+Class\+Type} (\mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$\&, \mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&cname)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_aa77f9467a8af575f85643ececc8cf4e3}\label{class_vhdl_doc_gen_aa77f9467a8af575f85643ececc8cf4e3}} 
+static \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries convert\+Argument\+List\+To\+String} (const \mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$al, bool f)
+\item 
+static \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_vhdl_doc_gen_a6524e8718f3f956610df4dfc71be204c}{get\+Process\+Number}} ()
+\item 
+static \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_vhdl_doc_gen_a2e65f831a03ff54d13240da96843cd60}{get\+Record\+Number}} ()
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a2c4458b0e27e9b97db254d082d1487d2}\label{class_vhdl_doc_gen_a2c4458b0e27e9b97db254d082d1487d2}} 
+static \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries get\+Class\+Name} (const \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$)
+\item 
+static bool \mbox{\hyperlink{class_vhdl_doc_gen_a37b3bf29e7ec4cfe5c453f5a5d4e8f71}{is\+Number}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&s)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a4325f5840fe29089b4d3ea4b8c8b0fef}\label{class_vhdl_doc_gen_a4325f5840fe29089b4d3ea4b8c8b0fef}} 
+static \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries get\+Protection\+Name} (int prot)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_aa2a0267e84b178cc29681eeaea8cfe35}\label{class_vhdl_doc_gen_aa2a0267e84b178cc29681eeaea8cfe35}} 
+static void {\bfseries parse\+U\+CF} (const char $\ast$input, \mbox{\hyperlink{class_entry}{Entry}} $\ast$entity, \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} f, bool vendor)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a8879c8899b889e4c595e128841054861}\label{class_vhdl_doc_gen_a8879c8899b889e4c595e128841054861}} 
+static bool {\bfseries find\+Constraint\+File} (\mbox{\hyperlink{struct_layout_nav_entry}{Layout\+Nav\+Entry}} $\ast$lne)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a85060afa6fb3a871770412d06d445f62}\label{class_vhdl_doc_gen_a85060afa6fb3a871770412d06d445f62}} 
+static \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$ {\bfseries find\+Architecture} (const \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$cd)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_adb468ffc3a78f01a58bd6ca92dcc10ec}\label{class_vhdl_doc_gen_adb468ffc3a78f01a58bd6ca92dcc10ec}} 
+static \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$ {\bfseries find\+Architecture} (\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} identifier, \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} entity\+\_\+name)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_ae08bfd74e8450f8abc4fb3a265d6b24a}\label{class_vhdl_doc_gen_ae08bfd74e8450f8abc4fb3a265d6b24a}} 
+static void {\bfseries write\+Source} (\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$mdef, \mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&cname)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a62637da4d5b53a0243289ac6a4af2011}\label{class_vhdl_doc_gen_a62637da4d5b53a0243289ac6a4af2011}} 
+static void {\bfseries write\+Alphbetical\+Class} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$cd, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a4584e2262b81979f6d9b88c070c78753}\label{class_vhdl_doc_gen_a4584e2262b81979f6d9b88c070c78753}} 
+static \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries parse\+For\+Config} (\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&entity, \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&arch)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a411f4f042964d6e24c0376f1378da1a8}\label{class_vhdl_doc_gen_a411f4f042964d6e24c0376f1378da1a8}} 
+static \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries parse\+For\+Binding} (\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&entity, \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&arch)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a4892ca19efc7055ce4b5c3004ce550ed}\label{class_vhdl_doc_gen_a4892ca19efc7055ce4b5c3004ce550ed}} 
+static void {\bfseries add\+Base\+Class} (\mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$cd, \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$ent)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a03533511b8edfac47bb8e53b9cfb1d3d}\label{class_vhdl_doc_gen_a03533511b8edfac47bb8e53b9cfb1d3d}} 
+static \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$ {\bfseries find\+Vhdl\+Class} (const char $\ast$class\+Name)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a4c14772902ff4d4bf2a55291debd628e}\label{class_vhdl_doc_gen_a4c14772902ff4d4bf2a55291debd628e}} 
+static void {\bfseries write\+Overview} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a658c57fb74c0fde61d0002a979710416}\label{class_vhdl_doc_gen_a658c57fb74c0fde61d0002a979710416}} 
+static void {\bfseries write\+Overview} ()
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a2de08afddfa24b4a037c36ac329185ff}\label{class_vhdl_doc_gen_a2de08afddfa24b4a037c36ac329185ff}} 
+static void {\bfseries create\+Flow\+Chart} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a7808cdf56c299daceed3212b65b8a031}\label{class_vhdl_doc_gen_a7808cdf56c299daceed3212b65b8a031}} 
+static void {\bfseries set\+Flow\+Member} (const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$flow\+Member)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a12b2126cfa1cf80aeab17ae40d673d67}\label{class_vhdl_doc_gen_a12b2126cfa1cf80aeab17ae40d673d67}} 
+static const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$ {\bfseries get\+Flow\+Member} ()
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a7b7df19eb23b1532bc1d05c7ffe6cd76}\label{class_vhdl_doc_gen_a7b7df19eb23b1532bc1d05c7ffe6cd76}} 
+static bool {\bfseries is\+Vhdl\+Class} (const \mbox{\hyperlink{class_entry}{Entry}} $\ast$cu)
+\item 
+\mbox{\Hypertarget{class_vhdl_doc_gen_a60e16e249eaf1829c224b054ff743ce7}\label{class_vhdl_doc_gen_a60e16e249eaf1829c224b054ff743ce7}} 
+static void {\bfseries reset\+Code\+Vhdl\+Parser\+State} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for generating documentation specific for V\+H\+DL 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_vhdl_doc_gen_a82a05cf7bd081febd19a0065eed17098}\label{class_vhdl_doc_gen_a82a05cf7bd081febd19a0065eed17098}} 
+\index{VhdlDocGen@{VhdlDocGen}!deleteCharRev@{deleteCharRev}}
+\index{deleteCharRev@{deleteCharRev}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{deleteCharRev()}{deleteCharRev()}}
+{\footnotesize\ttfamily bool Vhdl\+Doc\+Gen\+::delete\+Char\+Rev (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{s,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+deletes a char backwards in a string \mbox{\Hypertarget{class_vhdl_doc_gen_a00216e37afbb1841a9631a80379b7f0a}\label{class_vhdl_doc_gen_a00216e37afbb1841a9631a80379b7f0a}} 
+\index{VhdlDocGen@{VhdlDocGen}!findAllPackages@{findAllPackages}}
+\index{findAllPackages@{findAllPackages}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{findAllPackages()}{findAllPackages()}}
+{\footnotesize\ttfamily void Vhdl\+Doc\+Gen\+::find\+All\+Packages (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$}]{cdef }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+finds all included packages of an Entity or Package \mbox{\Hypertarget{class_vhdl_doc_gen_aded31b275385b372f3bb0d4182dd990e}\label{class_vhdl_doc_gen_aded31b275385b372f3bb0d4182dd990e}} 
+\index{VhdlDocGen@{VhdlDocGen}!findFunction@{findFunction}}
+\index{findFunction@{findFunction}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{findFunction()}{findFunction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$ Vhdl\+Doc\+Gen\+::find\+Function (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{struct_argument}{Argument}} $>$ \&}]{ql,  }\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{funcname,  }\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{package,  }\item[{bool}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+returns the function with the matching argument list is called in vhdlcode.\+l \mbox{\Hypertarget{class_vhdl_doc_gen_a0338d8a473042e0ce824cd33def75544}\label{class_vhdl_doc_gen_a0338d8a473042e0ce824cd33def75544}} 
+\index{VhdlDocGen@{VhdlDocGen}!findKeyWord@{findKeyWord}}
+\index{findKeyWord@{findKeyWord}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{findKeyWord()}{findKeyWord()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} $\ast$ Vhdl\+Doc\+Gen\+::find\+Key\+Word (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{tmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+returns the color of a keyword \mbox{\Hypertarget{class_vhdl_doc_gen_a69d1010e9addd89076e51cb78ddf029f}\label{class_vhdl_doc_gen_a69d1010e9addd89076e51cb78ddf029f}} 
+\index{VhdlDocGen@{VhdlDocGen}!findMemberDef@{findMemberDef}}
+\index{findMemberDef@{findMemberDef}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{findMemberDef()}{findMemberDef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$ Vhdl\+Doc\+Gen\+::find\+Member\+Def (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$}]{cd,  }\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{key,  }\item[{Member\+List\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This function returns the entity$\vert$package in which the key (type) is found \mbox{\Hypertarget{class_vhdl_doc_gen_aacccadab8f7d60dc0e4b2892ea724c2b}\label{class_vhdl_doc_gen_aacccadab8f7d60dc0e4b2892ea724c2b}} 
+\index{VhdlDocGen@{VhdlDocGen}!formatString@{formatString}}
+\index{formatString@{formatString}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{formatString()}{formatString()}}
+{\footnotesize\ttfamily void Vhdl\+Doc\+Gen\+::format\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{s,  }\item[{\mbox{\hyperlink{class_output_list}{Output\+List}} \&}]{ol,  }\item[{const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$}]{mdef }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+inserts white spaces for better readings and writes a colored string to the output \mbox{\Hypertarget{class_vhdl_doc_gen_ad5d4c791af3f2943467c7c7af558d83a}\label{class_vhdl_doc_gen_ad5d4c791af3f2943467c7c7af558d83a}} 
+\index{VhdlDocGen@{VhdlDocGen}!getClassTitle@{getClassTitle}}
+\index{getClassTitle@{getClassTitle}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{getClassTitle()}{getClassTitle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Vhdl\+Doc\+Gen\+::get\+Class\+Title (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$}]{cd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+returns the class title+ref \mbox{\Hypertarget{class_vhdl_doc_gen_a6524e8718f3f956610df4dfc71be204c}\label{class_vhdl_doc_gen_a6524e8718f3f956610df4dfc71be204c}} 
+\index{VhdlDocGen@{VhdlDocGen}!getProcessNumber@{getProcessNumber}}
+\index{getProcessNumber@{getProcessNumber}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{getProcessNumber()}{getProcessNumber()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Vhdl\+Doc\+Gen\+::get\+Process\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+returns the next number of an anonymous process \mbox{\Hypertarget{class_vhdl_doc_gen_a2e65f831a03ff54d13240da96843cd60}\label{class_vhdl_doc_gen_a2e65f831a03ff54d13240da96843cd60}} 
+\index{VhdlDocGen@{VhdlDocGen}!getRecordNumber@{getRecordNumber}}
+\index{getRecordNumber@{getRecordNumber}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{getRecordNumber()}{getRecordNumber()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Vhdl\+Doc\+Gen\+::get\+Record\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+returns the next number of a record$\vert$unit member \mbox{\Hypertarget{class_vhdl_doc_gen_a37b3bf29e7ec4cfe5c453f5a5d4e8f71}\label{class_vhdl_doc_gen_a37b3bf29e7ec4cfe5c453f5a5d4e8f71}} 
+\index{VhdlDocGen@{VhdlDocGen}!isNumber@{isNumber}}
+\index{isNumber@{isNumber}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{isNumber()}{isNumber()}}
+{\footnotesize\ttfamily bool Vhdl\+Doc\+Gen\+::is\+Number (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+returns T\+R\+UE if this string is a number \mbox{\Hypertarget{class_vhdl_doc_gen_a42d423663159ccd360d8838005662343}\label{class_vhdl_doc_gen_a42d423663159ccd360d8838005662343}} 
+\index{VhdlDocGen@{VhdlDocGen}!parseFuncProto@{parseFuncProto}}
+\index{parseFuncProto@{parseFuncProto}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{parseFuncProto()}{parseFuncProto()}}
+{\footnotesize\ttfamily void Vhdl\+Doc\+Gen\+::parse\+Func\+Proto (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text,  }\item[{\mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{struct_argument}{Argument}} $>$ \&}]{qlist,  }\item[{\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{name,  }\item[{\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{ret,  }\item[{bool}]{doc = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+parses a function proto 
+\begin{DoxyParams}{Parameters}
+{\em text} & function string \\
+\hline
+{\em qlist} & stores the function types \\
+\hline
+{\em name} & points to the function name \\
+\hline
+{\em ret} & Stores the return type \\
+\hline
+{\em doc} & ??? \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vhdl_doc_gen_a802a7b8116fa1b8b46895c25a32c5677}\label{class_vhdl_doc_gen_a802a7b8116fa1b8b46895c25a32c5677}} 
+\index{VhdlDocGen@{VhdlDocGen}!prepareComment@{prepareComment}}
+\index{prepareComment@{prepareComment}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{prepareComment()}{prepareComment()}}
+{\footnotesize\ttfamily void Vhdl\+Doc\+Gen\+::prepare\+Comment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{qcs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+strips the \char`\"{}-\/-\/\char`\"{} prefixes of vhdl comments \mbox{\Hypertarget{class_vhdl_doc_gen_a0b58904c2803fe64c007b6c3ddda086e}\label{class_vhdl_doc_gen_a0b58904c2803fe64c007b6c3ddda086e}} 
+\index{VhdlDocGen@{VhdlDocGen}!writeFormatString@{writeFormatString}}
+\index{writeFormatString@{writeFormatString}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{writeFormatString()}{writeFormatString()}}
+{\footnotesize\ttfamily void Vhdl\+Doc\+Gen\+::write\+Format\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{s,  }\item[{\mbox{\hyperlink{class_output_list}{Output\+List}} \&}]{ol,  }\item[{const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$}]{mdef }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+writes a colored and formatted string \mbox{\Hypertarget{class_vhdl_doc_gen_a8c40c856602e19b4fe421c9572d618b7}\label{class_vhdl_doc_gen_a8c40c856602e19b4fe421c9572d618b7}} 
+\index{VhdlDocGen@{VhdlDocGen}!writeFuncProcDocu@{writeFuncProcDocu}}
+\index{writeFuncProcDocu@{writeFuncProcDocu}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{writeFuncProcDocu()}{writeFuncProcDocu()}}
+{\footnotesize\ttfamily bool Vhdl\+Doc\+Gen\+::write\+Func\+Proc\+Docu (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$}]{md,  }\item[{\mbox{\hyperlink{class_output_list}{Output\+List}} \&}]{ol,  }\item[{const \mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$}]{al,  }\item[{bool}]{type = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+writes a function$\vert$procedure documentation to the output \mbox{\Hypertarget{class_vhdl_doc_gen_ab1d66321a2c118a9376b65aeb598a49c}\label{class_vhdl_doc_gen_ab1d66321a2c118a9376b65aeb598a49c}} 
+\index{VhdlDocGen@{VhdlDocGen}!writeFunctionProto@{writeFunctionProto}}
+\index{writeFunctionProto@{writeFunctionProto}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{writeFunctionProto()}{writeFunctionProto()}}
+{\footnotesize\ttfamily void Vhdl\+Doc\+Gen\+::write\+Function\+Proto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_list}{Output\+List}} \&}]{ol,  }\item[{const \mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$}]{al,  }\item[{const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$}]{mdef }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+writes a function prototype to the output \mbox{\Hypertarget{class_vhdl_doc_gen_a67f47b8dc11d967ee47e9bda86fff7e0}\label{class_vhdl_doc_gen_a67f47b8dc11d967ee47e9bda86fff7e0}} 
+\index{VhdlDocGen@{VhdlDocGen}!writeInlineClassLink@{writeInlineClassLink}}
+\index{writeInlineClassLink@{writeInlineClassLink}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{writeInlineClassLink()}{writeInlineClassLink()}}
+{\footnotesize\ttfamily void Vhdl\+Doc\+Gen\+::write\+Inline\+Class\+Link (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$}]{cd,  }\item[{\mbox{\hyperlink{class_output_list}{Output\+List}} \&}]{ol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+writes an inline link form entity$\vert$package to architecture$\vert$package body and vice verca \mbox{\Hypertarget{class_vhdl_doc_gen_a94da80078b9bba291b1c1af056eca6a4}\label{class_vhdl_doc_gen_a94da80078b9bba291b1c1af056eca6a4}} 
+\index{VhdlDocGen@{VhdlDocGen}!writeProcedureProto@{writeProcedureProto}}
+\index{writeProcedureProto@{writeProcedureProto}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{writeProcedureProto()}{writeProcedureProto()}}
+{\footnotesize\ttfamily void Vhdl\+Doc\+Gen\+::write\+Procedure\+Proto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_list}{Output\+List}} \&}]{ol,  }\item[{const \mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$}]{al,  }\item[{const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$}]{mdef }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+writes a procedure prototype to the output \mbox{\Hypertarget{class_vhdl_doc_gen_a94ad80db8536156393a701496506c052}\label{class_vhdl_doc_gen_a94ad80db8536156393a701496506c052}} 
+\index{VhdlDocGen@{VhdlDocGen}!writeProcessProto@{writeProcessProto}}
+\index{writeProcessProto@{writeProcessProto}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{writeProcessProto()}{writeProcessProto()}}
+{\footnotesize\ttfamily void Vhdl\+Doc\+Gen\+::write\+Process\+Proto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_list}{Output\+List}} \&}]{ol,  }\item[{const \mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$}]{al,  }\item[{const \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$}]{mdef }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+writes a process prototype to the output \mbox{\Hypertarget{class_vhdl_doc_gen_ac5c7235e2572f9dab6475d5af835e437}\label{class_vhdl_doc_gen_ac5c7235e2572f9dab6475d5af835e437}} 
+\index{VhdlDocGen@{VhdlDocGen}!writeVHDLDeclaration@{writeVHDLDeclaration}}
+\index{writeVHDLDeclaration@{writeVHDLDeclaration}!VhdlDocGen@{VhdlDocGen}}
+\subsubsection{\texorpdfstring{writeVHDLDeclaration()}{writeVHDLDeclaration()}}
+{\footnotesize\ttfamily void Vhdl\+Doc\+Gen\+::write\+V\+H\+D\+L\+Declaration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$}]{mdef,  }\item[{\mbox{\hyperlink{class_output_list}{Output\+List}} \&}]{ol,  }\item[{\mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$}]{cd,  }\item[{\mbox{\hyperlink{class_namespace_def}{Namespace\+Def}} $\ast$}]{nd,  }\item[{\mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$}]{fd,  }\item[{\mbox{\hyperlink{class_group_def}{Group\+Def}} $\ast$}]{gd,  }\item[{bool}]{in\+Group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+printf(\char`\"{}start\+Member\+Item for \%s\textbackslash{}n\char`\"{},name().data());
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/vhdldocgen.\+h\item 
+doxygen/src/vhdldocgen.\+cpp\end{DoxyCompactItemize}

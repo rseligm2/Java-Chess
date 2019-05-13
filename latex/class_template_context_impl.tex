@@ -1,0 +1,218 @@
+\hypertarget{class_template_context_impl}{}\section{Template\+Context\+Impl Class Reference}
+\label{class_template_context_impl}\index{TemplateContextImpl@{TemplateContextImpl}}
+
+
+Internal class representing the implementation of a template context.  
+
+
+Inheritance diagram for Template\+Context\+Impl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_template_context_impl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_template_context_impl_a6da4cfdaac8611752bd98c42a5d6b1fa}\label{class_template_context_impl_a6da4cfdaac8611752bd98c42a5d6b1fa}} 
+{\bfseries Template\+Context\+Impl} (const \mbox{\hyperlink{class_template_engine}{Template\+Engine}} $\ast$e)
+\item 
+void \mbox{\hyperlink{class_template_context_impl_a006f67f94724147908dda84dd8522d34}{push}} ()
+\item 
+void \mbox{\hyperlink{class_template_context_impl_af8856e3207a53fad3f700353d71b575e}{pop}} ()
+\item 
+void \mbox{\hyperlink{class_template_context_impl_a1ff06ac572e4d0456bca3feeac5f96f7}{set}} (const char $\ast$name, const \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \&v)
+\item 
+\mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_template_context_impl_a0609e62251b223bbd14851738fa10727}{get}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name) const
+\item 
+const \mbox{\hyperlink{class_template_variant}{Template\+Variant}} $\ast$ \mbox{\hyperlink{class_template_context_impl_aba8ebc4a96d6a1a52f0f16d00a658770}{get\+Ref}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name) const
+\item 
+void \mbox{\hyperlink{class_template_context_impl_a1178c98a679ecb3e02722b4e8f39c1e3}{set\+Output\+Directory}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&dir)
+\item 
+void \mbox{\hyperlink{class_template_context_impl_a812fdb58baecd7830e42ef8508a005e8}{set\+Escape\+Intf}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&ext, \mbox{\hyperlink{class_template_escape_intf}{Template\+Escape\+Intf}} $\ast$intf)
+\item 
+\mbox{\Hypertarget{class_template_context_impl_aa7a5421a3e04b6fdf07c4734b8dc8f46}\label{class_template_context_impl_aa7a5421a3e04b6fdf07c4734b8dc8f46}} 
+void {\bfseries select\+Escape\+Intf} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&ext)
+\item 
+\mbox{\Hypertarget{class_template_context_impl_aaf4534a93bb799f160385999259d3b7f}\label{class_template_context_impl_aaf4534a93bb799f160385999259d3b7f}} 
+void {\bfseries set\+Active\+Escape\+Intf} (\mbox{\hyperlink{class_template_escape_intf}{Template\+Escape\+Intf}} $\ast$intf)
+\item 
+void \mbox{\hyperlink{class_template_context_impl_a70bde90b2b3c08769cd0c7587ffaf33a}{set\+Spaceless\+Intf}} (\mbox{\hyperlink{class_template_spaceless_intf}{Template\+Spaceless\+Intf}} $\ast$intf)
+\item 
+\mbox{\Hypertarget{class_template_context_impl_aa95cf328b6caf850d094d38e39487fd8}\label{class_template_context_impl_aa95cf328b6caf850d094d38e39487fd8}} 
+\mbox{\hyperlink{class_template_block_context}{Template\+Block\+Context}} $\ast$ {\bfseries block\+Context} ()
+\item 
+\mbox{\Hypertarget{class_template_context_impl_ab27977185400431bd890056168b77977}\label{class_template_context_impl_ab27977185400431bd890056168b77977}} 
+\mbox{\hyperlink{class_template_variant}{Template\+Variant}} {\bfseries get\+Primary} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name) const
+\item 
+\mbox{\Hypertarget{class_template_context_impl_afb0b4a00e7ab9bcfbc37e52103d4f587}\label{class_template_context_impl_afb0b4a00e7ab9bcfbc37e52103d4f587}} 
+void {\bfseries set\+Location} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&template\+Name, int line)
+\item 
+\mbox{\Hypertarget{class_template_context_impl_a56fa510c50b85b56c9eb066521f04f84}\label{class_template_context_impl_a56fa510c50b85b56c9eb066521f04f84}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries template\+Name} () const
+\item 
+\mbox{\Hypertarget{class_template_context_impl_a136a505a96784f0fe90769a22ff7c7a3}\label{class_template_context_impl_a136a505a96784f0fe90769a22ff7c7a3}} 
+int {\bfseries line} () const
+\item 
+\mbox{\Hypertarget{class_template_context_impl_ab3769ef66cafaafacef2e14b19403123}\label{class_template_context_impl_ab3769ef66cafaafacef2e14b19403123}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries output\+Directory} () const
+\item 
+\mbox{\Hypertarget{class_template_context_impl_aee36243b9d60323d435b5a9aaed419e5}\label{class_template_context_impl_aee36243b9d60323d435b5a9aaed419e5}} 
+\mbox{\hyperlink{class_template_escape_intf}{Template\+Escape\+Intf}} $\ast$ {\bfseries escape\+Intf} () const
+\item 
+\mbox{\Hypertarget{class_template_context_impl_ae36cc38704bf2685bd3ea08080a3d52b}\label{class_template_context_impl_ae36cc38704bf2685bd3ea08080a3d52b}} 
+\mbox{\hyperlink{class_template_spaceless_intf}{Template\+Spaceless\+Intf}} $\ast$ {\bfseries spaceless\+Intf} () const
+\item 
+\mbox{\Hypertarget{class_template_context_impl_a0cbc1d21d6a36a04fec3bad7ac677330}\label{class_template_context_impl_a0cbc1d21d6a36a04fec3bad7ac677330}} 
+void {\bfseries enable\+Spaceless} (bool b)
+\item 
+\mbox{\Hypertarget{class_template_context_impl_a51ef260b5ad8e51f4d1c0946211d4504}\label{class_template_context_impl_a51ef260b5ad8e51f4d1c0946211d4504}} 
+bool {\bfseries spaceless\+Enabled} () const
+\item 
+\mbox{\Hypertarget{class_template_context_impl_a1443d238fee209cf8a705258532e4444}\label{class_template_context_impl_a1443d238fee209cf8a705258532e4444}} 
+void {\bfseries enable\+Tabbing} (bool b)
+\item 
+\mbox{\Hypertarget{class_template_context_impl_a26de74067c83cb2e297c2b8f1c2b57a5}\label{class_template_context_impl_a26de74067c83cb2e297c2b8f1c2b57a5}} 
+bool {\bfseries tabbing\+Enabled} () const
+\item 
+\mbox{\Hypertarget{class_template_context_impl_a6559cfd611032a0d11acade316cf7b1e}\label{class_template_context_impl_a6559cfd611032a0d11acade316cf7b1e}} 
+bool {\bfseries needs\+Recoding} () const
+\item 
+\mbox{\Hypertarget{class_template_context_impl_a1b24ad1892cceaacf5e69063da01fcbe}\label{class_template_context_impl_a1b24ad1892cceaacf5e69063da01fcbe}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries encoding} () const
+\item 
+\mbox{\Hypertarget{class_template_context_impl_a61eac0859ed4b50a8d0b996b1b2bba86}\label{class_template_context_impl_a61eac0859ed4b50a8d0b996b1b2bba86}} 
+void {\bfseries set\+Encoding} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&file, int line, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&enc)
+\item 
+\mbox{\Hypertarget{class_template_context_impl_ab8ea2d7cb44d90ec727586f9bf92369e}\label{class_template_context_impl_ab8ea2d7cb44d90ec727586f9bf92369e}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries recode} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&s)
+\item 
+\mbox{\Hypertarget{class_template_context_impl_a6a520512bf255fc490ec350f27bd9017}\label{class_template_context_impl_a6a520512bf255fc490ec350f27bd9017}} 
+void {\bfseries warn} (const char $\ast$file\+Name, int line, const char $\ast$fmt,...) const
+\item 
+\mbox{\Hypertarget{class_template_context_impl_abbc758144c9e9485547d59e8b6911c9d}\label{class_template_context_impl_abbc758144c9e9485547d59e8b6911c9d}} 
+void {\bfseries open\+Sub\+Index} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&index\+Name)
+\item 
+\mbox{\Hypertarget{class_template_context_impl_afd3109a0f91006ab2a730e6af55f2b97}\label{class_template_context_impl_afd3109a0f91006ab2a730e6af55f2b97}} 
+void {\bfseries close\+Sub\+Index} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&index\+Name)
+\item 
+\mbox{\Hypertarget{class_template_context_impl_ae79b62ed2da2f5dcaf52b691deacec28}\label{class_template_context_impl_ae79b62ed2da2f5dcaf52b691deacec28}} 
+void {\bfseries add\+Index\+Entry} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&index\+Name, const \mbox{\hyperlink{class_q_value_list}{Q\+Value\+List}}$<$ \mbox{\hyperlink{struct_template_key_value}{Template\+Key\+Value}} $>$ \&arguments)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Internal class representing the implementation of a template context. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_template_context_impl_a0609e62251b223bbd14851738fa10727}\label{class_template_context_impl_a0609e62251b223bbd14851738fa10727}} 
+\index{TemplateContextImpl@{TemplateContextImpl}!get@{get}}
+\index{get@{get}!TemplateContextImpl@{TemplateContextImpl}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_variant}{Template\+Variant}} Template\+Context\+Impl\+::get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Gets the value for a given key 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & The name of key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value, which can be an invalid variant in case the key was not found. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_template_context_a6d65a9047de8ec4363612e576031e781}{Template\+Context}}.
+
+\mbox{\Hypertarget{class_template_context_impl_aba8ebc4a96d6a1a52f0f16d00a658770}\label{class_template_context_impl_aba8ebc4a96d6a1a52f0f16d00a658770}} 
+\index{TemplateContextImpl@{TemplateContextImpl}!getRef@{getRef}}
+\index{getRef@{getRef}!TemplateContextImpl@{TemplateContextImpl}}
+\subsubsection{\texorpdfstring{getRef()}{getRef()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_template_variant}{Template\+Variant}} $\ast$ Template\+Context\+Impl\+::get\+Ref (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a pointer to the value corresponding to a given key. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & The name of key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_a}{A}} pointer to the value, or 0 in case the key was not found. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_template_context_ac73a3e85149ff072aea9e3ab091c4ed1}{Template\+Context}}.
+
+\mbox{\Hypertarget{class_template_context_impl_af8856e3207a53fad3f700353d71b575e}\label{class_template_context_impl_af8856e3207a53fad3f700353d71b575e}} 
+\index{TemplateContextImpl@{TemplateContextImpl}!pop@{pop}}
+\index{pop@{pop}!TemplateContextImpl@{TemplateContextImpl}}
+\subsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily void Template\+Context\+Impl\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Pop the current scope from the stack. 
+
+Implements \mbox{\hyperlink{class_template_context_a853868792ccd7f9c5fed55338d23d019}{Template\+Context}}.
+
+\mbox{\Hypertarget{class_template_context_impl_a006f67f94724147908dda84dd8522d34}\label{class_template_context_impl_a006f67f94724147908dda84dd8522d34}} 
+\index{TemplateContextImpl@{TemplateContextImpl}!push@{push}}
+\index{push@{push}!TemplateContextImpl@{TemplateContextImpl}}
+\subsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void Template\+Context\+Impl\+::push (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Push a new scope on the stack. 
+
+Implements \mbox{\hyperlink{class_template_context_aac3a3e3c8e604db05e74cba7b1ce8554}{Template\+Context}}.
+
+\mbox{\Hypertarget{class_template_context_impl_a1ff06ac572e4d0456bca3feeac5f96f7}\label{class_template_context_impl_a1ff06ac572e4d0456bca3feeac5f96f7}} 
+\index{TemplateContextImpl@{TemplateContextImpl}!set@{set}}
+\index{set@{set}!TemplateContextImpl@{TemplateContextImpl}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void Template\+Context\+Impl\+::set (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets a value in the current scope. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & The name of the value; the key in the dictionary. \\
+\hline
+\mbox{\texttt{ in}}  & {\em v} & The value associated with the key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+When a given key is already present, its value will be replaced by {\itshape v} 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_template_context_a99d037bab858efc4fa8602fae3a5af9c}{Template\+Context}}.
+
+\mbox{\Hypertarget{class_template_context_impl_a812fdb58baecd7830e42ef8508a005e8}\label{class_template_context_impl_a812fdb58baecd7830e42ef8508a005e8}} 
+\index{TemplateContextImpl@{TemplateContextImpl}!setEscapeIntf@{setEscapeIntf}}
+\index{setEscapeIntf@{setEscapeIntf}!TemplateContextImpl@{TemplateContextImpl}}
+\subsubsection{\texorpdfstring{setEscapeIntf()}{setEscapeIntf()}}
+{\footnotesize\ttfamily void Template\+Context\+Impl\+::set\+Escape\+Intf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{extension,  }\item[{\mbox{\hyperlink{class_template_escape_intf}{Template\+Escape\+Intf}} $\ast$}]{intf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the interface that will be used for escaping the result of variable expansion before writing it to the output. 
+
+Implements \mbox{\hyperlink{class_template_context_afad803f8d522fb63ad4b91a2034b06a0}{Template\+Context}}.
+
+\mbox{\Hypertarget{class_template_context_impl_a1178c98a679ecb3e02722b4e8f39c1e3}\label{class_template_context_impl_a1178c98a679ecb3e02722b4e8f39c1e3}} 
+\index{TemplateContextImpl@{TemplateContextImpl}!setOutputDirectory@{setOutputDirectory}}
+\index{setOutputDirectory@{setOutputDirectory}!TemplateContextImpl@{TemplateContextImpl}}
+\subsubsection{\texorpdfstring{setOutputDirectory()}{setOutputDirectory()}}
+{\footnotesize\ttfamily void Template\+Context\+Impl\+::set\+Output\+Directory (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+When files are created (i.\+e. by \{\% create ... \%\}) they written to the directory {\itshape dir}. 
+
+Implements \mbox{\hyperlink{class_template_context_ab3aaaa03df934615ccfa3209420cd93d}{Template\+Context}}.
+
+\mbox{\Hypertarget{class_template_context_impl_a70bde90b2b3c08769cd0c7587ffaf33a}\label{class_template_context_impl_a70bde90b2b3c08769cd0c7587ffaf33a}} 
+\index{TemplateContextImpl@{TemplateContextImpl}!setSpacelessIntf@{setSpacelessIntf}}
+\index{setSpacelessIntf@{setSpacelessIntf}!TemplateContextImpl@{TemplateContextImpl}}
+\subsubsection{\texorpdfstring{setSpacelessIntf()}{setSpacelessIntf()}}
+{\footnotesize\ttfamily void Template\+Context\+Impl\+::set\+Spaceless\+Intf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_template_spaceless_intf}{Template\+Spaceless\+Intf}} $\ast$}]{intf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the interface that will be used inside a spaceless block to remove any redundant whitespace. 
+
+Implements \mbox{\hyperlink{class_template_context_a11e64f588d21aeda2b57a4bc4e06ecc7}{Template\+Context}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/template.\+cpp\end{DoxyCompactItemize}

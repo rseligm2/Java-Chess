@@ -1,0 +1,127 @@
+\hypertarget{class_nesting_context}{}\section{Nesting\+Context Class Reference}
+\label{class_nesting_context}\index{NestingContext@{NestingContext}}
+Inheritance diagram for Nesting\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_nesting_context}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_nesting_context_1_1_private}{Private}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_nesting_context_a71527fdcb3f4537999d866728480c1d4}{count}} () const
+\item 
+virtual \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_nesting_context_a11ff5ba22637b6ce76883c3cb840e67b}{at}} (int index) const
+\item 
+virtual \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ \mbox{\hyperlink{class_nesting_context_ab263d1be16f2bfe1e094166a31b4a912}{create\+Iterator}} () const
+\item 
+virtual int \mbox{\hyperlink{class_nesting_context_a71b0b342e5bb1b434a0390a77640df55}{add\+Ref}} ()
+\item 
+virtual int \mbox{\hyperlink{class_nesting_context_a4f43acface7c31d6bb2aa3d9a9f2ea13}{release}} ()
+\item 
+\mbox{\Hypertarget{class_nesting_context_a0f51902303237dea662f7773633d1833}\label{class_nesting_context_a0f51902303237dea662f7773633d1833}} 
+void {\bfseries add\+Namespaces} (const \mbox{\hyperlink{class_namespace_s_dict}{Namespace\+S\+Dict}} \&ns\+Dict, bool root\+Only, bool add\+Classes)
+\item 
+\mbox{\Hypertarget{class_nesting_context_ae520871daeb0cf070443873fefc2c3ed}\label{class_nesting_context_ae520871daeb0cf070443873fefc2c3ed}} 
+void {\bfseries add\+Classes} (const \mbox{\hyperlink{class_class_s_dict}{Class\+S\+Dict}} \&cl\+Dict, bool root\+Only)
+\item 
+\mbox{\Hypertarget{class_nesting_context_a9ad1a2be0df92986ce455d836f9b72f0}\label{class_nesting_context_a9ad1a2be0df92986ce455d836f9b72f0}} 
+void {\bfseries add\+Dirs} (const \mbox{\hyperlink{class_dir_s_dict}{Dir\+S\+Dict}} \&)
+\item 
+\mbox{\Hypertarget{class_nesting_context_a512b12070aa7042bd1d21b75d5393897}\label{class_nesting_context_a512b12070aa7042bd1d21b75d5393897}} 
+void {\bfseries add\+Dirs} (const \mbox{\hyperlink{class_dir_list}{Dir\+List}} \&)
+\item 
+\mbox{\Hypertarget{class_nesting_context_adda61f73cae330126a7172393797c6df}\label{class_nesting_context_adda61f73cae330126a7172393797c6df}} 
+void {\bfseries add\+Files} (const \mbox{\hyperlink{class_file_name_list}{File\+Name\+List}} \&)
+\item 
+\mbox{\Hypertarget{class_nesting_context_a9c2b94e274f88aa43230b3de7f7a1602}\label{class_nesting_context_a9c2b94e274f88aa43230b3de7f7a1602}} 
+void {\bfseries add\+Files} (const \mbox{\hyperlink{class_file_list}{File\+List}} \&)
+\item 
+\mbox{\Hypertarget{class_nesting_context_a0b561031193905299f81f1f42bbd7d2f}\label{class_nesting_context_a0b561031193905299f81f1f42bbd7d2f}} 
+void {\bfseries add\+Pages} (const \mbox{\hyperlink{class_page_s_dict}{Page\+S\+Dict}} \&pages, bool root\+Only)
+\item 
+\mbox{\Hypertarget{class_nesting_context_aa5f09a9e6d48406b9bb06b1d9a603c3c}\label{class_nesting_context_aa5f09a9e6d48406b9bb06b1d9a603c3c}} 
+void {\bfseries add\+Modules} (const \mbox{\hyperlink{class_group_s_dict}{Group\+S\+Dict}} \&modules)
+\item 
+\mbox{\Hypertarget{class_nesting_context_a671e6a557f74d6c37e0dc441644b9eea}\label{class_nesting_context_a671e6a557f74d6c37e0dc441644b9eea}} 
+void {\bfseries add\+Modules} (const \mbox{\hyperlink{class_group_list}{Group\+List}} \&modules)
+\item 
+\mbox{\Hypertarget{class_nesting_context_a626b0bfd1cae233e80a32bba17299a0e}\label{class_nesting_context_a626b0bfd1cae233e80a32bba17299a0e}} 
+void {\bfseries add\+Class\+Hierarchy} (const \mbox{\hyperlink{class_class_s_dict}{Class\+S\+Dict}} \&cl\+Dict, bool root\+Only)
+\item 
+\mbox{\Hypertarget{class_nesting_context_a420f6c00ef503715ea4127909c492630}\label{class_nesting_context_a420f6c00ef503715ea4127909c492630}} 
+void {\bfseries add\+Derived\+Classes} (const \mbox{\hyperlink{class_base_class_list}{Base\+Class\+List}} $\ast$bcl, bool hide\+Super)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_nesting_context_af781c93a616e539e857a135aa97a09cc}\label{class_nesting_context_af781c93a616e539e857a135aa97a09cc}} 
+static \mbox{\hyperlink{class_nesting_context}{Nesting\+Context}} $\ast$ {\bfseries alloc} (const \mbox{\hyperlink{class_nesting_node_context}{Nesting\+Node\+Context}} $\ast$parent, int level)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_nesting_context_a71b0b342e5bb1b434a0390a77640df55}\label{class_nesting_context_a71b0b342e5bb1b434a0390a77640df55}} 
+\index{NestingContext@{NestingContext}!addRef@{addRef}}
+\index{addRef@{addRef}!NestingContext@{NestingContext}}
+\subsubsection{\texorpdfstring{addRef()}{addRef()}}
+{\footnotesize\ttfamily virtual int Nesting\+Context\+::add\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Increase object\textquotesingle{}s reference count 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a4b4973e2e15396d10bc4e3085462ca2b}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_nesting_context_a11ff5ba22637b6ce76883c3cb840e67b}\label{class_nesting_context_a11ff5ba22637b6ce76883c3cb840e67b}} 
+\index{NestingContext@{NestingContext}!at@{at}}
+\index{at@{at}!NestingContext@{NestingContext}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_variant}{Template\+Variant}} Nesting\+Context\+::at (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the element at index position {\itshape index}. 
+
+Implements \mbox{\hyperlink{class_template_list_intf_aa51e57e72eacf4e8ce1055ee30a0f7f8}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_nesting_context_a71527fdcb3f4537999d866728480c1d4}\label{class_nesting_context_a71527fdcb3f4537999d866728480c1d4}} 
+\index{NestingContext@{NestingContext}!count@{count}}
+\index{count@{count}!NestingContext@{NestingContext}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Nesting\+Context\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the number of elements in the list 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a329e49e33484c2aa5106aac1bf4e5216}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_nesting_context_ab263d1be16f2bfe1e094166a31b4a912}\label{class_nesting_context_ab263d1be16f2bfe1e094166a31b4a912}} 
+\index{NestingContext@{NestingContext}!createIterator@{createIterator}}
+\index{createIterator@{createIterator}!NestingContext@{NestingContext}}
+\subsubsection{\texorpdfstring{createIterator()}{createIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ Nesting\+Context\+::create\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a new iterator for this list. \begin{DoxyNote}{Note}
+the user should call delete on the returned pointer. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_template_list_intf_a56b82384db24c3e121076a1da046d378}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_nesting_context_a4f43acface7c31d6bb2aa3d9a9f2ea13}\label{class_nesting_context_a4f43acface7c31d6bb2aa3d9a9f2ea13}} 
+\index{NestingContext@{NestingContext}!release@{release}}
+\index{release@{release}!NestingContext@{NestingContext}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual int Nesting\+Context\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Decreases object\textquotesingle{}s reference count, destroy object if 0 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a0c53169c740c09dac47efc62bbe39674}{Template\+List\+Intf}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/context.\+h\item 
+doxygen/src/context.\+cpp\end{DoxyCompactItemize}

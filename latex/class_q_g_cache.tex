@@ -1,0 +1,140 @@
+\hypertarget{class_q_g_cache}{}\section{Q\+G\+Cache Class Reference}
+\label{class_q_g_cache}\index{QGCache@{QGCache}}
+
+
+The \mbox{\hyperlink{class_q_g_cache}{Q\+G\+Cache}} class is an internal class for implementing \mbox{\hyperlink{class_q_cache}{Q\+Cache}} template classes.  
+
+
+
+
+{\ttfamily \#include $<$qgcache.\+h$>$}
+
+Inheritance diagram for Q\+G\+Cache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_q_g_cache}
+\end{center}
+\end{figure}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_g_cache_a1dcb303ef4795be3117374c386c5574a}\label{class_q_g_cache_a1dcb303ef4795be3117374c386c5574a}} 
+enum {\bfseries Key\+Type} \{ {\bfseries String\+Key}, 
+{\bfseries Ascii\+Key}, 
+{\bfseries Int\+Key}, 
+{\bfseries Ptr\+Key}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_g_cache_a993236be98f96a207a872b3990db0be7}\label{class_q_g_cache_a993236be98f96a207a872b3990db0be7}} 
+{\bfseries Q\+G\+Cache} (int max\+Cost, uint size, Key\+Type kt, bool case\+Sensitive, bool copy\+Keys)
+\item 
+\mbox{\Hypertarget{class_q_g_cache_ac99ee21a13fa085b60012717c3bfd3e4}\label{class_q_g_cache_ac99ee21a13fa085b60012717c3bfd3e4}} 
+{\bfseries Q\+G\+Cache} (const \mbox{\hyperlink{class_q_g_cache}{Q\+G\+Cache}} \&)
+\item 
+\mbox{\Hypertarget{class_q_g_cache_aa58dc5bf77c3846e89cc46f0124bc6fc}\label{class_q_g_cache_aa58dc5bf77c3846e89cc46f0124bc6fc}} 
+\mbox{\hyperlink{class_q_g_cache}{Q\+G\+Cache}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_q_g_cache}{Q\+G\+Cache}} \&)
+\item 
+uint \mbox{\hyperlink{class_q_g_cache_a8da4537fdfd7eca8e1ae092775e5538d}{count}} () const
+\item 
+\mbox{\Hypertarget{class_q_g_cache_aa371b601ca93a8dd7c7d6728845e2073}\label{class_q_g_cache_aa371b601ca93a8dd7c7d6728845e2073}} 
+uint {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class_q_g_cache_a5b3c7491d78e54203fb1b4bde26aaf04}\label{class_q_g_cache_a5b3c7491d78e54203fb1b4bde26aaf04}} 
+int {\bfseries max\+Cost} () const
+\item 
+\mbox{\Hypertarget{class_q_g_cache_adb8125f1761226863fb71c1c8229cbf1}\label{class_q_g_cache_adb8125f1761226863fb71c1c8229cbf1}} 
+int {\bfseries total\+Cost} () const
+\item 
+\mbox{\Hypertarget{class_q_g_cache_ac168417e27bd435675361b710692e7a8}\label{class_q_g_cache_ac168417e27bd435675361b710692e7a8}} 
+void {\bfseries set\+Max\+Cost} (int max\+Cost)
+\item 
+void \mbox{\hyperlink{class_q_g_cache_a3e0d8ce359e64a8793ef7f9d79dc546b}{clear}} ()
+\item 
+\mbox{\Hypertarget{class_q_g_cache_a115d46416492c26746ed3f1e6b4ae9f6}\label{class_q_g_cache_a115d46416492c26746ed3f1e6b4ae9f6}} 
+bool {\bfseries insert\+\_\+string} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&key, Q\+Collection\+::\+Item, int cost, int priority)
+\item 
+\mbox{\Hypertarget{class_q_g_cache_a2746f839f86692c8b9039cab3128337e}\label{class_q_g_cache_a2746f839f86692c8b9039cab3128337e}} 
+bool {\bfseries insert\+\_\+other} (const char $\ast$key, Q\+Collection\+::\+Item, int cost, int priority)
+\item 
+\mbox{\Hypertarget{class_q_g_cache_aff2d410561a6e4b92bdb5d74b48212ad}\label{class_q_g_cache_aff2d410561a6e4b92bdb5d74b48212ad}} 
+bool {\bfseries remove\+\_\+string} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&key)
+\item 
+\mbox{\Hypertarget{class_q_g_cache_a56c49e66aeb6b25295200730a0e700d8}\label{class_q_g_cache_a56c49e66aeb6b25295200730a0e700d8}} 
+bool {\bfseries remove\+\_\+other} (const char $\ast$key)
+\item 
+\mbox{\Hypertarget{class_q_g_cache_a4b15c35953469e7fbcddb09745d97b9f}\label{class_q_g_cache_a4b15c35953469e7fbcddb09745d97b9f}} 
+Q\+Collection\+::\+Item {\bfseries take\+\_\+string} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&key)
+\item 
+\mbox{\Hypertarget{class_q_g_cache_aadb5340c0a6678cfa0d8352757b0be93}\label{class_q_g_cache_aadb5340c0a6678cfa0d8352757b0be93}} 
+Q\+Collection\+::\+Item {\bfseries take\+\_\+other} (const char $\ast$key)
+\item 
+\mbox{\Hypertarget{class_q_g_cache_ab749680abc1c60faa1584ed81ddcf054}\label{class_q_g_cache_ab749680abc1c60faa1584ed81ddcf054}} 
+Q\+Collection\+::\+Item {\bfseries find\+\_\+string} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&key, bool ref=T\+R\+UE) const
+\item 
+\mbox{\Hypertarget{class_q_g_cache_acd85ffa485cfca2390451516037ee7fc}\label{class_q_g_cache_acd85ffa485cfca2390451516037ee7fc}} 
+Q\+Collection\+::\+Item {\bfseries find\+\_\+other} (const char $\ast$key, bool ref=T\+R\+UE) const
+\item 
+\mbox{\Hypertarget{class_q_g_cache_ab2fb9c3ff81484a67507d604569a4060}\label{class_q_g_cache_ab2fb9c3ff81484a67507d604569a4060}} 
+void {\bfseries statistics} () const
+\item 
+\mbox{\Hypertarget{class_q_g_cache_a31764bc570766c4215f986a5be97db71}\label{class_q_g_cache_a31764bc570766c4215f986a5be97db71}} 
+int {\bfseries hits} () const
+\item 
+\mbox{\Hypertarget{class_q_g_cache_a97397b4edc7a4ff8c1cbc20ace392df2}\label{class_q_g_cache_a97397b4edc7a4ff8c1cbc20ace392df2}} 
+int {\bfseries misses} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_g_cache_a37933afdeb94bef86bf66aca84fc229c}\label{class_q_g_cache_a37933afdeb94bef86bf66aca84fc229c}} 
+class {\bfseries Q\+G\+Cache\+Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_q_g_cache}{Q\+G\+Cache}} class is an internal class for implementing \mbox{\hyperlink{class_q_cache}{Q\+Cache}} template classes. 
+
+\mbox{\hyperlink{class_q_g_cache}{Q\+G\+Cache}} is a strictly internal class that acts as a base class for the \mbox{\hyperlink{}{collection classes}} \mbox{\hyperlink{class_q_cache}{Q\+Cache}} and Q\+Int\+Cache. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_g_cache_a3e0d8ce359e64a8793ef7f9d79dc546b}\label{class_q_g_cache_a3e0d8ce359e64a8793ef7f9d79dc546b}} 
+\index{QGCache@{QGCache}!clear@{clear}}
+\index{clear@{clear}!QGCache@{QGCache}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Q\+G\+Cache\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Removes all objects from the collection. The objects will be deleted if auto-\/delete has been enabled. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_collection_a6ed41913c76bfba54be6da26015ee3f3}{set\+Auto\+Delete()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_collection_a92416cc22907550389aad04c26be2f77}{Q\+Collection}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_q_cache_a23066e089d1e7de0fc1f5ba85bd05719}{Q\+Cache$<$ Lookup\+Info $>$}}.
+
+\mbox{\Hypertarget{class_q_g_cache_a8da4537fdfd7eca8e1ae092775e5538d}\label{class_q_g_cache_a8da4537fdfd7eca8e1ae092775e5538d}} 
+\index{QGCache@{QGCache}!count@{count}}
+\index{count@{count}!QGCache@{QGCache}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily uint Q\+G\+Cache\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Returns the number of objects in the collection. 
+
+Implements \mbox{\hyperlink{class_q_collection_a6441adbfb3ffb6f55ed834c0c0bcc6cb}{Q\+Collection}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_q_cache_ac2f569c43cd3aeaabf28aef74a1e33b4}{Q\+Cache$<$ Lookup\+Info $>$}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qgcache.\+h\item 
+doxygen/qtools/qgcache.\+cpp\end{DoxyCompactItemize}

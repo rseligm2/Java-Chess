@@ -1,0 +1,93 @@
+\hypertarget{class_template_list_intf_1_1_const_iterator}{}\section{Template\+List\+Intf\+::Const\+Iterator Class Reference}
+\label{class_template_list_intf_1_1_const_iterator}\index{TemplateListIntf::ConstIterator@{TemplateListIntf::ConstIterator}}
+
+
+Abstract interface for a iterator of a list.  
+
+
+
+
+{\ttfamily \#include $<$template.\+h$>$}
+
+Inheritance diagram for Template\+List\+Intf\+::Const\+Iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_template_list_intf_1_1_const_iterator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator_a831a69d0d66057405396a89fe2371567}{$\sim$\+Const\+Iterator}} ()
+\item 
+virtual void \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator_ab0d366c70210b05cf32f465d953d3152}{to\+First}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator_acf5b37615cb4544e1b0cb5717a127900}{to\+Last}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator_a8656b1ee10ba2625ba91eadb78f8faf7}{to\+Next}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator_a9e5ce362eb61eb772df5afefa5703510}{to\+Prev}} ()=0
+\item 
+\mbox{\Hypertarget{class_template_list_intf_1_1_const_iterator_ace488ab8a3bfd8b5b4766a9e77137175}\label{class_template_list_intf_1_1_const_iterator_ace488ab8a3bfd8b5b4766a9e77137175}} 
+virtual bool {\bfseries current} (\mbox{\hyperlink{class_template_variant}{Template\+Variant}} \&v) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract interface for a iterator of a list. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_template_list_intf_1_1_const_iterator_a831a69d0d66057405396a89fe2371567}\label{class_template_list_intf_1_1_const_iterator_a831a69d0d66057405396a89fe2371567}} 
+\index{TemplateListIntf::ConstIterator@{TemplateListIntf::ConstIterator}!````~ConstIterator@{$\sim$ConstIterator}}
+\index{````~ConstIterator@{$\sim$ConstIterator}!TemplateListIntf::ConstIterator@{TemplateListIntf::ConstIterator}}
+\subsubsection{\texorpdfstring{$\sim$ConstIterator()}{~ConstIterator()}}
+{\footnotesize\ttfamily virtual Template\+List\+Intf\+::\+Const\+Iterator\+::$\sim$\+Const\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Destructor for the iterator 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_template_list_intf_1_1_const_iterator_ab0d366c70210b05cf32f465d953d3152}\label{class_template_list_intf_1_1_const_iterator_ab0d366c70210b05cf32f465d953d3152}} 
+\index{TemplateListIntf::ConstIterator@{TemplateListIntf::ConstIterator}!toFirst@{toFirst}}
+\index{toFirst@{toFirst}!TemplateListIntf::ConstIterator@{TemplateListIntf::ConstIterator}}
+\subsubsection{\texorpdfstring{toFirst()}{toFirst()}}
+{\footnotesize\ttfamily virtual void Template\+List\+Intf\+::\+Const\+Iterator\+::to\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Moves iterator to the first element in the list 
+
+Implemented in \mbox{\hyperlink{class_template_list_const_iterator_aa0478c27f8d663f5fb09a89b6875cec5}{Template\+List\+Const\+Iterator}}, and \mbox{\hyperlink{class_generic_const_iterator_abb4c60f119f4ad23523b96080cfabd3e}{Generic\+Const\+Iterator}}.
+
+\mbox{\Hypertarget{class_template_list_intf_1_1_const_iterator_acf5b37615cb4544e1b0cb5717a127900}\label{class_template_list_intf_1_1_const_iterator_acf5b37615cb4544e1b0cb5717a127900}} 
+\index{TemplateListIntf::ConstIterator@{TemplateListIntf::ConstIterator}!toLast@{toLast}}
+\index{toLast@{toLast}!TemplateListIntf::ConstIterator@{TemplateListIntf::ConstIterator}}
+\subsubsection{\texorpdfstring{toLast()}{toLast()}}
+{\footnotesize\ttfamily virtual void Template\+List\+Intf\+::\+Const\+Iterator\+::to\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Moves iterator to the last element in the list 
+
+Implemented in \mbox{\hyperlink{class_template_list_const_iterator_abe543d04737d13d0dbdec99b4019f036}{Template\+List\+Const\+Iterator}}, and \mbox{\hyperlink{class_generic_const_iterator_a53787d6c70cff35f1edb8b3ced0530aa}{Generic\+Const\+Iterator}}.
+
+\mbox{\Hypertarget{class_template_list_intf_1_1_const_iterator_a8656b1ee10ba2625ba91eadb78f8faf7}\label{class_template_list_intf_1_1_const_iterator_a8656b1ee10ba2625ba91eadb78f8faf7}} 
+\index{TemplateListIntf::ConstIterator@{TemplateListIntf::ConstIterator}!toNext@{toNext}}
+\index{toNext@{toNext}!TemplateListIntf::ConstIterator@{TemplateListIntf::ConstIterator}}
+\subsubsection{\texorpdfstring{toNext()}{toNext()}}
+{\footnotesize\ttfamily virtual void Template\+List\+Intf\+::\+Const\+Iterator\+::to\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Moves iterator to the next element in the list 
+
+Implemented in \mbox{\hyperlink{class_template_list_const_iterator_ab7681f11844471c2522984d3e2101d24}{Template\+List\+Const\+Iterator}}, and \mbox{\hyperlink{class_generic_const_iterator_a2ac3dc44a25c4790bd2a816b240f6a24}{Generic\+Const\+Iterator}}.
+
+\mbox{\Hypertarget{class_template_list_intf_1_1_const_iterator_a9e5ce362eb61eb772df5afefa5703510}\label{class_template_list_intf_1_1_const_iterator_a9e5ce362eb61eb772df5afefa5703510}} 
+\index{TemplateListIntf::ConstIterator@{TemplateListIntf::ConstIterator}!toPrev@{toPrev}}
+\index{toPrev@{toPrev}!TemplateListIntf::ConstIterator@{TemplateListIntf::ConstIterator}}
+\subsubsection{\texorpdfstring{toPrev()}{toPrev()}}
+{\footnotesize\ttfamily virtual void Template\+List\+Intf\+::\+Const\+Iterator\+::to\+Prev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Moves iterator to the previous element in the list 
+
+Implemented in \mbox{\hyperlink{class_template_list_const_iterator_a80276f5474320de67b93f287cdd6cd79}{Template\+List\+Const\+Iterator}}, and \mbox{\hyperlink{class_generic_const_iterator_aeafefa5d7969558a52c32817fd8e7457}{Generic\+Const\+Iterator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/template.\+h\end{DoxyCompactItemize}

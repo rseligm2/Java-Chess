@@ -1,0 +1,474 @@
+\hypertarget{class_output_generator}{}\section{Output\+Generator Class Reference}
+\label{class_output_generator}\index{OutputGenerator@{OutputGenerator}}
+
+
+{\ttfamily \#include $<$outputgen.\+h$>$}
+
+Inheritance diagram for Output\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.835443cm]{class_output_generator}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_output_generator_ab79b5d3c19d95c8a5929c07f5b2918cf}\label{class_output_generator_ab79b5d3c19d95c8a5929c07f5b2918cf}} 
+enum {\bfseries Output\+Type} \{ \newline
+{\bfseries Html}, 
+{\bfseries Latex}, 
+{\bfseries Man}, 
+{\bfseries R\+TF}, 
+\newline
+{\bfseries X\+ML}, 
+{\bfseries D\+EF}, 
+{\bfseries Perl}, 
+{\bfseries Docbook}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_output_generator_a393e80a1e7b5ef29f6b9e1990ba615ce}\label{class_output_generator_a393e80a1e7b5ef29f6b9e1990ba615ce}} 
+virtual void {\bfseries enable} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a140c11a13a0fbf1c958fac25746a12b7}\label{class_output_generator_a140c11a13a0fbf1c958fac25746a12b7}} 
+virtual void {\bfseries disable} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a6bd7a39cecc998dd5f743638e835903f}\label{class_output_generator_a6bd7a39cecc998dd5f743638e835903f}} 
+virtual void {\bfseries enable\+If} (Output\+Type o)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ac41cafbb9ae5b0d32870984e4fabe651}\label{class_output_generator_ac41cafbb9ae5b0d32870984e4fabe651}} 
+virtual void {\bfseries disable\+If} (Output\+Type o)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ae0d39ce32032866a4394aa5e8942be15}\label{class_output_generator_ae0d39ce32032866a4394aa5e8942be15}} 
+virtual void {\bfseries disable\+If\+Not} (Output\+Type o)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a802995a552743934a30dd82aae42694b}\label{class_output_generator_a802995a552743934a30dd82aae42694b}} 
+virtual bool {\bfseries is\+Enabled} (Output\+Type o)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ad366efdcaa9df2638110e5ce50efc71d}\label{class_output_generator_ad366efdcaa9df2638110e5ce50efc71d}} 
+virtual \mbox{\hyperlink{class_output_generator}{Output\+Generator}} $\ast$ {\bfseries get} (Output\+Type o)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a719c9ddbba9ba72ec4881c4c61cccf8b}\label{class_output_generator_a719c9ddbba9ba72ec4881c4c61cccf8b}} 
+void {\bfseries start\+Plain\+File} (const char $\ast$name)
+\item 
+\mbox{\Hypertarget{class_output_generator_aaacf2b4efc09a2c06b9dd8cc2af69046}\label{class_output_generator_aaacf2b4efc09a2c06b9dd8cc2af69046}} 
+void {\bfseries end\+Plain\+File} ()
+\item 
+\mbox{\Hypertarget{class_output_generator_aefdf3f730d5c3ee46ae3d069f52b9e28}\label{class_output_generator_aefdf3f730d5c3ee46ae3d069f52b9e28}} 
+bool {\bfseries is\+Enabled} () const
+\item 
+\mbox{\Hypertarget{class_output_generator_a0e96bd0b61096478ec0eecfee3f609df}\label{class_output_generator_a0e96bd0b61096478ec0eecfee3f609df}} 
+void {\bfseries push\+Generator\+State} ()
+\item 
+\mbox{\Hypertarget{class_output_generator_ae8e915381e39d9c92674d7cb0e0e6589}\label{class_output_generator_ae8e915381e39d9c92674d7cb0e0e6589}} 
+void {\bfseries pop\+Generator\+State} ()
+\item 
+\mbox{\Hypertarget{class_output_generator_ac0b25a3af7edb8a631f21f34184f9a97}\label{class_output_generator_ac0b25a3af7edb8a631f21f34184f9a97}} 
+virtual void {\bfseries write\+Doc} (\mbox{\hyperlink{class_doc_node}{Doc\+Node}} $\ast$, \mbox{\hyperlink{class_definition}{Definition}} $\ast$ctx, \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$md)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a8c04cb480935a4f94b5391b97d01d5fb}\label{class_output_generator_a8c04cb480935a4f94b5391b97d01d5fb}} 
+virtual void {\bfseries start\+File} (const char $\ast$name, const char $\ast$man\+Name, const char $\ast$title)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a6f93852b3d43ab8a63be1e46f10eb8fd}\label{class_output_generator_a6f93852b3d43ab8a63be1e46f10eb8fd}} 
+virtual void {\bfseries write\+Search\+Info} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ac8f9e609b1f2633a07c5560cc1eb4dc9}\label{class_output_generator_ac8f9e609b1f2633a07c5560cc1eb4dc9}} 
+virtual void {\bfseries write\+Footer} (const char $\ast$nav\+Path)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_acdf48180d14b1d720286049195ad1c6a}\label{class_output_generator_acdf48180d14b1d720286049195ad1c6a}} 
+virtual void {\bfseries end\+File} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ab8164b995688984ec7613485758a1af3}\label{class_output_generator_ab8164b995688984ec7613485758a1af3}} 
+virtual void {\bfseries start\+Index\+Section} (Index\+Sections)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a04f3624f96d78d2cf07813e7ef759f3f}\label{class_output_generator_a04f3624f96d78d2cf07813e7ef759f3f}} 
+virtual void {\bfseries end\+Index\+Section} (Index\+Sections)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a92ddc60cab560b9e4a65bcd504cb779d}\label{class_output_generator_a92ddc60cab560b9e4a65bcd504cb779d}} 
+virtual void {\bfseries write\+Page\+Link} (const char $\ast$, bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_aca2e001836d8cf6ae5e6d98bd9467b5b}\label{class_output_generator_aca2e001836d8cf6ae5e6d98bd9467b5b}} 
+virtual void {\bfseries start\+Project\+Number} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_abb659e1d0c5d99f3a85751a321bca262}\label{class_output_generator_abb659e1d0c5d99f3a85751a321bca262}} 
+virtual void {\bfseries end\+Project\+Number} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ab3319043929bc785eeb2edfbeadc5088}\label{class_output_generator_ab3319043929bc785eeb2edfbeadc5088}} 
+virtual void {\bfseries write\+Style\+Info} (int part)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a2a88fa84eb821cbc46ebe77293db0564}\label{class_output_generator_a2a88fa84eb821cbc46ebe77293db0564}} 
+virtual void {\bfseries start\+Title\+Head} (const char $\ast$)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a77b6fef939339086beec891ac1769781}\label{class_output_generator_a77b6fef939339086beec891ac1769781}} 
+virtual void {\bfseries end\+Title\+Head} (const char $\ast$file\+Name, const char $\ast$name)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a620605e68ebc9176a544eda7073bf039}\label{class_output_generator_a620605e68ebc9176a544eda7073bf039}} 
+virtual void {\bfseries start\+Index\+List\+Item} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ac4911ae06d09bc207a4e0f9da24516bc}\label{class_output_generator_ac4911ae06d09bc207a4e0f9da24516bc}} 
+virtual void {\bfseries end\+Index\+List\+Item} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_adc617e6eaee65cfad74e0b8c07aab27d}\label{class_output_generator_adc617e6eaee65cfad74e0b8c07aab27d}} 
+virtual void {\bfseries start\+Index\+List} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_af6f79555b9c01ffcf0d119d483271aa5}\label{class_output_generator_af6f79555b9c01ffcf0d119d483271aa5}} 
+virtual void {\bfseries end\+Index\+List} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a6db4df81706e050d26df7083977e5da9}\label{class_output_generator_a6db4df81706e050d26df7083977e5da9}} 
+virtual void {\bfseries start\+Index\+Key} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a5c036e61acf5fe91e2372b16263fef5c}\label{class_output_generator_a5c036e61acf5fe91e2372b16263fef5c}} 
+virtual void {\bfseries end\+Index\+Key} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a8b7df4e8d1c8c35c96ed72a1dd88dfc3}\label{class_output_generator_a8b7df4e8d1c8c35c96ed72a1dd88dfc3}} 
+virtual void {\bfseries start\+Index\+Value} (bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a197393fc4473bb893a83f36369df1552}\label{class_output_generator_a197393fc4473bb893a83f36369df1552}} 
+virtual void {\bfseries end\+Index\+Value} (const char $\ast$, bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_afbc31c1a5eaecbcf45e16c4a16d747f7}\label{class_output_generator_afbc31c1a5eaecbcf45e16c4a16d747f7}} 
+virtual void {\bfseries start\+Index\+Item} (const char $\ast$ref, const char $\ast$file)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ad573d99d60efb03de6afcec74237b89c}\label{class_output_generator_ad573d99d60efb03de6afcec74237b89c}} 
+virtual void {\bfseries end\+Index\+Item} (const char $\ast$ref, const char $\ast$file)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a567cedbeeb6ffa8f65893976e4c246d9}\label{class_output_generator_a567cedbeeb6ffa8f65893976e4c246d9}} 
+virtual void {\bfseries start\+Group\+Header} (int)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a16003f13c40bcbb34bbe04eb13633637}\label{class_output_generator_a16003f13c40bcbb34bbe04eb13633637}} 
+virtual void {\bfseries end\+Group\+Header} (int)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a3dcfbf917012cf7e133f6876750ca29b}\label{class_output_generator_a3dcfbf917012cf7e133f6876750ca29b}} 
+virtual void {\bfseries start\+Member\+Sections} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a68c7d0afc95708807a5e623a7e9bb9db}\label{class_output_generator_a68c7d0afc95708807a5e623a7e9bb9db}} 
+virtual void {\bfseries end\+Member\+Sections} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a60a86f83cd8878a315820831c66f7e55}\label{class_output_generator_a60a86f83cd8878a315820831c66f7e55}} 
+virtual void {\bfseries start\+Header\+Section} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a0be4290a396c38e39361a1a23f331730}\label{class_output_generator_a0be4290a396c38e39361a1a23f331730}} 
+virtual void {\bfseries end\+Header\+Section} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a2d94dfdee78dd53535b335b7f5b3c979}\label{class_output_generator_a2d94dfdee78dd53535b335b7f5b3c979}} 
+virtual void {\bfseries start\+Member\+Header} (const char $\ast$anchor, int typ)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a59dd3993aedf7baf7465b67d4327335e}\label{class_output_generator_a59dd3993aedf7baf7465b67d4327335e}} 
+virtual void {\bfseries end\+Member\+Header} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a6c10a744bfe79da169794579d92c6f38}\label{class_output_generator_a6c10a744bfe79da169794579d92c6f38}} 
+virtual void {\bfseries start\+Member\+Subtitle} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a0c56a25591efb4a9b38da70757dfe46c}\label{class_output_generator_a0c56a25591efb4a9b38da70757dfe46c}} 
+virtual void {\bfseries end\+Member\+Subtitle} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a79d92b273b6678f0484f507f9aeed930}\label{class_output_generator_a79d92b273b6678f0484f507f9aeed930}} 
+virtual void {\bfseries start\+Member\+Doc\+List} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_adac2120718344406921dc07cd60c8ead}\label{class_output_generator_adac2120718344406921dc07cd60c8ead}} 
+virtual void {\bfseries end\+Member\+Doc\+List} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a55bfc9535965545c98a07fd5e94ccfde}\label{class_output_generator_a55bfc9535965545c98a07fd5e94ccfde}} 
+virtual void {\bfseries start\+Member\+List} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_af3e875ff86510c53f355c024cc3a574d}\label{class_output_generator_af3e875ff86510c53f355c024cc3a574d}} 
+virtual void {\bfseries end\+Member\+List} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a75c7b7e0e20ce30957ed49fd1d1d246d}\label{class_output_generator_a75c7b7e0e20ce30957ed49fd1d1d246d}} 
+virtual void {\bfseries start\+Inline\+Header} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a02b0b97eaa17e069eda7cc7f3e794a91}\label{class_output_generator_a02b0b97eaa17e069eda7cc7f3e794a91}} 
+virtual void {\bfseries end\+Inline\+Header} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a13587c69b6272779d38b6bc2a45fbfd5}\label{class_output_generator_a13587c69b6272779d38b6bc2a45fbfd5}} 
+virtual void {\bfseries start\+Anon\+Type\+Scope} (int)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a3cf66346a0594b1987811bc258b598f6}\label{class_output_generator_a3cf66346a0594b1987811bc258b598f6}} 
+virtual void {\bfseries end\+Anon\+Type\+Scope} (int)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a626142e0dd357e23058573aff5299eb6}\label{class_output_generator_a626142e0dd357e23058573aff5299eb6}} 
+virtual void {\bfseries start\+Member\+Item} (const char $\ast$, int, const char $\ast$)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_aac81201cfd0dedc7635bc81913906335}\label{class_output_generator_aac81201cfd0dedc7635bc81913906335}} 
+virtual void {\bfseries end\+Member\+Item} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_af221e843bf8828e9dcb45faea48c8af2}\label{class_output_generator_af221e843bf8828e9dcb45faea48c8af2}} 
+virtual void {\bfseries start\+Member\+Template\+Params} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a0175d6eb2630de31743136c083d0cb84}\label{class_output_generator_a0175d6eb2630de31743136c083d0cb84}} 
+virtual void {\bfseries end\+Member\+Template\+Params} (const char $\ast$, const char $\ast$)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_aea2631f3e52efb116a4b3375755024c8}\label{class_output_generator_aea2631f3e52efb116a4b3375755024c8}} 
+virtual void {\bfseries start\+Member\+Group\+Header} (bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a585ab0b649dad9edf7b78e8f1ec20885}\label{class_output_generator_a585ab0b649dad9edf7b78e8f1ec20885}} 
+virtual void {\bfseries end\+Member\+Group\+Header} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a0b3d9ddaa7d63cea43081ac17ce5e96b}\label{class_output_generator_a0b3d9ddaa7d63cea43081ac17ce5e96b}} 
+virtual void {\bfseries start\+Member\+Group\+Docs} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a7debb7a4d6584e8855e7dc9ce0594d99}\label{class_output_generator_a7debb7a4d6584e8855e7dc9ce0594d99}} 
+virtual void {\bfseries end\+Member\+Group\+Docs} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a1cc976995007c64aa044d98da900d09f}\label{class_output_generator_a1cc976995007c64aa044d98da900d09f}} 
+virtual void {\bfseries start\+Member\+Group} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a6b020947c7d4cd3a2d2d8c0993fbb4e3}\label{class_output_generator_a6b020947c7d4cd3a2d2d8c0993fbb4e3}} 
+virtual void {\bfseries end\+Member\+Group} (bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a0df59cf6b0b238b48b139c7bfe5fb901}\label{class_output_generator_a0df59cf6b0b238b48b139c7bfe5fb901}} 
+virtual void {\bfseries insert\+Member\+Align} (bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_aa5b3dd4d04afcedc0109f7a21f05216c}\label{class_output_generator_aa5b3dd4d04afcedc0109f7a21f05216c}} 
+virtual void {\bfseries insert\+Member\+Align\+Left} (int, bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a7610e3caf9ac099156dbc016259b24b3}\label{class_output_generator_a7610e3caf9ac099156dbc016259b24b3}} 
+virtual void {\bfseries start\+Member\+Doc} (const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$, int, int, bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_adcab4ec924ae47924fdc3492a06d432b}\label{class_output_generator_adcab4ec924ae47924fdc3492a06d432b}} 
+virtual void {\bfseries end\+Member\+Doc} (bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ace0718073cbb95ce1908405e6eda095b}\label{class_output_generator_ace0718073cbb95ce1908405e6eda095b}} 
+virtual void {\bfseries start\+Doxy\+Anchor} (const char $\ast$f\+Name, const char $\ast$man\+Name, const char $\ast$anchor, const char $\ast$name, const char $\ast$args)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a59ba4ed87cf4c2bb55f231679d52268a}\label{class_output_generator_a59ba4ed87cf4c2bb55f231679d52268a}} 
+virtual void {\bfseries end\+Doxy\+Anchor} (const char $\ast$file\+Name, const char $\ast$anchor)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_afcb9acfea2d7a6f0a340287632aea4e8}\label{class_output_generator_afcb9acfea2d7a6f0a340287632aea4e8}} 
+virtual void {\bfseries write\+Latex\+Spacing} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a2b0f7e8400fa8bfa7b973ed25f2c4366}\label{class_output_generator_a2b0f7e8400fa8bfa7b973ed25f2c4366}} 
+virtual void {\bfseries write\+Start\+Anno\+Item} (const char $\ast$type, const char $\ast$file, const char $\ast$path, const char $\ast$name)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a29c6763f7d6f708fc5d3e7dc2c0ce1f4}\label{class_output_generator_a29c6763f7d6f708fc5d3e7dc2c0ce1f4}} 
+virtual void {\bfseries write\+End\+Anno\+Item} (const char $\ast$name)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a787d70201a816f00853f2fd3e23a1321}\label{class_output_generator_a787d70201a816f00853f2fd3e23a1321}} 
+virtual void {\bfseries start\+Member\+Description} (const char $\ast$anchor, const char $\ast$inherit\+Id, bool typ)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_af7f56035354567686d15ab77e1f6f31d}\label{class_output_generator_af7f56035354567686d15ab77e1f6f31d}} 
+virtual void {\bfseries end\+Member\+Description} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_aeb5b5670178926771b6a649239f15444}\label{class_output_generator_aeb5b5670178926771b6a649239f15444}} 
+virtual void {\bfseries start\+Member\+Declaration} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_af22783eb794097cdfb783cfb29f60f3e}\label{class_output_generator_af22783eb794097cdfb783cfb29f60f3e}} 
+virtual void {\bfseries end\+Member\+Declaration} (const char $\ast$anchor, const char $\ast$inherit\+Id)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a272f99f415b7e8b6ead453cd9e714b8e}\label{class_output_generator_a272f99f415b7e8b6ead453cd9e714b8e}} 
+virtual void {\bfseries write\+Inherited\+Section\+Title} (const char $\ast$id, const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, const char $\ast$title, const char $\ast$name)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a1fe795813bf725fb63b19a1cf463bdfa}\label{class_output_generator_a1fe795813bf725fb63b19a1cf463bdfa}} 
+virtual void {\bfseries start\+Indent} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a6d0ae2ff84f31ce7c3d964668dc31154}\label{class_output_generator_a6d0ae2ff84f31ce7c3d964668dc31154}} 
+virtual void {\bfseries end\+Indent} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_aa0d18fb8ce1251b97619c90061a697d8}\label{class_output_generator_aa0d18fb8ce1251b97619c90061a697d8}} 
+virtual void {\bfseries write\+Synopsis} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_af4dbb13368da9a7fee2c7ed3bb4bd8ea}\label{class_output_generator_af4dbb13368da9a7fee2c7ed3bb4bd8ea}} 
+virtual void {\bfseries start\+Class\+Diagram} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a72364e74e0d834f01c2b5f5db5665c77}\label{class_output_generator_a72364e74e0d834f01c2b5f5db5665c77}} 
+virtual void {\bfseries end\+Class\+Diagram} (const \mbox{\hyperlink{class_class_diagram}{Class\+Diagram}} \&, const char $\ast$, const char $\ast$)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a60efbd7467b31058030731fe084a9db5}\label{class_output_generator_a60efbd7467b31058030731fe084a9db5}} 
+virtual void {\bfseries start\+Dot\+Graph} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a3b268fc536acaca12748c9a729bd4a0b}\label{class_output_generator_a3b268fc536acaca12748c9a729bd4a0b}} 
+virtual void {\bfseries end\+Dot\+Graph} (const \mbox{\hyperlink{class_dot_class_graph}{Dot\+Class\+Graph}} \&g)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a8f015b38b836904858cc1cd34f44363f}\label{class_output_generator_a8f015b38b836904858cc1cd34f44363f}} 
+virtual void {\bfseries start\+Incl\+Dep\+Graph} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a4bae4acba787ae56c9851ff5651ecff4}\label{class_output_generator_a4bae4acba787ae56c9851ff5651ecff4}} 
+virtual void {\bfseries end\+Incl\+Dep\+Graph} (const \mbox{\hyperlink{class_dot_incl_dep_graph}{Dot\+Incl\+Dep\+Graph}} \&g)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a5c001113ef669b2043a9abbf1326f286}\label{class_output_generator_a5c001113ef669b2043a9abbf1326f286}} 
+virtual void {\bfseries start\+Group\+Collaboration} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ae0b99fc498e233c94240869ec423cb54}\label{class_output_generator_ae0b99fc498e233c94240869ec423cb54}} 
+virtual void {\bfseries end\+Group\+Collaboration} (const \mbox{\hyperlink{class_dot_group_collaboration}{Dot\+Group\+Collaboration}} \&g)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ace8e9a8d3c193fe5b50f19d07882a51a}\label{class_output_generator_ace8e9a8d3c193fe5b50f19d07882a51a}} 
+virtual void {\bfseries start\+Call\+Graph} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a8e13dc9a74d4a508a314d328c9ee5841}\label{class_output_generator_a8e13dc9a74d4a508a314d328c9ee5841}} 
+virtual void {\bfseries end\+Call\+Graph} (const \mbox{\hyperlink{class_dot_call_graph}{Dot\+Call\+Graph}} \&g)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a02c3701bf94326612c1b4fcaf16c4011}\label{class_output_generator_a02c3701bf94326612c1b4fcaf16c4011}} 
+virtual void {\bfseries start\+Dir\+Dep\+Graph} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a5e97157957f1f86880eae04e4f0a202d}\label{class_output_generator_a5e97157957f1f86880eae04e4f0a202d}} 
+virtual void {\bfseries end\+Dir\+Dep\+Graph} (const \mbox{\hyperlink{class_dot_dir_deps}{Dot\+Dir\+Deps}} \&g)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ae5cf1278fa98872e8e40764af2499558}\label{class_output_generator_ae5cf1278fa98872e8e40764af2499558}} 
+virtual void {\bfseries write\+Graphical\+Hierarchy} (const \mbox{\hyperlink{class_dot_gfx_hierarchy_table}{Dot\+Gfx\+Hierarchy\+Table}} \&g)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ac1235b655cd828140b9c76f4ca1f4040}\label{class_output_generator_ac1235b655cd828140b9c76f4ca1f4040}} 
+virtual void {\bfseries start\+Quick\+Indices} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ac772c3fa9b9fb938598b67b8251a1787}\label{class_output_generator_ac772c3fa9b9fb938598b67b8251a1787}} 
+virtual void {\bfseries end\+Quick\+Indices} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a7ca68513534b42f774af0615039298af}\label{class_output_generator_a7ca68513534b42f774af0615039298af}} 
+virtual void {\bfseries write\+Split\+Bar} (const char $\ast$)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a782d69569d902413c0029b12cd4ea2d6}\label{class_output_generator_a782d69569d902413c0029b12cd4ea2d6}} 
+virtual void {\bfseries write\+Navigation\+Path} (const char $\ast$)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a4a253e01f787c22716b14709344535ab}\label{class_output_generator_a4a253e01f787c22716b14709344535ab}} 
+virtual void {\bfseries write\+Logo} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ade0bf7d098652c8592a8790d6de80a7e}\label{class_output_generator_ade0bf7d098652c8592a8790d6de80a7e}} 
+virtual void {\bfseries write\+Quick\+Links} (bool compact, Highlighted\+Item hli, const char $\ast$file)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_aa27b1e7554ca5a8f4d80bf82bc1666d6}\label{class_output_generator_aa27b1e7554ca5a8f4d80bf82bc1666d6}} 
+virtual void {\bfseries write\+Summary\+Link} (const char $\ast$file, const char $\ast$anchor, const char $\ast$title, bool first)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a21231e6bba1594e5327e8e150e39355c}\label{class_output_generator_a21231e6bba1594e5327e8e150e39355c}} 
+virtual void {\bfseries start\+Contents} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a62d0b8915ba8cbae0e0703794bcae68a}\label{class_output_generator_a62d0b8915ba8cbae0e0703794bcae68a}} 
+virtual void {\bfseries end\+Contents} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a0d77f64cb69172617565d1b0c5313ab7}\label{class_output_generator_a0d77f64cb69172617565d1b0c5313ab7}} 
+virtual void {\bfseries start\+Page\+Doc} (const char $\ast$page\+Title)
+\item 
+\mbox{\Hypertarget{class_output_generator_a3a1428cad9acebb7720ff09ce1488957}\label{class_output_generator_a3a1428cad9acebb7720ff09ce1488957}} 
+virtual void {\bfseries end\+Page\+Doc} ()
+\item 
+\mbox{\Hypertarget{class_output_generator_ae06da65c60fe1508152999a76c3b8d80}\label{class_output_generator_ae06da65c60fe1508152999a76c3b8d80}} 
+virtual void {\bfseries start\+Text\+Block} (bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a53f79d9816008132480d3d454e14251b}\label{class_output_generator_a53f79d9816008132480d3d454e14251b}} 
+virtual void {\bfseries end\+Text\+Block} (bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a12d53790300c52b68bc0715ab05507d2}\label{class_output_generator_a12d53790300c52b68bc0715ab05507d2}} 
+virtual void {\bfseries last\+Index\+Page} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_acbb6ecd186cadcea8526b54e2ba7d166}\label{class_output_generator_acbb6ecd186cadcea8526b54e2ba7d166}} 
+virtual void {\bfseries start\+Member\+Doc\+Prefix\+Item} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a8fa59aa64d420ced1d1784f7b2ddaa79}\label{class_output_generator_a8fa59aa64d420ced1d1784f7b2ddaa79}} 
+virtual void {\bfseries end\+Member\+Doc\+Prefix\+Item} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a8646f44dc5c56ef3f6d5fa3f667cd223}\label{class_output_generator_a8646f44dc5c56ef3f6d5fa3f667cd223}} 
+virtual void {\bfseries start\+Member\+Doc\+Name} (bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a02431abad8b2d94216a0530cf08b3dca}\label{class_output_generator_a02431abad8b2d94216a0530cf08b3dca}} 
+virtual void {\bfseries end\+Member\+Doc\+Name} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a76af87c960b045eafa035b77307aaf75}\label{class_output_generator_a76af87c960b045eafa035b77307aaf75}} 
+virtual void {\bfseries start\+Parameter\+Type} (bool, const char $\ast$key)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a8c701cf1050103eee69d57b409640dea}\label{class_output_generator_a8c701cf1050103eee69d57b409640dea}} 
+virtual void {\bfseries end\+Parameter\+Type} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_ac56057350d3b14b63238bf4325792f82}\label{class_output_generator_ac56057350d3b14b63238bf4325792f82}} 
+virtual void {\bfseries start\+Parameter\+Name} (bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a69b117731ab42b3985713760b270a1a5}\label{class_output_generator_a69b117731ab42b3985713760b270a1a5}} 
+virtual void {\bfseries end\+Parameter\+Name} (bool, bool, bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a92e7646944e62d50ede52caa18c39266}\label{class_output_generator_a92e7646944e62d50ede52caa18c39266}} 
+virtual void {\bfseries start\+Parameter\+List} (bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_acc2f021cf85b5cb83716c51e3dc7d44f}\label{class_output_generator_acc2f021cf85b5cb83716c51e3dc7d44f}} 
+virtual void {\bfseries end\+Parameter\+List} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a4c4d0ff79434d93b42b8e0c7c42fa5d1}\label{class_output_generator_a4c4d0ff79434d93b42b8e0c7c42fa5d1}} 
+virtual void {\bfseries exception\+Entry} (const char $\ast$, bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a745e4b1d9843812a09c4410aa43084b0}\label{class_output_generator_a745e4b1d9843812a09c4410aa43084b0}} 
+virtual void {\bfseries start\+Constraint\+List} (const char $\ast$)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_abce5f3b4a1104ca8cea00f19f0d803c0}\label{class_output_generator_abce5f3b4a1104ca8cea00f19f0d803c0}} 
+virtual void {\bfseries start\+Constraint\+Param} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_afacff7ea600037f0e6fc29207f06332e}\label{class_output_generator_afacff7ea600037f0e6fc29207f06332e}} 
+virtual void {\bfseries end\+Constraint\+Param} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a6f24ed1e9572bbc6de4c533129a4d28a}\label{class_output_generator_a6f24ed1e9572bbc6de4c533129a4d28a}} 
+virtual void {\bfseries start\+Constraint\+Type} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a7abed59bb311949ab7cae21a009485cf}\label{class_output_generator_a7abed59bb311949ab7cae21a009485cf}} 
+virtual void {\bfseries end\+Constraint\+Type} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a81ade540356d6c7669c6c701bde02e10}\label{class_output_generator_a81ade540356d6c7669c6c701bde02e10}} 
+virtual void {\bfseries start\+Constraint\+Docs} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a079c2400a911349969e61531d72c554e}\label{class_output_generator_a079c2400a911349969e61531d72c554e}} 
+virtual void {\bfseries end\+Constraint\+Docs} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a0998d070dc2c5d9ba203a8c58b7b1b73}\label{class_output_generator_a0998d070dc2c5d9ba203a8c58b7b1b73}} 
+virtual void {\bfseries end\+Constraint\+List} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a5ede23d1cdc58d5a532d515f0383a295}\label{class_output_generator_a5ede23d1cdc58d5a532d515f0383a295}} 
+virtual void {\bfseries start\+Member\+Doc\+Simple} (bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a548f5fa6b3de8f88905d963aebd93676}\label{class_output_generator_a548f5fa6b3de8f88905d963aebd93676}} 
+virtual void {\bfseries end\+Member\+Doc\+Simple} (bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a590cf1aa2c7061dd15916a1459690445}\label{class_output_generator_a590cf1aa2c7061dd15916a1459690445}} 
+virtual void {\bfseries start\+Inline\+Member\+Type} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_abae7a78f520dbd4336d093b8580bc5dd}\label{class_output_generator_abae7a78f520dbd4336d093b8580bc5dd}} 
+virtual void {\bfseries end\+Inline\+Member\+Type} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a0a3424e053c9ce5e63f5c8f3805aa940}\label{class_output_generator_a0a3424e053c9ce5e63f5c8f3805aa940}} 
+virtual void {\bfseries start\+Inline\+Member\+Name} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a64fd29eded2398a03ab98de61423f9be}\label{class_output_generator_a64fd29eded2398a03ab98de61423f9be}} 
+virtual void {\bfseries end\+Inline\+Member\+Name} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a6f40ca8e90e8167136b678efbe6bf131}\label{class_output_generator_a6f40ca8e90e8167136b678efbe6bf131}} 
+virtual void {\bfseries start\+Inline\+Member\+Doc} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a59987a7b4a41789d80dd788b0f65c434}\label{class_output_generator_a59987a7b4a41789d80dd788b0f65c434}} 
+virtual void {\bfseries end\+Inline\+Member\+Doc} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_af317d904e65624244c58368deabcba55}\label{class_output_generator_af317d904e65624244c58368deabcba55}} 
+virtual void {\bfseries start\+Labels} ()=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a40864f2cdb9de3605965ec2912c3709d}\label{class_output_generator_a40864f2cdb9de3605965ec2912c3709d}} 
+virtual void {\bfseries write\+Label} (const char $\ast$, bool)=0
+\item 
+\mbox{\Hypertarget{class_output_generator_a13875bb6d9d678dac1ae21b3ad97127a}\label{class_output_generator_a13875bb6d9d678dac1ae21b3ad97127a}} 
+virtual void {\bfseries end\+Labels} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_output_generator_a55a40a8215efe6adc4d0a587ad9a46bc}\label{class_output_generator_a55a40a8215efe6adc4d0a587ad9a46bc}} 
+\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} {\bfseries t}
+\item 
+\mbox{\Hypertarget{class_output_generator_aed5ad11c3844cdf71ec6fee6c1c84286}\label{class_output_generator_aed5ad11c3844cdf71ec6fee6c1c84286}} 
+\mbox{\hyperlink{class_q_file}{Q\+File}} $\ast$ {\bfseries file}
+\item 
+\mbox{\Hypertarget{class_output_generator_a9bb808101dbeae7732bb0fa66cad9176}\label{class_output_generator_a9bb808101dbeae7732bb0fa66cad9176}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries file\+Name}
+\item 
+\mbox{\Hypertarget{class_output_generator_ac64b8818d57bbe250f647d7b10edd45e}\label{class_output_generator_ac64b8818d57bbe250f647d7b10edd45e}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries dir}
+\item 
+\mbox{\Hypertarget{class_output_generator_a1e1299d64814f58ac06b257992291f9f}\label{class_output_generator_a1e1299d64814f58ac06b257992291f9f}} 
+bool {\bfseries active}
+\item 
+\mbox{\Hypertarget{class_output_generator_ac734ecb37a17e3b4fa46f249ab495697}\label{class_output_generator_ac734ecb37a17e3b4fa46f249ab495697}} 
+\mbox{\hyperlink{class_q_stack}{Q\+Stack}}$<$ bool $>$ $\ast$ {\bfseries gen\+Stack}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract output generator.
+
+Subclass this class to add support for a new output format 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/outputgen.\+h\item 
+doxygen/src/outputgen.\+cpp\end{DoxyCompactItemize}

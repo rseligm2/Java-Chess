@@ -1,0 +1,94 @@
+\hypertarget{class_search_indices_context}{}\section{Search\+Indices\+Context Class Reference}
+\label{class_search_indices_context}\index{SearchIndicesContext@{SearchIndicesContext}}
+Inheritance diagram for Search\+Indices\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_search_indices_context}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_search_indices_context_1_1_private}{Private}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_search_indices_context_aa8606de3f00d255756169fbf11b134e8}{count}} () const
+\item 
+virtual \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_search_indices_context_a01954b6da883d9274840295905a999c8}{at}} (int index) const
+\item 
+virtual \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ \mbox{\hyperlink{class_search_indices_context_a0247f88bc151ed4620c36386bdae999f}{create\+Iterator}} () const
+\item 
+virtual int \mbox{\hyperlink{class_search_indices_context_ac6351cde31163d5a7e94bd43ea795673}{add\+Ref}} ()
+\item 
+virtual int \mbox{\hyperlink{class_search_indices_context_aaa6a25a82368e6d94c4c552687f2af7b}{release}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_search_indices_context_a53fb0a06c97c388aabf250d46a121b9f}\label{class_search_indices_context_a53fb0a06c97c388aabf250d46a121b9f}} 
+static \mbox{\hyperlink{class_search_indices_context}{Search\+Indices\+Context}} $\ast$ {\bfseries alloc} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_search_indices_context_ac6351cde31163d5a7e94bd43ea795673}\label{class_search_indices_context_ac6351cde31163d5a7e94bd43ea795673}} 
+\index{SearchIndicesContext@{SearchIndicesContext}!addRef@{addRef}}
+\index{addRef@{addRef}!SearchIndicesContext@{SearchIndicesContext}}
+\subsubsection{\texorpdfstring{addRef()}{addRef()}}
+{\footnotesize\ttfamily virtual int Search\+Indices\+Context\+::add\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Increase object\textquotesingle{}s reference count 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a4b4973e2e15396d10bc4e3085462ca2b}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_search_indices_context_a01954b6da883d9274840295905a999c8}\label{class_search_indices_context_a01954b6da883d9274840295905a999c8}} 
+\index{SearchIndicesContext@{SearchIndicesContext}!at@{at}}
+\index{at@{at}!SearchIndicesContext@{SearchIndicesContext}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_variant}{Template\+Variant}} Search\+Indices\+Context\+::at (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the element at index position {\itshape index}. 
+
+Implements \mbox{\hyperlink{class_template_list_intf_aa51e57e72eacf4e8ce1055ee30a0f7f8}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_search_indices_context_aa8606de3f00d255756169fbf11b134e8}\label{class_search_indices_context_aa8606de3f00d255756169fbf11b134e8}} 
+\index{SearchIndicesContext@{SearchIndicesContext}!count@{count}}
+\index{count@{count}!SearchIndicesContext@{SearchIndicesContext}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Search\+Indices\+Context\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the number of elements in the list 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a329e49e33484c2aa5106aac1bf4e5216}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_search_indices_context_a0247f88bc151ed4620c36386bdae999f}\label{class_search_indices_context_a0247f88bc151ed4620c36386bdae999f}} 
+\index{SearchIndicesContext@{SearchIndicesContext}!createIterator@{createIterator}}
+\index{createIterator@{createIterator}!SearchIndicesContext@{SearchIndicesContext}}
+\subsubsection{\texorpdfstring{createIterator()}{createIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ Search\+Indices\+Context\+::create\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a new iterator for this list. \begin{DoxyNote}{Note}
+the user should call delete on the returned pointer. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_template_list_intf_a56b82384db24c3e121076a1da046d378}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_search_indices_context_aaa6a25a82368e6d94c4c552687f2af7b}\label{class_search_indices_context_aaa6a25a82368e6d94c4c552687f2af7b}} 
+\index{SearchIndicesContext@{SearchIndicesContext}!release@{release}}
+\index{release@{release}!SearchIndicesContext@{SearchIndicesContext}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual int Search\+Indices\+Context\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Decreases object\textquotesingle{}s reference count, destroy object if 0 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a0c53169c740c09dac47efc62bbe39674}{Template\+List\+Intf}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/context.\+h\item 
+doxygen/src/context.\+cpp\end{DoxyCompactItemize}

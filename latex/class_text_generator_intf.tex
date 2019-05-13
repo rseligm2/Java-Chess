@@ -1,0 +1,32 @@
+\hypertarget{class_text_generator_intf}{}\section{Text\+Generator\+Intf Class Reference}
+\label{class_text_generator_intf}\index{TextGeneratorIntf@{TextGeneratorIntf}}
+
+
+{\ttfamily \#include $<$util.\+h$>$}
+
+Inheritance diagram for Text\+Generator\+Intf\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.879195cm]{class_text_generator_intf}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_text_generator_intf_aba1dd89729760fe7d4b37b916870f297}\label{class_text_generator_intf_aba1dd89729760fe7d4b37b916870f297}} 
+virtual void {\bfseries write\+String} (const char $\ast$, bool) const =0
+\item 
+\mbox{\Hypertarget{class_text_generator_intf_a5367063112c94eece527eddf1cd9b978}\label{class_text_generator_intf_a5367063112c94eece527eddf1cd9b978}} 
+virtual void {\bfseries write\+Break} (int indent) const =0
+\item 
+\mbox{\Hypertarget{class_text_generator_intf_a5a648a078ee39640544d371c1cc747f6}\label{class_text_generator_intf_a5a648a078ee39640544d371c1cc747f6}} 
+virtual void {\bfseries write\+Link} (const char $\ast$ext\+Ref, const char $\ast$file, const char $\ast$anchor, const char $\ast$text) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract interface for a hyperlinked text fragment. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/\mbox{\hyperlink{util_8h}{util.\+h}}\end{DoxyCompactItemize}

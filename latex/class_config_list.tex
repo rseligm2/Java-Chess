@@ -1,0 +1,62 @@
+\hypertarget{class_config_list}{}\section{Config\+List Class Reference}
+\label{class_config_list}\index{ConfigList@{ConfigList}}
+
+
+{\ttfamily \#include $<$configimpl.\+h$>$}
+
+Inheritance diagram for Config\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_config_list}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_config_list_a562e3dbe5fc70f1af7ed4e748dae0ae9}\label{class_config_list_a562e3dbe5fc70f1af7ed4e748dae0ae9}} 
+enum {\bfseries Widget\+Type} \{ {\bfseries String}, 
+{\bfseries File}, 
+{\bfseries Dir}, 
+{\bfseries File\+And\+Dir}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_config_list_aae0b9ca88cb622aec4b31270c1c1f944}\label{class_config_list_aae0b9ca88cb622aec4b31270c1c1f944}} 
+{\bfseries Config\+List} (const char $\ast$name, const char $\ast$doc)
+\item 
+\mbox{\Hypertarget{class_config_list_a708f7e2019c42d2d1d8957ee33b94518}\label{class_config_list_a708f7e2019c42d2d1d8957ee33b94518}} 
+void {\bfseries add\+Value} (const char $\ast$v)
+\item 
+\mbox{\Hypertarget{class_config_list_a0e85c4f20ca576934f53e7d6a9361896}\label{class_config_list_a0e85c4f20ca576934f53e7d6a9361896}} 
+void {\bfseries set\+Widget\+Type} (Widget\+Type w)
+\item 
+\mbox{\Hypertarget{class_config_list_adffbf5f943f39a95d16140d3d2d8eec9}\label{class_config_list_adffbf5f943f39a95d16140d3d2d8eec9}} 
+Widget\+Type {\bfseries widget\+Type} () const
+\item 
+\mbox{\Hypertarget{class_config_list_aebf1360b92b390ff0ec638684ac0ef9b}\label{class_config_list_aebf1360b92b390ff0ec638684ac0ef9b}} 
+\mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}} $\ast$ {\bfseries value\+Ref} ()
+\item 
+\mbox{\Hypertarget{class_config_list_abd14c6ac16fd90f2e501ab10bb61344f}\label{class_config_list_abd14c6ac16fd90f2e501ab10bb61344f}} 
+void {\bfseries write\+Template} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, bool sl, bool)
+\item 
+\mbox{\Hypertarget{class_config_list_afec4ad99e7ae75bbdf71a9c6b2258165}\label{class_config_list_afec4ad99e7ae75bbdf71a9c6b2258165}} 
+void {\bfseries compare\+Doxyfile} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t)
+\item 
+\mbox{\Hypertarget{class_config_list_a46cdc3f64d1799a802fb2d00af2e3f65}\label{class_config_list_a46cdc3f64d1799a802fb2d00af2e3f65}} 
+void {\bfseries subst\+Env\+Vars} ()
+\item 
+\mbox{\Hypertarget{class_config_list_a48019d23edc37549f47d41ce41c43298}\label{class_config_list_a48019d23edc37549f47d41ce41c43298}} 
+void {\bfseries init} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class respresenting a list type option. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/configimpl.\+h\item 
+doxygen/build/generated\+\_\+src/configimpl.\+cpp\end{DoxyCompactItemize}

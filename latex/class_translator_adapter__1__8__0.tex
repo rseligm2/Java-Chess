@@ -1,0 +1,69 @@
+\hypertarget{class_translator_adapter__1__8__0}{}\section{Translator\+Adapter\+\_\+1\+\_\+8\+\_\+0 Class Reference}
+\label{class_translator_adapter__1__8__0}\index{TranslatorAdapter\_1\_8\_0@{TranslatorAdapter\_1\_8\_0}}
+
+
+{\ttfamily \#include $<$translator\+\_\+adapter.\+h$>$}
+
+Inheritance diagram for Translator\+Adapter\+\_\+1\+\_\+8\+\_\+0\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.572567cm]{class_translator_adapter__1__8__0}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_translator_adapter__1__8__0_a47cedb130d9a178d9c632584d4f2abec}{update\+Needed\+Message}} ()
+\item 
+\mbox{\Hypertarget{class_translator_adapter__1__8__0_a4da9c471e95968f4c6f67ce92e9d212c}\label{class_translator_adapter__1__8__0_a4da9c471e95968f4c6f67ce92e9d212c}} 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries tr\+Detail\+Level} ()
+\item 
+\mbox{\Hypertarget{class_translator_adapter__1__8__0_a2614ce073bd4d9a8b809b76f583e7418}\label{class_translator_adapter__1__8__0_a2614ce073bd4d9a8b809b76f583e7418}} 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries tr\+Template\+Parameters} ()
+\item 
+\mbox{\Hypertarget{class_translator_adapter__1__8__0_a091b619b50fdf129ac17d5aac58bdaa0}\label{class_translator_adapter__1__8__0_a091b619b50fdf129ac17d5aac58bdaa0}} 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries tr\+And\+More} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&number)
+\item 
+\mbox{\Hypertarget{class_translator_adapter__1__8__0_af5e54cf6d212a780eaa83dc74cdf1a57}\label{class_translator_adapter__1__8__0_af5e54cf6d212a780eaa83dc74cdf1a57}} 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries tr\+Enum\+Generated\+From\+Files} (bool single)
+\item 
+\mbox{\Hypertarget{class_translator_adapter__1__8__0_a983c0f41b5a8fd4078045ef28a73ba7e}\label{class_translator_adapter__1__8__0_a983c0f41b5a8fd4078045ef28a73ba7e}} 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries tr\+Enum\+Reference} (const char $\ast$name)
+\item 
+\mbox{\Hypertarget{class_translator_adapter__1__8__0_a932515e9726f48018b93f49bfd2dba6a}\label{class_translator_adapter__1__8__0_a932515e9726f48018b93f49bfd2dba6a}} 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries tr\+Inherited\+From} (const char $\ast$members, const char $\ast$what)
+\item 
+\mbox{\Hypertarget{class_translator_adapter__1__8__0_abfa3bd866a75cec56e75751e8ab8d20d}\label{class_translator_adapter__1__8__0_abfa3bd866a75cec56e75751e8ab8d20d}} 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries tr\+Additional\+Inherited\+Members} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Adapter class for languages that only contain translations up to version 1.\+8.\+0. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_translator_adapter__1__8__0_a47cedb130d9a178d9c632584d4f2abec}\label{class_translator_adapter__1__8__0_a47cedb130d9a178d9c632584d4f2abec}} 
+\index{TranslatorAdapter\_1\_8\_0@{TranslatorAdapter\_1\_8\_0}!updateNeededMessage@{updateNeededMessage}}
+\index{updateNeededMessage@{updateNeededMessage}!TranslatorAdapter\_1\_8\_0@{TranslatorAdapter\_1\_8\_0}}
+\subsubsection{\texorpdfstring{updateNeededMessage()}{updateNeededMessage()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Translator\+Adapter\+\_\+1\+\_\+8\+\_\+0\+::update\+Needed\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+This method is used to generate a warning message to signal the user that the translation of his/her language of choice needs updating. It must be implemented by the translator adapter class (pure virtual).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_translator_adapter_base_a71493b87a34d6e4c232e540734aba698}{create\+Update\+Needed\+Message()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_translator_adapter__1__8__2_a307747456f69ab8dcb0c2be27f429e80}{Translator\+Adapter\+\_\+1\+\_\+8\+\_\+2}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_translator_adapter__1__4__6_ab19b01d4e00c95ef1e6eb631fbe6ada4}{Translator\+Adapter\+\_\+1\+\_\+4\+\_\+6}}, \mbox{\hyperlink{class_translator_adapter__1__5__4_a587a31dad925e47f206b6a0cda9eedd0}{Translator\+Adapter\+\_\+1\+\_\+5\+\_\+4}}, \mbox{\hyperlink{class_translator_adapter__1__6__0_abc231eb2c1864ca9f878e7e5deb94f54}{Translator\+Adapter\+\_\+1\+\_\+6\+\_\+0}}, \mbox{\hyperlink{class_translator_adapter__1__6__3_ab3d79abfb926c41bd7609eeb706654fe}{Translator\+Adapter\+\_\+1\+\_\+6\+\_\+3}}, and \mbox{\hyperlink{class_translator_adapter__1__7__5_a6e69d48e79a13c9d934f9af1a8befd8a}{Translator\+Adapter\+\_\+1\+\_\+7\+\_\+5}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/translator\+\_\+adapter.\+h\end{DoxyCompactItemize}

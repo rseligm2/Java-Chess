@@ -1,0 +1,94 @@
+\hypertarget{class_namespace_list_context}{}\section{Namespace\+List\+Context Class Reference}
+\label{class_namespace_list_context}\index{NamespaceListContext@{NamespaceListContext}}
+Inheritance diagram for Namespace\+List\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_namespace_list_context}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_namespace_list_context_1_1_private}{Private}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_namespace_list_context_a576ee9f319a20d0fa16fdcb3b4a3a550}{count}} () const
+\item 
+virtual \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_namespace_list_context_aad786580251baade29f06a76612201cd}{at}} (int index) const
+\item 
+virtual \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ \mbox{\hyperlink{class_namespace_list_context_aa889694ea771d93d1094b33d46cb4208}{create\+Iterator}} () const
+\item 
+virtual int \mbox{\hyperlink{class_namespace_list_context_a59c6b6d62a82299a64b36709f6db156f}{add\+Ref}} ()
+\item 
+virtual int \mbox{\hyperlink{class_namespace_list_context_a8395f4caf4473517e10e0375efe0e419}{release}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_namespace_list_context_ae070ce49758dfeaa3d5e229bfd5e3741}\label{class_namespace_list_context_ae070ce49758dfeaa3d5e229bfd5e3741}} 
+static \mbox{\hyperlink{class_namespace_list_context}{Namespace\+List\+Context}} $\ast$ {\bfseries alloc} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_namespace_list_context_a59c6b6d62a82299a64b36709f6db156f}\label{class_namespace_list_context_a59c6b6d62a82299a64b36709f6db156f}} 
+\index{NamespaceListContext@{NamespaceListContext}!addRef@{addRef}}
+\index{addRef@{addRef}!NamespaceListContext@{NamespaceListContext}}
+\subsubsection{\texorpdfstring{addRef()}{addRef()}}
+{\footnotesize\ttfamily virtual int Namespace\+List\+Context\+::add\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Increase object\textquotesingle{}s reference count 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a4b4973e2e15396d10bc4e3085462ca2b}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_namespace_list_context_aad786580251baade29f06a76612201cd}\label{class_namespace_list_context_aad786580251baade29f06a76612201cd}} 
+\index{NamespaceListContext@{NamespaceListContext}!at@{at}}
+\index{at@{at}!NamespaceListContext@{NamespaceListContext}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_variant}{Template\+Variant}} Namespace\+List\+Context\+::at (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the element at index position {\itshape index}. 
+
+Implements \mbox{\hyperlink{class_template_list_intf_aa51e57e72eacf4e8ce1055ee30a0f7f8}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_namespace_list_context_a576ee9f319a20d0fa16fdcb3b4a3a550}\label{class_namespace_list_context_a576ee9f319a20d0fa16fdcb3b4a3a550}} 
+\index{NamespaceListContext@{NamespaceListContext}!count@{count}}
+\index{count@{count}!NamespaceListContext@{NamespaceListContext}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Namespace\+List\+Context\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the number of elements in the list 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a329e49e33484c2aa5106aac1bf4e5216}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_namespace_list_context_aa889694ea771d93d1094b33d46cb4208}\label{class_namespace_list_context_aa889694ea771d93d1094b33d46cb4208}} 
+\index{NamespaceListContext@{NamespaceListContext}!createIterator@{createIterator}}
+\index{createIterator@{createIterator}!NamespaceListContext@{NamespaceListContext}}
+\subsubsection{\texorpdfstring{createIterator()}{createIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ Namespace\+List\+Context\+::create\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a new iterator for this list. \begin{DoxyNote}{Note}
+the user should call delete on the returned pointer. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_template_list_intf_a56b82384db24c3e121076a1da046d378}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_namespace_list_context_a8395f4caf4473517e10e0375efe0e419}\label{class_namespace_list_context_a8395f4caf4473517e10e0375efe0e419}} 
+\index{NamespaceListContext@{NamespaceListContext}!release@{release}}
+\index{release@{release}!NamespaceListContext@{NamespaceListContext}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual int Namespace\+List\+Context\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Decreases object\textquotesingle{}s reference count, destroy object if 0 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a0c53169c740c09dac47efc62bbe39674}{Template\+List\+Intf}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/context.\+h\item 
+doxygen/src/context.\+cpp\end{DoxyCompactItemize}

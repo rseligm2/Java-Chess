@@ -1,0 +1,1025 @@
+\hypertarget{class_r_t_f_generator}{}\section{R\+T\+F\+Generator Class Reference}
+\label{class_r_t_f_generator}\index{RTFGenerator@{RTFGenerator}}
+
+
+{\ttfamily \#include $<$rtfgen.\+h$>$}
+
+Inheritance diagram for R\+T\+F\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_r_t_f_generator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_adc782b62f471353f7b535052bd8e16c1}\label{class_r_t_f_generator_adc782b62f471353f7b535052bd8e16c1}} 
+void {\bfseries enable} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_aae28ca70077d65fd1b3dcd9ec9781e05}\label{class_r_t_f_generator_aae28ca70077d65fd1b3dcd9ec9781e05}} 
+void {\bfseries disable} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a21f14b800414d41657e55e6e57fc66ef}\label{class_r_t_f_generator_a21f14b800414d41657e55e6e57fc66ef}} 
+void {\bfseries enable\+If} (Output\+Type o)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a35fbaedd73a1f52ea24a04199d8f415c}\label{class_r_t_f_generator_a35fbaedd73a1f52ea24a04199d8f415c}} 
+void {\bfseries disable\+If} (Output\+Type o)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a1c9164aa856f5977128a8253a1f64426}\label{class_r_t_f_generator_a1c9164aa856f5977128a8253a1f64426}} 
+void {\bfseries disable\+If\+Not} (Output\+Type o)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a6bccbf01f966c68264db6a07ec459cb0}\label{class_r_t_f_generator_a6bccbf01f966c68264db6a07ec459cb0}} 
+bool {\bfseries is\+Enabled} (Output\+Type o)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a24e81556aafd0e14948cd96f1dbefc46}\label{class_r_t_f_generator_a24e81556aafd0e14948cd96f1dbefc46}} 
+\mbox{\hyperlink{class_output_generator}{Output\+Generator}} $\ast$ {\bfseries get} (Output\+Type o)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a0d8c73e39b915db738f68dddaf437370}\label{class_r_t_f_generator_a0d8c73e39b915db738f68dddaf437370}} 
+void {\bfseries write\+Doc} (\mbox{\hyperlink{class_doc_node}{Doc\+Node}} $\ast$, \mbox{\hyperlink{class_definition}{Definition}} $\ast$, \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a8f2619c60318190461202909303cdd64}\label{class_r_t_f_generator_a8f2619c60318190461202909303cdd64}} 
+void {\bfseries start\+File} (const char $\ast$name, const char $\ast$man\+Name, const char $\ast$title)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a2bbe7d3fc41e5d54ad3dd1549ead2a50}\label{class_r_t_f_generator_a2bbe7d3fc41e5d54ad3dd1549ead2a50}} 
+void {\bfseries write\+Search\+Info} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a2f413cd0dd806141416ba6b3b165f6ff}\label{class_r_t_f_generator_a2f413cd0dd806141416ba6b3b165f6ff}} 
+void {\bfseries write\+Footer} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_aa98dac9076dd84b77670d69a119e6745}\label{class_r_t_f_generator_aa98dac9076dd84b77670d69a119e6745}} 
+void {\bfseries end\+File} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ab9806cf1797d83c7f449598c690ed43d}\label{class_r_t_f_generator_ab9806cf1797d83c7f449598c690ed43d}} 
+void {\bfseries clear\+Buffer} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a861891a016c0c096a0e218017cf4865f}\label{class_r_t_f_generator_a861891a016c0c096a0e218017cf4865f}} 
+void {\bfseries start\+Index\+Section} (Index\+Sections)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ab7173f5690754ef15cbcdb256b05d657}\label{class_r_t_f_generator_ab7173f5690754ef15cbcdb256b05d657}} 
+void {\bfseries end\+Index\+Section} (Index\+Sections)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a1a5220608be92b1cf666ec6d77df6c15}\label{class_r_t_f_generator_a1a5220608be92b1cf666ec6d77df6c15}} 
+void {\bfseries write\+Page\+Link} (const char $\ast$, bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a3f1521b0b98bf4b73eb1bb77ed1ec191}\label{class_r_t_f_generator_a3f1521b0b98bf4b73eb1bb77ed1ec191}} 
+void {\bfseries start\+Project\+Number} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a9ccc768a46f45f0f49bb41f25f108dab}\label{class_r_t_f_generator_a9ccc768a46f45f0f49bb41f25f108dab}} 
+void {\bfseries end\+Project\+Number} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a0aaaee80191b38b7e17a7c460b1bc0ed}\label{class_r_t_f_generator_a0aaaee80191b38b7e17a7c460b1bc0ed}} 
+void {\bfseries write\+Style\+Info} (int part)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a34dec5a4a5407eab6924ed8245581198}\label{class_r_t_f_generator_a34dec5a4a5407eab6924ed8245581198}} 
+void {\bfseries start\+Title\+Head} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_af0954cd0854f60839004dda1b134f7e3}\label{class_r_t_f_generator_af0954cd0854f60839004dda1b134f7e3}} 
+void {\bfseries start\+Title} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a881f413de3acd54c6bd5977c4add08d4}\label{class_r_t_f_generator_a881f413de3acd54c6bd5977c4add08d4}} 
+void {\bfseries end\+Title\+Head} (const char $\ast$, const char $\ast$name)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a9cc9028ce4b47900b45798c2d2006eca}\label{class_r_t_f_generator_a9cc9028ce4b47900b45798c2d2006eca}} 
+void {\bfseries end\+Title} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a19bbf6e08804ee457c7aa9e07b833ba0}\label{class_r_t_f_generator_a19bbf6e08804ee457c7aa9e07b833ba0}} 
+void {\bfseries new\+Paragraph} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a98ea7dff7770c95c08f7f82dc872881b}{start\+Paragraph}} (const char $\ast$class\+Def)
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_aefcb5d16655eae184dcacecfd27c0068}{end\+Paragraph}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_ace3fd5e7a703cbae0272372d7e55083b}{write\+String}} (const char $\ast$text)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a5effd10391cb320e9876ab54fab79cfa}\label{class_r_t_f_generator_a5effd10391cb320e9876ab54fab79cfa}} 
+void {\bfseries start\+Index\+List\+Item} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a87ab7629737717515752d5a71b068f96}\label{class_r_t_f_generator_a87ab7629737717515752d5a71b068f96}} 
+void {\bfseries end\+Index\+List\+Item} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_afe73f8487ef0728a9f1f3814ce38d813}\label{class_r_t_f_generator_afe73f8487ef0728a9f1f3814ce38d813}} 
+void {\bfseries start\+Index\+List} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a44a83f3406938de95a8d4fbdce61f619}\label{class_r_t_f_generator_a44a83f3406938de95a8d4fbdce61f619}} 
+void {\bfseries end\+Index\+List} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a5cd7e617c40987804564ebf0cdab7efa}\label{class_r_t_f_generator_a5cd7e617c40987804564ebf0cdab7efa}} 
+void {\bfseries start\+Index\+Key} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ac4ecc7a87cc163316582f02afa7e1cfd}\label{class_r_t_f_generator_ac4ecc7a87cc163316582f02afa7e1cfd}} 
+void {\bfseries end\+Index\+Key} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a7eaa22d62032e7783ddce216aaae5c9a}\label{class_r_t_f_generator_a7eaa22d62032e7783ddce216aaae5c9a}} 
+void {\bfseries start\+Index\+Value} (bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a0fd9b7f98db0eb16bd0e5d67696c4def}\label{class_r_t_f_generator_a0fd9b7f98db0eb16bd0e5d67696c4def}} 
+void {\bfseries end\+Index\+Value} (const char $\ast$, bool)
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a277db06db2dc29602f3209ca899111c9}{start\+Item\+List}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a530e2868f7db6b92a4423cdee7fc9f75}{end\+Item\+List}} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_afdc11b7bd35a07d07d516e7f746b0b23}\label{class_r_t_f_generator_afdc11b7bd35a07d07d516e7f746b0b23}} 
+void {\bfseries start\+Index\+Item} (const char $\ast$ref, const char $\ast$file)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a41f94838ad89b0979c7fdb5e7d31d792}\label{class_r_t_f_generator_a41f94838ad89b0979c7fdb5e7d31d792}} 
+void {\bfseries end\+Index\+Item} (const char $\ast$ref, const char $\ast$file)
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a0e292cd3d60599a4ddfad4036c0b6d46}{docify}} (const char $\ast$text)
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a331ca74e622c48bbbcad7e02139a6bfb}{codify}} (const char $\ast$text)
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a5b27737ba89d55761a9908a088631367}{write\+Object\+Link}} (const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, const char $\ast$name)
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_ad598f8811fde4d3b1849c2e9b92a6686}{write\+Code\+Link}} (const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, const char $\ast$name, const char $\ast$tooltip)
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a06e0455dd78d9d79ea51e6d31e6877fe}{write\+Tooltip}} (const char $\ast$, const \mbox{\hyperlink{struct_doc_link_info}{Doc\+Link\+Info}} \&, const char $\ast$, const char $\ast$, const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&, const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_aa92286bf94c590a675ac75f8f5c1671e}\label{class_r_t_f_generator_aa92286bf94c590a675ac75f8f5c1671e}} 
+void {\bfseries start\+Text\+Link} (const char $\ast$f, const char $\ast$anchor)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a6e7091e1279e20ea431ddd36a6984e77}\label{class_r_t_f_generator_a6e7091e1279e20ea431ddd36a6984e77}} 
+void {\bfseries end\+Text\+Link} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a265ab601396745bb97d5c6cee59329d6}{start\+Html\+Link}} (const char $\ast$url)
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a73a4ea59114077ea461ff16757c8429b}{end\+Html\+Link}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_ac3760aa18a5102cd8e8b0a4969f0953d}{start\+Typewriter}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_af9e17986de22ddd0b3a4afe4449b4a2c}{end\+Typewriter}} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a75318686aaf9a1d10be4fb9c7f90c98f}\label{class_r_t_f_generator_a75318686aaf9a1d10be4fb9c7f90c98f}} 
+void {\bfseries start\+Group\+Header} (int)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a50b5dd2478b90fdeef6df695f4f27bf9}\label{class_r_t_f_generator_a50b5dd2478b90fdeef6df695f4f27bf9}} 
+void {\bfseries end\+Group\+Header} (int)
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_ae09155b5cf6fb7457ae598f22d65d045}{start\+Item\+List\+Item}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a4d3cc3baac4adda9ef5da4c9e470871b}{end\+Item\+List\+Item}} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a9a1d6fe62762d3b98b98955a73c78f83}\label{class_r_t_f_generator_a9a1d6fe62762d3b98b98955a73c78f83}} 
+void {\bfseries start\+Member\+Sections} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_aff41f57d28ce59191f7527212ebdccb3}\label{class_r_t_f_generator_aff41f57d28ce59191f7527212ebdccb3}} 
+void {\bfseries end\+Member\+Sections} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ac7b3d7b5f30f3d12a9168c63d8558b01}\label{class_r_t_f_generator_ac7b3d7b5f30f3d12a9168c63d8558b01}} 
+void {\bfseries start\+Header\+Section} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_af0d6ecfbd929b6bf84515c7a9c0c912f}\label{class_r_t_f_generator_af0d6ecfbd929b6bf84515c7a9c0c912f}} 
+void {\bfseries end\+Header\+Section} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_af3bab60ac2e4299b8475a42a8b16c761}\label{class_r_t_f_generator_af3bab60ac2e4299b8475a42a8b16c761}} 
+void {\bfseries start\+Member\+Header} (const char $\ast$, int)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_abeb6f88fba52b06469815b77955c08c4}\label{class_r_t_f_generator_abeb6f88fba52b06469815b77955c08c4}} 
+void {\bfseries end\+Member\+Header} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a345410be789206cba4ff9a83c2c35f10}\label{class_r_t_f_generator_a345410be789206cba4ff9a83c2c35f10}} 
+void {\bfseries start\+Member\+Subtitle} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a4009bce7747144b2da4a0c348979530a}\label{class_r_t_f_generator_a4009bce7747144b2da4a0c348979530a}} 
+void {\bfseries end\+Member\+Subtitle} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_aa34bc87c9ef0a6de2da83d975614a3ce}\label{class_r_t_f_generator_aa34bc87c9ef0a6de2da83d975614a3ce}} 
+void {\bfseries start\+Member\+Doc\+List} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ac0999848e2812490e2abbdfe8502756a}\label{class_r_t_f_generator_ac0999848e2812490e2abbdfe8502756a}} 
+void {\bfseries end\+Member\+Doc\+List} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_aa4311935ebcc3dc94c2aa1d0da50ce4d}\label{class_r_t_f_generator_aa4311935ebcc3dc94c2aa1d0da50ce4d}} 
+void {\bfseries start\+Member\+List} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a026c22840d726a32660cc3d4d58b0c79}\label{class_r_t_f_generator_a026c22840d726a32660cc3d4d58b0c79}} 
+void {\bfseries end\+Member\+List} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a619545578f99c0642f9d2f82dba69468}\label{class_r_t_f_generator_a619545578f99c0642f9d2f82dba69468}} 
+void {\bfseries start\+Inline\+Header} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a264502d6589fff99ab0e01f3600cad57}\label{class_r_t_f_generator_a264502d6589fff99ab0e01f3600cad57}} 
+void {\bfseries end\+Inline\+Header} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_abb1984b3f75a50b57e68fff9570a608e}\label{class_r_t_f_generator_abb1984b3f75a50b57e68fff9570a608e}} 
+void {\bfseries start\+Anon\+Type\+Scope} (int)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a99b1d699a7530ecb1542c9a76bc60cb0}\label{class_r_t_f_generator_a99b1d699a7530ecb1542c9a76bc60cb0}} 
+void {\bfseries end\+Anon\+Type\+Scope} (int)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ad148e67bb61bb3c7dd7392e7a2786353}\label{class_r_t_f_generator_ad148e67bb61bb3c7dd7392e7a2786353}} 
+void {\bfseries start\+Member\+Item} (const char $\ast$, int, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_adfbb9b8fb310181f9c66383d6ebe84b7}\label{class_r_t_f_generator_adfbb9b8fb310181f9c66383d6ebe84b7}} 
+void {\bfseries end\+Member\+Item} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a61df52cef3429c7db462e28a3f39937c}\label{class_r_t_f_generator_a61df52cef3429c7db462e28a3f39937c}} 
+void {\bfseries start\+Member\+Template\+Params} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a6b09bc398bb77e562c3847c94ef1d663}\label{class_r_t_f_generator_a6b09bc398bb77e562c3847c94ef1d663}} 
+void {\bfseries end\+Member\+Template\+Params} (const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_aeae50b322d39c2db900f5bc883cb4519}\label{class_r_t_f_generator_aeae50b322d39c2db900f5bc883cb4519}} 
+void {\bfseries insert\+Member\+Align} (bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ab64913ff195ea9b55f48f22d43b00a28}\label{class_r_t_f_generator_ab64913ff195ea9b55f48f22d43b00a28}} 
+void {\bfseries insert\+Member\+Align\+Left} (int, bool)
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a97d0c2260e0642d5b6ac0117b2e91687}{write\+Ruler}} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a425368bac3a2fb414b747ae60a1e2301}\label{class_r_t_f_generator_a425368bac3a2fb414b747ae60a1e2301}} 
+void {\bfseries write\+Anchor} (const char $\ast$file\+Name, const char $\ast$name)
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_ac7783a014fb21a8688b4f334aea2cc30}{start\+Code\+Fragment}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_ae75111adf81a1179b924ab7656d8c74c}{end\+Code\+Fragment}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a4e6a13e14340ff6585c305d3c9b55c4f}{write\+Line\+Number}} (const char $\ast$, const char $\ast$, const char $\ast$, int l)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_abd342f1207b80ca7ef8badcf659a0b58}\label{class_r_t_f_generator_abd342f1207b80ca7ef8badcf659a0b58}} 
+void {\bfseries start\+Code\+Line} (bool)
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a3f63e2fedfb61f656e35df2054a6d772}{end\+Code\+Line}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a235071d9e43bed7dabaec79e88bf43c7}{start\+Emphasis}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a283896a8d13cd017f4b765d82ba1e132}{end\+Emphasis}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_acb774060df0aaad9be8f91018503b20b}{start\+Bold}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a430a7df863505527d0b1da4c70116a05}{end\+Bold}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a9c6c7896f2bd09fb5e6ce53b9e6cee5c}{start\+Description}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a4c9b42e803206c575f464d82eec460d9}{end\+Description}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a39ef721382a2a25ef0a41463a34f1b02}{start\+Desc\+Item}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_aaeb8cbfab437b4198548c4f06dc12847}{end\+Desc\+Item}} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_aac2aff06973207c6c7e5b2e5f1984482}\label{class_r_t_f_generator_aac2aff06973207c6c7e5b2e5f1984482}} 
+void {\bfseries line\+Break} (const char $\ast$style=0)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a6f6e7673e5d5b3005bf9893cf7eaa392}\label{class_r_t_f_generator_a6f6e7673e5d5b3005bf9893cf7eaa392}} 
+void {\bfseries start\+Member\+Doc} (const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$, int, int, bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_abebabde334843d95b88db4521ea89ead}\label{class_r_t_f_generator_abebabde334843d95b88db4521ea89ead}} 
+void {\bfseries end\+Member\+Doc} (bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a502ee48a2bb36ef2f0891dc5e48d30f8}\label{class_r_t_f_generator_a502ee48a2bb36ef2f0891dc5e48d30f8}} 
+void {\bfseries start\+Doxy\+Anchor} (const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a9498b4ab1e6143b700a3ee68e72c39a1}\label{class_r_t_f_generator_a9498b4ab1e6143b700a3ee68e72c39a1}} 
+void {\bfseries end\+Doxy\+Anchor} (const char $\ast$, const char $\ast$)
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a1d1912d4a9d95b54ee88b12b3306e3d2}{write\+Char}} (char c)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a1b58b1600ad492690fc1c83b7c6c9803}\label{class_r_t_f_generator_a1b58b1600ad492690fc1c83b7c6c9803}} 
+void {\bfseries write\+Latex\+Spacing} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a655778fe3ac63c361fa4a349b71a2cc6}\label{class_r_t_f_generator_a655778fe3ac63c361fa4a349b71a2cc6}} 
+void {\bfseries write\+Start\+Anno\+Item} (const char $\ast$type, const char $\ast$file, const char $\ast$path, const char $\ast$name)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ae39a707b688f116c4e5574b52091af49}\label{class_r_t_f_generator_ae39a707b688f116c4e5574b52091af49}} 
+void {\bfseries write\+End\+Anno\+Item} (const char $\ast$name)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_aee4ce8432c14804a99c4422f97b8ae59}\label{class_r_t_f_generator_aee4ce8432c14804a99c4422f97b8ae59}} 
+void {\bfseries start\+Subsection} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ae8b39bb99367d13410a574ef93cae773}\label{class_r_t_f_generator_ae8b39bb99367d13410a574ef93cae773}} 
+void {\bfseries end\+Subsection} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a1b2ed71d67f00e2f067648714393341b}\label{class_r_t_f_generator_a1b2ed71d67f00e2f067648714393341b}} 
+void {\bfseries start\+Subsubsection} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a15b343f2ae0d87433bfb28a92b02d502}\label{class_r_t_f_generator_a15b343f2ae0d87433bfb28a92b02d502}} 
+void {\bfseries end\+Subsubsection} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_aeaaadb26bd52241ae6a838608f30652b}\label{class_r_t_f_generator_aeaaadb26bd52241ae6a838608f30652b}} 
+void {\bfseries start\+Center} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ad5b630364443ea63a67af9166b9cbaad}\label{class_r_t_f_generator_ad5b630364443ea63a67af9166b9cbaad}} 
+void {\bfseries end\+Center} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_abef7c0c5864bfb1dfce99d181ae1e51c}\label{class_r_t_f_generator_abef7c0c5864bfb1dfce99d181ae1e51c}} 
+void {\bfseries start\+Small} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a2ac789ba16b4fa9f8c64fe59041e9699}\label{class_r_t_f_generator_a2ac789ba16b4fa9f8c64fe59041e9699}} 
+void {\bfseries end\+Small} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a6e81e56520046db02d8e71a195a10a32}\label{class_r_t_f_generator_a6e81e56520046db02d8e71a195a10a32}} 
+void {\bfseries start\+Member\+Description} (const char $\ast$, const char $\ast$, bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a0917bcbff0ed93c3f75da305b0f2f1be}\label{class_r_t_f_generator_a0917bcbff0ed93c3f75da305b0f2f1be}} 
+void {\bfseries end\+Member\+Description} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a733845745c3daac9a3700cedbbfc170a}\label{class_r_t_f_generator_a733845745c3daac9a3700cedbbfc170a}} 
+void {\bfseries start\+Member\+Declaration} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_af6b3e0830a873ad488dd3f2773f7ec15}\label{class_r_t_f_generator_af6b3e0830a873ad488dd3f2773f7ec15}} 
+void {\bfseries end\+Member\+Declaration} (const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_aaeb7e296fe3ca59058849fbee8340eb6}\label{class_r_t_f_generator_aaeb7e296fe3ca59058849fbee8340eb6}} 
+void {\bfseries write\+Inherited\+Section\+Title} (const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a338a41a2e7386886111024d33bc8ac77}\label{class_r_t_f_generator_a338a41a2e7386886111024d33bc8ac77}} 
+void {\bfseries start\+Desc\+List} (Section\+Types)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_af78b770d5f1286d6cd152ef61efd8edb}\label{class_r_t_f_generator_af78b770d5f1286d6cd152ef61efd8edb}} 
+void {\bfseries start\+Examples} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a3b922b80ee9cea8451bb53d712adbe8a}\label{class_r_t_f_generator_a3b922b80ee9cea8451bb53d712adbe8a}} 
+void {\bfseries end\+Examples} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a009a5bf6c30b65c6aa66d9cd924f0af7}\label{class_r_t_f_generator_a009a5bf6c30b65c6aa66d9cd924f0af7}} 
+void {\bfseries start\+Param\+List} (Param\+List\+Types, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ac34fa07c0453017057bf8d6b9863c8d4}\label{class_r_t_f_generator_ac34fa07c0453017057bf8d6b9863c8d4}} 
+void {\bfseries end\+Param\+List} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_af015080aa4a53dc119385ed520258a93}\label{class_r_t_f_generator_af015080aa4a53dc119385ed520258a93}} 
+void {\bfseries start\+Desc\+For\+Item} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ad60deab094f7a994b685e0b55639839c}\label{class_r_t_f_generator_ad60deab094f7a994b685e0b55639839c}} 
+void {\bfseries end\+Desc\+For\+Item} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_aa28599035df308890bfb4abfcd322c6d}\label{class_r_t_f_generator_aa28599035df308890bfb4abfcd322c6d}} 
+void {\bfseries start\+Section} (const char $\ast$, const char $\ast$, Section\+Info\+::\+Section\+Type)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_af33a34d8ccdbda134053ca89eeeacf5a}\label{class_r_t_f_generator_af33a34d8ccdbda134053ca89eeeacf5a}} 
+void {\bfseries end\+Section} (const char $\ast$, Section\+Info\+::\+Section\+Type)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_af35b41bf3bcf9a94af08ba6d68d2df23}\label{class_r_t_f_generator_af35b41bf3bcf9a94af08ba6d68d2df23}} 
+void {\bfseries add\+Index\+Item} (const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a4dd78ad24988675c5a4b38ff3a5a120a}\label{class_r_t_f_generator_a4dd78ad24988675c5a4b38ff3a5a120a}} 
+void {\bfseries start\+Indent} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a9693d67a2739f84501b2110cba6e5662}\label{class_r_t_f_generator_a9693d67a2739f84501b2110cba6e5662}} 
+void {\bfseries end\+Indent} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ab563733ac3c9c90d116f7d3d24719bcc}\label{class_r_t_f_generator_ab563733ac3c9c90d116f7d3d24719bcc}} 
+void {\bfseries write\+Synopsis} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ac5ecece390049b98cf025a674bf70f75}\label{class_r_t_f_generator_ac5ecece390049b98cf025a674bf70f75}} 
+void {\bfseries start\+Class\+Diagram} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a1115a488adc5c7ea481cbf6c3cd9eb0a}\label{class_r_t_f_generator_a1115a488adc5c7ea481cbf6c3cd9eb0a}} 
+void {\bfseries end\+Class\+Diagram} (const \mbox{\hyperlink{class_class_diagram}{Class\+Diagram}} \&, const char $\ast$filename, const char $\ast$name)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_acfe100fa82bd9c75629790a719a6f711}\label{class_r_t_f_generator_acfe100fa82bd9c75629790a719a6f711}} 
+void {\bfseries start\+Page\+Ref} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_af6443e553d28dc4b34cfed6567c530c7}\label{class_r_t_f_generator_af6443e553d28dc4b34cfed6567c530c7}} 
+void {\bfseries end\+Page\+Ref} (const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_aa9a8e0a9531e1dd82931a2a8c0572500}\label{class_r_t_f_generator_aa9a8e0a9531e1dd82931a2a8c0572500}} 
+void {\bfseries start\+Quick\+Indices} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a1e804272e7498124acf895be2bcdb35a}\label{class_r_t_f_generator_a1e804272e7498124acf895be2bcdb35a}} 
+void {\bfseries end\+Quick\+Indices} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a94c98bdf4ad6589a902e283cb3a31995}\label{class_r_t_f_generator_a94c98bdf4ad6589a902e283cb3a31995}} 
+void {\bfseries write\+Split\+Bar} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ae9e70a811ebae6face08d0c2c019af16}\label{class_r_t_f_generator_ae9e70a811ebae6face08d0c2c019af16}} 
+void {\bfseries write\+Navigation\+Path} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a94f7432f76fdcce01b1706170cd6c433}\label{class_r_t_f_generator_a94f7432f76fdcce01b1706170cd6c433}} 
+void {\bfseries write\+Logo} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a7bfd450f1bfcdb82217da1e88646f030}\label{class_r_t_f_generator_a7bfd450f1bfcdb82217da1e88646f030}} 
+void {\bfseries write\+Quick\+Links} (bool, Highlighted\+Item, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_acdcae4f58554de53360da212e0d9065a}\label{class_r_t_f_generator_acdcae4f58554de53360da212e0d9065a}} 
+void {\bfseries write\+Summary\+Link} (const char $\ast$, const char $\ast$, const char $\ast$, bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a59a9e3d72221d5ca1cd6d37ac243b3bc}\label{class_r_t_f_generator_a59a9e3d72221d5ca1cd6d37ac243b3bc}} 
+void {\bfseries start\+Contents} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a51da5e989909409618e46e6d161948ed}\label{class_r_t_f_generator_a51da5e989909409618e46e6d161948ed}} 
+void {\bfseries end\+Contents} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a0f51f9022b3e8f3d95f154e0d4d5b201}\label{class_r_t_f_generator_a0f51f9022b3e8f3d95f154e0d4d5b201}} 
+void {\bfseries write\+Non\+Breakable\+Space} (int)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ac5e98d54b526e7f2356dfb673bef4119}\label{class_r_t_f_generator_ac5e98d54b526e7f2356dfb673bef4119}} 
+void {\bfseries start\+Desc\+Table} (const char $\ast$title)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ae98972ee6670de733f0ec0fa00cb1a67}\label{class_r_t_f_generator_ae98972ee6670de733f0ec0fa00cb1a67}} 
+void {\bfseries end\+Desc\+Table} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a554501002b4b1f6bd6f6ab2051cbf9b8}\label{class_r_t_f_generator_a554501002b4b1f6bd6f6ab2051cbf9b8}} 
+void {\bfseries start\+Desc\+Table\+Row} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a4c67b128a4b22e19b98e9225ae9cc1dc}\label{class_r_t_f_generator_a4c67b128a4b22e19b98e9225ae9cc1dc}} 
+void {\bfseries end\+Desc\+Table\+Row} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_afa65fd09520391f8db47a98d2ac210c3}\label{class_r_t_f_generator_afa65fd09520391f8db47a98d2ac210c3}} 
+void {\bfseries start\+Desc\+Table\+Title} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a9c091d5c54d49a0eebac04726a8c0f39}\label{class_r_t_f_generator_a9c091d5c54d49a0eebac04726a8c0f39}} 
+void {\bfseries end\+Desc\+Table\+Title} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ac79979b6bd1ccc052698058158d2f1e6}\label{class_r_t_f_generator_ac79979b6bd1ccc052698058158d2f1e6}} 
+void {\bfseries start\+Desc\+Table\+Data} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ab98bd7772c1a72bf4d2cac4c00aa90a2}\label{class_r_t_f_generator_ab98bd7772c1a72bf4d2cac4c00aa90a2}} 
+void {\bfseries end\+Desc\+Table\+Data} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ac284549ad668918d625e7fa824920f3c}\label{class_r_t_f_generator_ac284549ad668918d625e7fa824920f3c}} 
+void {\bfseries start\+Dot\+Graph} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a7fe78cf6bb451f3d63cd46e45633db92}\label{class_r_t_f_generator_a7fe78cf6bb451f3d63cd46e45633db92}} 
+void {\bfseries end\+Dot\+Graph} (const \mbox{\hyperlink{class_dot_class_graph}{Dot\+Class\+Graph}} \&)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_af71f39a74552eca540f9ce3ec6ecaaaf}\label{class_r_t_f_generator_af71f39a74552eca540f9ce3ec6ecaaaf}} 
+void {\bfseries start\+Incl\+Dep\+Graph} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a0d0f1c8866d426ab365991e625655294}\label{class_r_t_f_generator_a0d0f1c8866d426ab365991e625655294}} 
+void {\bfseries end\+Incl\+Dep\+Graph} (const \mbox{\hyperlink{class_dot_incl_dep_graph}{Dot\+Incl\+Dep\+Graph}} \&)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a1cca2a1e8279bfe2a81c5c175f3e8a3e}\label{class_r_t_f_generator_a1cca2a1e8279bfe2a81c5c175f3e8a3e}} 
+void {\bfseries start\+Group\+Collaboration} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a7da95182ca80804b84d0fcd6db5d1d2f}\label{class_r_t_f_generator_a7da95182ca80804b84d0fcd6db5d1d2f}} 
+void {\bfseries end\+Group\+Collaboration} (const \mbox{\hyperlink{class_dot_group_collaboration}{Dot\+Group\+Collaboration}} \&g)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a337a29f3c9a3031dd9926d56be1a3732}\label{class_r_t_f_generator_a337a29f3c9a3031dd9926d56be1a3732}} 
+void {\bfseries start\+Call\+Graph} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ad99bf9b3a8b9221c89d0c8bb5e5665e5}\label{class_r_t_f_generator_ad99bf9b3a8b9221c89d0c8bb5e5665e5}} 
+void {\bfseries end\+Call\+Graph} (const \mbox{\hyperlink{class_dot_call_graph}{Dot\+Call\+Graph}} \&)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ae1d2a7d98e8b0933b8000b7ba646fe08}\label{class_r_t_f_generator_ae1d2a7d98e8b0933b8000b7ba646fe08}} 
+void {\bfseries start\+Dir\+Dep\+Graph} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ad8d3f8ef96f02dc4d0bb75e7ebd2a28e}\label{class_r_t_f_generator_ad8d3f8ef96f02dc4d0bb75e7ebd2a28e}} 
+void {\bfseries end\+Dir\+Dep\+Graph} (const \mbox{\hyperlink{class_dot_dir_deps}{Dot\+Dir\+Deps}} \&g)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ad14ce0697f892a9bac69cabf734fb057}\label{class_r_t_f_generator_ad14ce0697f892a9bac69cabf734fb057}} 
+void {\bfseries write\+Graphical\+Hierarchy} (const \mbox{\hyperlink{class_dot_gfx_hierarchy_table}{Dot\+Gfx\+Hierarchy\+Table}} \&)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a4125302b52972a717fb8797da60d8124}\label{class_r_t_f_generator_a4125302b52972a717fb8797da60d8124}} 
+void {\bfseries start\+Member\+Group\+Header} (bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a1f6522cf46fdbcbc824a04c981fe1561}\label{class_r_t_f_generator_a1f6522cf46fdbcbc824a04c981fe1561}} 
+void {\bfseries end\+Member\+Group\+Header} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ac0a0b210fb4152a3b97c6374ee19c662}\label{class_r_t_f_generator_ac0a0b210fb4152a3b97c6374ee19c662}} 
+void {\bfseries start\+Member\+Group\+Docs} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a2524bede1266f057580c80da775fae4d}\label{class_r_t_f_generator_a2524bede1266f057580c80da775fae4d}} 
+void {\bfseries end\+Member\+Group\+Docs} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ae91c2a65ed12a3deb00353aaa00501c8}\label{class_r_t_f_generator_ae91c2a65ed12a3deb00353aaa00501c8}} 
+void {\bfseries start\+Member\+Group} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ab5e5ec2c8550abaeb2a55db71c88b37f}\label{class_r_t_f_generator_ab5e5ec2c8550abaeb2a55db71c88b37f}} 
+void {\bfseries end\+Member\+Group} (bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a7a31ccfd4c4f1392c8dfa3a08a6141d6}\label{class_r_t_f_generator_a7a31ccfd4c4f1392c8dfa3a08a6141d6}} 
+void {\bfseries start\+Text\+Block} (bool dense)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a21fd75f623286b74383a3ad6579c022b}\label{class_r_t_f_generator_a21fd75f623286b74383a3ad6579c022b}} 
+void {\bfseries end\+Text\+Block} (bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ab8e8c04376e00b1486850c8f76d01e85}\label{class_r_t_f_generator_ab8e8c04376e00b1486850c8f76d01e85}} 
+void {\bfseries last\+Index\+Page} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ad99cf6bdad8dcd97ed7179afdb78f2d1}\label{class_r_t_f_generator_ad99cf6bdad8dcd97ed7179afdb78f2d1}} 
+void {\bfseries start\+Member\+Doc\+Prefix\+Item} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a68512a40b063e43eba868aab90a993fc}\label{class_r_t_f_generator_a68512a40b063e43eba868aab90a993fc}} 
+void {\bfseries end\+Member\+Doc\+Prefix\+Item} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a41596d84398c2606da472fca0ee74b9b}\label{class_r_t_f_generator_a41596d84398c2606da472fca0ee74b9b}} 
+void {\bfseries start\+Member\+Doc\+Name} (bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_acfea2f35d2c8a760082bc8ad6d0e18fc}\label{class_r_t_f_generator_acfea2f35d2c8a760082bc8ad6d0e18fc}} 
+void {\bfseries end\+Member\+Doc\+Name} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a62b97ac9e8fb0b5b1f43258dab52a221}\label{class_r_t_f_generator_a62b97ac9e8fb0b5b1f43258dab52a221}} 
+void {\bfseries start\+Parameter\+Type} (bool, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_afa91e226899991dfdc3996ee1f6f87c2}\label{class_r_t_f_generator_afa91e226899991dfdc3996ee1f6f87c2}} 
+void {\bfseries end\+Parameter\+Type} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_adb57207e0840acb6350fef7e23604657}\label{class_r_t_f_generator_adb57207e0840acb6350fef7e23604657}} 
+void {\bfseries start\+Parameter\+Name} (bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_acc9e432934e2b1decdf1be6dbaa4f5f2}\label{class_r_t_f_generator_acc9e432934e2b1decdf1be6dbaa4f5f2}} 
+void {\bfseries end\+Parameter\+Name} (bool, bool, bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a2739446e6fe0e80105d5a0f010e46a6f}\label{class_r_t_f_generator_a2739446e6fe0e80105d5a0f010e46a6f}} 
+void {\bfseries start\+Parameter\+List} (bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a14ea701758cd22aac57c4701b91b3094}\label{class_r_t_f_generator_a14ea701758cd22aac57c4701b91b3094}} 
+void {\bfseries end\+Parameter\+List} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_abf4fe54e26bf5f3e362cab1f0825b6a5}\label{class_r_t_f_generator_abf4fe54e26bf5f3e362cab1f0825b6a5}} 
+void {\bfseries exception\+Entry} (const char $\ast$, bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a2f057ad3fcf66b3c6a736fe1bc0c891c}\label{class_r_t_f_generator_a2f057ad3fcf66b3c6a736fe1bc0c891c}} 
+void {\bfseries start\+Constraint\+List} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a0dece267723511baafa87912d4a348f5}\label{class_r_t_f_generator_a0dece267723511baafa87912d4a348f5}} 
+void {\bfseries start\+Constraint\+Param} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a0f1f278d86d5c44964308faaaea24b1b}\label{class_r_t_f_generator_a0f1f278d86d5c44964308faaaea24b1b}} 
+void {\bfseries end\+Constraint\+Param} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a8e83a67681925ae6b55615edcca9c265}\label{class_r_t_f_generator_a8e83a67681925ae6b55615edcca9c265}} 
+void {\bfseries start\+Constraint\+Type} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a8bdab63308f7a7ee418e03264f03bbc3}\label{class_r_t_f_generator_a8bdab63308f7a7ee418e03264f03bbc3}} 
+void {\bfseries end\+Constraint\+Type} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a8ea3d45327f68ad2e47a4e5298602f9d}\label{class_r_t_f_generator_a8ea3d45327f68ad2e47a4e5298602f9d}} 
+void {\bfseries start\+Constraint\+Docs} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a24addae2fe4889afd85e29b6a19829fd}\label{class_r_t_f_generator_a24addae2fe4889afd85e29b6a19829fd}} 
+void {\bfseries end\+Constraint\+Docs} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ac2a79257f2d23883d6254038588a2267}\label{class_r_t_f_generator_ac2a79257f2d23883d6254038588a2267}} 
+void {\bfseries end\+Constraint\+List} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ac53ea0ed54e7307ed77b669bb5ad9372}\label{class_r_t_f_generator_ac53ea0ed54e7307ed77b669bb5ad9372}} 
+void {\bfseries start\+Member\+Doc\+Simple} (bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a87f706322ff31a59305a9f09051d68c0}\label{class_r_t_f_generator_a87f706322ff31a59305a9f09051d68c0}} 
+void {\bfseries end\+Member\+Doc\+Simple} (bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a28120fbd546b11d4d783b1752d9b3bfa}\label{class_r_t_f_generator_a28120fbd546b11d4d783b1752d9b3bfa}} 
+void {\bfseries start\+Inline\+Member\+Type} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a1dc76b499c4addde663e6c07abad3083}\label{class_r_t_f_generator_a1dc76b499c4addde663e6c07abad3083}} 
+void {\bfseries end\+Inline\+Member\+Type} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ae83e7d998c1bae062c0d0ac838a4227b}\label{class_r_t_f_generator_ae83e7d998c1bae062c0d0ac838a4227b}} 
+void {\bfseries start\+Inline\+Member\+Name} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a561f25430fb6b34b5c014cf63a183ead}\label{class_r_t_f_generator_a561f25430fb6b34b5c014cf63a183ead}} 
+void {\bfseries end\+Inline\+Member\+Name} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_af4b8acfdf0cb5e33d0760a6bdde6322d}\label{class_r_t_f_generator_af4b8acfdf0cb5e33d0760a6bdde6322d}} 
+void {\bfseries start\+Inline\+Member\+Doc} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a20f66586492ba04de6f0a6c57e4aefa6}\label{class_r_t_f_generator_a20f66586492ba04de6f0a6c57e4aefa6}} 
+void {\bfseries end\+Inline\+Member\+Doc} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a7ac65450689663a29331090a1329ea75}\label{class_r_t_f_generator_a7ac65450689663a29331090a1329ea75}} 
+void {\bfseries start\+Labels} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a21da1a74e7ed943dc3cf613ecd23791f}\label{class_r_t_f_generator_a21da1a74e7ed943dc3cf613ecd23791f}} 
+void {\bfseries write\+Label} (const char $\ast$l, bool is\+Last)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a05613171c01f474ba7684b7ef619421e}\label{class_r_t_f_generator_a05613171c01f474ba7684b7ef619421e}} 
+void {\bfseries end\+Labels} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a84114371fc0f3865e0321c2df8ce0ae9}{start\+Font\+Class}} (const char $\ast$)
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a8753e9a10c126e0f8b9af7ff9783afcd}{end\+Font\+Class}} ()
+\item 
+void \mbox{\hyperlink{class_r_t_f_generator_a01b1cb771ecbdb9da62b21c980d1a5ae}{write\+Code\+Anchor}} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a38af98ffc41789449c0204dcde02b7dd}\label{class_r_t_f_generator_a38af98ffc41789449c0204dcde02b7dd}} 
+void {\bfseries set\+Current\+Doc} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$, const char $\ast$, bool)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_af386b517dfdb4b5b5c02cfd2bae5761e}\label{class_r_t_f_generator_af386b517dfdb4b5b5c02cfd2bae5761e}} 
+void {\bfseries add\+Word} (const char $\ast$, bool)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_a20ebc13fc3ca037f977dc8144847db73}\label{class_r_t_f_generator_a20ebc13fc3ca037f977dc8144847db73}} 
+static void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_ace992afab84a2ac7a56ee2b08bff737b}\label{class_r_t_f_generator_ace992afab84a2ac7a56ee2b08bff737b}} 
+static void {\bfseries write\+Style\+Sheet\+File} (\mbox{\hyperlink{class_q_file}{Q\+File}} \&f)
+\item 
+\mbox{\Hypertarget{class_r_t_f_generator_af4a5c00a65aa5e8ba2aab342b171584d}\label{class_r_t_f_generator_af4a5c00a65aa5e8ba2aab342b171584d}} 
+static void {\bfseries write\+Extensions\+File} (\mbox{\hyperlink{class_q_file}{Q\+File}} \&file)
+\item 
+static bool \mbox{\hyperlink{class_r_t_f_generator_a62498deb4b617b2cfb75381f6508a4ed}{pre\+Process\+File\+Inplace}} (const char $\ast$path, const char $\ast$name)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Generator for R\+TF output. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_t_f_generator_a331ca74e622c48bbbcad7e02139a6bfb}\label{class_r_t_f_generator_a331ca74e622c48bbbcad7e02139a6bfb}} 
+\index{RTFGenerator@{RTFGenerator}!codify@{codify}}
+\index{codify@{codify}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{codify()}{codify()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::codify (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes an code fragment to the output. This function should keep spaces visible, should break lines at a newline and should convert tabs to the right number of spaces. 
+
+Implements \mbox{\hyperlink{class_code_output_interface_aa29a5eedda08596ace50ed5b59c8ae7f}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a0e292cd3d60599a4ddfad4036c0b6d46}\label{class_r_t_f_generator_a0e292cd3d60599a4ddfad4036c0b6d46}} 
+\index{RTFGenerator@{RTFGenerator}!docify@{docify}}
+\index{docify@{docify}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{docify()}{docify()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::docify (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes an A\+S\+C\+II string to the output. Converts characters that have \mbox{\hyperlink{class_a}{A}} special meaning, like {\ttfamily \&} in html. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ad7d3f6631bd157739170690e669b3e75}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a430a7df863505527d0b1da4c70116a05}\label{class_r_t_f_generator_a430a7df863505527d0b1da4c70116a05}} 
+\index{RTFGenerator@{RTFGenerator}!endBold@{endBold}}
+\index{endBold@{endBold}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{endBold()}{endBold()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::end\+Bold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+End a section of text displayed in bold face. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a2a17911ba778f8efac83999fb5d190d9}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_ae75111adf81a1179b924ab7656d8c74c}\label{class_r_t_f_generator_ae75111adf81a1179b924ab7656d8c74c}} 
+\index{RTFGenerator@{RTFGenerator}!endCodeFragment@{endCodeFragment}}
+\index{endCodeFragment@{endCodeFragment}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{endCodeFragment()}{endCodeFragment()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::end\+Code\+Fragment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ends a source code fragment 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a08f032482a8f23ac1aab66552db43a81}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a3f63e2fedfb61f656e35df2054a6d772}\label{class_r_t_f_generator_a3f63e2fedfb61f656e35df2054a6d772}} 
+\index{RTFGenerator@{RTFGenerator}!endCodeLine@{endCodeLine}}
+\index{endCodeLine@{endCodeLine}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{endCodeLine()}{endCodeLine()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::end\+Code\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Ends a line of code started with start\+Code\+Line() 
+
+Implements \mbox{\hyperlink{class_code_output_interface_afac5763eafc78f93b82691fb9a6dcff7}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_aaeb8cbfab437b4198548c4f06dc12847}\label{class_r_t_f_generator_aaeb8cbfab437b4198548c4f06dc12847}} 
+\index{RTFGenerator@{RTFGenerator}!endDescItem@{endDescItem}}
+\index{endDescItem@{endDescItem}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{endDescItem()}{endDescItem()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::end\+Desc\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ends an item of a description list and starts the description itself\+: e.\+g. {\ttfamily $<$/dt$>$} in H\+T\+ML. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a09e3aa9d3faac55b2cc9290eaa69f55b}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a4c9b42e803206c575f464d82eec460d9}\label{class_r_t_f_generator_a4c9b42e803206c575f464d82eec460d9}} 
+\index{RTFGenerator@{RTFGenerator}!endDescription@{endDescription}}
+\index{endDescription@{endDescription}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{endDescription()}{endDescription()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::end\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ends a description list\+: e.\+g. {\ttfamily $<$/dl$>$} in H\+T\+ML 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ac25c565e9fd8aee6c2b0d9b71fcff380}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a283896a8d13cd017f4b765d82ba1e132}\label{class_r_t_f_generator_a283896a8d13cd017f4b765d82ba1e132}} 
+\index{RTFGenerator@{RTFGenerator}!endEmphasis@{endEmphasis}}
+\index{endEmphasis@{endEmphasis}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{endEmphasis()}{endEmphasis()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::end\+Emphasis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Ends a section of text displayed in italic. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_aed2cf04d82648509f97403bd4ce62590}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a8753e9a10c126e0f8b9af7ff9783afcd}\label{class_r_t_f_generator_a8753e9a10c126e0f8b9af7ff9783afcd}} 
+\index{RTFGenerator@{RTFGenerator}!endFontClass@{endFontClass}}
+\index{endFontClass@{endFontClass}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{endFontClass()}{endFontClass()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::end\+Font\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ends a block started with \mbox{\hyperlink{class_r_t_f_generator_a84114371fc0f3865e0321c2df8ce0ae9}{start\+Font\+Class()}} 
+
+Implements \mbox{\hyperlink{class_code_output_interface_a2b8ac05a391dae36793aa3aa8714a0f6}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a73a4ea59114077ea461ff16757c8429b}\label{class_r_t_f_generator_a73a4ea59114077ea461ff16757c8429b}} 
+\index{RTFGenerator@{RTFGenerator}!endHtmlLink@{endHtmlLink}}
+\index{endHtmlLink@{endHtmlLink}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{endHtmlLink()}{endHtmlLink()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::end\+Html\+Link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ends a link started by \mbox{\hyperlink{class_r_t_f_generator_a265ab601396745bb97d5c6cee59329d6}{start\+Html\+Link()}}. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_afb808c1c487135d4fb2156d0675b387e}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a530e2868f7db6b92a4423cdee7fc9f75}\label{class_r_t_f_generator_a530e2868f7db6b92a4423cdee7fc9f75}} 
+\index{RTFGenerator@{RTFGenerator}!endItemList@{endItemList}}
+\index{endItemList@{endItemList}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{endItemList()}{endItemList()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::end\+Item\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+end bullet list 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a3493b65672bf134033bd3bb296acdff4}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a4d3cc3baac4adda9ef5da4c9e470871b}\label{class_r_t_f_generator_a4d3cc3baac4adda9ef5da4c9e470871b}} 
+\index{RTFGenerator@{RTFGenerator}!endItemListItem@{endItemListItem}}
+\index{endItemListItem@{endItemListItem}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{endItemListItem()}{endItemListItem()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::end\+Item\+List\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes a list item for a bullet or enumerated list\+: e.\+g. {\ttfamily $<$/li$>$} in html 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a90d290d7a06a9e7ecd968c8da90ed665}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_aefcb5d16655eae184dcacecfd27c0068}\label{class_r_t_f_generator_aefcb5d16655eae184dcacecfd27c0068}} 
+\index{RTFGenerator@{RTFGenerator}!endParagraph@{endParagraph}}
+\index{endParagraph@{endParagraph}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{endParagraph()}{endParagraph()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::end\+Paragraph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ends a paragraph 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ab76280c2eb451ad160991707206b6c95}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_af9e17986de22ddd0b3a4afe4449b4a2c}\label{class_r_t_f_generator_af9e17986de22ddd0b3a4afe4449b4a2c}} 
+\index{RTFGenerator@{RTFGenerator}!endTypewriter@{endTypewriter}}
+\index{endTypewriter@{endTypewriter}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{endTypewriter()}{endTypewriter()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::end\+Typewriter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+End a section of text displayed in typewriter style. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a9e987baf8aed76f0e5e6676b3238d2c8}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a62498deb4b617b2cfb75381f6508a4ed}\label{class_r_t_f_generator_a62498deb4b617b2cfb75381f6508a4ed}} 
+\index{RTFGenerator@{RTFGenerator}!preProcessFileInplace@{preProcessFileInplace}}
+\index{preProcessFileInplace@{preProcessFileInplace}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{preProcessFileInplace()}{preProcessFileInplace()}}
+{\footnotesize\ttfamily bool R\+T\+F\+Generator\+::pre\+Process\+File\+Inplace (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This is an A\+PI to a V\+E\+RY brittle R\+TF preprocessor that combines nested R\+TF files. This version replaces the infile with the new file \mbox{\Hypertarget{class_r_t_f_generator_acb774060df0aaad9be8f91018503b20b}\label{class_r_t_f_generator_acb774060df0aaad9be8f91018503b20b}} 
+\index{RTFGenerator@{RTFGenerator}!startBold@{startBold}}
+\index{startBold@{startBold}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{startBold()}{startBold()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::start\+Bold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Changes the text font to bold face. The bold section ends with \mbox{\hyperlink{class_r_t_f_generator_a430a7df863505527d0b1da4c70116a05}{end\+Bold()}} 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_aa0bfe5ef08077a7191ba4666f47c441b}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_ac7783a014fb21a8688b4f334aea2cc30}\label{class_r_t_f_generator_ac7783a014fb21a8688b4f334aea2cc30}} 
+\index{RTFGenerator@{RTFGenerator}!startCodeFragment@{startCodeFragment}}
+\index{startCodeFragment@{startCodeFragment}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{startCodeFragment()}{startCodeFragment()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::start\+Code\+Fragment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Starts a source code fragment. The fragment will be fed to the code parser (see \mbox{\hyperlink{code_8h_source}{code.\+h}}) for syntax highlighting and cross-\/referencing. The fragment ends by a call to \mbox{\hyperlink{class_r_t_f_generator_ae75111adf81a1179b924ab7656d8c74c}{end\+Code\+Fragment()}} 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ab19fc767b08c25b0ca7c976d24799bda}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a39ef721382a2a25ef0a41463a34f1b02}\label{class_r_t_f_generator_a39ef721382a2a25ef0a41463a34f1b02}} 
+\index{RTFGenerator@{RTFGenerator}!startDescItem@{startDescItem}}
+\index{startDescItem@{startDescItem}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{startDescItem()}{startDescItem()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::start\+Desc\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Starts an item of a description list\+: e.\+g. {\ttfamily $<$dt$>$} in H\+T\+ML. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a5d1cc59d94c3f529c90e0a06704be181}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a9c6c7896f2bd09fb5e6ce53b9e6cee5c}\label{class_r_t_f_generator_a9c6c7896f2bd09fb5e6ce53b9e6cee5c}} 
+\index{RTFGenerator@{RTFGenerator}!startDescription@{startDescription}}
+\index{startDescription@{startDescription}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{startDescription()}{startDescription()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::start\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Starts a description list\+: e.\+g. {\ttfamily $<$dl$>$} in H\+T\+ML Items are surrounded by \mbox{\hyperlink{class_r_t_f_generator_a39ef721382a2a25ef0a41463a34f1b02}{start\+Desc\+Item()}} and \mbox{\hyperlink{class_r_t_f_generator_aaeb8cbfab437b4198548c4f06dc12847}{end\+Desc\+Item()}} 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ac9c801c3ad0b50e3e69be184b50c2fef}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a235071d9e43bed7dabaec79e88bf43c7}\label{class_r_t_f_generator_a235071d9e43bed7dabaec79e88bf43c7}} 
+\index{RTFGenerator@{RTFGenerator}!startEmphasis@{startEmphasis}}
+\index{startEmphasis@{startEmphasis}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{startEmphasis()}{startEmphasis()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::start\+Emphasis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Changes the text font to italic. The italic section ends with \mbox{\hyperlink{class_r_t_f_generator_a283896a8d13cd017f4b765d82ba1e132}{end\+Emphasis()}} 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a21debc3a6c4c58791a41e715dc78f4ab}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a84114371fc0f3865e0321c2df8ce0ae9}\label{class_r_t_f_generator_a84114371fc0f3865e0321c2df8ce0ae9}} 
+\index{RTFGenerator@{RTFGenerator}!startFontClass@{startFontClass}}
+\index{startFontClass@{startFontClass}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{startFontClass()}{startFontClass()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::start\+Font\+Class (\begin{DoxyParamCaption}\item[{const char $\ast$}]{cls\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Starts a block with a certain meaning. Used for syntax highlighting, which elements of the same type are rendered using the same \textquotesingle{}font class\textquotesingle{}. 
+\begin{DoxyParams}{Parameters}
+{\em cls\+Name} & The category name. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_ac90f75968cdcf127e0b02938bdb49d87}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a265ab601396745bb97d5c6cee59329d6}\label{class_r_t_f_generator_a265ab601396745bb97d5c6cee59329d6}} 
+\index{RTFGenerator@{RTFGenerator}!startHtmlLink@{startHtmlLink}}
+\index{startHtmlLink@{startHtmlLink}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{startHtmlLink()}{startHtmlLink()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::start\+Html\+Link (\begin{DoxyParamCaption}\item[{const char $\ast$}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Starts a (link to an) \mbox{\hyperlink{struct_u_r_l}{U\+RL}} found in the documentation. 
+\begin{DoxyParams}{Parameters}
+{\em url} & The \mbox{\hyperlink{struct_u_r_l}{U\+RL}} to link to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ab52dbf41ce337c701f9cd1e7794f80e7}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a277db06db2dc29602f3209ca899111c9}\label{class_r_t_f_generator_a277db06db2dc29602f3209ca899111c9}} 
+\index{RTFGenerator@{RTFGenerator}!startItemList@{startItemList}}
+\index{startItemList@{startItemList}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{startItemList()}{startItemList()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::start\+Item\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+start bullet list 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a54b169393594b6cf113977ccccaeb9ee}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_ae09155b5cf6fb7457ae598f22d65d045}\label{class_r_t_f_generator_ae09155b5cf6fb7457ae598f22d65d045}} 
+\index{RTFGenerator@{RTFGenerator}!startItemListItem@{startItemListItem}}
+\index{startItemListItem@{startItemListItem}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{startItemListItem()}{startItemListItem()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::start\+Item\+List\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+start enumeration list
+
+end enumeration list
+
+write bullet or enum item 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_aa1cbcadfedf8e6d52029d17526b5fa3f}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a98ea7dff7770c95c08f7f82dc872881b}\label{class_r_t_f_generator_a98ea7dff7770c95c08f7f82dc872881b}} 
+\index{RTFGenerator@{RTFGenerator}!startParagraph@{startParagraph}}
+\index{startParagraph@{startParagraph}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{startParagraph()}{startParagraph()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::start\+Paragraph (\begin{DoxyParamCaption}\item[{const char $\ast$}]{class\+Def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Starts a new paragraph
+
+Starts a new paragraph 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a9f711f4ef8f48b9c7b1cae625578e7ff}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_ac3760aa18a5102cd8e8b0a4969f0953d}\label{class_r_t_f_generator_ac3760aa18a5102cd8e8b0a4969f0953d}} 
+\index{RTFGenerator@{RTFGenerator}!startTypewriter@{startTypewriter}}
+\index{startTypewriter@{startTypewriter}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{startTypewriter()}{startTypewriter()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::start\+Typewriter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Changes the text font to fixed size. The section ends with \mbox{\hyperlink{class_r_t_f_generator_af9e17986de22ddd0b3a4afe4449b4a2c}{end\+Typewriter()}} 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_abde41a60b900d35b0b198f43731c1cd0}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a1d1912d4a9d95b54ee88b12b3306e3d2}\label{class_r_t_f_generator_a1d1912d4a9d95b54ee88b12b3306e3d2}} 
+\index{RTFGenerator@{RTFGenerator}!writeChar@{writeChar}}
+\index{writeChar@{writeChar}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{writeChar()}{writeChar()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::write\+Char (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes a single A\+S\+C\+II character to the output. Converts characters that have a special meaning. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a1577324720c1c71142dff84ae80b058d}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a01b1cb771ecbdb9da62b21c980d1a5ae}\label{class_r_t_f_generator_a01b1cb771ecbdb9da62b21c980d1a5ae}} 
+\index{RTFGenerator@{RTFGenerator}!writeCodeAnchor@{writeCodeAnchor}}
+\index{writeCodeAnchor@{writeCodeAnchor}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{writeCodeAnchor()}{writeCodeAnchor()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::write\+Code\+Anchor (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Write an anchor to a source listing. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the anchor. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a1f6394c4ef7c4143de90bcaf3a65c0b4}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_ad598f8811fde4d3b1849c2e9b92a6686}\label{class_r_t_f_generator_ad598f8811fde4d3b1849c2e9b92a6686}} 
+\index{RTFGenerator@{RTFGenerator}!writeCodeLink@{writeCodeLink}}
+\index{writeCodeLink@{writeCodeLink}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{writeCodeLink()}{writeCodeLink()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::write\+Code\+Link (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ref,  }\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{anchor,  }\item[{const char $\ast$}]{name,  }\item[{const char $\ast$}]{tooltip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes a link to an object in a code fragment. 
+\begin{DoxyParams}{Parameters}
+{\em ref} & If this is non-\/zero, the object is to be found in an external documentation file. \\
+\hline
+{\em file} & The file in which the object is located. \\
+\hline
+{\em anchor} & The anchor uniquely identifying the object within the file. \\
+\hline
+{\em name} & The text to display as a placeholder for the link. \\
+\hline
+{\em tooltip} & The tooltip to display when the mouse is on the link. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a102e2b7f40916c75b79871307f5bb674}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a4e6a13e14340ff6585c305d3c9b55c4f}\label{class_r_t_f_generator_a4e6a13e14340ff6585c305d3c9b55c4f}} 
+\index{RTFGenerator@{RTFGenerator}!writeLineNumber@{writeLineNumber}}
+\index{writeLineNumber@{writeLineNumber}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{writeLineNumber()}{writeLineNumber()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::write\+Line\+Number (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ref,  }\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{anchor,  }\item[{int}]{line\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Writes the line number of a source listing 
+\begin{DoxyParams}{Parameters}
+{\em ref} & External reference (when imported from a tag file) \\
+\hline
+{\em file} & The file part of the \mbox{\hyperlink{struct_u_r_l}{U\+RL}} pointing to the docs. \\
+\hline
+{\em anchor} & The anchor part of the \mbox{\hyperlink{struct_u_r_l}{U\+RL}} pointing to the docs. \\
+\hline
+{\em line\+Number} & The line number to write \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a8115646785b65e292480c2e4e969b389}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a5b27737ba89d55761a9908a088631367}\label{class_r_t_f_generator_a5b27737ba89d55761a9908a088631367}} 
+\index{RTFGenerator@{RTFGenerator}!writeObjectLink@{writeObjectLink}}
+\index{writeObjectLink@{writeObjectLink}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{writeObjectLink()}{writeObjectLink()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::write\+Object\+Link (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ref,  }\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{anchor,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes a link to an object in the documentation. 
+\begin{DoxyParams}{Parameters}
+{\em ref} & If this is non-\/zero, the object is to be found in an external documentation file. \\
+\hline
+{\em file} & The file in which the object is located. \\
+\hline
+{\em anchor} & The anchor uniquely identifying the object within the file. \\
+\hline
+{\em name} & The text to display as a placeholder for the link. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a3537423635807fe140ec5be1a2198060}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a97d0c2260e0642d5b6ac0117b2e91687}\label{class_r_t_f_generator_a97d0c2260e0642d5b6ac0117b2e91687}} 
+\index{RTFGenerator@{RTFGenerator}!writeRuler@{writeRuler}}
+\index{writeRuler@{writeRuler}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{writeRuler()}{writeRuler()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::write\+Ruler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Writes a horizontal ruler to the output 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ade0d004fb6e8641c92f2f144d7242f0b}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_ace3fd5e7a703cbae0272372d7e55083b}\label{class_r_t_f_generator_ace3fd5e7a703cbae0272372d7e55083b}} 
+\index{RTFGenerator@{RTFGenerator}!writeString@{writeString}}
+\index{writeString@{writeString}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{writeString()}{writeString()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::write\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes an A\+S\+C\+II string to the output, {\itshape without} converting special characters. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a5737513ddf260787b5b79c84ae1059af}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_r_t_f_generator_a06e0455dd78d9d79ea51e6d31e6877fe}\label{class_r_t_f_generator_a06e0455dd78d9d79ea51e6d31e6877fe}} 
+\index{RTFGenerator@{RTFGenerator}!writeTooltip@{writeTooltip}}
+\index{writeTooltip@{writeTooltip}!RTFGenerator@{RTFGenerator}}
+\subsubsection{\texorpdfstring{writeTooltip()}{writeTooltip()}}
+{\footnotesize\ttfamily void R\+T\+F\+Generator\+::write\+Tooltip (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{const \mbox{\hyperlink{struct_doc_link_info}{Doc\+Link\+Info}} \&}]{doc\+Info,  }\item[{const char $\ast$}]{decl,  }\item[{const char $\ast$}]{desc,  }\item[{const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&}]{def\+Info,  }\item[{const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&}]{decl\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Writes a tool tip definition 
+\begin{DoxyParams}{Parameters}
+{\em id} & unique identifier for the tooltip \\
+\hline
+{\em doc\+Info} & Info about the symbol\textquotesingle{}s documentation. \\
+\hline
+{\em decl} & full declaration of the symbol (for functions) \\
+\hline
+{\em desc} & brief description for the symbol \\
+\hline
+{\em def\+Info} & Info about the symbol\textquotesingle{}s definition in the source code \\
+\hline
+{\em decl\+Info} & Info about the symbol\textquotesingle{}s declaration in the source code \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a4326ca642f6ec228466ae310622f73ad}{Code\+Output\+Interface}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/rtfgen.\+h\item 
+doxygen/src/rtfgen.\+cpp\end{DoxyCompactItemize}

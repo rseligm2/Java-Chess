@@ -1,0 +1,613 @@
+\hypertarget{class_q_file_info}{}\section{Q\+File\+Info Class Reference}
+\label{class_q_file_info}\index{QFileInfo@{QFileInfo}}
+
+
+The \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} class provides system-\/independent file information.  
+
+
+
+
+{\ttfamily \#include $<$qfileinfo.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_file_info_a7fa0cd94ba7f096133efda899aeafab9}\label{class_q_file_info_a7fa0cd94ba7f096133efda899aeafab9}} 
+enum {\bfseries Permission\+Spec} \{ \newline
+{\bfseries Read\+User} = 0400, 
+{\bfseries Write\+User} = 0200, 
+{\bfseries Exe\+User} = 0100, 
+{\bfseries Read\+Group} = 0040, 
+\newline
+{\bfseries Write\+Group} = 0020, 
+{\bfseries Exe\+Group} = 0010, 
+{\bfseries Read\+Other} = 0004, 
+{\bfseries Write\+Other} = 0002, 
+\newline
+{\bfseries Exe\+Other} = 0001
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_file_info_a7cfa76234a4b4c22f071a41452c5f7df}{Q\+File\+Info}} ()
+\item 
+\mbox{\hyperlink{class_q_file_info_a0b6a4788de6ee6c2b66a0841cd212bbe}{Q\+File\+Info}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&file)
+\item 
+\mbox{\hyperlink{class_q_file_info_a33f5eaacd649938cf6a915817384c1f4}{Q\+File\+Info}} (const \mbox{\hyperlink{class_q_file}{Q\+File}} \&)
+\item 
+\mbox{\hyperlink{class_q_file_info_a6d57e31d5a4a8e6b6d405d2dd68641b5}{Q\+File\+Info}} (const \mbox{\hyperlink{class_q_dir}{Q\+Dir}} \&, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&\mbox{\hyperlink{class_q_file_info_a4f6795e14c6dc89e4a54d7b5cad9d03f}{file\+Name}})
+\item 
+\mbox{\hyperlink{class_q_file_info_ab147e0bd29337bd3d8d911c5666a941a}{Q\+File\+Info}} (const \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} \&)
+\item 
+\mbox{\hyperlink{class_q_file_info_a37e6d4bbfffdd1b9d055923f3f0f4d7c}{$\sim$\+Q\+File\+Info}} ()
+\item 
+\mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} \& \mbox{\hyperlink{class_q_file_info_aa2a8e3037097440bf77f07d1c51f0369}{operator=}} (const \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} \&)
+\item 
+void \mbox{\hyperlink{class_q_file_info_a6215e0e8c9466ee7db82c13259655b98}{set\+File}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&file)
+\item 
+void \mbox{\hyperlink{class_q_file_info_a9a90b344f26a58641fa784efbaa3ce6e}{set\+File}} (const \mbox{\hyperlink{class_q_file}{Q\+File}} \&)
+\item 
+void \mbox{\hyperlink{class_q_file_info_a12f26e174efbe009fbda56c5344db89a}{set\+File}} (const \mbox{\hyperlink{class_q_dir}{Q\+Dir}} \&, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&\mbox{\hyperlink{class_q_file_info_a4f6795e14c6dc89e4a54d7b5cad9d03f}{file\+Name}})
+\item 
+bool \mbox{\hyperlink{class_q_file_info_af7a247c24ea455875293d6406db652a4}{exists}} () const
+\item 
+void \mbox{\hyperlink{class_q_file_info_a2e046cd4da1f8804c9f39e05921232c5}{refresh}} () const
+\item 
+bool \mbox{\hyperlink{class_q_file_info_adf5d4a3e1c616dde6d932eaa9d7bce91}{caching}} () const
+\item 
+void \mbox{\hyperlink{class_q_file_info_a9f2d5de0b83ff0c42b0004574ec9ddf5}{set\+Caching}} (bool)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_file_info_af3dc855c31853287a4f4a17a18d68bc2}{file\+Path}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_file_info_a4f6795e14c6dc89e4a54d7b5cad9d03f}{file\+Name}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_file_info_a762ffb9217db04495831537e38db1bde}{abs\+File\+Path}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_file_info_a17e986f20da0f2f8239fb99c5b6ecd27}{base\+Name}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_file_info_aea9896c7746e79f76b66b1bd71631520}{extension}} (bool complete=T\+R\+UE) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_file_info_ab31c5b7d4c01901e056fa456fd9863d1}{dir\+Path}} (bool abs\+Path=F\+A\+L\+SE) const
+\item 
+\mbox{\hyperlink{class_q_dir}{Q\+Dir}} \mbox{\hyperlink{class_q_file_info_ac3d8f896db959c0688ae38500c3712f3}{dir}} (bool abs\+Path=F\+A\+L\+SE) const
+\item 
+bool \mbox{\hyperlink{class_q_file_info_af8795a46c49f6911a14f66218949f213}{is\+Readable}} () const
+\item 
+bool \mbox{\hyperlink{class_q_file_info_ab2dcfc1ea9764ea5e6ea9cc684156c92}{is\+Writable}} () const
+\item 
+bool \mbox{\hyperlink{class_q_file_info_a5b834ba486c5f6da3b429751ee84fd12}{is\+Executable}} () const
+\item 
+bool \mbox{\hyperlink{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}{is\+Relative}} () const
+\item 
+bool \mbox{\hyperlink{class_q_file_info_a3a4b0328b3fd423e0cfb0747445760b8}{convert\+To\+Abs}} ()
+\item 
+bool \mbox{\hyperlink{class_q_file_info_a6bc9021370d012084b9464ba22172d46}{is\+File}} () const
+\item 
+bool \mbox{\hyperlink{class_q_file_info_a91a725dd517a4b77b15077e72a7a1501}{is\+Dir}} () const
+\item 
+bool \mbox{\hyperlink{class_q_file_info_a0e8114893edbe9d471b6f1389add29fd}{is\+Sym\+Link}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_file_info_ad6d74b51c535f45dda430ac0d755f569}{read\+Link}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_file_info_a96831b45809e905dc14e5c065bfa8421}{owner}} () const
+\item 
+uint \mbox{\hyperlink{class_q_file_info_ab963b7409fa73f7cc31aaff794015c4f}{owner\+Id}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_file_info_afb46f8fb3080ab0b32b4236436624ea3}{group}} () const
+\item 
+uint \mbox{\hyperlink{class_q_file_info_a40e9808fbf54b07717d2f3a4307da74f}{group\+Id}} () const
+\item 
+bool \mbox{\hyperlink{class_q_file_info_a51ec346b961f115fd7e45664d27862db}{permission}} (int permission\+Spec) const
+\item 
+uint \mbox{\hyperlink{class_q_file_info_a5effd75eb8571416146ac546e70cb2d7}{size}} () const
+\item 
+\mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \mbox{\hyperlink{class_q_file_info_a0dd39dbfc2db6a5af5222db19804e45a}{last\+Modified}} () const
+\item 
+\mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \mbox{\hyperlink{class_q_file_info_a0d47b9b2eb739466feb670a4102498aa}{last\+Read}} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} class provides system-\/independent file information. 
+
+\mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} provides information about a file\textquotesingle{}s name and position (path) in the file system, its access rights and whether it is a directory or a symbolic link. Its size and last modified/read times are also available.
+
+To speed up performance \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} caches information about the file. Since files can be changed by other users or programs, or even by other parts of the same program there is a function that refreshes the file information; \mbox{\hyperlink{class_q_file_info_a2e046cd4da1f8804c9f39e05921232c5}{refresh()}}. If you would rather like a \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} to access the file system every time you request information from it, you can call the function set\+Caching( F\+A\+L\+S\+E ).
+
+\mbox{\hyperlink{class_a}{A}} \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} can point to a file using either a relative or an absolute file path. Absolute file paths begin with the directory separator (\textquotesingle{}/\textquotesingle{}) or a drive specification (not applicable to U\+N\+IX). Relative file names begin with a directory name or a file name and specify a path relative to the current directory. An example of an absolute path is the string \char`\"{}/tmp/quartz\char`\"{}. \mbox{\hyperlink{class_a}{A}} relative path might look like \char`\"{}src/fatlib\char`\"{}. You can use the function \mbox{\hyperlink{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}{is\+Relative()}} to check if a \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} is using a relative or an absolute file path. You can call the function \mbox{\hyperlink{class_q_file_info_a3a4b0328b3fd423e0cfb0747445760b8}{convert\+To\+Abs()}} to convert a relative \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} to an absolute one.
+
+If you need to read and traverse directories, see the \mbox{\hyperlink{class_q_dir}{Q\+Dir}} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_file_info_a7cfa76234a4b4c22f071a41452c5f7df}\label{class_q_file_info_a7cfa76234a4b4c22f071a41452c5f7df}} 
+\index{QFileInfo@{QFileInfo}!QFileInfo@{QFileInfo}}
+\index{QFileInfo@{QFileInfo}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{QFileInfo()}{QFileInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Q\+File\+Info\+::\+Q\+File\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a new empty \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}}. \mbox{\Hypertarget{class_q_file_info_a0b6a4788de6ee6c2b66a0841cd212bbe}\label{class_q_file_info_a0b6a4788de6ee6c2b66a0841cd212bbe}} 
+\index{QFileInfo@{QFileInfo}!QFileInfo@{QFileInfo}}
+\index{QFileInfo@{QFileInfo}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{QFileInfo()}{QFileInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Q\+File\+Info\+::\+Q\+File\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{file }\end{DoxyParamCaption})}
+
+Constructs a new \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} that gives information about the given file. The string given can be an absolute or a relative file path.
+
+\begin{DoxySeeAlso}{See also}
+bool set\+File(\+Q\+String ), \mbox{\hyperlink{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}{is\+Relative()}}, Q\+Dir\+::set\+Current(), Q\+Dir\+::is\+Relative\+Path() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a33f5eaacd649938cf6a915817384c1f4}\label{class_q_file_info_a33f5eaacd649938cf6a915817384c1f4}} 
+\index{QFileInfo@{QFileInfo}!QFileInfo@{QFileInfo}}
+\index{QFileInfo@{QFileInfo}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{QFileInfo()}{QFileInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Q\+File\+Info\+::\+Q\+File\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_file}{Q\+File}} \&}]{file }\end{DoxyParamCaption})}
+
+Constructs a new \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} that gives information about {\itshape file}.
+
+If the file has a relative path, the \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} will also have one.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}{is\+Relative()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a6d57e31d5a4a8e6b6d405d2dd68641b5}\label{class_q_file_info_a6d57e31d5a4a8e6b6d405d2dd68641b5}} 
+\index{QFileInfo@{QFileInfo}!QFileInfo@{QFileInfo}}
+\index{QFileInfo@{QFileInfo}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{QFileInfo()}{QFileInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Q\+File\+Info\+::\+Q\+File\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_dir}{Q\+Dir}} \&}]{d,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{file\+Name }\end{DoxyParamCaption})}
+
+Constructs a new \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} that gives information about the file named {\itshape file\+Name} in the directory {\itshape d}.
+
+If the directory has a relative path, the \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} will also have one.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}{is\+Relative()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_ab147e0bd29337bd3d8d911c5666a941a}\label{class_q_file_info_ab147e0bd29337bd3d8d911c5666a941a}} 
+\index{QFileInfo@{QFileInfo}!QFileInfo@{QFileInfo}}
+\index{QFileInfo@{QFileInfo}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{QFileInfo()}{QFileInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Q\+File\+Info\+::\+Q\+File\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} \&}]{fi }\end{DoxyParamCaption})}
+
+Constructs a new \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} that is a copy of {\itshape fi}. \mbox{\Hypertarget{class_q_file_info_a37e6d4bbfffdd1b9d055923f3f0f4d7c}\label{class_q_file_info_a37e6d4bbfffdd1b9d055923f3f0f4d7c}} 
+\index{QFileInfo@{QFileInfo}!````~QFileInfo@{$\sim$QFileInfo}}
+\index{````~QFileInfo@{$\sim$QFileInfo}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{$\sim$QFileInfo()}{~QFileInfo()}}
+{\footnotesize\ttfamily Q\+File\+Info\+::$\sim$\+Q\+File\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructs the \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_file_info_a762ffb9217db04495831537e38db1bde}\label{class_q_file_info_a762ffb9217db04495831537e38db1bde}} 
+\index{QFileInfo@{QFileInfo}!absFilePath@{absFilePath}}
+\index{absFilePath@{absFilePath}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{absFilePath()}{absFilePath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+File\+Info\+::abs\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the absolute path name.
+
+The absolute path name is the file name including the absolute path. If the \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} is absolute (i.\+e. not relative) this function will return the same string as \mbox{\hyperlink{class_q_file_info_af3dc855c31853287a4f4a17a18d68bc2}{file\+Path()}}.
+
+Note that this function can be time-\/consuming under U\+N\+IX. (in the order of milliseconds on a 486 D\+X2/66 running Linux).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}{is\+Relative()}}, \mbox{\hyperlink{class_q_file_info_af3dc855c31853287a4f4a17a18d68bc2}{file\+Path()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a17e986f20da0f2f8239fb99c5b6ecd27}\label{class_q_file_info_a17e986f20da0f2f8239fb99c5b6ecd27}} 
+\index{QFileInfo@{QFileInfo}!baseName@{baseName}}
+\index{baseName@{baseName}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{baseName()}{baseName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+File\+Info\+::base\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the base name of the file.
+
+The base name consists of all characters in the file name up to (but not including) the first \textquotesingle{}.\textquotesingle{} character. The path is not included.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_file_info}{QFileInfo}} fi( \textcolor{stringliteral}{"/tmp/abdomen.lower"} );}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} base = fi.\mbox{\hyperlink{class_q_file_info_a17e986f20da0f2f8239fb99c5b6ecd27}{baseName}}();        \textcolor{comment}{// base = "abdomen"}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_a4f6795e14c6dc89e4a54d7b5cad9d03f}{file\+Name()}}, \mbox{\hyperlink{class_q_file_info_aea9896c7746e79f76b66b1bd71631520}{extension()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_adf5d4a3e1c616dde6d932eaa9d7bce91}\label{class_q_file_info_adf5d4a3e1c616dde6d932eaa9d7bce91}} 
+\index{QFileInfo@{QFileInfo}!caching@{caching}}
+\index{caching@{caching}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{caching()}{caching()}}
+{\footnotesize\ttfamily bool Q\+File\+Info\+::caching (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if caching is enabled. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_a9f2d5de0b83ff0c42b0004574ec9ddf5}{set\+Caching()}}, \mbox{\hyperlink{class_q_file_info_a2e046cd4da1f8804c9f39e05921232c5}{refresh()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a3a4b0328b3fd423e0cfb0747445760b8}\label{class_q_file_info_a3a4b0328b3fd423e0cfb0747445760b8}} 
+\index{QFileInfo@{QFileInfo}!convertToAbs@{convertToAbs}}
+\index{convertToAbs@{convertToAbs}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{convertToAbs()}{convertToAbs()}}
+{\footnotesize\ttfamily bool Q\+File\+Info\+::convert\+To\+Abs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Converts the file path name to an absolute path.
+
+If it is already absolute nothing is done.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_af3dc855c31853287a4f4a17a18d68bc2}{file\+Path()}}, \mbox{\hyperlink{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}{is\+Relative()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_ac3d8f896db959c0688ae38500c3712f3}\label{class_q_file_info_ac3d8f896db959c0688ae38500c3712f3}} 
+\index{QFileInfo@{QFileInfo}!dir@{dir}}
+\index{dir@{dir}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{dir()}{dir()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_dir}{Q\+Dir}} Q\+File\+Info\+::dir (\begin{DoxyParamCaption}\item[{bool}]{abs\+Path = {\ttfamily FALSE} }\end{DoxyParamCaption}) const}
+
+Returns the directory path of the file.
+
+If the \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} is relative and {\itshape abs\+Path} is F\+A\+L\+SE, the \mbox{\hyperlink{class_q_dir}{Q\+Dir}} will be relative, otherwise it will be absolute.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_ab31c5b7d4c01901e056fa456fd9863d1}{dir\+Path()}}, \mbox{\hyperlink{class_q_file_info_af3dc855c31853287a4f4a17a18d68bc2}{file\+Path()}}, \mbox{\hyperlink{class_q_file_info_a4f6795e14c6dc89e4a54d7b5cad9d03f}{file\+Name()}}, \mbox{\hyperlink{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}{is\+Relative()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_ab31c5b7d4c01901e056fa456fd9863d1}\label{class_q_file_info_ab31c5b7d4c01901e056fa456fd9863d1}} 
+\index{QFileInfo@{QFileInfo}!dirPath@{dirPath}}
+\index{dirPath@{dirPath}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{dirPath()}{dirPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+File\+Info\+::dir\+Path (\begin{DoxyParamCaption}\item[{bool}]{abs\+Path = {\ttfamily FALSE} }\end{DoxyParamCaption}) const}
+
+Returns the directory path of the file.
+
+If {\itshape abs\+Path} is T\+R\+UE an absolute path is always returned.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_ac3d8f896db959c0688ae38500c3712f3}{dir()}}, \mbox{\hyperlink{class_q_file_info_af3dc855c31853287a4f4a17a18d68bc2}{file\+Path()}}, \mbox{\hyperlink{class_q_file_info_a4f6795e14c6dc89e4a54d7b5cad9d03f}{file\+Name()}}, \mbox{\hyperlink{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}{is\+Relative()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_af7a247c24ea455875293d6406db652a4}\label{class_q_file_info_af7a247c24ea455875293d6406db652a4}} 
+\index{QFileInfo@{QFileInfo}!exists@{exists}}
+\index{exists@{exists}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily bool Q\+File\+Info\+::exists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE if the file pointed to exists, otherwise F\+A\+L\+SE. \mbox{\Hypertarget{class_q_file_info_aea9896c7746e79f76b66b1bd71631520}\label{class_q_file_info_aea9896c7746e79f76b66b1bd71631520}} 
+\index{QFileInfo@{QFileInfo}!extension@{extension}}
+\index{extension@{extension}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{extension()}{extension()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+File\+Info\+::extension (\begin{DoxyParamCaption}\item[{bool}]{complete = {\ttfamily TRUE} }\end{DoxyParamCaption}) const}
+
+Returns the extension name of the file.
+
+If {\itshape complete} is T\+R\+UE (the default), \mbox{\hyperlink{class_q_file_info_aea9896c7746e79f76b66b1bd71631520}{extension()}} returns the string of all characters in the file name after (but not including) the first \textquotesingle{}.\textquotesingle{} character. For a file named \char`\"{}archive.\+tar.\+gz\char`\"{} this returns \char`\"{}tar.\+gz\char`\"{}.
+
+If {\itshape complete} is F\+A\+L\+SE, \mbox{\hyperlink{class_q_file_info_aea9896c7746e79f76b66b1bd71631520}{extension()}} returns the string of all characters in the file name after (but not including) the last \textquotesingle{}.\textquotesingle{} character. For a file named \char`\"{}archive.\+tar.\+gz\char`\"{} this returns \char`\"{}gz\char`\"{}.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_file_info}{QFileInfo}} fi( \textcolor{stringliteral}{"lex.yy.c"} );}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} ext = fi.\mbox{\hyperlink{class_q_file_info_aea9896c7746e79f76b66b1bd71631520}{extension}}();        \textcolor{comment}{// ext = "yy.c"}}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} ext = fi.\mbox{\hyperlink{class_q_file_info_aea9896c7746e79f76b66b1bd71631520}{extension}}( FALSE ); \textcolor{comment}{// ext = "c"}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_a4f6795e14c6dc89e4a54d7b5cad9d03f}{file\+Name()}}, \mbox{\hyperlink{class_q_file_info_a17e986f20da0f2f8239fb99c5b6ecd27}{base\+Name()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a4f6795e14c6dc89e4a54d7b5cad9d03f}\label{class_q_file_info_a4f6795e14c6dc89e4a54d7b5cad9d03f}} 
+\index{QFileInfo@{QFileInfo}!fileName@{fileName}}
+\index{fileName@{fileName}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{fileName()}{fileName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+File\+Info\+::file\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the name of the file, the file path is not included.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_file_info}{QFileInfo}} fi( \textcolor{stringliteral}{"/tmp/abdomen.lower"} );}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} name = fi.\mbox{\hyperlink{class_q_file_info_a4f6795e14c6dc89e4a54d7b5cad9d03f}{fileName}}();        \textcolor{comment}{// name = "abdomen.lower"}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}{is\+Relative()}}, \mbox{\hyperlink{class_q_file_info_af3dc855c31853287a4f4a17a18d68bc2}{file\+Path()}}, \mbox{\hyperlink{class_q_file_info_a17e986f20da0f2f8239fb99c5b6ecd27}{base\+Name()}}, \mbox{\hyperlink{class_q_file_info_aea9896c7746e79f76b66b1bd71631520}{extension()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_af3dc855c31853287a4f4a17a18d68bc2}\label{class_q_file_info_af3dc855c31853287a4f4a17a18d68bc2}} 
+\index{QFileInfo@{QFileInfo}!filePath@{filePath}}
+\index{filePath@{filePath}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{filePath()}{filePath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+File\+Info\+::file\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the name, i.\+e. the file name including the path (which can be absolute or relative).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}{is\+Relative()}}, \mbox{\hyperlink{class_q_file_info_a762ffb9217db04495831537e38db1bde}{abs\+File\+Path()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_afb46f8fb3080ab0b32b4236436624ea3}\label{class_q_file_info_afb46f8fb3080ab0b32b4236436624ea3}} 
+\index{QFileInfo@{QFileInfo}!group@{group}}
+\index{group@{group}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{group()}{group()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+File\+Info\+::group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the group the file belongs to.
+
+On systems where files do not have groups this function always returns 0.
+
+Note that this function can be time-\/consuming under U\+N\+IX (in the order of milliseconds on a 486 D\+X2/66 running Linux).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_a40e9808fbf54b07717d2f3a4307da74f}{group\+Id()}}, \mbox{\hyperlink{class_q_file_info_a96831b45809e905dc14e5c065bfa8421}{owner()}}, \mbox{\hyperlink{class_q_file_info_ab963b7409fa73f7cc31aaff794015c4f}{owner\+Id()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a40e9808fbf54b07717d2f3a4307da74f}\label{class_q_file_info_a40e9808fbf54b07717d2f3a4307da74f}} 
+\index{QFileInfo@{QFileInfo}!groupId@{groupId}}
+\index{groupId@{groupId}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{groupId()}{groupId()}}
+{\footnotesize\ttfamily uint Q\+File\+Info\+::group\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the id of the group the file belongs to.
+
+On systems where files do not have groups this function always returns ((uind) -\/2).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_afb46f8fb3080ab0b32b4236436624ea3}{group()}}, \mbox{\hyperlink{class_q_file_info_a96831b45809e905dc14e5c065bfa8421}{owner()}}, \mbox{\hyperlink{class_q_file_info_ab963b7409fa73f7cc31aaff794015c4f}{owner\+Id()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a91a725dd517a4b77b15077e72a7a1501}\label{class_q_file_info_a91a725dd517a4b77b15077e72a7a1501}} 
+\index{QFileInfo@{QFileInfo}!isDir@{isDir}}
+\index{isDir@{isDir}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{isDir()}{isDir()}}
+{\footnotesize\ttfamily bool Q\+File\+Info\+::is\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE if we are pointing to a directory or a symbolic link to a directory. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_a6bc9021370d012084b9464ba22172d46}{is\+File()}}, \mbox{\hyperlink{class_q_file_info_a0e8114893edbe9d471b6f1389add29fd}{is\+Sym\+Link()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a5b834ba486c5f6da3b429751ee84fd12}\label{class_q_file_info_a5b834ba486c5f6da3b429751ee84fd12}} 
+\index{QFileInfo@{QFileInfo}!isExecutable@{isExecutable}}
+\index{isExecutable@{isExecutable}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{isExecutable()}{isExecutable()}}
+{\footnotesize\ttfamily bool Q\+File\+Info\+::is\+Executable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE if the file is executable. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_af8795a46c49f6911a14f66218949f213}{is\+Readable()}}, \mbox{\hyperlink{class_q_file_info_ab2dcfc1ea9764ea5e6ea9cc684156c92}{is\+Writable()}}, \mbox{\hyperlink{class_q_file_info_a51ec346b961f115fd7e45664d27862db}{permission()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a6bc9021370d012084b9464ba22172d46}\label{class_q_file_info_a6bc9021370d012084b9464ba22172d46}} 
+\index{QFileInfo@{QFileInfo}!isFile@{isFile}}
+\index{isFile@{isFile}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{isFile()}{isFile()}}
+{\footnotesize\ttfamily bool Q\+File\+Info\+::is\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE if we are pointing to a real file. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_a91a725dd517a4b77b15077e72a7a1501}{is\+Dir()}}, \mbox{\hyperlink{class_q_file_info_a0e8114893edbe9d471b6f1389add29fd}{is\+Sym\+Link()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_af8795a46c49f6911a14f66218949f213}\label{class_q_file_info_af8795a46c49f6911a14f66218949f213}} 
+\index{QFileInfo@{QFileInfo}!isReadable@{isReadable}}
+\index{isReadable@{isReadable}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{isReadable()}{isReadable()}}
+{\footnotesize\ttfamily bool Q\+File\+Info\+::is\+Readable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE if the file is readable. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_ab2dcfc1ea9764ea5e6ea9cc684156c92}{is\+Writable()}}, \mbox{\hyperlink{class_q_file_info_a5b834ba486c5f6da3b429751ee84fd12}{is\+Executable()}}, \mbox{\hyperlink{class_q_file_info_a51ec346b961f115fd7e45664d27862db}{permission()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}\label{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}} 
+\index{QFileInfo@{QFileInfo}!isRelative@{isRelative}}
+\index{isRelative@{isRelative}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{isRelative()}{isRelative()}}
+{\footnotesize\ttfamily bool Q\+File\+Info\+::is\+Relative (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE if the file path name is relative to the current directory, F\+A\+L\+SE if the path is absolute (e.\+g. under U\+N\+IX a path is relative if it does not start with a \textquotesingle{}/\textquotesingle{}).
+
+According to Einstein this function should always return T\+R\+UE. \mbox{\Hypertarget{class_q_file_info_a0e8114893edbe9d471b6f1389add29fd}\label{class_q_file_info_a0e8114893edbe9d471b6f1389add29fd}} 
+\index{QFileInfo@{QFileInfo}!isSymLink@{isSymLink}}
+\index{isSymLink@{isSymLink}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{isSymLink()}{isSymLink()}}
+{\footnotesize\ttfamily bool Q\+File\+Info\+::is\+Sym\+Link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE if we are pointing to a symbolic link. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_a6bc9021370d012084b9464ba22172d46}{is\+File()}}, \mbox{\hyperlink{class_q_file_info_a91a725dd517a4b77b15077e72a7a1501}{is\+Dir()}}, \mbox{\hyperlink{class_q_file_info_ad6d74b51c535f45dda430ac0d755f569}{read\+Link()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_ab2dcfc1ea9764ea5e6ea9cc684156c92}\label{class_q_file_info_ab2dcfc1ea9764ea5e6ea9cc684156c92}} 
+\index{QFileInfo@{QFileInfo}!isWritable@{isWritable}}
+\index{isWritable@{isWritable}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{isWritable()}{isWritable()}}
+{\footnotesize\ttfamily bool Q\+File\+Info\+::is\+Writable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE if the file is writable. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_af8795a46c49f6911a14f66218949f213}{is\+Readable()}}, \mbox{\hyperlink{class_q_file_info_a5b834ba486c5f6da3b429751ee84fd12}{is\+Executable()}}, \mbox{\hyperlink{class_q_file_info_a51ec346b961f115fd7e45664d27862db}{permission()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a0dd39dbfc2db6a5af5222db19804e45a}\label{class_q_file_info_a0dd39dbfc2db6a5af5222db19804e45a}} 
+\index{QFileInfo@{QFileInfo}!lastModified@{lastModified}}
+\index{lastModified@{lastModified}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{lastModified()}{lastModified()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} Q\+File\+Info\+::last\+Modified (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the date and time when the file was last modified. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_a0d47b9b2eb739466feb670a4102498aa}{last\+Read()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a0d47b9b2eb739466feb670a4102498aa}\label{class_q_file_info_a0d47b9b2eb739466feb670a4102498aa}} 
+\index{QFileInfo@{QFileInfo}!lastRead@{lastRead}}
+\index{lastRead@{lastRead}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{lastRead()}{lastRead()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} Q\+File\+Info\+::last\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the date and time when the file was last read (accessed).
+
+On systems that do not support last read times, the modification time is returned.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_a0dd39dbfc2db6a5af5222db19804e45a}{last\+Modified()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_aa2a8e3037097440bf77f07d1c51f0369}\label{class_q_file_info_aa2a8e3037097440bf77f07d1c51f0369}} 
+\index{QFileInfo@{QFileInfo}!operator=@{operator=}}
+\index{operator=@{operator=}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} \& Q\+File\+Info\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} \&}]{fi }\end{DoxyParamCaption})}
+
+Makes a copy of {\itshape fi} and assigns it to this \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}}. \mbox{\Hypertarget{class_q_file_info_a96831b45809e905dc14e5c065bfa8421}\label{class_q_file_info_a96831b45809e905dc14e5c065bfa8421}} 
+\index{QFileInfo@{QFileInfo}!owner@{owner}}
+\index{owner@{owner}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{owner()}{owner()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+File\+Info\+::owner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the owner of the file.
+
+On systems where files do not have owners this function returns 0.
+
+Note that this function can be time-\/consuming under U\+N\+IX. (in the order of milliseconds on a 486 D\+X2/66 running Linux).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_ab963b7409fa73f7cc31aaff794015c4f}{owner\+Id()}}, \mbox{\hyperlink{class_q_file_info_afb46f8fb3080ab0b32b4236436624ea3}{group()}}, \mbox{\hyperlink{class_q_file_info_a40e9808fbf54b07717d2f3a4307da74f}{group\+Id()}}
+\end{DoxySeeAlso}
+Returns the owner of the file.
+
+On systems where files do not have owners this function returns a null string.
+
+Note that this function can be time-\/consuming under U\+N\+IX. (in the order of milliseconds on a 486 D\+X2/66 running Linux).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_ab963b7409fa73f7cc31aaff794015c4f}{owner\+Id()}}, \mbox{\hyperlink{class_q_file_info_afb46f8fb3080ab0b32b4236436624ea3}{group()}}, \mbox{\hyperlink{class_q_file_info_a40e9808fbf54b07717d2f3a4307da74f}{group\+Id()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_ab963b7409fa73f7cc31aaff794015c4f}\label{class_q_file_info_ab963b7409fa73f7cc31aaff794015c4f}} 
+\index{QFileInfo@{QFileInfo}!ownerId@{ownerId}}
+\index{ownerId@{ownerId}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{ownerId()}{ownerId()}}
+{\footnotesize\ttfamily uint Q\+File\+Info\+::owner\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the id of the owner of the file.
+
+On systems where files do not have owners this function returns ((uint) -\/2).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_a96831b45809e905dc14e5c065bfa8421}{owner()}}, \mbox{\hyperlink{class_q_file_info_afb46f8fb3080ab0b32b4236436624ea3}{group()}}, \mbox{\hyperlink{class_q_file_info_a40e9808fbf54b07717d2f3a4307da74f}{group\+Id()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a51ec346b961f115fd7e45664d27862db}\label{class_q_file_info_a51ec346b961f115fd7e45664d27862db}} 
+\index{QFileInfo@{QFileInfo}!permission@{permission}}
+\index{permission@{permission}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{permission()}{permission()}}
+{\footnotesize\ttfamily bool Q\+File\+Info\+::permission (\begin{DoxyParamCaption}\item[{int}]{permission\+Spec }\end{DoxyParamCaption}) const}
+
+Tests for file permissions. The {\itshape permission\+Spec} argument can be several flags of type Permission\+Spec or\textquotesingle{}ed together to check for permission combinations.
+
+On systems where files do not have permissions this function always returns T\+R\+UE.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_file_info}{QFileInfo}} fi( \textcolor{stringliteral}{"/tmp/tonsils"} );}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( fi.\mbox{\hyperlink{class_q_file_info_a51ec346b961f115fd7e45664d27862db}{permission}}( QFileInfo::WriteUser | QFileInfo::ReadGroup ) )}
+\DoxyCodeLine{qWarning( \textcolor{stringliteral}{"Tonsils can be changed by me, and the group can read them."});}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( fi.\mbox{\hyperlink{class_q_file_info_a51ec346b961f115fd7e45664d27862db}{permission}}( QFileInfo::WriteGroup | QFileInfo::WriteOther ) )}
+\DoxyCodeLine{qWarning( \textcolor{stringliteral}{"Danger! Tonsils can be changed by the group or others!"} );}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_af8795a46c49f6911a14f66218949f213}{is\+Readable()}}, \mbox{\hyperlink{class_q_file_info_ab2dcfc1ea9764ea5e6ea9cc684156c92}{is\+Writable()}}, \mbox{\hyperlink{class_q_file_info_a5b834ba486c5f6da3b429751ee84fd12}{is\+Executable()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_ad6d74b51c535f45dda430ac0d755f569}\label{class_q_file_info_ad6d74b51c535f45dda430ac0d755f569}} 
+\index{QFileInfo@{QFileInfo}!readLink@{readLink}}
+\index{readLink@{readLink}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{readLink()}{readLink()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+File\+Info\+::read\+Link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the name a symlink points to, or a null \mbox{\hyperlink{class_q_string}{Q\+String}} if the object does not refer to a symbolic link.
+
+This name may not represent an existing file; it is only a string. \mbox{\hyperlink{class_q_file_info_af7a247c24ea455875293d6406db652a4}{Q\+File\+Info\+::exists()}} returns T\+R\+UE if the symlink points to an existing file.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_af7a247c24ea455875293d6406db652a4}{exists()}}, \mbox{\hyperlink{class_q_file_info_a0e8114893edbe9d471b6f1389add29fd}{is\+Sym\+Link()}}, \mbox{\hyperlink{class_q_file_info_a91a725dd517a4b77b15077e72a7a1501}{is\+Dir()}}, \mbox{\hyperlink{class_q_file_info_a6bc9021370d012084b9464ba22172d46}{is\+File()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a2e046cd4da1f8804c9f39e05921232c5}\label{class_q_file_info_a2e046cd4da1f8804c9f39e05921232c5}} 
+\index{QFileInfo@{QFileInfo}!refresh@{refresh}}
+\index{refresh@{refresh}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily void Q\+File\+Info\+::refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Refresh the information about the file, i.\+e. read in information from the file system the next time a cached property is fetched.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_a9f2d5de0b83ff0c42b0004574ec9ddf5}{set\+Caching()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a9f2d5de0b83ff0c42b0004574ec9ddf5}\label{class_q_file_info_a9f2d5de0b83ff0c42b0004574ec9ddf5}} 
+\index{QFileInfo@{QFileInfo}!setCaching@{setCaching}}
+\index{setCaching@{setCaching}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{setCaching()}{setCaching()}}
+{\footnotesize\ttfamily void Q\+File\+Info\+::set\+Caching (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})}
+
+Enables caching of file information if {\itshape enable} is T\+R\+UE, or disables it if {\itshape enable} is F\+A\+L\+SE.
+
+When caching is enabled, \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} reads the file information the first time
+
+Caching is enabled by default.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_a2e046cd4da1f8804c9f39e05921232c5}{refresh()}}, \mbox{\hyperlink{class_q_file_info_adf5d4a3e1c616dde6d932eaa9d7bce91}{caching()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a12f26e174efbe009fbda56c5344db89a}\label{class_q_file_info_a12f26e174efbe009fbda56c5344db89a}} 
+\index{QFileInfo@{QFileInfo}!setFile@{setFile}}
+\index{setFile@{setFile}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{setFile()}{setFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Q\+File\+Info\+::set\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_dir}{Q\+Dir}} \&}]{d,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{file\+Name }\end{DoxyParamCaption})}
+
+Sets the file to obtains information about to {\itshape file\+Name} in the directory {\itshape d}.
+
+If the directory has a relative path, the \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} will also have one.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}{is\+Relative()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a9a90b344f26a58641fa784efbaa3ce6e}\label{class_q_file_info_a9a90b344f26a58641fa784efbaa3ce6e}} 
+\index{QFileInfo@{QFileInfo}!setFile@{setFile}}
+\index{setFile@{setFile}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{setFile()}{setFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Q\+File\+Info\+::set\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_file}{Q\+File}} \&}]{file }\end{DoxyParamCaption})}
+
+Sets the file to obtain information about.
+
+If the file has a relative path, the \mbox{\hyperlink{class_q_file_info}{Q\+File\+Info}} will also have one.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}{is\+Relative()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a6215e0e8c9466ee7db82c13259655b98}\label{class_q_file_info_a6215e0e8c9466ee7db82c13259655b98}} 
+\index{QFileInfo@{QFileInfo}!setFile@{setFile}}
+\index{setFile@{setFile}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{setFile()}{setFile()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Q\+File\+Info\+::set\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{file }\end{DoxyParamCaption})}
+
+Sets the file to obtain information about.
+
+The string given can be an absolute or a relative file path. Absolute file paths begin with the directory separator (e.\+g. \textquotesingle{}/\textquotesingle{} under U\+N\+IX) or a drive specification (not applicable to U\+N\+IX). Relative file names begin with a directory name or a file name and specify a path relative to the current directory.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <qfileinfo.h>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <qdir.h>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} test()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} absolute = \textcolor{stringliteral}{"/liver/aorta"};}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} relative = \textcolor{stringliteral}{"liver/aorta"};}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_file_info}{QFileInfo}} fi1( absolute );}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_file_info}{QFileInfo}} fi2( relative );}
+\DoxyCodeLine{}
+\DoxyCodeLine{QDir::setCurrent( QDir::rootDirPath() );}
+\DoxyCodeLine{          \textcolor{comment}{// fi1 and fi2 now point to the same file}}
+\DoxyCodeLine{}
+\DoxyCodeLine{QDir::setCurrent( \textcolor{stringliteral}{"/tmp"} );}
+\DoxyCodeLine{          \textcolor{comment}{// fi1 now points to "/liver/aorta",}}
+\DoxyCodeLine{          \textcolor{comment}{// while fi2 points to "/tmp/liver/aorta"}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_file_info_ae1b2d0ad6ca05510092d0182e276a5d0}{is\+Relative()}}, Q\+Dir\+::set\+Current(), Q\+Dir\+::is\+Relative\+Path() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_file_info_a5effd75eb8571416146ac546e70cb2d7}\label{class_q_file_info_a5effd75eb8571416146ac546e70cb2d7}} 
+\index{QFileInfo@{QFileInfo}!size@{size}}
+\index{size@{size}!QFileInfo@{QFileInfo}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily uint Q\+File\+Info\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the file size in bytes, or 0 if the file does not exist if the size cannot be fetched. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qfileinfo.\+h\item 
+doxygen/qtools/qfileinfo.\+cpp\item 
+doxygen/qtools/qfileinfo\+\_\+unix.\+cpp\item 
+doxygen/qtools/qfileinfo\+\_\+win32.\+cpp\end{DoxyCompactItemize}

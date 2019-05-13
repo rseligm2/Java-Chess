@@ -1,0 +1,67 @@
+\hypertarget{class_template_variant_1_1_delegate}{}\section{Template\+Variant\+::Delegate Class Reference}
+\label{class_template_variant_1_1_delegate}\index{TemplateVariant::Delegate@{TemplateVariant::Delegate}}
+
+
+Helper class to create a delegate that can store a function/method call.  
+
+
+
+
+{\ttfamily \#include $<$template.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_template_variant}{Template\+Variant}}($\ast$ \mbox{\hyperlink{class_template_variant_1_1_delegate_ae02c3848db4a42a6bc88f81f5166923a}{Stub\+Type}}) (const void $\ast$obj, const \mbox{\hyperlink{class_q_value_list}{Q\+Value\+List}}$<$ \mbox{\hyperlink{class_template_variant}{Template\+Variant}} $>$ \&args)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_template_variant_1_1_delegate_ae9fa32df07f63320a443d949a841945a}{operator()}} (const \mbox{\hyperlink{class_q_value_list}{Q\+Value\+List}}$<$ \mbox{\hyperlink{class_template_variant}{Template\+Variant}} $>$ \&args) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T , Template\+Variant(\+T\+::$\ast$)(const Q\+Value\+List$<$ Template\+Variant $>$ \&) const T\+Method$>$ }\\static \mbox{\hyperlink{class_template_variant_1_1_delegate}{Delegate}} \mbox{\hyperlink{class_template_variant_1_1_delegate_a6a013222ab665507469657d09c07c92b}{from\+Method}} (const T $\ast$object\+Ptr)
+\item 
+static \mbox{\hyperlink{class_template_variant_1_1_delegate}{Delegate}} \mbox{\hyperlink{class_template_variant_1_1_delegate_a226f1f2e20f6d26fea2d989fd91bd8a8}{from\+Function}} (const void $\ast$obj, \mbox{\hyperlink{class_template_variant_1_1_delegate_ae02c3848db4a42a6bc88f81f5166923a}{Stub\+Type}} \mbox{\hyperlink{070__ref__variadic__template_8cpp_abb1e0338f72ae46a1240ada65d6a397c}{func}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Helper class to create a delegate that can store a function/method call. 
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_template_variant_1_1_delegate_ae02c3848db4a42a6bc88f81f5166923a}\label{class_template_variant_1_1_delegate_ae02c3848db4a42a6bc88f81f5166923a}} 
+\index{TemplateVariant::Delegate@{TemplateVariant::Delegate}!StubType@{StubType}}
+\index{StubType@{StubType}!TemplateVariant::Delegate@{TemplateVariant::Delegate}}
+\subsubsection{\texorpdfstring{StubType}{StubType}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_template_variant}{Template\+Variant}}($\ast$ Template\+Variant\+::\+Delegate\+::\+Stub\+Type) (const void $\ast$obj, const \mbox{\hyperlink{class_q_value_list}{Q\+Value\+List}}$<$ \mbox{\hyperlink{class_template_variant}{Template\+Variant}} $>$ \&args)}
+
+Callback type to use when creating a delegate from a function. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_template_variant_1_1_delegate_a226f1f2e20f6d26fea2d989fd91bd8a8}\label{class_template_variant_1_1_delegate_a226f1f2e20f6d26fea2d989fd91bd8a8}} 
+\index{TemplateVariant::Delegate@{TemplateVariant::Delegate}!fromFunction@{fromFunction}}
+\index{fromFunction@{fromFunction}!TemplateVariant::Delegate@{TemplateVariant::Delegate}}
+\subsubsection{\texorpdfstring{fromFunction()}{fromFunction()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_template_variant_1_1_delegate}{Delegate}} Template\+Variant\+::\+Delegate\+::from\+Function (\begin{DoxyParamCaption}\item[{const void $\ast$}]{obj,  }\item[{\mbox{\hyperlink{class_template_variant_1_1_delegate_ae02c3848db4a42a6bc88f81f5166923a}{Stub\+Type}}}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a delegate given an object, and a plain function. \mbox{\Hypertarget{class_template_variant_1_1_delegate_a6a013222ab665507469657d09c07c92b}\label{class_template_variant_1_1_delegate_a6a013222ab665507469657d09c07c92b}} 
+\index{TemplateVariant::Delegate@{TemplateVariant::Delegate}!fromMethod@{fromMethod}}
+\index{fromMethod@{fromMethod}!TemplateVariant::Delegate@{TemplateVariant::Delegate}}
+\subsubsection{\texorpdfstring{fromMethod()}{fromMethod()}}
+{\footnotesize\ttfamily template$<$class T , Template\+Variant(\+T\+::$\ast$)(const Q\+Value\+List$<$ Template\+Variant $>$ \&) const T\+Method$>$ \\
+static \mbox{\hyperlink{class_template_variant_1_1_delegate}{Delegate}} Template\+Variant\+::\+Delegate\+::from\+Method (\begin{DoxyParamCaption}\item[{const T $\ast$}]{object\+Ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a delegate given an object. The method to call is passed as a template parameter \mbox{\Hypertarget{class_template_variant_1_1_delegate_ae9fa32df07f63320a443d949a841945a}\label{class_template_variant_1_1_delegate_ae9fa32df07f63320a443d949a841945a}} 
+\index{TemplateVariant::Delegate@{TemplateVariant::Delegate}!operator()@{operator()}}
+\index{operator()@{operator()}!TemplateVariant::Delegate@{TemplateVariant::Delegate}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_variant}{Template\+Variant}} Template\+Variant\+::\+Delegate\+::operator() (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_value_list}{Q\+Value\+List}}$<$ \mbox{\hyperlink{class_template_variant}{Template\+Variant}} $>$ \&}]{args }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Invokes the function/method stored in the delegate 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/template.\+h\end{DoxyCompactItemize}

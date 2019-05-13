@@ -1,0 +1,183 @@
+\hypertarget{class_html_code_generator}{}\section{Html\+Code\+Generator Class Reference}
+\label{class_html_code_generator}\index{HtmlCodeGenerator@{HtmlCodeGenerator}}
+Inheritance diagram for Html\+Code\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_html_code_generator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_html_code_generator_a56e49ef654ba100c1d218aa99a881fe8}\label{class_html_code_generator_a56e49ef654ba100c1d218aa99a881fe8}} 
+{\bfseries Html\+Code\+Generator} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&rel\+Path)
+\item 
+\mbox{\Hypertarget{class_html_code_generator_a9b5bfa3e5431129fb292ccde2cabcfe8}\label{class_html_code_generator_a9b5bfa3e5431129fb292ccde2cabcfe8}} 
+void {\bfseries set\+Text\+Stream} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t)
+\item 
+\mbox{\Hypertarget{class_html_code_generator_a9bc120e267a5830b05030cf6c74a3d41}\label{class_html_code_generator_a9bc120e267a5830b05030cf6c74a3d41}} 
+void {\bfseries set\+Relative\+Path} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&path)
+\item 
+void \mbox{\hyperlink{class_html_code_generator_aa482ae62b65a2fd1cc6cda022e88c920}{codify}} (const char $\ast$text)
+\item 
+void \mbox{\hyperlink{class_html_code_generator_a5098b373d91b9674cc399132a321f040}{write\+Code\+Link}} (const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, const char $\ast$name, const char $\ast$tooltip)
+\item 
+void \mbox{\hyperlink{class_html_code_generator_a6edc5ab4a379a6edfaac4e4c36db4178}{write\+Tooltip}} (const char $\ast$id, const \mbox{\hyperlink{struct_doc_link_info}{Doc\+Link\+Info}} \&doc\+Info, const char $\ast$decl, const char $\ast$desc, const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&def\+Info, const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&decl\+Info)
+\item 
+void \mbox{\hyperlink{class_html_code_generator_a926369daa75db9967dc5c6f818b5b406}{write\+Line\+Number}} (const char $\ast$, const char $\ast$, const char $\ast$, int)
+\item 
+\mbox{\Hypertarget{class_html_code_generator_afbc2414a5387b977150b015dfbd16c10}\label{class_html_code_generator_afbc2414a5387b977150b015dfbd16c10}} 
+void {\bfseries start\+Code\+Line} (bool)
+\item 
+void \mbox{\hyperlink{class_html_code_generator_ab0909b2a97301c8da4fcbf83831c84b3}{end\+Code\+Line}} ()
+\item 
+void \mbox{\hyperlink{class_html_code_generator_ae7eaca4c34eeb6bf1aeaf0ac5ce4257b}{start\+Font\+Class}} (const char $\ast$s)
+\item 
+void \mbox{\hyperlink{class_html_code_generator_a8efe5c697dc169b24b5e7da7cf54305e}{end\+Font\+Class}} ()
+\item 
+void \mbox{\hyperlink{class_html_code_generator_a89ec8d4b9eb2b5162b4d9a7cab209b4a}{write\+Code\+Anchor}} (const char $\ast$anchor)
+\item 
+\mbox{\Hypertarget{class_html_code_generator_a6ac7fde67764c26857967eed883eb36b}\label{class_html_code_generator_a6ac7fde67764c26857967eed883eb36b}} 
+void {\bfseries set\+Current\+Doc} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$, const char $\ast$, bool)
+\item 
+\mbox{\Hypertarget{class_html_code_generator_a589f4d1ffce901b424bcbc0db0808471}\label{class_html_code_generator_a589f4d1ffce901b424bcbc0db0808471}} 
+void {\bfseries add\+Word} (const char $\ast$, bool)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_html_code_generator_aa482ae62b65a2fd1cc6cda022e88c920}\label{class_html_code_generator_aa482ae62b65a2fd1cc6cda022e88c920}} 
+\index{HtmlCodeGenerator@{HtmlCodeGenerator}!codify@{codify}}
+\index{codify@{codify}!HtmlCodeGenerator@{HtmlCodeGenerator}}
+\subsubsection{\texorpdfstring{codify()}{codify()}}
+{\footnotesize\ttfamily void Html\+Code\+Generator\+::codify (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes an code fragment to the output. This function should keep spaces visible, should break lines at a newline and should convert tabs to the right number of spaces. 
+
+Implements \mbox{\hyperlink{class_code_output_interface_aa29a5eedda08596ace50ed5b59c8ae7f}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_html_code_generator_ab0909b2a97301c8da4fcbf83831c84b3}\label{class_html_code_generator_ab0909b2a97301c8da4fcbf83831c84b3}} 
+\index{HtmlCodeGenerator@{HtmlCodeGenerator}!endCodeLine@{endCodeLine}}
+\index{endCodeLine@{endCodeLine}!HtmlCodeGenerator@{HtmlCodeGenerator}}
+\subsubsection{\texorpdfstring{endCodeLine()}{endCodeLine()}}
+{\footnotesize\ttfamily void Html\+Code\+Generator\+::end\+Code\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ends a line of code started with start\+Code\+Line() 
+
+Implements \mbox{\hyperlink{class_code_output_interface_afac5763eafc78f93b82691fb9a6dcff7}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_html_code_generator_a8efe5c697dc169b24b5e7da7cf54305e}\label{class_html_code_generator_a8efe5c697dc169b24b5e7da7cf54305e}} 
+\index{HtmlCodeGenerator@{HtmlCodeGenerator}!endFontClass@{endFontClass}}
+\index{endFontClass@{endFontClass}!HtmlCodeGenerator@{HtmlCodeGenerator}}
+\subsubsection{\texorpdfstring{endFontClass()}{endFontClass()}}
+{\footnotesize\ttfamily void Html\+Code\+Generator\+::end\+Font\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ends a block started with \mbox{\hyperlink{class_html_code_generator_ae7eaca4c34eeb6bf1aeaf0ac5ce4257b}{start\+Font\+Class()}} 
+
+Implements \mbox{\hyperlink{class_code_output_interface_a2b8ac05a391dae36793aa3aa8714a0f6}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_html_code_generator_ae7eaca4c34eeb6bf1aeaf0ac5ce4257b}\label{class_html_code_generator_ae7eaca4c34eeb6bf1aeaf0ac5ce4257b}} 
+\index{HtmlCodeGenerator@{HtmlCodeGenerator}!startFontClass@{startFontClass}}
+\index{startFontClass@{startFontClass}!HtmlCodeGenerator@{HtmlCodeGenerator}}
+\subsubsection{\texorpdfstring{startFontClass()}{startFontClass()}}
+{\footnotesize\ttfamily void Html\+Code\+Generator\+::start\+Font\+Class (\begin{DoxyParamCaption}\item[{const char $\ast$}]{cls\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Starts a block with a certain meaning. Used for syntax highlighting, which elements of the same type are rendered using the same \textquotesingle{}font class\textquotesingle{}. 
+\begin{DoxyParams}{Parameters}
+{\em cls\+Name} & The category name. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_ac90f75968cdcf127e0b02938bdb49d87}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_html_code_generator_a89ec8d4b9eb2b5162b4d9a7cab209b4a}\label{class_html_code_generator_a89ec8d4b9eb2b5162b4d9a7cab209b4a}} 
+\index{HtmlCodeGenerator@{HtmlCodeGenerator}!writeCodeAnchor@{writeCodeAnchor}}
+\index{writeCodeAnchor@{writeCodeAnchor}!HtmlCodeGenerator@{HtmlCodeGenerator}}
+\subsubsection{\texorpdfstring{writeCodeAnchor()}{writeCodeAnchor()}}
+{\footnotesize\ttfamily void Html\+Code\+Generator\+::write\+Code\+Anchor (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Write an anchor to a source listing. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the anchor. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a1f6394c4ef7c4143de90bcaf3a65c0b4}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_html_code_generator_a5098b373d91b9674cc399132a321f040}\label{class_html_code_generator_a5098b373d91b9674cc399132a321f040}} 
+\index{HtmlCodeGenerator@{HtmlCodeGenerator}!writeCodeLink@{writeCodeLink}}
+\index{writeCodeLink@{writeCodeLink}!HtmlCodeGenerator@{HtmlCodeGenerator}}
+\subsubsection{\texorpdfstring{writeCodeLink()}{writeCodeLink()}}
+{\footnotesize\ttfamily void Html\+Code\+Generator\+::write\+Code\+Link (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ref,  }\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{anchor,  }\item[{const char $\ast$}]{name,  }\item[{const char $\ast$}]{tooltip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes a link to an object in a code fragment. 
+\begin{DoxyParams}{Parameters}
+{\em ref} & If this is non-\/zero, the object is to be found in an external documentation file. \\
+\hline
+{\em file} & The file in which the object is located. \\
+\hline
+{\em anchor} & The anchor uniquely identifying the object within the file. \\
+\hline
+{\em name} & The text to display as a placeholder for the link. \\
+\hline
+{\em tooltip} & The tooltip to display when the mouse is on the link. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a102e2b7f40916c75b79871307f5bb674}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_html_code_generator_a926369daa75db9967dc5c6f818b5b406}\label{class_html_code_generator_a926369daa75db9967dc5c6f818b5b406}} 
+\index{HtmlCodeGenerator@{HtmlCodeGenerator}!writeLineNumber@{writeLineNumber}}
+\index{writeLineNumber@{writeLineNumber}!HtmlCodeGenerator@{HtmlCodeGenerator}}
+\subsubsection{\texorpdfstring{writeLineNumber()}{writeLineNumber()}}
+{\footnotesize\ttfamily void Html\+Code\+Generator\+::write\+Line\+Number (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ref,  }\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{anchor,  }\item[{int}]{line\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes the line number of a source listing 
+\begin{DoxyParams}{Parameters}
+{\em ref} & External reference (when imported from a tag file) \\
+\hline
+{\em file} & The file part of the \mbox{\hyperlink{struct_u_r_l}{U\+RL}} pointing to the docs. \\
+\hline
+{\em anchor} & The anchor part of the \mbox{\hyperlink{struct_u_r_l}{U\+RL}} pointing to the docs. \\
+\hline
+{\em line\+Number} & The line number to write \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a8115646785b65e292480c2e4e969b389}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_html_code_generator_a6edc5ab4a379a6edfaac4e4c36db4178}\label{class_html_code_generator_a6edc5ab4a379a6edfaac4e4c36db4178}} 
+\index{HtmlCodeGenerator@{HtmlCodeGenerator}!writeTooltip@{writeTooltip}}
+\index{writeTooltip@{writeTooltip}!HtmlCodeGenerator@{HtmlCodeGenerator}}
+\subsubsection{\texorpdfstring{writeTooltip()}{writeTooltip()}}
+{\footnotesize\ttfamily void Html\+Code\+Generator\+::write\+Tooltip (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{const \mbox{\hyperlink{struct_doc_link_info}{Doc\+Link\+Info}} \&}]{doc\+Info,  }\item[{const char $\ast$}]{decl,  }\item[{const char $\ast$}]{desc,  }\item[{const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&}]{def\+Info,  }\item[{const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&}]{decl\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes a tool tip definition 
+\begin{DoxyParams}{Parameters}
+{\em id} & unique identifier for the tooltip \\
+\hline
+{\em doc\+Info} & Info about the symbol\textquotesingle{}s documentation. \\
+\hline
+{\em decl} & full declaration of the symbol (for functions) \\
+\hline
+{\em desc} & brief description for the symbol \\
+\hline
+{\em def\+Info} & Info about the symbol\textquotesingle{}s definition in the source code \\
+\hline
+{\em decl\+Info} & Info about the symbol\textquotesingle{}s declaration in the source code \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a4326ca642f6ec228466ae310622f73ad}{Code\+Output\+Interface}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/htmlgen.\+h\item 
+doxygen/src/htmlgen.\+cpp\end{DoxyCompactItemize}

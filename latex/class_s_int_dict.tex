@@ -1,0 +1,226 @@
+\hypertarget{class_s_int_dict}{}\section{S\+Int\+Dict$<$ T $>$ Class Template Reference}
+\label{class_s_int_dict}\index{SIntDict$<$ T $>$@{SIntDict$<$ T $>$}}
+
+
+{\ttfamily \#include $<$sortdict.\+h$>$}
+
+Inheritance diagram for S\+Int\+Dict$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_s_int_dict}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_s_int_dict_1_1_iterator}{Iterator}}
+\item 
+class \mbox{\hyperlink{class_s_int_dict_1_1_iterator_dict}{Iterator\+Dict}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_int_dict_a3285b0a5debceb2190c4f1cc8f8fd78b}{S\+Int\+Dict}} (int size=17)
+\item 
+virtual \mbox{\hyperlink{class_s_int_dict_a8d2e7da0367e653b432447a9dce7c604}{$\sim$\+S\+Int\+Dict}} ()
+\item 
+void \mbox{\hyperlink{class_s_int_dict_a829c9e4c9827e765145d150ffb18b1ae}{append}} (int key, const T $\ast$d)
+\item 
+void \mbox{\hyperlink{class_s_int_dict_a394582f93d6d758a477e86f84087c6a6}{prepend}} (int key, const T $\ast$d)
+\item 
+bool \mbox{\hyperlink{class_s_int_dict_a3e7bf8861e4650f5f958000b86b2312a}{remove}} (int key)
+\item 
+void \mbox{\hyperlink{class_s_int_dict_ae205d1b7f76cea9da3f117e830bd7dfa}{sort}} ()
+\item 
+void \mbox{\hyperlink{class_s_int_dict_a16cc84888ede2d895d4df0323608862d}{in\+Sort}} (int key, const T $\ast$d)
+\item 
+void \mbox{\hyperlink{class_s_int_dict_aa847c843b8f2509d2021d8db470aa14f}{set\+Auto\+Delete}} (bool val)
+\item 
+T $\ast$ \mbox{\hyperlink{class_s_int_dict_a5b08deebe24072f66bdce4fed2a3863d}{find}} (int key)
+\item 
+T $\ast$ \mbox{\hyperlink{class_s_int_dict_aca2cf7030f2e469f1d7dfe8eaaa178f7}{operator\mbox{[}$\,$\mbox{]}}} (int key) const
+\item 
+T $\ast$ \mbox{\hyperlink{class_s_int_dict_a13bbde7f8fdac65c32e670d627fbdeac}{at}} (uint i)
+\item 
+virtual int \mbox{\hyperlink{class_s_int_dict_a9c43e81469aa5e458aa7eb82f4217d10}{compare\+Values}} (const T $\ast$item1, const T $\ast$item2) const
+\item 
+void \mbox{\hyperlink{class_s_int_dict_ab86a29e18447f3f5347bb29478a2e8f4}{clear}} ()
+\item 
+int \mbox{\hyperlink{class_s_int_dict_aed64f84f475ba2ebec343935f8e7bc6c}{count}} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_s_int_dict_a9830fc407400559db7e7783cc10a9394}\label{class_s_int_dict_a9830fc407400559db7e7783cc10a9394}} 
+class {\bfseries Iterator}
+\item 
+\mbox{\Hypertarget{class_s_int_dict_ab362b5ead75b40c212098db068d50ac7}\label{class_s_int_dict_ab362b5ead75b40c212098db068d50ac7}} 
+class {\bfseries Iterator\+Dict}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class S\+Int\+Dict$<$ T $>$}
+
+Ordered dictionary of elements of type T. Internally uses a \mbox{\hyperlink{class_q_list}{Q\+List$<$\+T$>$}} and a \mbox{\hyperlink{class_q_int_dict}{Q\+Int\+Dict$<$\+T$>$}}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_s_int_dict_a3285b0a5debceb2190c4f1cc8f8fd78b}\label{class_s_int_dict_a3285b0a5debceb2190c4f1cc8f8fd78b}} 
+\index{SIntDict$<$ T $>$@{SIntDict$<$ T $>$}!SIntDict@{SIntDict}}
+\index{SIntDict@{SIntDict}!SIntDict$<$ T $>$@{SIntDict$<$ T $>$}}
+\subsubsection{\texorpdfstring{SIntDict()}{SIntDict()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}}$<$ T $>$\+::\mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}} (\begin{DoxyParamCaption}\item[{int}]{size = {\ttfamily 17} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create an ordered dictionary. 
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the dictionary. Should be a prime number for best distribution of elements. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_int_dict_a8d2e7da0367e653b432447a9dce7c604}\label{class_s_int_dict_a8d2e7da0367e653b432447a9dce7c604}} 
+\index{SIntDict$<$ T $>$@{SIntDict$<$ T $>$}!````~SIntDict@{$\sim$SIntDict}}
+\index{````~SIntDict@{$\sim$SIntDict}!SIntDict$<$ T $>$@{SIntDict$<$ T $>$}}
+\subsubsection{\texorpdfstring{$\sim$SIntDict()}{~SIntDict()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+virtual \mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Destroys the dictionary 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_int_dict_a829c9e4c9827e765145d150ffb18b1ae}\label{class_s_int_dict_a829c9e4c9827e765145d150ffb18b1ae}} 
+\index{SIntDict$<$ T $>$@{SIntDict$<$ T $>$}!append@{append}}
+\index{append@{append}!SIntDict$<$ T $>$@{SIntDict$<$ T $>$}}
+\subsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}}$<$ T $>$\+::append (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{const T $\ast$}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Appends a compound to the dictionary. The element is owned by the dictionary. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The unique key to use to quicky find the item later on. \\
+\hline
+{\em d} & The compound to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_s_int_dict_a5b08deebe24072f66bdce4fed2a3863d}{find()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_s_int_dict_a13bbde7f8fdac65c32e670d627fbdeac}\label{class_s_int_dict_a13bbde7f8fdac65c32e670d627fbdeac}} 
+\index{SIntDict$<$ T $>$@{SIntDict$<$ T $>$}!at@{at}}
+\index{at@{at}!SIntDict$<$ T $>$@{SIntDict$<$ T $>$}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T$\ast$ \mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}}$<$ T $>$\+::at (\begin{DoxyParamCaption}\item[{uint}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the item at position {\itshape i} in the sorted dictionary \mbox{\Hypertarget{class_s_int_dict_ab86a29e18447f3f5347bb29478a2e8f4}\label{class_s_int_dict_ab86a29e18447f3f5347bb29478a2e8f4}} 
+\index{SIntDict$<$ T $>$@{SIntDict$<$ T $>$}!clear@{clear}}
+\index{clear@{clear}!SIntDict$<$ T $>$@{SIntDict$<$ T $>$}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}}$<$ T $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clears the dictionary. Will delete items if \mbox{\hyperlink{class_s_int_dict_aa847c843b8f2509d2021d8db470aa14f}{set\+Auto\+Delete()}} was set to {\ttfamily T\+R\+UE}. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_s_int_dict_aa847c843b8f2509d2021d8db470aa14f}{set\+Auto\+Delete}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_s_int_dict_a9c43e81469aa5e458aa7eb82f4217d10}\label{class_s_int_dict_a9c43e81469aa5e458aa7eb82f4217d10}} 
+\index{SIntDict$<$ T $>$@{SIntDict$<$ T $>$}!compareValues@{compareValues}}
+\index{compareValues@{compareValues}!SIntDict$<$ T $>$@{SIntDict$<$ T $>$}}
+\subsubsection{\texorpdfstring{compareValues()}{compareValues()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+virtual int \mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}}$<$ T $>$\+::compare\+Values (\begin{DoxyParamCaption}\item[{const T $\ast$}]{item1,  }\item[{const T $\ast$}]{item2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Function that is used to compare two items when sorting. Overload this to properly sort items. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_s_int_dict_a16cc84888ede2d895d4df0323608862d}{in\+Sort()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_s_int_dict_aed64f84f475ba2ebec343935f8e7bc6c}\label{class_s_int_dict_aed64f84f475ba2ebec343935f8e7bc6c}} 
+\index{SIntDict$<$ T $>$@{SIntDict$<$ T $>$}!count@{count}}
+\index{count@{count}!SIntDict$<$ T $>$@{SIntDict$<$ T $>$}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+int \mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}}$<$ T $>$\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of items stored in the dictionary \mbox{\Hypertarget{class_s_int_dict_a5b08deebe24072f66bdce4fed2a3863d}\label{class_s_int_dict_a5b08deebe24072f66bdce4fed2a3863d}} 
+\index{SIntDict$<$ T $>$@{SIntDict$<$ T $>$}!find@{find}}
+\index{find@{find}!SIntDict$<$ T $>$@{SIntDict$<$ T $>$}}
+\subsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T$\ast$ \mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}}$<$ T $>$\+::find (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Looks up a compound given its key. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to identify this element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The requested compound or zero if it cannot be found. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_s_int_dict_a829c9e4c9827e765145d150ffb18b1ae}{append()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_s_int_dict_a16cc84888ede2d895d4df0323608862d}\label{class_s_int_dict_a16cc84888ede2d895d4df0323608862d}} 
+\index{SIntDict$<$ T $>$@{SIntDict$<$ T $>$}!inSort@{inSort}}
+\index{inSort@{inSort}!SIntDict$<$ T $>$@{SIntDict$<$ T $>$}}
+\subsubsection{\texorpdfstring{inSort()}{inSort()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}}$<$ T $>$\+::in\+Sort (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{const T $\ast$}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Inserts a compound into the dictionary in a sorted way. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The unique key to use to quicky find the item later on. \\
+\hline
+{\em d} & The compound to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_s_int_dict_a5b08deebe24072f66bdce4fed2a3863d}{find()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_s_int_dict_aca2cf7030f2e469f1d7dfe8eaaa178f7}\label{class_s_int_dict_aca2cf7030f2e469f1d7dfe8eaaa178f7}} 
+\index{SIntDict$<$ T $>$@{SIntDict$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!SIntDict$<$ T $>$@{SIntDict$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T$\ast$ \mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Equavalent to \mbox{\hyperlink{class_s_int_dict_a5b08deebe24072f66bdce4fed2a3863d}{find()}}. \mbox{\Hypertarget{class_s_int_dict_a394582f93d6d758a477e86f84087c6a6}\label{class_s_int_dict_a394582f93d6d758a477e86f84087c6a6}} 
+\index{SIntDict$<$ T $>$@{SIntDict$<$ T $>$}!prepend@{prepend}}
+\index{prepend@{prepend}!SIntDict$<$ T $>$@{SIntDict$<$ T $>$}}
+\subsubsection{\texorpdfstring{prepend()}{prepend()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}}$<$ T $>$\+::prepend (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{const T $\ast$}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prepend a compound to the dictionary. The element is owned by the dictionary. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The unique key to use to quicky find the item later on. \\
+\hline
+{\em d} & The compound to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_s_int_dict_a5b08deebe24072f66bdce4fed2a3863d}{find()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_s_int_dict_a3e7bf8861e4650f5f958000b86b2312a}\label{class_s_int_dict_a3e7bf8861e4650f5f958000b86b2312a}} 
+\index{SIntDict$<$ T $>$@{SIntDict$<$ T $>$}!remove@{remove}}
+\index{remove@{remove}!SIntDict$<$ T $>$@{SIntDict$<$ T $>$}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}}$<$ T $>$\+::remove (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove an item from the dictionary \mbox{\Hypertarget{class_s_int_dict_aa847c843b8f2509d2021d8db470aa14f}\label{class_s_int_dict_aa847c843b8f2509d2021d8db470aa14f}} 
+\index{SIntDict$<$ T $>$@{SIntDict$<$ T $>$}!setAutoDelete@{setAutoDelete}}
+\index{setAutoDelete@{setAutoDelete}!SIntDict$<$ T $>$@{SIntDict$<$ T $>$}}
+\subsubsection{\texorpdfstring{setAutoDelete()}{setAutoDelete()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}}$<$ T $>$\+::set\+Auto\+Delete (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Indicates whether or not the dictionary owns its elements \mbox{\Hypertarget{class_s_int_dict_ae205d1b7f76cea9da3f117e830bd7dfa}\label{class_s_int_dict_ae205d1b7f76cea9da3f117e830bd7dfa}} 
+\index{SIntDict$<$ T $>$@{SIntDict$<$ T $>$}!sort@{sort}}
+\index{sort@{sort}!SIntDict$<$ T $>$@{SIntDict$<$ T $>$}}
+\subsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{class_s_int_dict}{S\+Int\+Dict}}$<$ T $>$\+::sort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sorts the members of the dictionary. First appending a number of members and then sorting them is faster (O(\+Nlog\+N) than using \mbox{\hyperlink{class_s_int_dict_a16cc84888ede2d895d4df0323608862d}{in\+Sort()}} for each member (O(\+N$^\wedge$2)). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/sortdict.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,91 @@
+\hypertarget{class_game}{}\section{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_adedc1b2ee6b957e72061ddd437dd424d}{Game}} (\mbox{\hyperlink{class_string}{String}} name1, \mbox{\hyperlink{class_string}{String}} name2, int start\+Turn)
+\item 
+\mbox{\hyperlink{class_board}{Board}} \mbox{\hyperlink{class_game_a2b39d812bd628cd73f804d9f3642d42f}{get\+Board}} ()
+\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_game_a142d43f52974f44f3ef110a9a14c8db2}{get\+White}} ()
+\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_game_a2161d1e6aca81f86dd2fdce22237f840}{get\+Black}} ()
+\item 
+int \mbox{\hyperlink{class_game_ae518e278826e5feba6f9fc5f3818ad02}{get\+Turn}} ()
+\item 
+void \mbox{\hyperlink{class_game_afbc203a292a81fe220603b6652a23a15}{change\+Turn}} ()
+\item 
+\mbox{\Hypertarget{class_game_a8efa0b3d0c4abbcc2336fd82b01f3f14}\label{class_game_a8efa0b3d0c4abbcc2336fd82b01f3f14}} 
+boolean {\bfseries is\+Game\+Over} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_adedc1b2ee6b957e72061ddd437dd424d}\label{class_game_adedc1b2ee6b957e72061ddd437dd424d}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\subsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game.\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_string}{String}}}]{name1,  }\item[{\mbox{\hyperlink{class_string}{String}}}]{name2,  }\item[{int}]{start\+Turn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for the whole game on start 
+\begin{DoxyParams}{Parameters}
+{\em name1} & Name of first player \\
+\hline
+{\em name2} & N\+Ame of second player \\
+\hline
+{\em start\+Turn} & Initialized as 0 or 1 depending on which player starts first \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_afbc203a292a81fe220603b6652a23a15}\label{class_game_afbc203a292a81fe220603b6652a23a15}} 
+\index{Game@{Game}!changeTurn@{changeTurn}}
+\index{changeTurn@{changeTurn}!Game@{Game}}
+\subsubsection{\texorpdfstring{changeTurn()}{changeTurn()}}
+{\footnotesize\ttfamily void Game.\+change\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method to change which player\textquotesingle{}s turn it is \begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a2161d1e6aca81f86dd2fdce22237f840}\label{class_game_a2161d1e6aca81f86dd2fdce22237f840}} 
+\index{Game@{Game}!getBlack@{getBlack}}
+\index{getBlack@{getBlack}!Game@{Game}}
+\subsubsection{\texorpdfstring{getBlack()}{getBlack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Game.\+get\+Black (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get method to get \mbox{\hyperlink{class_player}{Player}} object black \begin{DoxyReturn}{Returns}
+black \mbox{\hyperlink{class_player}{Player}} of \mbox{\hyperlink{class_game}{Game}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a2b39d812bd628cd73f804d9f3642d42f}\label{class_game_a2b39d812bd628cd73f804d9f3642d42f}} 
+\index{Game@{Game}!getBoard@{getBoard}}
+\index{getBoard@{getBoard}!Game@{Game}}
+\subsubsection{\texorpdfstring{getBoard()}{getBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_board}{Board}} Game.\+get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get board method to return board object of game \begin{DoxyReturn}{Returns}
+board of \mbox{\hyperlink{class_game}{Game}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_ae518e278826e5feba6f9fc5f3818ad02}\label{class_game_ae518e278826e5feba6f9fc5f3818ad02}} 
+\index{Game@{Game}!getTurn@{getTurn}}
+\index{getTurn@{getTurn}!Game@{Game}}
+\subsubsection{\texorpdfstring{getTurn()}{getTurn()}}
+{\footnotesize\ttfamily int Game.\+get\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get method for which player\textquotesingle{}s turn it is, always either 0 or 1 \begin{DoxyReturn}{Returns}
+whose\+Turn of \mbox{\hyperlink{class_game}{Game}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a142d43f52974f44f3ef110a9a14c8db2}\label{class_game_a142d43f52974f44f3ef110a9a14c8db2}} 
+\index{Game@{Game}!getWhite@{getWhite}}
+\index{getWhite@{getWhite}!Game@{Game}}
+\subsubsection{\texorpdfstring{getWhite()}{getWhite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Game.\+get\+White (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get method to get \mbox{\hyperlink{class_player}{Player}} object white \begin{DoxyReturn}{Returns}
+white \mbox{\hyperlink{class_player}{Player}} of \mbox{\hyperlink{class_game}{Game}} object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Game.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,122 @@
+\hypertarget{struct_symbol_modifiers}{}\section{Symbol\+Modifiers Struct Reference}
+\label{struct_symbol_modifiers}\index{SymbolModifiers@{SymbolModifiers}}
+
+
+Holds modifiers (ie attributes) for one symbol (variable, function, etc)  
+
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a6c76745fa39de2b90353729fe62c6708}\label{struct_symbol_modifiers_a6c76745fa39de2b90353729fe62c6708}} 
+enum {\bfseries Protection} \{ {\bfseries N\+O\+N\+E\+\_\+P}, 
+{\bfseries P\+U\+B\+L\+IC}, 
+{\bfseries P\+R\+I\+V\+A\+TE}
+ \}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_aceec8152eeb6c06b8dbe03ef14fed6a4}\label{struct_symbol_modifiers_aceec8152eeb6c06b8dbe03ef14fed6a4}} 
+enum {\bfseries Direction} \{ {\bfseries N\+O\+N\+E\+\_\+D}, 
+{\bfseries IN}, 
+{\bfseries O\+UT}, 
+{\bfseries I\+N\+O\+UT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_symbol_modifiers}{Symbol\+Modifiers}} \& \mbox{\hyperlink{struct_symbol_modifiers_a73f1b078fd79fffd3a50ca217b580bed}{operator$\vert$=}} (const \mbox{\hyperlink{struct_symbol_modifiers}{Symbol\+Modifiers}} \&mdfs)
+\item 
+\mbox{\hyperlink{struct_symbol_modifiers}{Symbol\+Modifiers}} \& \mbox{\hyperlink{struct_symbol_modifiers_aaca9d411d0392efd25510ca3209178d0}{operator$\vert$=}} (\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} mdfr\+String)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a562bc973e362b8bf352c8bd8bd11d92b}\label{struct_symbol_modifiers_a562bc973e362b8bf352c8bd8bd11d92b}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries type}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a7df57513685e3721861f65ba286952b1}\label{struct_symbol_modifiers_a7df57513685e3721861f65ba286952b1}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries return\+Name}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_add511aaa15123dd20538a4e23415b91e}\label{struct_symbol_modifiers_add511aaa15123dd20538a4e23415b91e}} 
+Protection {\bfseries protection}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a60ca7cc66daff6cdae19b5d4162f77a4}\label{struct_symbol_modifiers_a60ca7cc66daff6cdae19b5d4162f77a4}} 
+Direction {\bfseries direction}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_aa6211c1be3fd479e53a26b498e5fc94b}\label{struct_symbol_modifiers_aa6211c1be3fd479e53a26b498e5fc94b}} 
+bool {\bfseries optional}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a391410448831f7e0e967635319e16d73}\label{struct_symbol_modifiers_a391410448831f7e0e967635319e16d73}} 
+bool {\bfseries protect}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a3e997f886dd5832f1f8ae64aadca020c}\label{struct_symbol_modifiers_a3e997f886dd5832f1f8ae64aadca020c}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries dimension}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a3a7425ed3b345a52a97a37850cecf54d}\label{struct_symbol_modifiers_a3a7425ed3b345a52a97a37850cecf54d}} 
+bool {\bfseries allocatable}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a3187a1ff0724dbcff6cf591cd815bd78}\label{struct_symbol_modifiers_a3187a1ff0724dbcff6cf591cd815bd78}} 
+bool {\bfseries external}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a9df901b470a76a04f234ff6863f1dca1}\label{struct_symbol_modifiers_a9df901b470a76a04f234ff6863f1dca1}} 
+bool {\bfseries intrinsic}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a3237efa8834ef0f47b9e14284e1db710}\label{struct_symbol_modifiers_a3237efa8834ef0f47b9e14284e1db710}} 
+bool {\bfseries parameter}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_ac783671e5116d72c93935bb9bf7c2cb8}\label{struct_symbol_modifiers_ac783671e5116d72c93935bb9bf7c2cb8}} 
+bool {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a10971e3ef27a2e20c71a769c6d237807}\label{struct_symbol_modifiers_a10971e3ef27a2e20c71a769c6d237807}} 
+bool {\bfseries target}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a25d1321a621eb7496f4e2e3ac99b0842}\label{struct_symbol_modifiers_a25d1321a621eb7496f4e2e3ac99b0842}} 
+bool {\bfseries save}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a2aad749396a02ead46410d78da584e9a}\label{struct_symbol_modifiers_a2aad749396a02ead46410d78da584e9a}} 
+bool {\bfseries deferred}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a1500769a8e0054bb142980765556c923}\label{struct_symbol_modifiers_a1500769a8e0054bb142980765556c923}} 
+bool {\bfseries nonoverridable}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_adcd51442f97dbef24a66a86ecd231fda}\label{struct_symbol_modifiers_adcd51442f97dbef24a66a86ecd231fda}} 
+bool {\bfseries nopass}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_af73c8f692ea33c3d1250adc8e4a1b946}\label{struct_symbol_modifiers_af73c8f692ea33c3d1250adc8e4a1b946}} 
+bool {\bfseries pass}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_af53aa7a23a005f7e861977192ea549ad}\label{struct_symbol_modifiers_af53aa7a23a005f7e861977192ea549ad}} 
+bool {\bfseries contiguous}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a6034722aa4017fca0054462b41b4aa97}\label{struct_symbol_modifiers_a6034722aa4017fca0054462b41b4aa97}} 
+bool {\bfseries volat}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_a18f0ffb7109d897a5ba0eb58ac3ace45}\label{struct_symbol_modifiers_a18f0ffb7109d897a5ba0eb58ac3ace45}} 
+bool {\bfseries value}
+\item 
+\mbox{\Hypertarget{struct_symbol_modifiers_aa087f0ac7c16038e40ba11ad1b66c635}\label{struct_symbol_modifiers_aa087f0ac7c16038e40ba11ad1b66c635}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries pass\+Var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds modifiers (ie attributes) for one symbol (variable, function, etc) 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_symbol_modifiers_a73f1b078fd79fffd3a50ca217b580bed}\label{struct_symbol_modifiers_a73f1b078fd79fffd3a50ca217b580bed}} 
+\index{SymbolModifiers@{SymbolModifiers}!operator\texttt{"|}=@{operator\texttt{"|}=}}
+\index{operator\texttt{"|}=@{operator\texttt{"|}=}!SymbolModifiers@{SymbolModifiers}}
+\subsubsection{\texorpdfstring{operator\texttt{"|}=()}{operator|=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_symbol_modifiers}{Symbol\+Modifiers}} \& Symbol\+Modifiers\+::operator$\vert$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_symbol_modifiers}{Symbol\+Modifiers}} \&}]{mdfs }\end{DoxyParamCaption})}
+
+Adds passed modifiers to these modifiers. \mbox{\Hypertarget{struct_symbol_modifiers_aaca9d411d0392efd25510ca3209178d0}\label{struct_symbol_modifiers_aaca9d411d0392efd25510ca3209178d0}} 
+\index{SymbolModifiers@{SymbolModifiers}!operator\texttt{"|}=@{operator\texttt{"|}=}}
+\index{operator\texttt{"|}=@{operator\texttt{"|}=}!SymbolModifiers@{SymbolModifiers}}
+\subsubsection{\texorpdfstring{operator\texttt{"|}=()}{operator|=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_symbol_modifiers}{Symbol\+Modifiers}} \& Symbol\+Modifiers\+::operator$\vert$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}}}]{mdf\+String }\end{DoxyParamCaption})}
+
+Extracts and adds passed modifier to these modifiers. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/build/generated\+\_\+src/fortranscanner.\+cpp\end{DoxyCompactItemize}

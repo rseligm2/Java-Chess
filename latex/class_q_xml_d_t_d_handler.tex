@@ -1,0 +1,89 @@
+\hypertarget{class_q_xml_d_t_d_handler}{}\section{Q\+Xml\+D\+T\+D\+Handler Class Reference}
+\label{class_q_xml_d_t_d_handler}\index{QXmlDTDHandler@{QXmlDTDHandler}}
+
+
+The \mbox{\hyperlink{class_q_xml_d_t_d_handler}{Q\+Xml\+D\+T\+D\+Handler}} class provides an interface to report D\+TD content of X\+ML data.  
+
+
+
+
+{\ttfamily \#include $<$qxml.\+h$>$}
+
+Inheritance diagram for Q\+Xml\+D\+T\+D\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_q_xml_d_t_d_handler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_q_xml_d_t_d_handler_a3ce7216b7646cd26bd11c4bdee883507}{notation\+Decl}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&name, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&public\+Id, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&system\+Id)=0
+\item 
+virtual bool \mbox{\hyperlink{class_q_xml_d_t_d_handler_a956c5143b8f349a19782fb56c577e04e}{unparsed\+Entity\+Decl}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&name, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&public\+Id, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&system\+Id, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&notation\+Name)=0
+\item 
+virtual \mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_xml_d_t_d_handler_a40f40b9674be96a009a93147d5e0178d}{error\+String}} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_q_xml_d_t_d_handler}{Q\+Xml\+D\+T\+D\+Handler}} class provides an interface to report D\+TD content of X\+ML data. 
+
+\textbackslash{}module X\+ML
+
+If an application needs information about notations and unparsed entities, then the application implements this interface and registers an instance with \mbox{\hyperlink{class_q_xml_reader_a0b24b1fe26a4c32a8032d68ee14d5dba}{Q\+Xml\+Reader\+::set\+D\+T\+D\+Handler()}}.
+
+Note that this interface includes only those D\+TD events that the X\+ML recommendation requires processors to report\+: notation and unparsed entity declarations.
+
+See also the \href{xml.html\#introSAX2}{\texttt{ Introduction to S\+A\+X2}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_xml_decl_handler}{Q\+Xml\+Decl\+Handler}} \mbox{\hyperlink{class_q_xml_content_handler}{Q\+Xml\+Content\+Handler}} \mbox{\hyperlink{class_q_xml_entity_resolver}{Q\+Xml\+Entity\+Resolver}} \mbox{\hyperlink{class_q_xml_error_handler}{Q\+Xml\+Error\+Handler}} \mbox{\hyperlink{class_q_xml_lexical_handler}{Q\+Xml\+Lexical\+Handler}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_xml_d_t_d_handler_a40f40b9674be96a009a93147d5e0178d}\label{class_q_xml_d_t_d_handler_a40f40b9674be96a009a93147d5e0178d}} 
+\index{QXmlDTDHandler@{QXmlDTDHandler}!errorString@{errorString}}
+\index{errorString@{errorString}!QXmlDTDHandler@{QXmlDTDHandler}}
+\subsubsection{\texorpdfstring{errorString()}{errorString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Xml\+D\+T\+D\+Handler\+::error\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+The reader calls this function to get an error string if any of the handler functions returns F\+A\+L\+SE to him. 
+
+Implemented in \mbox{\hyperlink{class_q_xml_default_handler_afcbe5fdce86cea4b7863e752c2413c45}{Q\+Xml\+Default\+Handler}}.
+
+\mbox{\Hypertarget{class_q_xml_d_t_d_handler_a3ce7216b7646cd26bd11c4bdee883507}\label{class_q_xml_d_t_d_handler_a3ce7216b7646cd26bd11c4bdee883507}} 
+\index{QXmlDTDHandler@{QXmlDTDHandler}!notationDecl@{notationDecl}}
+\index{notationDecl@{notationDecl}!QXmlDTDHandler@{QXmlDTDHandler}}
+\subsubsection{\texorpdfstring{notationDecl()}{notationDecl()}}
+{\footnotesize\ttfamily bool Q\+Xml\+D\+T\+D\+Handler\+::notation\+Decl (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{name,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{public\+Id,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{system\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+The reader calls this function when he has parsed a notation declaration.
+
+The argument {\itshape name} is the notation name, {\itshape public\+Id} is the notations\textquotesingle{}s public identifier and {\itshape system\+Id} is the notations\textquotesingle{}s system identifier.
+
+If this function returns F\+A\+L\+SE the reader will stop parsing and will report an error. The reader will use the function \mbox{\hyperlink{class_q_xml_d_t_d_handler_a40f40b9674be96a009a93147d5e0178d}{error\+String()}} to get the error message that will be used for reporting the error. 
+
+Implemented in \mbox{\hyperlink{class_q_xml_default_handler_aaa24e258c75cd45e2bd560864b418958}{Q\+Xml\+Default\+Handler}}.
+
+\mbox{\Hypertarget{class_q_xml_d_t_d_handler_a956c5143b8f349a19782fb56c577e04e}\label{class_q_xml_d_t_d_handler_a956c5143b8f349a19782fb56c577e04e}} 
+\index{QXmlDTDHandler@{QXmlDTDHandler}!unparsedEntityDecl@{unparsedEntityDecl}}
+\index{unparsedEntityDecl@{unparsedEntityDecl}!QXmlDTDHandler@{QXmlDTDHandler}}
+\subsubsection{\texorpdfstring{unparsedEntityDecl()}{unparsedEntityDecl()}}
+{\footnotesize\ttfamily bool Q\+Xml\+D\+T\+D\+Handler\+::unparsed\+Entity\+Decl (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{name,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{public\+Id,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{system\+Id,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{notation\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+The reader calls this function when he finds an unparsed entity declaration.
+
+The argument {\itshape name} is the unparsed entity\textquotesingle{}s name, {\itshape public\+Id} is the entity\textquotesingle{}s public identifier, {\itshape system\+Id} is the entity\textquotesingle{}s system identifier and {\itshape notation} is the name of the associated notation.
+
+If this function returns F\+A\+L\+SE the reader will stop parsing and will report an error. The reader will use the function \mbox{\hyperlink{class_q_xml_d_t_d_handler_a40f40b9674be96a009a93147d5e0178d}{error\+String()}} to get the error message that will be used for reporting the error. 
+
+Implemented in \mbox{\hyperlink{class_q_xml_default_handler_ae4fe530e822e9d5d92a1c849c3f96488}{Q\+Xml\+Default\+Handler}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qxml.\+h\item 
+doxygen/qtools/qxml.\+cpp\end{DoxyCompactItemize}

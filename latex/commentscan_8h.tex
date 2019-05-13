@@ -1,0 +1,96 @@
+\hypertarget{commentscan_8h}{}\section{doxygen/src/commentscan.h File Reference}
+\label{commentscan_8h}\index{doxygen/src/commentscan.h@{doxygen/src/commentscan.h}}
+
+
+\mbox{\hyperlink{class_interface}{Interface}} for the comment block parser.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{commentscan_8h_a9a19e55718f3d815f4e376b1121ffff2}{preprocess\+Comment\+Block}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&comment, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&file\+Name, int line\+Nr)
+\item 
+bool \mbox{\hyperlink{commentscan_8h_afee867c6148d18f87f6cf0734328d3fb}{parse\+Comment\+Block}} (\mbox{\hyperlink{class_parser_interface}{Parser\+Interface}} $\ast$parser, \mbox{\hyperlink{class_entry}{Entry}} $\ast$cur\+Entry, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&comment, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&file\+Name, int \&line\+Nr, bool is\+Brief, bool is\+Javadoc\+Style, bool is\+Inbody, \mbox{\hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection}} \&prot, int \&position, bool \&new\+Entry\+Needed)
+\item 
+\mbox{\Hypertarget{commentscan_8h_a784a26ba150a04f770cb35dba812edea}\label{commentscan_8h_a784a26ba150a04f770cb35dba812edea}} 
+void {\bfseries group\+Enter\+File} (const char $\ast$file, int line)
+\item 
+\mbox{\Hypertarget{commentscan_8h_acf94b1844e3e1f80575b2687cdd24a71}\label{commentscan_8h_acf94b1844e3e1f80575b2687cdd24a71}} 
+void {\bfseries group\+Leave\+File} (const char $\ast$file, int line)
+\item 
+\mbox{\Hypertarget{commentscan_8h_aa703c5a634cfe0624b1166f5978b1c24}\label{commentscan_8h_aa703c5a634cfe0624b1166f5978b1c24}} 
+void {\bfseries group\+Leave\+Compound} (const char $\ast$file, int line, const char $\ast$name)
+\item 
+\mbox{\Hypertarget{commentscan_8h_a09c779adc7ad8c649b9176fdf7904733}\label{commentscan_8h_a09c779adc7ad8c649b9176fdf7904733}} 
+void {\bfseries group\+Enter\+Compound} (const char $\ast$file, int line, const char $\ast$name)
+\item 
+\mbox{\Hypertarget{commentscan_8h_a70e2168f3559ef190af82a87e6e4f79f}\label{commentscan_8h_a70e2168f3559ef190af82a87e6e4f79f}} 
+void {\bfseries open\+Group} (\mbox{\hyperlink{class_entry}{Entry}} $\ast$e, const char $\ast$file, int line)
+\item 
+\mbox{\Hypertarget{commentscan_8h_aa8ed2b35ec6d6c79096e91b87c4b8793}\label{commentscan_8h_aa8ed2b35ec6d6c79096e91b87c4b8793}} 
+void {\bfseries close\+Group} (\mbox{\hyperlink{class_entry}{Entry}} $\ast$, const char $\ast$file, int line, bool found\+Inline=F\+A\+L\+SE)
+\item 
+\mbox{\Hypertarget{commentscan_8h_a99b413d09d13ba1181cf5850c25bf235}\label{commentscan_8h_a99b413d09d13ba1181cf5850c25bf235}} 
+void {\bfseries init\+Group\+Info} (\mbox{\hyperlink{class_entry}{Entry}} $\ast$e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_interface}{Interface}} for the comment block parser. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{commentscan_8h_afee867c6148d18f87f6cf0734328d3fb}\label{commentscan_8h_afee867c6148d18f87f6cf0734328d3fb}} 
+\index{commentscan.h@{commentscan.h}!parseCommentBlock@{parseCommentBlock}}
+\index{parseCommentBlock@{parseCommentBlock}!commentscan.h@{commentscan.h}}
+\subsubsection{\texorpdfstring{parseCommentBlock()}{parseCommentBlock()}}
+{\footnotesize\ttfamily bool parse\+Comment\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_parser_interface}{Parser\+Interface}} $\ast$}]{parser,  }\item[{\mbox{\hyperlink{class_entry}{Entry}} $\ast$}]{cur\+Entry,  }\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{comment,  }\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{file\+Name,  }\item[{int \&}]{line\+Nr,  }\item[{bool}]{is\+Brief,  }\item[{bool}]{is\+Javadoc\+Style,  }\item[{bool}]{is\+Inbody,  }\item[{\mbox{\hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection}} \&}]{prot,  }\item[{int \&}]{position,  }\item[{bool \&}]{new\+Entry\+Needed }\end{DoxyParamCaption})}
+
+Invokes the comment block parser with the request to parse a single comment block. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em parser} & The language parse that invoked this function. The comment block parse may invoke \mbox{\hyperlink{class_parser_interface_a5ebf0f524a296845befa22c85a4cc80b}{Parser\+Interface\+::parse\+Prototype()}} in order to parse the argument of a @fn command. \\
+\hline
+\mbox{\texttt{ in}}  & {\em cur\+Entry} & The \mbox{\hyperlink{class_entry}{Entry}} to which the comment block belongs. Any information (like documentation) that is found in the comment block will be stored in this entry. \\
+\hline
+\mbox{\texttt{ in}}  & {\em comment} & \mbox{\hyperlink{class_a}{A}} string representing the actual comment block. Note that leading $\ast$\textquotesingle{}s are already stripped from the comment block. \\
+\hline
+\mbox{\texttt{ in}}  & {\em file\+Name} & The name of the file in which the comment is found. Mainly used for producing warnings. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em line\+Nr} & The line number at which the comment block was found. When the function returns it will be set to the last line parsed. \\
+\hline
+\mbox{\texttt{ in}}  & {\em is\+Brief} & T\+R\+UE iff this comment block represents a brief description. \\
+\hline
+\mbox{\texttt{ in}}  & {\em is\+Javadoc\+Style} & T\+R\+UE iff this comment block is in \char`\"{}\+Javadoc\char`\"{} style. This means that it starts as a brief description until the end of the sentences is found and then proceeds as a detailed description. \\
+\hline
+\mbox{\texttt{ in}}  & {\em is\+Inbody} & T\+R\+UE iff this comment block is located in the body of a function. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em prot} & The protection level in which this comment block was found. Commands in the comment block may override this. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em position} & The character position within {\itshape comment} where the comment block starts. Typically used in case the comment block contains multiple structural commands. \\
+\hline
+\mbox{\texttt{ out}}  & {\em new\+Entry\+Needed} & Boolean that is T\+R\+UE if the comment block parser finds that a the comment block finishes the entry and a new one needs to be started. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if the comment requires further processing. The parameter {\itshape new\+Entry\+Needed} will typically be true in this case and {\itshape position} will indicate the offset inside the {\itshape comment} string where to proceed parsing. F\+A\+L\+SE indicates no further processing is needed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{commentscan_8h_a9a19e55718f3d815f4e376b1121ffff2}\label{commentscan_8h_a9a19e55718f3d815f4e376b1121ffff2}} 
+\index{commentscan.h@{commentscan.h}!preprocessCommentBlock@{preprocessCommentBlock}}
+\index{preprocessCommentBlock@{preprocessCommentBlock}!commentscan.h@{commentscan.h}}
+\subsubsection{\texorpdfstring{preprocessCommentBlock()}{preprocessCommentBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} preprocess\+Comment\+Block (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{comment,  }\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{file\+Name,  }\item[{int}]{line\+Nr }\end{DoxyParamCaption})}
+
+Invokes the comment block parser with the request to preprocess a single comment block. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em comment} & \mbox{\hyperlink{class_a}{A}} string representing the actual comment block. Note that leading $\ast$\textquotesingle{}s are already stripped from the comment block. \\
+\hline
+\mbox{\texttt{ in}}  & {\em file\+Name} & The name of the file in which the comment is found. Mainly used for producing warnings. \\
+\hline
+\mbox{\texttt{ in}}  & {\em line\+Nr} & The line number at which the comment block was found. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The prepocessed comment block 
+\end{DoxyReturn}

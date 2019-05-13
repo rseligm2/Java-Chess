@@ -1,0 +1,849 @@
+\hypertarget{defargs_8cpp}{}\section{doxygen/build/generated\+\_\+src/defargs.cpp File Reference}
+\label{defargs_8cpp}\index{doxygen/build/generated\_src/defargs.cpp@{doxygen/build/generated\_src/defargs.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$qregexp.\+h$>$}\newline
+{\ttfamily \#include $<$qcstringlist.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}defargs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}entry.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}arguments.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}message.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structyy__buffer__state}{yy\+\_\+buffer\+\_\+state}}
+\item 
+struct \mbox{\hyperlink{structyy__trans__info}{yy\+\_\+trans\+\_\+info}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a1ae16e642a197fa4948998525813c6f5}\label{defargs_8cpp_a1ae16e642a197fa4948998525813c6f5}} 
+\#define {\bfseries Y\+Y\+\_\+\+I\+N\+T\+\_\+\+A\+L\+I\+G\+N\+ED}~short int
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ac86ea8173dfcfc5c989d3295a77e2f95}\label{defargs_8cpp_ac86ea8173dfcfc5c989d3295a77e2f95}} 
+\#define {\bfseries yy\+\_\+create\+\_\+buffer}~\mbox{\hyperlink{defargs_8cpp_a647a14ec689707cf5ab7afff3d74d5a6}{defargs\+Y\+Y\+\_\+create\+\_\+buffer}}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ad1868c6b38b45af25a4a0f449912a808}\label{defargs_8cpp_ad1868c6b38b45af25a4a0f449912a808}} 
+\#define {\bfseries yy\+\_\+delete\+\_\+buffer}~\mbox{\hyperlink{defargs_8cpp_a04e333dc9c2fd31ea2c8299d90722c28}{defargs\+Y\+Y\+\_\+delete\+\_\+buffer}}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a301f4439c9b191c80db45f5b1a8c7269}\label{defargs_8cpp_a301f4439c9b191c80db45f5b1a8c7269}} 
+\#define {\bfseries yy\+\_\+flex\+\_\+debug}~defargs\+Y\+Y\+\_\+flex\+\_\+debug
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aa14efad9f9c24106a3e3398a4f6621c2}\label{defargs_8cpp_aa14efad9f9c24106a3e3398a4f6621c2}} 
+\#define {\bfseries yy\+\_\+init\+\_\+buffer}~defargs\+Y\+Y\+\_\+init\+\_\+buffer
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ab01a4c7245136f22a63acac7c0ceb343}\label{defargs_8cpp_ab01a4c7245136f22a63acac7c0ceb343}} 
+\#define {\bfseries yy\+\_\+flush\+\_\+buffer}~\mbox{\hyperlink{defargs_8cpp_a8ffeaea87204edbf3bf8311fbc0e2a50}{defargs\+Y\+Y\+\_\+flush\+\_\+buffer}}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a039fc377fd4784139d8706ba0ae229fa}\label{defargs_8cpp_a039fc377fd4784139d8706ba0ae229fa}} 
+\#define {\bfseries yy\+\_\+load\+\_\+buffer\+\_\+state}~defargs\+Y\+Y\+\_\+load\+\_\+buffer\+\_\+state
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a968d5b9e7e06a38bfca977b343d47d5c}\label{defargs_8cpp_a968d5b9e7e06a38bfca977b343d47d5c}} 
+\#define {\bfseries yy\+\_\+switch\+\_\+to\+\_\+buffer}~\mbox{\hyperlink{defargs_8cpp_a06a514bd91ff5c929ed1c718c37f4345}{defargs\+Y\+Y\+\_\+switch\+\_\+to\+\_\+buffer}}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aa789f4617e33fb99594cb04a3688a0c1}\label{defargs_8cpp_aa789f4617e33fb99594cb04a3688a0c1}} 
+\#define {\bfseries yyin}~defargs\+Y\+Yin
+\item 
+\mbox{\Hypertarget{defargs_8cpp_afa07a629486cb790560bb95713ec7794}\label{defargs_8cpp_afa07a629486cb790560bb95713ec7794}} 
+\#define {\bfseries yyleng}~defargs\+Y\+Yleng
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a5611300548b2030d86b6ab9168132b88}\label{defargs_8cpp_a5611300548b2030d86b6ab9168132b88}} 
+\#define {\bfseries yylex}~defargs\+Y\+Ylex
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ad71cf0fddcfe4f61de0929105b33226c}\label{defargs_8cpp_ad71cf0fddcfe4f61de0929105b33226c}} 
+\#define {\bfseries yylineno}~defargs\+Y\+Ylineno
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a4fd44867d448dcb6fc32ea004a15de54}\label{defargs_8cpp_a4fd44867d448dcb6fc32ea004a15de54}} 
+\#define {\bfseries yyout}~defargs\+Y\+Yout
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a2259355ac49295f72feab070a34a9b11}\label{defargs_8cpp_a2259355ac49295f72feab070a34a9b11}} 
+\#define {\bfseries yyrestart}~\mbox{\hyperlink{defargs_8cpp_aabae629ef20b9b3823243c56109ca8c7}{defargs\+Y\+Yrestart}}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a0d71f919dbec1ffd74b2460fa7e5ac28}\label{defargs_8cpp_a0d71f919dbec1ffd74b2460fa7e5ac28}} 
+\#define {\bfseries yytext}~defargs\+Y\+Ytext
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a5be541efdb129f7cefb2437f52fe7359}\label{defargs_8cpp_a5be541efdb129f7cefb2437f52fe7359}} 
+\#define {\bfseries yywrap}~defargs\+Y\+Ywrap
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a803397ab738ee8630166680646a2d913}\label{defargs_8cpp_a803397ab738ee8630166680646a2d913}} 
+\#define {\bfseries yyalloc}~defargs\+Y\+Yalloc
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ab1eba250555ca003eb39387bb1a41d39}\label{defargs_8cpp_ab1eba250555ca003eb39387bb1a41d39}} 
+\#define {\bfseries yyrealloc}~defargs\+Y\+Yrealloc
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a4fa4368d47620ea80150b516e8884f6b}\label{defargs_8cpp_a4fa4368d47620ea80150b516e8884f6b}} 
+\#define {\bfseries yyfree}~defargs\+Y\+Yfree
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a3c3d1ef92e93b0bc81d7760a73d5c3b6}\label{defargs_8cpp_a3c3d1ef92e93b0bc81d7760a73d5c3b6}} 
+\#define {\bfseries F\+L\+E\+X\+\_\+\+S\+C\+A\+N\+N\+ER}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a243ca1d30872935faf05ea5118ed6fdc}\label{defargs_8cpp_a243ca1d30872935faf05ea5118ed6fdc}} 
+\#define {\bfseries Y\+Y\+\_\+\+F\+L\+E\+X\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}~2
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a90f9d458829400869e47efb68a865677}\label{defargs_8cpp_a90f9d458829400869e47efb68a865677}} 
+\#define {\bfseries Y\+Y\+\_\+\+F\+L\+E\+X\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}~5
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ac676bd06869180ea493e9b6d7c078dbb}\label{defargs_8cpp_ac676bd06869180ea493e9b6d7c078dbb}} 
+\#define {\bfseries Y\+Y\+\_\+\+F\+L\+E\+X\+\_\+\+S\+U\+B\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}~35
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a9465c9986fdda27730c9dff8d16a0887}\label{defargs_8cpp_a9465c9986fdda27730c9dff8d16a0887}} 
+\#define {\bfseries F\+L\+E\+X\+\_\+\+B\+E\+TA}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aec980b5a71bbe6d67931df20f0ebaec4}\label{defargs_8cpp_aec980b5a71bbe6d67931df20f0ebaec4}} 
+\#define {\bfseries F\+L\+E\+X\+I\+N\+T\+\_\+H}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aadcf2a81af243df333b31efa6461ab8e}\label{defargs_8cpp_aadcf2a81af243df333b31efa6461ab8e}} 
+\#define {\bfseries I\+N\+T8\+\_\+\+M\+IN}~(-\/128)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ad4e9955955b27624963643eac448118a}\label{defargs_8cpp_ad4e9955955b27624963643eac448118a}} 
+\#define {\bfseries I\+N\+T16\+\_\+\+M\+IN}~(-\/32767-\/1)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a688eb21a22db27c2b2bd5836943cdcbe}\label{defargs_8cpp_a688eb21a22db27c2b2bd5836943cdcbe}} 
+\#define {\bfseries I\+N\+T32\+\_\+\+M\+IN}~(-\/2147483647-\/1)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aaf7f29f45f1a513b4748a4e5014ddf6a}\label{defargs_8cpp_aaf7f29f45f1a513b4748a4e5014ddf6a}} 
+\#define {\bfseries I\+N\+T8\+\_\+\+M\+AX}~(127)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ac58f2c111cc9989c86db2a7dc4fd84ca}\label{defargs_8cpp_ac58f2c111cc9989c86db2a7dc4fd84ca}} 
+\#define {\bfseries I\+N\+T16\+\_\+\+M\+AX}~(32767)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a181807730d4a375f848ba139813ce04f}\label{defargs_8cpp_a181807730d4a375f848ba139813ce04f}} 
+\#define {\bfseries I\+N\+T32\+\_\+\+M\+AX}~(2147483647)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aeb4e270a084ee26fe73e799861bd0252}\label{defargs_8cpp_aeb4e270a084ee26fe73e799861bd0252}} 
+\#define {\bfseries U\+I\+N\+T8\+\_\+\+M\+AX}~(255\+U)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a3ea490c9b3617d4479bd80ef93cd5602}\label{defargs_8cpp_a3ea490c9b3617d4479bd80ef93cd5602}} 
+\#define {\bfseries U\+I\+N\+T16\+\_\+\+M\+AX}~(65535\+U)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ab5eb23180f7cc12b7d6c04a8ec067fdd}\label{defargs_8cpp_ab5eb23180f7cc12b7d6c04a8ec067fdd}} 
+\#define {\bfseries U\+I\+N\+T32\+\_\+\+M\+AX}~(4294967295\+U)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aa2f1a918be586b44bf08126bde2d7cc9}\label{defargs_8cpp_aa2f1a918be586b44bf08126bde2d7cc9}} 
+\#define {\bfseries yyconst}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a8e0bcf8f8a5b613ea583347f8bc31cbf}\label{defargs_8cpp_a8e0bcf8f8a5b613ea583347f8bc31cbf}} 
+\#define {\bfseries Y\+Y\+\_\+\+N\+U\+LL}~0
+\item 
+\mbox{\Hypertarget{defargs_8cpp_af1185350b7a92cf8aa5324c68850c8a6}\label{defargs_8cpp_af1185350b7a92cf8aa5324c68850c8a6}} 
+\#define {\bfseries Y\+Y\+\_\+\+S\+C\+\_\+\+T\+O\+\_\+\+UI}(c)~((unsigned int) (unsigned char) c)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ab766bbbee08d04b67e3fe599d6900873}\label{defargs_8cpp_ab766bbbee08d04b67e3fe599d6900873}} 
+\#define {\bfseries B\+E\+G\+IN}~(yy\+\_\+start) = 1 + 2 $\ast$
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a8e14785f9eab7a997d659b25af9584c5}\label{defargs_8cpp_a8e14785f9eab7a997d659b25af9584c5}} 
+\#define {\bfseries Y\+Y\+\_\+\+S\+T\+A\+RT}~(((yy\+\_\+start) -\/ 1) / 2)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a32b5b960944f946b192d54f672569cd9}\label{defargs_8cpp_a32b5b960944f946b192d54f672569cd9}} 
+\#define {\bfseries Y\+Y\+S\+T\+A\+TE}~Y\+Y\+\_\+\+S\+T\+A\+RT
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ab3077e60914fc54dcc55ecae1ce9700b}\label{defargs_8cpp_ab3077e60914fc54dcc55ecae1ce9700b}} 
+\#define {\bfseries Y\+Y\+\_\+\+S\+T\+A\+T\+E\+\_\+\+E\+OF}(state)~(Y\+Y\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+B\+U\+F\+F\+ER + state + 1)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a0406739e64fb5750cf995d2ae68ce69d}\label{defargs_8cpp_a0406739e64fb5750cf995d2ae68ce69d}} 
+\#define {\bfseries Y\+Y\+\_\+\+N\+E\+W\+\_\+\+F\+I\+LE}~\mbox{\hyperlink{defargs_8cpp_aabae629ef20b9b3823243c56109ca8c7}{defargs\+Y\+Yrestart}}(defargs\+Y\+Yin  )
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ab866a64da164ed2d4d444df1ef1fc9b3}\label{defargs_8cpp_ab866a64da164ed2d4d444df1ef1fc9b3}} 
+\#define {\bfseries Y\+Y\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+C\+H\+AR}~0
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ae7e51116e747d3390e7a6cfc6532834c}\label{defargs_8cpp_ae7e51116e747d3390e7a6cfc6532834c}} 
+\#define {\bfseries Y\+Y\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE}~16384
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ac2f8b6fccdc516d96b02ac09a4dc01bd}\label{defargs_8cpp_ac2f8b6fccdc516d96b02ac09a4dc01bd}} 
+\#define {\bfseries Y\+Y\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE}~((Y\+Y\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE + 2) $\ast$ sizeof(yy\+\_\+state\+\_\+type))
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aa79d63ed3ff8d2249baf1732a73089f5}\label{defargs_8cpp_aa79d63ed3ff8d2249baf1732a73089f5}} 
+\#define {\bfseries Y\+Y\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+\_\+\+Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ae0f2b0b5f04b2338367826b5670774f9}\label{defargs_8cpp_ae0f2b0b5f04b2338367826b5670774f9}} 
+\#define {\bfseries Y\+Y\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+\_\+\+Y\+Y\+\_\+\+S\+I\+Z\+E\+\_\+T}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_adf4b0db227e07782e28ade353a7ba7a1}\label{defargs_8cpp_adf4b0db227e07782e28ade353a7ba7a1}} 
+\#define {\bfseries E\+O\+B\+\_\+\+A\+C\+T\+\_\+\+C\+O\+N\+T\+I\+N\+U\+E\+\_\+\+S\+C\+AN}~0
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a7f71d7fa2c403eb4b2f38cb9536f3c63}\label{defargs_8cpp_a7f71d7fa2c403eb4b2f38cb9536f3c63}} 
+\#define {\bfseries E\+O\+B\+\_\+\+A\+C\+T\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+F\+I\+LE}~1
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ad1a0b5ebcabffe388e9e9ebb2619c1fb}\label{defargs_8cpp_ad1a0b5ebcabffe388e9e9ebb2619c1fb}} 
+\#define {\bfseries E\+O\+B\+\_\+\+A\+C\+T\+\_\+\+L\+A\+S\+T\+\_\+\+M\+A\+T\+CH}~2
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a12e5f3a76911433480bca7f4edba6119}\label{defargs_8cpp_a12e5f3a76911433480bca7f4edba6119}} 
+\#define {\bfseries Y\+Y\+\_\+\+L\+E\+S\+S\+\_\+\+L\+I\+N\+E\+NO}(n)
+\item 
+\#define {\bfseries yyless}(n)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a448a4e9041a09588332733c6846c770c}\label{defargs_8cpp_a448a4e9041a09588332733c6846c770c}} 
+\#define {\bfseries unput}(c)~yyunput( c, (yytext\+\_\+ptr)  )
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a8aaa9e1fa7f13d6954d045ef973a9c84}\label{defargs_8cpp_a8aaa9e1fa7f13d6954d045ef973a9c84}} 
+\#define {\bfseries Y\+Y\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+\+Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a53579db42834b88199458993912c646d}\label{defargs_8cpp_a53579db42834b88199458993912c646d}} 
+\#define {\bfseries Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+N\+EW}~0
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a609d19f40900ecc2a5f812d9388c21fb}\label{defargs_8cpp_a609d19f40900ecc2a5f812d9388c21fb}} 
+\#define {\bfseries Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+N\+O\+R\+M\+AL}~1
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ad689d97c15e807a6116ace7a420cea57}\label{defargs_8cpp_ad689d97c15e807a6116ace7a420cea57}} 
+\#define {\bfseries Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+E\+O\+F\+\_\+\+P\+E\+N\+D\+I\+NG}~2
+\item 
+\#define {\bfseries Y\+Y\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+B\+U\+F\+F\+ER}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a817a6a24af62508b5a35f4bed5f56a2e}\label{defargs_8cpp_a817a6a24af62508b5a35f4bed5f56a2e}} 
+\#define {\bfseries Y\+Y\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+V\+A\+L\+UE}~(yy\+\_\+buffer\+\_\+stack)\mbox{[}(yy\+\_\+buffer\+\_\+stack\+\_\+top)\mbox{]}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ac5d478d90ea9a2ecd43d579067a2e89d}\label{defargs_8cpp_ac5d478d90ea9a2ecd43d579067a2e89d}} 
+\#define {\bfseries Y\+Y\+\_\+\+F\+L\+U\+S\+H\+\_\+\+B\+U\+F\+F\+ER}~\mbox{\hyperlink{defargs_8cpp_a8ffeaea87204edbf3bf8311fbc0e2a50}{defargs\+Y\+Y\+\_\+flush\+\_\+buffer}}(Y\+Y\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+B\+U\+F\+F\+ER )
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ab7eb911e18655f2f78e63afe5a8a4a12}\label{defargs_8cpp_ab7eb911e18655f2f78e63afe5a8a4a12}} 
+\#define {\bfseries yy\+\_\+new\+\_\+buffer}~\mbox{\hyperlink{defargs_8cpp_a647a14ec689707cf5ab7afff3d74d5a6}{defargs\+Y\+Y\+\_\+create\+\_\+buffer}}
+\item 
+\#define {\bfseries yy\+\_\+set\+\_\+interactive}(is\+\_\+interactive)
+\item 
+\#define {\bfseries yy\+\_\+set\+\_\+bol}(at\+\_\+bol)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a71ca89b3656acd0552f14949a571560b}\label{defargs_8cpp_a71ca89b3656acd0552f14949a571560b}} 
+\#define {\bfseries Y\+Y\+\_\+\+A\+T\+\_\+\+B\+OL}()~(Y\+Y\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+V\+A\+L\+UE-\/$>$yy\+\_\+at\+\_\+bol)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ae385a8a55e01722d3d7a58d054feeedf}\label{defargs_8cpp_ae385a8a55e01722d3d7a58d054feeedf}} 
+\#define {\bfseries defargs\+Y\+Ywrap}(n)~1
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ae1ef5933028cbc587d31328e53d11a99}\label{defargs_8cpp_ae1ef5933028cbc587d31328e53d11a99}} 
+\#define {\bfseries Y\+Y\+\_\+\+S\+K\+I\+P\+\_\+\+Y\+Y\+W\+R\+AP}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a790a191a93ef4d3b8c0bb43fd7480052}\label{defargs_8cpp_a790a191a93ef4d3b8c0bb43fd7480052}} 
+\#define {\bfseries yytext\+\_\+ptr}~defargs\+Y\+Ytext
+\item 
+\#define {\bfseries Y\+Y\+\_\+\+D\+O\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+A\+C\+T\+I\+ON}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ae558785bb896e090901c2b905f6790c6}\label{defargs_8cpp_ae558785bb896e090901c2b905f6790c6}} 
+\#define {\bfseries Y\+Y\+\_\+\+N\+U\+M\+\_\+\+R\+U\+L\+ES}~62
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ab2708fd42cff29ce6a0a52b91bea40d1}\label{defargs_8cpp_ab2708fd42cff29ce6a0a52b91bea40d1}} 
+\#define {\bfseries Y\+Y\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+B\+U\+F\+F\+ER}~63
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a76482842cdcaadf1dbdaf43df38765a2}\label{defargs_8cpp_a76482842cdcaadf1dbdaf43df38765a2}} 
+\#define {\bfseries Y\+Y\+\_\+\+T\+R\+A\+I\+L\+I\+N\+G\+\_\+\+M\+A\+SK}~0x2000
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a7fce78ee876950ded902364014c917e6}\label{defargs_8cpp_a7fce78ee876950ded902364014c917e6}} 
+\#define {\bfseries Y\+Y\+\_\+\+T\+R\+A\+I\+L\+I\+N\+G\+\_\+\+H\+E\+A\+D\+\_\+\+M\+A\+SK}~0x4000
+\item 
+\#define {\bfseries R\+E\+J\+E\+CT}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a745d37b5e002b2e5f93ad42ea7b554be}\label{defargs_8cpp_a745d37b5e002b2e5f93ad42ea7b554be}} 
+\#define {\bfseries yymore}()~yymore\+\_\+used\+\_\+but\+\_\+not\+\_\+detected
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a68792d73820bc46a71d3d4e613f0b977}\label{defargs_8cpp_a68792d73820bc46a71d3d4e613f0b977}} 
+\#define {\bfseries Y\+Y\+\_\+\+M\+O\+R\+E\+\_\+\+A\+DJ}~0
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a56858d18c7eda4f53664496ef566f651}\label{defargs_8cpp_a56858d18c7eda4f53664496ef566f651}} 
+\#define {\bfseries Y\+Y\+\_\+\+R\+E\+S\+T\+O\+R\+E\+\_\+\+Y\+Y\+\_\+\+M\+O\+R\+E\+\_\+\+O\+F\+F\+S\+ET}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a85523a0c7d95c059d251b4e9829947aa}\label{defargs_8cpp_a85523a0c7d95c059d251b4e9829947aa}} 
+\#define {\bfseries Y\+Y\+\_\+\+N\+O\+\_\+\+I\+N\+P\+UT}~1
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ae78ac56cd1f29572e967ed7636952d15}\label{defargs_8cpp_ae78ac56cd1f29572e967ed7636952d15}} 
+\#define {\bfseries Y\+Y\+\_\+\+N\+O\+\_\+\+U\+N\+I\+S\+T\+D\+\_\+H}~1
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aacfdca45fa4beb8b06172525a53c424a}\label{defargs_8cpp_aacfdca45fa4beb8b06172525a53c424a}} 
+\#define {\bfseries Y\+Y\+\_\+\+I\+N\+P\+UT}(buf,  result,  max\+\_\+size)~result=yyread(buf,max\+\_\+size);
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ab335232c9023dc4c9a81d8318cfef9dc}\label{defargs_8cpp_ab335232c9023dc4c9a81d8318cfef9dc}} 
+\#define {\bfseries D\+U\+M\+M\+Y\+\_\+\+A\+D\+DR}~(void$\ast$)0x8
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aa3d063564f6ab16f6d408b8369d0e9ff}\label{defargs_8cpp_aa3d063564f6ab16f6d408b8369d0e9ff}} 
+\#define {\bfseries I\+N\+I\+T\+I\+AL}~0
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a991581d134a6f84d55be043b6e34afd7}\label{defargs_8cpp_a991581d134a6f84d55be043b6e34afd7}} 
+\#define {\bfseries Start}~1
+\item 
+\mbox{\Hypertarget{defargs_8cpp_affc2d52c613cbc7a0ee217e818ef0da4}\label{defargs_8cpp_affc2d52c613cbc7a0ee217e818ef0da4}} 
+\#define {\bfseries Copy\+Arg\+String}~2
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a8081223eb2b0c113cf791db3aa0b1a5f}\label{defargs_8cpp_a8081223eb2b0c113cf791db3aa0b1a5f}} 
+\#define {\bfseries Copy\+Raw\+String}~3
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aa78a52ea857189f063d1730c35918fa6}\label{defargs_8cpp_aa78a52ea857189f063d1730c35918fa6}} 
+\#define {\bfseries Copy\+Arg\+Round}~4
+\item 
+\mbox{\Hypertarget{defargs_8cpp_af5efde02030dbdbf6c40825068c52d79}\label{defargs_8cpp_af5efde02030dbdbf6c40825068c52d79}} 
+\#define {\bfseries Copy\+Arg\+Round2}~5
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a550ff1b990ff329bb06a40a9a8aead3b}\label{defargs_8cpp_a550ff1b990ff329bb06a40a9a8aead3b}} 
+\#define {\bfseries Copy\+Arg\+Sharp}~6
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aab05daeb482755275df3879bf992747e}\label{defargs_8cpp_aab05daeb482755275df3879bf992747e}} 
+\#define {\bfseries Copy\+Arg\+Curly}~7
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a2b5ff66fb44f4df0dd5e491f026117ae}\label{defargs_8cpp_a2b5ff66fb44f4df0dd5e491f026117ae}} 
+\#define {\bfseries Read\+Func\+Arg\+Type}~8
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a53fdee8d208acac7ef653cc23b421635}\label{defargs_8cpp_a53fdee8d208acac7ef653cc23b421635}} 
+\#define {\bfseries Read\+Func\+Arg\+Def}~9
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ac7d220954e8807aeadba9644f3e20ab8}\label{defargs_8cpp_ac7d220954e8807aeadba9644f3e20ab8}} 
+\#define {\bfseries Read\+Func\+Arg\+Ptr}~10
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a1f681b864bd4c3891dcd600819bcb9b0}\label{defargs_8cpp_a1f681b864bd4c3891dcd600819bcb9b0}} 
+\#define {\bfseries Func\+Qual}~11
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ab322049b558a41ab1c31c7826282d59a}\label{defargs_8cpp_ab322049b558a41ab1c31c7826282d59a}} 
+\#define {\bfseries Read\+Doc\+Block}~12
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a53a717c3f178791dad52c3b08ec1452d}\label{defargs_8cpp_a53a717c3f178791dad52c3b08ec1452d}} 
+\#define {\bfseries Read\+Doc\+Line}~13
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aead6d2ad93e75867240436db1b3dd524}\label{defargs_8cpp_aead6d2ad93e75867240436db1b3dd524}} 
+\#define {\bfseries Read\+Type\+Constraint}~14
+\item 
+\mbox{\Hypertarget{defargs_8cpp_afe7f6a79d8b5d3365d2cbbd9c2d27ee5}\label{defargs_8cpp_afe7f6a79d8b5d3365d2cbbd9c2d27ee5}} 
+\#define {\bfseries Trailing\+Return}~15
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a26938d921de835f6183c02e54cf08828}\label{defargs_8cpp_a26938d921de835f6183c02e54cf08828}} 
+\#define {\bfseries Y\+Y\+\_\+\+E\+X\+T\+R\+A\+\_\+\+T\+Y\+PE}~void $\ast$
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aab1491ceccb1c95c14320b2903773a1c}\label{defargs_8cpp_aab1491ceccb1c95c14320b2903773a1c}} 
+\#define {\bfseries Y\+Y\+\_\+\+R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE}~8192
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aad1dc60a04a1d8cfc8b3ded13601e361}\label{defargs_8cpp_aad1dc60a04a1d8cfc8b3ded13601e361}} 
+\#define {\bfseries E\+C\+HO}~fwrite( defargs\+Y\+Ytext, defargs\+Y\+Yleng, 1, defargs\+Y\+Yout )
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ac3286b18a2e91b4571b97df96a118e84}\label{defargs_8cpp_ac3286b18a2e91b4571b97df96a118e84}} 
+\#define {\bfseries yyterminate}()~return Y\+Y\+\_\+\+N\+U\+LL
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a227e75c43b9e0cd41529974230be7e75}\label{defargs_8cpp_a227e75c43b9e0cd41529974230be7e75}} 
+\#define {\bfseries Y\+Y\+\_\+\+S\+T\+A\+R\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+I\+N\+CR}~25
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ac0586b8b0b092d02f4ba7d45abe328f2}\label{defargs_8cpp_ac0586b8b0b092d02f4ba7d45abe328f2}} 
+\#define {\bfseries Y\+Y\+\_\+\+F\+A\+T\+A\+L\+\_\+\+E\+R\+R\+OR}(msg)~yy\+\_\+fatal\+\_\+error( msg )
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a7682c8d9cec0859408d2421fbe4a5570}\label{defargs_8cpp_a7682c8d9cec0859408d2421fbe4a5570}} 
+\#define {\bfseries Y\+Y\+\_\+\+D\+E\+C\+L\+\_\+\+I\+S\+\_\+\+O\+U\+RS}~1
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ae5b01ac2fa5a6ad5fb97559638abe686}\label{defargs_8cpp_ae5b01ac2fa5a6ad5fb97559638abe686}} 
+\#define {\bfseries Y\+Y\+\_\+\+D\+E\+CL}~int defargs\+Y\+Ylex (void)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a6198b2fcf96178b24ad4efff2a3debb0}\label{defargs_8cpp_a6198b2fcf96178b24ad4efff2a3debb0}} 
+\#define {\bfseries Y\+Y\+\_\+\+U\+S\+E\+R\+\_\+\+A\+C\+T\+I\+ON}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a3cc40a460ad7df816678bcc05241e84c}\label{defargs_8cpp_a3cc40a460ad7df816678bcc05241e84c}} 
+\#define {\bfseries Y\+Y\+\_\+\+B\+R\+E\+AK}~break;
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a690504b662e4281515bf12722df178ba}\label{defargs_8cpp_a690504b662e4281515bf12722df178ba}} 
+\#define {\bfseries Y\+Y\+\_\+\+R\+U\+L\+E\+\_\+\+S\+E\+T\+UP}~Y\+Y\+\_\+\+U\+S\+E\+R\+\_\+\+A\+C\+T\+I\+ON
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ae93e67b85c44f6bd31ead14a552a35c8}\label{defargs_8cpp_ae93e67b85c44f6bd31ead14a552a35c8}} 
+\#define {\bfseries Y\+Y\+\_\+\+E\+X\+I\+T\+\_\+\+F\+A\+I\+L\+U\+RE}~2
+\item 
+\#define {\bfseries yyless}(n)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a828cc83270f8f5bb1688e14dd4e28128}\label{defargs_8cpp_a828cc83270f8f5bb1688e14dd4e28128}} 
+\#define {\bfseries Y\+Y\+T\+A\+B\+L\+E\+S\+\_\+\+N\+A\+ME}~\char`\"{}yytables\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a7b0840dff4a2ef1702118aa12264b2a7}\label{defargs_8cpp_a7b0840dff4a2ef1702118aa12264b2a7}} 
+typedef signed char {\bfseries flex\+\_\+int8\+\_\+t}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a2e73b2c75126814585525fb2e9d51159}\label{defargs_8cpp_a2e73b2c75126814585525fb2e9d51159}} 
+typedef short int {\bfseries flex\+\_\+int16\+\_\+t}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a838ce943cf44ef7769480714fc6c3ba9}\label{defargs_8cpp_a838ce943cf44ef7769480714fc6c3ba9}} 
+typedef int {\bfseries flex\+\_\+int32\+\_\+t}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a0fac5ea484f64e75dbe6eba4aa61750c}\label{defargs_8cpp_a0fac5ea484f64e75dbe6eba4aa61750c}} 
+typedef unsigned char {\bfseries flex\+\_\+uint8\+\_\+t}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ac50cdb9eefbef83a1cec89e3a7f6e1d2}\label{defargs_8cpp_ac50cdb9eefbef83a1cec89e3a7f6e1d2}} 
+typedef unsigned short int {\bfseries flex\+\_\+uint16\+\_\+t}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a36869712de12820c73aae736762e8e88}\label{defargs_8cpp_a36869712de12820c73aae736762e8e88}} 
+typedef unsigned int {\bfseries flex\+\_\+uint32\+\_\+t}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a4e5bd2d129903df83f3d13effaf8f3e4}\label{defargs_8cpp_a4e5bd2d129903df83f3d13effaf8f3e4}} 
+typedef struct \mbox{\hyperlink{structyy__buffer__state}{yy\+\_\+buffer\+\_\+state}} $\ast$ {\bfseries Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ad557845057f187eec4be07e2717d2afa}\label{defargs_8cpp_ad557845057f187eec4be07e2717d2afa}} 
+typedef size\+\_\+t {\bfseries yy\+\_\+size\+\_\+t}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a1f324b3cb0839eeb90145f0274e6946e}\label{defargs_8cpp_a1f324b3cb0839eeb90145f0274e6946e}} 
+typedef unsigned char {\bfseries Y\+Y\+\_\+\+C\+H\+AR}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a9ba7c416f135b0f0c1f4addded4616b5}\label{defargs_8cpp_a9ba7c416f135b0f0c1f4addded4616b5}} 
+typedef int {\bfseries yy\+\_\+state\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{defargs_8cpp_aabae629ef20b9b3823243c56109ca8c7}{defargs\+Y\+Yrestart}} (F\+I\+LE $\ast$input\+\_\+file)
+\item 
+void \mbox{\hyperlink{defargs_8cpp_a06a514bd91ff5c929ed1c718c37f4345}{defargs\+Y\+Y\+\_\+switch\+\_\+to\+\_\+buffer}} (\mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}} new\+\_\+buffer)
+\item 
+\mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}} \mbox{\hyperlink{defargs_8cpp_a647a14ec689707cf5ab7afff3d74d5a6}{defargs\+Y\+Y\+\_\+create\+\_\+buffer}} (F\+I\+LE $\ast$file, int size)
+\item 
+void \mbox{\hyperlink{defargs_8cpp_a04e333dc9c2fd31ea2c8299d90722c28}{defargs\+Y\+Y\+\_\+delete\+\_\+buffer}} (\mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}} b)
+\item 
+void \mbox{\hyperlink{defargs_8cpp_a8ffeaea87204edbf3bf8311fbc0e2a50}{defargs\+Y\+Y\+\_\+flush\+\_\+buffer}} (\mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}} b)
+\item 
+void \mbox{\hyperlink{defargs_8cpp_a57a1840c5facb7de4168c9332d208d02}{defargs\+Y\+Ypush\+\_\+buffer\+\_\+state}} (\mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}} new\+\_\+buffer)
+\item 
+void \mbox{\hyperlink{defargs_8cpp_a0cf0e6f87c2e12ceb9a559daaaf95e4b}{defargs\+Y\+Ypop\+\_\+buffer\+\_\+state}} (void)
+\item 
+\mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}} \mbox{\hyperlink{defargs_8cpp_a22a8f34fd7b8638dad4877119b1a99c6}{defargs\+Y\+Y\+\_\+scan\+\_\+buffer}} (char $\ast$base, yy\+\_\+size\+\_\+t size)
+\item 
+\mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}} \mbox{\hyperlink{defargs_8cpp_a1e97a9f86d82a1771da8013bb6ef5ec8}{defargs\+Y\+Y\+\_\+scan\+\_\+string}} (yyconst char $\ast$yy\+\_\+str)
+\item 
+\mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}} \mbox{\hyperlink{defargs_8cpp_a866ce21918f0524077b0daa98e4293c5}{defargs\+Y\+Y\+\_\+scan\+\_\+bytes}} (yyconst char $\ast$bytes, yy\+\_\+size\+\_\+t len)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a7bd457bde014c83b45280e92361a11e6}\label{defargs_8cpp_a7bd457bde014c83b45280e92361a11e6}} 
+void $\ast$ {\bfseries defargs\+Y\+Yalloc} (yy\+\_\+size\+\_\+t)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a00a2376508670504d30865a585a114f4}\label{defargs_8cpp_a00a2376508670504d30865a585a114f4}} 
+void $\ast$ {\bfseries defargs\+Y\+Yrealloc} (void $\ast$, yy\+\_\+size\+\_\+t)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ab598ed677e6684b4bb6a6a25a800ed78}\label{defargs_8cpp_ab598ed677e6684b4bb6a6a25a800ed78}} 
+void {\bfseries defargs\+Y\+Yfree} (void $\ast$)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a5d44de1b7a80df45e9ba50f44a4f1949}\label{defargs_8cpp_a5d44de1b7a80df45e9ba50f44a4f1949}} 
+int {\bfseries defargs\+Y\+Ylex\+\_\+destroy} (void)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a37d053968cfd63d090031f82eae4fc23}\label{defargs_8cpp_a37d053968cfd63d090031f82eae4fc23}} 
+int {\bfseries defargs\+Y\+Yget\+\_\+debug} (void)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a43fd24c389ee08436a4ed5c99ca34ba1}\label{defargs_8cpp_a43fd24c389ee08436a4ed5c99ca34ba1}} 
+void {\bfseries defargs\+Y\+Yset\+\_\+debug} (int debug\+\_\+flag)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a9d0f6e0c6790ef56658af70d86b7895a}\label{defargs_8cpp_a9d0f6e0c6790ef56658af70d86b7895a}} 
+Y\+Y\+\_\+\+E\+X\+T\+R\+A\+\_\+\+T\+Y\+PE {\bfseries defargs\+Y\+Yget\+\_\+extra} (void)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_aba160308f531e8c76a33db0e87bbde85}\label{defargs_8cpp_aba160308f531e8c76a33db0e87bbde85}} 
+void {\bfseries defargs\+Y\+Yset\+\_\+extra} (Y\+Y\+\_\+\+E\+X\+T\+R\+A\+\_\+\+T\+Y\+PE user\+\_\+defined)
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{defargs_8cpp_a28a3a0aa7ce2de019ade57546a61030a}{defargs\+Y\+Yget\+\_\+in}} (void)
+\item 
+void \mbox{\hyperlink{defargs_8cpp_a8548048cae002f681ce43185fc0514b1}{defargs\+Y\+Yset\+\_\+in}} (F\+I\+LE $\ast$in\+\_\+str)
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{defargs_8cpp_a1897b691813e255a2f729f61c7c4cd7b}{defargs\+Y\+Yget\+\_\+out}} (void)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a0793c58b231eb9a75b696024e596b1c0}\label{defargs_8cpp_a0793c58b231eb9a75b696024e596b1c0}} 
+void {\bfseries defargs\+Y\+Yset\+\_\+out} (F\+I\+LE $\ast$out\+\_\+str)
+\item 
+yy\+\_\+size\+\_\+t \mbox{\hyperlink{defargs_8cpp_a2f94408a34d9bec2d1557f19b0b9cdfa}{defargs\+Y\+Yget\+\_\+leng}} (void)
+\item 
+char $\ast$ \mbox{\hyperlink{defargs_8cpp_ab614956553e7db03849670d39aa30dec}{defargs\+Y\+Yget\+\_\+text}} (void)
+\item 
+int \mbox{\hyperlink{defargs_8cpp_a6f33ca57532af1e2b33fe2151c4a2e2a}{defargs\+Y\+Yget\+\_\+lineno}} (void)
+\item 
+void \mbox{\hyperlink{defargs_8cpp_a02f6b97eac3b3b410c8aa3cd0a9a6178}{defargs\+Y\+Yset\+\_\+lineno}} (int line\+\_\+number)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a1115a9a3f079e48a4485f5e899611194}\label{defargs_8cpp_a1115a9a3f079e48a4485f5e899611194}} 
+int {\bfseries defargs\+Y\+Ylex} (void)
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ad4a65b873df5c05570846b5413b41dfd}\label{defargs_8cpp_ad4a65b873df5c05570846b5413b41dfd}} 
+{\bfseries if} (!(yy\+\_\+init))
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}\label{defargs_8cpp_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}} 
+{\bfseries while} (1)
+\item 
+void \mbox{\hyperlink{defargs_8cpp_ad6ea7ec77dbd9a993699d1710639b1f7}{string\+To\+Argument\+List}} (const char $\ast$args\+String, \mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$al, \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} $\ast$extra\+Type\+Chars)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a3e3402e997598a7571dc015886e461c5}\label{defargs_8cpp_a3e3402e997598a7571dc015886e461c5}} 
+yy\+\_\+size\+\_\+t {\bfseries defargs\+Y\+Yleng}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a8c2edc7bf9c759f4fa188d26549b5e92}\label{defargs_8cpp_a8c2edc7bf9c759f4fa188d26549b5e92}} 
+F\+I\+LE $\ast$ {\bfseries defargs\+Y\+Yin} = (F\+I\+LE $\ast$) 0
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ab6ded4563c74b99fd44a89f7418818b9}\label{defargs_8cpp_ab6ded4563c74b99fd44a89f7418818b9}} 
+F\+I\+LE $\ast$ {\bfseries defargs\+Y\+Yout} = (F\+I\+LE $\ast$) 0
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a7adf9a9fe7fc060b0857433dcef27210}\label{defargs_8cpp_a7adf9a9fe7fc060b0857433dcef27210}} 
+int {\bfseries defargs\+Y\+Ylineno} = 1
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ae9b84e05eb8dde15870c08a95f93a123}\label{defargs_8cpp_ae9b84e05eb8dde15870c08a95f93a123}} 
+char $\ast$ {\bfseries defargs\+Y\+Ytext}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_af9596fc973fbb66fbc920f2fc35ad37b}\label{defargs_8cpp_af9596fc973fbb66fbc920f2fc35ad37b}} 
+int {\bfseries defargs\+Y\+Y\+\_\+flex\+\_\+debug} = 0
+\item 
+\mbox{\hyperlink{defargs_8cpp_abcefb20c54ce0f92452cfbb9cf657670}{Y\+Y\+\_\+\+D\+E\+CL}}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_ab98daea4ec951dfa966b5ca0f8133d38}\label{defargs_8cpp_ab98daea4ec951dfa966b5ca0f8133d38}} 
+register char $\ast$ {\bfseries yy\+\_\+cp}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a71cf769ce518e8687bf8999b278c65f4}\label{defargs_8cpp_a71cf769ce518e8687bf8999b278c65f4}} 
+register char $\ast$ {\bfseries yy\+\_\+bp}
+\item 
+\mbox{\Hypertarget{defargs_8cpp_a7ffc8c947830757dd87ad202a6823edd}\label{defargs_8cpp_a7ffc8c947830757dd87ad202a6823edd}} 
+register int {\bfseries yy\+\_\+act}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This scanner is used to convert a string into a list of function or template arguments. Each parsed argument results in a \mbox{\hyperlink{struct_argument}{Argument}} struct, that is put into an \mbox{\hyperlink{class_argument_list}{Argument\+List}} in declaration order. Comment blocks for arguments can also be included in the string. The argument string does not contain new-\/lines (except inside any comment blocks). An \mbox{\hyperlink{struct_argument}{Argument}} consists of the string fields\+: type,name,default value, and documentation The \mbox{\hyperlink{struct_argument}{Argument}} list as a whole can be pure, constant or volatile.
+
+Examples of input strings are\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{stringliteral}{"(int a,int b) const"}}
+\DoxyCodeLine{\textcolor{stringliteral}{"(const char *s="}hello world\textcolor{stringliteral}{",int=5) = 0"}}
+\DoxyCodeLine{\textcolor{stringliteral}{"<class T,class N>"}}
+\DoxyCodeLine{\textcolor{stringliteral}{"(char c,const char)"}}
+\end{DoxyCode}
+
+
+Note\+: It is not always possible to distinguish between the name and type of an argument. In case of doubt the name is added to the type, and the match\+Argument\+List in util.\+cpp is be used to further determine the correct separation. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{defargs_8cpp_a835f10dd1ab4bf9a80c4cd80ee6e3058}\label{defargs_8cpp_a835f10dd1ab4bf9a80c4cd80ee6e3058}} 
+\index{defargs.cpp@{defargs.cpp}!REJECT@{REJECT}}
+\index{REJECT@{REJECT}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{REJECT}{REJECT}}
+{\footnotesize\ttfamily \#define R\+E\+J\+E\+CT}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{ \(\backslash\)}
+\DoxyCodeLine{*yy\_cp = (yy\_hold\_char); \textcolor{comment}{/* undo effects of setting up defargsYYtext */} \(\backslash\)}
+\DoxyCodeLine{yy\_cp = (yy\_full\_match); \textcolor{comment}{/* restore poss. backed-over text */} \(\backslash\)}
+\DoxyCodeLine{(yy\_lp) = (yy\_full\_lp); \textcolor{comment}{/* restore orig. accepting pos. */} \(\backslash\)}
+\DoxyCodeLine{(yy\_state\_ptr) = (yy\_full\_state); \textcolor{comment}{/* restore orig. state */} \(\backslash\)}
+\DoxyCodeLine{yy\_current\_state = *(yy\_state\_ptr); \textcolor{comment}{/* restore curr. state */} \(\backslash\)}
+\DoxyCodeLine{++(yy\_lp); \(\backslash\)}
+\DoxyCodeLine{goto find\_rule; \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{defargs_8cpp_aa093d500a6330d06d8e4760c494fac33}\label{defargs_8cpp_aa093d500a6330d06d8e4760c494fac33}} 
+\index{defargs.cpp@{defargs.cpp}!YY\_CURRENT\_BUFFER@{YY\_CURRENT\_BUFFER}}
+\index{YY\_CURRENT\_BUFFER@{YY\_CURRENT\_BUFFER}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{YY\_CURRENT\_BUFFER}{YY\_CURRENT\_BUFFER}}
+{\footnotesize\ttfamily \#define Y\+Y\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+B\+U\+F\+F\+ER}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{( (yy\_buffer\_stack) \(\backslash\)}
+\DoxyCodeLine{                          ? (yy\_buffer\_stack)[(yy\_buffer\_stack\_top)] \(\backslash\)}
+\DoxyCodeLine{                          : NULL)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{defargs_8cpp_acc3486d769af4e4b2820346a0093cc79}\label{defargs_8cpp_acc3486d769af4e4b2820346a0093cc79}} 
+\index{defargs.cpp@{defargs.cpp}!YY\_DO\_BEFORE\_ACTION@{YY\_DO\_BEFORE\_ACTION}}
+\index{YY\_DO\_BEFORE\_ACTION@{YY\_DO\_BEFORE\_ACTION}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{YY\_DO\_BEFORE\_ACTION}{YY\_DO\_BEFORE\_ACTION}}
+{\footnotesize\ttfamily \#define Y\+Y\+\_\+\+D\+O\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+A\+C\+T\+I\+ON}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(yytext\_ptr) = yy\_bp; \(\backslash\)}
+\DoxyCodeLine{    defargsYYleng = (yy\_size\_t) (yy\_cp - yy\_bp); \(\backslash\)}
+\DoxyCodeLine{    (yy\_hold\_char) = *yy\_cp; \(\backslash\)}
+\DoxyCodeLine{    *yy\_cp = \textcolor{charliteral}{'\(\backslash\)0'}; \(\backslash\)}
+\DoxyCodeLine{    (yy\_c\_buf\_p) = yy\_cp;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{defargs_8cpp_a12e30d13a76a94e78010db9996d39c50}\label{defargs_8cpp_a12e30d13a76a94e78010db9996d39c50}} 
+\index{defargs.cpp@{defargs.cpp}!yy\_set\_bol@{yy\_set\_bol}}
+\index{yy\_set\_bol@{yy\_set\_bol}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{yy\_set\_bol}{yy\_set\_bol}}
+{\footnotesize\ttfamily \#define yy\+\_\+set\+\_\+bol(\begin{DoxyParamCaption}\item[{}]{at\+\_\+bol }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{ \(\backslash\)}
+\DoxyCodeLine{    if ( ! YY\_CURRENT\_BUFFER )\{\(\backslash\)}
+\DoxyCodeLine{        defargsYYensure\_buffer\_stack (); \(\backslash\)}
+\DoxyCodeLine{        YY\_CURRENT\_BUFFER\_LVALUE =    \(\backslash\)}
+\DoxyCodeLine{            defargsYY\_create\_buffer(defargsYYin,YY\_BUF\_SIZE ); \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{    YY\_CURRENT\_BUFFER\_LVALUE->yy\_at\_bol = at\_bol; \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{defargs_8cpp_ac56eb96366c08862bf0efe5d83d1fc4c}\label{defargs_8cpp_ac56eb96366c08862bf0efe5d83d1fc4c}} 
+\index{defargs.cpp@{defargs.cpp}!yy\_set\_interactive@{yy\_set\_interactive}}
+\index{yy\_set\_interactive@{yy\_set\_interactive}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{yy\_set\_interactive}{yy\_set\_interactive}}
+{\footnotesize\ttfamily \#define yy\+\_\+set\+\_\+interactive(\begin{DoxyParamCaption}\item[{}]{is\+\_\+interactive }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{ \(\backslash\)}
+\DoxyCodeLine{    if ( ! YY\_CURRENT\_BUFFER )\{ \(\backslash\)}
+\DoxyCodeLine{        defargsYYensure\_buffer\_stack (); \(\backslash\)}
+\DoxyCodeLine{        YY\_CURRENT\_BUFFER\_LVALUE =    \(\backslash\)}
+\DoxyCodeLine{            defargsYY\_create\_buffer(defargsYYin,YY\_BUF\_SIZE ); \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{    YY\_CURRENT\_BUFFER\_LVALUE->yy\_is\_interactive = is\_interactive; \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{defargs_8cpp_ae65cb72d09db0abdc4b8e8c4d533ab14}\label{defargs_8cpp_ae65cb72d09db0abdc4b8e8c4d533ab14}} 
+\index{defargs.cpp@{defargs.cpp}!yyless@{yyless}}
+\index{yyless@{yyless}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{yyless}{yyless}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define yyless(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do} \(\backslash\)}
+\DoxyCodeLine{        \{ \(\backslash\)}
+\DoxyCodeLine{        \textcolor{comment}{/* Undo effects of setting up defargsYYtext. */} \(\backslash\)}
+\DoxyCodeLine{        int yyless\_macro\_arg = (n); \(\backslash\)}
+\DoxyCodeLine{        YY\_LESS\_LINENO(yyless\_macro\_arg);\(\backslash\)}
+\DoxyCodeLine{        *yy\_cp = (yy\_hold\_char); \(\backslash\)}
+\DoxyCodeLine{        YY\_RESTORE\_YY\_MORE\_OFFSET \(\backslash\)}
+\DoxyCodeLine{        (yy\_c\_buf\_p) = yy\_cp = yy\_bp + yyless\_macro\_arg - YY\_MORE\_ADJ; \(\backslash\)}
+\DoxyCodeLine{        YY\_DO\_BEFORE\_ACTION; \textcolor{comment}{/* set up defargsYYtext again */} \(\backslash\)}
+\DoxyCodeLine{        \} \(\backslash\)}
+\DoxyCodeLine{    while ( 0 )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{defargs_8cpp_ae65cb72d09db0abdc4b8e8c4d533ab14}\label{defargs_8cpp_ae65cb72d09db0abdc4b8e8c4d533ab14}} 
+\index{defargs.cpp@{defargs.cpp}!yyless@{yyless}}
+\index{yyless@{yyless}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{yyless}{yyless}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define yyless(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do} \(\backslash\)}
+\DoxyCodeLine{        \{ \(\backslash\)}
+\DoxyCodeLine{        \textcolor{comment}{/* Undo effects of setting up defargsYYtext. */} \(\backslash\)}
+\DoxyCodeLine{        int yyless\_macro\_arg = (n); \(\backslash\)}
+\DoxyCodeLine{        YY\_LESS\_LINENO(yyless\_macro\_arg);\(\backslash\)}
+\DoxyCodeLine{        defargsYYtext[defargsYYleng] = (yy\_hold\_char); \(\backslash\)}
+\DoxyCodeLine{        (yy\_c\_buf\_p) = defargsYYtext + yyless\_macro\_arg; \(\backslash\)}
+\DoxyCodeLine{        (yy\_hold\_char) = *(yy\_c\_buf\_p); \(\backslash\)}
+\DoxyCodeLine{        *(yy\_c\_buf\_p) = \textcolor{charliteral}{'\(\backslash\)0'}; \(\backslash\)}
+\DoxyCodeLine{        defargsYYleng = yyless\_macro\_arg; \(\backslash\)}
+\DoxyCodeLine{        \} \(\backslash\)}
+\DoxyCodeLine{    while ( 0 )}
+
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{defargs_8cpp_a647a14ec689707cf5ab7afff3d74d5a6}\label{defargs_8cpp_a647a14ec689707cf5ab7afff3d74d5a6}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYY\_create\_buffer@{defargsYY\_create\_buffer}}
+\index{defargsYY\_create\_buffer@{defargsYY\_create\_buffer}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYY\_create\_buffer()}{defargsYY\_create\_buffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}} defargs\+Y\+Y\+\_\+create\+\_\+buffer (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{file,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+Allocate and initialize an input buffer state. 
+\begin{DoxyParams}{Parameters}
+{\em file} & \mbox{\hyperlink{class_a}{A}} readable stream. \\
+\hline
+{\em size} & The character buffer size in bytes. When in doubt, use {\ttfamily Y\+Y\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the allocated buffer state. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{defargs_8cpp_a04e333dc9c2fd31ea2c8299d90722c28}\label{defargs_8cpp_a04e333dc9c2fd31ea2c8299d90722c28}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYY\_delete\_buffer@{defargsYY\_delete\_buffer}}
+\index{defargsYY\_delete\_buffer@{defargsYY\_delete\_buffer}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYY\_delete\_buffer()}{defargsYY\_delete\_buffer()}}
+{\footnotesize\ttfamily void defargs\+Y\+Y\+\_\+delete\+\_\+buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}}}]{b }\end{DoxyParamCaption})}
+
+Destroy the buffer. 
+\begin{DoxyParams}{Parameters}
+{\em b} & a buffer created with \mbox{\hyperlink{defargs_8cpp_a647a14ec689707cf5ab7afff3d74d5a6}{defargs\+Y\+Y\+\_\+create\+\_\+buffer()}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{defargs_8cpp_a8ffeaea87204edbf3bf8311fbc0e2a50}\label{defargs_8cpp_a8ffeaea87204edbf3bf8311fbc0e2a50}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYY\_flush\_buffer@{defargsYY\_flush\_buffer}}
+\index{defargsYY\_flush\_buffer@{defargsYY\_flush\_buffer}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYY\_flush\_buffer()}{defargsYY\_flush\_buffer()}}
+{\footnotesize\ttfamily void defargs\+Y\+Y\+\_\+flush\+\_\+buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}}}]{b }\end{DoxyParamCaption})}
+
+Discard all buffered characters. On the next scan, Y\+Y\+\_\+\+I\+N\+P\+UT will be called. 
+\begin{DoxyParams}{Parameters}
+{\em b} & the buffer state to be flushed, usually {\ttfamily Y\+Y\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+B\+U\+F\+F\+ER}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{defargs_8cpp_a22a8f34fd7b8638dad4877119b1a99c6}\label{defargs_8cpp_a22a8f34fd7b8638dad4877119b1a99c6}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYY\_scan\_buffer@{defargsYY\_scan\_buffer}}
+\index{defargsYY\_scan\_buffer@{defargsYY\_scan\_buffer}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYY\_scan\_buffer()}{defargsYY\_scan\_buffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}} defargs\+Y\+Y\+\_\+scan\+\_\+buffer (\begin{DoxyParamCaption}\item[{char $\ast$}]{base,  }\item[{yy\+\_\+size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+Setup the input buffer state to scan directly from a user-\/specified character buffer. 
+\begin{DoxyParams}{Parameters}
+{\em base} & the character buffer \\
+\hline
+{\em size} & the size in bytes of the character buffer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the newly allocated buffer state object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{defargs_8cpp_a866ce21918f0524077b0daa98e4293c5}\label{defargs_8cpp_a866ce21918f0524077b0daa98e4293c5}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYY\_scan\_bytes@{defargsYY\_scan\_bytes}}
+\index{defargsYY\_scan\_bytes@{defargsYY\_scan\_bytes}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYY\_scan\_bytes()}{defargsYY\_scan\_bytes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}} defargs\+Y\+Y\+\_\+scan\+\_\+bytes (\begin{DoxyParamCaption}\item[{yyconst char $\ast$}]{yybytes,  }\item[{yy\+\_\+size\+\_\+t}]{\+\_\+yybytes\+\_\+len }\end{DoxyParamCaption})}
+
+Setup the input buffer state to scan the given bytes. The next call to defargs\+Y\+Ylex() will scan from a {\itshape copy} of {\itshape bytes}. 
+\begin{DoxyParams}{Parameters}
+{\em bytes} & the byte buffer to scan \\
+\hline
+{\em len} & the number of bytes in the buffer pointed to by {\itshape bytes}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the newly allocated buffer state object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{defargs_8cpp_a1e97a9f86d82a1771da8013bb6ef5ec8}\label{defargs_8cpp_a1e97a9f86d82a1771da8013bb6ef5ec8}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYY\_scan\_string@{defargsYY\_scan\_string}}
+\index{defargsYY\_scan\_string@{defargsYY\_scan\_string}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYY\_scan\_string()}{defargsYY\_scan\_string()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}} defargs\+Y\+Y\+\_\+scan\+\_\+string (\begin{DoxyParamCaption}\item[{yyconst char $\ast$}]{yystr }\end{DoxyParamCaption})}
+
+Setup the input buffer state to scan a string. The next call to defargs\+Y\+Ylex() will scan from a {\itshape copy} of {\itshape str}. 
+\begin{DoxyParams}{Parameters}
+{\em yystr} & a N\+U\+L-\/terminated string to scan\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the newly allocated buffer state object. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+If you want to scan bytes that may contain N\+UL values, then use \mbox{\hyperlink{defargs_8cpp_a866ce21918f0524077b0daa98e4293c5}{defargs\+Y\+Y\+\_\+scan\+\_\+bytes()}} instead. 
+\end{DoxyNote}
+\mbox{\Hypertarget{defargs_8cpp_a06a514bd91ff5c929ed1c718c37f4345}\label{defargs_8cpp_a06a514bd91ff5c929ed1c718c37f4345}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYY\_switch\_to\_buffer@{defargsYY\_switch\_to\_buffer}}
+\index{defargsYY\_switch\_to\_buffer@{defargsYY\_switch\_to\_buffer}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYY\_switch\_to\_buffer()}{defargsYY\_switch\_to\_buffer()}}
+{\footnotesize\ttfamily void defargs\+Y\+Y\+\_\+switch\+\_\+to\+\_\+buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}}}]{new\+\_\+buffer }\end{DoxyParamCaption})}
+
+Switch to a different input buffer. 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+buffer} & The new input buffer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{defargs_8cpp_a28a3a0aa7ce2de019ade57546a61030a}\label{defargs_8cpp_a28a3a0aa7ce2de019ade57546a61030a}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYYget\_in@{defargsYYget\_in}}
+\index{defargsYYget\_in@{defargsYYget\_in}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYYget\_in()}{defargsYYget\_in()}}
+{\footnotesize\ttfamily F\+I\+LE $\ast$ defargs\+Y\+Yget\+\_\+in (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get the input stream. \mbox{\Hypertarget{defargs_8cpp_a2f94408a34d9bec2d1557f19b0b9cdfa}\label{defargs_8cpp_a2f94408a34d9bec2d1557f19b0b9cdfa}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYYget\_leng@{defargsYYget\_leng}}
+\index{defargsYYget\_leng@{defargsYYget\_leng}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYYget\_leng()}{defargsYYget\_leng()}}
+{\footnotesize\ttfamily yy\+\_\+size\+\_\+t defargs\+Y\+Yget\+\_\+leng (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get the length of the current token. \mbox{\Hypertarget{defargs_8cpp_a6f33ca57532af1e2b33fe2151c4a2e2a}\label{defargs_8cpp_a6f33ca57532af1e2b33fe2151c4a2e2a}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYYget\_lineno@{defargsYYget\_lineno}}
+\index{defargsYYget\_lineno@{defargsYYget\_lineno}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYYget\_lineno()}{defargsYYget\_lineno()}}
+{\footnotesize\ttfamily int defargs\+Y\+Yget\+\_\+lineno (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get the current line number. \mbox{\Hypertarget{defargs_8cpp_a1897b691813e255a2f729f61c7c4cd7b}\label{defargs_8cpp_a1897b691813e255a2f729f61c7c4cd7b}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYYget\_out@{defargsYYget\_out}}
+\index{defargsYYget\_out@{defargsYYget\_out}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYYget\_out()}{defargsYYget\_out()}}
+{\footnotesize\ttfamily F\+I\+LE $\ast$ defargs\+Y\+Yget\+\_\+out (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get the output stream. \mbox{\Hypertarget{defargs_8cpp_ab614956553e7db03849670d39aa30dec}\label{defargs_8cpp_ab614956553e7db03849670d39aa30dec}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYYget\_text@{defargsYYget\_text}}
+\index{defargsYYget\_text@{defargsYYget\_text}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYYget\_text()}{defargsYYget\_text()}}
+{\footnotesize\ttfamily char $\ast$ defargs\+Y\+Yget\+\_\+text (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get the current token. \mbox{\Hypertarget{defargs_8cpp_a0cf0e6f87c2e12ceb9a559daaaf95e4b}\label{defargs_8cpp_a0cf0e6f87c2e12ceb9a559daaaf95e4b}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYYpop\_buffer\_state@{defargsYYpop\_buffer\_state}}
+\index{defargsYYpop\_buffer\_state@{defargsYYpop\_buffer\_state}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYYpop\_buffer\_state()}{defargsYYpop\_buffer\_state()}}
+{\footnotesize\ttfamily void defargs\+Y\+Ypop\+\_\+buffer\+\_\+state (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Removes and deletes the top of the stack, if present. The next element becomes the new top. \mbox{\Hypertarget{defargs_8cpp_a57a1840c5facb7de4168c9332d208d02}\label{defargs_8cpp_a57a1840c5facb7de4168c9332d208d02}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYYpush\_buffer\_state@{defargsYYpush\_buffer\_state}}
+\index{defargsYYpush\_buffer\_state@{defargsYYpush\_buffer\_state}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYYpush\_buffer\_state()}{defargsYYpush\_buffer\_state()}}
+{\footnotesize\ttfamily void defargs\+Y\+Ypush\+\_\+buffer\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structyy__buffer__state}{Y\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+T\+A\+TE}}}]{new\+\_\+buffer }\end{DoxyParamCaption})}
+
+Pushes the new state onto the stack. The new state becomes the current state. This function will allocate the stack if necessary. 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+buffer} & The new state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{defargs_8cpp_aabae629ef20b9b3823243c56109ca8c7}\label{defargs_8cpp_aabae629ef20b9b3823243c56109ca8c7}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYYrestart@{defargsYYrestart}}
+\index{defargsYYrestart@{defargsYYrestart}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYYrestart()}{defargsYYrestart()}}
+{\footnotesize\ttfamily void defargs\+Y\+Yrestart (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{input\+\_\+file }\end{DoxyParamCaption})}
+
+Immediately switch to a different input stream. 
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+file} & \mbox{\hyperlink{class_a}{A}} readable stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function does not reset the start condition to {\ttfamily I\+N\+I\+T\+I\+AL} . 
+\end{DoxyNote}
+\mbox{\Hypertarget{defargs_8cpp_a8548048cae002f681ce43185fc0514b1}\label{defargs_8cpp_a8548048cae002f681ce43185fc0514b1}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYYset\_in@{defargsYYset\_in}}
+\index{defargsYYset\_in@{defargsYYset\_in}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYYset\_in()}{defargsYYset\_in()}}
+{\footnotesize\ttfamily void defargs\+Y\+Yset\+\_\+in (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{in\+\_\+str }\end{DoxyParamCaption})}
+
+Set the input stream. This does not discard the current input buffer. 
+\begin{DoxyParams}{Parameters}
+{\em in\+\_\+str} & \mbox{\hyperlink{class_a}{A}} readable stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{defargs_8cpp_a06a514bd91ff5c929ed1c718c37f4345}{defargs\+Y\+Y\+\_\+switch\+\_\+to\+\_\+buffer}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{defargs_8cpp_a02f6b97eac3b3b410c8aa3cd0a9a6178}\label{defargs_8cpp_a02f6b97eac3b3b410c8aa3cd0a9a6178}} 
+\index{defargs.cpp@{defargs.cpp}!defargsYYset\_lineno@{defargsYYset\_lineno}}
+\index{defargsYYset\_lineno@{defargsYYset\_lineno}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{defargsYYset\_lineno()}{defargsYYset\_lineno()}}
+{\footnotesize\ttfamily void defargs\+Y\+Yset\+\_\+lineno (\begin{DoxyParamCaption}\item[{int}]{line\+\_\+number }\end{DoxyParamCaption})}
+
+Set the current line number. 
+\begin{DoxyParams}{Parameters}
+{\em line\+\_\+number} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{defargs_8cpp_ad6ea7ec77dbd9a993699d1710639b1f7}\label{defargs_8cpp_ad6ea7ec77dbd9a993699d1710639b1f7}} 
+\index{defargs.cpp@{defargs.cpp}!stringToArgumentList@{stringToArgumentList}}
+\index{stringToArgumentList@{stringToArgumentList}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{stringToArgumentList()}{stringToArgumentList()}}
+{\footnotesize\ttfamily void string\+To\+Argument\+List (\begin{DoxyParamCaption}\item[{const char $\ast$}]{args\+String,  }\item[{\mbox{\hyperlink{class_argument_list}{Argument\+List}} $\ast$}]{al,  }\item[{\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} $\ast$}]{extra\+Type\+Chars }\end{DoxyParamCaption})}
+
+Converts an argument string into an \mbox{\hyperlink{class_argument_list}{Argument\+List}}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em args\+String} & the list of Arguments. \\
+\hline
+\mbox{\texttt{ out}}  & {\em al} & a reference to resulting argument list pointer. \\
+\hline
+\mbox{\texttt{ out}}  & {\em extra\+Type\+Chars} & point to string to which trailing characters for complex types are written to \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{defargs_8cpp_abcefb20c54ce0f92452cfbb9cf657670}\label{defargs_8cpp_abcefb20c54ce0f92452cfbb9cf657670}} 
+\index{defargs.cpp@{defargs.cpp}!YY\_DECL@{YY\_DECL}}
+\index{YY\_DECL@{YY\_DECL}!defargs.cpp@{defargs.cpp}}
+\subsubsection{\texorpdfstring{YY\_DECL}{YY\_DECL}}
+{\footnotesize\ttfamily Y\+Y\+\_\+\+D\+E\+CL}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keyword}{register} yy\_state\_type yy\_current\_state}
+
+\end{DoxyCode}
+The main scanner function which does all the work. 

@@ -1,0 +1,394 @@
+\hypertarget{class_file_def}{}\section{File\+Def Class Reference}
+\label{class_file_def}\index{FileDef@{FileDef}}
+
+
+{\ttfamily \#include $<$filedef.\+h$>$}
+
+Inheritance diagram for File\+Def\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_file_def}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_file_def_aa0f1d4c412599b7c03d214c939e1ca95}{File\+Def}} (const char $\ast$p, const char $\ast$n, const char $\ast$ref=0, const char $\ast$dn=0)
+\item 
+\mbox{\hyperlink{class_file_def_a5ed8a95230184de0f82d21bf08f4ac0a}{$\sim$\+File\+Def}} ()
+\item 
+\mbox{\hyperlink{class_definition_intf_ada60114bc621669dd8c19edfc6421766}{Def\+Type}} \mbox{\hyperlink{class_file_def_a91629ee75b5caf817a7338c02a12bd0a}{definition\+Type}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_file_def_a68f9ae783659b8c3738623edfdb6ee74}{name}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_file_def_ab5973477f072d780c9a184d16b58410b}{display\+Name}} (bool=T\+R\+UE) const
+\item 
+\mbox{\Hypertarget{class_file_def_aaed54437148127ef872b77c088cf3e3e}\label{class_file_def_aaed54437148127ef872b77c088cf3e3e}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries file\+Name} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_file_def_a57496c4b5436110bd66fdfa1fee0eefe}{get\+Output\+File\+Base}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_file_def_a793b9b4a7196fd94226d4fab0a27a12d}{anchor}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_file_def_a9ddb22ec1cbae4e2b8d192c455103046}{get\+Source\+File\+Base}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_file_def_a2520150a3fdcd1fc4ed3cefa31d146f5}{include\+Name}} () const
+\item 
+\mbox{\Hypertarget{class_file_def_afeae6d213fc1eb011e16f8e080570e92}\label{class_file_def_afeae6d213fc1eb011e16f8e080570e92}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries include\+Dependency\+Graph\+File\+Name} () const
+\item 
+\mbox{\Hypertarget{class_file_def_a647a32b7ec482991424af3b9deff0f45}\label{class_file_def_a647a32b7ec482991424af3b9deff0f45}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries included\+By\+Dependency\+Graph\+File\+Name} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_file_def_ad44d91d874c4713d198a8e4b862ee48f}{abs\+File\+Path}} () const
+\item 
+const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& \mbox{\hyperlink{class_file_def_a0ce6ecbcf84b6731120dfcd56c4dc0d6}{doc\+Name}} () const
+\item 
+bool \mbox{\hyperlink{class_file_def_a0e40f11b7915efcd403a679430d4ac4e}{is\+Source}} () const
+\item 
+\mbox{\Hypertarget{class_file_def_ac8d118fc22146de5cee226108b84cbd0}\label{class_file_def_ac8d118fc22146de5cee226108b84cbd0}} 
+bool {\bfseries is\+Documentation\+File} () const
+\item 
+\mbox{\Hypertarget{class_file_def_ad62d0ee8b3a88f12a79e44b65e08de0e}\label{class_file_def_ad62d0ee8b3a88f12a79e44b65e08de0e}} 
+\mbox{\hyperlink{class_definition}{Definition}} $\ast$ {\bfseries get\+Source\+Definition} (int line\+Nr) const
+\item 
+\mbox{\Hypertarget{class_file_def_a21f5335e61cc9e702c65571870cd9723}\label{class_file_def_a21f5335e61cc9e702c65571870cd9723}} 
+\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$ {\bfseries get\+Source\+Member} (int line\+Nr) const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_file_def_a77330ac537f3a70224552c1373e03404}{get\+Path}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_file_def_a8f8cd8aec9c308358c7e9e747757e3cc}{get\+Version}} () const
+\item 
+bool \mbox{\hyperlink{class_file_def_ad8195d5d5b2be4f11d37e8d75f9e4659}{is\+Linkable\+In\+Project}} () const
+\item 
+bool \mbox{\hyperlink{class_file_def_a4d175f205d548fa28fc9c5aed8095aee}{is\+Linkable}} () const
+\item 
+\mbox{\Hypertarget{class_file_def_aa8704ac9498eaf5eec58f1b95fe71af2}\label{class_file_def_aa8704ac9498eaf5eec58f1b95fe71af2}} 
+bool {\bfseries is\+Included} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&\mbox{\hyperlink{class_file_def_a68f9ae783659b8c3738623edfdb6ee74}{name}}) const
+\item 
+\mbox{\Hypertarget{class_file_def_abbf6e95cb0c5425ee0b311c5fe4cb251}\label{class_file_def_abbf6e95cb0c5425ee0b311c5fe4cb251}} 
+Package\+Def $\ast$ {\bfseries package\+Def} () const
+\item 
+\mbox{\Hypertarget{class_file_def_a34e232f3ab6e367b3cb2b2a2f25dc179}\label{class_file_def_a34e232f3ab6e367b3cb2b2a2f25dc179}} 
+\mbox{\hyperlink{class_dir_def}{Dir\+Def}} $\ast$ {\bfseries get\+Dir\+Def} () const
+\item 
+\mbox{\Hypertarget{class_file_def_aaaf9fbbd5028cacb5624788168fd6c27}\label{class_file_def_aaaf9fbbd5028cacb5624788168fd6c27}} 
+\mbox{\hyperlink{class_namespace_s_dict}{Namespace\+S\+Dict}} $\ast$ {\bfseries get\+Used\+Namespaces} () const
+\item 
+\mbox{\Hypertarget{class_file_def_a43c308d44dce351676ef57d597fcc3b8}\label{class_file_def_a43c308d44dce351676ef57d597fcc3b8}} 
+\mbox{\hyperlink{class_s_dict}{S\+Dict}}$<$ \mbox{\hyperlink{class_definition}{Definition}} $>$ $\ast$ {\bfseries get\+Used\+Classes} () const
+\item 
+\mbox{\Hypertarget{class_file_def_a4e9e0f617f41b801b40532543b7ffd38}\label{class_file_def_a4e9e0f617f41b801b40532543b7ffd38}} 
+\mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{struct_include_info}{Include\+Info}} $>$ $\ast$ {\bfseries include\+File\+List} () const
+\item 
+\mbox{\Hypertarget{class_file_def_aca521ba9b5f65d9271cf6ceecfb489f7}\label{class_file_def_aca521ba9b5f65d9271cf6ceecfb489f7}} 
+\mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{struct_include_info}{Include\+Info}} $>$ $\ast$ {\bfseries included\+By\+File\+List} () const
+\item 
+\mbox{\Hypertarget{class_file_def_a7eb7ebf5ee639bdf13407da2afb056b2}\label{class_file_def_a7eb7ebf5ee639bdf13407da2afb056b2}} 
+void {\bfseries get\+All\+Include\+Files\+Recursively} (\mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}} \&inc\+Files) const
+\item 
+\mbox{\Hypertarget{class_file_def_aea54107e152d2089053fb7929e8cbb1e}\label{class_file_def_aea54107e152d2089053fb7929e8cbb1e}} 
+\mbox{\hyperlink{class_member_list}{Member\+List}} $\ast$ {\bfseries get\+Member\+List} (Member\+List\+Type lt) const
+\item 
+\mbox{\Hypertarget{class_file_def_aded7fa9a2d511e843008cdded553b315}\label{class_file_def_aded7fa9a2d511e843008cdded553b315}} 
+const \mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{class_member_list}{Member\+List}} $>$ \& {\bfseries get\+Member\+Lists} () const
+\item 
+\mbox{\Hypertarget{class_file_def_a6e5dddac455084d1085aa487c9b3fc0a}\label{class_file_def_a6e5dddac455084d1085aa487c9b3fc0a}} 
+\mbox{\hyperlink{class_member_group_s_dict}{Member\+Group\+S\+Dict}} $\ast$ {\bfseries get\+Member\+Group\+S\+Dict} () const
+\item 
+\mbox{\Hypertarget{class_file_def_aec3333f1397838fec52f98a2ab2177aa}\label{class_file_def_aec3333f1397838fec52f98a2ab2177aa}} 
+\mbox{\hyperlink{class_namespace_s_dict}{Namespace\+S\+Dict}} $\ast$ {\bfseries get\+Namespace\+S\+Dict} () const
+\item 
+\mbox{\Hypertarget{class_file_def_a3708792b23d548363ec5a2aabb479bb6}\label{class_file_def_a3708792b23d548363ec5a2aabb479bb6}} 
+\mbox{\hyperlink{class_class_s_dict}{Class\+S\+Dict}} $\ast$ {\bfseries get\+Class\+S\+Dict} () const
+\item 
+\mbox{\Hypertarget{class_file_def_a60b522612acb295f22c56f01c4cf0942}\label{class_file_def_a60b522612acb295f22c56f01c4cf0942}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries title} () const
+\item 
+\mbox{\Hypertarget{class_file_def_a6596436e4b4013c364d3787281fe42c2}\label{class_file_def_a6596436e4b4013c364d3787281fe42c2}} 
+bool {\bfseries has\+Detailed\+Description} () const
+\item 
+\mbox{\Hypertarget{class_file_def_a281b09954b560a9e47b9292aebc1519b}\label{class_file_def_a281b09954b560a9e47b9292aebc1519b}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries file\+Version} () const
+\item 
+\mbox{\Hypertarget{class_file_def_aa451c6dc4347f344ba7153abadf2fe2a}\label{class_file_def_aa451c6dc4347f344ba7153abadf2fe2a}} 
+bool {\bfseries sub\+Grouping} () const
+\item 
+\mbox{\Hypertarget{class_file_def_ab77cd017d7354f3bed14a639ac7cda39}\label{class_file_def_ab77cd017d7354f3bed14a639ac7cda39}} 
+void {\bfseries add\+Source\+Ref} (int line, \mbox{\hyperlink{class_definition}{Definition}} $\ast$d, \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$md)
+\item 
+void \mbox{\hyperlink{class_file_def_a7a73cf8448a6995be00369858d4768e8}{write\+Documentation}} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol)
+\item 
+\mbox{\Hypertarget{class_file_def_a8df204556e3773738f133314d8bc2fbb}\label{class_file_def_a8df204556e3773738f133314d8bc2fbb}} 
+void {\bfseries write\+Member\+Pages} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol)
+\item 
+\mbox{\Hypertarget{class_file_def_a8fc73881eb3c7b5160dd851d9eeba1ef}\label{class_file_def_a8fc73881eb3c7b5160dd851d9eeba1ef}} 
+void {\bfseries write\+Quick\+Member\+Links} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$current\+Md) const
+\item 
+\mbox{\Hypertarget{class_file_def_a077e73e869533220c7a94276c40359ef}\label{class_file_def_a077e73e869533220c7a94276c40359ef}} 
+void {\bfseries write\+Summary\+Links} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol)
+\item 
+\mbox{\Hypertarget{class_file_def_a9107fa6f9cbf264e8632e235892278ae}\label{class_file_def_a9107fa6f9cbf264e8632e235892278ae}} 
+void {\bfseries write\+Tag\+File} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t)
+\item 
+\mbox{\Hypertarget{class_file_def_a378a97570f1ac9a9795ec5700ab4ed97}\label{class_file_def_a378a97570f1ac9a9795ec5700ab4ed97}} 
+void {\bfseries start\+Parsing} ()
+\item 
+void \mbox{\hyperlink{class_file_def_a5ed9987b075539aa61654cc55d3bac28}{write\+Source}} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, bool same\+Tu, \mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}} \&files\+In\+Same\+Tu)
+\item 
+\mbox{\Hypertarget{class_file_def_a05dd5f93ab3877d299b22727a454199e}\label{class_file_def_a05dd5f93ab3877d299b22727a454199e}} 
+void {\bfseries parse\+Source} (bool same\+Tu, \mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}} \&files\+In\+Same\+Tu)
+\item 
+\mbox{\Hypertarget{class_file_def_a1b008bcc891525a7b00888511f89101a}\label{class_file_def_a1b008bcc891525a7b00888511f89101a}} 
+void {\bfseries finish\+Parsing} ()
+\item 
+\mbox{\Hypertarget{class_file_def_aa6f13f8956f0f9b71c0641b75f16a91a}\label{class_file_def_aa6f13f8956f0f9b71c0641b75f16a91a}} 
+void {\bfseries set\+Disk\+Name} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&\mbox{\hyperlink{class_file_def_a68f9ae783659b8c3738623edfdb6ee74}{name}})
+\item 
+void \mbox{\hyperlink{class_file_def_a84f7bb05a4a830056b208d94c6c2bd59}{insert\+Member}} (\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$md)
+\item 
+void \mbox{\hyperlink{class_file_def_a61ec1208cd1055a3d91cb6a2ee60451d}{insert\+Class}} (\mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$cd)
+\item 
+void \mbox{\hyperlink{class_file_def_a579c95408a34b048fc3cd288bfa8893c}{insert\+Namespace}} (\mbox{\hyperlink{class_namespace_def}{Namespace\+Def}} $\ast$nd)
+\item 
+void \mbox{\hyperlink{class_file_def_a8ab814579e542ea5325a6d5d386c56a2}{compute\+Anchors}} ()
+\item 
+\mbox{\Hypertarget{class_file_def_a45289f4084172bcc378d6cce05f69fb3}\label{class_file_def_a45289f4084172bcc378d6cce05f69fb3}} 
+void {\bfseries set\+Package\+Def} (Package\+Def $\ast$pd)
+\item 
+\mbox{\Hypertarget{class_file_def_af52c3153426bb05231bc7df5e4b5e498}\label{class_file_def_af52c3153426bb05231bc7df5e4b5e498}} 
+void {\bfseries set\+Dir\+Def} (\mbox{\hyperlink{class_dir_def}{Dir\+Def}} $\ast$dd)
+\item 
+\mbox{\Hypertarget{class_file_def_af23fb1fdd4ed42a2ea4334dea83307d2}\label{class_file_def_af23fb1fdd4ed42a2ea4334dea83307d2}} 
+void {\bfseries add\+Using\+Directive} (\mbox{\hyperlink{class_namespace_def}{Namespace\+Def}} $\ast$nd)
+\item 
+\mbox{\Hypertarget{class_file_def_afcb259a4f68f6840806d8b7e5176f593}\label{class_file_def_afcb259a4f68f6840806d8b7e5176f593}} 
+void {\bfseries add\+Using\+Declaration} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$def)
+\item 
+\mbox{\Hypertarget{class_file_def_ac57b260b28e22bdf186dc3e57f121891}\label{class_file_def_ac57b260b28e22bdf186dc3e57f121891}} 
+void {\bfseries combine\+Using\+Relations} ()
+\item 
+\mbox{\Hypertarget{class_file_def_a83aedcb2d0be96a765c12f0d5c2ddd81}\label{class_file_def_a83aedcb2d0be96a765c12f0d5c2ddd81}} 
+bool {\bfseries generate\+Source\+File} () const
+\item 
+\mbox{\Hypertarget{class_file_def_a31bdeeeb4ffdaeac2636c7c5027a8d6b}\label{class_file_def_a31bdeeeb4ffdaeac2636c7c5027a8d6b}} 
+void {\bfseries sort\+Member\+Lists} ()
+\item 
+\mbox{\Hypertarget{class_file_def_a409353a6de84bb6fccfefb9897b6f746}\label{class_file_def_a409353a6de84bb6fccfefb9897b6f746}} 
+void {\bfseries add\+Include\+Dependency} (\mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$fd, const char $\ast$inc\+Name, bool local, bool imported, bool indirect)
+\item 
+\mbox{\Hypertarget{class_file_def_af844c9c34c6f823c3ef1a63896eca26b}\label{class_file_def_af844c9c34c6f823c3ef1a63896eca26b}} 
+void {\bfseries add\+Included\+By\+Dependency} (\mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$fd, const char $\ast$inc\+Name, bool local, bool imported)
+\item 
+\mbox{\Hypertarget{class_file_def_a2b9aea5dff41f072486193527fd1a500}\label{class_file_def_a2b9aea5dff41f072486193527fd1a500}} 
+void {\bfseries add\+Members\+To\+Member\+Group} ()
+\item 
+\mbox{\Hypertarget{class_file_def_a7974ff660e62bc06738fa3098ffac1e8}\label{class_file_def_a7974ff660e62bc06738fa3098ffac1e8}} 
+void {\bfseries distribute\+Member\+Group\+Documentation} ()
+\item 
+\mbox{\Hypertarget{class_file_def_a853d5e3b1c9ce164cfd2c5c5b5bff042}\label{class_file_def_a853d5e3b1c9ce164cfd2c5c5b5bff042}} 
+void {\bfseries find\+Sections\+In\+Documentation} ()
+\item 
+\mbox{\Hypertarget{class_file_def_a364521fb6ffb159910421580992445ba}\label{class_file_def_a364521fb6ffb159910421580992445ba}} 
+void {\bfseries add\+Included\+Using\+Directives} ()
+\item 
+\mbox{\Hypertarget{class_file_def_a00c1d42689c72a489df756202e6086a7}\label{class_file_def_a00c1d42689c72a489df756202e6086a7}} 
+void {\bfseries add\+List\+References} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_file_def_ad5dd0c1f9f0df9b7f36abf6feea9c1a1}\label{class_file_def_ad5dd0c1f9f0df9b7f36abf6feea9c1a1}} 
+bool {\bfseries visited}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_file_def_a5f297c95a2f5b8d2e1a7e3620b4c8d01}{acquire\+File\+Version}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_a}{A}} model of a file symbol.
+
+An object of this class contains all file information that is gathered. This includes the members and compounds defined in the file.
+
+The member \mbox{\hyperlink{class_file_def_a7a73cf8448a6995be00369858d4768e8}{write\+Documentation()}} can be used to generate the page of documentation to H\+T\+ML and La\+TeX. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_file_def_aa0f1d4c412599b7c03d214c939e1ca95}\label{class_file_def_aa0f1d4c412599b7c03d214c939e1ca95}} 
+\index{FileDef@{FileDef}!FileDef@{FileDef}}
+\index{FileDef@{FileDef}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{FileDef()}{FileDef()}}
+{\footnotesize\ttfamily File\+Def\+::\+File\+Def (\begin{DoxyParamCaption}\item[{const char $\ast$}]{p,  }\item[{const char $\ast$}]{nm,  }\item[{const char $\ast$}]{lref = {\ttfamily 0},  }\item[{const char $\ast$}]{dn = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+create a new file definition, where {\itshape p} is the file path, {\itshape nm} the file name, and {\itshape lref} is an H\+T\+ML anchor name if the file was read from a tag file or 0 otherwise \mbox{\Hypertarget{class_file_def_a5ed8a95230184de0f82d21bf08f4ac0a}\label{class_file_def_a5ed8a95230184de0f82d21bf08f4ac0a}} 
+\index{FileDef@{FileDef}!````~FileDef@{$\sim$FileDef}}
+\index{````~FileDef@{$\sim$FileDef}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{$\sim$FileDef()}{~FileDef()}}
+{\footnotesize\ttfamily File\+Def\+::$\sim$\+File\+Def (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+destroy the file definition 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_file_def_ad44d91d874c4713d198a8e4b862ee48f}\label{class_file_def_ad44d91d874c4713d198a8e4b862ee48f}} 
+\index{FileDef@{FileDef}!absFilePath@{absFilePath}}
+\index{absFilePath@{absFilePath}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{absFilePath()}{absFilePath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} File\+Def\+::abs\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the absolute path including the file name. \mbox{\Hypertarget{class_file_def_a5f297c95a2f5b8d2e1a7e3620b4c8d01}\label{class_file_def_a5f297c95a2f5b8d2e1a7e3620b4c8d01}} 
+\index{FileDef@{FileDef}!acquireFileVersion@{acquireFileVersion}}
+\index{acquireFileVersion@{acquireFileVersion}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{acquireFileVersion()}{acquireFileVersion()}}
+{\footnotesize\ttfamily void File\+Def\+::acquire\+File\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Retrieves the file version from version control system. \mbox{\Hypertarget{class_file_def_a793b9b4a7196fd94226d4fab0a27a12d}\label{class_file_def_a793b9b4a7196fd94226d4fab0a27a12d}} 
+\index{FileDef@{FileDef}!anchor@{anchor}}
+\index{anchor@{anchor}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{anchor()}{anchor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} File\+Def\+::anchor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the anchor within a page where this item can be found 
+
+Implements \mbox{\hyperlink{class_definition_a56e91f9b76f41208a22cfb2336871604}{Definition}}.
+
+\mbox{\Hypertarget{class_file_def_a8ab814579e542ea5325a6d5d386c56a2}\label{class_file_def_a8ab814579e542ea5325a6d5d386c56a2}} 
+\index{FileDef@{FileDef}!computeAnchors@{computeAnchors}}
+\index{computeAnchors@{computeAnchors}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{computeAnchors()}{computeAnchors()}}
+{\footnotesize\ttfamily void File\+Def\+::compute\+Anchors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Compute the H\+T\+ML anchor names for all members in the class \mbox{\Hypertarget{class_file_def_a91629ee75b5caf817a7338c02a12bd0a}\label{class_file_def_a91629ee75b5caf817a7338c02a12bd0a}} 
+\index{FileDef@{FileDef}!definitionType@{definitionType}}
+\index{definitionType@{definitionType}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{definitionType()}{definitionType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_definition_intf_ada60114bc621669dd8c19edfc6421766}{Def\+Type}} File\+Def\+::definition\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Use this for dynamic inspection of the type of the derived class 
+
+Implements \mbox{\hyperlink{class_definition_intf_ac8ee00bc1af5558ae37f6896d16f5a3a}{Definition\+Intf}}.
+
+\mbox{\Hypertarget{class_file_def_ab5973477f072d780c9a184d16b58410b}\label{class_file_def_ab5973477f072d780c9a184d16b58410b}} 
+\index{FileDef@{FileDef}!displayName@{displayName}}
+\index{displayName@{displayName}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{displayName()}{displayName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} File\+Def\+::display\+Name (\begin{DoxyParamCaption}\item[{bool}]{include\+Scope = {\ttfamily TRUE} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the name of the definition as it appears in the output 
+
+Implements \mbox{\hyperlink{class_definition_ac4741f70f06baac174cf71b3e11d06ac}{Definition}}.
+
+\mbox{\Hypertarget{class_file_def_a0ce6ecbcf84b6731120dfcd56c4dc0d6}\label{class_file_def_a0ce6ecbcf84b6731120dfcd56c4dc0d6}} 
+\index{FileDef@{FileDef}!docName@{docName}}
+\index{docName@{docName}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{docName()}{docName()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}}\& File\+Def\+::doc\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the name as it is used in the documentation \mbox{\Hypertarget{class_file_def_a57496c4b5436110bd66fdfa1fee0eefe}\label{class_file_def_a57496c4b5436110bd66fdfa1fee0eefe}} 
+\index{FileDef@{FileDef}!getOutputFileBase@{getOutputFileBase}}
+\index{getOutputFileBase@{getOutputFileBase}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{getOutputFileBase()}{getOutputFileBase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} File\+Def\+::get\+Output\+File\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the base file name (without extension) of this definition. as it is referenced to/written to disk. 
+
+Implements \mbox{\hyperlink{class_definition_acabecdc6bfda2015811eed5f3436322d}{Definition}}.
+
+\mbox{\Hypertarget{class_file_def_a77330ac537f3a70224552c1373e03404}\label{class_file_def_a77330ac537f3a70224552c1373e03404}} 
+\index{FileDef@{FileDef}!getPath@{getPath}}
+\index{getPath@{getPath}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} File\+Def\+::get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the absolute path of this file. \mbox{\Hypertarget{class_file_def_a9ddb22ec1cbae4e2b8d192c455103046}\label{class_file_def_a9ddb22ec1cbae4e2b8d192c455103046}} 
+\index{FileDef@{FileDef}!getSourceFileBase@{getSourceFileBase}}
+\index{getSourceFileBase@{getSourceFileBase}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{getSourceFileBase()}{getSourceFileBase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} File\+Def\+::get\+Source\+File\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the name of the source listing of this definition. 
+
+Reimplemented from \mbox{\hyperlink{class_definition_abdb114d4da6048e834ccae02393790df}{Definition}}.
+
+\mbox{\Hypertarget{class_file_def_a8f8cd8aec9c308358c7e9e747757e3cc}\label{class_file_def_a8f8cd8aec9c308358c7e9e747757e3cc}} 
+\index{FileDef@{FileDef}!getVersion@{getVersion}}
+\index{getVersion@{getVersion}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{getVersion()}{getVersion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} File\+Def\+::get\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns version of this file. \mbox{\Hypertarget{class_file_def_a2520150a3fdcd1fc4ed3cefa31d146f5}\label{class_file_def_a2520150a3fdcd1fc4ed3cefa31d146f5}} 
+\index{FileDef@{FileDef}!includeName@{includeName}}
+\index{includeName@{includeName}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{includeName()}{includeName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} File\+Def\+::include\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the name of the verbatim copy of this file (if any). \mbox{\Hypertarget{class_file_def_a61ec1208cd1055a3d91cb6a2ee60451d}\label{class_file_def_a61ec1208cd1055a3d91cb6a2ee60451d}} 
+\index{FileDef@{FileDef}!insertClass@{insertClass}}
+\index{insertClass@{insertClass}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{insertClass()}{insertClass()}}
+{\footnotesize\ttfamily void File\+Def\+::insert\+Class (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$}]{cd }\end{DoxyParamCaption})}
+
+Adds compound definition {\itshape cd} to the list of all compounds of this file \mbox{\Hypertarget{class_file_def_a84f7bb05a4a830056b208d94c6c2bd59}\label{class_file_def_a84f7bb05a4a830056b208d94c6c2bd59}} 
+\index{FileDef@{FileDef}!insertMember@{insertMember}}
+\index{insertMember@{insertMember}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{insertMember()}{insertMember()}}
+{\footnotesize\ttfamily void File\+Def\+::insert\+Member (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$}]{md }\end{DoxyParamCaption})}
+
+Adds member definition {\itshape md} to the list of all members of this file \mbox{\Hypertarget{class_file_def_a579c95408a34b048fc3cd288bfa8893c}\label{class_file_def_a579c95408a34b048fc3cd288bfa8893c}} 
+\index{FileDef@{FileDef}!insertNamespace@{insertNamespace}}
+\index{insertNamespace@{insertNamespace}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{insertNamespace()}{insertNamespace()}}
+{\footnotesize\ttfamily void File\+Def\+::insert\+Namespace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_namespace_def}{Namespace\+Def}} $\ast$}]{nd }\end{DoxyParamCaption})}
+
+Adds namespace definition {\itshape nd} to the list of all compounds of this file \mbox{\Hypertarget{class_file_def_a4d175f205d548fa28fc9c5aed8095aee}\label{class_file_def_a4d175f205d548fa28fc9c5aed8095aee}} 
+\index{FileDef@{FileDef}!isLinkable@{isLinkable}}
+\index{isLinkable@{isLinkable}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{isLinkable()}{isLinkable()}}
+{\footnotesize\ttfamily bool File\+Def\+::is\+Linkable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns T\+R\+UE iff it is possible to link to this item. This can be a link to another project imported via a tag file. 
+
+Implements \mbox{\hyperlink{class_definition_a4002fd79c2d4dcf667c37c83d4214deb}{Definition}}.
+
+\mbox{\Hypertarget{class_file_def_ad8195d5d5b2be4f11d37e8d75f9e4659}\label{class_file_def_ad8195d5d5b2be4f11d37e8d75f9e4659}} 
+\index{FileDef@{FileDef}!isLinkableInProject@{isLinkableInProject}}
+\index{isLinkableInProject@{isLinkableInProject}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{isLinkableInProject()}{isLinkableInProject()}}
+{\footnotesize\ttfamily bool File\+Def\+::is\+Linkable\+In\+Project (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns T\+R\+UE iff it is possible to link to this item within this project. 
+
+Implements \mbox{\hyperlink{class_definition_a845891c7206d40c3664b562636cdf9fc}{Definition}}.
+
+\mbox{\Hypertarget{class_file_def_a0e40f11b7915efcd403a679430d4ac4e}\label{class_file_def_a0e40f11b7915efcd403a679430d4ac4e}} 
+\index{FileDef@{FileDef}!isSource@{isSource}}
+\index{isSource@{isSource}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{isSource()}{isSource()}}
+{\footnotesize\ttfamily bool File\+Def\+::is\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if this file is a source file. \mbox{\Hypertarget{class_file_def_a68f9ae783659b8c3738623edfdb6ee74}\label{class_file_def_a68f9ae783659b8c3738623edfdb6ee74}} 
+\index{FileDef@{FileDef}!name@{name}}
+\index{name@{name}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} File\+Def\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the unique file name (this may include part of the path). \mbox{\Hypertarget{class_file_def_a7a73cf8448a6995be00369858d4768e8}\label{class_file_def_a7a73cf8448a6995be00369858d4768e8}} 
+\index{FileDef@{FileDef}!writeDocumentation@{writeDocumentation}}
+\index{writeDocumentation@{writeDocumentation}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{writeDocumentation()}{writeDocumentation()}}
+{\footnotesize\ttfamily void File\+Def\+::write\+Documentation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_list}{Output\+List}} \&}]{ol }\end{DoxyParamCaption})}
+
+Write the documentation page for this file to the file of output generators {\itshape ol}. \mbox{\Hypertarget{class_file_def_a5ed9987b075539aa61654cc55d3bac28}\label{class_file_def_a5ed9987b075539aa61654cc55d3bac28}} 
+\index{FileDef@{FileDef}!writeSource@{writeSource}}
+\index{writeSource@{writeSource}!FileDef@{FileDef}}
+\subsubsection{\texorpdfstring{writeSource()}{writeSource()}}
+{\footnotesize\ttfamily void File\+Def\+::write\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_list}{Output\+List}} \&}]{ol,  }\item[{bool}]{same\+Tu,  }\item[{\mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}} \&}]{files\+In\+Same\+Tu }\end{DoxyParamCaption})}
+
+Write a source listing of this file to the output 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/filedef.\+h\item 
+doxygen/src/filedef.\+cpp\end{DoxyCompactItemize}

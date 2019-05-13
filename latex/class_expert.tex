@@ -1,0 +1,77 @@
+\hypertarget{class_expert}{}\section{Expert Class Reference}
+\label{class_expert}\index{Expert@{Expert}}
+Inheritance diagram for Expert\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_expert}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_expert_a0f55cd028a8322d2d1f8afee0febe967}\label{class_expert_a0f55cd028a8322d2d1f8afee0febe967}} 
+void {\bfseries activate\+Topic} (Q\+Tree\+Widget\+Item $\ast$, Q\+Tree\+Widget\+Item $\ast$)
+\item 
+\mbox{\Hypertarget{class_expert_a0c1669551833b56baf5241b1fe7b60ab}\label{class_expert_a0c1669551833b56baf5241b1fe7b60ab}} 
+Q\+Widget $\ast$ {\bfseries create\+Topic\+Widget} (Q\+Dom\+Element \&elem)
+\item 
+\mbox{\Hypertarget{class_expert_a9d7ae3fd40cb983dbfda644207b252c0}\label{class_expert_a9d7ae3fd40cb983dbfda644207b252c0}} 
+void {\bfseries refresh} ()
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_expert_adfdb3f64dfe39f00c6454db2763cdca3}\label{class_expert_adfdb3f64dfe39f00c6454db2763cdca3}} 
+void {\bfseries changed} ()
+\item 
+\mbox{\Hypertarget{class_expert_a4e4cb0780efed37a18d12610af419f67}\label{class_expert_a4e4cb0780efed37a18d12610af419f67}} 
+void {\bfseries done} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_expert_a6699bfc81c493bb4f7ac8985ae57a9cc}\label{class_expert_a6699bfc81c493bb4f7ac8985ae57a9cc}} 
+void {\bfseries load\+Settings} (Q\+Settings $\ast$)
+\item 
+\mbox{\Hypertarget{class_expert_ac7bcc765c191acd4e2af1560115cb70a}\label{class_expert_ac7bcc765c191acd4e2af1560115cb70a}} 
+void {\bfseries save\+Settings} (Q\+Settings $\ast$)
+\item 
+\mbox{\Hypertarget{class_expert_a072a019d46bd7a9b4eb92fb0ca86b5b7}\label{class_expert_a072a019d46bd7a9b4eb92fb0ca86b5b7}} 
+void {\bfseries load\+Config} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&file\+Name)
+\item 
+\mbox{\Hypertarget{class_expert_a4bc35e5cb24bb095511bd8cdc7f415b7}\label{class_expert_a4bc35e5cb24bb095511bd8cdc7f415b7}} 
+bool {\bfseries write\+Config} (\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \&t, bool brief)
+\item 
+\mbox{\Hypertarget{class_expert_ad8a25b3f1560dc325a788df3b9cfdae3}\label{class_expert_ad8a25b3f1560dc325a788df3b9cfdae3}} 
+\mbox{\hyperlink{class_q_array}{Q\+Byte\+Array}} {\bfseries save\+Inner\+State} () const
+\item 
+\mbox{\Hypertarget{class_expert_acfcc32d46839257f85dd9fd0e346b62d}\label{class_expert_acfcc32d46839257f85dd9fd0e346b62d}} 
+bool {\bfseries restore\+Inner\+State} (const \mbox{\hyperlink{class_q_array}{Q\+Byte\+Array}} \&state)
+\item 
+\mbox{\Hypertarget{class_expert_af00a1945b86ddb66aa63bd65ee8db94e}\label{class_expert_af00a1945b86ddb66aa63bd65ee8db94e}} 
+const Q\+Hash$<$ \mbox{\hyperlink{class_q_string}{Q\+String}}, \mbox{\hyperlink{class_input}{Input}} $\ast$ $>$ \& {\bfseries model\+Data} () const
+\item 
+\mbox{\Hypertarget{class_expert_a7c5287712acfe6451563bdc7f17e9ef6}\label{class_expert_a7c5287712acfe6451563bdc7f17e9ef6}} 
+void {\bfseries reset\+To\+Defaults} ()
+\item 
+\mbox{\Hypertarget{class_expert_ad46c2f342c6ced7cc3ee21a3e59bc37b}\label{class_expert_ad46c2f342c6ced7cc3ee21a3e59bc37b}} 
+bool {\bfseries html\+Output\+Present} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&working\+Dir) const
+\item 
+\mbox{\Hypertarget{class_expert_a77e5910327db376865ffdeda453be8cc}\label{class_expert_a77e5910327db376865ffdeda453be8cc}} 
+bool {\bfseries pdf\+Output\+Present} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&working\+Dir) const
+\item 
+\mbox{\Hypertarget{class_expert_a579dc1e16a385cf0884c1e91186b6350}\label{class_expert_a579dc1e16a385cf0884c1e91186b6350}} 
+\mbox{\hyperlink{class_q_string}{Q\+String}} {\bfseries get\+Html\+Output\+Index} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&working\+Dir) const
+\item 
+\mbox{\Hypertarget{class_expert_afc6094b6a7d6d75bf25949cd55a6558b}\label{class_expert_afc6094b6a7d6d75bf25949cd55a6558b}} 
+void {\bfseries set\+Header} (const char $\ast$name)
+\item 
+\mbox{\Hypertarget{class_expert_a6edd421940102d25c90ec403c44de6ea}\label{class_expert_a6edd421940102d25c90ec403c44de6ea}} 
+void {\bfseries add} (const char $\ast$name, const char $\ast$doc)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/addon/doxywizard/expert.\+h\item 
+doxygen/addon/doxywizard/expert.\+cpp\end{DoxyCompactItemize}

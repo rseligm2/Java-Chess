@@ -1,0 +1,179 @@
+\hypertarget{class_piece}{}\section{Piece Class Reference}
+\label{class_piece}\index{Piece@{Piece}}
+Inheritance diagram for Piece\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_piece}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_piece_a06b07b1389155f1c3831d3b16d38b277}{Piece}} (int x, int y, int thecolor)
+\item 
+int \mbox{\hyperlink{class_piece_a4d677038e42f41c49c7295d87f5944ee}{get\+Xcoord}} ()
+\item 
+int \mbox{\hyperlink{class_piece_a04d3706f690288a0ed9f3c16fd29e6dd}{get\+Ycoord}} ()
+\item 
+void \mbox{\hyperlink{class_piece_abf82df6a19b7223227e04b74427eea6d}{set\+Xcoord}} (int x)
+\item 
+void \mbox{\hyperlink{class_piece_a6618c10a34b92fbe2d99d932475f8321}{set\+Ycoord}} (int y)
+\item 
+boolean \mbox{\hyperlink{class_piece_a15e1f1efe5a71b953cffa8d402f69be6}{get\+Piece\+Status}} ()
+\item 
+void \mbox{\hyperlink{class_piece_a266466a5d102e18261a160c900f4570f}{kill\+Piece}} ()
+\item 
+boolean \mbox{\hyperlink{class_piece_a453be38e2005fee525f297fe3cfec0f0}{is\+Friendly\+Piece}} (\mbox{\hyperlink{class_piece}{Piece}} check\+Piece)
+\item 
+boolean \mbox{\hyperlink{class_piece_ad63ab469b35468ad133a3ea3626eb4e1}{all\+Valid\+Move\+Check}} (\mbox{\hyperlink{class_board}{Board}} board, int newX, int newY)
+\item 
+boolean \mbox{\hyperlink{class_piece_ac4cf6701c965e80a20ade44cfa0003a4}{is\+Valid\+Move}} (\mbox{\hyperlink{class_board}{Board}} board, int newX, int newY)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_piece_aa7b8cdc1df4652d4735965dc6c713b4d}\label{class_piece_aa7b8cdc1df4652d4735965dc6c713b4d}} 
+int {\bfseries color}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_piece_a06b07b1389155f1c3831d3b16d38b277}\label{class_piece_a06b07b1389155f1c3831d3b16d38b277}} 
+\index{Piece@{Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{Piece()}{Piece()}}
+{\footnotesize\ttfamily Piece.\+Piece (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{thecolor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor for all pieces 
+\begin{DoxyParams}{Parameters}
+{\em x} & initial x coordinate of piece \\
+\hline
+{\em y} & initial y coordinate of piece alive default set to true \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_piece_ad63ab469b35468ad133a3ea3626eb4e1}\label{class_piece_ad63ab469b35468ad133a3ea3626eb4e1}} 
+\index{Piece@{Piece}!allValidMoveCheck@{allValidMoveCheck}}
+\index{allValidMoveCheck@{allValidMoveCheck}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{allValidMoveCheck()}{allValidMoveCheck()}}
+{\footnotesize\ttfamily boolean Piece.\+all\+Valid\+Move\+Check (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}}}]{board,  }\item[{int}]{newX,  }\item[{int}]{newY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method to check if new space is within boundaries and space not already occupied by friendly piece 
+\begin{DoxyParams}{Parameters}
+{\em board} & takes in \mbox{\hyperlink{class_board}{Board}} object \\
+\hline
+{\em newX} & X coordinate of space being checked \\
+\hline
+{\em newY} & Y coordinate of space being checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if space within board and not occupied by friendly piece, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_piece_a15e1f1efe5a71b953cffa8d402f69be6}\label{class_piece_a15e1f1efe5a71b953cffa8d402f69be6}} 
+\index{Piece@{Piece}!getPieceStatus@{getPieceStatus}}
+\index{getPieceStatus@{getPieceStatus}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{getPieceStatus()}{getPieceStatus()}}
+{\footnotesize\ttfamily boolean Piece.\+get\+Piece\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get method for alive value of piece \begin{DoxyReturn}{Returns}
+alive boolean of piece 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_piece_a4d677038e42f41c49c7295d87f5944ee}\label{class_piece_a4d677038e42f41c49c7295d87f5944ee}} 
+\index{Piece@{Piece}!getXcoord@{getXcoord}}
+\index{getXcoord@{getXcoord}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{getXcoord()}{getXcoord()}}
+{\footnotesize\ttfamily int Piece.\+get\+Xcoord (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get method for x coordinate of piece \begin{DoxyReturn}{Returns}
+xcoord 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_piece_a04d3706f690288a0ed9f3c16fd29e6dd}\label{class_piece_a04d3706f690288a0ed9f3c16fd29e6dd}} 
+\index{Piece@{Piece}!getYcoord@{getYcoord}}
+\index{getYcoord@{getYcoord}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{getYcoord()}{getYcoord()}}
+{\footnotesize\ttfamily int Piece.\+get\+Ycoord (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get method for y coordinate of piece \begin{DoxyReturn}{Returns}
+ycoord 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_piece_a453be38e2005fee525f297fe3cfec0f0}\label{class_piece_a453be38e2005fee525f297fe3cfec0f0}} 
+\index{Piece@{Piece}!isFriendlyPiece@{isFriendlyPiece}}
+\index{isFriendlyPiece@{isFriendlyPiece}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{isFriendlyPiece()}{isFriendlyPiece()}}
+{\footnotesize\ttfamily boolean Piece.\+is\+Friendly\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_piece}{Piece}}}]{check\+Piece }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method to return whether another piece is the same color 
+\begin{DoxyParams}{Parameters}
+{\em check\+Piece} & piece to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if same color, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_piece_ac4cf6701c965e80a20ade44cfa0003a4}\label{class_piece_ac4cf6701c965e80a20ade44cfa0003a4}} 
+\index{Piece@{Piece}!isValidMove@{isValidMove}}
+\index{isValidMove@{isValidMove}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{isValidMove()}{isValidMove()}}
+{\footnotesize\ttfamily boolean Piece.\+is\+Valid\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}}}]{board,  }\item[{int}]{newX,  }\item[{int}]{newY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Dummy Method, overridden in all specific piece classes 
+\begin{DoxyParams}{Parameters}
+{\em board} & \\
+\hline
+{\em newX} & \\
+\hline
+{\em newY} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_pawn_a7c445d4ea5aebdc0a508e02b4db2e019}{Pawn}}, \mbox{\hyperlink{class_bishop_a73bbe709fbe0a52ddb75b7b40965d50b}{Bishop}}, \mbox{\hyperlink{class_knight_a43bfcf7586e969491623ba0048dd84d4}{Knight}}, \mbox{\hyperlink{class_queen_ac0195712d58628ae2889f400f4dab061}{Queen}}, \mbox{\hyperlink{class_rook_a8a9f0e7a8d18a855bd608bfe945c62b4}{Rook}}, and \mbox{\hyperlink{class_king_a871afc5b636135ddb2ff259e3b12f59c}{King}}.
+
+\mbox{\Hypertarget{class_piece_a266466a5d102e18261a160c900f4570f}\label{class_piece_a266466a5d102e18261a160c900f4570f}} 
+\index{Piece@{Piece}!killPiece@{killPiece}}
+\index{killPiece@{killPiece}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{killPiece()}{killPiece()}}
+{\footnotesize\ttfamily void Piece.\+kill\+Piece (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method to be used be piece is to be taken off board \begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_piece_abf82df6a19b7223227e04b74427eea6d}\label{class_piece_abf82df6a19b7223227e04b74427eea6d}} 
+\index{Piece@{Piece}!setXcoord@{setXcoord}}
+\index{setXcoord@{setXcoord}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{setXcoord()}{setXcoord()}}
+{\footnotesize\ttfamily void Piece.\+set\+Xcoord (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set method for x coordinate of piece 
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinate to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_piece_a6618c10a34b92fbe2d99d932475f8321}\label{class_piece_a6618c10a34b92fbe2d99d932475f8321}} 
+\index{Piece@{Piece}!setYcoord@{setYcoord}}
+\index{setYcoord@{setYcoord}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{setYcoord()}{setYcoord()}}
+{\footnotesize\ttfamily void Piece.\+set\+Ycoord (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set method for y coordinate of piece 
+\begin{DoxyParams}{Parameters}
+{\em y} & coordinate to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Piece.\+java\end{DoxyCompactItemize}

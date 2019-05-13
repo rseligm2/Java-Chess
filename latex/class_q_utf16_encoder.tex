@@ -1,0 +1,33 @@
+\hypertarget{class_q_utf16_encoder}{}\section{Q\+Utf16\+Encoder Class Reference}
+\label{class_q_utf16_encoder}\index{QUtf16Encoder@{QUtf16Encoder}}
+Inheritance diagram for Q\+Utf16\+Encoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_utf16_encoder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_q_utf16_encoder_abe6f23ccae2a17021d4906e9f5e76ae6}{from\+Unicode}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&uc, int \&len\+\_\+in\+\_\+out)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_utf16_encoder_abe6f23ccae2a17021d4906e9f5e76ae6}\label{class_q_utf16_encoder_abe6f23ccae2a17021d4906e9f5e76ae6}} 
+\index{QUtf16Encoder@{QUtf16Encoder}!fromUnicode@{fromUnicode}}
+\index{fromUnicode@{fromUnicode}!QUtf16Encoder@{QUtf16Encoder}}
+\subsubsection{\texorpdfstring{fromUnicode()}{fromUnicode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Q\+Utf16\+Encoder\+::from\+Unicode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{uc,  }\item[{int \&}]{len\+In\+Out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Converts {\itshape len\+In\+Out} characters (not bytes) from {\itshape uc}, producing a \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}}. {\itshape len\+In\+Out} will also be set to the \mbox{\hyperlink{class_q_c_string_ac52596733e9110b778019946d73fb268}{length}} of the result (in bytes).
+
+The encoder is free to record state to use when subsequent calls are made to this function (for example, it might change modes with escape sequences if needed during the encoding of one string, then assume that mode applies when a subsequent call begins). 
+
+Implements \mbox{\hyperlink{class_q_text_encoder_a3b199427ee9b7f862fe65811165dbbfa}{Q\+Text\+Encoder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qutfcodec.\+cpp\end{DoxyCompactItemize}

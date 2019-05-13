@@ -1,0 +1,350 @@
+\hypertarget{class_q_date_time}{}\section{Q\+Date\+Time Class Reference}
+\label{class_q_date_time}\index{QDateTime@{QDateTime}}
+
+
+The \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} class provides date and time functions.  
+
+
+
+
+{\ttfamily \#include $<$qdatetime.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_date_time_a497eebb04afafe0ec04d02417b57aba8}{Q\+Date\+Time}} ()
+\item 
+\mbox{\hyperlink{class_q_date_time_a1da374c4242c84a1d228e572ab964dcf}{Q\+Date\+Time}} (const \mbox{\hyperlink{class_q_date}{Q\+Date}} \&)
+\item 
+\mbox{\hyperlink{class_q_date_time_ac4b95956f346d9213b43624ec93e5625}{Q\+Date\+Time}} (const \mbox{\hyperlink{class_q_date}{Q\+Date}} \&, const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&)
+\item 
+bool \mbox{\hyperlink{class_q_date_time_a4444ba427d3c8c7c1af2eef6e462d963}{is\+Null}} () const
+\item 
+bool \mbox{\hyperlink{class_q_date_time_aa10098d497d4561e20488cb324d314c6}{is\+Valid}} () const
+\item 
+\mbox{\hyperlink{class_q_date}{Q\+Date}} \mbox{\hyperlink{class_q_date_time_ae7d86dc9b95e2aeab38391033eeff9eb}{date}} () const
+\item 
+\mbox{\hyperlink{class_q_time}{Q\+Time}} \mbox{\hyperlink{class_q_date_time_a7b8eefbd04093747deb22f5cd6b673c1}{time}} () const
+\item 
+void \mbox{\hyperlink{class_q_date_time_aba938ae7007f881a6a641bbdb3ac634a}{set\+Date}} (const \mbox{\hyperlink{class_q_date}{Q\+Date}} \&\mbox{\hyperlink{class_q_date_time_ae7d86dc9b95e2aeab38391033eeff9eb}{date}})
+\item 
+void \mbox{\hyperlink{class_q_date_time_a6384cf8a49551d5e42786ab850894813}{set\+Time}} (const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&\mbox{\hyperlink{class_q_date_time_a7b8eefbd04093747deb22f5cd6b673c1}{time}})
+\item 
+void \mbox{\hyperlink{class_q_date_time_a889dac98cb29b4b9f33cfea6f00db98b}{set\+Time\+\_\+t}} (uint secs\+Since1\+Jan1970\+U\+TC)
+\item 
+void \mbox{\hyperlink{class_q_date_time_a9230e2178c9706ae658df2fd7d255b55}{set\+Time\+Utc\+\_\+t}} (uint secs\+Since1\+Jan1970\+U\+TC)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_date_time_a5455d25292813109f21c15888552c5c9}{to\+String}} () const
+\item 
+\mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \mbox{\hyperlink{class_q_date_time_adeea3cac98a8c074fecf486094a9bbaf}{add\+Days}} (int days) const
+\item 
+\mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \mbox{\hyperlink{class_q_date_time_a7b48ae870775460aec8791465c2e5056}{add\+Secs}} (int secs) const
+\item 
+int \mbox{\hyperlink{class_q_date_time_a80a194c8ecef4133a9bff3aeb4546934}{days\+To}} (const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&) const
+\item 
+int \mbox{\hyperlink{class_q_date_time_a3b697a289865bc96bd339acaa75880b3}{secs\+To}} (const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&) const
+\item 
+bool \mbox{\hyperlink{class_q_date_time_a87f22ca0d6fa4b650dd32e1a4382219b}{operator==}} (const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&dt) const
+\item 
+bool \mbox{\hyperlink{class_q_date_time_ac13d8b9af844ce2bf5f0bc8f3ca39499}{operator!=}} (const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&dt) const
+\item 
+bool \mbox{\hyperlink{class_q_date_time_a9dc563b5ecdf98f1a5423efaf9e10073}{operator$<$}} (const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&dt) const
+\item 
+bool \mbox{\hyperlink{class_q_date_time_aed7547e356368920d4faddba79084b10}{operator$<$=}} (const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&dt) const
+\item 
+bool \mbox{\hyperlink{class_q_date_time_a41e0c1af2b40f5161b9c673ebaf8f8f0}{operator$>$}} (const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&dt) const
+\item 
+bool \mbox{\hyperlink{class_q_date_time_afa796237c21386fc7034216c3846919f}{operator$>$=}} (const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&dt) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \mbox{\hyperlink{class_q_date_time_a1e8e27c71617d5c97abe80ee2426a1b4}{current\+Date\+Time}} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+Q\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& \mbox{\hyperlink{class_q_date_time_ac4f6ae497406f297a47183ecc265816a}{operator$<$$<$}} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&, const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&)
+\item 
+Q\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& \mbox{\hyperlink{class_q_date_time_afb6acd9837e7b1d8fc54e6665a9adc29}{operator$>$$>$}} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&, \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} class provides date and time functions. 
+
+\mbox{\hyperlink{class_a}{A}} \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} object contains a calendar date and a clock time (a \char`\"{}datetime\char`\"{}). It is a combination of the \mbox{\hyperlink{class_q_date}{Q\+Date}} and \mbox{\hyperlink{class_q_time}{Q\+Time}} classes. It can read the current datetime from the system clock. It provides functions for comparing datetimes and for manipulating a datetime by adding a number of seconds or days.
+
+\mbox{\hyperlink{class_a}{A}} \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} object is typically created either by giving a date and time explicitly, or by using the static function current\+Time(), which makes a \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} object which contains the system\textquotesingle{}s clock time.
+
+The \mbox{\hyperlink{class_q_date_time_ae7d86dc9b95e2aeab38391033eeff9eb}{date()}} and \mbox{\hyperlink{class_q_date_time_a7b8eefbd04093747deb22f5cd6b673c1}{time()}} functions provide access to the date and time parts of the datetime. The same information is provided in textual format by the \mbox{\hyperlink{class_q_date_time_a5455d25292813109f21c15888552c5c9}{to\+String()}} function.
+
+\mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} provides a full set of operators to compare two \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} objects. \mbox{\hyperlink{class_a}{A}} datetime is considered smaller than another if it is earlier than the other.
+
+The datetime a given number of days or seconds later than a given datetime can be found using the \mbox{\hyperlink{class_q_date_time_adeea3cac98a8c074fecf486094a9bbaf}{add\+Days()}} and \mbox{\hyperlink{class_q_date_time_a7b48ae870775460aec8791465c2e5056}{add\+Secs()}} functions. Correspondingly, the number of days or seconds between two times can be found using the \mbox{\hyperlink{class_q_date_time_a80a194c8ecef4133a9bff3aeb4546934}{days\+To()}} or \mbox{\hyperlink{class_q_date_time_a3b697a289865bc96bd339acaa75880b3}{secs\+To()}} functions.
+
+\mbox{\hyperlink{class_a}{A}} datetime can also be set using the \mbox{\hyperlink{class_q_date_time_a889dac98cb29b4b9f33cfea6f00db98b}{set\+Time\+\_\+t()}} function, which takes a P\+O\+S\+I\+X-\/standard \char`\"{}number of seconds since 00\+:00\+:00 on January
+1, 1970\char`\"{} value.
+
+The limitations regarding range and resolution mentioned in the \mbox{\hyperlink{class_q_date}{Q\+Date}} and \mbox{\hyperlink{class_q_time}{Q\+Time}} documentation apply for \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} also.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date}{Q\+Date}}, \mbox{\hyperlink{class_q_time}{Q\+Time}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_date_time_a497eebb04afafe0ec04d02417b57aba8}\label{class_q_date_time_a497eebb04afafe0ec04d02417b57aba8}} 
+\index{QDateTime@{QDateTime}!QDateTime@{QDateTime}}
+\index{QDateTime@{QDateTime}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{QDateTime()}{QDateTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Q\+Date\+Time\+::\+Q\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a null datetime (i.\+e. null date and null time). \mbox{\hyperlink{class_a}{A}} null datetime is invalid, since the date is invalid.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date_time_aa10098d497d4561e20488cb324d314c6}{is\+Valid()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_date_time_a1da374c4242c84a1d228e572ab964dcf}\label{class_q_date_time_a1da374c4242c84a1d228e572ab964dcf}} 
+\index{QDateTime@{QDateTime}!QDateTime@{QDateTime}}
+\index{QDateTime@{QDateTime}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{QDateTime()}{QDateTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Q\+Date\+Time\+::\+Q\+Date\+Time (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_date}{Q\+Date}} \&}]{date }\end{DoxyParamCaption})}
+
+Constructs a datetime with date {\itshape date} and null time (00\+:00\+:00.\+000). \mbox{\Hypertarget{class_q_date_time_ac4b95956f346d9213b43624ec93e5625}\label{class_q_date_time_ac4b95956f346d9213b43624ec93e5625}} 
+\index{QDateTime@{QDateTime}!QDateTime@{QDateTime}}
+\index{QDateTime@{QDateTime}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{QDateTime()}{QDateTime()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Q\+Date\+Time\+::\+Q\+Date\+Time (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_date}{Q\+Date}} \&}]{date,  }\item[{const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&}]{time }\end{DoxyParamCaption})}
+
+Constructs a datetime with date {\itshape date} and time {\itshape time}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_date_time_adeea3cac98a8c074fecf486094a9bbaf}\label{class_q_date_time_adeea3cac98a8c074fecf486094a9bbaf}} 
+\index{QDateTime@{QDateTime}!addDays@{addDays}}
+\index{addDays@{addDays}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{addDays()}{addDays()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} Q\+Date\+Time\+::add\+Days (\begin{DoxyParamCaption}\item[{int}]{ndays }\end{DoxyParamCaption}) const}
+
+Returns a \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} object containing a datetime {\itshape ndays} days later than the datetime of this object (or earlier if {\itshape ndays} is negative).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date_time_a80a194c8ecef4133a9bff3aeb4546934}{days\+To()}}, \mbox{\hyperlink{class_q_date_time_a7b48ae870775460aec8791465c2e5056}{add\+Secs()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_date_time_a7b48ae870775460aec8791465c2e5056}\label{class_q_date_time_a7b48ae870775460aec8791465c2e5056}} 
+\index{QDateTime@{QDateTime}!addSecs@{addSecs}}
+\index{addSecs@{addSecs}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{addSecs()}{addSecs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} Q\+Date\+Time\+::add\+Secs (\begin{DoxyParamCaption}\item[{int}]{nsecs }\end{DoxyParamCaption}) const}
+
+Returns a \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} object containing a datetime {\itshape nsecs} seconds later than the datetime of this object (or earlier if {\itshape nsecs} is negative).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date_time_a3b697a289865bc96bd339acaa75880b3}{secs\+To()}}, \mbox{\hyperlink{class_q_date_time_adeea3cac98a8c074fecf486094a9bbaf}{add\+Days()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_date_time_a1e8e27c71617d5c97abe80ee2426a1b4}\label{class_q_date_time_a1e8e27c71617d5c97abe80ee2426a1b4}} 
+\index{QDateTime@{QDateTime}!currentDateTime@{currentDateTime}}
+\index{currentDateTime@{currentDateTime}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{currentDateTime()}{currentDateTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} Q\+Date\+Time\+::current\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the current datetime, as reported by the system clock.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date_a7112e1452f46e40cf349f2e769887e1c}{Q\+Date\+::current\+Date()}}, \mbox{\hyperlink{class_q_time_a39b156ef7067e581f9fd70de6ef9ea4d}{Q\+Time\+::current\+Time()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_date_time_ae7d86dc9b95e2aeab38391033eeff9eb}\label{class_q_date_time_ae7d86dc9b95e2aeab38391033eeff9eb}} 
+\index{QDateTime@{QDateTime}!date@{date}}
+\index{date@{date}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{date()}{date()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_date}{Q\+Date}} Q\+Date\+Time\+::date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the date part of this datetime.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date_time_aba938ae7007f881a6a641bbdb3ac634a}{set\+Date()}}, \mbox{\hyperlink{class_q_date_time_a7b8eefbd04093747deb22f5cd6b673c1}{time()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_date_time_a80a194c8ecef4133a9bff3aeb4546934}\label{class_q_date_time_a80a194c8ecef4133a9bff3aeb4546934}} 
+\index{QDateTime@{QDateTime}!daysTo@{daysTo}}
+\index{daysTo@{daysTo}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{daysTo()}{daysTo()}}
+{\footnotesize\ttfamily int Q\+Date\+Time\+::days\+To (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&}]{dt }\end{DoxyParamCaption}) const}
+
+Returns the number of days from this datetime to {\itshape dt} (which is negative if {\itshape dt} is earlier than this datetime).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date_time_adeea3cac98a8c074fecf486094a9bbaf}{add\+Days()}}, \mbox{\hyperlink{class_q_date_time_a3b697a289865bc96bd339acaa75880b3}{secs\+To()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_date_time_a4444ba427d3c8c7c1af2eef6e462d963}\label{class_q_date_time_a4444ba427d3c8c7c1af2eef6e462d963}} 
+\index{QDateTime@{QDateTime}!isNull@{isNull}}
+\index{isNull@{isNull}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{isNull()}{isNull()}}
+{\footnotesize\ttfamily bool Q\+Date\+Time\+::is\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if both the date and the time are null. \mbox{\hyperlink{class_a}{A}} null date is invalid.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date_a68f2787f407fd6812712b34c11f9bfb8}{Q\+Date\+::is\+Null()}}, \mbox{\hyperlink{class_q_time_a05bdf71ae9a3fd858f48cafd94f31240}{Q\+Time\+::is\+Null()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_date_time_aa10098d497d4561e20488cb324d314c6}\label{class_q_date_time_aa10098d497d4561e20488cb324d314c6}} 
+\index{QDateTime@{QDateTime}!isValid@{isValid}}
+\index{isValid@{isValid}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily bool Q\+Date\+Time\+::is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if both the date and the time are valid.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date_a29baa5808185ed5a3ed5a0440e27ca9c}{Q\+Date\+::is\+Valid()}}, \mbox{\hyperlink{class_q_time_a4f54e1193a12519a7bd9efb7ea16fdca}{Q\+Time\+::is\+Valid()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_date_time_ac13d8b9af844ce2bf5f0bc8f3ca39499}\label{class_q_date_time_ac13d8b9af844ce2bf5f0bc8f3ca39499}} 
+\index{QDateTime@{QDateTime}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Q\+Date\+Time\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&}]{dt }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE if this datetime is different from {\itshape dt}, or F\+A\+L\+SE if they are equal. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date_time_a87f22ca0d6fa4b650dd32e1a4382219b}{operator==()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_date_time_a9dc563b5ecdf98f1a5423efaf9e10073}\label{class_q_date_time_a9dc563b5ecdf98f1a5423efaf9e10073}} 
+\index{QDateTime@{QDateTime}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Q\+Date\+Time\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&}]{dt }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE if this datetime is earlier than {\itshape dt}, otherwise F\+A\+L\+SE. \mbox{\Hypertarget{class_q_date_time_aed7547e356368920d4faddba79084b10}\label{class_q_date_time_aed7547e356368920d4faddba79084b10}} 
+\index{QDateTime@{QDateTime}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Q\+Date\+Time\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&}]{dt }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE if this datetime is earlier than or equal to {\itshape dt}, otherwise F\+A\+L\+SE. \mbox{\Hypertarget{class_q_date_time_a87f22ca0d6fa4b650dd32e1a4382219b}\label{class_q_date_time_a87f22ca0d6fa4b650dd32e1a4382219b}} 
+\index{QDateTime@{QDateTime}!operator==@{operator==}}
+\index{operator==@{operator==}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Q\+Date\+Time\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&}]{dt }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE if this datetime is equal to {\itshape dt}, or F\+A\+L\+SE if they are different. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date_time_ac13d8b9af844ce2bf5f0bc8f3ca39499}{operator!=()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_date_time_a41e0c1af2b40f5161b9c673ebaf8f8f0}\label{class_q_date_time_a41e0c1af2b40f5161b9c673ebaf8f8f0}} 
+\index{QDateTime@{QDateTime}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Q\+Date\+Time\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&}]{dt }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE if this datetime is later than {\itshape dt}, otherwise F\+A\+L\+SE. \mbox{\Hypertarget{class_q_date_time_afa796237c21386fc7034216c3846919f}\label{class_q_date_time_afa796237c21386fc7034216c3846919f}} 
+\index{QDateTime@{QDateTime}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Q\+Date\+Time\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&}]{dt }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE if this datetime is later than or equal to {\itshape dt}, otherwise F\+A\+L\+SE. \mbox{\Hypertarget{class_q_date_time_a3b697a289865bc96bd339acaa75880b3}\label{class_q_date_time_a3b697a289865bc96bd339acaa75880b3}} 
+\index{QDateTime@{QDateTime}!secsTo@{secsTo}}
+\index{secsTo@{secsTo}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{secsTo()}{secsTo()}}
+{\footnotesize\ttfamily int Q\+Date\+Time\+::secs\+To (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&}]{dt }\end{DoxyParamCaption}) const}
+
+Returns the number of seconds from this datetime to {\itshape dt} (which is negative if {\itshape dt} is earlier than this datetime).
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_date_time}{QDateTime}} dt = \mbox{\hyperlink{class_q_date_time_a1e8e27c71617d5c97abe80ee2426a1b4}{QDateTime::currentDateTime}}();}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_date_time}{QDateTime}} x( \mbox{\hyperlink{class_q_date}{QDate}}(dt.year(),12,24), \mbox{\hyperlink{class_q_time}{QTime}}(17,00) );}
+\DoxyCodeLine{qDebug( \textcolor{stringliteral}{"There are \%d seconds to Christmas"}, dt.\mbox{\hyperlink{class_q_date_time_a3b697a289865bc96bd339acaa75880b3}{secsTo}}(x) );}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date_time_a7b48ae870775460aec8791465c2e5056}{add\+Secs()}}, \mbox{\hyperlink{class_q_date_time_a80a194c8ecef4133a9bff3aeb4546934}{days\+To()}}, \mbox{\hyperlink{class_q_time_a8193498cc40d7386b23df740fa326b2b}{Q\+Time\+::secs\+To()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_date_time_aba938ae7007f881a6a641bbdb3ac634a}\label{class_q_date_time_aba938ae7007f881a6a641bbdb3ac634a}} 
+\index{QDateTime@{QDateTime}!setDate@{setDate}}
+\index{setDate@{setDate}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{setDate()}{setDate()}}
+{\footnotesize\ttfamily void Q\+Date\+Time\+::set\+Date (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_date}{Q\+Date}} \&}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the date part of this datetime.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date_time_ae7d86dc9b95e2aeab38391033eeff9eb}{date()}}, \mbox{\hyperlink{class_q_date_time_a6384cf8a49551d5e42786ab850894813}{set\+Time()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_date_time_a6384cf8a49551d5e42786ab850894813}\label{class_q_date_time_a6384cf8a49551d5e42786ab850894813}} 
+\index{QDateTime@{QDateTime}!setTime@{setTime}}
+\index{setTime@{setTime}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{setTime()}{setTime()}}
+{\footnotesize\ttfamily void Q\+Date\+Time\+::set\+Time (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_time}{Q\+Time}} \&}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the time part of this datetime.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date_time_a7b8eefbd04093747deb22f5cd6b673c1}{time()}}, \mbox{\hyperlink{class_q_date_time_aba938ae7007f881a6a641bbdb3ac634a}{set\+Date()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_date_time_a889dac98cb29b4b9f33cfea6f00db98b}\label{class_q_date_time_a889dac98cb29b4b9f33cfea6f00db98b}} 
+\index{QDateTime@{QDateTime}!setTime\_t@{setTime\_t}}
+\index{setTime\_t@{setTime\_t}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{setTime\_t()}{setTime\_t()}}
+{\footnotesize\ttfamily void Q\+Date\+Time\+::set\+Time\+\_\+t (\begin{DoxyParamCaption}\item[{uint}]{secs\+Since1\+Jan1970\+U\+TC }\end{DoxyParamCaption})}
+
+Sets the local date and time given the number of seconds that have passed since 00\+:00\+:00 on January 1, 1970, Coordinated Universal Time (U\+TC). On systems that do not support timezones this function will behave as if local time were U\+TC.
+
+Note that Microsoft Windows supports only a limited range of values for {\itshape secs\+Since1\+Jan1970\+U\+TC}. \mbox{\Hypertarget{class_q_date_time_a9230e2178c9706ae658df2fd7d255b55}\label{class_q_date_time_a9230e2178c9706ae658df2fd7d255b55}} 
+\index{QDateTime@{QDateTime}!setTimeUtc\_t@{setTimeUtc\_t}}
+\index{setTimeUtc\_t@{setTimeUtc\_t}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{setTimeUtc\_t()}{setTimeUtc\_t()}}
+{\footnotesize\ttfamily void Q\+Date\+Time\+::set\+Time\+Utc\+\_\+t (\begin{DoxyParamCaption}\item[{uint}]{secs\+Since1\+Jan1970\+U\+TC }\end{DoxyParamCaption})}
+
+Sets the U\+TC date and time given the number of seconds that have passed since 00\+:00\+:00 on January 1, 1970, Coordinated Universal Time (U\+TC).
+
+Note that Microsoft Windows supports only a limited range of values for {\itshape secs\+Since1\+Jan1970\+U\+TC}. \mbox{\Hypertarget{class_q_date_time_a7b8eefbd04093747deb22f5cd6b673c1}\label{class_q_date_time_a7b8eefbd04093747deb22f5cd6b673c1}} 
+\index{QDateTime@{QDateTime}!time@{time}}
+\index{time@{time}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{time()}{time()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_time}{Q\+Time}} Q\+Date\+Time\+::time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the time part of this datetime.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_date_time_a6384cf8a49551d5e42786ab850894813}{set\+Time()}}, \mbox{\hyperlink{class_q_date_time_ae7d86dc9b95e2aeab38391033eeff9eb}{date()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_date_time_a5455d25292813109f21c15888552c5c9}\label{class_q_date_time_a5455d25292813109f21c15888552c5c9}} 
+\index{QDateTime@{QDateTime}!toString@{toString}}
+\index{toString@{toString}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Date\+Time\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the datetime as a string.
+
+The string format is \char`\"{}\+Sat May 20 03\+:40\+:13 1998\char`\"{}.
+
+This function uses \mbox{\hyperlink{class_q_date_a08320176a833c05ff718155da1177381}{Q\+Date\+::day\+Name()}}, \mbox{\hyperlink{class_q_date_afa5fcbf8ec6629175873dd50cbc3da4c}{Q\+Date\+::month\+Name()}}, and \mbox{\hyperlink{class_q_time_a87ef6af883b329327e1665cc639d403c}{Q\+Time\+::to\+String()}} to generate the string. 
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_q_date_time_ac4f6ae497406f297a47183ecc265816a}\label{class_q_date_time_ac4f6ae497406f297a47183ecc265816a}} 
+\index{QDateTime@{QDateTime}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&}]{s,  }\item[{const \mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Writes a datetime to the stream.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{}{Format of the Q\+Data\+Stream operators }} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_date_time_afb6acd9837e7b1d8fc54e6665a9adc29}\label{class_q_date_time_afb6acd9837e7b1d8fc54e6665a9adc29}} 
+\index{QDateTime@{QDateTime}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QDateTime@{QDateTime}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&}]{s,  }\item[{\mbox{\hyperlink{class_q_date_time}{Q\+Date\+Time}} \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Reads a datetime from the stream.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{}{Format of the Q\+Data\+Stream operators }} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qdatetime.\+h\item 
+doxygen/qtools/qdatetime.\+cpp\end{DoxyCompactItemize}

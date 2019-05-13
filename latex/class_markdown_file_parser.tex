@@ -1,0 +1,154 @@
+\hypertarget{class_markdown_file_parser}{}\section{Markdown\+File\+Parser Class Reference}
+\label{class_markdown_file_parser}\index{MarkdownFileParser@{MarkdownFileParser}}
+Inheritance diagram for Markdown\+File\+Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_markdown_file_parser}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_markdown_file_parser_a82d0d8fad0f6772a9862eb3d9190127d}{start\+Translation\+Unit}} (const char $\ast$)
+\item 
+void \mbox{\hyperlink{class_markdown_file_parser_adaf4aeedc27abe4dd8cc4a58d59b298f}{finish\+Translation\+Unit}} ()
+\item 
+void \mbox{\hyperlink{class_markdown_file_parser_a56e4994924ce8ac7710e2a1da0f98807}{parse\+Input}} (const char $\ast$file\+Name, const char $\ast$file\+Buf, \mbox{\hyperlink{class_entry}{Entry}} $\ast$root, bool same\+Translation\+Unit, \mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}} \&files\+In\+Same\+Translation\+Unit)
+\item 
+bool \mbox{\hyperlink{class_markdown_file_parser_ae53b811156b426b03f4ea8f634141133}{needs\+Preprocessing}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&)
+\item 
+void \mbox{\hyperlink{class_markdown_file_parser_a4413366ce7b6f7e41a2b232ce2ad6170}{parse\+Code}} (\mbox{\hyperlink{class_code_output_interface}{Code\+Output\+Interface}} \&code\+Out\+Intf, const char $\ast$scope\+Name, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&input, \mbox{\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\+Lang\+Ext}} lang, bool is\+Example\+Block, const char $\ast$example\+Name=0, \mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$file\+Def=0, int start\+Line=-\/1, int end\+Line=-\/1, bool inline\+Fragment=F\+A\+L\+SE, \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$member\+Def=0, bool show\+Line\+Numbers=T\+R\+UE, \mbox{\hyperlink{class_definition}{Definition}} $\ast$search\+Ctx=0, bool collect\+X\+Refs=T\+R\+UE)
+\item 
+void \mbox{\hyperlink{class_markdown_file_parser_a78b5337fc2b6a6dd1ee5ce104005e566}{reset\+Code\+Parser\+State}} ()
+\item 
+void \mbox{\hyperlink{class_markdown_file_parser_a5579fefcfe5512e79abfe55fd508fc95}{parse\+Prototype}} (const char $\ast$text)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_markdown_file_parser_adaf4aeedc27abe4dd8cc4a58d59b298f}\label{class_markdown_file_parser_adaf4aeedc27abe4dd8cc4a58d59b298f}} 
+\index{MarkdownFileParser@{MarkdownFileParser}!finishTranslationUnit@{finishTranslationUnit}}
+\index{finishTranslationUnit@{finishTranslationUnit}!MarkdownFileParser@{MarkdownFileParser}}
+\subsubsection{\texorpdfstring{finishTranslationUnit()}{finishTranslationUnit()}}
+{\footnotesize\ttfamily void Markdown\+File\+Parser\+::finish\+Translation\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Called after all files in a translation unit have been processed. 
+
+Implements \mbox{\hyperlink{class_parser_interface_af3acd64c6a33852e2e46e7288eb9c9cf}{Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_markdown_file_parser_ae53b811156b426b03f4ea8f634141133}\label{class_markdown_file_parser_ae53b811156b426b03f4ea8f634141133}} 
+\index{MarkdownFileParser@{MarkdownFileParser}!needsPreprocessing@{needsPreprocessing}}
+\index{needsPreprocessing@{needsPreprocessing}!MarkdownFileParser@{MarkdownFileParser}}
+\subsubsection{\texorpdfstring{needsPreprocessing()}{needsPreprocessing()}}
+{\footnotesize\ttfamily bool Markdown\+File\+Parser\+::needs\+Preprocessing (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{extension }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns T\+R\+UE if the language identified by {\itshape extension} needs the \mbox{\hyperlink{class_c}{C}} preprocessor to be run before feed the result to the input parser. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_markdown_file_parser_a56e4994924ce8ac7710e2a1da0f98807}{parse\+Input()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_parser_interface_a36c669b17b64a6e3847f27d70a5398d2}{Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_markdown_file_parser_a4413366ce7b6f7e41a2b232ce2ad6170}\label{class_markdown_file_parser_a4413366ce7b6f7e41a2b232ce2ad6170}} 
+\index{MarkdownFileParser@{MarkdownFileParser}!parseCode@{parseCode}}
+\index{parseCode@{parseCode}!MarkdownFileParser@{MarkdownFileParser}}
+\subsubsection{\texorpdfstring{parseCode()}{parseCode()}}
+{\footnotesize\ttfamily void Markdown\+File\+Parser\+::parse\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_code_output_interface}{Code\+Output\+Interface}} \&}]{code\+Out\+Intf,  }\item[{const char $\ast$}]{scope\+Name,  }\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{input,  }\item[{\mbox{\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\+Lang\+Ext}}}]{lang,  }\item[{bool}]{is\+Example\+Block,  }\item[{const char $\ast$}]{example\+Name = {\ttfamily 0},  }\item[{\mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$}]{file\+Def = {\ttfamily 0},  }\item[{int}]{start\+Line = {\ttfamily -\/1},  }\item[{int}]{end\+Line = {\ttfamily -\/1},  }\item[{bool}]{inline\+Fragment = {\ttfamily FALSE},  }\item[{\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$}]{member\+Def = {\ttfamily 0},  }\item[{bool}]{show\+Line\+Numbers = {\ttfamily TRUE},  }\item[{\mbox{\hyperlink{class_definition}{Definition}} $\ast$}]{search\+Ctx = {\ttfamily 0},  }\item[{bool}]{collect\+X\+Refs = {\ttfamily TRUE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Parses a source file or fragment with the goal to produce highlighted and cross-\/referenced output. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em code\+Out\+Intf} & Abstract interface for writing the result. \\
+\hline
+\mbox{\texttt{ in}}  & {\em lang} & The programming language of the code fragment. \\
+\hline
+\mbox{\texttt{ in}}  & {\em scope\+Name} & Name of scope to which the code belongs. \\
+\hline
+\mbox{\texttt{ in}}  & {\em input} & Actual code in the form of a string \\
+\hline
+\mbox{\texttt{ in}}  & {\em is\+Example\+Block} & T\+R\+UE iff the code is part of an example. \\
+\hline
+\mbox{\texttt{ in}}  & {\em example\+Name} & Name of the example. \\
+\hline
+\mbox{\texttt{ in}}  & {\em file\+Def} & File definition to which the code is associated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em start\+Line} & Starting line in case of a code fragment. \\
+\hline
+\mbox{\texttt{ in}}  & {\em end\+Line} & Ending line of the code fragment. \\
+\hline
+\mbox{\texttt{ in}}  & {\em inline\+Fragment} & Code fragment that is to be shown inline as part of the documentation. \\
+\hline
+\mbox{\texttt{ in}}  & {\em member\+Def} & Member definition to which the code is associated (non null in case of an inline fragment for a member). \\
+\hline
+\mbox{\texttt{ in}}  & {\em show\+Line\+Numbers} & if set to T\+R\+UE and also file\+Def is not 0, line numbers will be added to the source fragment \\
+\hline
+\mbox{\texttt{ in}}  & {\em search\+Ctx} & context under which search data has to be stored. \\
+\hline
+\mbox{\texttt{ in}}  & {\em collect\+X\+Refs} & collect cross-\/reference relations. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_parser_interface_a2ffc28f9dd7c47e2581376a573426395}{Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_markdown_file_parser_a56e4994924ce8ac7710e2a1da0f98807}\label{class_markdown_file_parser_a56e4994924ce8ac7710e2a1da0f98807}} 
+\index{MarkdownFileParser@{MarkdownFileParser}!parseInput@{parseInput}}
+\index{parseInput@{parseInput}!MarkdownFileParser@{MarkdownFileParser}}
+\subsubsection{\texorpdfstring{parseInput()}{parseInput()}}
+{\footnotesize\ttfamily void Markdown\+File\+Parser\+::parse\+Input (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{const char $\ast$}]{file\+Buf,  }\item[{\mbox{\hyperlink{class_entry}{Entry}} $\ast$}]{root,  }\item[{bool}]{same\+Translation\+Unit,  }\item[{\mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}} \&}]{files\+In\+Same\+Translation\+Unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Parses a single input file with the goal to build an \mbox{\hyperlink{class_entry}{Entry}} tree. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file\+Name} & The full name of the file. \\
+\hline
+\mbox{\texttt{ in}}  & {\em file\+Buf} & The contents of the file (zero terminated). \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em root} & The root of the tree of \mbox{\hyperlink{class_entry}{Entry}} $\ast$nodes representing the information extracted from the file. \\
+\hline
+\mbox{\texttt{ in}}  & {\em same\+Translation\+Unit} & T\+R\+UE if this file was found in the same translation unit (in the files\+In\+Same\+Translation\+Unit list returned for another file). \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em files\+In\+Same\+Translation\+Unit} & other files expected to be found in the same translation unit (used for libclang) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_parser_interface_a09ced377e619d40b7339187bad88341e}{Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_markdown_file_parser_a5579fefcfe5512e79abfe55fd508fc95}\label{class_markdown_file_parser_a5579fefcfe5512e79abfe55fd508fc95}} 
+\index{MarkdownFileParser@{MarkdownFileParser}!parsePrototype@{parsePrototype}}
+\index{parsePrototype@{parsePrototype}!MarkdownFileParser@{MarkdownFileParser}}
+\subsubsection{\texorpdfstring{parsePrototype()}{parsePrototype()}}
+{\footnotesize\ttfamily void Markdown\+File\+Parser\+::parse\+Prototype (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Callback function called by the comment block scanner. It provides a string {\itshape text} containing the prototype of a function or variable. The parser should parse this and store the information in the \mbox{\hyperlink{class_entry}{Entry}} node that corresponds with the node for which the comment block parser was invoked. 
+
+Implements \mbox{\hyperlink{class_parser_interface_a5ebf0f524a296845befa22c85a4cc80b}{Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_markdown_file_parser_a78b5337fc2b6a6dd1ee5ce104005e566}\label{class_markdown_file_parser_a78b5337fc2b6a6dd1ee5ce104005e566}} 
+\index{MarkdownFileParser@{MarkdownFileParser}!resetCodeParserState@{resetCodeParserState}}
+\index{resetCodeParserState@{resetCodeParserState}!MarkdownFileParser@{MarkdownFileParser}}
+\subsubsection{\texorpdfstring{resetCodeParserState()}{resetCodeParserState()}}
+{\footnotesize\ttfamily void Markdown\+File\+Parser\+::reset\+Code\+Parser\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Resets the state of the code parser. Since multiple code fragments can together form a single example, an explicit function is used to reset the code parser state. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_markdown_file_parser_a4413366ce7b6f7e41a2b232ce2ad6170}{parse\+Code()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_parser_interface_aee4fccd1865a4e8a6b9f2896811104ca}{Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_markdown_file_parser_a82d0d8fad0f6772a9862eb3d9190127d}\label{class_markdown_file_parser_a82d0d8fad0f6772a9862eb3d9190127d}} 
+\index{MarkdownFileParser@{MarkdownFileParser}!startTranslationUnit@{startTranslationUnit}}
+\index{startTranslationUnit@{startTranslationUnit}!MarkdownFileParser@{MarkdownFileParser}}
+\subsubsection{\texorpdfstring{startTranslationUnit()}{startTranslationUnit()}}
+{\footnotesize\ttfamily void Markdown\+File\+Parser\+::start\+Translation\+Unit (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Starts processing a translation unit (source files + headers). After this call \mbox{\hyperlink{class_markdown_file_parser_a56e4994924ce8ac7710e2a1da0f98807}{parse\+Input()}} is called with same\+Translation\+Unit set to F\+A\+L\+SE. If \mbox{\hyperlink{class_markdown_file_parser_a56e4994924ce8ac7710e2a1da0f98807}{parse\+Input()}} returns additional include files, these are also processed using \mbox{\hyperlink{class_markdown_file_parser_a56e4994924ce8ac7710e2a1da0f98807}{parse\+Input()}} with same\+Translation\+Unit set to T\+R\+UE. After that \mbox{\hyperlink{class_markdown_file_parser_adaf4aeedc27abe4dd8cc4a58d59b298f}{finish\+Translation\+Unit()}} is called. 
+
+Implements \mbox{\hyperlink{class_parser_interface_a72478f87ead5fde10d7d6bbe32a73024}{Parser\+Interface}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/markdown.\+h\item 
+doxygen/src/markdown.\+cpp\end{DoxyCompactItemize}

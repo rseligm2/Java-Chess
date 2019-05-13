@@ -1,0 +1,228 @@
+\hypertarget{index_8cpp}{}\section{doxygen/src/index.cpp File Reference}
+\label{index_8cpp}\index{doxygen/src/index.cpp@{doxygen/src/index.cpp}}
+
+
+This file contains functions for the various index pages.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$qtextstream.\+h$>$}\newline
+{\ttfamily \#include $<$qdatetime.\+h$>$}\newline
+{\ttfamily \#include $<$qdir.\+h$>$}\newline
+{\ttfamily \#include $<$qregexp.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}message.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}index.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}doxygen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}filedef.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}outputlist.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}groupdef.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}language.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}htmlgen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}htmlhelp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ftvhelp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dot.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pagedef.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dirdef.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vhdldocgen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}layout.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}memberlist.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}classlist.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}namespacedef.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}filename.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tooltip.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_member_index_list}{Member\+Index\+List}}
+\item 
+class \mbox{\hyperlink{class_prefix_ignore_class_list}{Prefix\+Ignore\+Class\+List}}
+\item 
+class \mbox{\hyperlink{class_alpha_index_table_cell}{Alpha\+Index\+Table\+Cell}}
+\item 
+class \mbox{\hyperlink{class_alpha_index_table_rows}{Alpha\+Index\+Table\+Rows}}
+\item 
+class \mbox{\hyperlink{class_alpha_index_table_rows_iterator}{Alpha\+Index\+Table\+Rows\+Iterator}}
+\item 
+class \mbox{\hyperlink{class_alpha_index_table_columns}{Alpha\+Index\+Table\+Columns}}
+\item 
+class \mbox{\hyperlink{class_used_index_letters}{Used\+Index\+Letters}}
+\item 
+struct \mbox{\hyperlink{struct_cmhl_info}{Cmhl\+Info}}
+\item 
+struct \mbox{\hyperlink{struct_fmhl_info}{Fmhl\+Info}}
+\item 
+struct \mbox{\hyperlink{struct_nmhl_info}{Nmhl\+Info}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{index_8cpp_a17545e2e443b0c6ea3518548c7a733f4}\label{index_8cpp_a17545e2e443b0c6ea3518548c7a733f4}} 
+\#define {\bfseries M\+A\+X\+\_\+\+I\+T\+E\+M\+S\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+M\+U\+L\+T\+I\+P\+A\+G\+E\+\_\+\+I\+N\+D\+EX}~200
+\item 
+\mbox{\Hypertarget{index_8cpp_a11cae55bd05fc02cdf480a11a307d252}\label{index_8cpp_a11cae55bd05fc02cdf480a11a307d252}} 
+\#define {\bfseries M\+A\+X\+\_\+\+I\+T\+E\+M\+S\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+Q\+U\+I\+C\+K\+\_\+\+I\+N\+D\+EX}~30
+\item 
+\#define {\bfseries N\+E\+X\+T\+\_\+\+R\+OW}()
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{index_8cpp_ad7aec8becfb2846d045b0eed77928186}\label{index_8cpp_ad7aec8becfb2846d045b0eed77928186}} 
+void {\bfseries count\+Data\+Structures} ()
+\item 
+\mbox{\Hypertarget{index_8cpp_a3eea3729e8c341a13f1976a0ffea49be}\label{index_8cpp_a3eea3729e8c341a13f1976a0ffea49be}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries fix\+Spaces} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&s)
+\item 
+\mbox{\Hypertarget{index_8cpp_a835e3dd3645e8a178cfa27746acb4fd2}\label{index_8cpp_a835e3dd3645e8a178cfa27746acb4fd2}} 
+void {\bfseries start\+Title} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const char $\ast$file\+Name, \mbox{\hyperlink{class_definition}{Definition}} $\ast$def)
+\item 
+\mbox{\Hypertarget{index_8cpp_a99263ca2a7c472b182359b9a1b8bba5a}\label{index_8cpp_a99263ca2a7c472b182359b9a1b8bba5a}} 
+void {\bfseries end\+Title} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const char $\ast$file\+Name, const char $\ast$name)
+\item 
+\mbox{\Hypertarget{index_8cpp_a0107558323af02122a12043bd019f6d7}\label{index_8cpp_a0107558323af02122a12043bd019f6d7}} 
+void {\bfseries start\+File} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const char $\ast$name, const char $\ast$man\+Name, const char $\ast$title, Highlighted\+Item hli, bool additional\+Indices, const char $\ast$alt\+Sidebar\+Name)
+\item 
+\mbox{\Hypertarget{index_8cpp_a0f65138605aced4e557cefaebba93625}\label{index_8cpp_a0f65138605aced4e557cefaebba93625}} 
+void {\bfseries end\+File} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, bool skip\+Nav\+Index, bool skip\+End\+Contents, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&nav\+Path)
+\item 
+\mbox{\Hypertarget{index_8cpp_a70b291860c3a4ac5985007e28f3bb4b7}\label{index_8cpp_a70b291860c3a4ac5985007e28f3bb4b7}} 
+void {\bfseries end\+File\+With\+Nav\+Path} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$d, \mbox{\hyperlink{class_output_list}{Output\+List}} \&ol)
+\item 
+\mbox{\Hypertarget{index_8cpp_a566cc0e3d95c7a12d7bf6a9adf11ddae}\label{index_8cpp_a566cc0e3d95c7a12d7bf6a9adf11ddae}} 
+{\footnotesize template$<$class T $>$ }\\void {\bfseries add\+Members\+To\+Index} (T $\ast$def, Layout\+Doc\+Manager\+::\+Layout\+Part part, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&anchor, bool add\+To\+Index=T\+R\+UE, bool prevent\+Separate\+Index=F\+A\+L\+SE)
+\item 
+\mbox{\Hypertarget{index_8cpp_ad8e8d9f2a53f59b95229d3a42322b67a}\label{index_8cpp_ad8e8d9f2a53f59b95229d3a42322b67a}} 
+void {\bfseries write\+Class\+Tree} (\mbox{\hyperlink{class_class_s_dict}{Class\+S\+Dict}} $\ast$cl\+Dict, \mbox{\hyperlink{class_f_t_v_help}{F\+T\+V\+Help}} $\ast$ftv, bool add\+To\+Index, bool global\+Only, \mbox{\hyperlink{class_class_def_ae70cf86d35fe954a94c566fbcfc87939}{Class\+Def\+::\+Compound\+Type}} ct)
+\item 
+\mbox{\Hypertarget{index_8cpp_a7009ab1117bf1a2518b7655ef0150540}\label{index_8cpp_a7009ab1117bf1a2518b7655ef0150540}} 
+bool {\bfseries is\+Id1} (int c)
+\item 
+\mbox{\Hypertarget{index_8cpp_aa81ddea105efdb7387c7dbbeccb7853f}\label{index_8cpp_aa81ddea105efdb7387c7dbbeccb7853f}} 
+void {\bfseries init\+Class\+Member\+Indices} ()
+\item 
+\mbox{\Hypertarget{index_8cpp_a47d8a30fa163d64e474aaafff63ab741}\label{index_8cpp_a47d8a30fa163d64e474aaafff63ab741}} 
+void {\bfseries add\+Class\+Member\+Name\+To\+Index} (\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$md)
+\item 
+\mbox{\Hypertarget{index_8cpp_ac56c2afc476b9e3d86920efa77f225c8}\label{index_8cpp_ac56c2afc476b9e3d86920efa77f225c8}} 
+void {\bfseries init\+Namespace\+Member\+Indices} ()
+\item 
+\mbox{\Hypertarget{index_8cpp_ad3cafea1ea06e1fa44cf978b7841b65f}\label{index_8cpp_ad3cafea1ea06e1fa44cf978b7841b65f}} 
+void {\bfseries add\+Namespace\+Member\+Name\+To\+Index} (\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$md)
+\item 
+\mbox{\Hypertarget{index_8cpp_af69a5ffa69982799bc4ea5f3cd95a6be}\label{index_8cpp_af69a5ffa69982799bc4ea5f3cd95a6be}} 
+void {\bfseries init\+File\+Member\+Indices} ()
+\item 
+\mbox{\Hypertarget{index_8cpp_a49a0312046769ae4e8f0630164f10ad6}\label{index_8cpp_a49a0312046769ae4e8f0630164f10ad6}} 
+void {\bfseries add\+File\+Member\+Name\+To\+Index} (\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$md)
+\item 
+\mbox{\Hypertarget{index_8cpp_a256c275d3b654245e85d7c04e8f417b9}\label{index_8cpp_a256c275d3b654245e85d7c04e8f417b9}} 
+void {\bfseries write\+Graph\+Info} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol)
+\item 
+\mbox{\Hypertarget{index_8cpp_a379bf9daf5c0679c1aba90ba05855c98}\label{index_8cpp_a379bf9daf5c0679c1aba90ba05855c98}} 
+{\footnotesize template$<$class T $>$ }\\void {\bfseries render\+Member\+Indices\+As\+Js} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, int total, const int $\ast$num\+Documented, const \mbox{\hyperlink{class_letter_to_index_map}{Letter\+To\+Index\+Map}}$<$ \mbox{\hyperlink{class_member_index_list}{Member\+Index\+List}} $>$ $\ast$member\+Lists, const T $\ast$($\ast$get\+Info)(int hl))
+\item 
+\mbox{\Hypertarget{index_8cpp_ab2818fb513d9fdb38f3ff8e75848f388}\label{index_8cpp_ab2818fb513d9fdb38f3ff8e75848f388}} 
+void {\bfseries write\+Index\+Hierarchy} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{index_8cpp_ab8696e272209d21662fb6ef914cc60cd}\label{index_8cpp_ab8696e272209d21662fb6ef914cc60cd}} 
+int {\bfseries annotated\+Classes}
+\item 
+\mbox{\Hypertarget{index_8cpp_aaaa98f9a2bdb353a6032c5d59d60b27c}\label{index_8cpp_aaaa98f9a2bdb353a6032c5d59d60b27c}} 
+int {\bfseries annotated\+Classes\+Printed}
+\item 
+\mbox{\Hypertarget{index_8cpp_a9d8bc5511ea0ca28e61d7143e34197d2}\label{index_8cpp_a9d8bc5511ea0ca28e61d7143e34197d2}} 
+int {\bfseries hierarchy\+Classes}
+\item 
+\mbox{\Hypertarget{index_8cpp_af4d73e220f32e43988989b96e74d2112}\label{index_8cpp_af4d73e220f32e43988989b96e74d2112}} 
+int {\bfseries annotated\+Interfaces}
+\item 
+\mbox{\Hypertarget{index_8cpp_a0502bdbfd1f3de43ea36e2831c46d727}\label{index_8cpp_a0502bdbfd1f3de43ea36e2831c46d727}} 
+int {\bfseries annotated\+Interfaces\+Printed}
+\item 
+\mbox{\Hypertarget{index_8cpp_a1138e44ec77b6eca3a965da5c22dfe6a}\label{index_8cpp_a1138e44ec77b6eca3a965da5c22dfe6a}} 
+int {\bfseries hierarchy\+Interfaces}
+\item 
+\mbox{\Hypertarget{index_8cpp_a0e5c91171334f35c6efc01cfc79af8a8}\label{index_8cpp_a0e5c91171334f35c6efc01cfc79af8a8}} 
+int {\bfseries annotated\+Structs}
+\item 
+\mbox{\Hypertarget{index_8cpp_a4e2bd91ef8573c4519ed889b1b50b8fa}\label{index_8cpp_a4e2bd91ef8573c4519ed889b1b50b8fa}} 
+int {\bfseries annotated\+Structs\+Printed}
+\item 
+\mbox{\Hypertarget{index_8cpp_a16f28de99317872134e01538d6972de8}\label{index_8cpp_a16f28de99317872134e01538d6972de8}} 
+int {\bfseries annotated\+Exceptions}
+\item 
+\mbox{\Hypertarget{index_8cpp_a7f2926e1320407ee53cec86b0be3b1c9}\label{index_8cpp_a7f2926e1320407ee53cec86b0be3b1c9}} 
+int {\bfseries annotated\+Exceptions\+Printed}
+\item 
+\mbox{\Hypertarget{index_8cpp_a9acc95c5897d8cbf82727d3625891af3}\label{index_8cpp_a9acc95c5897d8cbf82727d3625891af3}} 
+int {\bfseries hierarchy\+Exceptions}
+\item 
+\mbox{\Hypertarget{index_8cpp_a34d56ba7384fa1bc1630b422e6280206}\label{index_8cpp_a34d56ba7384fa1bc1630b422e6280206}} 
+int {\bfseries documented\+Files}
+\item 
+\mbox{\Hypertarget{index_8cpp_a1ac0809d579e3db7230c346e26edb8ea}\label{index_8cpp_a1ac0809d579e3db7230c346e26edb8ea}} 
+int {\bfseries documented\+Groups}
+\item 
+\mbox{\Hypertarget{index_8cpp_a8c993f9f4c35e6f89cc5a577e1a018b1}\label{index_8cpp_a8c993f9f4c35e6f89cc5a577e1a018b1}} 
+int {\bfseries documented\+Namespaces}
+\item 
+\mbox{\Hypertarget{index_8cpp_a3ad4aed09bc05d76241c5e954365459d}\label{index_8cpp_a3ad4aed09bc05d76241c5e954365459d}} 
+int {\bfseries indexed\+Pages}
+\item 
+\mbox{\Hypertarget{index_8cpp_a25a89faa5b83e8bd8c0c54e187c2d716}\label{index_8cpp_a25a89faa5b83e8bd8c0c54e187c2d716}} 
+int {\bfseries documented\+Class\+Members} \mbox{[}C\+M\+H\+L\+\_\+\+Total\mbox{]}
+\item 
+\mbox{\Hypertarget{index_8cpp_a32064f76903f7abb7581a72db683da08}\label{index_8cpp_a32064f76903f7abb7581a72db683da08}} 
+int {\bfseries documented\+File\+Members} \mbox{[}F\+M\+H\+L\+\_\+\+Total\mbox{]}
+\item 
+\mbox{\Hypertarget{index_8cpp_afb72e29551d5d6b381575be7fb00f0e6}\label{index_8cpp_afb72e29551d5d6b381575be7fb00f0e6}} 
+int {\bfseries documented\+Namespace\+Members} \mbox{[}N\+M\+H\+L\+\_\+\+Total\mbox{]}
+\item 
+\mbox{\Hypertarget{index_8cpp_ac200e3351842283506e4d331d2dd499a}\label{index_8cpp_ac200e3351842283506e4d331d2dd499a}} 
+int {\bfseries documented\+Html\+Files}
+\item 
+\mbox{\Hypertarget{index_8cpp_a8d208b1c23672a57b1fa325d186fc99d}\label{index_8cpp_a8d208b1c23672a57b1fa325d186fc99d}} 
+int {\bfseries documented\+Pages}
+\item 
+\mbox{\Hypertarget{index_8cpp_a09cdd90d6507327cf5c87a3030e9cb0e}\label{index_8cpp_a09cdd90d6507327cf5c87a3030e9cb0e}} 
+int {\bfseries documented\+Dirs}
+\item 
+\mbox{\Hypertarget{index_8cpp_abc1a8a86fe8d8ec886069eac188534d7}\label{index_8cpp_abc1a8a86fe8d8ec886069eac188534d7}} 
+const int {\bfseries max\+Items\+Before\+Quick\+Index} = M\+A\+X\+\_\+\+I\+T\+E\+M\+S\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+Q\+U\+I\+C\+K\+\_\+\+I\+N\+D\+EX
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains functions for the various index pages. 
+
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{index_8cpp_a0da2a1a74a366a8179069b77be1b0f0d}\label{index_8cpp_a0da2a1a74a366a8179069b77be1b0f0d}} 
+\index{index.cpp@{index.cpp}!NEXT\_ROW@{NEXT\_ROW}}
+\index{NEXT\_ROW@{NEXT\_ROW}!index.cpp@{index.cpp}}
+\subsubsection{\texorpdfstring{NEXT\_ROW}{NEXT\_ROW}}
+{\footnotesize\ttfamily \#define N\+E\+X\+T\+\_\+\+R\+OW(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}                                         \(\backslash\)}
+\DoxyCodeLine{    \{                                          \(\backslash\)}
+\DoxyCodeLine{      if (row>maxRows) maxRows=row;            \(\backslash\)}
+\DoxyCodeLine{      if (row>=rows \&\& col<columns)            \(\backslash\)}
+\DoxyCodeLine{      \{                                        \(\backslash\)}
+\DoxyCodeLine{        col++;                                 \(\backslash\)}
+\DoxyCodeLine{        row=0;                                 \(\backslash\)}
+\DoxyCodeLine{        tableRows = \textcolor{keyword}{new} \mbox{\hyperlink{class_alpha_index_table_rows}{AlphaIndexTableRows}};   \(\backslash\)}
+\DoxyCodeLine{        tableColumns.append(tableRows);        \(\backslash\)}
+\DoxyCodeLine{      \}                                        \(\backslash\)}
+\DoxyCodeLine{    \}                                          \(\backslash\)}
+\DoxyCodeLine{    while(0)                                   \(\backslash\)}
+
+\end{DoxyCode}

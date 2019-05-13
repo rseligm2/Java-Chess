@@ -1,0 +1,102 @@
+\hypertarget{class_generic_node_list_context}{}\section{Generic\+Node\+List\+Context Class Reference}
+\label{class_generic_node_list_context}\index{GenericNodeListContext@{GenericNodeListContext}}
+
+
+standard template list implementation  
+
+
+Inheritance diagram for Generic\+Node\+List\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_generic_node_list_context}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_generic_node_list_context_ab1bacca5f270077592153af9ea296ebe}{count}} () const
+\item 
+\mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_generic_node_list_context_aa7d149964207236258937b46c4125cc7}{at}} (int index) const
+\item 
+\mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ \mbox{\hyperlink{class_generic_node_list_context_a7a6253477c70ef96f84c74a685bc8fdf}{create\+Iterator}} () const
+\item 
+\mbox{\Hypertarget{class_generic_node_list_context_a1e3defa7bc050ae33e2fbabba7a20643}\label{class_generic_node_list_context_a1e3defa7bc050ae33e2fbabba7a20643}} 
+void {\bfseries append} (const \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \&ctn)
+\item 
+\mbox{\Hypertarget{class_generic_node_list_context_a2cf0a0ccee145f70657e1dc764627a10}\label{class_generic_node_list_context_a2cf0a0ccee145f70657e1dc764627a10}} 
+bool {\bfseries is\+Empty} () const
+\item 
+int \mbox{\hyperlink{class_generic_node_list_context_a8c165d6443a3f2522cd6a871ce45ebc4}{add\+Ref}} ()
+\item 
+int \mbox{\hyperlink{class_generic_node_list_context_a0aa1daa5e593ca8326d05a9028759750}{release}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_generic_node_list_context_a2784ae62d12218fae2007069afafbaec}\label{class_generic_node_list_context_a2784ae62d12218fae2007069afafbaec}} 
+static \mbox{\hyperlink{class_generic_node_list_context}{Generic\+Node\+List\+Context}} $\ast$ {\bfseries alloc} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+standard template list implementation 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_generic_node_list_context_a8c165d6443a3f2522cd6a871ce45ebc4}\label{class_generic_node_list_context_a8c165d6443a3f2522cd6a871ce45ebc4}} 
+\index{GenericNodeListContext@{GenericNodeListContext}!addRef@{addRef}}
+\index{addRef@{addRef}!GenericNodeListContext@{GenericNodeListContext}}
+\subsubsection{\texorpdfstring{addRef()}{addRef()}}
+{\footnotesize\ttfamily int Generic\+Node\+List\+Context\+::add\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Increase object\textquotesingle{}s reference count 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a4b4973e2e15396d10bc4e3085462ca2b}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_generic_node_list_context_aa7d149964207236258937b46c4125cc7}\label{class_generic_node_list_context_aa7d149964207236258937b46c4125cc7}} 
+\index{GenericNodeListContext@{GenericNodeListContext}!at@{at}}
+\index{at@{at}!GenericNodeListContext@{GenericNodeListContext}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_variant}{Template\+Variant}} Generic\+Node\+List\+Context\+::at (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the element at index position {\itshape index}. 
+
+Implements \mbox{\hyperlink{class_template_list_intf_aa51e57e72eacf4e8ce1055ee30a0f7f8}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_generic_node_list_context_ab1bacca5f270077592153af9ea296ebe}\label{class_generic_node_list_context_ab1bacca5f270077592153af9ea296ebe}} 
+\index{GenericNodeListContext@{GenericNodeListContext}!count@{count}}
+\index{count@{count}!GenericNodeListContext@{GenericNodeListContext}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Generic\+Node\+List\+Context\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of elements in the list 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a329e49e33484c2aa5106aac1bf4e5216}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_generic_node_list_context_a7a6253477c70ef96f84c74a685bc8fdf}\label{class_generic_node_list_context_a7a6253477c70ef96f84c74a685bc8fdf}} 
+\index{GenericNodeListContext@{GenericNodeListContext}!createIterator@{createIterator}}
+\index{createIterator@{createIterator}!GenericNodeListContext@{GenericNodeListContext}}
+\subsubsection{\texorpdfstring{createIterator()}{createIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}}$\ast$ Generic\+Node\+List\+Context\+::create\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Creates a new iterator for this list. \begin{DoxyNote}{Note}
+the user should call delete on the returned pointer. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_template_list_intf_a56b82384db24c3e121076a1da046d378}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_generic_node_list_context_a0aa1daa5e593ca8326d05a9028759750}\label{class_generic_node_list_context_a0aa1daa5e593ca8326d05a9028759750}} 
+\index{GenericNodeListContext@{GenericNodeListContext}!release@{release}}
+\index{release@{release}!GenericNodeListContext@{GenericNodeListContext}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily int Generic\+Node\+List\+Context\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Decreases object\textquotesingle{}s reference count, destroy object if 0 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a0c53169c740c09dac47efc62bbe39674}{Template\+List\+Intf}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/context.\+cpp\end{DoxyCompactItemize}

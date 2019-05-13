@@ -1,0 +1,36 @@
+\hypertarget{class_q_text_stateless_decoder}{}\section{Q\+Text\+Stateless\+Decoder Class Reference}
+\label{class_q_text_stateless_decoder}\index{QTextStatelessDecoder@{QTextStatelessDecoder}}
+Inheritance diagram for Q\+Text\+Stateless\+Decoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_text_stateless_decoder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_text_stateless_decoder_a25882faf6ae2af20a0c8769e65bd88c0}\label{class_q_text_stateless_decoder_a25882faf6ae2af20a0c8769e65bd88c0}} 
+{\bfseries Q\+Text\+Stateless\+Decoder} (const \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} $\ast$)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_text_stateless_decoder_a4f9dcd7c88b39b8e56b87ce9e6d7fd44}{to\+Unicode}} (const char $\ast$chars, int len)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_text_stateless_decoder_a4f9dcd7c88b39b8e56b87ce9e6d7fd44}\label{class_q_text_stateless_decoder_a4f9dcd7c88b39b8e56b87ce9e6d7fd44}} 
+\index{QTextStatelessDecoder@{QTextStatelessDecoder}!toUnicode@{toUnicode}}
+\index{toUnicode@{toUnicode}!QTextStatelessDecoder@{QTextStatelessDecoder}}
+\subsubsection{\texorpdfstring{toUnicode()}{toUnicode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Text\+Stateless\+Decoder\+::to\+Unicode (\begin{DoxyParamCaption}\item[{const char $\ast$}]{chars,  }\item[{int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Converts the first {\itshape len} bytes at {\itshape chars} to Unicode, returning the result.
+
+If not all characters are used (eg. only part of a multi-\/byte encoding is at the end of the characters), the decoder remembers enough state to continue with the next call to this function. 
+
+Implements \mbox{\hyperlink{class_q_text_decoder_aec543f7f6670dfda14164268e2da879d}{Q\+Text\+Decoder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qtextcodec.\+cpp\end{DoxyCompactItemize}

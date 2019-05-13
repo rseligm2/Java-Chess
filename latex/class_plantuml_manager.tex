@@ -1,0 +1,91 @@
+\hypertarget{class_plantuml_manager}{}\section{Plantuml\+Manager Class Reference}
+\label{class_plantuml_manager}\index{PlantumlManager@{PlantumlManager}}
+
+
+{\ttfamily \#include $<$plantuml.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_plantuml_manager_a73ccdfc6400a28af7d9d2f92215b9af5}{Output\+Format}} \{ {\bfseries P\+U\+M\+L\+\_\+\+B\+I\+T\+M\+AP}, 
+{\bfseries P\+U\+M\+L\+\_\+\+E\+PS}, 
+{\bfseries P\+U\+M\+L\+\_\+\+S\+VG}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_plantuml_manager_af38a83e442553a769951c724353cbe6a}{run}} ()
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_plantuml_manager_aae9d6ca920f03f3496029fcb2ada08c8}{write\+Plant\+U\+M\+L\+Source}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&out\+Dir, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&file\+Name, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&content, \mbox{\hyperlink{class_plantuml_manager_a73ccdfc6400a28af7d9d2f92215b9af5}{Output\+Format}} format)
+\item 
+void \mbox{\hyperlink{class_plantuml_manager_ac7dc58177520721f3ac752f0f56abca0}{generate\+Plant\+U\+M\+L\+Output}} (const char $\ast$base\+Name, const char $\ast$out\+Dir, \mbox{\hyperlink{class_plantuml_manager_a73ccdfc6400a28af7d9d2f92215b9af5}{Output\+Format}} format)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_plantuml_manager_a1fe46f597476759ae07a08c7d73e6500}\label{class_plantuml_manager_a1fe46f597476759ae07a08c7d73e6500}} 
+static \mbox{\hyperlink{class_plantuml_manager}{Plantuml\+Manager}} $\ast$ {\bfseries instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Singleton that manages plantuml relation actions 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_plantuml_manager_a73ccdfc6400a28af7d9d2f92215b9af5}\label{class_plantuml_manager_a73ccdfc6400a28af7d9d2f92215b9af5}} 
+\index{PlantumlManager@{PlantumlManager}!OutputFormat@{OutputFormat}}
+\index{OutputFormat@{OutputFormat}!PlantumlManager@{PlantumlManager}}
+\subsubsection{\texorpdfstring{OutputFormat}{OutputFormat}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_plantuml_manager_a73ccdfc6400a28af7d9d2f92215b9af5}{Plantuml\+Manager\+::\+Output\+Format}}}
+
+Plant U\+ML output image formats 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_plantuml_manager_ac7dc58177520721f3ac752f0f56abca0}\label{class_plantuml_manager_ac7dc58177520721f3ac752f0f56abca0}} 
+\index{PlantumlManager@{PlantumlManager}!generatePlantUMLOutput@{generatePlantUMLOutput}}
+\index{generatePlantUMLOutput@{generatePlantUMLOutput}!PlantumlManager@{PlantumlManager}}
+\subsubsection{\texorpdfstring{generatePlantUMLOutput()}{generatePlantUMLOutput()}}
+{\footnotesize\ttfamily void Plantuml\+Manager\+::generate\+Plant\+U\+M\+L\+Output (\begin{DoxyParamCaption}\item[{const char $\ast$}]{base\+Name,  }\item[{const char $\ast$}]{out\+Dir,  }\item[{\mbox{\hyperlink{class_plantuml_manager_a73ccdfc6400a28af7d9d2f92215b9af5}{Output\+Format}}}]{format }\end{DoxyParamCaption})}
+
+Convert a Plant\+U\+ML file to an image. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em base\+Name} & the name of the generated file (as returned by \mbox{\hyperlink{class_plantuml_manager_aae9d6ca920f03f3496029fcb2ada08c8}{write\+Plant\+U\+M\+L\+Source()}}) \\
+\hline
+\mbox{\texttt{ in}}  & {\em out\+Dir} & the directory to write the resulting image into. \\
+\hline
+\mbox{\texttt{ in}}  & {\em format} & the image format to generate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plantuml_manager_af38a83e442553a769951c724353cbe6a}\label{class_plantuml_manager_af38a83e442553a769951c724353cbe6a}} 
+\index{PlantumlManager@{PlantumlManager}!run@{run}}
+\index{run@{run}!PlantumlManager@{PlantumlManager}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Plantuml\+Manager\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Run plant U\+ML tool for all images \mbox{\Hypertarget{class_plantuml_manager_aae9d6ca920f03f3496029fcb2ada08c8}\label{class_plantuml_manager_aae9d6ca920f03f3496029fcb2ada08c8}} 
+\index{PlantumlManager@{PlantumlManager}!writePlantUMLSource@{writePlantUMLSource}}
+\index{writePlantUMLSource@{writePlantUMLSource}!PlantumlManager@{PlantumlManager}}
+\subsubsection{\texorpdfstring{writePlantUMLSource()}{writePlantUMLSource()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Plantuml\+Manager\+::write\+Plant\+U\+M\+L\+Source (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{out\+Dir,  }\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{file\+Name,  }\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{content,  }\item[{\mbox{\hyperlink{class_plantuml_manager_a73ccdfc6400a28af7d9d2f92215b9af5}{Output\+Format}}}]{format }\end{DoxyParamCaption})}
+
+Write a Plant\+U\+ML compatible file. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em out\+Dir} & the output directory to write the file to. \\
+\hline
+\mbox{\texttt{ in}}  & {\em file\+Name} & the name of the file. If empty a name will be chosen automatically. \\
+\hline
+\mbox{\texttt{ in}}  & {\em content} & the contents of the Plant\+U\+ML file. \\
+\hline
+\mbox{\texttt{ in}}  & {\em format} & the image format to generate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the generated file. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/plantuml.\+h\item 
+doxygen/src/plantuml.\+cpp\end{DoxyCompactItemize}

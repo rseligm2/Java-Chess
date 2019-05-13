@@ -1,0 +1,75 @@
+\hypertarget{class_doc_cite}{}\section{Doc\+Cite Class Reference}
+\label{class_doc_cite}\index{DocCite@{DocCite}}
+
+
+{\ttfamily \#include $<$docparser.\+h$>$}
+
+Inheritance diagram for Doc\+Cite\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_doc_cite}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_cite_aba1aec0ac228dd1e707a5572fe199724}\label{class_doc_cite_aba1aec0ac228dd1e707a5572fe199724}} 
+{\bfseries Doc\+Cite} (\mbox{\hyperlink{class_doc_node}{Doc\+Node}} $\ast$\mbox{\hyperlink{class_doc_node_a73e8ad29a91cfceb0968eb00db71a23d}{parent}}, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&target, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&context)
+\item 
+\mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} \mbox{\hyperlink{class_doc_cite_a7f645fd99570ca0533c2e7087ae18bbd}{kind}} () const
+\item 
+\mbox{\Hypertarget{class_doc_cite_ae842d125098f64d7ee7bb1b955f2f6ba}\label{class_doc_cite_ae842d125098f64d7ee7bb1b955f2f6ba}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries file} () const
+\item 
+\mbox{\Hypertarget{class_doc_cite_a9d9d6c80250e7a9d18216a3eea4375ac}\label{class_doc_cite_a9d9d6c80250e7a9d18216a3eea4375ac}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries rel\+Path} () const
+\item 
+\mbox{\Hypertarget{class_doc_cite_ae5f235deff96cbae64d906842654abea}\label{class_doc_cite_ae5f235deff96cbae64d906842654abea}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries ref} () const
+\item 
+\mbox{\Hypertarget{class_doc_cite_acb79082b3765794abb193fcef75b1b2e}\label{class_doc_cite_acb79082b3765794abb193fcef75b1b2e}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries anchor} () const
+\item 
+\mbox{\Hypertarget{class_doc_cite_a5be8286837be9a125d7de5769aea0142}\label{class_doc_cite_a5be8286837be9a125d7de5769aea0142}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries text} () const
+\item 
+void \mbox{\hyperlink{class_doc_cite_a0f18374c2b9d937c71e317b9d36f1647}{accept}} (\mbox{\hyperlink{class_doc_visitor}{Doc\+Visitor}} $\ast$v)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Node representing a citation of some bibliographic reference 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_doc_cite_a0f18374c2b9d937c71e317b9d36f1647}\label{class_doc_cite_a0f18374c2b9d937c71e317b9d36f1647}} 
+\index{DocCite@{DocCite}!accept@{accept}}
+\index{accept@{accept}!DocCite@{DocCite}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily void Doc\+Cite\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_doc_visitor}{Doc\+Visitor}} $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Acceptor function for node visitors. Part of the visitor pattern. 
+\begin{DoxyParams}{Parameters}
+{\em v} & Abstract visitor. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_doc_node_a5303a550cbe6395663bf9b9dad28cbf1}{Doc\+Node}}.
+
+\mbox{\Hypertarget{class_doc_cite_a7f645fd99570ca0533c2e7087ae18bbd}\label{class_doc_cite_a7f645fd99570ca0533c2e7087ae18bbd}} 
+\index{DocCite@{DocCite}!kind@{kind}}
+\index{kind@{kind}!DocCite@{DocCite}}
+\subsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} Doc\+Cite\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the kind of node. Provides runtime type information 
+
+Implements \mbox{\hyperlink{class_doc_node_a108ffd214a72ba6e93dac084a8f58049}{Doc\+Node}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/docparser.\+h\item 
+doxygen/src/docparser.\+cpp\end{DoxyCompactItemize}

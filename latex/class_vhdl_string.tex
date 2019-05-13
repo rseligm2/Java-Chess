@@ -1,0 +1,82 @@
+\hypertarget{class_vhdl_string}{}\section{Vhdl\+String Class Reference}
+\label{class_vhdl_string}\index{VhdlString@{VhdlString}}
+
+
+Minimal string class with std\+::string like behaviour that fulfills the Java\+CC string requirements.  
+
+
+
+
+{\ttfamily \#include $<$vhdlstring.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_vhdl_string_a8fe423bc361c8030dc9f6ba110d87141}\label{class_vhdl_string_a8fe423bc361c8030dc9f6ba110d87141}} 
+{\bfseries Vhdl\+String} (const \mbox{\hyperlink{class_vhdl_string}{Vhdl\+String}} \&other)
+\item 
+\mbox{\Hypertarget{class_vhdl_string_ae3c975354c2e551238394e2966f15999}\label{class_vhdl_string_ae3c975354c2e551238394e2966f15999}} 
+\mbox{\hyperlink{class_vhdl_string}{Vhdl\+String}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_vhdl_string}{Vhdl\+String}} \&other)
+\item 
+\mbox{\Hypertarget{class_vhdl_string_ac1475e34a382d8691a23ac4e1d25e379}\label{class_vhdl_string_ac1475e34a382d8691a23ac4e1d25e379}} 
+{\bfseries Vhdl\+String} (const char $\ast$s)
+\item 
+\mbox{\Hypertarget{class_vhdl_string_ab0fb86df3d26cfde46f9822599a53269}\label{class_vhdl_string_ab0fb86df3d26cfde46f9822599a53269}} 
+{\bfseries Vhdl\+String} (const char $\ast$s, int size)
+\item 
+\mbox{\Hypertarget{class_vhdl_string_afa4734698d424fe3aa51f828a4f52446}\label{class_vhdl_string_afa4734698d424fe3aa51f828a4f52446}} 
+\mbox{\hyperlink{class_vhdl_string}{Vhdl\+String}} \& {\bfseries append} (const char $\ast$s, int size)
+\item 
+\mbox{\Hypertarget{class_vhdl_string_a2ccc401ac9c92eae61386019e9539cd6}\label{class_vhdl_string_a2ccc401ac9c92eae61386019e9539cd6}} 
+\mbox{\hyperlink{class_vhdl_string}{Vhdl\+String}} \& {\bfseries append} (const char $\ast$s)
+\item 
+\mbox{\Hypertarget{class_vhdl_string_a1f11b119dfb6f63b4b77a6d272b6c0d3}\label{class_vhdl_string_a1f11b119dfb6f63b4b77a6d272b6c0d3}} 
+\mbox{\hyperlink{class_vhdl_string}{Vhdl\+String}} \& {\bfseries append} (const \mbox{\hyperlink{class_vhdl_string}{Vhdl\+String}} \&other)
+\item 
+\mbox{\Hypertarget{class_vhdl_string_ab19c70bd559db2d839ad189dba7d4308}\label{class_vhdl_string_ab19c70bd559db2d839ad189dba7d4308}} 
+\mbox{\hyperlink{class_vhdl_string}{Vhdl\+String}} {\bfseries substr} (int pos=0, int len=-\/1)
+\item 
+\mbox{\Hypertarget{class_vhdl_string_ae74bb84c2809baf748cf273204aabd20}\label{class_vhdl_string_ae74bb84c2809baf748cf273204aabd20}} 
+int {\bfseries copy} (char $\ast$s, int len, int pos=0) const
+\item 
+\mbox{\Hypertarget{class_vhdl_string_ad96df721e6356eb61ea3a3caa92596c8}\label{class_vhdl_string_ad96df721e6356eb61ea3a3caa92596c8}} 
+const char $\ast$ {\bfseries c\+\_\+str} () const
+\item 
+\mbox{\Hypertarget{class_vhdl_string_a4dc4569c650b9a60f615c5a9dae75665}\label{class_vhdl_string_a4dc4569c650b9a60f615c5a9dae75665}} 
+const char $\ast$ {\bfseries data} () const
+\item 
+\mbox{\Hypertarget{class_vhdl_string_a4b2f992a1dc39ae0786ad0a193cc9707}\label{class_vhdl_string_a4b2f992a1dc39ae0786ad0a193cc9707}} 
+int {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class_vhdl_string_a1218b098a4f69fe3ab3d96e378d14f7b}\label{class_vhdl_string_a1218b098a4f69fe3ab3d96e378d14f7b}} 
+int {\bfseries length} () const
+\item 
+\mbox{\Hypertarget{class_vhdl_string_ab395ac8365ea53886555cb1726262d38}\label{class_vhdl_string_ab395ac8365ea53886555cb1726262d38}} 
+char \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int i)
+\item 
+\mbox{\Hypertarget{class_vhdl_string_a7fc6294c4a6658326f63dba3f1060be5}\label{class_vhdl_string_a7fc6294c4a6658326f63dba3f1060be5}} 
+const char \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int i) const
+\item 
+\mbox{\Hypertarget{class_vhdl_string_a5deab91a4101cbd3fe7a08970b673697}\label{class_vhdl_string_a5deab91a4101cbd3fe7a08970b673697}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{class_vhdl_string_accbd0109902958307ae5a7f852a01289}\label{class_vhdl_string_accbd0109902958307ae5a7f852a01289}} 
+\mbox{\hyperlink{class_vhdl_string}{Vhdl\+String}} \& {\bfseries operator+=} (char c)
+\item 
+\mbox{\Hypertarget{class_vhdl_string_a6b3ffe71a23d70e319ec82b817f32181}\label{class_vhdl_string_a6b3ffe71a23d70e319ec82b817f32181}} 
+\mbox{\hyperlink{class_vhdl_string}{Vhdl\+String}} \& {\bfseries operator+=} (const char $\ast$s)
+\item 
+\mbox{\Hypertarget{class_vhdl_string_a4849c6512040654bca98e05cf2a39178}\label{class_vhdl_string_a4849c6512040654bca98e05cf2a39178}} 
+\mbox{\hyperlink{class_vhdl_string}{Vhdl\+String}} \& {\bfseries operator+=} (\mbox{\hyperlink{class_vhdl_string}{Vhdl\+String}} s)
+\item 
+\mbox{\Hypertarget{class_vhdl_string_a659e399322549ea7fba70bdb338a0855}\label{class_vhdl_string_a659e399322549ea7fba70bdb338a0855}} 
+\mbox{\hyperlink{class_vhdl_string}{Vhdl\+String}} {\bfseries operator+} (const char $\ast$s)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Minimal string class with std\+::string like behaviour that fulfills the Java\+CC string requirements. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/vhdlparser/vhdlstring.\+h\end{DoxyCompactItemize}

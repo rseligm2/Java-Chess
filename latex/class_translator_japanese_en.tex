@@ -1,0 +1,139 @@
+\hypertarget{class_translator_japanese_en}{}\section{Translator\+Japanese\+En Class Reference}
+\label{class_translator_japanese_en}\index{TranslatorJapaneseEn@{TranslatorJapaneseEn}}
+Inheritance diagram for Translator\+Japanese\+En\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_translator_japanese_en}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_translator_japanese_en_a920e7fc0a427b655de47f4085d331099}{id\+Language}} ()
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_translator_japanese_en_a82a0008e9f9183374a7581124053ca4f}{latex\+Language\+Support\+Command}} ()
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_translator_japanese_en_a591b9073a3c3b05b85bc2dbb5f0f2436}{latex\+Fontenc}} ()
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_translator_japanese_en_a33a1f40ad9680e0277b0d47bb40af96e}{latex\+Document\+Pre}} ()
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_translator_japanese_en_a08a448436b8cc3dd28d328ab7145112f}{latex\+Document\+Post}} ()
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_translator_japanese_en_a4da6df8b58582eb97ffef9f75e070c0f}{tr\+R\+T\+Fansicp}} ()
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_translator_japanese_en_aff3e71dc3a1d71f056fea3299c8a427e}{tr\+R\+T\+F\+Char\+Set}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_translator_japanese_en_a920e7fc0a427b655de47f4085d331099}\label{class_translator_japanese_en_a920e7fc0a427b655de47f4085d331099}} 
+\index{TranslatorJapaneseEn@{TranslatorJapaneseEn}!idLanguage@{idLanguage}}
+\index{idLanguage@{idLanguage}!TranslatorJapaneseEn@{TranslatorJapaneseEn}}
+\subsubsection{\texorpdfstring{idLanguage()}{idLanguage()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Translator\+Japanese\+En\+::id\+Language (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Used for identification of the language. The identification should not be translated. It should be replaced by the name of the language in English using lower-\/case characters only (e.\+g. \char`\"{}czech\char`\"{}, \char`\"{}japanese\char`\"{}, \char`\"{}russian\char`\"{}, etc.). It should be equal to the identification used in language.\+cpp. 
+
+Reimplemented from \mbox{\hyperlink{class_translator_english_a940d6ef2aa0aa8a8011426219d145a53}{Translator\+English}}.
+
+\mbox{\Hypertarget{class_translator_japanese_en_a08a448436b8cc3dd28d328ab7145112f}\label{class_translator_japanese_en_a08a448436b8cc3dd28d328ab7145112f}} 
+\index{TranslatorJapaneseEn@{TranslatorJapaneseEn}!latexDocumentPost@{latexDocumentPost}}
+\index{latexDocumentPost@{latexDocumentPost}!TranslatorJapaneseEn@{TranslatorJapaneseEn}}
+\subsubsection{\texorpdfstring{latexDocumentPost()}{latexDocumentPost()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Translator\+Japanese\+En\+::latex\+Document\+Post (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the commands to be insered directly before the {\ttfamily \textbackslash{}\textbackslash{}end\{document\}} in the La\+TeX document. 
+
+Reimplemented from \mbox{\hyperlink{class_translator_a4bcba7a46f227760b534b35760688da6}{Translator}}.
+
+\mbox{\Hypertarget{class_translator_japanese_en_a33a1f40ad9680e0277b0d47bb40af96e}\label{class_translator_japanese_en_a33a1f40ad9680e0277b0d47bb40af96e}} 
+\index{TranslatorJapaneseEn@{TranslatorJapaneseEn}!latexDocumentPre@{latexDocumentPre}}
+\index{latexDocumentPre@{latexDocumentPre}!TranslatorJapaneseEn@{TranslatorJapaneseEn}}
+\subsubsection{\texorpdfstring{latexDocumentPre()}{latexDocumentPre()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Translator\+Japanese\+En\+::latex\+Document\+Pre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the commands to be insered directly after the {\ttfamily \textbackslash{}\textbackslash{}begin\{document\}} in the La\+TeX document. 
+
+Reimplemented from \mbox{\hyperlink{class_translator_a9fe33a516bc0ec6825a967294dd5d686}{Translator}}.
+
+\mbox{\Hypertarget{class_translator_japanese_en_a591b9073a3c3b05b85bc2dbb5f0f2436}\label{class_translator_japanese_en_a591b9073a3c3b05b85bc2dbb5f0f2436}} 
+\index{TranslatorJapaneseEn@{TranslatorJapaneseEn}!latexFontenc@{latexFontenc}}
+\index{latexFontenc@{latexFontenc}!TranslatorJapaneseEn@{TranslatorJapaneseEn}}
+\subsubsection{\texorpdfstring{latexFontenc()}{latexFontenc()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Translator\+Japanese\+En\+::latex\+Fontenc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the La\+TeX font encoding to be used. The default is set to {\ttfamily \mbox{\hyperlink{class_t1}{T1}}}, in case another font encoding has to be used this can be specified with this routine. In case no font encoding is required the empty string can be returned. 
+
+Reimplemented from \mbox{\hyperlink{class_translator_a573b483369d8d7cf7d85831a9da356be}{Translator}}.
+
+\mbox{\Hypertarget{class_translator_japanese_en_a82a0008e9f9183374a7581124053ca4f}\label{class_translator_japanese_en_a82a0008e9f9183374a7581124053ca4f}} 
+\index{TranslatorJapaneseEn@{TranslatorJapaneseEn}!latexLanguageSupportCommand@{latexLanguageSupportCommand}}
+\index{latexLanguageSupportCommand@{latexLanguageSupportCommand}!TranslatorJapaneseEn@{TranslatorJapaneseEn}}
+\subsubsection{\texorpdfstring{latexLanguageSupportCommand()}{latexLanguageSupportCommand()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Translator\+Japanese\+En\+::latex\+Language\+Support\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Used to get the La\+TeX command(s) for the language support. This method should return string with commands that switch La\+TeX to the desired language. For example 
+\begin{DoxyPre}"\(\backslash\)\(\backslash\)usepackage[german]\{babel\}\(\backslash\)n"
+ \end{DoxyPre}
+ or 
+\begin{DoxyPre}"\(\backslash\)\(\backslash\)usepackage\{polski\}\(\backslash\)n"
+ "\(\backslash\)\(\backslash\)usepackage[latin2]\{inputenc\}\(\backslash\)n"
+ "\(\backslash\)\(\backslash\)usepackage[T1]\{fontenc\}\(\backslash\)n"
+ \end{DoxyPre}
+
+
+The English La\+TeX does not use such commands. Because of this the empty string is returned in this implementation. 
+
+Reimplemented from \mbox{\hyperlink{class_translator_english_a48ecd4aaa9aa68947257ff29016a808a}{Translator\+English}}.
+
+\mbox{\Hypertarget{class_translator_japanese_en_a4da6df8b58582eb97ffef9f75e070c0f}\label{class_translator_japanese_en_a4da6df8b58582eb97ffef9f75e070c0f}} 
+\index{TranslatorJapaneseEn@{TranslatorJapaneseEn}!trRTFansicp@{trRTFansicp}}
+\index{trRTFansicp@{trRTFansicp}!TranslatorJapaneseEn@{TranslatorJapaneseEn}}
+\subsubsection{\texorpdfstring{trRTFansicp()}{trRTFansicp()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Translator\+Japanese\+En\+::tr\+R\+T\+Fansicp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Used as ansicpg for R\+TF file
+
+The following table shows the correlation of Charset name, Charset Value and 
+\begin{DoxyPre}
+Codepage number:
+Charset Name       Charset Value(hex)  Codepage number
+------------------------------------------------------
+DEFAULT\_CHARSET           1 (x01)
+SYMBOL\_CHARSET            2 (x02)
+OEM\_CHARSET             255 (xFF)
+ANSI\_CHARSET              0 (x00)            1252
+RUSSIAN\_CHARSET         204 (xCC)            1251
+EE\_CHARSET              238 (xEE)            1250
+GREEK\_CHARSET           161 (xA1)            1253
+TURKISH\_CHARSET         162 (xA2)            1254
+BALTIC\_CHARSET          186 (xBA)            1257
+HEBREW\_CHARSET          177 (xB1)            1255
+ARABIC \_CHARSET         178 (xB2)            1256
+SHIFTJIS\_CHARSET        128 (x80)             932
+HANGEUL\_CHARSET         129 (x81)             949
+GB2313\_CHARSET          134 (x86)             936
+CHINESEBIG5\_CHARSET     136 (x88)             950
+\end{DoxyPre}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_translator_english_a58d43df9c7e82cf874f2d0ac64547a3a}{Translator\+English}}.
+
+\mbox{\Hypertarget{class_translator_japanese_en_aff3e71dc3a1d71f056fea3299c8a427e}\label{class_translator_japanese_en_aff3e71dc3a1d71f056fea3299c8a427e}} 
+\index{TranslatorJapaneseEn@{TranslatorJapaneseEn}!trRTFCharSet@{trRTFCharSet}}
+\index{trRTFCharSet@{trRTFCharSet}!TranslatorJapaneseEn@{TranslatorJapaneseEn}}
+\subsubsection{\texorpdfstring{trRTFCharSet()}{trRTFCharSet()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Translator\+Japanese\+En\+::tr\+R\+T\+F\+Char\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Used as ansicpg for R\+TF fcharset \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_translator_japanese_en_a4da6df8b58582eb97ffef9f75e070c0f}{tr\+R\+T\+Fansicp()}} for a table of possible values. 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_translator_english_a5c66e7339c73f03d5cae6291c21b98b8}{Translator\+English}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/translator\+\_\+je.\+h\end{DoxyCompactItemize}

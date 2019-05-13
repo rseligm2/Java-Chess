@@ -1,0 +1,97 @@
+\hypertarget{class_used_files_context}{}\section{Used\+Files\+Context Class Reference}
+\label{class_used_files_context}\index{UsedFilesContext@{UsedFilesContext}}
+Inheritance diagram for Used\+Files\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_used_files_context}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_used_files_context_1_1_private}{Private}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_used_files_context_a36827fc21901f94c4daaffb3fcfd9520}{count}} () const
+\item 
+virtual \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_used_files_context_a635972ef6dd5be8afd3b6c069c413dde}{at}} (int index) const
+\item 
+virtual \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ \mbox{\hyperlink{class_used_files_context_ae9f5d2b5f060ddf612f17054499b8bda}{create\+Iterator}} () const
+\item 
+virtual int \mbox{\hyperlink{class_used_files_context_a3346f9de5fe74a7c0b962fa546240298}{add\+Ref}} ()
+\item 
+virtual int \mbox{\hyperlink{class_used_files_context_ad179f197716bee4f11482390962cb180}{release}} ()
+\item 
+\mbox{\Hypertarget{class_used_files_context_aa4f8390a396a3c5fffe62a18063506aa}\label{class_used_files_context_aa4f8390a396a3c5fffe62a18063506aa}} 
+void {\bfseries add\+File} (\mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$fd)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_used_files_context_a93b8da9fd2c2350add1b6fd65d5f95d5}\label{class_used_files_context_a93b8da9fd2c2350add1b6fd65d5f95d5}} 
+static \mbox{\hyperlink{class_used_files_context}{Used\+Files\+Context}} $\ast$ {\bfseries alloc} (\mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$cd)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_used_files_context_a3346f9de5fe74a7c0b962fa546240298}\label{class_used_files_context_a3346f9de5fe74a7c0b962fa546240298}} 
+\index{UsedFilesContext@{UsedFilesContext}!addRef@{addRef}}
+\index{addRef@{addRef}!UsedFilesContext@{UsedFilesContext}}
+\subsubsection{\texorpdfstring{addRef()}{addRef()}}
+{\footnotesize\ttfamily virtual int Used\+Files\+Context\+::add\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Increase object\textquotesingle{}s reference count 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a4b4973e2e15396d10bc4e3085462ca2b}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_used_files_context_a635972ef6dd5be8afd3b6c069c413dde}\label{class_used_files_context_a635972ef6dd5be8afd3b6c069c413dde}} 
+\index{UsedFilesContext@{UsedFilesContext}!at@{at}}
+\index{at@{at}!UsedFilesContext@{UsedFilesContext}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_variant}{Template\+Variant}} Used\+Files\+Context\+::at (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the element at index position {\itshape index}. 
+
+Implements \mbox{\hyperlink{class_template_list_intf_aa51e57e72eacf4e8ce1055ee30a0f7f8}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_used_files_context_a36827fc21901f94c4daaffb3fcfd9520}\label{class_used_files_context_a36827fc21901f94c4daaffb3fcfd9520}} 
+\index{UsedFilesContext@{UsedFilesContext}!count@{count}}
+\index{count@{count}!UsedFilesContext@{UsedFilesContext}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Used\+Files\+Context\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the number of elements in the list 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a329e49e33484c2aa5106aac1bf4e5216}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_used_files_context_ae9f5d2b5f060ddf612f17054499b8bda}\label{class_used_files_context_ae9f5d2b5f060ddf612f17054499b8bda}} 
+\index{UsedFilesContext@{UsedFilesContext}!createIterator@{createIterator}}
+\index{createIterator@{createIterator}!UsedFilesContext@{UsedFilesContext}}
+\subsubsection{\texorpdfstring{createIterator()}{createIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ Used\+Files\+Context\+::create\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a new iterator for this list. \begin{DoxyNote}{Note}
+the user should call delete on the returned pointer. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_template_list_intf_a56b82384db24c3e121076a1da046d378}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_used_files_context_ad179f197716bee4f11482390962cb180}\label{class_used_files_context_ad179f197716bee4f11482390962cb180}} 
+\index{UsedFilesContext@{UsedFilesContext}!release@{release}}
+\index{release@{release}!UsedFilesContext@{UsedFilesContext}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual int Used\+Files\+Context\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Decreases object\textquotesingle{}s reference count, destroy object if 0 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a0c53169c740c09dac47efc62bbe39674}{Template\+List\+Intf}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/context.\+h\item 
+doxygen/src/context.\+cpp\end{DoxyCompactItemize}

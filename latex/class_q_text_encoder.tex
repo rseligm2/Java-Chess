@@ -1,0 +1,64 @@
+\hypertarget{class_q_text_encoder}{}\section{Q\+Text\+Encoder Class Reference}
+\label{class_q_text_encoder}\index{QTextEncoder@{QTextEncoder}}
+
+
+State-\/based encoder.  
+
+
+
+
+{\ttfamily \#include $<$qtextcodec.\+h$>$}
+
+Inheritance diagram for Q\+Text\+Encoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_text_encoder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_q_text_encoder_ad4aeae820b76fb14a7f5d411ba424b7a}{$\sim$\+Q\+Text\+Encoder}} ()
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_q_text_encoder_a3b199427ee9b7f862fe65811165dbbfa}{from\+Unicode}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&uc, int \&len\+In\+Out)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+State-\/based encoder. 
+
+\mbox{\hyperlink{class_a}{A}} \mbox{\hyperlink{class_q_text_encoder}{Q\+Text\+Encoder}} converts Unicode into another format, remembering any state that is required between calls.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_text_codec_aa7dccd7fc1b578de0b7599b040d98e11}{Q\+Text\+Codec\+::make\+Encoder()}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_text_encoder_ad4aeae820b76fb14a7f5d411ba424b7a}\label{class_q_text_encoder_ad4aeae820b76fb14a7f5d411ba424b7a}} 
+\index{QTextEncoder@{QTextEncoder}!````~QTextEncoder@{$\sim$QTextEncoder}}
+\index{````~QTextEncoder@{$\sim$QTextEncoder}!QTextEncoder@{QTextEncoder}}
+\subsubsection{\texorpdfstring{$\sim$QTextEncoder()}{~QTextEncoder()}}
+{\footnotesize\ttfamily Q\+Text\+Encoder\+::$\sim$\+Q\+Text\+Encoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructs the encoder. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_text_encoder_a3b199427ee9b7f862fe65811165dbbfa}\label{class_q_text_encoder_a3b199427ee9b7f862fe65811165dbbfa}} 
+\index{QTextEncoder@{QTextEncoder}!fromUnicode@{fromUnicode}}
+\index{fromUnicode@{fromUnicode}!QTextEncoder@{QTextEncoder}}
+\subsubsection{\texorpdfstring{fromUnicode()}{fromUnicode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Q\+Text\+Encoder\+::from\+Unicode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{uc,  }\item[{int \&}]{len\+In\+Out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Converts {\itshape len\+In\+Out} characters (not bytes) from {\itshape uc}, producing a \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}}. {\itshape len\+In\+Out} will also be set to the \mbox{\hyperlink{class_q_c_string_ac52596733e9110b778019946d73fb268}{length}} of the result (in bytes).
+
+The encoder is free to record state to use when subsequent calls are made to this function (for example, it might change modes with escape sequences if needed during the encoding of one string, then assume that mode applies when a subsequent call begins). 
+
+Implemented in \mbox{\hyperlink{class_q_text_stateless_encoder_a8466950847e702e588d182a582ba660f}{Q\+Text\+Stateless\+Encoder}}, and \mbox{\hyperlink{class_q_utf16_encoder_abe6f23ccae2a17021d4906e9f5e76ae6}{Q\+Utf16\+Encoder}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qtextcodec.\+h\item 
+doxygen/qtools/qtextcodec.\+cpp\end{DoxyCompactItemize}

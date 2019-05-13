@@ -1,0 +1,42 @@
+\hypertarget{class_py_variable_context}{}\section{Py\+Variable\+Context Class Reference}
+\label{class_py_variable_context}\index{PyVariableContext@{PyVariableContext}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_py_variable_context_1_1_scope}{Scope}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_py_variable_context_a0546bb3cb235db78d2e8fcbb1dcb6502}\label{class_py_variable_context_a0546bb3cb235db78d2e8fcbb1dcb6502}} 
+void {\bfseries push\+Scope} ()
+\item 
+\mbox{\Hypertarget{class_py_variable_context_ae24b90d1862e5ea27664f1d5adbf215a}\label{class_py_variable_context_ae24b90d1862e5ea27664f1d5adbf215a}} 
+void {\bfseries pop\+Scope} ()
+\item 
+\mbox{\Hypertarget{class_py_variable_context_adba488d880f24fee22111357a13c2d4f}\label{class_py_variable_context_adba488d880f24fee22111357a13c2d4f}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{class_py_variable_context_aa324279947b58bc2b6fe6566a5413988}\label{class_py_variable_context_aa324279947b58bc2b6fe6566a5413988}} 
+void {\bfseries clear\+Except\+Global} ()
+\item 
+\mbox{\Hypertarget{class_py_variable_context_a0aeecbdf9dfc4ac3e3680e48531e4300}\label{class_py_variable_context_a0aeecbdf9dfc4ac3e3680e48531e4300}} 
+void {\bfseries add\+Variable} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&type, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name)
+\item 
+\mbox{\Hypertarget{class_py_variable_context_a9fc4eb25a82e2566d2b6bdab62fbd5d7}\label{class_py_variable_context_a9fc4eb25a82e2566d2b6bdab62fbd5d7}} 
+\mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$ {\bfseries find\+Variable} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_py_variable_context_abb3568aff90a5041f86f2219974acc97}\label{class_py_variable_context_abb3568aff90a5041f86f2219974acc97}} 
+static const \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$ {\bfseries dummy\+Context} = (\mbox{\hyperlink{class_class_def}{Class\+Def}}$\ast$)0x8
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a stack of variable to class mappings as found in the code. Each scope is enclosed in push\+Scope() and pop\+Scope() calls. Variables are added by calling add\+Variables() and one can search for variable using find\+Variable(). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/build/generated\+\_\+src/pycode.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,181 @@
+\hypertarget{class_q_xml_attributes}{}\section{Q\+Xml\+Attributes Class Reference}
+\label{class_q_xml_attributes}\index{QXmlAttributes@{QXmlAttributes}}
+
+
+The \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} class provides X\+ML attributes.  
+
+
+
+
+{\ttfamily \#include $<$qxml.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_xml_attributes_a074730261cfe3a0f4292cbda7854892b}{Q\+Xml\+Attributes}} ()
+\item 
+virtual \mbox{\hyperlink{class_q_xml_attributes_a2d482c168ff403041fc1dd2fc8044a7b}{$\sim$\+Q\+Xml\+Attributes}} ()
+\item 
+int \mbox{\hyperlink{class_q_xml_attributes_a5d219582743f952156f1bf66fe843ea4}{index}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&\mbox{\hyperlink{class_q_xml_attributes_a1dadc4d5470c544f9826f438d9aa3321}{q\+Name}}) const
+\item 
+int \mbox{\hyperlink{class_q_xml_attributes_a4aadf1fb97f9c69f9b9c4079d7c9b630}{index}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&\mbox{\hyperlink{class_q_xml_attributes_aff9c3f007752e367a6ccc83fb3537496}{uri}}, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&local\+Part) const
+\item 
+int \mbox{\hyperlink{class_q_xml_attributes_aa36145f8c505f42637cf0afbf9862918}{length}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_xml_attributes_aac2045c7130627fffb30ae132d3e44ac}{local\+Name}} (int \mbox{\hyperlink{class_q_xml_attributes_a5d219582743f952156f1bf66fe843ea4}{index}}) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_xml_attributes_a1dadc4d5470c544f9826f438d9aa3321}{q\+Name}} (int \mbox{\hyperlink{class_q_xml_attributes_a5d219582743f952156f1bf66fe843ea4}{index}}) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_xml_attributes_aff9c3f007752e367a6ccc83fb3537496}{uri}} (int \mbox{\hyperlink{class_q_xml_attributes_a5d219582743f952156f1bf66fe843ea4}{index}}) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_xml_attributes_a922b2f1cbb3d4d39843ca23019eb4b72}{type}} (int \mbox{\hyperlink{class_q_xml_attributes_a5d219582743f952156f1bf66fe843ea4}{index}}) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_xml_attributes_a4429db38a5c429d93919187981e01bc0}{type}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&\mbox{\hyperlink{class_q_xml_attributes_a1dadc4d5470c544f9826f438d9aa3321}{q\+Name}}) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_xml_attributes_abb1c0e26e7f55c8d3296778705e09821}{type}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&\mbox{\hyperlink{class_q_xml_attributes_aff9c3f007752e367a6ccc83fb3537496}{uri}}, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&\mbox{\hyperlink{class_q_xml_attributes_aac2045c7130627fffb30ae132d3e44ac}{local\+Name}}) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_xml_attributes_aa5bb29e5e301fef6e80c99a19f902c32}{value}} (int \mbox{\hyperlink{class_q_xml_attributes_a5d219582743f952156f1bf66fe843ea4}{index}}) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_xml_attributes_aeec12bba8c7db83033d1c62d9263d9b8}{value}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&\mbox{\hyperlink{class_q_xml_attributes_a1dadc4d5470c544f9826f438d9aa3321}{q\+Name}}) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_xml_attributes_a89f8c3bd24121c177e1369ae5ea51f15}{value}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&\mbox{\hyperlink{class_q_xml_attributes_aff9c3f007752e367a6ccc83fb3537496}{uri}}, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&\mbox{\hyperlink{class_q_xml_attributes_aac2045c7130627fffb30ae132d3e44ac}{local\+Name}}) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_xml_attributes_aba6d8e1fe7917a5056b07bf8d4b4e53c}\label{class_q_xml_attributes_aba6d8e1fe7917a5056b07bf8d4b4e53c}} 
+class {\bfseries Q\+Xml\+Simple\+Reader}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} class provides X\+ML attributes. 
+
+\textbackslash{}module X\+ML
+
+If attributes are reported by \mbox{\hyperlink{class_q_xml_content_handler_af6d4e631fad2b9b75622c95003b1da55}{Q\+Xml\+Content\+Handler\+::start\+Element()}} this class is used to pass the attribute values. It provides you with different functions to access the attribute names and values. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_xml_attributes_a074730261cfe3a0f4292cbda7854892b}\label{class_q_xml_attributes_a074730261cfe3a0f4292cbda7854892b}} 
+\index{QXmlAttributes@{QXmlAttributes}!QXmlAttributes@{QXmlAttributes}}
+\index{QXmlAttributes@{QXmlAttributes}!QXmlAttributes@{QXmlAttributes}}
+\subsubsection{\texorpdfstring{QXmlAttributes()}{QXmlAttributes()}}
+{\footnotesize\ttfamily Q\+Xml\+Attributes\+::\+Q\+Xml\+Attributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs an empty attribute list. \mbox{\Hypertarget{class_q_xml_attributes_a2d482c168ff403041fc1dd2fc8044a7b}\label{class_q_xml_attributes_a2d482c168ff403041fc1dd2fc8044a7b}} 
+\index{QXmlAttributes@{QXmlAttributes}!````~QXmlAttributes@{$\sim$QXmlAttributes}}
+\index{````~QXmlAttributes@{$\sim$QXmlAttributes}!QXmlAttributes@{QXmlAttributes}}
+\subsubsection{\texorpdfstring{$\sim$QXmlAttributes()}{~QXmlAttributes()}}
+{\footnotesize\ttfamily Q\+Xml\+Attributes\+::$\sim$\+Q\+Xml\+Attributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Destructs attributes. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_xml_attributes_a5d219582743f952156f1bf66fe843ea4}\label{class_q_xml_attributes_a5d219582743f952156f1bf66fe843ea4}} 
+\index{QXmlAttributes@{QXmlAttributes}!index@{index}}
+\index{index@{index}!QXmlAttributes@{QXmlAttributes}}
+\subsubsection{\texorpdfstring{index()}{index()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Q\+Xml\+Attributes\+::index (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{q\+Name }\end{DoxyParamCaption}) const}
+
+Look up the index of an attribute by an X\+ML 1.\+0 qualified name.
+
+Returns the index of the attribute (starting with 0) or -\/1 if it wasn\textquotesingle{}t found.
+
+See also the \href{xml-sax.html\#namespaces}{\texttt{ namespace description}}. \mbox{\Hypertarget{class_q_xml_attributes_a4aadf1fb97f9c69f9b9c4079d7c9b630}\label{class_q_xml_attributes_a4aadf1fb97f9c69f9b9c4079d7c9b630}} 
+\index{QXmlAttributes@{QXmlAttributes}!index@{index}}
+\index{index@{index}!QXmlAttributes@{QXmlAttributes}}
+\subsubsection{\texorpdfstring{index()}{index()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Q\+Xml\+Attributes\+::index (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{uri,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{local\+Part }\end{DoxyParamCaption}) const}
+
+Looks up the index of an attribute by a namespace name.
+
+{\itshape uri} specifies the namespace U\+RI, or the empty string if the name has no namespace U\+RI. {\itshape local\+Part} specifies the attribute\textquotesingle{}s local name.
+
+Returns the index of the attribute (starting with 0) or -\/1 if it wasn\textquotesingle{}t found.
+
+See also the \href{xml-sax.html\#namespaces}{\texttt{ namespace description}}. \mbox{\Hypertarget{class_q_xml_attributes_aa36145f8c505f42637cf0afbf9862918}\label{class_q_xml_attributes_aa36145f8c505f42637cf0afbf9862918}} 
+\index{QXmlAttributes@{QXmlAttributes}!length@{length}}
+\index{length@{length}!QXmlAttributes@{QXmlAttributes}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily int Q\+Xml\+Attributes\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the number of attributes in the list. \mbox{\Hypertarget{class_q_xml_attributes_aac2045c7130627fffb30ae132d3e44ac}\label{class_q_xml_attributes_aac2045c7130627fffb30ae132d3e44ac}} 
+\index{QXmlAttributes@{QXmlAttributes}!localName@{localName}}
+\index{localName@{localName}!QXmlAttributes@{QXmlAttributes}}
+\subsubsection{\texorpdfstring{localName()}{localName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Xml\+Attributes\+::local\+Name (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+Looks up an attribute\textquotesingle{}s local name by index (starting with 0).
+
+See also the \href{xml-sax.html\#namespaces}{\texttt{ namespace description}}. \mbox{\Hypertarget{class_q_xml_attributes_a1dadc4d5470c544f9826f438d9aa3321}\label{class_q_xml_attributes_a1dadc4d5470c544f9826f438d9aa3321}} 
+\index{QXmlAttributes@{QXmlAttributes}!qName@{qName}}
+\index{qName@{qName}!QXmlAttributes@{QXmlAttributes}}
+\subsubsection{\texorpdfstring{qName()}{qName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Xml\+Attributes\+::q\+Name (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+Looks up an attribute\textquotesingle{}s X\+ML 1.\+0 qualified name by index (starting with 0).
+
+See also the \href{xml-sax.html\#namespaces}{\texttt{ namespace description}}. \mbox{\Hypertarget{class_q_xml_attributes_a4429db38a5c429d93919187981e01bc0}\label{class_q_xml_attributes_a4429db38a5c429d93919187981e01bc0}} 
+\index{QXmlAttributes@{QXmlAttributes}!type@{type}}
+\index{type@{type}!QXmlAttributes@{QXmlAttributes}}
+\subsubsection{\texorpdfstring{type()}{type()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Xml\+Attributes\+::type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{q\+Name }\end{DoxyParamCaption}) const}
+
+Looks up an attribute\textquotesingle{}s type by X\+ML 1.\+0 qualified name.
+
+At the moment only \textquotesingle{}C\+D\+A\+TA\textquotesingle{} is returned. \mbox{\Hypertarget{class_q_xml_attributes_abb1c0e26e7f55c8d3296778705e09821}\label{class_q_xml_attributes_abb1c0e26e7f55c8d3296778705e09821}} 
+\index{QXmlAttributes@{QXmlAttributes}!type@{type}}
+\index{type@{type}!QXmlAttributes@{QXmlAttributes}}
+\subsubsection{\texorpdfstring{type()}{type()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Xml\+Attributes\+::type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{uri,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{local\+Name }\end{DoxyParamCaption}) const}
+
+Looks up an attribute\textquotesingle{}s type by namespace name.
+
+The first parameter specifies the namespace U\+RI, or the empty string if the name has no namespace U\+RI. The second parameter specifies the attribute\textquotesingle{}s local name.
+
+At the moment only \textquotesingle{}C\+D\+A\+TA\textquotesingle{} is returned. \mbox{\Hypertarget{class_q_xml_attributes_a922b2f1cbb3d4d39843ca23019eb4b72}\label{class_q_xml_attributes_a922b2f1cbb3d4d39843ca23019eb4b72}} 
+\index{QXmlAttributes@{QXmlAttributes}!type@{type}}
+\index{type@{type}!QXmlAttributes@{QXmlAttributes}}
+\subsubsection{\texorpdfstring{type()}{type()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Xml\+Attributes\+::type (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+Looks up an attribute\textquotesingle{}s type by index (starting with 0).
+
+At the moment only \textquotesingle{}C\+D\+A\+TA\textquotesingle{} is returned. \mbox{\Hypertarget{class_q_xml_attributes_aff9c3f007752e367a6ccc83fb3537496}\label{class_q_xml_attributes_aff9c3f007752e367a6ccc83fb3537496}} 
+\index{QXmlAttributes@{QXmlAttributes}!uri@{uri}}
+\index{uri@{uri}!QXmlAttributes@{QXmlAttributes}}
+\subsubsection{\texorpdfstring{uri()}{uri()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Xml\+Attributes\+::uri (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+Looks up an attribute\textquotesingle{}s namespace U\+RI by index (starting with 0).
+
+See also the \href{xml-sax.html\#namespaces}{\texttt{ namespace description}}. \mbox{\Hypertarget{class_q_xml_attributes_aeec12bba8c7db83033d1c62d9263d9b8}\label{class_q_xml_attributes_aeec12bba8c7db83033d1c62d9263d9b8}} 
+\index{QXmlAttributes@{QXmlAttributes}!value@{value}}
+\index{value@{value}!QXmlAttributes@{QXmlAttributes}}
+\subsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Xml\+Attributes\+::value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{q\+Name }\end{DoxyParamCaption}) const}
+
+Looks up an attribute\textquotesingle{}s value by X\+ML 1.\+0 qualified name.
+
+See also the \href{xml-sax.html\#namespaces}{\texttt{ namespace description}}. \mbox{\Hypertarget{class_q_xml_attributes_a89f8c3bd24121c177e1369ae5ea51f15}\label{class_q_xml_attributes_a89f8c3bd24121c177e1369ae5ea51f15}} 
+\index{QXmlAttributes@{QXmlAttributes}!value@{value}}
+\index{value@{value}!QXmlAttributes@{QXmlAttributes}}
+\subsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Xml\+Attributes\+::value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{uri,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{local\+Name }\end{DoxyParamCaption}) const}
+
+Looks up an attribute\textquotesingle{}s value by namespace name.
+
+{\itshape uri} specifies the namespace U\+RI, or the empty string if the name has no namespace U\+RI. {\itshape local\+Name} specifies the attribute\textquotesingle{}s local name.
+
+See also the \href{xml-sax.html\#namespaces}{\texttt{ namespace description}}. \mbox{\Hypertarget{class_q_xml_attributes_aa5bb29e5e301fef6e80c99a19f902c32}\label{class_q_xml_attributes_aa5bb29e5e301fef6e80c99a19f902c32}} 
+\index{QXmlAttributes@{QXmlAttributes}!value@{value}}
+\index{value@{value}!QXmlAttributes@{QXmlAttributes}}
+\subsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Xml\+Attributes\+::value (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+Looks up an attribute\textquotesingle{}s value by index (starting with 0). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qxml.\+h\item 
+doxygen/qtools/qxml.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+\hypertarget{class_dot_file_patcher}{}\section{Dot\+File\+Patcher Class Reference}
+\label{class_dot_file_patcher}\index{DotFilePatcher@{DotFilePatcher}}
+
+
+{\ttfamily \#include $<$dot.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_dot_file_patcher_1_1_map}{Map}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dot_file_patcher_aaf02acecacecc1482f18bfaf154ec3aa}\label{class_dot_file_patcher_aaf02acecacecc1482f18bfaf154ec3aa}} 
+{\bfseries Dot\+File\+Patcher} (const char $\ast$patch\+File)
+\item 
+\mbox{\Hypertarget{class_dot_file_patcher_aa53ad66e5d0c6a04f6d198aa030b63f3}\label{class_dot_file_patcher_aa53ad66e5d0c6a04f6d198aa030b63f3}} 
+int {\bfseries add\+Map} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&map\+File, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&rel\+Path, bool url\+Only, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&context, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&label)
+\item 
+\mbox{\Hypertarget{class_dot_file_patcher_af67aa4441f3e872f6d3c69667572c052}\label{class_dot_file_patcher_af67aa4441f3e872f6d3c69667572c052}} 
+int {\bfseries add\+Figure} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&base\+Name, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&figure\+Name, bool height\+Check)
+\item 
+\mbox{\Hypertarget{class_dot_file_patcher_aac97171a3985fd07e09fef2a25819a16}\label{class_dot_file_patcher_aac97171a3985fd07e09fef2a25819a16}} 
+int {\bfseries add\+S\+V\+G\+Conversion} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&rel\+Path, bool url\+Only, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&context, bool zoomable, int graph\+Id)
+\item 
+\mbox{\Hypertarget{class_dot_file_patcher_a8a0183f93570ac3b1a8df3e0f7229a2b}\label{class_dot_file_patcher_a8a0183f93570ac3b1a8df3e0f7229a2b}} 
+int {\bfseries add\+S\+V\+G\+Object} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&base\+Name, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&figure\+Name, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&rel\+Path)
+\item 
+\mbox{\Hypertarget{class_dot_file_patcher_a659e502ffc3ddcf46e1f53820ee5926e}\label{class_dot_file_patcher_a659e502ffc3ddcf46e1f53820ee5926e}} 
+bool {\bfseries run} ()
+\item 
+\mbox{\Hypertarget{class_dot_file_patcher_aeaa352fd44a4ec3b40b0e5d5dea85d80}\label{class_dot_file_patcher_aeaa352fd44a4ec3b40b0e5d5dea85d80}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries file} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Helper class to insert a set of map file into an output file 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/dot.\+h\item 
+doxygen/src/dot.\+cpp\end{DoxyCompactItemize}

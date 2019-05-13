@@ -1,0 +1,115 @@
+\hypertarget{class_template_list_intf}{}\section{Template\+List\+Intf Class Reference}
+\label{class_template_list_intf}\index{TemplateListIntf@{TemplateListIntf}}
+
+
+Abstract read-\/only interface for a context value of type list.  
+
+
+
+
+{\ttfamily \#include $<$template.\+h$>$}
+
+Inheritance diagram for Template\+List\+Intf\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_template_list_intf}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Const\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Abstract interface for a iterator of a list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_template_list_intf_a0b5062df5445b0185ef6b072813307a2}{$\sim$\+Template\+List\+Intf}} ()
+\item 
+virtual int \mbox{\hyperlink{class_template_list_intf_a329e49e33484c2aa5106aac1bf4e5216}{count}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_template_list_intf_aa51e57e72eacf4e8ce1055ee30a0f7f8}{at}} (int index) const =0
+\item 
+virtual \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ \mbox{\hyperlink{class_template_list_intf_a56b82384db24c3e121076a1da046d378}{create\+Iterator}} () const =0
+\item 
+virtual int \mbox{\hyperlink{class_template_list_intf_a4b4973e2e15396d10bc4e3085462ca2b}{add\+Ref}} ()=0
+\item 
+virtual int \mbox{\hyperlink{class_template_list_intf_a0c53169c740c09dac47efc62bbe39674}{release}} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract read-\/only interface for a context value of type list. 
+
+\begin{DoxyNote}{Note}
+The values of the list are Template\+Variants. 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_template_list_intf_a0b5062df5445b0185ef6b072813307a2}\label{class_template_list_intf_a0b5062df5445b0185ef6b072813307a2}} 
+\index{TemplateListIntf@{TemplateListIntf}!````~TemplateListIntf@{$\sim$TemplateListIntf}}
+\index{````~TemplateListIntf@{$\sim$TemplateListIntf}!TemplateListIntf@{TemplateListIntf}}
+\subsubsection{\texorpdfstring{$\sim$TemplateListIntf()}{~TemplateListIntf()}}
+{\footnotesize\ttfamily virtual Template\+List\+Intf\+::$\sim$\+Template\+List\+Intf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Destroys the list 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_template_list_intf_a4b4973e2e15396d10bc4e3085462ca2b}\label{class_template_list_intf_a4b4973e2e15396d10bc4e3085462ca2b}} 
+\index{TemplateListIntf@{TemplateListIntf}!addRef@{addRef}}
+\index{addRef@{addRef}!TemplateListIntf@{TemplateListIntf}}
+\subsubsection{\texorpdfstring{addRef()}{addRef()}}
+{\footnotesize\ttfamily virtual int Template\+List\+Intf\+::add\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Increase object\textquotesingle{}s reference count 
+
+Implemented in \mbox{\hyperlink{class_search_indices_context_ac6351cde31163d5a7e94bd43ea795673}{Search\+Indices\+Context}}, \mbox{\hyperlink{class_symbol_indices_context_aa4cc95c4e452e146f0b0e72142f5f1bf}{Symbol\+Indices\+Context}}, \mbox{\hyperlink{class_symbol_group_list_context_af075e8357cbbc474f2e71e31a9b40362}{Symbol\+Group\+List\+Context}}, \mbox{\hyperlink{class_symbol_list_context_ad1f97238c59a879729d505235cd81c46}{Symbol\+List\+Context}}, \mbox{\hyperlink{class_argument_list_context_a378c354cf154e3505e9d5a706ceaea55}{Argument\+List\+Context}}, \mbox{\hyperlink{class_all_members_list_context_ac1944fc9ad154caa5ed58e28f49c2461}{All\+Members\+List\+Context}}, \mbox{\hyperlink{class_inherited_member_info_list_context_a367a16fa7a17f619910a40778da2af12}{Inherited\+Member\+Info\+List\+Context}}, \mbox{\hyperlink{class_member_group_list_context_a3a135dbacc0e65f809b61797db5dbc4a}{Member\+Group\+List\+Context}}, \mbox{\hyperlink{class_member_list_context_a2ee8c2892871175c21a47ae4aaed9218}{Member\+List\+Context}}, \mbox{\hyperlink{class_inheritance_list_context_aedfb5cadd50ed52c6f1632cbcdbfa85d}{Inheritance\+List\+Context}}, \mbox{\hyperlink{class_example_list_context_a94636ca4704e815f35339998fba5940b}{Example\+List\+Context}}, \mbox{\hyperlink{class_module_list_context_a88f218226c4fc48cfa07d0e48568c4ce}{Module\+List\+Context}}, \mbox{\hyperlink{class_page_list_context_afd248c2c11a415e6e62150580d3ec366}{Page\+List\+Context}}, \mbox{\hyperlink{class_file_list_context_a8b193daaaccb88cee19db52c368d727a}{File\+List\+Context}}, \mbox{\hyperlink{class_dir_list_context_abdf1dfce3d1e7693c50080226603e121}{Dir\+List\+Context}}, \mbox{\hyperlink{class_namespace_list_context_a59c6b6d62a82299a64b36709f6db156f}{Namespace\+List\+Context}}, \mbox{\hyperlink{class_nesting_context_a71b0b342e5bb1b434a0390a77640df55}{Nesting\+Context}}, \mbox{\hyperlink{class_class_inheritance_context_add3dd0b40d3bed1b4e48899991dbaf84}{Class\+Inheritance\+Context}}, \mbox{\hyperlink{class_class_list_context_a0eff9811a77d47277e1386394c374151}{Class\+List\+Context}}, \mbox{\hyperlink{class_template_list_a144bf4bdc326ba570eba62b1dc90f32f}{Template\+List}}, \mbox{\hyperlink{class_include_info_list_context_ab45ef3751c5ce2e342a23d8a240cee07}{Include\+Info\+List\+Context}}, \mbox{\hyperlink{class_generic_node_list_context_a8c165d6443a3f2522cd6a871ce45ebc4}{Generic\+Node\+List\+Context}}, and \mbox{\hyperlink{class_used_files_context_a3346f9de5fe74a7c0b962fa546240298}{Used\+Files\+Context}}.
+
+\mbox{\Hypertarget{class_template_list_intf_aa51e57e72eacf4e8ce1055ee30a0f7f8}\label{class_template_list_intf_aa51e57e72eacf4e8ce1055ee30a0f7f8}} 
+\index{TemplateListIntf@{TemplateListIntf}!at@{at}}
+\index{at@{at}!TemplateListIntf@{TemplateListIntf}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_template_variant}{Template\+Variant}} Template\+List\+Intf\+::at (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the element at index position {\itshape index}. 
+
+Implemented in \mbox{\hyperlink{class_search_indices_context_a01954b6da883d9274840295905a999c8}{Search\+Indices\+Context}}, \mbox{\hyperlink{class_symbol_indices_context_a246d9d512a0daa50f0cdd0c2abfb86af}{Symbol\+Indices\+Context}}, \mbox{\hyperlink{class_symbol_group_list_context_aec1ee26a6f7899e37ba0b70c1ca5b744}{Symbol\+Group\+List\+Context}}, \mbox{\hyperlink{class_symbol_list_context_ac77916a7663380ea98b505a0892a3abc}{Symbol\+List\+Context}}, \mbox{\hyperlink{class_argument_list_context_ac3c4acdd80cab2fcbd53eed215034fe1}{Argument\+List\+Context}}, \mbox{\hyperlink{class_all_members_list_context_a0dc11cc3fddb12437e37fd350e94bd72}{All\+Members\+List\+Context}}, \mbox{\hyperlink{class_inherited_member_info_list_context_aae1d20b1cb3ca2e5e5dfa9b13b734d79}{Inherited\+Member\+Info\+List\+Context}}, \mbox{\hyperlink{class_member_group_list_context_a804c6afa443fa52659d4f19413f329bf}{Member\+Group\+List\+Context}}, \mbox{\hyperlink{class_member_list_context_a89dbead5ee65a69041998b3f58a9cf30}{Member\+List\+Context}}, \mbox{\hyperlink{class_inheritance_list_context_a789d4875a82da88a35263a80c1043890}{Inheritance\+List\+Context}}, \mbox{\hyperlink{class_example_list_context_ac661f44438dbb4b2b36ad219c9da6feb}{Example\+List\+Context}}, \mbox{\hyperlink{class_module_list_context_a4548860492524e01ee703bd613fd08a7}{Module\+List\+Context}}, \mbox{\hyperlink{class_page_list_context_adb8538bc8c1206e15372209d7e3379dc}{Page\+List\+Context}}, \mbox{\hyperlink{class_file_list_context_ab0a889fd2011e3fbafc3271cd1d4c20f}{File\+List\+Context}}, \mbox{\hyperlink{class_dir_list_context_a945ceb92b9e8b4f8a825f283d577eef0}{Dir\+List\+Context}}, \mbox{\hyperlink{class_namespace_list_context_aad786580251baade29f06a76612201cd}{Namespace\+List\+Context}}, \mbox{\hyperlink{class_nesting_context_a11ff5ba22637b6ce76883c3cb840e67b}{Nesting\+Context}}, \mbox{\hyperlink{class_class_inheritance_context_ad824ec079b4dc94d2b5b3e6a0e60984a}{Class\+Inheritance\+Context}}, \mbox{\hyperlink{class_class_list_context_a2ff974cf1cd295c866035d255bbb8b36}{Class\+List\+Context}}, \mbox{\hyperlink{class_template_list_a9fffa09b83138d64bbe66b32e2a3d283}{Template\+List}}, \mbox{\hyperlink{class_include_info_list_context_abdbdfb96f30dc9a64e42e01154fd30ff}{Include\+Info\+List\+Context}}, \mbox{\hyperlink{class_used_files_context_a635972ef6dd5be8afd3b6c069c413dde}{Used\+Files\+Context}}, and \mbox{\hyperlink{class_generic_node_list_context_aa7d149964207236258937b46c4125cc7}{Generic\+Node\+List\+Context}}.
+
+\mbox{\Hypertarget{class_template_list_intf_a329e49e33484c2aa5106aac1bf4e5216}\label{class_template_list_intf_a329e49e33484c2aa5106aac1bf4e5216}} 
+\index{TemplateListIntf@{TemplateListIntf}!count@{count}}
+\index{count@{count}!TemplateListIntf@{TemplateListIntf}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily virtual int Template\+List\+Intf\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the number of elements in the list 
+
+Implemented in \mbox{\hyperlink{class_search_indices_context_aa8606de3f00d255756169fbf11b134e8}{Search\+Indices\+Context}}, \mbox{\hyperlink{class_symbol_indices_context_a2870f659954519c255fb67ac97ca04d6}{Symbol\+Indices\+Context}}, \mbox{\hyperlink{class_symbol_group_list_context_ad3561a3a506b3e9026b11e7dba59ad07}{Symbol\+Group\+List\+Context}}, \mbox{\hyperlink{class_symbol_list_context_a7e3a32d2decc135e7fdf6141fee37471}{Symbol\+List\+Context}}, \mbox{\hyperlink{class_argument_list_context_a178ceda7e6b509e85aecc898ebefe1ed}{Argument\+List\+Context}}, \mbox{\hyperlink{class_all_members_list_context_acf212002a620916c1d075acbdf3e1eba}{All\+Members\+List\+Context}}, \mbox{\hyperlink{class_inherited_member_info_list_context_a89313c333cec39eb147a2b61f2f5252a}{Inherited\+Member\+Info\+List\+Context}}, \mbox{\hyperlink{class_member_group_list_context_a65ff4ee1ee899eabe742616a5ccf7648}{Member\+Group\+List\+Context}}, \mbox{\hyperlink{class_member_list_context_a1d77ef2461ae73437323716e0c7a9705}{Member\+List\+Context}}, \mbox{\hyperlink{class_inheritance_list_context_aa7fe14f7d71b1d955c22b26cb320f77b}{Inheritance\+List\+Context}}, \mbox{\hyperlink{class_example_list_context_a5670e7d7749f6a70c5c13b42ba9131ef}{Example\+List\+Context}}, \mbox{\hyperlink{class_module_list_context_a65f2757f90eb682cb7551545f29f01ee}{Module\+List\+Context}}, \mbox{\hyperlink{class_page_list_context_aeb9332b426d2dc8639fbbbbc1f54b30c}{Page\+List\+Context}}, \mbox{\hyperlink{class_file_list_context_a0394f04efdefc36ab71bc5608db94644}{File\+List\+Context}}, \mbox{\hyperlink{class_dir_list_context_ac8c79425ffe533916c0e388e49ebbfb6}{Dir\+List\+Context}}, \mbox{\hyperlink{class_namespace_list_context_a576ee9f319a20d0fa16fdcb3b4a3a550}{Namespace\+List\+Context}}, \mbox{\hyperlink{class_nesting_context_a71527fdcb3f4537999d866728480c1d4}{Nesting\+Context}}, \mbox{\hyperlink{class_class_inheritance_context_a8fa0bcb90c0640638cd4168e91696a16}{Class\+Inheritance\+Context}}, \mbox{\hyperlink{class_class_list_context_ae97680a967f4f41b3eaa8bedbc42eddb}{Class\+List\+Context}}, \mbox{\hyperlink{class_template_list_a30e405b8e59795bd9e9f2fa2b36b6bd0}{Template\+List}}, \mbox{\hyperlink{class_include_info_list_context_ac641c82aaf5644cfcfc1e1650f536096}{Include\+Info\+List\+Context}}, \mbox{\hyperlink{class_used_files_context_a36827fc21901f94c4daaffb3fcfd9520}{Used\+Files\+Context}}, and \mbox{\hyperlink{class_generic_node_list_context_ab1bacca5f270077592153af9ea296ebe}{Generic\+Node\+List\+Context}}.
+
+\mbox{\Hypertarget{class_template_list_intf_a56b82384db24c3e121076a1da046d378}\label{class_template_list_intf_a56b82384db24c3e121076a1da046d378}} 
+\index{TemplateListIntf@{TemplateListIntf}!createIterator@{createIterator}}
+\index{createIterator@{createIterator}!TemplateListIntf@{TemplateListIntf}}
+\subsubsection{\texorpdfstring{createIterator()}{createIterator()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}}$\ast$ Template\+List\+Intf\+::create\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a new iterator for this list. \begin{DoxyNote}{Note}
+the user should call delete on the returned pointer. 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_search_indices_context_a0247f88bc151ed4620c36386bdae999f}{Search\+Indices\+Context}}, \mbox{\hyperlink{class_symbol_indices_context_ad0b75214155417ec6ce8477a6a607103}{Symbol\+Indices\+Context}}, \mbox{\hyperlink{class_symbol_group_list_context_a0ce2ecdbdb99934092e50b4320bb6242}{Symbol\+Group\+List\+Context}}, \mbox{\hyperlink{class_symbol_list_context_a4a06f0941b227a1ed2baa3bf8f1d61ea}{Symbol\+List\+Context}}, \mbox{\hyperlink{class_argument_list_context_aeba72b5aa63d93c1444448170b5c6612}{Argument\+List\+Context}}, \mbox{\hyperlink{class_all_members_list_context_a9ae93051de2e2e40707514c17e6f44f6}{All\+Members\+List\+Context}}, \mbox{\hyperlink{class_inherited_member_info_list_context_abe8fbdd088803a1973c3dcf2e62ec608}{Inherited\+Member\+Info\+List\+Context}}, \mbox{\hyperlink{class_member_group_list_context_abc6f782dc3c8e8ed377d151805b3abbe}{Member\+Group\+List\+Context}}, \mbox{\hyperlink{class_member_list_context_af9e965557d0f61f3634cca3ba13c9524}{Member\+List\+Context}}, \mbox{\hyperlink{class_inheritance_list_context_aaeb8bab49572f9c9d390a4e197764c90}{Inheritance\+List\+Context}}, \mbox{\hyperlink{class_example_list_context_a21d501486ce90f29c49aeaf48fa53676}{Example\+List\+Context}}, \mbox{\hyperlink{class_module_list_context_a43d8a58bc49f64bf7bdc0b68c03c83f2}{Module\+List\+Context}}, \mbox{\hyperlink{class_page_list_context_ac137e9b79bdc80c05ce4030c59c5057b}{Page\+List\+Context}}, \mbox{\hyperlink{class_file_list_context_a242d626e27147b2f7a07bc2c27417a4f}{File\+List\+Context}}, \mbox{\hyperlink{class_dir_list_context_a5232d5fdd257a935a949c5ed52681bcb}{Dir\+List\+Context}}, \mbox{\hyperlink{class_namespace_list_context_aa889694ea771d93d1094b33d46cb4208}{Namespace\+List\+Context}}, \mbox{\hyperlink{class_nesting_context_ab263d1be16f2bfe1e094166a31b4a912}{Nesting\+Context}}, \mbox{\hyperlink{class_class_inheritance_context_a7affeabd7e388c7049fc5ebf01916e3f}{Class\+Inheritance\+Context}}, \mbox{\hyperlink{class_class_list_context_acd2dd86b8a6463da6d360c87854cc512}{Class\+List\+Context}}, \mbox{\hyperlink{class_template_list_aeadbcac8450e3822ef3beec0983a2a55}{Template\+List}}, \mbox{\hyperlink{class_include_info_list_context_a205c178e2b416a8fc6779eca9aaddf33}{Include\+Info\+List\+Context}}, \mbox{\hyperlink{class_used_files_context_ae9f5d2b5f060ddf612f17054499b8bda}{Used\+Files\+Context}}, and \mbox{\hyperlink{class_generic_node_list_context_a7a6253477c70ef96f84c74a685bc8fdf}{Generic\+Node\+List\+Context}}.
+
+\mbox{\Hypertarget{class_template_list_intf_a0c53169c740c09dac47efc62bbe39674}\label{class_template_list_intf_a0c53169c740c09dac47efc62bbe39674}} 
+\index{TemplateListIntf@{TemplateListIntf}!release@{release}}
+\index{release@{release}!TemplateListIntf@{TemplateListIntf}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual int Template\+List\+Intf\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Decreases object\textquotesingle{}s reference count, destroy object if 0 
+
+Implemented in \mbox{\hyperlink{class_search_indices_context_aaa6a25a82368e6d94c4c552687f2af7b}{Search\+Indices\+Context}}, \mbox{\hyperlink{class_symbol_indices_context_a9912083441aa4e5f250ecbbc088cf275}{Symbol\+Indices\+Context}}, \mbox{\hyperlink{class_symbol_group_list_context_a109a389eaead2b786cf4e7d607652e67}{Symbol\+Group\+List\+Context}}, \mbox{\hyperlink{class_symbol_list_context_ab793c4223391f4cf6c04c0e35af654f6}{Symbol\+List\+Context}}, \mbox{\hyperlink{class_argument_list_context_a7e22b3f45a889508dba94e578c8661f2}{Argument\+List\+Context}}, \mbox{\hyperlink{class_all_members_list_context_a7b3690135afdc30e9e6f3e2dbb9265cc}{All\+Members\+List\+Context}}, \mbox{\hyperlink{class_inherited_member_info_list_context_a7a5276e7ac2ff51f66d07715f333cbe7}{Inherited\+Member\+Info\+List\+Context}}, \mbox{\hyperlink{class_member_group_list_context_afc46c3c1646126f13c4357c4800a5fe0}{Member\+Group\+List\+Context}}, \mbox{\hyperlink{class_member_list_context_ada9f462753c6425d2912cd4cb02d4285}{Member\+List\+Context}}, \mbox{\hyperlink{class_inheritance_list_context_a1ab111b2d69cdf8920529f5674dba6d9}{Inheritance\+List\+Context}}, \mbox{\hyperlink{class_example_list_context_a16f04119a9b9f8d728637e149791d708}{Example\+List\+Context}}, \mbox{\hyperlink{class_module_list_context_a43785b9c64132a617e587d0181a5f4ae}{Module\+List\+Context}}, \mbox{\hyperlink{class_page_list_context_aec001e0a201e3d1c168a67c80ffc8f06}{Page\+List\+Context}}, \mbox{\hyperlink{class_file_list_context_a757f759e1158e2c2859cb86b483fcd51}{File\+List\+Context}}, \mbox{\hyperlink{class_dir_list_context_a138217a1757cf808ffa7eeb9fb051855}{Dir\+List\+Context}}, \mbox{\hyperlink{class_namespace_list_context_a8395f4caf4473517e10e0375efe0e419}{Namespace\+List\+Context}}, \mbox{\hyperlink{class_nesting_context_a4f43acface7c31d6bb2aa3d9a9f2ea13}{Nesting\+Context}}, \mbox{\hyperlink{class_class_inheritance_context_a4570bbdc5944d0c453971ec822106f9e}{Class\+Inheritance\+Context}}, \mbox{\hyperlink{class_class_list_context_a4e60c2feddfa7d51bdebf0e412266b91}{Class\+List\+Context}}, \mbox{\hyperlink{class_template_list_aeff3b4d0cf58bc2bd92de00c51cde488}{Template\+List}}, \mbox{\hyperlink{class_include_info_list_context_a8791d673ef9ceb58785f1bf729d53ed1}{Include\+Info\+List\+Context}}, \mbox{\hyperlink{class_generic_node_list_context_a0aa1daa5e593ca8326d05a9028759750}{Generic\+Node\+List\+Context}}, and \mbox{\hyperlink{class_used_files_context_ad179f197716bee4f11482390962cb180}{Used\+Files\+Context}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/template.\+h\end{DoxyCompactItemize}

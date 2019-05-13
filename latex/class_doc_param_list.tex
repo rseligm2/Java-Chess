@@ -1,0 +1,90 @@
+\hypertarget{class_doc_param_list}{}\section{Doc\+Param\+List Class Reference}
+\label{class_doc_param_list}\index{DocParamList@{DocParamList}}
+
+
+{\ttfamily \#include $<$docparser.\+h$>$}
+
+Inheritance diagram for Doc\+Param\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_doc_param_list}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_param_list_a24cfde49c6be5a456c6ed4de83bd8beb}\label{class_doc_param_list_a24cfde49c6be5a456c6ed4de83bd8beb}} 
+{\bfseries Doc\+Param\+List} (\mbox{\hyperlink{class_doc_node}{Doc\+Node}} $\ast$\mbox{\hyperlink{class_doc_node_a73e8ad29a91cfceb0968eb00db71a23d}{parent}}, Doc\+Param\+Sect\+::\+Type t, Doc\+Param\+Sect\+::\+Direction d)
+\item 
+\mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} \mbox{\hyperlink{class_doc_param_list_a455e9aa8d93b2e62376ce37ba1dc1005}{kind}} () const
+\item 
+\mbox{\Hypertarget{class_doc_param_list_a607d79c8a9676bcb301813e5bd098752}\label{class_doc_param_list_a607d79c8a9676bcb301813e5bd098752}} 
+const \mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{class_doc_node}{Doc\+Node}} $>$ \& {\bfseries parameters} ()
+\item 
+\mbox{\Hypertarget{class_doc_param_list_a1de2caf710c83eeaaf431e2f9b7f22e5}\label{class_doc_param_list_a1de2caf710c83eeaaf431e2f9b7f22e5}} 
+const \mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{class_doc_node}{Doc\+Node}} $>$ \& {\bfseries param\+Types} ()
+\item 
+\mbox{\Hypertarget{class_doc_param_list_a6c795a79c11468fb1d8ce3dab41534f3}\label{class_doc_param_list_a6c795a79c11468fb1d8ce3dab41534f3}} 
+Doc\+Param\+Sect\+::\+Type {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{class_doc_param_list_ac45275b55efab9d6a60049f6d6dc7679}\label{class_doc_param_list_ac45275b55efab9d6a60049f6d6dc7679}} 
+Doc\+Param\+Sect\+::\+Direction {\bfseries direction} () const
+\item 
+\mbox{\Hypertarget{class_doc_param_list_a6b3e3e25859cc2d76b312b988c018d08}\label{class_doc_param_list_a6b3e3e25859cc2d76b312b988c018d08}} 
+void {\bfseries mark\+First} (bool b=T\+R\+UE)
+\item 
+\mbox{\Hypertarget{class_doc_param_list_a89fc37af294659364193e14680065668}\label{class_doc_param_list_a89fc37af294659364193e14680065668}} 
+void {\bfseries mark\+Last} (bool b=T\+R\+UE)
+\item 
+\mbox{\Hypertarget{class_doc_param_list_a60ad28c13ad20d76776a6bacd3b3a412}\label{class_doc_param_list_a60ad28c13ad20d76776a6bacd3b3a412}} 
+bool {\bfseries is\+First} () const
+\item 
+\mbox{\Hypertarget{class_doc_param_list_a96270035f29eb07f50ed8c0c2acda9d3}\label{class_doc_param_list_a96270035f29eb07f50ed8c0c2acda9d3}} 
+bool {\bfseries is\+Last} () const
+\item 
+void \mbox{\hyperlink{class_doc_param_list_a4d62b1b89bf07c2debb1d71523379b8c}{accept}} (\mbox{\hyperlink{class_doc_visitor}{Doc\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{class_doc_param_list_a6463538f06117c2e28860e7ff18ce7f7}\label{class_doc_param_list_a6463538f06117c2e28860e7ff18ce7f7}} 
+int {\bfseries parse} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&cmd\+Name)
+\item 
+\mbox{\Hypertarget{class_doc_param_list_a78df8f1bf6623c25c86cec9f6b1388d4}\label{class_doc_param_list_a78df8f1bf6623c25c86cec9f6b1388d4}} 
+int {\bfseries parse\+Xml} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&param\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Node representing a parameter list. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_doc_param_list_a4d62b1b89bf07c2debb1d71523379b8c}\label{class_doc_param_list_a4d62b1b89bf07c2debb1d71523379b8c}} 
+\index{DocParamList@{DocParamList}!accept@{accept}}
+\index{accept@{accept}!DocParamList@{DocParamList}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily void Doc\+Param\+List\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_doc_visitor}{Doc\+Visitor}} $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Acceptor function for node visitors. Part of the visitor pattern. 
+\begin{DoxyParams}{Parameters}
+{\em v} & Abstract visitor. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_doc_node_a5303a550cbe6395663bf9b9dad28cbf1}{Doc\+Node}}.
+
+\mbox{\Hypertarget{class_doc_param_list_a455e9aa8d93b2e62376ce37ba1dc1005}\label{class_doc_param_list_a455e9aa8d93b2e62376ce37ba1dc1005}} 
+\index{DocParamList@{DocParamList}!kind@{kind}}
+\index{kind@{kind}!DocParamList@{DocParamList}}
+\subsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} Doc\+Param\+List\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the kind of node. Provides runtime type information 
+
+Implements \mbox{\hyperlink{class_doc_node_a108ffd214a72ba6e93dac084a8f58049}{Doc\+Node}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/docparser.\+h\item 
+doxygen/src/docparser.\+cpp\end{DoxyCompactItemize}

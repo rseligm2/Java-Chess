@@ -1,0 +1,256 @@
+\hypertarget{types_8h}{}\section{doxygen/src/types.h File Reference}
+\label{types_8h}\index{doxygen/src/types.h@{doxygen/src/types.h}}
+
+
+This file contains a number of basic enums and types.  
+
+
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$qcstring.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_grouping}{Grouping}}
+\item 
+struct \mbox{\hyperlink{struct_list_item_info}{List\+Item\+Info}}
+\item 
+class \mbox{\hyperlink{class_local_toc}{Local\+Toc}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection}} \{ {\bfseries Public}, 
+{\bfseries Protected}, 
+{\bfseries Private}, 
+{\bfseries Package}
+ \}
+\item 
+enum \mbox{\hyperlink{types_8h_ab16236bdd10ddf4d73a9847350f0017e}{Specifier}} \{ {\bfseries Normal}, 
+{\bfseries Virtual}, 
+{\bfseries Pure}
+ \}
+\item 
+enum \mbox{\hyperlink{types_8h_a0872178db42722c310fe6117189ed441}{Method\+Types}} \{ \newline
+{\bfseries Method}, 
+{\bfseries Signal}, 
+{\bfseries Slot}, 
+{\bfseries D\+C\+OP}, 
+\newline
+{\bfseries Property}, 
+{\bfseries Event}
+ \}
+\item 
+enum \mbox{\hyperlink{types_8h_aa370e9ca1d3ff266cab92689bcc37d9e}{Relates\+Type}} \{ {\bfseries Simple}, 
+{\bfseries Duplicate}, 
+{\bfseries Member\+Of}
+ \}
+\item 
+enum \mbox{\hyperlink{types_8h_a9d625fe894d9313ec78df1d78553f32e}{Relationship}} \{ {\bfseries Member}, 
+{\bfseries Related}, 
+{\bfseries Foreign}
+ \}
+\item 
+enum \mbox{\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\+Lang\+Ext}} \{ \newline
+{\bfseries Src\+Lang\+Ext\+\_\+\+Unknown} = 0x00000, 
+{\bfseries Src\+Lang\+Ext\+\_\+\+I\+DL} = 0x00008, 
+{\bfseries Src\+Lang\+Ext\+\_\+\+Java} = 0x00010, 
+{\bfseries Src\+Lang\+Ext\+\_\+\+C\+Sharp} = 0x00020, 
+\newline
+{\bfseries Src\+Lang\+Ext\+\_\+D} = 0x00040, 
+{\bfseries Src\+Lang\+Ext\+\_\+\+P\+HP} = 0x00080, 
+{\bfseries Src\+Lang\+Ext\+\_\+\+ObjC} = 0x00100, 
+{\bfseries Src\+Lang\+Ext\+\_\+\+Cpp} = 0x00200, 
+\newline
+{\bfseries Src\+Lang\+Ext\+\_\+\+JS} = 0x00400, 
+{\bfseries Src\+Lang\+Ext\+\_\+\+Python} = 0x00800, 
+{\bfseries Src\+Lang\+Ext\+\_\+\+Fortran} = 0x01000, 
+{\bfseries Src\+Lang\+Ext\+\_\+\+V\+H\+DL} = 0x02000, 
+\newline
+{\bfseries Src\+Lang\+Ext\+\_\+\+X\+ML} = 0x04000, 
+{\bfseries Src\+Lang\+Ext\+\_\+\+Tcl} = 0x08000, 
+{\bfseries Src\+Lang\+Ext\+\_\+\+Markdown} = 0x10000, 
+{\bfseries Src\+Lang\+Ext\+\_\+\+S\+QL} = 0x20000, 
+\newline
+{\bfseries Src\+Lang\+Ext\+\_\+\+Slice} = 0x40000
+ \}
+\item 
+\mbox{\Hypertarget{types_8h_abe8ad5992f8938a28f918f51b199aa19}\label{types_8h_abe8ad5992f8938a28f918f51b199aa19}} 
+enum {\bfseries Member\+List\+Type} \{ \newline
+{\bfseries Member\+List\+Type\+\_\+private\+Lists} = 0x0800, 
+{\bfseries Member\+List\+Type\+\_\+detailed\+Lists} = 0x1000, 
+{\bfseries Member\+List\+Type\+\_\+declaration\+Lists} = 0x2000, 
+{\bfseries Member\+List\+Type\+\_\+documentation\+Lists} = 0x4000, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+pub\+Methods} = 0, 
+{\bfseries Member\+List\+Type\+\_\+pro\+Methods} = 1, 
+{\bfseries Member\+List\+Type\+\_\+pac\+Methods} = 2, 
+{\bfseries Member\+List\+Type\+\_\+pri\+Methods} = 3 + Member\+List\+Type\+\_\+private\+Lists, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+pub\+Static\+Methods} = 4, 
+{\bfseries Member\+List\+Type\+\_\+pro\+Static\+Methods} = 5, 
+{\bfseries Member\+List\+Type\+\_\+pac\+Static\+Methods} = 6, 
+{\bfseries Member\+List\+Type\+\_\+pri\+Static\+Methods} = 7 + Member\+List\+Type\+\_\+private\+Lists, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+pub\+Slots} = 8, 
+{\bfseries Member\+List\+Type\+\_\+pro\+Slots} = 9, 
+{\bfseries Member\+List\+Type\+\_\+pri\+Slots} = 10 + Member\+List\+Type\+\_\+private\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+pub\+Attribs} = 11, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+pro\+Attribs} = 12, 
+{\bfseries Member\+List\+Type\+\_\+pac\+Attribs} = 13, 
+{\bfseries Member\+List\+Type\+\_\+pri\+Attribs} = 14 + Member\+List\+Type\+\_\+private\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+pub\+Static\+Attribs} = 15, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+pro\+Static\+Attribs} = 16, 
+{\bfseries Member\+List\+Type\+\_\+pac\+Static\+Attribs} = 17, 
+{\bfseries Member\+List\+Type\+\_\+pri\+Static\+Attribs} = 18 + Member\+List\+Type\+\_\+private\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+pub\+Types} = 19, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+pro\+Types} = 20, 
+{\bfseries Member\+List\+Type\+\_\+pac\+Types} = 21, 
+{\bfseries Member\+List\+Type\+\_\+pri\+Types} = 22 + Member\+List\+Type\+\_\+private\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+related} = 23, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+signals} = 24, 
+{\bfseries Member\+List\+Type\+\_\+friends} = 25, 
+{\bfseries Member\+List\+Type\+\_\+dcop\+Methods} = 26, 
+{\bfseries Member\+List\+Type\+\_\+properties} = 27, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+events} = 28, 
+{\bfseries Member\+List\+Type\+\_\+typedef\+Members} = 29 + Member\+List\+Type\+\_\+detailed\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+enum\+Members} = 30 + Member\+List\+Type\+\_\+detailed\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+enum\+Val\+Members} = 31 + Member\+List\+Type\+\_\+detailed\+Lists, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+function\+Members} = 32 + Member\+List\+Type\+\_\+detailed\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+related\+Members} = 33 + Member\+List\+Type\+\_\+detailed\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+variable\+Members} = 34 + Member\+List\+Type\+\_\+detailed\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+property\+Members} = 35 + Member\+List\+Type\+\_\+detailed\+Lists, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+event\+Members} = 36 + Member\+List\+Type\+\_\+detailed\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+constructors} = 37 + Member\+List\+Type\+\_\+detailed\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+all\+Members\+List} = 38, 
+{\bfseries Member\+List\+Type\+\_\+dec\+Define\+Members} = 39 + Member\+List\+Type\+\_\+declaration\+Lists, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+dec\+Proto\+Members} = 40 + Member\+List\+Type\+\_\+declaration\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+dec\+Typedef\+Members} = 41 + Member\+List\+Type\+\_\+declaration\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+dec\+Enum\+Members} = 42 + Member\+List\+Type\+\_\+declaration\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+dec\+Func\+Members} = 43 + Member\+List\+Type\+\_\+declaration\+Lists, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+dec\+Var\+Members} = 44 + Member\+List\+Type\+\_\+declaration\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+dec\+Enum\+Val\+Members} = 45 + Member\+List\+Type\+\_\+declaration\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+dec\+Pub\+Slot\+Members} = 46 + Member\+List\+Type\+\_\+declaration\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+dec\+Pro\+Slot\+Members} = 47 + Member\+List\+Type\+\_\+declaration\+Lists, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+dec\+Pri\+Slot\+Members} = 48 + Member\+List\+Type\+\_\+declaration\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+dec\+Signal\+Members} = 49 + Member\+List\+Type\+\_\+declaration\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+dec\+Event\+Members} = 50 + Member\+List\+Type\+\_\+declaration\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+dec\+Friend\+Members} = 51 + Member\+List\+Type\+\_\+declaration\+Lists, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+dec\+Prop\+Members} = 52 + Member\+List\+Type\+\_\+declaration\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+doc\+Define\+Members} = 53 + Member\+List\+Type\+\_\+documentation\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+doc\+Proto\+Members} = 54 + Member\+List\+Type\+\_\+documentation\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+doc\+Typedef\+Members} = 55 + Member\+List\+Type\+\_\+documentation\+Lists, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+doc\+Enum\+Members} = 56 + Member\+List\+Type\+\_\+documentation\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+doc\+Func\+Members} = 57 + Member\+List\+Type\+\_\+documentation\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+doc\+Var\+Members} = 58 + Member\+List\+Type\+\_\+documentation\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+doc\+Enum\+Val\+Members} = 59 + Member\+List\+Type\+\_\+documentation\+Lists, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+doc\+Pub\+Slot\+Members} = 60 + Member\+List\+Type\+\_\+documentation\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+doc\+Pro\+Slot\+Members} = 61 + Member\+List\+Type\+\_\+documentation\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+doc\+Pri\+Slot\+Members} = 62 + Member\+List\+Type\+\_\+documentation\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+doc\+Signal\+Members} = 63 + Member\+List\+Type\+\_\+documentation\+Lists, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+doc\+Event\+Members} = 64 + Member\+List\+Type\+\_\+documentation\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+doc\+Friend\+Members} = 65 + Member\+List\+Type\+\_\+documentation\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+doc\+Prop\+Members} = 66 + Member\+List\+Type\+\_\+documentation\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+redefined\+By} = 67, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+enum\+Fields} = 68, 
+{\bfseries Member\+List\+Type\+\_\+member\+Group} = 69, 
+{\bfseries Member\+List\+Type\+\_\+interfaces} = 70, 
+{\bfseries Member\+List\+Type\+\_\+interface\+Members} = 71 + Member\+List\+Type\+\_\+detailed\+Lists, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+services} = 72, 
+{\bfseries Member\+List\+Type\+\_\+service\+Members} = 73 + Member\+List\+Type\+\_\+detailed\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+dec\+Sequence\+Members} = 74 + Member\+List\+Type\+\_\+declaration\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+doc\+Sequence\+Members} = 75 + Member\+List\+Type\+\_\+documentation\+Lists, 
+\newline
+{\bfseries Member\+List\+Type\+\_\+dec\+Dictionary\+Members} = 76 + Member\+List\+Type\+\_\+declaration\+Lists, 
+{\bfseries Member\+List\+Type\+\_\+doc\+Dictionary\+Members} = 77 + Member\+List\+Type\+\_\+documentation\+Lists
+ \}
+\item 
+\mbox{\Hypertarget{types_8h_a63e3de542c5d38de617ab78c8c8f5a41}\label{types_8h_a63e3de542c5d38de617ab78c8c8f5a41}} 
+enum {\bfseries Member\+Type} \{ \newline
+{\bfseries Member\+Type\+\_\+\+Define}, 
+{\bfseries Member\+Type\+\_\+\+Function}, 
+{\bfseries Member\+Type\+\_\+\+Variable}, 
+{\bfseries Member\+Type\+\_\+\+Typedef}, 
+\newline
+{\bfseries Member\+Type\+\_\+\+Enumeration}, 
+{\bfseries Member\+Type\+\_\+\+Enum\+Value}, 
+{\bfseries Member\+Type\+\_\+\+Signal}, 
+{\bfseries Member\+Type\+\_\+\+Slot}, 
+\newline
+{\bfseries Member\+Type\+\_\+\+Friend}, 
+{\bfseries Member\+Type\+\_\+\+D\+C\+OP}, 
+{\bfseries Member\+Type\+\_\+\+Property}, 
+{\bfseries Member\+Type\+\_\+\+Event}, 
+\newline
+{\bfseries Member\+Type\+\_\+\+Interface}, 
+{\bfseries Member\+Type\+\_\+\+Service}, 
+{\bfseries Member\+Type\+\_\+\+Sequence}, 
+{\bfseries Member\+Type\+\_\+\+Dictionary}
+ \}
+\item 
+\mbox{\Hypertarget{types_8h_ad3f2a8c13ceee9c0aaeabf930dd88266}\label{types_8h_ad3f2a8c13ceee9c0aaeabf930dd88266}} 
+enum {\bfseries Fortran\+Format} \{ {\bfseries Fortran\+Format\+\_\+\+Unknown}, 
+{\bfseries Fortran\+Format\+\_\+\+Free}, 
+{\bfseries Fortran\+Format\+\_\+\+Fixed}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains a number of basic enums and types. 
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{types_8h_a0872178db42722c310fe6117189ed441}\label{types_8h_a0872178db42722c310fe6117189ed441}} 
+\index{types.h@{types.h}!MethodTypes@{MethodTypes}}
+\index{MethodTypes@{MethodTypes}!types.h@{types.h}}
+\subsubsection{\texorpdfstring{MethodTypes}{MethodTypes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{types_8h_a0872178db42722c310fe6117189ed441}{Method\+Types}}}
+
+Kind of method \mbox{\Hypertarget{types_8h_a90e352184df58cd09455fe9996cd4ded}\label{types_8h_a90e352184df58cd09455fe9996cd4ded}} 
+\index{types.h@{types.h}!Protection@{Protection}}
+\index{Protection@{Protection}!types.h@{types.h}}
+\subsubsection{\texorpdfstring{Protection}{Protection}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection}}}
+
+Protection level of members \mbox{\Hypertarget{types_8h_aa370e9ca1d3ff266cab92689bcc37d9e}\label{types_8h_aa370e9ca1d3ff266cab92689bcc37d9e}} 
+\index{types.h@{types.h}!RelatesType@{RelatesType}}
+\index{RelatesType@{RelatesType}!types.h@{types.h}}
+\subsubsection{\texorpdfstring{RelatesType}{RelatesType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{types_8h_aa370e9ca1d3ff266cab92689bcc37d9e}{Relates\+Type}}}
+
+Type of member relation \mbox{\Hypertarget{types_8h_a9d625fe894d9313ec78df1d78553f32e}\label{types_8h_a9d625fe894d9313ec78df1d78553f32e}} 
+\index{types.h@{types.h}!Relationship@{Relationship}}
+\index{Relationship@{Relationship}!types.h@{types.h}}
+\subsubsection{\texorpdfstring{Relationship}{Relationship}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{types_8h_a9d625fe894d9313ec78df1d78553f32e}{Relationship}}}
+
+Kind of member relationship \mbox{\Hypertarget{types_8h_ab16236bdd10ddf4d73a9847350f0017e}\label{types_8h_ab16236bdd10ddf4d73a9847350f0017e}} 
+\index{types.h@{types.h}!Specifier@{Specifier}}
+\index{Specifier@{Specifier}!types.h@{types.h}}
+\subsubsection{\texorpdfstring{Specifier}{Specifier}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{types_8h_ab16236bdd10ddf4d73a9847350f0017e}{Specifier}}}
+
+Virtualness of a member. \mbox{\Hypertarget{types_8h_a9974623ce72fc23df5d64426b9178bf2}\label{types_8h_a9974623ce72fc23df5d64426b9178bf2}} 
+\index{types.h@{types.h}!SrcLangExt@{SrcLangExt}}
+\index{SrcLangExt@{SrcLangExt}!types.h@{types.h}}
+\subsubsection{\texorpdfstring{SrcLangExt}{SrcLangExt}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\+Lang\+Ext}}}
+
+Language as given by extension 

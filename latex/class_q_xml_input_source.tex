@@ -1,0 +1,81 @@
+\hypertarget{class_q_xml_input_source}{}\section{Q\+Xml\+Input\+Source Class Reference}
+\label{class_q_xml_input_source}\index{QXmlInputSource@{QXmlInputSource}}
+
+
+The \mbox{\hyperlink{class_q_xml_input_source}{Q\+Xml\+Input\+Source}} class is the source where X\+ML data is read from.  
+
+
+
+
+{\ttfamily \#include $<$qxml.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_xml_input_source_ae01ad9dbd2e6d950fe4d43e7f7ba5e80}{Q\+Xml\+Input\+Source}} ()
+\item 
+\mbox{\hyperlink{class_q_xml_input_source_a301b2d54ab84af500ac65257de94f23d}{Q\+Xml\+Input\+Source}} (\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \&stream)
+\item 
+\mbox{\hyperlink{class_q_xml_input_source_af31832f657ee461a8fbe9b9f9227c218}{Q\+Xml\+Input\+Source}} (\mbox{\hyperlink{class_q_file}{Q\+File}} \&file)
+\item 
+virtual \mbox{\hyperlink{class_q_xml_input_source_ac488a4e4c15218584c36c54bb4d4d78b}{$\sim$\+Q\+Xml\+Input\+Source}} ()
+\item 
+virtual const \mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_xml_input_source_a1e7d5502610edbceed00152d1787234f}{data}} () const
+\item 
+virtual void \mbox{\hyperlink{class_q_xml_input_source_a3ecfd199af8d72d33a9ef7b919794923}{set\+Data}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&d)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_q_xml_input_source}{Q\+Xml\+Input\+Source}} class is the source where X\+ML data is read from. 
+
+\textbackslash{}module X\+ML
+
+All subclasses of \mbox{\hyperlink{class_q_xml_reader}{Q\+Xml\+Reader}} read the input from this class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_xml_input_source_ae01ad9dbd2e6d950fe4d43e7f7ba5e80}\label{class_q_xml_input_source_ae01ad9dbd2e6d950fe4d43e7f7ba5e80}} 
+\index{QXmlInputSource@{QXmlInputSource}!QXmlInputSource@{QXmlInputSource}}
+\index{QXmlInputSource@{QXmlInputSource}!QXmlInputSource@{QXmlInputSource}}
+\subsubsection{\texorpdfstring{QXmlInputSource()}{QXmlInputSource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Q\+Xml\+Input\+Source\+::\+Q\+Xml\+Input\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a input source which contains no data. \mbox{\Hypertarget{class_q_xml_input_source_a301b2d54ab84af500ac65257de94f23d}\label{class_q_xml_input_source_a301b2d54ab84af500ac65257de94f23d}} 
+\index{QXmlInputSource@{QXmlInputSource}!QXmlInputSource@{QXmlInputSource}}
+\index{QXmlInputSource@{QXmlInputSource}!QXmlInputSource@{QXmlInputSource}}
+\subsubsection{\texorpdfstring{QXmlInputSource()}{QXmlInputSource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Q\+Xml\+Input\+Source\+::\+Q\+Xml\+Input\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \&}]{stream }\end{DoxyParamCaption})}
+
+Constructs a input source and get the data from the text stream. \mbox{\Hypertarget{class_q_xml_input_source_af31832f657ee461a8fbe9b9f9227c218}\label{class_q_xml_input_source_af31832f657ee461a8fbe9b9f9227c218}} 
+\index{QXmlInputSource@{QXmlInputSource}!QXmlInputSource@{QXmlInputSource}}
+\index{QXmlInputSource@{QXmlInputSource}!QXmlInputSource@{QXmlInputSource}}
+\subsubsection{\texorpdfstring{QXmlInputSource()}{QXmlInputSource()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Q\+Xml\+Input\+Source\+::\+Q\+Xml\+Input\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_file}{Q\+File}} \&}]{file }\end{DoxyParamCaption})}
+
+Constructs a input source and get the data from a file. If the file cannot be read the input source is empty. \mbox{\Hypertarget{class_q_xml_input_source_ac488a4e4c15218584c36c54bb4d4d78b}\label{class_q_xml_input_source_ac488a4e4c15218584c36c54bb4d4d78b}} 
+\index{QXmlInputSource@{QXmlInputSource}!````~QXmlInputSource@{$\sim$QXmlInputSource}}
+\index{````~QXmlInputSource@{$\sim$QXmlInputSource}!QXmlInputSource@{QXmlInputSource}}
+\subsubsection{\texorpdfstring{$\sim$QXmlInputSource()}{~QXmlInputSource()}}
+{\footnotesize\ttfamily Q\+Xml\+Input\+Source\+::$\sim$\+Q\+Xml\+Input\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_xml_input_source_a1e7d5502610edbceed00152d1787234f}\label{class_q_xml_input_source_a1e7d5502610edbceed00152d1787234f}} 
+\index{QXmlInputSource@{QXmlInputSource}!data@{data}}
+\index{data@{data}!QXmlInputSource@{QXmlInputSource}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+Xml\+Input\+Source\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns all the data this input source contains. \mbox{\Hypertarget{class_q_xml_input_source_a3ecfd199af8d72d33a9ef7b919794923}\label{class_q_xml_input_source_a3ecfd199af8d72d33a9ef7b919794923}} 
+\index{QXmlInputSource@{QXmlInputSource}!setData@{setData}}
+\index{setData@{setData}!QXmlInputSource@{QXmlInputSource}}
+\subsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily void Q\+Xml\+Input\+Source\+::set\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{dat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the data of the input source to {\itshape dat}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qxml.\+h\item 
+doxygen/qtools/qxml.\+cpp\end{DoxyCompactItemize}

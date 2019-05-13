@@ -1,0 +1,112 @@
+\hypertarget{portable_8h}{}\section{doxygen/src/portable.h File Reference}
+\label{portable_8h}\index{doxygen/src/portable.h@{doxygen/src/portable.h}}
+
+
+Portable versions of functions that are platform dependent.  
+
+
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$qglobal.\+h$>$}\newline
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{portable_8h_a25423a5b429a3ee0610315d93938bd0b}\label{portable_8h_a25423a5b429a3ee0610315d93938bd0b}} 
+typedef off\+\_\+t {\bfseries portable\+\_\+off\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{portable_8h_ab1446c4224056df1eaff8f4123f55fff}{portable\+\_\+system}} (const char $\ast$command, const char $\ast$args, bool command\+Has\+Console=T\+R\+UE)
+\item 
+\mbox{\Hypertarget{portable_8h_a59f752704c51b3369512e011cb37e821}\label{portable_8h_a59f752704c51b3369512e011cb37e821}} 
+uint {\bfseries portable\+\_\+pid} ()
+\item 
+\mbox{\Hypertarget{portable_8h_a52392b2bf51d0780fc3a7f0e62ab66fa}\label{portable_8h_a52392b2bf51d0780fc3a7f0e62ab66fa}} 
+const char $\ast$ {\bfseries portable\+\_\+getenv} (const char $\ast$variable)
+\item 
+\mbox{\Hypertarget{portable_8h_ae4248edc1676c7fee1b27b35b1a02167}\label{portable_8h_ae4248edc1676c7fee1b27b35b1a02167}} 
+void {\bfseries portable\+\_\+setenv} (const char $\ast$variable, const char $\ast$value)
+\item 
+\mbox{\Hypertarget{portable_8h_a21d2e3a5826400ea3fb385de160a4273}\label{portable_8h_a21d2e3a5826400ea3fb385de160a4273}} 
+void {\bfseries portable\+\_\+unsetenv} (const char $\ast$variable)
+\item 
+\mbox{\Hypertarget{portable_8h_aacd3bfcb8cf704f1a88ef85378f2e3ba}\label{portable_8h_aacd3bfcb8cf704f1a88ef85378f2e3ba}} 
+portable\+\_\+off\+\_\+t {\bfseries portable\+\_\+fseek} (F\+I\+LE $\ast$f, portable\+\_\+off\+\_\+t offset, int whence)
+\item 
+\mbox{\Hypertarget{portable_8h_af7bd350e4ac4a9083df7752b95b3d7b4}\label{portable_8h_af7bd350e4ac4a9083df7752b95b3d7b4}} 
+portable\+\_\+off\+\_\+t {\bfseries portable\+\_\+ftell} (F\+I\+LE $\ast$f)
+\item 
+\mbox{\Hypertarget{portable_8h_a818dff4c8adef7d6c838c5bff8230a75}\label{portable_8h_a818dff4c8adef7d6c838c5bff8230a75}} 
+F\+I\+LE $\ast$ {\bfseries portable\+\_\+fopen} (const char $\ast$file\+Name, const char $\ast$mode)
+\item 
+\mbox{\Hypertarget{portable_8h_a7611f2d585509aaf8b434b416f7f5cba}\label{portable_8h_a7611f2d585509aaf8b434b416f7f5cba}} 
+char {\bfseries portable\+\_\+path\+Separator} ()
+\item 
+\mbox{\Hypertarget{portable_8h_a5eb53a3f72467aaf6dd8814e3650a2b2}\label{portable_8h_a5eb53a3f72467aaf6dd8814e3650a2b2}} 
+char {\bfseries portable\+\_\+path\+List\+Separator} ()
+\item 
+\mbox{\Hypertarget{portable_8h_adb209fd072a146757a74de224438750f}\label{portable_8h_adb209fd072a146757a74de224438750f}} 
+const char $\ast$ {\bfseries portable\+\_\+ghost\+Script\+Command} ()
+\item 
+\mbox{\Hypertarget{portable_8h_a311fb005a4ff8025f7b2fbf121cbdee3}\label{portable_8h_a311fb005a4ff8025f7b2fbf121cbdee3}} 
+const char $\ast$ {\bfseries portable\+\_\+command\+Extension} ()
+\item 
+\mbox{\Hypertarget{portable_8h_a4f160f0e710170d2550709aae5caf49b}\label{portable_8h_a4f160f0e710170d2550709aae5caf49b}} 
+bool {\bfseries portable\+\_\+file\+System\+Is\+Case\+Sensitive} ()
+\item 
+\mbox{\Hypertarget{portable_8h_ad7e56e618c52b0ab659c1b16b81cf4b4}\label{portable_8h_ad7e56e618c52b0ab659c1b16b81cf4b4}} 
+F\+I\+LE $\ast$ {\bfseries portable\+\_\+popen} (const char $\ast$name, const char $\ast$type)
+\item 
+\mbox{\Hypertarget{portable_8h_a5c0b9bfa064283bf7495f0530cebeeba}\label{portable_8h_a5c0b9bfa064283bf7495f0530cebeeba}} 
+int {\bfseries portable\+\_\+pclose} (F\+I\+LE $\ast$stream)
+\item 
+\mbox{\Hypertarget{portable_8h_a654a634351c19360132a57b4e7745ef9}\label{portable_8h_a654a634351c19360132a57b4e7745ef9}} 
+void {\bfseries portable\+\_\+sys\+Timer\+Start} ()
+\item 
+\mbox{\Hypertarget{portable_8h_a29ee4e275e02c776c5d89ee0c9855b16}\label{portable_8h_a29ee4e275e02c776c5d89ee0c9855b16}} 
+void {\bfseries portable\+\_\+sys\+Timer\+Stop} ()
+\item 
+\mbox{\Hypertarget{portable_8h_a4756803d96f0305e9c6c9e49543bd590}\label{portable_8h_a4756803d96f0305e9c6c9e49543bd590}} 
+double {\bfseries portable\+\_\+get\+Sys\+Elapsed\+Time} ()
+\item 
+\mbox{\Hypertarget{portable_8h_a64953440ea1cc6f46222c8f854dbe5f0}\label{portable_8h_a64953440ea1cc6f46222c8f854dbe5f0}} 
+void {\bfseries portable\+\_\+sleep} (int ms)
+\item 
+\mbox{\Hypertarget{portable_8h_a77da33ed6eafa47f239efc6ba65dec33}\label{portable_8h_a77da33ed6eafa47f239efc6ba65dec33}} 
+bool {\bfseries portable\+\_\+is\+Absolute\+Path} (const char $\ast$file\+Name)
+\item 
+void \mbox{\hyperlink{portable_8h_aa8be69e49d781ee6ead715533d40ffc5}{portable\+\_\+correct\+\_\+path}} (void)
+\item 
+\mbox{\Hypertarget{portable_8h_a265cc0f73ee132a66ce0669949359399}\label{portable_8h_a265cc0f73ee132a66ce0669949359399}} 
+void $\ast$ {\bfseries portable\+\_\+iconv\+\_\+open} (const char $\ast$tocode, const char $\ast$fromcode)
+\item 
+\mbox{\Hypertarget{portable_8h_a8ca77f1a4e1ca459169752103338ab0c}\label{portable_8h_a8ca77f1a4e1ca459169752103338ab0c}} 
+size\+\_\+t {\bfseries portable\+\_\+iconv} (void $\ast$cd, char $\ast$$\ast$inbuf, size\+\_\+t $\ast$inbytesleft, char $\ast$$\ast$outbuf, size\+\_\+t $\ast$outbytesleft)
+\item 
+\mbox{\Hypertarget{portable_8h_a3f98144680118aada1a93d2d4ba6173b}\label{portable_8h_a3f98144680118aada1a93d2d4ba6173b}} 
+int {\bfseries portable\+\_\+iconv\+\_\+close} (void $\ast$cd)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Portable versions of functions that are platform dependent. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{portable_8h_aa8be69e49d781ee6ead715533d40ffc5}\label{portable_8h_aa8be69e49d781ee6ead715533d40ffc5}} 
+\index{portable.h@{portable.h}!portable\_correct\_path@{portable\_correct\_path}}
+\index{portable\_correct\_path@{portable\_correct\_path}!portable.h@{portable.h}}
+\subsubsection{\texorpdfstring{portable\_correct\_path()}{portable\_correct\_path()}}
+{\footnotesize\ttfamily void portable\+\_\+correct\+\_\+path (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Correct a possible wrong P\+A\+TH variable
+
+This routine was inspired by the cause for bug 766059 was that in the Windows path there were forward slahes. \mbox{\Hypertarget{portable_8h_ab1446c4224056df1eaff8f4123f55fff}\label{portable_8h_ab1446c4224056df1eaff8f4123f55fff}} 
+\index{portable.h@{portable.h}!portable\_system@{portable\_system}}
+\index{portable\_system@{portable\_system}!portable.h@{portable.h}}
+\subsubsection{\texorpdfstring{portable\_system()}{portable\_system()}}
+{\footnotesize\ttfamily int portable\+\_\+system (\begin{DoxyParamCaption}\item[{const char $\ast$}]{command,  }\item[{const char $\ast$}]{args,  }\item[{bool}]{command\+Has\+Console = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+taken from the system() manpage on my Linux box

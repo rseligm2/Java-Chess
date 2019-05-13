@@ -1,0 +1,144 @@
+\hypertarget{class_section_handler}{}\section{Section\+Handler Class Reference}
+\label{class_section_handler}\index{SectionHandler@{SectionHandler}}
+Inheritance diagram for Section\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.461187cm]{class_section_handler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_section_handler_a374859f7b4173fc7235f44a7693bbc84}\label{class_section_handler_a374859f7b4173fc7235f44a7693bbc84}} 
+virtual void {\bfseries start\+Member} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_section_handler_a73659b9a7ce539c23823063f4e9c45c7}\label{class_section_handler_a73659b9a7ce539c23823063f4e9c45c7}} 
+virtual void {\bfseries start\+Header} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_section_handler_a4bda4ed37671bca76ea6daaee5e547e7}\label{class_section_handler_a4bda4ed37671bca76ea6daaee5e547e7}} 
+virtual void {\bfseries start\+Section} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_section_handler_a5e29cb4d5c08687775be196114fc4e77}\label{class_section_handler_a5e29cb4d5c08687775be196114fc4e77}} 
+virtual void {\bfseries start\+Description} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_section_handler_a0a5405315b9ae91a7f69cb1b20cd3432}\label{class_section_handler_a0a5405315b9ae91a7f69cb1b20cd3432}} 
+virtual void {\bfseries end\+Section} ()
+\item 
+\mbox{\Hypertarget{class_section_handler_ae04c5b7b1759156aa51ac0e6a040b86d}\label{class_section_handler_ae04c5b7b1759156aa51ac0e6a040b86d}} 
+virtual void {\bfseries end\+Header} ()
+\item 
+\mbox{\Hypertarget{class_section_handler_a5cf144be479a68bd12a6ccfc3d102583}\label{class_section_handler_a5cf144be479a68bd12a6ccfc3d102583}} 
+{\bfseries Section\+Handler} (\mbox{\hyperlink{class_i_base_handler}{I\+Base\+Handler}} $\ast$parent)
+\item 
+virtual const \mbox{\hyperlink{class_i_string}{I\+String}} $\ast$ \mbox{\hyperlink{class_section_handler_a6f0ce72df9dc0d56ba8b20fb6684fdc9}{kind\+String}} () const
+\item 
+virtual \mbox{\hyperlink{class_i_section_af768cbfe7056fadbd0a67d26d0ef84e5}{Section\+Kind}} \mbox{\hyperlink{class_section_handler_a09b0046032fbbb4189c2d5dd016475b8}{kind}} () const
+\item 
+\mbox{\hyperlink{class_i_doc_root}{I\+Doc\+Root}} $\ast$ \mbox{\hyperlink{class_section_handler_a447ecf6bce811a3f12be5e90510aa880}{description}} () const
+\item 
+virtual \mbox{\hyperlink{class_i_member_iterator}{I\+Member\+Iterator}} $\ast$ \mbox{\hyperlink{class_section_handler_a6e8854663f76206dfa65428e0bdc5b51}{members}} () const
+\item 
+virtual bool \mbox{\hyperlink{class_section_handler_a35d5f2bf1c1d2419934e50e370bd5088}{is\+Static}} () const
+\item 
+virtual bool \mbox{\hyperlink{class_section_handler_aa6e571779cffbb8337fcbc041d486f63}{is\+Public}} () const
+\item 
+virtual bool \mbox{\hyperlink{class_section_handler_a60e5737210382b9496d9d012cbd56a13}{is\+Protected}} () const
+\item 
+virtual bool \mbox{\hyperlink{class_section_handler_a9539ef23b026485059539a38f77ba63a}{is\+Private}} () const
+\item 
+\mbox{\Hypertarget{class_section_handler_a22632556a3492a9423fccb43d42b95e6}\label{class_section_handler_a22632556a3492a9423fccb43d42b95e6}} 
+void {\bfseries initialize} (\mbox{\hyperlink{class_compound_handler}{Compound\+Handler}} $\ast$c)
+\item 
+\mbox{\Hypertarget{class_section_handler_a7822fc08b5fe89a962300880c0826d3c}\label{class_section_handler_a7822fc08b5fe89a962300880c0826d3c}} 
+virtual const \mbox{\hyperlink{class_i_string}{I\+String}} $\ast$ {\bfseries header} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_section_handler_a447ecf6bce811a3f12be5e90510aa880}\label{class_section_handler_a447ecf6bce811a3f12be5e90510aa880}} 
+\index{SectionHandler@{SectionHandler}!description@{description}}
+\index{description@{description}!SectionHandler@{SectionHandler}}
+\subsubsection{\texorpdfstring{description()}{description()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_doc_root}{I\+Doc\+Root}} $\ast$ Section\+Handler\+::description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the description attached to this section (for user defined sections, also known as member groups). 
+
+Implements \mbox{\hyperlink{class_i_section_a7ebb511c977fa668611481272c97e23d}{I\+Section}}.
+
+\mbox{\Hypertarget{class_section_handler_a9539ef23b026485059539a38f77ba63a}\label{class_section_handler_a9539ef23b026485059539a38f77ba63a}} 
+\index{SectionHandler@{SectionHandler}!isPrivate@{isPrivate}}
+\index{isPrivate@{isPrivate}!SectionHandler@{SectionHandler}}
+\subsubsection{\texorpdfstring{isPrivate()}{isPrivate()}}
+{\footnotesize\ttfamily virtual bool Section\+Handler\+::is\+Private (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns {\ttfamily true} if this section belongs to a private section of a class 
+
+Implements \mbox{\hyperlink{class_i_section_ad205fa5a5150643b8275f3f4ef3759d8}{I\+Section}}.
+
+\mbox{\Hypertarget{class_section_handler_a60e5737210382b9496d9d012cbd56a13}\label{class_section_handler_a60e5737210382b9496d9d012cbd56a13}} 
+\index{SectionHandler@{SectionHandler}!isProtected@{isProtected}}
+\index{isProtected@{isProtected}!SectionHandler@{SectionHandler}}
+\subsubsection{\texorpdfstring{isProtected()}{isProtected()}}
+{\footnotesize\ttfamily virtual bool Section\+Handler\+::is\+Protected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns {\ttfamily true} if this section belongs to a protected section of a class 
+
+Implements \mbox{\hyperlink{class_i_section_afdd0506cd65ce59c8fecc060ef813592}{I\+Section}}.
+
+\mbox{\Hypertarget{class_section_handler_aa6e571779cffbb8337fcbc041d486f63}\label{class_section_handler_aa6e571779cffbb8337fcbc041d486f63}} 
+\index{SectionHandler@{SectionHandler}!isPublic@{isPublic}}
+\index{isPublic@{isPublic}!SectionHandler@{SectionHandler}}
+\subsubsection{\texorpdfstring{isPublic()}{isPublic()}}
+{\footnotesize\ttfamily virtual bool Section\+Handler\+::is\+Public (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns {\ttfamily true} if this section belongs to a public section of a class 
+
+Implements \mbox{\hyperlink{class_i_section_a09f6dd61327d0cf67404cde8476be7a1}{I\+Section}}.
+
+\mbox{\Hypertarget{class_section_handler_a35d5f2bf1c1d2419934e50e370bd5088}\label{class_section_handler_a35d5f2bf1c1d2419934e50e370bd5088}} 
+\index{SectionHandler@{SectionHandler}!isStatic@{isStatic}}
+\index{isStatic@{isStatic}!SectionHandler@{SectionHandler}}
+\subsubsection{\texorpdfstring{isStatic()}{isStatic()}}
+{\footnotesize\ttfamily virtual bool Section\+Handler\+::is\+Static (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns {\ttfamily true} if this section contains statics 
+
+Implements \mbox{\hyperlink{class_i_section_a8fb73cfd6c2d057b32ce07a89700ecef}{I\+Section}}.
+
+\mbox{\Hypertarget{class_section_handler_a09b0046032fbbb4189c2d5dd016475b8}\label{class_section_handler_a09b0046032fbbb4189c2d5dd016475b8}} 
+\index{SectionHandler@{SectionHandler}!kind@{kind}}
+\index{kind@{kind}!SectionHandler@{SectionHandler}}
+\subsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_i_section_af768cbfe7056fadbd0a67d26d0ef84e5}{Section\+Kind}} Section\+Handler\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns what kind of section this is 
+
+Implements \mbox{\hyperlink{class_i_section_a3610cc0bc9b90608ade62b84a750ddb4}{I\+Section}}.
+
+\mbox{\Hypertarget{class_section_handler_a6f0ce72df9dc0d56ba8b20fb6684fdc9}\label{class_section_handler_a6f0ce72df9dc0d56ba8b20fb6684fdc9}} 
+\index{SectionHandler@{SectionHandler}!kindString@{kindString}}
+\index{kindString@{kindString}!SectionHandler@{SectionHandler}}
+\subsubsection{\texorpdfstring{kindString()}{kindString()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{class_i_string}{I\+String}}$\ast$ Section\+Handler\+::kind\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns a string representation of the value returned by \mbox{\hyperlink{class_section_handler_a09b0046032fbbb4189c2d5dd016475b8}{kind()}} 
+
+Implements \mbox{\hyperlink{class_i_section_ad4027ec4d324a2ee4987f3216e225fdb}{I\+Section}}.
+
+\mbox{\Hypertarget{class_section_handler_a6e8854663f76206dfa65428e0bdc5b51}\label{class_section_handler_a6e8854663f76206dfa65428e0bdc5b51}} 
+\index{SectionHandler@{SectionHandler}!members@{members}}
+\index{members@{members}!SectionHandler@{SectionHandler}}
+\subsubsection{\texorpdfstring{members()}{members()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_member_iterator}{I\+Member\+Iterator}} $\ast$ Section\+Handler\+::members (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns an iterator for the members of this section 
+
+Implements \mbox{\hyperlink{class_i_section_a1980a8501eb0adbc12f00e251210c39e}{I\+Section}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/addon/doxmlparser/src/sectionhandler.\+h\item 
+doxygen/addon/doxmlparser/src/sectionhandler.\+cpp\end{DoxyCompactItemize}

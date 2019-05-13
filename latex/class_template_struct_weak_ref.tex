@@ -1,0 +1,71 @@
+\hypertarget{class_template_struct_weak_ref}{}\section{Template\+Struct\+Weak\+Ref Class Reference}
+\label{class_template_struct_weak_ref}\index{TemplateStructWeakRef@{TemplateStructWeakRef}}
+
+
+Weak reference wrapper for \mbox{\hyperlink{class_template_struct_intf}{Template\+Struct\+Intf}} that provides access to the wrapped struct without holding a reference.  
+
+
+Inheritance diagram for Template\+Struct\+Weak\+Ref\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_template_struct_weak_ref}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_template_struct_weak_ref_a50a7697a75c8d12ac00db4b13b4ae02e}\label{class_template_struct_weak_ref_a50a7697a75c8d12ac00db4b13b4ae02e}} 
+{\bfseries Template\+Struct\+Weak\+Ref} (\mbox{\hyperlink{class_template_struct_intf}{Template\+Struct\+Intf}} $\ast$ref)
+\item 
+virtual \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_template_struct_weak_ref_aa858d11ac114c0c0254c607a8f1ce817}{get}} (const char $\ast$name) const
+\item 
+virtual int \mbox{\hyperlink{class_template_struct_weak_ref_a75d43b840dbfbd6b4ef6ca78bd13c015}{add\+Ref}} ()
+\item 
+virtual int \mbox{\hyperlink{class_template_struct_weak_ref_a70d7485ae68266ce08e5a24058a30fe8}{release}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Weak reference wrapper for \mbox{\hyperlink{class_template_struct_intf}{Template\+Struct\+Intf}} that provides access to the wrapped struct without holding a reference. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_template_struct_weak_ref_a75d43b840dbfbd6b4ef6ca78bd13c015}\label{class_template_struct_weak_ref_a75d43b840dbfbd6b4ef6ca78bd13c015}} 
+\index{TemplateStructWeakRef@{TemplateStructWeakRef}!addRef@{addRef}}
+\index{addRef@{addRef}!TemplateStructWeakRef@{TemplateStructWeakRef}}
+\subsubsection{\texorpdfstring{addRef()}{addRef()}}
+{\footnotesize\ttfamily virtual int Template\+Struct\+Weak\+Ref\+::add\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Increase object\textquotesingle{}s reference count 
+
+Implements \mbox{\hyperlink{class_template_struct_intf_a05fe97ad47633beb326f69686faed581}{Template\+Struct\+Intf}}.
+
+\mbox{\Hypertarget{class_template_struct_weak_ref_aa858d11ac114c0c0254c607a8f1ce817}\label{class_template_struct_weak_ref_aa858d11ac114c0c0254c607a8f1ce817}} 
+\index{TemplateStructWeakRef@{TemplateStructWeakRef}!get@{get}}
+\index{get@{get}!TemplateStructWeakRef@{TemplateStructWeakRef}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_template_variant}{Template\+Variant}} Template\+Struct\+Weak\+Ref\+::get (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Gets the value for a field name. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & The name of the field. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_template_struct_intf_a3d610cb81b4adbb531ebed3aa3d09b51}{Template\+Struct\+Intf}}.
+
+\mbox{\Hypertarget{class_template_struct_weak_ref_a70d7485ae68266ce08e5a24058a30fe8}\label{class_template_struct_weak_ref_a70d7485ae68266ce08e5a24058a30fe8}} 
+\index{TemplateStructWeakRef@{TemplateStructWeakRef}!release@{release}}
+\index{release@{release}!TemplateStructWeakRef@{TemplateStructWeakRef}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual int Template\+Struct\+Weak\+Ref\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Decreases object\textquotesingle{}s reference count, destroy object if 0 
+
+Implements \mbox{\hyperlink{class_template_struct_intf_a3dce7dd29d3f66a8080b40578e8a5045}{Template\+Struct\+Intf}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/template.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,121 @@
+\hypertarget{class_q_map}{}\section{Q\+Map$<$ Key, T $>$ Class Template Reference}
+\label{class_q_map}\index{QMap$<$ Key, T $>$@{QMap$<$ Key, T $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_q_map_iterator}{Q\+Map\+Iterator}}$<$ Key, T $>$ \mbox{\hyperlink{class_q_map_aa920e1d34440b34269b350ab96bd73d0}{Iterator}}
+\item 
+\mbox{\Hypertarget{class_q_map_afa9389e1d78c9571f1353fdbf0b267b4}\label{class_q_map_afa9389e1d78c9571f1353fdbf0b267b4}} 
+typedef \mbox{\hyperlink{class_q_map_const_iterator}{Q\+Map\+Const\+Iterator}}$<$ Key, T $>$ {\bfseries Const\+Iterator}
+\item 
+\mbox{\Hypertarget{class_q_map_a207394e4bdb1d29a8a456991953cc42b}\label{class_q_map_a207394e4bdb1d29a8a456991953cc42b}} 
+typedef T {\bfseries Value\+Type}
+\item 
+\mbox{\Hypertarget{class_q_map_af63078f1afbbec29ac319ddbd88aefdd}\label{class_q_map_af63078f1afbbec29ac319ddbd88aefdd}} 
+typedef \mbox{\hyperlink{class_q_map_private}{Q\+Map\+Private}}$<$ Key, T $>$ {\bfseries Priv}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_map_a72c9b87bd2e154fc1a0afc0bd6cc4223}{Q\+Map}} ()
+\item 
+\mbox{\Hypertarget{class_q_map_a2cf7810ecb7acc088ca19c64e287432d}\label{class_q_map_a2cf7810ecb7acc088ca19c64e287432d}} 
+{\bfseries Q\+Map} (const \mbox{\hyperlink{class_q_map}{Q\+Map}}$<$ Key, T $>$ \&m)
+\item 
+\mbox{\Hypertarget{class_q_map_a2e06720686f4ade87f059e42cf568ab2}\label{class_q_map_a2e06720686f4ade87f059e42cf568ab2}} 
+\mbox{\hyperlink{class_q_map}{Q\+Map}}$<$ Key, T $>$ \& {\bfseries operator=} (const \mbox{\hyperlink{class_q_map}{Q\+Map}}$<$ Key, T $>$ \&m)
+\item 
+\mbox{\Hypertarget{class_q_map_a639a776efedf32becf3bf97d0cc8bc6e}\label{class_q_map_a639a776efedf32becf3bf97d0cc8bc6e}} 
+\mbox{\hyperlink{class_q_map_aa920e1d34440b34269b350ab96bd73d0}{Iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{class_q_map_abd36bc62901297a50e7ef45e94bd719e}\label{class_q_map_abd36bc62901297a50e7ef45e94bd719e}} 
+\mbox{\hyperlink{class_q_map_aa920e1d34440b34269b350ab96bd73d0}{Iterator}} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{class_q_map_af8c35ae4e0940f03a8e7f20bbfde385e}\label{class_q_map_af8c35ae4e0940f03a8e7f20bbfde385e}} 
+\mbox{\hyperlink{class_q_map_const_iterator}{Const\+Iterator}} {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{class_q_map_ac5f193a04c5d39cc4786e56bd7810e55}\label{class_q_map_ac5f193a04c5d39cc4786e56bd7810e55}} 
+\mbox{\hyperlink{class_q_map_const_iterator}{Const\+Iterator}} {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{class_q_map_a70dc38ad3663dbb8aacf657711a9acee}\label{class_q_map_a70dc38ad3663dbb8aacf657711a9acee}} 
+\mbox{\hyperlink{class_q_map_aa920e1d34440b34269b350ab96bd73d0}{Iterator}} {\bfseries find} (const Key \&k)
+\item 
+\mbox{\Hypertarget{class_q_map_a134b8d413869f229431d5854ed693649}\label{class_q_map_a134b8d413869f229431d5854ed693649}} 
+\mbox{\hyperlink{class_q_map_const_iterator}{Const\+Iterator}} {\bfseries find} (const Key \&k) const
+\item 
+\mbox{\Hypertarget{class_q_map_acafebec45466a5329663be6129afcb00}\label{class_q_map_acafebec45466a5329663be6129afcb00}} 
+T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (const Key \&k)
+\item 
+\mbox{\Hypertarget{class_q_map_a6deaa57b9c566fedcb47b110d556ad3a}\label{class_q_map_a6deaa57b9c566fedcb47b110d556ad3a}} 
+const T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (const Key \&k) const
+\item 
+\mbox{\Hypertarget{class_q_map_a3fbf45ee3c3be1a9855e9d04c67d7682}\label{class_q_map_a3fbf45ee3c3be1a9855e9d04c67d7682}} 
+bool {\bfseries contains} (const Key \&k) const
+\item 
+\mbox{\Hypertarget{class_q_map_adfea57e6ba83f5786850d1c8be421e22}\label{class_q_map_adfea57e6ba83f5786850d1c8be421e22}} 
+uint {\bfseries count} () const
+\item 
+\mbox{\Hypertarget{class_q_map_a6f715bb4c9b621f97a361eeb92909999}\label{class_q_map_a6f715bb4c9b621f97a361eeb92909999}} 
+bool {\bfseries is\+Empty} () const
+\item 
+\mbox{\Hypertarget{class_q_map_a59b52d230332c95b476d1796a167de36}\label{class_q_map_a59b52d230332c95b476d1796a167de36}} 
+\mbox{\hyperlink{class_q_map_aa920e1d34440b34269b350ab96bd73d0}{Iterator}} {\bfseries insert} (const Key \&key, const T \&value)
+\item 
+\mbox{\Hypertarget{class_q_map_ab8bbc88a58eaad6384e281c86461d0f4}\label{class_q_map_ab8bbc88a58eaad6384e281c86461d0f4}} 
+void {\bfseries remove} (\mbox{\hyperlink{class_q_map_aa920e1d34440b34269b350ab96bd73d0}{Iterator}} it)
+\item 
+\mbox{\Hypertarget{class_q_map_a2223f1307c21d160dde58606a9c4377f}\label{class_q_map_a2223f1307c21d160dde58606a9c4377f}} 
+void {\bfseries remove} (const Key \&k)
+\item 
+\mbox{\Hypertarget{class_q_map_a37e604bb752b9a8aa0a4bfc293b75a38}\label{class_q_map_a37e604bb752b9a8aa0a4bfc293b75a38}} 
+\mbox{\hyperlink{class_q_map_aa920e1d34440b34269b350ab96bd73d0}{Iterator}} {\bfseries replace} (const Key \&k, const T \&v)
+\item 
+\mbox{\Hypertarget{class_q_map_a52ef8f9a9c270b1dbf18ccaecdb964a4}\label{class_q_map_a52ef8f9a9c270b1dbf18ccaecdb964a4}} 
+void {\bfseries clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_q_map_a6913ba3a784e35a4b0d274f229af92ea}{detach}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_map_af8bec306bf8ee3e0effffe9a33b6c013}\label{class_q_map_af8bec306bf8ee3e0effffe9a33b6c013}} 
+\mbox{\hyperlink{class_q_map_private}{Priv}} $\ast$ {\bfseries sh}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_q_map_aa920e1d34440b34269b350ab96bd73d0}\label{class_q_map_aa920e1d34440b34269b350ab96bd73d0}} 
+\index{QMap$<$ Key, T $>$@{QMap$<$ Key, T $>$}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!QMap$<$ Key, T $>$@{QMap$<$ Key, T $>$}}
+\subsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$class Key, class T$>$ \\
+typedef \mbox{\hyperlink{class_q_map_iterator}{Q\+Map\+Iterator}}$<$ Key, T $>$ \mbox{\hyperlink{class_q_map}{Q\+Map}}$<$ Key, T $>$\+::\mbox{\hyperlink{class_q_map_aa920e1d34440b34269b350ab96bd73d0}{Iterator}}}
+
+Typedefs 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_map_a72c9b87bd2e154fc1a0afc0bd6cc4223}\label{class_q_map_a72c9b87bd2e154fc1a0afc0bd6cc4223}} 
+\index{QMap$<$ Key, T $>$@{QMap$<$ Key, T $>$}!QMap@{QMap}}
+\index{QMap@{QMap}!QMap$<$ Key, T $>$@{QMap$<$ Key, T $>$}}
+\subsubsection{\texorpdfstring{QMap()}{QMap()}}
+{\footnotesize\ttfamily template$<$class Key, class T$>$ \\
+\mbox{\hyperlink{class_q_map}{Q\+Map}}$<$ Key, T $>$\+::\mbox{\hyperlink{class_q_map}{Q\+Map}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A\+PI 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_map_a6913ba3a784e35a4b0d274f229af92ea}\label{class_q_map_a6913ba3a784e35a4b0d274f229af92ea}} 
+\index{QMap$<$ Key, T $>$@{QMap$<$ Key, T $>$}!detach@{detach}}
+\index{detach@{detach}!QMap$<$ Key, T $>$@{QMap$<$ Key, T $>$}}
+\subsubsection{\texorpdfstring{detach()}{detach()}}
+{\footnotesize\ttfamily template$<$class Key, class T$>$ \\
+void \mbox{\hyperlink{class_q_map}{Q\+Map}}$<$ Key, T $>$\+::detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Helpers 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qmap.\+h\end{DoxyCompactItemize}

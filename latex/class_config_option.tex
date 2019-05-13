@@ -1,0 +1,156 @@
+\hypertarget{class_config_option}{}\section{Config\+Option Class Reference}
+\label{class_config_option}\index{ConfigOption@{ConfigOption}}
+
+
+{\ttfamily \#include $<$configimpl.\+h$>$}
+
+Inheritance diagram for Config\+Option\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{class_config_option}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_config_option_ad60cb308cdf307e72796dc2fc2a40fda}{Option\+Type}} \{ \newline
+{\bfseries O\+\_\+\+Info}, 
+{\bfseries O\+\_\+\+List}, 
+{\bfseries O\+\_\+\+Enum}, 
+{\bfseries O\+\_\+\+String}, 
+\newline
+{\bfseries O\+\_\+\+Int}, 
+{\bfseries O\+\_\+\+Bool}, 
+{\bfseries O\+\_\+\+Obsolete}, 
+{\bfseries O\+\_\+\+Disabled}
+ \}
+\item 
+enum \{ \mbox{\hyperlink{class_config_option_a7e6106faa6a60aebbb84ff484e4ec85faa40e4123355dbeb41dc6ca0c68c0d346}{M\+A\+X\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+L\+E\+N\+G\+TH}} = 23
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_config_option_a3ce6753bba05ab1ee7e5eaaec6d8f1ac}\label{class_config_option_a3ce6753bba05ab1ee7e5eaaec6d8f1ac}} 
+{\bfseries Config\+Option} (\mbox{\hyperlink{class_config_option_ad60cb308cdf307e72796dc2fc2a40fda}{Option\+Type}} t)
+\item 
+\mbox{\hyperlink{class_config_option_ad60cb308cdf307e72796dc2fc2a40fda}{Option\+Type}} \mbox{\hyperlink{class_config_option_af9d4d56d36500792b82fce5b11202a60}{kind}} () const
+\item 
+\mbox{\Hypertarget{class_config_option_ab89196927c521e95680eb5efdc562187}\label{class_config_option_ab89196927c521e95680eb5efdc562187}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries name} () const
+\item 
+\mbox{\Hypertarget{class_config_option_a3c4dc05a2249a17ad0df0e943da4decd}\label{class_config_option_a3c4dc05a2249a17ad0df0e943da4decd}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries docs} () const
+\item 
+\mbox{\Hypertarget{class_config_option_a8a744f63445f4cd0ce86d7f423bc7161}\label{class_config_option_a8a744f63445f4cd0ce86d7f423bc7161}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries depends\+On} () const
+\item 
+\mbox{\Hypertarget{class_config_option_a290d4454155543728847a75ade256a32}\label{class_config_option_a290d4454155543728847a75ade256a32}} 
+void {\bfseries add\+Dependency} (const char $\ast$dep)
+\item 
+\mbox{\Hypertarget{class_config_option_a0ac357ec83d2014603c8d70a00c27a33}\label{class_config_option_a0ac357ec83d2014603c8d70a00c27a33}} 
+void {\bfseries set\+Encoding} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&e)
+\item 
+\mbox{\Hypertarget{class_config_option_a5baa3fb6c4fb6ec667eb91172f3f398a}\label{class_config_option_a5baa3fb6c4fb6ec667eb91172f3f398a}} 
+void {\bfseries set\+User\+Comment} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&u)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_config_option_a4af9c041d81cc919e5aae2210087bc38}\label{class_config_option_a4af9c041d81cc919e5aae2210087bc38}} 
+virtual void {\bfseries write\+Template} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, bool sl, bool upd)=0
+\item 
+\mbox{\Hypertarget{class_config_option_ac8e619f63a82be8d8370cd8dd1f57c16}\label{class_config_option_ac8e619f63a82be8d8370cd8dd1f57c16}} 
+virtual void {\bfseries compare\+Doxyfile} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t)=0
+\item 
+\mbox{\Hypertarget{class_config_option_af1d26523f37d742316ddc4c0f9add4fc}\label{class_config_option_af1d26523f37d742316ddc4c0f9add4fc}} 
+virtual void {\bfseries convert\+Str\+To\+Val} ()
+\item 
+\mbox{\Hypertarget{class_config_option_aaf0c9e86e3c98248442e907e12513dd5}\label{class_config_option_aaf0c9e86e3c98248442e907e12513dd5}} 
+virtual void {\bfseries empty\+Value\+To\+Default} ()
+\item 
+\mbox{\Hypertarget{class_config_option_aeb6ac539f2fe79e07f2baefd5c4d89c1}\label{class_config_option_aeb6ac539f2fe79e07f2baefd5c4d89c1}} 
+virtual void {\bfseries subst\+Env\+Vars} ()=0
+\item 
+\mbox{\Hypertarget{class_config_option_a1dabfad39230674fc07f5f535392fd35}\label{class_config_option_a1dabfad39230674fc07f5f535392fd35}} 
+virtual void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{class_config_option_a0762b14d6706667da888cd9c56c6f1e7}\label{class_config_option_a0762b14d6706667da888cd9c56c6f1e7}} 
+void {\bfseries write\+Bool\+Value} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, bool v)
+\item 
+\mbox{\Hypertarget{class_config_option_a759c9a9621a46b28dcedd5c22a0e271f}\label{class_config_option_a759c9a9621a46b28dcedd5c22a0e271f}} 
+void {\bfseries write\+Int\+Value} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, int i)
+\item 
+\mbox{\Hypertarget{class_config_option_a6e36e0022317d91fd50398119420ad02}\label{class_config_option_a6e36e0022317d91fd50398119420ad02}} 
+void {\bfseries write\+String\+Value} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&s)
+\item 
+\mbox{\Hypertarget{class_config_option_abd1fe2acb02bd19ed4ec67b6a60ce446}\label{class_config_option_abd1fe2acb02bd19ed4ec67b6a60ce446}} 
+void {\bfseries write\+String\+List} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, \mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}} \&l)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_config_option_aa3ef6fe13a480dad1404aee1bb0f2d11}\label{class_config_option_aa3ef6fe13a480dad1404aee1bb0f2d11}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries m\+\_\+spaces}
+\item 
+\mbox{\Hypertarget{class_config_option_a4f081d447f2443212d0d032da63b20d7}\label{class_config_option_a4f081d447f2443212d0d032da63b20d7}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries m\+\_\+name}
+\item 
+\mbox{\Hypertarget{class_config_option_a28fdea8e9fdf86e73faae697454c17ab}\label{class_config_option_a28fdea8e9fdf86e73faae697454c17ab}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries m\+\_\+doc}
+\item 
+\mbox{\Hypertarget{class_config_option_a5146ef81dc662e3c5b2f1e9d1f3c600e}\label{class_config_option_a5146ef81dc662e3c5b2f1e9d1f3c600e}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries m\+\_\+dependency}
+\item 
+\mbox{\Hypertarget{class_config_option_a4953007ad225b5996adf18275f59e922}\label{class_config_option_a4953007ad225b5996adf18275f59e922}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries m\+\_\+encoding}
+\item 
+\mbox{\Hypertarget{class_config_option_a5e54ead18c124c6c6c03ed3b678a7103}\label{class_config_option_a5e54ead18c124c6c6c03ed3b678a7103}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries m\+\_\+user\+Comment}
+\item 
+\mbox{\Hypertarget{class_config_option_a64896a35334d6ab865f8038fb65024ac}\label{class_config_option_a64896a35334d6ab865f8038fb65024ac}} 
+\mbox{\hyperlink{class_config_option_ad60cb308cdf307e72796dc2fc2a40fda}{Option\+Type}} {\bfseries m\+\_\+kind}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_config_option_a899985dcdc768533e4fc014af00f9299}\label{class_config_option_a899985dcdc768533e4fc014af00f9299}} 
+class {\bfseries Config\+Impl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base class for any configuration option. 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_config_option_a7e6106faa6a60aebbb84ff484e4ec85f}\label{class_config_option_a7e6106faa6a60aebbb84ff484e4ec85f}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAX\_OPTION\_LENGTH@{MAX\_OPTION\_LENGTH}!ConfigOption@{ConfigOption}}\index{ConfigOption@{ConfigOption}!MAX\_OPTION\_LENGTH@{MAX\_OPTION\_LENGTH}}}\mbox{\Hypertarget{class_config_option_a7e6106faa6a60aebbb84ff484e4ec85faa40e4123355dbeb41dc6ca0c68c0d346}\label{class_config_option_a7e6106faa6a60aebbb84ff484e4ec85faa40e4123355dbeb41dc6ca0c68c0d346}} 
+M\+A\+X\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+L\+E\+N\+G\+TH&Maximum length of an option in the config file. Used for alignment purposes. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_config_option_ad60cb308cdf307e72796dc2fc2a40fda}\label{class_config_option_ad60cb308cdf307e72796dc2fc2a40fda}} 
+\index{ConfigOption@{ConfigOption}!OptionType@{OptionType}}
+\index{OptionType@{OptionType}!ConfigOption@{ConfigOption}}
+\subsubsection{\texorpdfstring{OptionType}{OptionType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_config_option_ad60cb308cdf307e72796dc2fc2a40fda}{Config\+Option\+::\+Option\+Type}}}
+
+The type of option 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_config_option_af9d4d56d36500792b82fce5b11202a60}\label{class_config_option_af9d4d56d36500792b82fce5b11202a60}} 
+\index{ConfigOption@{ConfigOption}!kind@{kind}}
+\index{kind@{kind}!ConfigOption@{ConfigOption}}
+\subsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_config_option_ad60cb308cdf307e72796dc2fc2a40fda}{Option\+Type}} Config\+Option\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns the kind of option this is. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/configimpl.\+h\item 
+doxygen/build/generated\+\_\+src/configimpl.\+cpp\end{DoxyCompactItemize}

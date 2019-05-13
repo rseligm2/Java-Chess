@@ -1,0 +1,71 @@
+\hypertarget{class_entry_nav}{}\section{Entry\+Nav Class Reference}
+\label{class_entry_nav}\index{EntryNav@{EntryNav}}
+
+
+{\ttfamily \#include $<$entry.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entry_nav_a778223f04da2618c47b697d33d10559d}\label{class_entry_nav_a778223f04da2618c47b697d33d10559d}} 
+{\bfseries Entry\+Nav} (\mbox{\hyperlink{class_entry_nav}{Entry\+Nav}} $\ast$parent, \mbox{\hyperlink{class_entry}{Entry}} $\ast$e)
+\item 
+\mbox{\Hypertarget{class_entry_nav_af988d3085b14c1fa584d934a31a1e494}\label{class_entry_nav_af988d3085b14c1fa584d934a31a1e494}} 
+void {\bfseries add\+Child} (\mbox{\hyperlink{class_entry_nav}{Entry\+Nav}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_entry_nav_ae8baa4eaf2eca2a813110c5272fba763}\label{class_entry_nav_ae8baa4eaf2eca2a813110c5272fba763}} 
+bool {\bfseries load\+Entry} (\mbox{\hyperlink{class_file_storage}{File\+Storage}} $\ast$storage)
+\item 
+\mbox{\Hypertarget{class_entry_nav_a51daafd4189df04bf0df6504b3c4b1f5}\label{class_entry_nav_a51daafd4189df04bf0df6504b3c4b1f5}} 
+bool {\bfseries save\+Entry} (\mbox{\hyperlink{class_entry}{Entry}} $\ast$e, \mbox{\hyperlink{class_file_storage}{File\+Storage}} $\ast$storage)
+\item 
+\mbox{\Hypertarget{class_entry_nav_a935101b752fb22f735e62b83721f325c}\label{class_entry_nav_a935101b752fb22f735e62b83721f325c}} 
+void {\bfseries set\+Entry} (\mbox{\hyperlink{class_entry}{Entry}} $\ast$e)
+\item 
+\mbox{\Hypertarget{class_entry_nav_a1475c94b8cb03e8731d852190b8efc64}\label{class_entry_nav_a1475c94b8cb03e8731d852190b8efc64}} 
+void {\bfseries release\+Entry} ()
+\item 
+\mbox{\Hypertarget{class_entry_nav_aa9d8db3a7fb50142d976111658e7c2f8}\label{class_entry_nav_aa9d8db3a7fb50142d976111658e7c2f8}} 
+void {\bfseries change\+Section} (int section)
+\item 
+\mbox{\Hypertarget{class_entry_nav_a527cd33c59bd801382b73f26a42e2b64}\label{class_entry_nav_a527cd33c59bd801382b73f26a42e2b64}} 
+void {\bfseries set\+File\+Def} (\mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$fd)
+\item 
+\mbox{\Hypertarget{class_entry_nav_a352eaabb8779f01ed7af7b6b44a4d6b5}\label{class_entry_nav_a352eaabb8779f01ed7af7b6b44a4d6b5}} 
+\mbox{\hyperlink{class_entry}{Entry}} $\ast$ {\bfseries entry} () const
+\item 
+\mbox{\Hypertarget{class_entry_nav_a017e4b4723a94477a2cfa6704f9df2bd}\label{class_entry_nav_a017e4b4723a94477a2cfa6704f9df2bd}} 
+int {\bfseries section} () const
+\item 
+\mbox{\Hypertarget{class_entry_nav_ad78bdaf9a6c24b7c98d2323b1cfd6613}\label{class_entry_nav_ad78bdaf9a6c24b7c98d2323b1cfd6613}} 
+\mbox{\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\+Lang\+Ext}} {\bfseries lang} () const
+\item 
+\mbox{\Hypertarget{class_entry_nav_ae85c31066fb152b1d048eda65cecdb15}\label{class_entry_nav_ae85c31066fb152b1d048eda65cecdb15}} 
+const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{class_entry_nav_a83b2c64247b0f965a64ea144d158d85d}\label{class_entry_nav_a83b2c64247b0f965a64ea144d158d85d}} 
+const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& {\bfseries name} () const
+\item 
+\mbox{\Hypertarget{class_entry_nav_ab312e19785dab8ce9352057ad523cdd7}\label{class_entry_nav_ab312e19785dab8ce9352057ad523cdd7}} 
+\mbox{\hyperlink{struct_tag_info}{Tag\+Info}} $\ast$ {\bfseries tag\+Info} () const
+\item 
+\mbox{\Hypertarget{class_entry_nav_a439b4aaa88220fadd87e09139801b818}\label{class_entry_nav_a439b4aaa88220fadd87e09139801b818}} 
+const \mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{class_entry_nav}{Entry\+Nav}} $>$ $\ast$ {\bfseries children} () const
+\item 
+\mbox{\Hypertarget{class_entry_nav_af41a1ec3e11dbac660f3c8070c529001}\label{class_entry_nav_af41a1ec3e11dbac660f3c8070c529001}} 
+\mbox{\hyperlink{class_entry_nav}{Entry\+Nav}} $\ast$ {\bfseries parent} () const
+\item 
+\mbox{\Hypertarget{class_entry_nav_a91c3c070006a225ee2e97726eed244ec}\label{class_entry_nav_a91c3c070006a225ee2e97726eed244ec}} 
+\mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$ {\bfseries file\+Def} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper for a node in the \mbox{\hyperlink{class_entry}{Entry}} tree.
+
+Allows navigating through the \mbox{\hyperlink{class_entry}{Entry}} tree and load and storing \mbox{\hyperlink{class_entry}{Entry}} objects persistently to disk. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/entry.\+h\item 
+doxygen/src/entry.\+cpp\end{DoxyCompactItemize}

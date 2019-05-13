@@ -1,0 +1,160 @@
+\hypertarget{class_x_m_l_scanner}{}\section{X\+M\+L\+Scanner Class Reference}
+\label{class_x_m_l_scanner}\index{XMLScanner@{XMLScanner}}
+
+
+{\ttfamily \#include $<$xmlscanner.\+h$>$}
+
+Inheritance diagram for X\+M\+L\+Scanner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_x_m_l_scanner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_x_m_l_scanner_a105515420268054f9ff54bd60793cfbb}{start\+Translation\+Unit}} (const char $\ast$)
+\item 
+void \mbox{\hyperlink{class_x_m_l_scanner_a00b3082e888d6bd670fdc31e52b79606}{finish\+Translation\+Unit}} ()
+\item 
+void \mbox{\hyperlink{class_x_m_l_scanner_ad7b6e344f24e73a8757937a806b5931a}{parse\+Input}} (const char $\ast$, const char $\ast$, \mbox{\hyperlink{class_entry}{Entry}} $\ast$, bool, \mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}} \&)
+\item 
+bool \mbox{\hyperlink{class_x_m_l_scanner_aee7d6327a9e55cd3b965a21f707ed0a5}{needs\+Preprocessing}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&)
+\item 
+void \mbox{\hyperlink{class_x_m_l_scanner_a63895d17bafedb76a06399c80eecd840}{parse\+Code}} (\mbox{\hyperlink{class_code_output_interface}{Code\+Output\+Interface}} \&code\+Out\+Intf, const char $\ast$scope\+Name, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&input, \mbox{\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\+Lang\+Ext}}, bool is\+Example\+Block, const char $\ast$example\+Name=0, \mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$file\+Def=0, int start\+Line=-\/1, int end\+Line=-\/1, bool inline\+Fragment=F\+A\+L\+SE, \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$member\+Def=0, bool show\+Line\+Numbers=T\+R\+UE, \mbox{\hyperlink{class_definition}{Definition}} $\ast$search\+Ctx=0, bool collect\+X\+Refs=T\+R\+UE)
+\item 
+void \mbox{\hyperlink{class_x_m_l_scanner_a77da43900e68df9a111eb45546d94fd4}{reset\+Code\+Parser\+State}} ()
+\item 
+void \mbox{\hyperlink{class_x_m_l_scanner_afee3f3cec27ae00c00b6fcdd78476edb}{parse\+Prototype}} (const char $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+X\+ML scanner. Only support syntax highlighting of code at the moment. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_x_m_l_scanner_a00b3082e888d6bd670fdc31e52b79606}\label{class_x_m_l_scanner_a00b3082e888d6bd670fdc31e52b79606}} 
+\index{XMLScanner@{XMLScanner}!finishTranslationUnit@{finishTranslationUnit}}
+\index{finishTranslationUnit@{finishTranslationUnit}!XMLScanner@{XMLScanner}}
+\subsubsection{\texorpdfstring{finishTranslationUnit()}{finishTranslationUnit()}}
+{\footnotesize\ttfamily void X\+M\+L\+Scanner\+::finish\+Translation\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Called after all files in a translation unit have been processed. 
+
+Implements \mbox{\hyperlink{class_parser_interface_af3acd64c6a33852e2e46e7288eb9c9cf}{Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_x_m_l_scanner_aee7d6327a9e55cd3b965a21f707ed0a5}\label{class_x_m_l_scanner_aee7d6327a9e55cd3b965a21f707ed0a5}} 
+\index{XMLScanner@{XMLScanner}!needsPreprocessing@{needsPreprocessing}}
+\index{needsPreprocessing@{needsPreprocessing}!XMLScanner@{XMLScanner}}
+\subsubsection{\texorpdfstring{needsPreprocessing()}{needsPreprocessing()}}
+{\footnotesize\ttfamily bool X\+M\+L\+Scanner\+::needs\+Preprocessing (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{extension }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns T\+R\+UE if the language identified by {\itshape extension} needs the \mbox{\hyperlink{class_c}{C}} preprocessor to be run before feed the result to the input parser. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_x_m_l_scanner_ad7b6e344f24e73a8757937a806b5931a}{parse\+Input()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_parser_interface_a36c669b17b64a6e3847f27d70a5398d2}{Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_x_m_l_scanner_a63895d17bafedb76a06399c80eecd840}\label{class_x_m_l_scanner_a63895d17bafedb76a06399c80eecd840}} 
+\index{XMLScanner@{XMLScanner}!parseCode@{parseCode}}
+\index{parseCode@{parseCode}!XMLScanner@{XMLScanner}}
+\subsubsection{\texorpdfstring{parseCode()}{parseCode()}}
+{\footnotesize\ttfamily void X\+M\+L\+Scanner\+::parse\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_code_output_interface}{Code\+Output\+Interface}} \&}]{code\+Out\+Intf,  }\item[{const char $\ast$}]{scope\+Name,  }\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{input,  }\item[{\mbox{\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\+Lang\+Ext}}}]{lang,  }\item[{bool}]{is\+Example\+Block,  }\item[{const char $\ast$}]{example\+Name = {\ttfamily 0},  }\item[{\mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$}]{file\+Def = {\ttfamily 0},  }\item[{int}]{start\+Line = {\ttfamily -\/1},  }\item[{int}]{end\+Line = {\ttfamily -\/1},  }\item[{bool}]{inline\+Fragment = {\ttfamily FALSE},  }\item[{\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$}]{member\+Def = {\ttfamily 0},  }\item[{bool}]{show\+Line\+Numbers = {\ttfamily TRUE},  }\item[{\mbox{\hyperlink{class_definition}{Definition}} $\ast$}]{search\+Ctx = {\ttfamily 0},  }\item[{bool}]{collect\+X\+Refs = {\ttfamily TRUE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Parses a source file or fragment with the goal to produce highlighted and cross-\/referenced output. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em code\+Out\+Intf} & Abstract interface for writing the result. \\
+\hline
+\mbox{\texttt{ in}}  & {\em lang} & The programming language of the code fragment. \\
+\hline
+\mbox{\texttt{ in}}  & {\em scope\+Name} & Name of scope to which the code belongs. \\
+\hline
+\mbox{\texttt{ in}}  & {\em input} & Actual code in the form of a string \\
+\hline
+\mbox{\texttt{ in}}  & {\em is\+Example\+Block} & T\+R\+UE iff the code is part of an example. \\
+\hline
+\mbox{\texttt{ in}}  & {\em example\+Name} & Name of the example. \\
+\hline
+\mbox{\texttt{ in}}  & {\em file\+Def} & File definition to which the code is associated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em start\+Line} & Starting line in case of a code fragment. \\
+\hline
+\mbox{\texttt{ in}}  & {\em end\+Line} & Ending line of the code fragment. \\
+\hline
+\mbox{\texttt{ in}}  & {\em inline\+Fragment} & Code fragment that is to be shown inline as part of the documentation. \\
+\hline
+\mbox{\texttt{ in}}  & {\em member\+Def} & Member definition to which the code is associated (non null in case of an inline fragment for a member). \\
+\hline
+\mbox{\texttt{ in}}  & {\em show\+Line\+Numbers} & if set to T\+R\+UE and also file\+Def is not 0, line numbers will be added to the source fragment \\
+\hline
+\mbox{\texttt{ in}}  & {\em search\+Ctx} & context under which search data has to be stored. \\
+\hline
+\mbox{\texttt{ in}}  & {\em collect\+X\+Refs} & collect cross-\/reference relations. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_parser_interface_a2ffc28f9dd7c47e2581376a573426395}{Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_x_m_l_scanner_ad7b6e344f24e73a8757937a806b5931a}\label{class_x_m_l_scanner_ad7b6e344f24e73a8757937a806b5931a}} 
+\index{XMLScanner@{XMLScanner}!parseInput@{parseInput}}
+\index{parseInput@{parseInput}!XMLScanner@{XMLScanner}}
+\subsubsection{\texorpdfstring{parseInput()}{parseInput()}}
+{\footnotesize\ttfamily void X\+M\+L\+Scanner\+::parse\+Input (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{const char $\ast$}]{file\+Buf,  }\item[{\mbox{\hyperlink{class_entry}{Entry}} $\ast$}]{root,  }\item[{bool}]{same\+Translation\+Unit,  }\item[{\mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}} \&}]{files\+In\+Same\+Translation\+Unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Parses a single input file with the goal to build an \mbox{\hyperlink{class_entry}{Entry}} tree. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file\+Name} & The full name of the file. \\
+\hline
+\mbox{\texttt{ in}}  & {\em file\+Buf} & The contents of the file (zero terminated). \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em root} & The root of the tree of \mbox{\hyperlink{class_entry}{Entry}} $\ast$nodes representing the information extracted from the file. \\
+\hline
+\mbox{\texttt{ in}}  & {\em same\+Translation\+Unit} & T\+R\+UE if this file was found in the same translation unit (in the files\+In\+Same\+Translation\+Unit list returned for another file). \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em files\+In\+Same\+Translation\+Unit} & other files expected to be found in the same translation unit (used for libclang) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_parser_interface_a09ced377e619d40b7339187bad88341e}{Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_x_m_l_scanner_afee3f3cec27ae00c00b6fcdd78476edb}\label{class_x_m_l_scanner_afee3f3cec27ae00c00b6fcdd78476edb}} 
+\index{XMLScanner@{XMLScanner}!parsePrototype@{parsePrototype}}
+\index{parsePrototype@{parsePrototype}!XMLScanner@{XMLScanner}}
+\subsubsection{\texorpdfstring{parsePrototype()}{parsePrototype()}}
+{\footnotesize\ttfamily void X\+M\+L\+Scanner\+::parse\+Prototype (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Callback function called by the comment block scanner. It provides a string {\itshape text} containing the prototype of a function or variable. The parser should parse this and store the information in the \mbox{\hyperlink{class_entry}{Entry}} node that corresponds with the node for which the comment block parser was invoked. 
+
+Implements \mbox{\hyperlink{class_parser_interface_a5ebf0f524a296845befa22c85a4cc80b}{Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_x_m_l_scanner_a77da43900e68df9a111eb45546d94fd4}\label{class_x_m_l_scanner_a77da43900e68df9a111eb45546d94fd4}} 
+\index{XMLScanner@{XMLScanner}!resetCodeParserState@{resetCodeParserState}}
+\index{resetCodeParserState@{resetCodeParserState}!XMLScanner@{XMLScanner}}
+\subsubsection{\texorpdfstring{resetCodeParserState()}{resetCodeParserState()}}
+{\footnotesize\ttfamily void X\+M\+L\+Scanner\+::reset\+Code\+Parser\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Resets the state of the code parser. Since multiple code fragments can together form a single example, an explicit function is used to reset the code parser state. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_x_m_l_scanner_a63895d17bafedb76a06399c80eecd840}{parse\+Code()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_parser_interface_aee4fccd1865a4e8a6b9f2896811104ca}{Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_x_m_l_scanner_a105515420268054f9ff54bd60793cfbb}\label{class_x_m_l_scanner_a105515420268054f9ff54bd60793cfbb}} 
+\index{XMLScanner@{XMLScanner}!startTranslationUnit@{startTranslationUnit}}
+\index{startTranslationUnit@{startTranslationUnit}!XMLScanner@{XMLScanner}}
+\subsubsection{\texorpdfstring{startTranslationUnit()}{startTranslationUnit()}}
+{\footnotesize\ttfamily void X\+M\+L\+Scanner\+::start\+Translation\+Unit (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Starts processing a translation unit (source files + headers). After this call \mbox{\hyperlink{class_x_m_l_scanner_ad7b6e344f24e73a8757937a806b5931a}{parse\+Input()}} is called with same\+Translation\+Unit set to F\+A\+L\+SE. If \mbox{\hyperlink{class_x_m_l_scanner_ad7b6e344f24e73a8757937a806b5931a}{parse\+Input()}} returns additional include files, these are also processed using \mbox{\hyperlink{class_x_m_l_scanner_ad7b6e344f24e73a8757937a806b5931a}{parse\+Input()}} with same\+Translation\+Unit set to T\+R\+UE. After that \mbox{\hyperlink{class_x_m_l_scanner_a00b3082e888d6bd670fdc31e52b79606}{finish\+Translation\+Unit()}} is called. 
+
+Implements \mbox{\hyperlink{class_parser_interface_a72478f87ead5fde10d7d6bbe32a73024}{Parser\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/xmlscanner.\+h\end{DoxyCompactItemize}

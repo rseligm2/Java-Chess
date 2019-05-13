@@ -1,0 +1,66 @@
+\hypertarget{class_doc_copy}{}\section{Doc\+Copy Class Reference}
+\label{class_doc_copy}\index{DocCopy@{DocCopy}}
+
+
+{\ttfamily \#include $<$docparser.\+h$>$}
+
+Inheritance diagram for Doc\+Copy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_doc_copy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_copy_acd88cf1e2b750a84de520db1539136fb}\label{class_doc_copy_acd88cf1e2b750a84de520db1539136fb}} 
+{\bfseries Doc\+Copy} (\mbox{\hyperlink{class_doc_node}{Doc\+Node}} $\ast$\mbox{\hyperlink{class_doc_node_a73e8ad29a91cfceb0968eb00db71a23d}{parent}}, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&link, bool copy\+Brief, bool copy\+Details)
+\item 
+\mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} \mbox{\hyperlink{class_doc_copy_ac389e4de240c92f7c2a9f4183f033cdf}{kind}} () const
+\item 
+\mbox{\Hypertarget{class_doc_copy_a203f707ede6ae00140baa55136d15b1c}\label{class_doc_copy_a203f707ede6ae00140baa55136d15b1c}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries link} () const
+\item 
+void \mbox{\hyperlink{class_doc_copy_a9b719f84800b76fcb9d441b9b64245d0}{accept}} (\mbox{\hyperlink{class_doc_visitor}{Doc\+Visitor}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_doc_copy_a75619f5170d53a67f7028123e4ab18b8}\label{class_doc_copy_a75619f5170d53a67f7028123e4ab18b8}} 
+void {\bfseries parse} (\mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{class_doc_node}{Doc\+Node}} $>$ \&children)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Node representing a copy of documentation block. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_doc_copy_a9b719f84800b76fcb9d441b9b64245d0}\label{class_doc_copy_a9b719f84800b76fcb9d441b9b64245d0}} 
+\index{DocCopy@{DocCopy}!accept@{accept}}
+\index{accept@{accept}!DocCopy@{DocCopy}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily void Doc\+Copy\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_doc_visitor}{Doc\+Visitor}} $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Acceptor function for node visitors. Part of the visitor pattern. 
+\begin{DoxyParams}{Parameters}
+{\em v} & Abstract visitor. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_doc_node_a5303a550cbe6395663bf9b9dad28cbf1}{Doc\+Node}}.
+
+\mbox{\Hypertarget{class_doc_copy_ac389e4de240c92f7c2a9f4183f033cdf}\label{class_doc_copy_ac389e4de240c92f7c2a9f4183f033cdf}} 
+\index{DocCopy@{DocCopy}!kind@{kind}}
+\index{kind@{kind}!DocCopy@{DocCopy}}
+\subsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} Doc\+Copy\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the kind of node. Provides runtime type information 
+
+Implements \mbox{\hyperlink{class_doc_node_a108ffd214a72ba6e93dac084a8f58049}{Doc\+Node}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/docparser.\+h\item 
+doxygen/src/docparser.\+cpp\end{DoxyCompactItemize}

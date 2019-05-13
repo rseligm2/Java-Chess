@@ -1,0 +1,68 @@
+\hypertarget{class_table_handler}{}\section{Table\+Handler Class Reference}
+\label{class_table_handler}\index{TableHandler@{TableHandler}}
+
+
+Node representing an entry in the table.  
+
+
+
+
+{\ttfamily \#include $<$dochandler.\+h$>$}
+
+Inheritance diagram for Table\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.538461cm]{class_table_handler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_table_handler_a9e0613ea8ae5607d225932bcc9f62215}\label{class_table_handler_a9e0613ea8ae5607d225932bcc9f62215}} 
+{\bfseries Table\+Handler} (\mbox{\hyperlink{class_i_base_handler}{I\+Base\+Handler}} $\ast$parent)
+\item 
+\mbox{\Hypertarget{class_table_handler_a09ce57d19969e097b1bd637923672003}\label{class_table_handler_a09ce57d19969e097b1bd637923672003}} 
+void {\bfseries start\+Table} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_table_handler_ad906939d05d7140280515a0f2b0f0031}\label{class_table_handler_ad906939d05d7140280515a0f2b0f0031}} 
+void {\bfseries end\+Table} ()
+\item 
+\mbox{\Hypertarget{class_table_handler_a907149d6a57a20bbb142d60d457209fe}\label{class_table_handler_a907149d6a57a20bbb142d60d457209fe}} 
+void {\bfseries start\+Row} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_table_handler_a8e3d08c867677c9e2d9bac9b53b781e2}\label{class_table_handler_a8e3d08c867677c9e2d9bac9b53b781e2}} 
+void {\bfseries start\+Caption} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_table_handler_a2fb38f8951f0982bcd2a17d0d1a2182f}\label{class_table_handler_a2fb38f8951f0982bcd2a17d0d1a2182f}} 
+void {\bfseries end\+Caption} ()
+\item 
+\mbox{\Hypertarget{class_table_handler_afb805c4f6f2e64e6a21e88b73466d9a9}\label{class_table_handler_afb805c4f6f2e64e6a21e88b73466d9a9}} 
+virtual Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{class_table_handler_a90715ee8d5387e2acde993b4ddd66a5f}\label{class_table_handler_a90715ee8d5387e2acde993b4ddd66a5f}} 
+virtual \mbox{\hyperlink{class_i_doc_iterator}{I\+Doc\+Iterator}} $\ast$ {\bfseries rows} () const
+\item 
+\mbox{\Hypertarget{class_table_handler_a2d106b897927d7de6e15ab28512e7313}\label{class_table_handler_a2d106b897927d7de6e15ab28512e7313}} 
+virtual int {\bfseries num\+Columns} () const
+\item 
+\mbox{\Hypertarget{class_table_handler_a86841f094624273b21e40e160dfd5127}\label{class_table_handler_a86841f094624273b21e40e160dfd5127}} 
+virtual const \mbox{\hyperlink{class_i_string}{I\+String}} $\ast$ {\bfseries caption} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_table_handler_ab0165532e287d023758cc64c24e40fb7}\label{class_table_handler_ab0165532e287d023758cc64c24e40fb7}} 
+class {\bfseries Table\+Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Node representing an entry in the table. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/addon/doxmlparser/src/dochandler.\+h\item 
+doxygen/addon/doxmlparser/src/dochandler.\+cpp\end{DoxyCompactItemize}

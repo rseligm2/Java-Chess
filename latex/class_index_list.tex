@@ -1,0 +1,88 @@
+\hypertarget{class_index_list}{}\section{Index\+List Class Reference}
+\label{class_index_list}\index{IndexList@{IndexList}}
+
+
+\mbox{\hyperlink{class_a}{A}} list of index interfaces.  
+
+
+
+
+{\ttfamily \#include $<$index.\+h$>$}
+
+Inheritance diagram for Index\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_index_list}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_index_list_a9d525f0a264b6aba4f8acf2d513a31ea}{Index\+List}} ()
+\item 
+void \mbox{\hyperlink{class_index_list_a8120913e328f96fec6e5b2070902f4e7}{add\+Index}} (\mbox{\hyperlink{class_index_intf}{Index\+Intf}} $\ast$intf)
+\item 
+\mbox{\Hypertarget{class_index_list_ae7334e24bfdf93caf3db9d61ae62caf6}\label{class_index_list_ae7334e24bfdf93caf3db9d61ae62caf6}} 
+void {\bfseries disable} ()
+\item 
+\mbox{\Hypertarget{class_index_list_aabffffbc2e50eeb9437640c369dfd6b7}\label{class_index_list_aabffffbc2e50eeb9437640c369dfd6b7}} 
+void {\bfseries enable} ()
+\item 
+\mbox{\Hypertarget{class_index_list_ab255d94f91cba673bf82de1edc3737ec}\label{class_index_list_ab255d94f91cba673bf82de1edc3737ec}} 
+bool {\bfseries is\+Enabled} () const
+\item 
+\mbox{\Hypertarget{class_index_list_a104b016afa73759d65b08f6c1cced210}\label{class_index_list_a104b016afa73759d65b08f6c1cced210}} 
+void {\bfseries initialize} ()
+\item 
+\mbox{\Hypertarget{class_index_list_af04e11231983acb4dbf381e809bfa178}\label{class_index_list_af04e11231983acb4dbf381e809bfa178}} 
+void {\bfseries finalize} ()
+\item 
+\mbox{\Hypertarget{class_index_list_ac6af95293030206c0224260e9b1d7aca}\label{class_index_list_ac6af95293030206c0224260e9b1d7aca}} 
+void {\bfseries inc\+Contents\+Depth} ()
+\item 
+\mbox{\Hypertarget{class_index_list_a4bad65cd2fadab4529bbfe5df78cc019}\label{class_index_list_a4bad65cd2fadab4529bbfe5df78cc019}} 
+void {\bfseries dec\+Contents\+Depth} ()
+\item 
+\mbox{\Hypertarget{class_index_list_afac63d024f410eaf10960f240e881f0b}\label{class_index_list_afac63d024f410eaf10960f240e881f0b}} 
+void {\bfseries add\+Contents\+Item} (bool is\+Dir, const char $\ast$name, const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, bool separate\+Index=F\+A\+L\+SE, bool add\+To\+Nav\+Index=F\+A\+L\+SE, \mbox{\hyperlink{class_definition}{Definition}} $\ast$def=0)
+\item 
+\mbox{\Hypertarget{class_index_list_aab8f1fb60ccd7074dfcacab6584ebaa2}\label{class_index_list_aab8f1fb60ccd7074dfcacab6584ebaa2}} 
+void {\bfseries add\+Index\+Item} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$context, \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$md, const char $\ast$section\+Anchor=0, const char $\ast$title=0)
+\item 
+\mbox{\Hypertarget{class_index_list_a847ef82be5132a43cf70e516f6c525aa}\label{class_index_list_a847ef82be5132a43cf70e516f6c525aa}} 
+void {\bfseries add\+Index\+File} (const char $\ast$name)
+\item 
+\mbox{\Hypertarget{class_index_list_aacfe4c4bf0fa41efea7015fc6aa372d6}\label{class_index_list_aacfe4c4bf0fa41efea7015fc6aa372d6}} 
+void {\bfseries add\+Image\+File} (const char $\ast$name)
+\item 
+\mbox{\Hypertarget{class_index_list_a86a377209f0483a032c4e3c241a946a9}\label{class_index_list_a86a377209f0483a032c4e3c241a946a9}} 
+void {\bfseries add\+Style\+Sheet\+File} (const char $\ast$name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_a}{A}} list of index interfaces. 
+
+This class itself implements all methods of \mbox{\hyperlink{class_index_intf}{Index\+Intf}} and just forwards the calls to all items in the list. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_index_list_a9d525f0a264b6aba4f8acf2d513a31ea}\label{class_index_list_a9d525f0a264b6aba4f8acf2d513a31ea}} 
+\index{IndexList@{IndexList}!IndexList@{IndexList}}
+\index{IndexList@{IndexList}!IndexList@{IndexList}}
+\subsubsection{\texorpdfstring{IndexList()}{IndexList()}}
+{\footnotesize\ttfamily Index\+List\+::\+Index\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a list of indexes 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_index_list_a8120913e328f96fec6e5b2070902f4e7}\label{class_index_list_a8120913e328f96fec6e5b2070902f4e7}} 
+\index{IndexList@{IndexList}!addIndex@{addIndex}}
+\index{addIndex@{addIndex}!IndexList@{IndexList}}
+\subsubsection{\texorpdfstring{addIndex()}{addIndex()}}
+{\footnotesize\ttfamily void Index\+List\+::add\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_index_intf}{Index\+Intf}} $\ast$}]{intf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add an index generator to the list 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/index.\+h\end{DoxyCompactItemize}

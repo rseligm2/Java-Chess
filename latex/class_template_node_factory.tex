@@ -1,0 +1,41 @@
+\hypertarget{class_template_node_factory}{}\section{Template\+Node\+Factory Class Reference}
+\label{class_template_node_factory}\index{TemplateNodeFactory@{TemplateNodeFactory}}
+
+
+Factory class for creating tag A\+ST nodes found in a template.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_template_node_factory_1_1_auto_register}{Auto\+Register}}
+\begin{DoxyCompactList}\small\item\em Helper class for registering a template A\+ST node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_template_node_factory_a59ae33c1e37ddecd982358a5417fab31}\label{class_template_node_factory_a59ae33c1e37ddecd982358a5417fab31}} 
+typedef \mbox{\hyperlink{class_template_node}{Template\+Node}} $\ast$($\ast$ {\bfseries Create\+Func}) (\mbox{\hyperlink{class_template_parser}{Template\+Parser}} $\ast$parser, \mbox{\hyperlink{class_template_node}{Template\+Node}} $\ast$parent, int line, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&data)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_template_node_factory_acad608d0e42a69f2e4ad3caa05388d32}\label{class_template_node_factory_acad608d0e42a69f2e4ad3caa05388d32}} 
+\mbox{\hyperlink{class_template_node}{Template\+Node}} $\ast$ {\bfseries create} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name, \mbox{\hyperlink{class_template_parser}{Template\+Parser}} $\ast$parser, \mbox{\hyperlink{class_template_node}{Template\+Node}} $\ast$parent, int line, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&data)
+\item 
+\mbox{\Hypertarget{class_template_node_factory_a1a032751feb62597c052da0548b56e95}\label{class_template_node_factory_a1a032751feb62597c052da0548b56e95}} 
+void {\bfseries register\+Template\+Node} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&name, Create\+Func \mbox{\hyperlink{070__ref__variadic__template_8cpp_abb1e0338f72ae46a1240ada65d6a397c}{func}})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_template_node_factory_ab70bb43cedfb3ac75cec15d97391b6f9}\label{class_template_node_factory_ab70bb43cedfb3ac75cec15d97391b6f9}} 
+static \mbox{\hyperlink{class_template_node_factory}{Template\+Node\+Factory}} $\ast$ {\bfseries instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Factory class for creating tag A\+ST nodes found in a template. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/template.\+cpp\end{DoxyCompactItemize}

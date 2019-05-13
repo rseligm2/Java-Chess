@@ -1,0 +1,100 @@
+\hypertarget{class_member_group_list_context}{}\section{Member\+Group\+List\+Context Class Reference}
+\label{class_member_group_list_context}\index{MemberGroupListContext@{MemberGroupListContext}}
+Inheritance diagram for Member\+Group\+List\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_member_group_list_context}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_member_group_list_context_1_1_private}{Private}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_member_group_list_context_a65ff4ee1ee899eabe742616a5ccf7648}{count}} () const
+\item 
+virtual \mbox{\hyperlink{class_template_variant}{Template\+Variant}} \mbox{\hyperlink{class_member_group_list_context_a804c6afa443fa52659d4f19413f329bf}{at}} (int index) const
+\item 
+virtual \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ \mbox{\hyperlink{class_member_group_list_context_abc6f782dc3c8e8ed377d151805b3abbe}{create\+Iterator}} () const
+\item 
+virtual int \mbox{\hyperlink{class_member_group_list_context_a3a135dbacc0e65f809b61797db5dbc4a}{add\+Ref}} ()
+\item 
+virtual int \mbox{\hyperlink{class_member_group_list_context_afc46c3c1646126f13c4357c4800a5fe0}{release}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_member_group_list_context_a2c4d323783a09aaee946fd6c6021a38e}\label{class_member_group_list_context_a2c4d323783a09aaee946fd6c6021a38e}} 
+static \mbox{\hyperlink{class_member_group_list_context}{Member\+Group\+List\+Context}} $\ast$ {\bfseries alloc} ()
+\item 
+\mbox{\Hypertarget{class_member_group_list_context_a5d2c89b1944fae7306081ddc8e1ca494}\label{class_member_group_list_context_a5d2c89b1944fae7306081ddc8e1ca494}} 
+static \mbox{\hyperlink{class_member_group_list_context}{Member\+Group\+List\+Context}} $\ast$ {\bfseries alloc} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$def, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&rel\+Path, const \mbox{\hyperlink{class_member_group_list}{Member\+Group\+List}} $\ast$list)
+\item 
+\mbox{\Hypertarget{class_member_group_list_context_a96919aa31b59ab4bfe5932f1ca97bd1f}\label{class_member_group_list_context_a96919aa31b59ab4bfe5932f1ca97bd1f}} 
+static \mbox{\hyperlink{class_member_group_list_context}{Member\+Group\+List\+Context}} $\ast$ {\bfseries alloc} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$def, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&rel\+Path, const \mbox{\hyperlink{class_member_group_s_dict}{Member\+Group\+S\+Dict}} $\ast$dict, bool sub\+Grouping)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_member_group_list_context_a3a135dbacc0e65f809b61797db5dbc4a}\label{class_member_group_list_context_a3a135dbacc0e65f809b61797db5dbc4a}} 
+\index{MemberGroupListContext@{MemberGroupListContext}!addRef@{addRef}}
+\index{addRef@{addRef}!MemberGroupListContext@{MemberGroupListContext}}
+\subsubsection{\texorpdfstring{addRef()}{addRef()}}
+{\footnotesize\ttfamily virtual int Member\+Group\+List\+Context\+::add\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Increase object\textquotesingle{}s reference count 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a4b4973e2e15396d10bc4e3085462ca2b}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_member_group_list_context_a804c6afa443fa52659d4f19413f329bf}\label{class_member_group_list_context_a804c6afa443fa52659d4f19413f329bf}} 
+\index{MemberGroupListContext@{MemberGroupListContext}!at@{at}}
+\index{at@{at}!MemberGroupListContext@{MemberGroupListContext}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_variant}{Template\+Variant}} Member\+Group\+List\+Context\+::at (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the element at index position {\itshape index}. 
+
+Implements \mbox{\hyperlink{class_template_list_intf_aa51e57e72eacf4e8ce1055ee30a0f7f8}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_member_group_list_context_a65ff4ee1ee899eabe742616a5ccf7648}\label{class_member_group_list_context_a65ff4ee1ee899eabe742616a5ccf7648}} 
+\index{MemberGroupListContext@{MemberGroupListContext}!count@{count}}
+\index{count@{count}!MemberGroupListContext@{MemberGroupListContext}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Member\+Group\+List\+Context\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the number of elements in the list 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a329e49e33484c2aa5106aac1bf4e5216}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_member_group_list_context_abc6f782dc3c8e8ed377d151805b3abbe}\label{class_member_group_list_context_abc6f782dc3c8e8ed377d151805b3abbe}} 
+\index{MemberGroupListContext@{MemberGroupListContext}!createIterator@{createIterator}}
+\index{createIterator@{createIterator}!MemberGroupListContext@{MemberGroupListContext}}
+\subsubsection{\texorpdfstring{createIterator()}{createIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\+List\+Intf\+::\+Const\+Iterator}} $\ast$ Member\+Group\+List\+Context\+::create\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a new iterator for this list. \begin{DoxyNote}{Note}
+the user should call delete on the returned pointer. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_template_list_intf_a56b82384db24c3e121076a1da046d378}{Template\+List\+Intf}}.
+
+\mbox{\Hypertarget{class_member_group_list_context_afc46c3c1646126f13c4357c4800a5fe0}\label{class_member_group_list_context_afc46c3c1646126f13c4357c4800a5fe0}} 
+\index{MemberGroupListContext@{MemberGroupListContext}!release@{release}}
+\index{release@{release}!MemberGroupListContext@{MemberGroupListContext}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual int Member\+Group\+List\+Context\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Decreases object\textquotesingle{}s reference count, destroy object if 0 
+
+Implements \mbox{\hyperlink{class_template_list_intf_a0c53169c740c09dac47efc62bbe39674}{Template\+List\+Intf}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/context.\+h\item 
+doxygen/src/context.\+cpp\end{DoxyCompactItemize}

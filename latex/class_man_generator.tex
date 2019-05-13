@@ -1,0 +1,1010 @@
+\hypertarget{class_man_generator}{}\section{Man\+Generator Class Reference}
+\label{class_man_generator}\index{ManGenerator@{ManGenerator}}
+
+
+{\ttfamily \#include $<$mangen.\+h$>$}
+
+Inheritance diagram for Man\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_man_generator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_man_generator_a952257b104ee73181e50ac3617e6c8ba}\label{class_man_generator_a952257b104ee73181e50ac3617e6c8ba}} 
+void {\bfseries enable} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a8e677c969a92c05ad55e89383215e9a4}\label{class_man_generator_a8e677c969a92c05ad55e89383215e9a4}} 
+void {\bfseries disable} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a6a9253a0f036c4f8fbb9c8dc908d36e2}\label{class_man_generator_a6a9253a0f036c4f8fbb9c8dc908d36e2}} 
+void {\bfseries enable\+If} (Output\+Type o)
+\item 
+\mbox{\Hypertarget{class_man_generator_a3730f076f025f7969c1e804c553a1201}\label{class_man_generator_a3730f076f025f7969c1e804c553a1201}} 
+void {\bfseries disable\+If} (Output\+Type o)
+\item 
+\mbox{\Hypertarget{class_man_generator_a840a5fe6338fc2ff32570933e6a6b741}\label{class_man_generator_a840a5fe6338fc2ff32570933e6a6b741}} 
+void {\bfseries disable\+If\+Not} (Output\+Type o)
+\item 
+\mbox{\Hypertarget{class_man_generator_ab1988ae55ad31aa4314452d277cd8d47}\label{class_man_generator_ab1988ae55ad31aa4314452d277cd8d47}} 
+bool {\bfseries is\+Enabled} (Output\+Type o)
+\item 
+\mbox{\Hypertarget{class_man_generator_a00f9039d2fae7e493948ade8f7ba4062}\label{class_man_generator_a00f9039d2fae7e493948ade8f7ba4062}} 
+\mbox{\hyperlink{class_output_generator}{Output\+Generator}} $\ast$ {\bfseries get} (Output\+Type o)
+\item 
+\mbox{\Hypertarget{class_man_generator_adfcb88add542e7342f4b8c3faa737511}\label{class_man_generator_adfcb88add542e7342f4b8c3faa737511}} 
+void {\bfseries write\+Doc} (\mbox{\hyperlink{class_doc_node}{Doc\+Node}} $\ast$, \mbox{\hyperlink{class_definition}{Definition}} $\ast$, \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_a694e4eb58c60cf927b2dc0b764756274}\label{class_man_generator_a694e4eb58c60cf927b2dc0b764756274}} 
+void {\bfseries start\+File} (const char $\ast$name, const char $\ast$man\+Name, const char $\ast$title)
+\item 
+\mbox{\Hypertarget{class_man_generator_a96fbf7763c494b5d68e80e8c66517e30}\label{class_man_generator_a96fbf7763c494b5d68e80e8c66517e30}} 
+void {\bfseries write\+Search\+Info} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a1b05b289f0788338aa5c6cbafcbc1264}\label{class_man_generator_a1b05b289f0788338aa5c6cbafcbc1264}} 
+void {\bfseries write\+Footer} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_a15c31d2c71f0155387f7a94586e867ee}\label{class_man_generator_a15c31d2c71f0155387f7a94586e867ee}} 
+void {\bfseries end\+File} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ac9637931a3179354ab9757536c6f87dd}\label{class_man_generator_ac9637931a3179354ab9757536c6f87dd}} 
+void {\bfseries clear\+Buffer} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a16139edbbc00e57e3b17c803b36dff22}\label{class_man_generator_a16139edbbc00e57e3b17c803b36dff22}} 
+void {\bfseries start\+Index\+Section} (Index\+Sections)
+\item 
+\mbox{\Hypertarget{class_man_generator_aa098d1eeb8758aa1b4626380c3848395}\label{class_man_generator_aa098d1eeb8758aa1b4626380c3848395}} 
+void {\bfseries end\+Index\+Section} (Index\+Sections)
+\item 
+\mbox{\Hypertarget{class_man_generator_a526966444ebff24c3afc9129280a0636}\label{class_man_generator_a526966444ebff24c3afc9129280a0636}} 
+void {\bfseries write\+Page\+Link} (const char $\ast$, bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_a9e8739b09bd5788c0b44711d9bbe1fbb}\label{class_man_generator_a9e8739b09bd5788c0b44711d9bbe1fbb}} 
+void {\bfseries start\+Project\+Number} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ab9165a61b79e3e2f6bb7a6be7fb3b592}\label{class_man_generator_ab9165a61b79e3e2f6bb7a6be7fb3b592}} 
+void {\bfseries end\+Project\+Number} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a9d0f82f72d8efcf0aec1b73010cb5399}\label{class_man_generator_a9d0f82f72d8efcf0aec1b73010cb5399}} 
+void {\bfseries write\+Style\+Info} (int)
+\item 
+\mbox{\Hypertarget{class_man_generator_ab7edd0149d49b267b295f7e45f05c1b3}\label{class_man_generator_ab7edd0149d49b267b295f7e45f05c1b3}} 
+void {\bfseries start\+Title\+Head} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_a3bf5507570176973698d86176b3ecb08}\label{class_man_generator_a3bf5507570176973698d86176b3ecb08}} 
+void {\bfseries end\+Title\+Head} (const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_ae53c0d4f7905f85069f2e253f97f99a6}\label{class_man_generator_ae53c0d4f7905f85069f2e253f97f99a6}} 
+void {\bfseries start\+Title} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a5f10174e0eec5ab53365aad27ad48f22}\label{class_man_generator_a5f10174e0eec5ab53365aad27ad48f22}} 
+void {\bfseries end\+Title} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a0242c97cf62889e69e74196b9567e7d0}\label{class_man_generator_a0242c97cf62889e69e74196b9567e7d0}} 
+void {\bfseries new\+Paragraph} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_a311b0dd8edecddbfa0473c5e43a97e73}{start\+Paragraph}} (const char $\ast$class\+Def)
+\item 
+void \mbox{\hyperlink{class_man_generator_a7c4c2315a23018eb35413776b36b29e7}{end\+Paragraph}} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_a39ca2f1de2bbbe5548f6f03997a84c88}{write\+String}} (const char $\ast$text)
+\item 
+\mbox{\Hypertarget{class_man_generator_ab4387706fb5b4d1d0f1bfdab7a077ce1}\label{class_man_generator_ab4387706fb5b4d1d0f1bfdab7a077ce1}} 
+void {\bfseries start\+Index\+List\+Item} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ae568d65474b86966690b7d9770f30f0d}\label{class_man_generator_ae568d65474b86966690b7d9770f30f0d}} 
+void {\bfseries end\+Index\+List\+Item} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a9c1a9e6d28d35c61d8bada0b3df54135}\label{class_man_generator_a9c1a9e6d28d35c61d8bada0b3df54135}} 
+void {\bfseries start\+Index\+List} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a34fbcb10cccc244f8233e2c0bc3584be}\label{class_man_generator_a34fbcb10cccc244f8233e2c0bc3584be}} 
+void {\bfseries end\+Index\+List} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_abe1776365631974d6789cb6fceef5d62}\label{class_man_generator_abe1776365631974d6789cb6fceef5d62}} 
+void {\bfseries start\+Index\+Key} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ae60fe67ecdfd731f94c129a767e2a296}\label{class_man_generator_ae60fe67ecdfd731f94c129a767e2a296}} 
+void {\bfseries end\+Index\+Key} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ab554eb3dc18eceac143faf9ca3d29859}\label{class_man_generator_ab554eb3dc18eceac143faf9ca3d29859}} 
+void {\bfseries start\+Index\+Value} (bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_a6ad3a6b5074c75aa9dbe2e48a88d575d}\label{class_man_generator_a6ad3a6b5074c75aa9dbe2e48a88d575d}} 
+void {\bfseries end\+Index\+Value} (const char $\ast$, bool)
+\item 
+void \mbox{\hyperlink{class_man_generator_a5b29aa8c2dd69237fd7470df129fc4e3}{start\+Item\+List}} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_abb7aa578a49c62b103f85e0f5d3c9e2a}{end\+Item\+List}} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a51cec6b9dc4026bfb5369b9f2285e76f}\label{class_man_generator_a51cec6b9dc4026bfb5369b9f2285e76f}} 
+void {\bfseries start\+Index\+Item} (const char $\ast$ref, const char $\ast$file)
+\item 
+\mbox{\Hypertarget{class_man_generator_a5902ca975ce0716970c7de209d5be303}\label{class_man_generator_a5902ca975ce0716970c7de209d5be303}} 
+void {\bfseries end\+Index\+Item} (const char $\ast$ref, const char $\ast$file)
+\item 
+void \mbox{\hyperlink{class_man_generator_aae62a687e228c0f3c5b698570c603022}{docify}} (const char $\ast$text)
+\item 
+void \mbox{\hyperlink{class_man_generator_a6e70bf6444a4e6d5db43f5bbb7b6b125}{codify}} (const char $\ast$text)
+\item 
+void \mbox{\hyperlink{class_man_generator_a4bcf9c17c915914aca7b271c85aa08ea}{write\+Object\+Link}} (const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, const char $\ast$name)
+\item 
+void \mbox{\hyperlink{class_man_generator_ac4d91e5763d584238139d65d873e9f64}{write\+Code\+Link}} (const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, const char $\ast$name, const char $\ast$tooltip)
+\item 
+void \mbox{\hyperlink{class_man_generator_a8ec440b278091bf61579f35cd8237a25}{write\+Tooltip}} (const char $\ast$, const \mbox{\hyperlink{struct_doc_link_info}{Doc\+Link\+Info}} \&, const char $\ast$, const char $\ast$, const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&, const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&)
+\item 
+\mbox{\Hypertarget{class_man_generator_a3c1d7362119d49471f88a39189e63869}\label{class_man_generator_a3c1d7362119d49471f88a39189e63869}} 
+void {\bfseries start\+Text\+Link} (const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_ae0b59e20362769f00731c90f0e3fdc00}\label{class_man_generator_ae0b59e20362769f00731c90f0e3fdc00}} 
+void {\bfseries end\+Text\+Link} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_a605e678d3be65519e6b94dff6e403e79}{start\+Html\+Link}} (const char $\ast$url)
+\item 
+void \mbox{\hyperlink{class_man_generator_a7323695cedb872064ddb450875b2baea}{end\+Html\+Link}} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_aa03f575a82549d2393bb080337769f1c}{start\+Typewriter}} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_a918922201985cac387c671a9767021d1}{end\+Typewriter}} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a69dbc09e1398a0f64796d28a45642bba}\label{class_man_generator_a69dbc09e1398a0f64796d28a45642bba}} 
+void {\bfseries start\+Group\+Header} (int)
+\item 
+\mbox{\Hypertarget{class_man_generator_a826a7e069686709295c162b2b2db7e25}\label{class_man_generator_a826a7e069686709295c162b2b2db7e25}} 
+void {\bfseries end\+Group\+Header} (int)
+\item 
+\mbox{\Hypertarget{class_man_generator_a712f6f2ffa6fcc93d783510760a7a337}\label{class_man_generator_a712f6f2ffa6fcc93d783510760a7a337}} 
+void {\bfseries start\+Member\+Sections} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a860d52eda1510b0c06177ac90c18b850}\label{class_man_generator_a860d52eda1510b0c06177ac90c18b850}} 
+void {\bfseries end\+Member\+Sections} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a070bbb4b1984e6f82dd4798f1ac325da}\label{class_man_generator_a070bbb4b1984e6f82dd4798f1ac325da}} 
+void {\bfseries start\+Header\+Section} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_aeaaf8704bdcaec06d4fe435491962d50}\label{class_man_generator_aeaaf8704bdcaec06d4fe435491962d50}} 
+void {\bfseries end\+Header\+Section} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_aa7d17ccd02a64a3bcbd97825bcf6a9cb}\label{class_man_generator_aa7d17ccd02a64a3bcbd97825bcf6a9cb}} 
+void {\bfseries start\+Member\+Header} (const char $\ast$, int)
+\item 
+\mbox{\Hypertarget{class_man_generator_ae8b551cb5b57bdafb99421c7d22b96e7}\label{class_man_generator_ae8b551cb5b57bdafb99421c7d22b96e7}} 
+void {\bfseries end\+Member\+Header} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a7304b66d658ba124c84d4553772f27a6}\label{class_man_generator_a7304b66d658ba124c84d4553772f27a6}} 
+void {\bfseries insert\+Member\+Align} (bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_ad21762ee94c16bed4a40dc1a439e7237}\label{class_man_generator_ad21762ee94c16bed4a40dc1a439e7237}} 
+void {\bfseries insert\+Member\+Align\+Left} (int, bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_a8401b5bb326a6aeea489f930cdbd6b73}\label{class_man_generator_a8401b5bb326a6aeea489f930cdbd6b73}} 
+void {\bfseries start\+Member\+Subtitle} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a2338bc0695c2c43e905266bd6178db98}\label{class_man_generator_a2338bc0695c2c43e905266bd6178db98}} 
+void {\bfseries end\+Member\+Subtitle} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_a83d776971ea058ea021d49df05f4e563}{start\+Item\+List\+Item}} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_a87a722d58e6364660622ab086f20edc8}{end\+Item\+List\+Item}} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a94d12a8dc22ce00643f7bec9e0362029}\label{class_man_generator_a94d12a8dc22ce00643f7bec9e0362029}} 
+void {\bfseries start\+Member\+Doc\+List} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_afc88f71ad193093bf9e390e3c42599de}\label{class_man_generator_afc88f71ad193093bf9e390e3c42599de}} 
+void {\bfseries end\+Member\+Doc\+List} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a364cef63b278c64d8a3b9b6db37395cb}\label{class_man_generator_a364cef63b278c64d8a3b9b6db37395cb}} 
+void {\bfseries start\+Member\+List} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a0ee830ccc307c8123fffe69bd869ee41}\label{class_man_generator_a0ee830ccc307c8123fffe69bd869ee41}} 
+void {\bfseries end\+Member\+List} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_aa3087d26fc36bd95bebf71f9a92fa404}\label{class_man_generator_aa3087d26fc36bd95bebf71f9a92fa404}} 
+void {\bfseries start\+Inline\+Header} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_aca092428ce78c39b6a3a6e1e8fc66769}\label{class_man_generator_aca092428ce78c39b6a3a6e1e8fc66769}} 
+void {\bfseries end\+Inline\+Header} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a7650162849d46081499953d5a16b6bbf}\label{class_man_generator_a7650162849d46081499953d5a16b6bbf}} 
+void {\bfseries start\+Anon\+Type\+Scope} (int)
+\item 
+\mbox{\Hypertarget{class_man_generator_a680b0b24f66dc9038bb9d97dede6c309}\label{class_man_generator_a680b0b24f66dc9038bb9d97dede6c309}} 
+void {\bfseries end\+Anon\+Type\+Scope} (int)
+\item 
+\mbox{\Hypertarget{class_man_generator_a6a562eabf8ab73b8a9fd0790b441e15c}\label{class_man_generator_a6a562eabf8ab73b8a9fd0790b441e15c}} 
+void {\bfseries start\+Member\+Item} (const char $\ast$, int, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_a0bf54b0520a592a870ae4d310c4890b2}\label{class_man_generator_a0bf54b0520a592a870ae4d310c4890b2}} 
+void {\bfseries end\+Member\+Item} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ad67219f83aa99539fc34e2142a734811}\label{class_man_generator_ad67219f83aa99539fc34e2142a734811}} 
+void {\bfseries start\+Member\+Template\+Params} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a0fdb9af50bb49e0451dfbff090410358}\label{class_man_generator_a0fdb9af50bb49e0451dfbff090410358}} 
+void {\bfseries end\+Member\+Template\+Params} (const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_ad61671374ab1bf2fe21d21b7589330c0}\label{class_man_generator_ad61671374ab1bf2fe21d21b7589330c0}} 
+void {\bfseries start\+Member\+Group\+Header} (bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_af4486862ca19909c0ae2489e0343673d}\label{class_man_generator_af4486862ca19909c0ae2489e0343673d}} 
+void {\bfseries end\+Member\+Group\+Header} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a66ae1d09997555850f799cd41639939e}\label{class_man_generator_a66ae1d09997555850f799cd41639939e}} 
+void {\bfseries start\+Member\+Group\+Docs} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a60f94edabac05693a5c536c90ef45aaa}\label{class_man_generator_a60f94edabac05693a5c536c90ef45aaa}} 
+void {\bfseries end\+Member\+Group\+Docs} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a5e1024895e01040f9f207aa96d838998}\label{class_man_generator_a5e1024895e01040f9f207aa96d838998}} 
+void {\bfseries start\+Member\+Group} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a93050bd4f7fd8c3181a65b7967b167ea}\label{class_man_generator_a93050bd4f7fd8c3181a65b7967b167ea}} 
+void {\bfseries end\+Member\+Group} (bool)
+\item 
+void \mbox{\hyperlink{class_man_generator_ab7a5373b1e631879e56bf5699e00cfe2}{write\+Ruler}} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a196669b4dd3c70556bf585925ae824fe}\label{class_man_generator_a196669b4dd3c70556bf585925ae824fe}} 
+void {\bfseries write\+Anchor} (const char $\ast$, const char $\ast$)
+\item 
+void \mbox{\hyperlink{class_man_generator_a23377579a34bc5cee9a43885888dd5d4}{start\+Code\+Fragment}} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_a4e825c27561ebb51c155840d9101725a}{end\+Code\+Fragment}} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_a3fe4aad0243fbecd3b746448a9373d3c}{write\+Line\+Number}} (const char $\ast$, const char $\ast$, const char $\ast$, int l)
+\item 
+\mbox{\Hypertarget{class_man_generator_a2690c4b3d068da46f8a6804d43fd34e7}\label{class_man_generator_a2690c4b3d068da46f8a6804d43fd34e7}} 
+void {\bfseries start\+Code\+Line} (bool)
+\item 
+void \mbox{\hyperlink{class_man_generator_a0f0040036147c71754651d0701029f70}{end\+Code\+Line}} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_a8a88956b0c96590290287835934344b9}{start\+Emphasis}} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_a3e158ae587148e66ad6f3d4df509ca35}{end\+Emphasis}} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_a93a20331a8e073df653ed1df9834361b}{start\+Bold}} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_acc9e3c928bd473ce079e323f19948dc7}{end\+Bold}} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_a40c97f2dcd8827c13a9d1eedb96701b5}{start\+Description}} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_a04db9176fd114182d5aab2a48346621d}{end\+Description}} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_a3230aa59d50e8bdbbfb94e56bd956f56}{start\+Desc\+Item}} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_ab86f06d399e075e2b6855319bf26e1ec}{end\+Desc\+Item}} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a3c7ce366b7915a1c3dc6129182f0f9e8}\label{class_man_generator_a3c7ce366b7915a1c3dc6129182f0f9e8}} 
+void {\bfseries line\+Break} (const char $\ast$)
+\item 
+void \mbox{\hyperlink{class_man_generator_a5831577a90e226daf7ad892dd8744d33}{write\+Char}} (char c)
+\item 
+\mbox{\Hypertarget{class_man_generator_a84edf6edf092cdef65a7f55df41c6aac}\label{class_man_generator_a84edf6edf092cdef65a7f55df41c6aac}} 
+void {\bfseries start\+Member\+Doc} (const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$, int, int, bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_aa4f870d246564655e89f9d50647e5df0}\label{class_man_generator_aa4f870d246564655e89f9d50647e5df0}} 
+void {\bfseries end\+Member\+Doc} (bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_a76c670385ec8cf1dccf4f4f16494e79b}\label{class_man_generator_a76c670385ec8cf1dccf4f4f16494e79b}} 
+void {\bfseries start\+Doxy\+Anchor} (const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_a47b84c3d099ed32ac6ad1875c84ccd24}\label{class_man_generator_a47b84c3d099ed32ac6ad1875c84ccd24}} 
+void {\bfseries end\+Doxy\+Anchor} (const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_adc7746d2f225bc7742dc0fd23fd9bf1e}\label{class_man_generator_adc7746d2f225bc7742dc0fd23fd9bf1e}} 
+void {\bfseries write\+Latex\+Spacing} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a8a403fb64475a8a08a959176fdd754f0}\label{class_man_generator_a8a403fb64475a8a08a959176fdd754f0}} 
+void {\bfseries write\+Start\+Anno\+Item} (const char $\ast$type, const char $\ast$file, const char $\ast$path, const char $\ast$name)
+\item 
+\mbox{\Hypertarget{class_man_generator_afda450fa7e610bf25690ca6211a3bf8e}\label{class_man_generator_afda450fa7e610bf25690ca6211a3bf8e}} 
+void {\bfseries write\+End\+Anno\+Item} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_a8b76bb902110b0df8f020b73207baf0c}\label{class_man_generator_a8b76bb902110b0df8f020b73207baf0c}} 
+void {\bfseries start\+Subsection} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a4ae427e8787652bcc456f58f729079a3}\label{class_man_generator_a4ae427e8787652bcc456f58f729079a3}} 
+void {\bfseries end\+Subsection} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_aedb1d92ae73f0d14dceac0f52eb159d1}\label{class_man_generator_aedb1d92ae73f0d14dceac0f52eb159d1}} 
+void {\bfseries start\+Subsubsection} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ab4ab218011dee86fa1e5f7938567aefb}\label{class_man_generator_ab4ab218011dee86fa1e5f7938567aefb}} 
+void {\bfseries end\+Subsubsection} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a0779e3309c5b48fef8be36d066e51879}\label{class_man_generator_a0779e3309c5b48fef8be36d066e51879}} 
+void {\bfseries start\+Center} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ac97abbbcd519a1c77f62516634feff3f}\label{class_man_generator_ac97abbbcd519a1c77f62516634feff3f}} 
+void {\bfseries end\+Center} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a5a3d0de8665d88ae599c1d3d408356d3}\label{class_man_generator_a5a3d0de8665d88ae599c1d3d408356d3}} 
+void {\bfseries start\+Small} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a1e934fe458d046107d45ab389ea645d8}\label{class_man_generator_a1e934fe458d046107d45ab389ea645d8}} 
+void {\bfseries end\+Small} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a198a1264b3c2d5f1e45c71ea3b82be9c}\label{class_man_generator_a198a1264b3c2d5f1e45c71ea3b82be9c}} 
+void {\bfseries start\+Member\+Description} (const char $\ast$, const char $\ast$, bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_a79c75e33f0931c60403f1f8c17f12808}\label{class_man_generator_a79c75e33f0931c60403f1f8c17f12808}} 
+void {\bfseries end\+Member\+Description} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a19e8526336e7686234452bfe36420858}\label{class_man_generator_a19e8526336e7686234452bfe36420858}} 
+void {\bfseries start\+Member\+Declaration} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a99c9249b28b3ec0a01bc379abca51448}\label{class_man_generator_a99c9249b28b3ec0a01bc379abca51448}} 
+void {\bfseries end\+Member\+Declaration} (const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_a69751a9ead6f0704b5656143c137877d}\label{class_man_generator_a69751a9ead6f0704b5656143c137877d}} 
+void {\bfseries write\+Inherited\+Section\+Title} (const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_a8aef21e6f671eda52e22a3941954fbc1}\label{class_man_generator_a8aef21e6f671eda52e22a3941954fbc1}} 
+void {\bfseries start\+Desc\+List} (Section\+Types)
+\item 
+\mbox{\Hypertarget{class_man_generator_aa30427fbbe13113b3fe39bebfe79d1ee}\label{class_man_generator_aa30427fbbe13113b3fe39bebfe79d1ee}} 
+void {\bfseries end\+Desc\+List} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a0de8bc4d17093fbfb77c00bef2a66181}\label{class_man_generator_a0de8bc4d17093fbfb77c00bef2a66181}} 
+void {\bfseries start\+Examples} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a560e1a3d4a48b04d9f214051c9bb680c}\label{class_man_generator_a560e1a3d4a48b04d9f214051c9bb680c}} 
+void {\bfseries end\+Examples} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a12ce892150a512ed5803e90ad684dd0a}\label{class_man_generator_a12ce892150a512ed5803e90ad684dd0a}} 
+void {\bfseries start\+Param\+List} (Param\+List\+Types, const char $\ast$title)
+\item 
+\mbox{\Hypertarget{class_man_generator_a08de61d7842d7920e0cffe03213f31fb}\label{class_man_generator_a08de61d7842d7920e0cffe03213f31fb}} 
+void {\bfseries end\+Param\+List} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ae826d6dc94da45c9b35bb715ab316656}\label{class_man_generator_ae826d6dc94da45c9b35bb715ab316656}} 
+void {\bfseries start\+Desc\+For\+Item} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a0729f8d1cc066dd6629a0c7bd765bc81}\label{class_man_generator_a0729f8d1cc066dd6629a0c7bd765bc81}} 
+void {\bfseries end\+Desc\+For\+Item} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ad22a90e2eed1e0487fb500674e004e91}\label{class_man_generator_ad22a90e2eed1e0487fb500674e004e91}} 
+void {\bfseries start\+Section} (const char $\ast$, const char $\ast$, Section\+Info\+::\+Section\+Type)
+\item 
+\mbox{\Hypertarget{class_man_generator_a08b9cad6ac2d759823224b4580c77fd3}\label{class_man_generator_a08b9cad6ac2d759823224b4580c77fd3}} 
+void {\bfseries end\+Section} (const char $\ast$, Section\+Info\+::\+Section\+Type)
+\item 
+\mbox{\Hypertarget{class_man_generator_a290636c8090c771e5fd94e35cce35248}\label{class_man_generator_a290636c8090c771e5fd94e35cce35248}} 
+void {\bfseries add\+Index\+Item} (const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_a02774d23b0846b52af4c0b76e0db6c0f}\label{class_man_generator_a02774d23b0846b52af4c0b76e0db6c0f}} 
+void {\bfseries start\+Indent} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a1d28184243c9614854f089a76a340f23}\label{class_man_generator_a1d28184243c9614854f089a76a340f23}} 
+void {\bfseries end\+Indent} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_aec39420ccf2c964a39c97e79e1d2cbc0}\label{class_man_generator_aec39420ccf2c964a39c97e79e1d2cbc0}} 
+void {\bfseries write\+Synopsis} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a68a8a44e48aa4441ed8f522f4f88dc75}\label{class_man_generator_a68a8a44e48aa4441ed8f522f4f88dc75}} 
+void {\bfseries start\+Class\+Diagram} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ac37a68b10d76cc5d8a1125e5060b5211}\label{class_man_generator_ac37a68b10d76cc5d8a1125e5060b5211}} 
+void {\bfseries end\+Class\+Diagram} (const \mbox{\hyperlink{class_class_diagram}{Class\+Diagram}} \&, const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_a15352d2d3122b7b9d24e9ea564026d9f}\label{class_man_generator_a15352d2d3122b7b9d24e9ea564026d9f}} 
+void {\bfseries start\+Page\+Ref} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_aedfd0c9012aa4bab7db46b5388552342}\label{class_man_generator_aedfd0c9012aa4bab7db46b5388552342}} 
+void {\bfseries end\+Page\+Ref} (const char $\ast$, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_a955d39d6b1272951e9c3696e55a7e97f}\label{class_man_generator_a955d39d6b1272951e9c3696e55a7e97f}} 
+void {\bfseries start\+Quick\+Indices} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a61560f36bab8608c98e9cf89fd5371bb}\label{class_man_generator_a61560f36bab8608c98e9cf89fd5371bb}} 
+void {\bfseries end\+Quick\+Indices} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a07aea6047475012679e979aca5d23038}\label{class_man_generator_a07aea6047475012679e979aca5d23038}} 
+void {\bfseries write\+Split\+Bar} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_a51eac301eeb71972b89a4ac6be9fd6b5}\label{class_man_generator_a51eac301eeb71972b89a4ac6be9fd6b5}} 
+void {\bfseries write\+Navigation\+Path} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_abc49b9aa742057e1cbbea917451de6d7}\label{class_man_generator_abc49b9aa742057e1cbbea917451de6d7}} 
+void {\bfseries write\+Logo} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_aa821cd7a40d325d026c59dbd78221b98}\label{class_man_generator_aa821cd7a40d325d026c59dbd78221b98}} 
+void {\bfseries write\+Quick\+Links} (bool, Highlighted\+Item, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_a984f33b43c990060e1472c97ed167304}\label{class_man_generator_a984f33b43c990060e1472c97ed167304}} 
+void {\bfseries write\+Summary\+Link} (const char $\ast$, const char $\ast$, const char $\ast$, bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_a3e53f87fe3a92cd4116370bb3207f2aa}\label{class_man_generator_a3e53f87fe3a92cd4116370bb3207f2aa}} 
+void {\bfseries start\+Contents} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ad218e5e4ee607d35a82476f6866d3dc0}\label{class_man_generator_ad218e5e4ee607d35a82476f6866d3dc0}} 
+void {\bfseries end\+Contents} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ab73e17675d0c5ce30b48c9815c60ba74}\label{class_man_generator_ab73e17675d0c5ce30b48c9815c60ba74}} 
+void {\bfseries write\+Non\+Breakable\+Space} (int n)
+\item 
+\mbox{\Hypertarget{class_man_generator_a7af24abd8f1dc66da50b6e515e12ed68}\label{class_man_generator_a7af24abd8f1dc66da50b6e515e12ed68}} 
+void {\bfseries start\+Desc\+Table} (const char $\ast$t)
+\item 
+\mbox{\Hypertarget{class_man_generator_a0d3eea58e70d7213f199e3ed11d490dc}\label{class_man_generator_a0d3eea58e70d7213f199e3ed11d490dc}} 
+void {\bfseries end\+Desc\+Table} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ab708ee610915ba3e49dda52bce9bf445}\label{class_man_generator_ab708ee610915ba3e49dda52bce9bf445}} 
+void {\bfseries start\+Desc\+Table\+Row} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ac08decc953a056c4753a9762f5ecf797}\label{class_man_generator_ac08decc953a056c4753a9762f5ecf797}} 
+void {\bfseries end\+Desc\+Table\+Row} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a43e02986b96420b036ba2204db980994}\label{class_man_generator_a43e02986b96420b036ba2204db980994}} 
+void {\bfseries start\+Desc\+Table\+Title} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a27152804f9384ad60557157f5e5be5da}\label{class_man_generator_a27152804f9384ad60557157f5e5be5da}} 
+void {\bfseries end\+Desc\+Table\+Title} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a1a7710a1e0c3c53a8729bda81863addc}\label{class_man_generator_a1a7710a1e0c3c53a8729bda81863addc}} 
+void {\bfseries start\+Desc\+Table\+Data} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a98fcb779ebc649bc817dc7ce7fd53caf}\label{class_man_generator_a98fcb779ebc649bc817dc7ce7fd53caf}} 
+void {\bfseries end\+Desc\+Table\+Data} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a0b197f55abd7fe194183ecee7aebe800}\label{class_man_generator_a0b197f55abd7fe194183ecee7aebe800}} 
+void {\bfseries start\+Dot\+Graph} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_aedc67f1074ac8e6281c395700bf6e9e5}\label{class_man_generator_aedc67f1074ac8e6281c395700bf6e9e5}} 
+void {\bfseries end\+Dot\+Graph} (const \mbox{\hyperlink{class_dot_class_graph}{Dot\+Class\+Graph}} \&)
+\item 
+\mbox{\Hypertarget{class_man_generator_a6c38d1f8f00d0cf2c5c69417e54aa446}\label{class_man_generator_a6c38d1f8f00d0cf2c5c69417e54aa446}} 
+void {\bfseries start\+Incl\+Dep\+Graph} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_afb39cce552d143492bd625cd0a0dd0dc}\label{class_man_generator_afb39cce552d143492bd625cd0a0dd0dc}} 
+void {\bfseries end\+Incl\+Dep\+Graph} (const \mbox{\hyperlink{class_dot_incl_dep_graph}{Dot\+Incl\+Dep\+Graph}} \&)
+\item 
+\mbox{\Hypertarget{class_man_generator_a0e3edd731a18f4410530e8e32bbabb4f}\label{class_man_generator_a0e3edd731a18f4410530e8e32bbabb4f}} 
+void {\bfseries start\+Group\+Collaboration} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ac3c761549d50b8dc14ca497ab9b319e8}\label{class_man_generator_ac3c761549d50b8dc14ca497ab9b319e8}} 
+void {\bfseries end\+Group\+Collaboration} (const \mbox{\hyperlink{class_dot_group_collaboration}{Dot\+Group\+Collaboration}} \&)
+\item 
+\mbox{\Hypertarget{class_man_generator_ace53641e16c7bf64fbddc79178e6fc52}\label{class_man_generator_ace53641e16c7bf64fbddc79178e6fc52}} 
+void {\bfseries start\+Call\+Graph} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_afe6604d384542e566b828739a2c683cd}\label{class_man_generator_afe6604d384542e566b828739a2c683cd}} 
+void {\bfseries end\+Call\+Graph} (const \mbox{\hyperlink{class_dot_call_graph}{Dot\+Call\+Graph}} \&)
+\item 
+\mbox{\Hypertarget{class_man_generator_a6b4472b2eefeb5376c745f25bf4f0311}\label{class_man_generator_a6b4472b2eefeb5376c745f25bf4f0311}} 
+void {\bfseries start\+Dir\+Dep\+Graph} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a8b3fafcb2963a874643dcacbc378a58f}\label{class_man_generator_a8b3fafcb2963a874643dcacbc378a58f}} 
+void {\bfseries end\+Dir\+Dep\+Graph} (const \mbox{\hyperlink{class_dot_dir_deps}{Dot\+Dir\+Deps}} \&)
+\item 
+\mbox{\Hypertarget{class_man_generator_a29e42193144cbcafd32527f0bf85c7e3}\label{class_man_generator_a29e42193144cbcafd32527f0bf85c7e3}} 
+void {\bfseries write\+Graphical\+Hierarchy} (const \mbox{\hyperlink{class_dot_gfx_hierarchy_table}{Dot\+Gfx\+Hierarchy\+Table}} \&)
+\item 
+\mbox{\Hypertarget{class_man_generator_a920fb8d9e9cdcc0959069d9f0f7a4ff4}\label{class_man_generator_a920fb8d9e9cdcc0959069d9f0f7a4ff4}} 
+void {\bfseries start\+Text\+Block} (bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_ae9eec8226a8e5cdf4e1f39a540bc104a}\label{class_man_generator_ae9eec8226a8e5cdf4e1f39a540bc104a}} 
+void {\bfseries end\+Text\+Block} (bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_a20a2522333b26065dd45251026189ba0}\label{class_man_generator_a20a2522333b26065dd45251026189ba0}} 
+void {\bfseries last\+Index\+Page} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a4528a4f96f3c5c490534fa5df750bace}\label{class_man_generator_a4528a4f96f3c5c490534fa5df750bace}} 
+void {\bfseries start\+Member\+Doc\+Prefix\+Item} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a477bbfac640dbc619568ac3a097b3e4e}\label{class_man_generator_a477bbfac640dbc619568ac3a097b3e4e}} 
+void {\bfseries end\+Member\+Doc\+Prefix\+Item} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a3620ad41b729c1de0d0b96c730048c50}\label{class_man_generator_a3620ad41b729c1de0d0b96c730048c50}} 
+void {\bfseries start\+Member\+Doc\+Name} (bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_af1309137ca207483ff87c122694f83ce}\label{class_man_generator_af1309137ca207483ff87c122694f83ce}} 
+void {\bfseries end\+Member\+Doc\+Name} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a113e5a32a7a3bc816a3348956a41113e}\label{class_man_generator_a113e5a32a7a3bc816a3348956a41113e}} 
+void {\bfseries start\+Parameter\+Type} (bool, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_abc642fb37525e494dc01a2b9450fa516}\label{class_man_generator_abc642fb37525e494dc01a2b9450fa516}} 
+void {\bfseries end\+Parameter\+Type} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_af739d0bdac7bc933cd49aac0c91733fb}\label{class_man_generator_af739d0bdac7bc933cd49aac0c91733fb}} 
+void {\bfseries start\+Parameter\+Name} (bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_a9b26c28be8f8e51f9d8c2d3bcf5af505}\label{class_man_generator_a9b26c28be8f8e51f9d8c2d3bcf5af505}} 
+void {\bfseries end\+Parameter\+Name} (bool, bool, bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_ac6c153743231aa2e67b39ce527869a8d}\label{class_man_generator_ac6c153743231aa2e67b39ce527869a8d}} 
+void {\bfseries start\+Parameter\+List} (bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_add87f53c9277adfe77e311096b616d8d}\label{class_man_generator_add87f53c9277adfe77e311096b616d8d}} 
+void {\bfseries end\+Parameter\+List} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ae747187a714e7c5465432a9171388804}\label{class_man_generator_ae747187a714e7c5465432a9171388804}} 
+void {\bfseries exception\+Entry} (const char $\ast$, bool)
+\item 
+void \mbox{\hyperlink{class_man_generator_a4bafda26799458d289c507fad6690de9}{start\+Font\+Class}} (const char $\ast$)
+\item 
+void \mbox{\hyperlink{class_man_generator_a35a79c6fc4ee7bd9eeadb74181e368d1}{end\+Font\+Class}} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a0f2e73868294b926079a00988aa11723}\label{class_man_generator_a0f2e73868294b926079a00988aa11723}} 
+void {\bfseries start\+Constraint\+List} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_a0093d745b94f89f5812c48dbdce045e7}\label{class_man_generator_a0093d745b94f89f5812c48dbdce045e7}} 
+void {\bfseries start\+Constraint\+Param} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a2269ac68c06f0006836ee3b271384cbb}\label{class_man_generator_a2269ac68c06f0006836ee3b271384cbb}} 
+void {\bfseries end\+Constraint\+Param} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a626fe47f183f5e46f31a51dc2f18c26f}\label{class_man_generator_a626fe47f183f5e46f31a51dc2f18c26f}} 
+void {\bfseries start\+Constraint\+Type} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a6fc86f040a965fab5351b5cf8f354ffe}\label{class_man_generator_a6fc86f040a965fab5351b5cf8f354ffe}} 
+void {\bfseries end\+Constraint\+Type} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_a1f03a92bea2c4acbefdfc92123dd9734}\label{class_man_generator_a1f03a92bea2c4acbefdfc92123dd9734}} 
+void {\bfseries start\+Constraint\+Docs} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_af4014137523e746f07ce3d970b2bac53}\label{class_man_generator_af4014137523e746f07ce3d970b2bac53}} 
+void {\bfseries end\+Constraint\+Docs} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_adbc0ed48b04dc681013a923ce25f5042}\label{class_man_generator_adbc0ed48b04dc681013a923ce25f5042}} 
+void {\bfseries end\+Constraint\+List} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_afdee4a391f13c6671bcf92c6a968eb1b}\label{class_man_generator_afdee4a391f13c6671bcf92c6a968eb1b}} 
+void {\bfseries start\+Member\+Doc\+Simple} (bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_ae4b38648a3af3eba6773747d8fe89bd5}\label{class_man_generator_ae4b38648a3af3eba6773747d8fe89bd5}} 
+void {\bfseries end\+Member\+Doc\+Simple} (bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_a6be4bb76041b91204e6acc46d525ef06}\label{class_man_generator_a6be4bb76041b91204e6acc46d525ef06}} 
+void {\bfseries start\+Inline\+Member\+Type} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_abd751e3031872460ad18adcd0fcbe327}\label{class_man_generator_abd751e3031872460ad18adcd0fcbe327}} 
+void {\bfseries end\+Inline\+Member\+Type} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_adcf4b862758e2dc7e82c41f5a8a349fd}\label{class_man_generator_adcf4b862758e2dc7e82c41f5a8a349fd}} 
+void {\bfseries start\+Inline\+Member\+Name} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_abeb4bc9d427b3cbd413966341177887e}\label{class_man_generator_abeb4bc9d427b3cbd413966341177887e}} 
+void {\bfseries end\+Inline\+Member\+Name} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_afcb07fc4770fc15d8de94c9896f79bae}\label{class_man_generator_afcb07fc4770fc15d8de94c9896f79bae}} 
+void {\bfseries start\+Inline\+Member\+Doc} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_ac6140ac8dcdd0c2e53b8e4002c56e2eb}\label{class_man_generator_ac6140ac8dcdd0c2e53b8e4002c56e2eb}} 
+void {\bfseries end\+Inline\+Member\+Doc} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_aeee5f7cf35dd6749a0bbd65b5bfe6c0e}\label{class_man_generator_aeee5f7cf35dd6749a0bbd65b5bfe6c0e}} 
+void {\bfseries start\+Labels} ()
+\item 
+\mbox{\Hypertarget{class_man_generator_aa736a1bd30e274a211288af68c7fa900}\label{class_man_generator_aa736a1bd30e274a211288af68c7fa900}} 
+void {\bfseries write\+Label} (const char $\ast$l, bool is\+Last)
+\item 
+\mbox{\Hypertarget{class_man_generator_ad66fe9b4b75de372b5bd1669d554c5ee}\label{class_man_generator_ad66fe9b4b75de372b5bd1669d554c5ee}} 
+void {\bfseries end\+Labels} ()
+\item 
+void \mbox{\hyperlink{class_man_generator_a15b2642afa851662afe60fb00d4b20fb}{write\+Code\+Anchor}} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_man_generator_a2b9d9b85061921cbb368b96e152bc918}\label{class_man_generator_a2b9d9b85061921cbb368b96e152bc918}} 
+void {\bfseries set\+Current\+Doc} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$, const char $\ast$, bool)
+\item 
+\mbox{\Hypertarget{class_man_generator_af92adee00e581b1275adef04effe1699}\label{class_man_generator_af92adee00e581b1275adef04effe1699}} 
+void {\bfseries add\+Word} (const char $\ast$, bool)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_man_generator_ac85a1b3f99ceba03bd7be38caa0b7600}\label{class_man_generator_ac85a1b3f99ceba03bd7be38caa0b7600}} 
+static void {\bfseries init} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Generator for Man page output. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_man_generator_a6e70bf6444a4e6d5db43f5bbb7b6b125}\label{class_man_generator_a6e70bf6444a4e6d5db43f5bbb7b6b125}} 
+\index{ManGenerator@{ManGenerator}!codify@{codify}}
+\index{codify@{codify}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{codify()}{codify()}}
+{\footnotesize\ttfamily void Man\+Generator\+::codify (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes an code fragment to the output. This function should keep spaces visible, should break lines at a newline and should convert tabs to the right number of spaces. 
+
+Implements \mbox{\hyperlink{class_code_output_interface_aa29a5eedda08596ace50ed5b59c8ae7f}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_aae62a687e228c0f3c5b698570c603022}\label{class_man_generator_aae62a687e228c0f3c5b698570c603022}} 
+\index{ManGenerator@{ManGenerator}!docify@{docify}}
+\index{docify@{docify}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{docify()}{docify()}}
+{\footnotesize\ttfamily void Man\+Generator\+::docify (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes an A\+S\+C\+II string to the output. Converts characters that have \mbox{\hyperlink{class_a}{A}} special meaning, like {\ttfamily \&} in html. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ad7d3f6631bd157739170690e669b3e75}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_acc9e3c928bd473ce079e323f19948dc7}\label{class_man_generator_acc9e3c928bd473ce079e323f19948dc7}} 
+\index{ManGenerator@{ManGenerator}!endBold@{endBold}}
+\index{endBold@{endBold}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{endBold()}{endBold()}}
+{\footnotesize\ttfamily void Man\+Generator\+::end\+Bold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+End a section of text displayed in bold face. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a2a17911ba778f8efac83999fb5d190d9}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a4e825c27561ebb51c155840d9101725a}\label{class_man_generator_a4e825c27561ebb51c155840d9101725a}} 
+\index{ManGenerator@{ManGenerator}!endCodeFragment@{endCodeFragment}}
+\index{endCodeFragment@{endCodeFragment}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{endCodeFragment()}{endCodeFragment()}}
+{\footnotesize\ttfamily void Man\+Generator\+::end\+Code\+Fragment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ends a source code fragment 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a08f032482a8f23ac1aab66552db43a81}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a0f0040036147c71754651d0701029f70}\label{class_man_generator_a0f0040036147c71754651d0701029f70}} 
+\index{ManGenerator@{ManGenerator}!endCodeLine@{endCodeLine}}
+\index{endCodeLine@{endCodeLine}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{endCodeLine()}{endCodeLine()}}
+{\footnotesize\ttfamily void Man\+Generator\+::end\+Code\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Ends a line of code started with start\+Code\+Line() 
+
+Implements \mbox{\hyperlink{class_code_output_interface_afac5763eafc78f93b82691fb9a6dcff7}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_ab86f06d399e075e2b6855319bf26e1ec}\label{class_man_generator_ab86f06d399e075e2b6855319bf26e1ec}} 
+\index{ManGenerator@{ManGenerator}!endDescItem@{endDescItem}}
+\index{endDescItem@{endDescItem}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{endDescItem()}{endDescItem()}}
+{\footnotesize\ttfamily void Man\+Generator\+::end\+Desc\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ends an item of a description list and starts the description itself\+: e.\+g. {\ttfamily $<$/dt$>$} in H\+T\+ML. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a09e3aa9d3faac55b2cc9290eaa69f55b}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a04db9176fd114182d5aab2a48346621d}\label{class_man_generator_a04db9176fd114182d5aab2a48346621d}} 
+\index{ManGenerator@{ManGenerator}!endDescription@{endDescription}}
+\index{endDescription@{endDescription}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{endDescription()}{endDescription()}}
+{\footnotesize\ttfamily void Man\+Generator\+::end\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Ends a description list\+: e.\+g. {\ttfamily $<$/dl$>$} in H\+T\+ML 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ac25c565e9fd8aee6c2b0d9b71fcff380}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a3e158ae587148e66ad6f3d4df509ca35}\label{class_man_generator_a3e158ae587148e66ad6f3d4df509ca35}} 
+\index{ManGenerator@{ManGenerator}!endEmphasis@{endEmphasis}}
+\index{endEmphasis@{endEmphasis}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{endEmphasis()}{endEmphasis()}}
+{\footnotesize\ttfamily void Man\+Generator\+::end\+Emphasis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Ends a section of text displayed in italic. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_aed2cf04d82648509f97403bd4ce62590}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a35a79c6fc4ee7bd9eeadb74181e368d1}\label{class_man_generator_a35a79c6fc4ee7bd9eeadb74181e368d1}} 
+\index{ManGenerator@{ManGenerator}!endFontClass@{endFontClass}}
+\index{endFontClass@{endFontClass}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{endFontClass()}{endFontClass()}}
+{\footnotesize\ttfamily void Man\+Generator\+::end\+Font\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Ends a block started with \mbox{\hyperlink{class_man_generator_a4bafda26799458d289c507fad6690de9}{start\+Font\+Class()}} 
+
+Implements \mbox{\hyperlink{class_code_output_interface_a2b8ac05a391dae36793aa3aa8714a0f6}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a7323695cedb872064ddb450875b2baea}\label{class_man_generator_a7323695cedb872064ddb450875b2baea}} 
+\index{ManGenerator@{ManGenerator}!endHtmlLink@{endHtmlLink}}
+\index{endHtmlLink@{endHtmlLink}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{endHtmlLink()}{endHtmlLink()}}
+{\footnotesize\ttfamily void Man\+Generator\+::end\+Html\+Link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ends a link started by \mbox{\hyperlink{class_man_generator_a605e678d3be65519e6b94dff6e403e79}{start\+Html\+Link()}}. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_afb808c1c487135d4fb2156d0675b387e}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_abb7aa578a49c62b103f85e0f5d3c9e2a}\label{class_man_generator_abb7aa578a49c62b103f85e0f5d3c9e2a}} 
+\index{ManGenerator@{ManGenerator}!endItemList@{endItemList}}
+\index{endItemList@{endItemList}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{endItemList()}{endItemList()}}
+{\footnotesize\ttfamily void Man\+Generator\+::end\+Item\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Ends a bullet list\+: e.\+g. {\ttfamily $<$/ul$>$} in html 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a3493b65672bf134033bd3bb296acdff4}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a87a722d58e6364660622ab086f20edc8}\label{class_man_generator_a87a722d58e6364660622ab086f20edc8}} 
+\index{ManGenerator@{ManGenerator}!endItemListItem@{endItemListItem}}
+\index{endItemListItem@{endItemListItem}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{endItemListItem()}{endItemListItem()}}
+{\footnotesize\ttfamily void Man\+Generator\+::end\+Item\+List\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes a list item for a bullet or enumerated list\+: e.\+g. {\ttfamily $<$/li$>$} in html 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a90d290d7a06a9e7ecd968c8da90ed665}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a7c4c2315a23018eb35413776b36b29e7}\label{class_man_generator_a7c4c2315a23018eb35413776b36b29e7}} 
+\index{ManGenerator@{ManGenerator}!endParagraph@{endParagraph}}
+\index{endParagraph@{endParagraph}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{endParagraph()}{endParagraph()}}
+{\footnotesize\ttfamily void Man\+Generator\+::end\+Paragraph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ends a paragraph 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ab76280c2eb451ad160991707206b6c95}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a918922201985cac387c671a9767021d1}\label{class_man_generator_a918922201985cac387c671a9767021d1}} 
+\index{ManGenerator@{ManGenerator}!endTypewriter@{endTypewriter}}
+\index{endTypewriter@{endTypewriter}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{endTypewriter()}{endTypewriter()}}
+{\footnotesize\ttfamily void Man\+Generator\+::end\+Typewriter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+End a section of text displayed in typewriter style. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a9e987baf8aed76f0e5e6676b3238d2c8}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a93a20331a8e073df653ed1df9834361b}\label{class_man_generator_a93a20331a8e073df653ed1df9834361b}} 
+\index{ManGenerator@{ManGenerator}!startBold@{startBold}}
+\index{startBold@{startBold}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{startBold()}{startBold()}}
+{\footnotesize\ttfamily void Man\+Generator\+::start\+Bold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Changes the text font to bold face. The bold section ends with \mbox{\hyperlink{class_man_generator_acc9e3c928bd473ce079e323f19948dc7}{end\+Bold()}} 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_aa0bfe5ef08077a7191ba4666f47c441b}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a23377579a34bc5cee9a43885888dd5d4}\label{class_man_generator_a23377579a34bc5cee9a43885888dd5d4}} 
+\index{ManGenerator@{ManGenerator}!startCodeFragment@{startCodeFragment}}
+\index{startCodeFragment@{startCodeFragment}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{startCodeFragment()}{startCodeFragment()}}
+{\footnotesize\ttfamily void Man\+Generator\+::start\+Code\+Fragment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Starts a source code fragment. The fragment will be fed to the code parser (see \mbox{\hyperlink{code_8h_source}{code.\+h}}) for syntax highlighting and cross-\/referencing. The fragment ends by a call to \mbox{\hyperlink{class_man_generator_a4e825c27561ebb51c155840d9101725a}{end\+Code\+Fragment()}} 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ab19fc767b08c25b0ca7c976d24799bda}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a3230aa59d50e8bdbbfb94e56bd956f56}\label{class_man_generator_a3230aa59d50e8bdbbfb94e56bd956f56}} 
+\index{ManGenerator@{ManGenerator}!startDescItem@{startDescItem}}
+\index{startDescItem@{startDescItem}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{startDescItem()}{startDescItem()}}
+{\footnotesize\ttfamily void Man\+Generator\+::start\+Desc\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Starts an item of a description list\+: e.\+g. {\ttfamily $<$dt$>$} in H\+T\+ML. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a5d1cc59d94c3f529c90e0a06704be181}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a40c97f2dcd8827c13a9d1eedb96701b5}\label{class_man_generator_a40c97f2dcd8827c13a9d1eedb96701b5}} 
+\index{ManGenerator@{ManGenerator}!startDescription@{startDescription}}
+\index{startDescription@{startDescription}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{startDescription()}{startDescription()}}
+{\footnotesize\ttfamily void Man\+Generator\+::start\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Starts a description list\+: e.\+g. {\ttfamily $<$dl$>$} in H\+T\+ML Items are surrounded by \mbox{\hyperlink{class_man_generator_a3230aa59d50e8bdbbfb94e56bd956f56}{start\+Desc\+Item()}} and \mbox{\hyperlink{class_man_generator_ab86f06d399e075e2b6855319bf26e1ec}{end\+Desc\+Item()}} 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ac9c801c3ad0b50e3e69be184b50c2fef}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a8a88956b0c96590290287835934344b9}\label{class_man_generator_a8a88956b0c96590290287835934344b9}} 
+\index{ManGenerator@{ManGenerator}!startEmphasis@{startEmphasis}}
+\index{startEmphasis@{startEmphasis}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{startEmphasis()}{startEmphasis()}}
+{\footnotesize\ttfamily void Man\+Generator\+::start\+Emphasis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Changes the text font to italic. The italic section ends with \mbox{\hyperlink{class_man_generator_a3e158ae587148e66ad6f3d4df509ca35}{end\+Emphasis()}} 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a21debc3a6c4c58791a41e715dc78f4ab}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a4bafda26799458d289c507fad6690de9}\label{class_man_generator_a4bafda26799458d289c507fad6690de9}} 
+\index{ManGenerator@{ManGenerator}!startFontClass@{startFontClass}}
+\index{startFontClass@{startFontClass}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{startFontClass()}{startFontClass()}}
+{\footnotesize\ttfamily void Man\+Generator\+::start\+Font\+Class (\begin{DoxyParamCaption}\item[{const char $\ast$}]{cls\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Starts a block with a certain meaning. Used for syntax highlighting, which elements of the same type are rendered using the same \textquotesingle{}font class\textquotesingle{}. 
+\begin{DoxyParams}{Parameters}
+{\em cls\+Name} & The category name. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_ac90f75968cdcf127e0b02938bdb49d87}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a605e678d3be65519e6b94dff6e403e79}\label{class_man_generator_a605e678d3be65519e6b94dff6e403e79}} 
+\index{ManGenerator@{ManGenerator}!startHtmlLink@{startHtmlLink}}
+\index{startHtmlLink@{startHtmlLink}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{startHtmlLink()}{startHtmlLink()}}
+{\footnotesize\ttfamily void Man\+Generator\+::start\+Html\+Link (\begin{DoxyParamCaption}\item[{const char $\ast$}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Starts a (link to an) \mbox{\hyperlink{struct_u_r_l}{U\+RL}} found in the documentation. 
+\begin{DoxyParams}{Parameters}
+{\em url} & The \mbox{\hyperlink{struct_u_r_l}{U\+RL}} to link to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ab52dbf41ce337c701f9cd1e7794f80e7}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a5b29aa8c2dd69237fd7470df129fc4e3}\label{class_man_generator_a5b29aa8c2dd69237fd7470df129fc4e3}} 
+\index{ManGenerator@{ManGenerator}!startItemList@{startItemList}}
+\index{startItemList@{startItemList}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{startItemList()}{startItemList()}}
+{\footnotesize\ttfamily void Man\+Generator\+::start\+Item\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Start of a bullet list\+: e.\+g. {\ttfamily $<$ul$>$} in html. \mbox{\hyperlink{class_man_generator_a83d776971ea058ea021d49df05f4e563}{start\+Item\+List\+Item()}} is Used for the bullet items. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a54b169393594b6cf113977ccccaeb9ee}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a83d776971ea058ea021d49df05f4e563}\label{class_man_generator_a83d776971ea058ea021d49df05f4e563}} 
+\index{ManGenerator@{ManGenerator}!startItemListItem@{startItemListItem}}
+\index{startItemListItem@{startItemListItem}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{startItemListItem()}{startItemListItem()}}
+{\footnotesize\ttfamily void Man\+Generator\+::start\+Item\+List\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes a list item for a bullet or enumerated list\+: e.\+g. {\ttfamily $<$li$>$} in html 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_aa1cbcadfedf8e6d52029d17526b5fa3f}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a311b0dd8edecddbfa0473c5e43a97e73}\label{class_man_generator_a311b0dd8edecddbfa0473c5e43a97e73}} 
+\index{ManGenerator@{ManGenerator}!startParagraph@{startParagraph}}
+\index{startParagraph@{startParagraph}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{startParagraph()}{startParagraph()}}
+{\footnotesize\ttfamily void Man\+Generator\+::start\+Paragraph (\begin{DoxyParamCaption}\item[{const char $\ast$}]{class\+Def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Starts a new paragraph
+
+Starts a new paragraph 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a9f711f4ef8f48b9c7b1cae625578e7ff}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_aa03f575a82549d2393bb080337769f1c}\label{class_man_generator_aa03f575a82549d2393bb080337769f1c}} 
+\index{ManGenerator@{ManGenerator}!startTypewriter@{startTypewriter}}
+\index{startTypewriter@{startTypewriter}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{startTypewriter()}{startTypewriter()}}
+{\footnotesize\ttfamily void Man\+Generator\+::start\+Typewriter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Changes the text font to fixed size. The section ends with \mbox{\hyperlink{class_man_generator_a918922201985cac387c671a9767021d1}{end\+Typewriter()}} 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_abde41a60b900d35b0b198f43731c1cd0}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a5831577a90e226daf7ad892dd8744d33}\label{class_man_generator_a5831577a90e226daf7ad892dd8744d33}} 
+\index{ManGenerator@{ManGenerator}!writeChar@{writeChar}}
+\index{writeChar@{writeChar}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{writeChar()}{writeChar()}}
+{\footnotesize\ttfamily void Man\+Generator\+::write\+Char (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes a single A\+S\+C\+II character to the output. Converts characters that have a special meaning. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a1577324720c1c71142dff84ae80b058d}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a15b2642afa851662afe60fb00d4b20fb}\label{class_man_generator_a15b2642afa851662afe60fb00d4b20fb}} 
+\index{ManGenerator@{ManGenerator}!writeCodeAnchor@{writeCodeAnchor}}
+\index{writeCodeAnchor@{writeCodeAnchor}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{writeCodeAnchor()}{writeCodeAnchor()}}
+{\footnotesize\ttfamily void Man\+Generator\+::write\+Code\+Anchor (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Write an anchor to a source listing. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the anchor. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a1f6394c4ef7c4143de90bcaf3a65c0b4}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_ac4d91e5763d584238139d65d873e9f64}\label{class_man_generator_ac4d91e5763d584238139d65d873e9f64}} 
+\index{ManGenerator@{ManGenerator}!writeCodeLink@{writeCodeLink}}
+\index{writeCodeLink@{writeCodeLink}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{writeCodeLink()}{writeCodeLink()}}
+{\footnotesize\ttfamily void Man\+Generator\+::write\+Code\+Link (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ref,  }\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{anchor,  }\item[{const char $\ast$}]{name,  }\item[{const char $\ast$}]{tooltip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes a link to an object in a code fragment. 
+\begin{DoxyParams}{Parameters}
+{\em ref} & If this is non-\/zero, the object is to be found in an external documentation file. \\
+\hline
+{\em file} & The file in which the object is located. \\
+\hline
+{\em anchor} & The anchor uniquely identifying the object within the file. \\
+\hline
+{\em name} & The text to display as a placeholder for the link. \\
+\hline
+{\em tooltip} & The tooltip to display when the mouse is on the link. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a102e2b7f40916c75b79871307f5bb674}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a3fe4aad0243fbecd3b746448a9373d3c}\label{class_man_generator_a3fe4aad0243fbecd3b746448a9373d3c}} 
+\index{ManGenerator@{ManGenerator}!writeLineNumber@{writeLineNumber}}
+\index{writeLineNumber@{writeLineNumber}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{writeLineNumber()}{writeLineNumber()}}
+{\footnotesize\ttfamily void Man\+Generator\+::write\+Line\+Number (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ref,  }\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{anchor,  }\item[{int}]{line\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Writes the line number of a source listing 
+\begin{DoxyParams}{Parameters}
+{\em ref} & External reference (when imported from a tag file) \\
+\hline
+{\em file} & The file part of the \mbox{\hyperlink{struct_u_r_l}{U\+RL}} pointing to the docs. \\
+\hline
+{\em anchor} & The anchor part of the \mbox{\hyperlink{struct_u_r_l}{U\+RL}} pointing to the docs. \\
+\hline
+{\em line\+Number} & The line number to write \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a8115646785b65e292480c2e4e969b389}{Code\+Output\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a4bcf9c17c915914aca7b271c85aa08ea}\label{class_man_generator_a4bcf9c17c915914aca7b271c85aa08ea}} 
+\index{ManGenerator@{ManGenerator}!writeObjectLink@{writeObjectLink}}
+\index{writeObjectLink@{writeObjectLink}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{writeObjectLink()}{writeObjectLink()}}
+{\footnotesize\ttfamily void Man\+Generator\+::write\+Object\+Link (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ref,  }\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{anchor,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes a link to an object in the documentation. 
+\begin{DoxyParams}{Parameters}
+{\em ref} & If this is non-\/zero, the object is to be found in an external documentation file. \\
+\hline
+{\em file} & The file in which the object is located. \\
+\hline
+{\em anchor} & The anchor uniquely identifying the object within the file. \\
+\hline
+{\em name} & The text to display as a placeholder for the link. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a3537423635807fe140ec5be1a2198060}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_ab7a5373b1e631879e56bf5699e00cfe2}\label{class_man_generator_ab7a5373b1e631879e56bf5699e00cfe2}} 
+\index{ManGenerator@{ManGenerator}!writeRuler@{writeRuler}}
+\index{writeRuler@{writeRuler}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{writeRuler()}{writeRuler()}}
+{\footnotesize\ttfamily void Man\+Generator\+::write\+Ruler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Writes a horizontal ruler to the output 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_ade0d004fb6e8641c92f2f144d7242f0b}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a39ca2f1de2bbbe5548f6f03997a84c88}\label{class_man_generator_a39ca2f1de2bbbe5548f6f03997a84c88}} 
+\index{ManGenerator@{ManGenerator}!writeString@{writeString}}
+\index{writeString@{writeString}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{writeString()}{writeString()}}
+{\footnotesize\ttfamily void Man\+Generator\+::write\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes an A\+S\+C\+II string to the output, {\itshape without} converting special characters. 
+
+Implements \mbox{\hyperlink{class_base_output_doc_interface_a5737513ddf260787b5b79c84ae1059af}{Base\+Output\+Doc\+Interface}}.
+
+\mbox{\Hypertarget{class_man_generator_a8ec440b278091bf61579f35cd8237a25}\label{class_man_generator_a8ec440b278091bf61579f35cd8237a25}} 
+\index{ManGenerator@{ManGenerator}!writeTooltip@{writeTooltip}}
+\index{writeTooltip@{writeTooltip}!ManGenerator@{ManGenerator}}
+\subsubsection{\texorpdfstring{writeTooltip()}{writeTooltip()}}
+{\footnotesize\ttfamily void Man\+Generator\+::write\+Tooltip (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{const \mbox{\hyperlink{struct_doc_link_info}{Doc\+Link\+Info}} \&}]{doc\+Info,  }\item[{const char $\ast$}]{decl,  }\item[{const char $\ast$}]{desc,  }\item[{const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&}]{def\+Info,  }\item[{const \mbox{\hyperlink{struct_source_link_info}{Source\+Link\+Info}} \&}]{decl\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Writes a tool tip definition 
+\begin{DoxyParams}{Parameters}
+{\em id} & unique identifier for the tooltip \\
+\hline
+{\em doc\+Info} & Info about the symbol\textquotesingle{}s documentation. \\
+\hline
+{\em decl} & full declaration of the symbol (for functions) \\
+\hline
+{\em desc} & brief description for the symbol \\
+\hline
+{\em def\+Info} & Info about the symbol\textquotesingle{}s definition in the source code \\
+\hline
+{\em decl\+Info} & Info about the symbol\textquotesingle{}s declaration in the source code \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_code_output_interface_a4326ca642f6ec228466ae310622f73ad}{Code\+Output\+Interface}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/mangen.\+h\item 
+doxygen/src/mangen.\+cpp\end{DoxyCompactItemize}

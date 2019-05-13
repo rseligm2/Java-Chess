@@ -1,0 +1,96 @@
+\hypertarget{class_q_utf16_codec}{}\section{Q\+Utf16\+Codec Class Reference}
+\label{class_q_utf16_codec}\index{QUtf16Codec@{QUtf16Codec}}
+Inheritance diagram for Q\+Utf16\+Codec\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_utf16_codec}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_q_utf16_codec_aac5f0273efa632dd14125464094b581e}{mib\+Enum}} () const
+\item 
+const char $\ast$ \mbox{\hyperlink{class_q_utf16_codec_ab5bf550f93083d25bf13f5f7497088db}{name}} () const
+\item 
+\mbox{\hyperlink{class_q_text_decoder}{Q\+Text\+Decoder}} $\ast$ \mbox{\hyperlink{class_q_utf16_codec_a1134a8f386ac3b775ad60381e373d28a}{make\+Decoder}} () const
+\item 
+\mbox{\hyperlink{class_q_text_encoder}{Q\+Text\+Encoder}} $\ast$ \mbox{\hyperlink{class_q_utf16_codec_a09e6f9d5f05c5a7cf730841b28301ae5}{make\+Encoder}} () const
+\item 
+int \mbox{\hyperlink{class_q_utf16_codec_af33db3e4543fbeb677fd51366d237e2f}{heuristic\+Content\+Match}} (const char $\ast$chars, int len) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_utf16_codec_af33db3e4543fbeb677fd51366d237e2f}\label{class_q_utf16_codec_af33db3e4543fbeb677fd51366d237e2f}} 
+\index{QUtf16Codec@{QUtf16Codec}!heuristicContentMatch@{heuristicContentMatch}}
+\index{heuristicContentMatch@{heuristicContentMatch}!QUtf16Codec@{QUtf16Codec}}
+\subsubsection{\texorpdfstring{heuristicContentMatch()}{heuristicContentMatch()}}
+{\footnotesize\ttfamily int Q\+Utf16\+Codec\+::heuristic\+Content\+Match (\begin{DoxyParamCaption}\item[{const char $\ast$}]{chars,  }\item[{int}]{len }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Subclasses of \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} must reimplement this function. It examines the first {\itshape len} bytes of {\itshape chars} and returns a value indicating how likely it is that the string is a prefix of text encoded in the encoding of the subclass. Any negative return value indicates that the text is detectably not in the encoding (eg. it contains undefined characters). \mbox{\hyperlink{class_a}{A}} return value of 0 indicates that the text should be decoded with this codec rather than as A\+S\+C\+II, but there is no particular evidence. The value should range up to {\itshape len}. Thus, most decoders will return -\/1, 0, or -\/{\itshape len}.
+
+The characters are not null terminated.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_text_codec_aeb3ec365c6c4f1812689a2b66ed09e27}{codec\+For\+Content()}}. 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_text_codec_a4780a608d950994a927de727bb07b9fe}{Q\+Text\+Codec}}.
+
+\mbox{\Hypertarget{class_q_utf16_codec_a1134a8f386ac3b775ad60381e373d28a}\label{class_q_utf16_codec_a1134a8f386ac3b775ad60381e373d28a}} 
+\index{QUtf16Codec@{QUtf16Codec}!makeDecoder@{makeDecoder}}
+\index{makeDecoder@{makeDecoder}!QUtf16Codec@{QUtf16Codec}}
+\subsubsection{\texorpdfstring{makeDecoder()}{makeDecoder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_decoder}{Q\+Text\+Decoder}} $\ast$ Q\+Utf16\+Codec\+::make\+Decoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a \mbox{\hyperlink{class_q_text_decoder}{Q\+Text\+Decoder}} which stores enough state to decode chunks of char$\ast$ data to create chunks of Unicode data. The default implementation creates a stateless decoder, which is sufficient for only the simplest encodings where each byte corresponds to exactly one Unicode character.
+
+The caller is responsible for deleting the returned object. 
+
+Reimplemented from \mbox{\hyperlink{class_q_text_codec_abb65882aa316a2ad49a10e9f86c4dc88}{Q\+Text\+Codec}}.
+
+\mbox{\Hypertarget{class_q_utf16_codec_a09e6f9d5f05c5a7cf730841b28301ae5}\label{class_q_utf16_codec_a09e6f9d5f05c5a7cf730841b28301ae5}} 
+\index{QUtf16Codec@{QUtf16Codec}!makeEncoder@{makeEncoder}}
+\index{makeEncoder@{makeEncoder}!QUtf16Codec@{QUtf16Codec}}
+\subsubsection{\texorpdfstring{makeEncoder()}{makeEncoder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_encoder}{Q\+Text\+Encoder}} $\ast$ Q\+Utf16\+Codec\+::make\+Encoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a \mbox{\hyperlink{class_q_text_encoder}{Q\+Text\+Encoder}} which stores enough state to encode chunks of Unicode data as char$\ast$ data. The default implementation creates a stateless encoder, which is sufficient for only the simplest encodings where each Unicode character corresponds to exactly one char.
+
+The caller is responsible for deleting the returned object. 
+
+Reimplemented from \mbox{\hyperlink{class_q_text_codec_aa7dccd7fc1b578de0b7599b040d98e11}{Q\+Text\+Codec}}.
+
+\mbox{\Hypertarget{class_q_utf16_codec_aac5f0273efa632dd14125464094b581e}\label{class_q_utf16_codec_aac5f0273efa632dd14125464094b581e}} 
+\index{QUtf16Codec@{QUtf16Codec}!mibEnum@{mibEnum}}
+\index{mibEnum@{mibEnum}!QUtf16Codec@{QUtf16Codec}}
+\subsubsection{\texorpdfstring{mibEnum()}{mibEnum()}}
+{\footnotesize\ttfamily int Q\+Utf16\+Codec\+::mib\+Enum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Subclasses of \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} must reimplement this function. It returns the M\+I\+Benum (see \href{ftp://ftp.isi.edu/in-notes/iana/assignments/character-sets}{\texttt{ the I\+A\+NA character-\/sets encoding file}} for more information). It is important that each \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} subclass return the correct unique value for this function. 
+
+Implements \mbox{\hyperlink{class_q_text_codec_aa0118daa4f82235ae9d5bb70a168c992}{Q\+Text\+Codec}}.
+
+\mbox{\Hypertarget{class_q_utf16_codec_ab5bf550f93083d25bf13f5f7497088db}\label{class_q_utf16_codec_ab5bf550f93083d25bf13f5f7497088db}} 
+\index{QUtf16Codec@{QUtf16Codec}!name@{name}}
+\index{name@{name}!QUtf16Codec@{QUtf16Codec}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily const char $\ast$ Q\+Utf16\+Codec\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Subclasses of \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} must reimplement this function. It returns the name of the encoding supported by the subclass. When choosing a name for an encoding, consider these points\+: 
+\begin{DoxyItemize}
+\item On X11, heuristic\+Name\+Match( const char $\ast$ hint ) is used to test if a the \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} can convert between Unicode and the encoding of a font with encoding {\itshape hint}, such as \char`\"{}iso8859-\/1\char`\"{} for Latin-\/1 fonts, \char`\"{}koi8-\/r\char`\"{} for Russian K\+O\+I8 fonts. The default algorithm of \mbox{\hyperlink{class_q_text_codec_a1bcf2f11fac6113fd6ae74dda55b2ca4}{heuristic\+Name\+Match()}} uses \mbox{\hyperlink{class_q_utf16_codec_ab5bf550f93083d25bf13f5f7497088db}{name()}}. 
+\item Some applications may use this function to present encodings to the end user. 
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{class_q_text_codec_a5b735ce19dc6b0fb0e8858bd3f54f0e2}{Q\+Text\+Codec}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qutfcodec.\+h\item 
+doxygen/qtools/qutfcodec.\+cpp\end{DoxyCompactItemize}

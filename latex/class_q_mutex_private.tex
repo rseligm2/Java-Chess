@@ -1,0 +1,33 @@
+\hypertarget{class_q_mutex_private}{}\section{Q\+Mutex\+Private Class Reference}
+\label{class_q_mutex_private}\index{QMutexPrivate@{QMutexPrivate}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_mutex_private_a28563c090da051f5162ef1a109b2a07b}\label{class_q_mutex_private_a28563c090da051f5162ef1a109b2a07b}} 
+void {\bfseries wait} ()
+\item 
+\mbox{\Hypertarget{class_q_mutex_private_ae3a1d392a534d8bd323428b1b0e80b8f}\label{class_q_mutex_private_ae3a1d392a534d8bd323428b1b0e80b8f}} 
+void {\bfseries wake\+Up} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_mutex_private_a4ac3e54a95eed7cc3b0f9a1bc80e34f1}\label{class_q_mutex_private_a4ac3e54a95eed7cc3b0f9a1bc80e34f1}} 
+\mbox{\hyperlink{class_q_atomic_int}{Q\+Atomic\+Int}} {\bfseries contenders}
+\item 
+\mbox{\Hypertarget{class_q_mutex_private_acae53ac5787f6fe69be1321d069f5f7d}\label{class_q_mutex_private_acae53ac5787f6fe69be1321d069f5f7d}} 
+volatile bool {\bfseries wakeup}
+\item 
+\mbox{\Hypertarget{class_q_mutex_private_acd3490bc71fdb04de75a7055b1211def}\label{class_q_mutex_private_acd3490bc71fdb04de75a7055b1211def}} 
+pthread\+\_\+mutex\+\_\+t {\bfseries mutex}
+\item 
+\mbox{\Hypertarget{class_q_mutex_private_a58da8d570849a70617e6f87d2945f639}\label{class_q_mutex_private_a58da8d570849a70617e6f87d2945f639}} 
+pthread\+\_\+cond\+\_\+t {\bfseries cond}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qmutex\+\_\+p.\+h\item 
+doxygen/qtools/qmutex\+\_\+unix.\+cpp\item 
+doxygen/qtools/qmutex\+\_\+win32.\+cpp\end{DoxyCompactItemize}

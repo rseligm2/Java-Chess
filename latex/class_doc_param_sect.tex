@@ -1,0 +1,81 @@
+\hypertarget{class_doc_param_sect}{}\section{Doc\+Param\+Sect Class Reference}
+\label{class_doc_param_sect}\index{DocParamSect@{DocParamSect}}
+
+
+{\ttfamily \#include $<$docparser.\+h$>$}
+
+Inheritance diagram for Doc\+Param\+Sect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_doc_param_sect}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_param_sect_a402e8723e8b9f22c5ffa84046224d51a}\label{class_doc_param_sect_a402e8723e8b9f22c5ffa84046224d51a}} 
+enum {\bfseries Type} \{ \newline
+{\bfseries Unknown}, 
+{\bfseries Param}, 
+{\bfseries Ret\+Val}, 
+{\bfseries Exception}, 
+\newline
+{\bfseries Template\+Param}
+ \}
+\item 
+\mbox{\Hypertarget{class_doc_param_sect_ad5e3f053f03f8c333a69208521075c66}\label{class_doc_param_sect_ad5e3f053f03f8c333a69208521075c66}} 
+enum {\bfseries Direction} \{ {\bfseries In} =1, 
+{\bfseries Out} =2, 
+{\bfseries In\+Out} =3, 
+{\bfseries Unspecified} =0
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_param_sect_aeb6f093d845b9b44fde36c0fe85d916b}\label{class_doc_param_sect_aeb6f093d845b9b44fde36c0fe85d916b}} 
+{\bfseries Doc\+Param\+Sect} (\mbox{\hyperlink{class_doc_node}{Doc\+Node}} $\ast$\mbox{\hyperlink{class_doc_node_a73e8ad29a91cfceb0968eb00db71a23d}{parent}}, Type t)
+\item 
+\mbox{\Hypertarget{class_doc_param_sect_a626fe5b50a6117fb4d1149ff67ff249d}\label{class_doc_param_sect_a626fe5b50a6117fb4d1149ff67ff249d}} 
+int {\bfseries parse} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&cmd\+Name, bool xml\+Context, Direction d)
+\item 
+\mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} \mbox{\hyperlink{class_doc_param_sect_aa9373d28ee9c50485a28269fa16db197}{kind}} () const
+\item 
+\mbox{\Hypertarget{class_doc_param_sect_afcb0666a1b93ac69a56ab22179827d8a}\label{class_doc_param_sect_afcb0666a1b93ac69a56ab22179827d8a}} 
+Type {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{class_doc_param_sect_a7ec7b05c44ebac263741f2983cb4f6b3}\label{class_doc_param_sect_a7ec7b05c44ebac263741f2983cb4f6b3}} 
+bool {\bfseries has\+In\+Out\+Specifier} () const
+\item 
+\mbox{\Hypertarget{class_doc_param_sect_ae994d0e9cc1d360aaa8d653042c929af}\label{class_doc_param_sect_ae994d0e9cc1d360aaa8d653042c929af}} 
+bool {\bfseries has\+Type\+Specifier} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_param_sect_a8d559bee17ecf9f9dc8f39029d78e567}\label{class_doc_param_sect_a8d559bee17ecf9f9dc8f39029d78e567}} 
+class {\bfseries Doc\+Param\+List}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Node representing a parameter section 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_doc_param_sect_aa9373d28ee9c50485a28269fa16db197}\label{class_doc_param_sect_aa9373d28ee9c50485a28269fa16db197}} 
+\index{DocParamSect@{DocParamSect}!kind@{kind}}
+\index{kind@{kind}!DocParamSect@{DocParamSect}}
+\subsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} Doc\+Param\+Sect\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the kind of node. Provides runtime type information 
+
+Implements \mbox{\hyperlink{class_doc_node_a108ffd214a72ba6e93dac084a8f58049}{Doc\+Node}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/docparser.\+h\item 
+doxygen/src/docparser.\+cpp\end{DoxyCompactItemize}

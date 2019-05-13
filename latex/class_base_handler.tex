@@ -1,0 +1,177 @@
+\hypertarget{class_base_handler}{}\section{Base\+Handler$<$ T $>$ Class Template Reference}
+\label{class_base_handler}\index{BaseHandler$<$ T $>$@{BaseHandler$<$ T $>$}}
+Inheritance diagram for Base\+Handler$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.726619cm]{class_base_handler}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_base_handler_abd6c0f29385e3c9d63d739cd053e2d9b}\label{class_base_handler_abd6c0f29385e3c9d63d739cd053e2d9b}} 
+typedef \mbox{\hyperlink{class_element_mapper}{Element\+Mapper}}$<$ T $>$\+::Start\+Element\+HandlerT {\bfseries Start\+Element\+HandlerT}
+\item 
+\mbox{\Hypertarget{class_base_handler_a3cad3be3bcd3f337d8032d51d555053e}\label{class_base_handler_a3cad3be3bcd3f337d8032d51d555053e}} 
+typedef \mbox{\hyperlink{class_element_mapper}{Element\+Mapper}}$<$ T $>$\+::End\+Element\+HandlerT {\bfseries End\+Element\+HandlerT}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_base_handler_ad982903d941c15f7a89ff7a269a391df}{start\+Document}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_base_handler_a15c20baf7065b3eb92ae7a336ccdf20b}{start\+Element}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&namespace\+U\+RI, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&local\+Name, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&name, const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+virtual bool \mbox{\hyperlink{class_base_handler_aa1b987506d2f962ba478b8bab388bff9}{end\+Element}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&namespace\+U\+RI, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&local\+Name, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&name)
+\item 
+bool \mbox{\hyperlink{class_base_handler_a2191a9b5ac9ebddc8c91dd56fff8e684}{skipped\+Entity}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s)
+\item 
+virtual bool \mbox{\hyperlink{class_base_handler_a9b7b29fcc7a0976d8e3be6f8ca1e67fd}{characters}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&ch)
+\item 
+\mbox{\Hypertarget{class_base_handler_ac94e086080a08af141e1db699fd45c12}\label{class_base_handler_ac94e086080a08af141e1db699fd45c12}} 
+void {\bfseries set\+Delegate} (\mbox{\hyperlink{class_q_xml_default_handler}{Q\+Xml\+Default\+Handler}} $\ast$delegate)
+\item 
+\mbox{\Hypertarget{class_base_handler_a9071c0c3d58da3fa786ba15a847f4d0c}\label{class_base_handler_a9071c0c3d58da3fa786ba15a847f4d0c}} 
+\mbox{\hyperlink{class_q_xml_default_handler}{Q\+Xml\+Default\+Handler}} $\ast$ {\bfseries delegate} () const
+\item 
+\mbox{\Hypertarget{class_base_handler_a2bfce6fd9fd72a5d6ea20c90f8570e9c}\label{class_base_handler_a2bfce6fd9fd72a5d6ea20c90f8570e9c}} 
+void {\bfseries set\+Fall\+Back\+Handler} (\mbox{\hyperlink{class_i_fall_back_handler}{I\+Fall\+Back\+Handler}} $\ast$h)
+\item 
+\mbox{\Hypertarget{class_base_handler_a903d141d2d87ec7cb046c1dd9773c77a}\label{class_base_handler_a903d141d2d87ec7cb046c1dd9773c77a}} 
+\mbox{\hyperlink{class_i_fall_back_handler}{I\+Fall\+Back\+Handler}} $\ast$ {\bfseries fall\+Back\+Handler} () const
+\item 
+void \mbox{\hyperlink{class_base_handler_abedc453093f90a5436a0bcb0c78b4aca}{set\+Document\+Locator}} (\mbox{\hyperlink{class_q_xml_locator}{Q\+Xml\+Locator}} $\ast$locator)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_base_handler_a465e89308ad37f5fe49c2d64365584eb}\label{class_base_handler_a465e89308ad37f5fe49c2d64365584eb}} 
+\mbox{\hyperlink{class_q_string}{Q\+String}} {\bfseries m\+\_\+cur\+String}
+\item 
+\mbox{\Hypertarget{class_base_handler_a8e2ef23c5a489fe981e33eba88538635}\label{class_base_handler_a8e2ef23c5a489fe981e33eba88538635}} 
+\mbox{\hyperlink{class_q_string}{Q\+String}} {\bfseries m\+\_\+skip\+Until}
+\item 
+\mbox{\Hypertarget{class_base_handler_a2227d419cfd154559297bc9599fc9d3d}\label{class_base_handler_a2227d419cfd154559297bc9599fc9d3d}} 
+int {\bfseries m\+\_\+skip\+Count}
+\item 
+\mbox{\Hypertarget{class_base_handler_af433dd7ab3c72d3cff916cff4c1790f3}\label{class_base_handler_af433dd7ab3c72d3cff916cff4c1790f3}} 
+\mbox{\hyperlink{class_q_xml_default_handler}{Q\+Xml\+Default\+Handler}} $\ast$ {\bfseries m\+\_\+delegate\+Handler}
+\item 
+\mbox{\Hypertarget{class_base_handler_af6dba84c4d282e5af104cff6d0967bcf}\label{class_base_handler_af6dba84c4d282e5af104cff6d0967bcf}} 
+\mbox{\hyperlink{class_i_fall_back_handler}{I\+Fall\+Back\+Handler}} $\ast$ {\bfseries m\+\_\+fall\+Back\+Handler}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_base_handler_a9b7b29fcc7a0976d8e3be6f8ca1e67fd}\label{class_base_handler_a9b7b29fcc7a0976d8e3be6f8ca1e67fd}} 
+\index{BaseHandler$<$ T $>$@{BaseHandler$<$ T $>$}!characters@{characters}}
+\index{characters@{characters}!BaseHandler$<$ T $>$@{BaseHandler$<$ T $>$}}
+\subsubsection{\texorpdfstring{characters()}{characters()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+virtual bool \mbox{\hyperlink{class_base_handler}{Base\+Handler}}$<$ T $>$\+::characters (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+called when a number of characters are received by the parser. 
+\begin{DoxyParams}{Parameters}
+{\em ch} & the characters. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_q_xml_content_handler_a3be0d440b48836560c8805e15d596eb1}{Q\+Xml\+Content\+Handler}}.
+
+\mbox{\Hypertarget{class_base_handler_aa1b987506d2f962ba478b8bab388bff9}\label{class_base_handler_aa1b987506d2f962ba478b8bab388bff9}} 
+\index{BaseHandler$<$ T $>$@{BaseHandler$<$ T $>$}!endElement@{endElement}}
+\index{endElement@{endElement}!BaseHandler$<$ T $>$@{BaseHandler$<$ T $>$}}
+\subsubsection{\texorpdfstring{endElement()}{endElement()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+virtual bool \mbox{\hyperlink{class_base_handler}{Base\+Handler}}$<$ T $>$\+::end\+Element (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{namespace\+U\+RI,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{local\+Name,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{q\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The reader calls this function when he has parsed an end element tag.
+
+If this function returns F\+A\+L\+SE the reader will stop parsing and will report an error. The reader will use the function \mbox{\hyperlink{class_q_xml_default_handler_afcbe5fdce86cea4b7863e752c2413c45}{error\+String()}} to get the error message that will be used for reporting the error.
+
+See also the \href{xml-sax.html\#namespaces}{\texttt{ namespace description}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_base_handler_a15c20baf7065b3eb92ae7a336ccdf20b}{start\+Element()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_xml_content_handler_af0abc06326798a6e522f91e6174b7b9e}{Q\+Xml\+Content\+Handler}}.
+
+\mbox{\Hypertarget{class_base_handler_abedc453093f90a5436a0bcb0c78b4aca}\label{class_base_handler_abedc453093f90a5436a0bcb0c78b4aca}} 
+\index{BaseHandler$<$ T $>$@{BaseHandler$<$ T $>$}!setDocumentLocator@{setDocumentLocator}}
+\index{setDocumentLocator@{setDocumentLocator}!BaseHandler$<$ T $>$@{BaseHandler$<$ T $>$}}
+\subsubsection{\texorpdfstring{setDocumentLocator()}{setDocumentLocator()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{class_base_handler}{Base\+Handler}}$<$ T $>$\+::set\+Document\+Locator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_xml_locator}{Q\+Xml\+Locator}} $\ast$}]{locator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The reader calls this function before he starts parsing the document. The argument {\itshape locator} is a pointer to a \mbox{\hyperlink{class_q_xml_locator}{Q\+Xml\+Locator}} which allows the application to get the actual position of the parsing in the document.
+
+Do not destroy the {\itshape locator}; it is destroyed when the reader is destroyed (do not use the {\itshape locator} after the reader got destroyed). 
+
+Implements \mbox{\hyperlink{class_q_xml_content_handler_a89863bd9a6372d3d73086aa99107bca7}{Q\+Xml\+Content\+Handler}}.
+
+\mbox{\Hypertarget{class_base_handler_a2191a9b5ac9ebddc8c91dd56fff8e684}\label{class_base_handler_a2191a9b5ac9ebddc8c91dd56fff8e684}} 
+\index{BaseHandler$<$ T $>$@{BaseHandler$<$ T $>$}!skippedEntity@{skippedEntity}}
+\index{skippedEntity@{skippedEntity}!BaseHandler$<$ T $>$@{BaseHandler$<$ T $>$}}
+\subsubsection{\texorpdfstring{skippedEntity()}{skippedEntity()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \mbox{\hyperlink{class_base_handler}{Base\+Handler}}$<$ T $>$\+::skipped\+Entity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Some readers may skip entities if they have not seen the declarations (e.\+g. because they are in an external D\+TD). If they do so they will report it by calling this function.
+
+If this function returns F\+A\+L\+SE the reader will stop parsing and will report an error. The reader will use the function \mbox{\hyperlink{class_q_xml_default_handler_afcbe5fdce86cea4b7863e752c2413c45}{error\+String()}} to get the error message that will be used for reporting the error. 
+
+Implements \mbox{\hyperlink{class_q_xml_content_handler_ac3b27d569634c5d7a7fac001a6cc4845}{Q\+Xml\+Content\+Handler}}.
+
+\mbox{\Hypertarget{class_base_handler_ad982903d941c15f7a89ff7a269a391df}\label{class_base_handler_ad982903d941c15f7a89ff7a269a391df}} 
+\index{BaseHandler$<$ T $>$@{BaseHandler$<$ T $>$}!startDocument@{startDocument}}
+\index{startDocument@{startDocument}!BaseHandler$<$ T $>$@{BaseHandler$<$ T $>$}}
+\subsubsection{\texorpdfstring{startDocument()}{startDocument()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+virtual bool \mbox{\hyperlink{class_base_handler}{Base\+Handler}}$<$ T $>$\+::start\+Document (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The reader calls this function when he starts parsing the document. The reader will call this function only once before any other functions in this class or in the \mbox{\hyperlink{class_q_xml_d_t_d_handler}{Q\+Xml\+D\+T\+D\+Handler}} class are called (except \mbox{\hyperlink{class_q_xml_content_handler_a89863bd9a6372d3d73086aa99107bca7}{Q\+Xml\+Content\+Handler\+::set\+Document\+Locator()}}).
+
+If this function returns F\+A\+L\+SE the reader will stop parsing and will report an error. The reader will use the function \mbox{\hyperlink{class_q_xml_default_handler_afcbe5fdce86cea4b7863e752c2413c45}{error\+String()}} to get the error message that will be used for reporting the error.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_xml_default_handler_a57ed6d87a89653619ff0d56078c52061}{end\+Document()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_xml_content_handler_aaca36268e66c9a56257e38bce18ae4d2}{Q\+Xml\+Content\+Handler}}.
+
+\mbox{\Hypertarget{class_base_handler_a15c20baf7065b3eb92ae7a336ccdf20b}\label{class_base_handler_a15c20baf7065b3eb92ae7a336ccdf20b}} 
+\index{BaseHandler$<$ T $>$@{BaseHandler$<$ T $>$}!startElement@{startElement}}
+\index{startElement@{startElement}!BaseHandler$<$ T $>$@{BaseHandler$<$ T $>$}}
+\subsubsection{\texorpdfstring{startElement()}{startElement()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+virtual bool \mbox{\hyperlink{class_base_handler}{Base\+Handler}}$<$ T $>$\+::start\+Element (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{namespace\+U\+RI,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{local\+Name,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{q\+Name,  }\item[{const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&}]{atts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The reader calls this function when he has parsed a start element tag.
+
+There will be a corresponding \mbox{\hyperlink{class_base_handler_aa1b987506d2f962ba478b8bab388bff9}{end\+Element()}} call when the corresponding end element tag was read. The \mbox{\hyperlink{class_base_handler_a15c20baf7065b3eb92ae7a336ccdf20b}{start\+Element()}} and \mbox{\hyperlink{class_base_handler_aa1b987506d2f962ba478b8bab388bff9}{end\+Element()}} calls are always nested correctly. Empty element tags (e.\+g. $<$a/$>$) are reported by \mbox{\hyperlink{class_base_handler_a15c20baf7065b3eb92ae7a336ccdf20b}{start\+Element()}} directly followed by a call to \mbox{\hyperlink{class_base_handler_aa1b987506d2f962ba478b8bab388bff9}{end\+Element()}}.
+
+The attribute list provided will contain only attributes with explicit values. The attribute list will contain attributes used for namespace declaration (i.\+e. attributes starting with xmlns) only if the namespace-\/prefix property of the reader is T\+R\+UE.
+
+The argument {\itshape uri} is the namespace U\+RI, or the empty string if the element has no namespace U\+RI or if namespace processing is not being performed, {\itshape local\+Name} is the local name (without prefix), or the empty string if namespace processing is not being performed, {\itshape q\+Name} is the qualified name (with prefix), or the empty string if qualified names are not available and {\itshape atts} are the attributes attached to the element. If there are no attributes, {\itshape atts} is an empty attributes object
+
+If this function returns F\+A\+L\+SE the reader will stop parsing and will report an error. The reader will use the function \mbox{\hyperlink{class_q_xml_default_handler_afcbe5fdce86cea4b7863e752c2413c45}{error\+String()}} to get the error message that will be used for reporting the error.
+
+See also the \href{xml-sax.html\#namespaces}{\texttt{ namespace description}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_base_handler_aa1b987506d2f962ba478b8bab388bff9}{end\+Element()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_xml_content_handler_af6d4e631fad2b9b75622c95003b1da55}{Q\+Xml\+Content\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/addon/doxmlparser/src/basehandler.\+h\end{DoxyCompactItemize}

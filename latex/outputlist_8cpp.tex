@@ -1,0 +1,186 @@
+\hypertarget{outputlist_8cpp}{}\section{doxygen/src/outputlist.cpp File Reference}
+\label{outputlist_8cpp}\index{doxygen/src/outputlist.cpp@{doxygen/src/outputlist.cpp}}
+{\ttfamily \#include \char`\"{}outputlist.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}outputgen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}message.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}definition.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}docparser.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vhdldocgen.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries F\+O\+R\+A\+L\+L1}(a1,  p1)
+\item 
+\#define {\bfseries F\+O\+R\+A\+L\+L2}(a1,  a2,  p1,  p2)
+\item 
+\#define {\bfseries F\+O\+R\+A\+L\+L3}(a1,  a2,  a3,  p1,  p2,  p3)
+\item 
+\#define {\bfseries F\+O\+R\+A\+L\+L4}(a1,  a2,  a3,  a4,  p1,  p2,  p3,  p4)
+\item 
+\#define {\bfseries F\+O\+R\+A\+L\+L5}(a1,  a2,  a3,  a4,  a5,  p1,  p2,  p3,  p4,  p5)
+\item 
+\#define {\bfseries F\+O\+R\+A\+L\+L6}(a1,  a2,  a3,  a4,  a5,  a6,  p1,  p2,  p3,  p4,  p5,  p6)
+\item 
+\#define {\bfseries F\+O\+R\+A\+L\+L7}(a1,  a2,  a3,  a4,  a5,  a6,  a7,  p1,  p2,  p3,  p4,  p5,  p6,  p7)
+\item 
+\#define {\bfseries F\+O\+R\+A\+L\+L8}(a1,  a2,  a3,  a4,  a5,  a6,  a7,  a8,  p1,  p2,  p3,  p4,  p5,  p6,  p7,  p8)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents a list of output generators that work in \char`\"{}parallel\char`\"{}. The class only knows about the abstract base class Output\+Generators. All output is produced by calling a method of this class, which forwards the call to all output generators. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{outputlist_8cpp_af7401f29adec030ecfdd74b9de7d8192}\label{outputlist_8cpp_af7401f29adec030ecfdd74b9de7d8192}} 
+\index{outputlist.cpp@{outputlist.cpp}!FORALL1@{FORALL1}}
+\index{FORALL1@{FORALL1}!outputlist.cpp@{outputlist.cpp}}
+\subsubsection{\texorpdfstring{FORALL1}{FORALL1}}
+{\footnotesize\ttfamily \#define F\+O\+R\+A\+L\+L1(\begin{DoxyParamCaption}\item[{}]{a1,  }\item[{}]{p1 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\mbox{\hyperlink{class_output_generator}{OutputGenerator}}::*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(a1),a1) \(\backslash\)}
+\DoxyCodeLine{\{                                                             \(\backslash\)}
+\DoxyCodeLine{  QListIterator<OutputGenerator> it(m\_outputs);               \(\backslash\)}
+\DoxyCodeLine{  OutputGenerator *og;                                        \(\backslash\)}
+\DoxyCodeLine{  for (it.toFirst();(og=it.current());++it)                   \(\backslash\)}
+\DoxyCodeLine{  \{                                                           \(\backslash\)}
+\DoxyCodeLine{    if (og->isEnabled()) (og->*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(p1);                     \(\backslash\)}
+\DoxyCodeLine{  \}                                                           \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{outputlist_8cpp_ab5a58e89505ad8c433a86bdf9bd88e43}\label{outputlist_8cpp_ab5a58e89505ad8c433a86bdf9bd88e43}} 
+\index{outputlist.cpp@{outputlist.cpp}!FORALL2@{FORALL2}}
+\index{FORALL2@{FORALL2}!outputlist.cpp@{outputlist.cpp}}
+\subsubsection{\texorpdfstring{FORALL2}{FORALL2}}
+{\footnotesize\ttfamily \#define F\+O\+R\+A\+L\+L2(\begin{DoxyParamCaption}\item[{}]{a1,  }\item[{}]{a2,  }\item[{}]{p1,  }\item[{}]{p2 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\mbox{\hyperlink{class_output_generator}{OutputGenerator}}::*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(a1,a2),a1,a2) \(\backslash\)}
+\DoxyCodeLine{\{                                                                   \(\backslash\)}
+\DoxyCodeLine{  QListIterator<OutputGenerator> it(m\_outputs);                     \(\backslash\)}
+\DoxyCodeLine{  OutputGenerator *og;                                              \(\backslash\)}
+\DoxyCodeLine{  for (it.toFirst();(og=it.current());++it)                         \(\backslash\)}
+\DoxyCodeLine{  \{                                                                 \(\backslash\)}
+\DoxyCodeLine{    if (og->isEnabled()) (og->*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(p1,p2);                        \(\backslash\)}
+\DoxyCodeLine{  \}                                                                 \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{outputlist_8cpp_a851ecbeeb61a7564df1d830ecf0e768f}\label{outputlist_8cpp_a851ecbeeb61a7564df1d830ecf0e768f}} 
+\index{outputlist.cpp@{outputlist.cpp}!FORALL3@{FORALL3}}
+\index{FORALL3@{FORALL3}!outputlist.cpp@{outputlist.cpp}}
+\subsubsection{\texorpdfstring{FORALL3}{FORALL3}}
+{\footnotesize\ttfamily \#define F\+O\+R\+A\+L\+L3(\begin{DoxyParamCaption}\item[{}]{a1,  }\item[{}]{a2,  }\item[{}]{a3,  }\item[{}]{p1,  }\item[{}]{p2,  }\item[{}]{p3 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\mbox{\hyperlink{class_output_generator}{OutputGenerator}}::*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(a1,a2,a3),a1,a2,a3) \(\backslash\)}
+\DoxyCodeLine{\{                                                                         \(\backslash\)}
+\DoxyCodeLine{  QListIterator<OutputGenerator> it(m\_outputs);                           \(\backslash\)}
+\DoxyCodeLine{  OutputGenerator *og;                                                    \(\backslash\)}
+\DoxyCodeLine{  for (it.toFirst();(og=it.current());++it)                               \(\backslash\)}
+\DoxyCodeLine{  \{                                                                       \(\backslash\)}
+\DoxyCodeLine{    if (og->isEnabled()) (og->*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(p1,p2,p3);                           \(\backslash\)}
+\DoxyCodeLine{  \}                                                                       \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{outputlist_8cpp_a0380f3d18f639fbc8044838e52add9c6}\label{outputlist_8cpp_a0380f3d18f639fbc8044838e52add9c6}} 
+\index{outputlist.cpp@{outputlist.cpp}!FORALL4@{FORALL4}}
+\index{FORALL4@{FORALL4}!outputlist.cpp@{outputlist.cpp}}
+\subsubsection{\texorpdfstring{FORALL4}{FORALL4}}
+{\footnotesize\ttfamily \#define F\+O\+R\+A\+L\+L4(\begin{DoxyParamCaption}\item[{}]{a1,  }\item[{}]{a2,  }\item[{}]{a3,  }\item[{}]{a4,  }\item[{}]{p1,  }\item[{}]{p2,  }\item[{}]{p3,  }\item[{}]{p4 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\mbox{\hyperlink{class_output_generator}{OutputGenerator}}::*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(a1,a2,a3,a4),a1,a2,a3,a4) \(\backslash\)}
+\DoxyCodeLine{\{                                                                               \(\backslash\)}
+\DoxyCodeLine{  QListIterator<OutputGenerator> it(m\_outputs);                                 \(\backslash\)}
+\DoxyCodeLine{  OutputGenerator *og;                                                          \(\backslash\)}
+\DoxyCodeLine{  for (it.toFirst();(og=it.current());++it)                                     \(\backslash\)}
+\DoxyCodeLine{  \{                                                                             \(\backslash\)}
+\DoxyCodeLine{    if (og->isEnabled()) (og->*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(p1,p2,p3,p4);                              \(\backslash\)}
+\DoxyCodeLine{  \}                                                                             \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{outputlist_8cpp_ae4e23d37dfebcfa38a0064ae191864f3}\label{outputlist_8cpp_ae4e23d37dfebcfa38a0064ae191864f3}} 
+\index{outputlist.cpp@{outputlist.cpp}!FORALL5@{FORALL5}}
+\index{FORALL5@{FORALL5}!outputlist.cpp@{outputlist.cpp}}
+\subsubsection{\texorpdfstring{FORALL5}{FORALL5}}
+{\footnotesize\ttfamily \#define F\+O\+R\+A\+L\+L5(\begin{DoxyParamCaption}\item[{}]{a1,  }\item[{}]{a2,  }\item[{}]{a3,  }\item[{}]{a4,  }\item[{}]{a5,  }\item[{}]{p1,  }\item[{}]{p2,  }\item[{}]{p3,  }\item[{}]{p4,  }\item[{}]{p5 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\mbox{\hyperlink{class_output_generator}{OutputGenerator}}::*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(a1,a2,a3,a4,a5),a1,a2,a3,a4,a5) \(\backslash\)}
+\DoxyCodeLine{\{                                                                                     \(\backslash\)}
+\DoxyCodeLine{  QListIterator<OutputGenerator> it(m\_outputs);                                       \(\backslash\)}
+\DoxyCodeLine{  OutputGenerator *og;                                                                \(\backslash\)}
+\DoxyCodeLine{  for (it.toFirst();(og=it.current());++it)                                           \(\backslash\)}
+\DoxyCodeLine{  \{                                                                                   \(\backslash\)}
+\DoxyCodeLine{    if (og->isEnabled()) (og->*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(p1,p2,p3,p4,p5);                                 \(\backslash\)}
+\DoxyCodeLine{  \}                                                                                   \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{outputlist_8cpp_aed434f7818c5abeccbd49e95941036cb}\label{outputlist_8cpp_aed434f7818c5abeccbd49e95941036cb}} 
+\index{outputlist.cpp@{outputlist.cpp}!FORALL6@{FORALL6}}
+\index{FORALL6@{FORALL6}!outputlist.cpp@{outputlist.cpp}}
+\subsubsection{\texorpdfstring{FORALL6}{FORALL6}}
+{\footnotesize\ttfamily \#define F\+O\+R\+A\+L\+L6(\begin{DoxyParamCaption}\item[{}]{a1,  }\item[{}]{a2,  }\item[{}]{a3,  }\item[{}]{a4,  }\item[{}]{a5,  }\item[{}]{a6,  }\item[{}]{p1,  }\item[{}]{p2,  }\item[{}]{p3,  }\item[{}]{p4,  }\item[{}]{p5,  }\item[{}]{p6 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\mbox{\hyperlink{class_output_generator}{OutputGenerator}}::*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(a1,a2,a3,a4,a5,a6),a1,a2,a3,a4,a5,a6) \(\backslash\)}
+\DoxyCodeLine{\{                                                                                     \(\backslash\)}
+\DoxyCodeLine{  QListIterator<OutputGenerator> it(m\_outputs);                                       \(\backslash\)}
+\DoxyCodeLine{  OutputGenerator *og;                                                                \(\backslash\)}
+\DoxyCodeLine{  for (it.toFirst();(og=it.current());++it)                                           \(\backslash\)}
+\DoxyCodeLine{  \{                                                                                   \(\backslash\)}
+\DoxyCodeLine{    if (og->isEnabled()) (og->*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(p1,p2,p3,p4,p5,p6);                              \(\backslash\)}
+\DoxyCodeLine{  \}                                                                                   \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{outputlist_8cpp_ad5a50b4519ddf8421e42aefb25294231}\label{outputlist_8cpp_ad5a50b4519ddf8421e42aefb25294231}} 
+\index{outputlist.cpp@{outputlist.cpp}!FORALL7@{FORALL7}}
+\index{FORALL7@{FORALL7}!outputlist.cpp@{outputlist.cpp}}
+\subsubsection{\texorpdfstring{FORALL7}{FORALL7}}
+{\footnotesize\ttfamily \#define F\+O\+R\+A\+L\+L7(\begin{DoxyParamCaption}\item[{}]{a1,  }\item[{}]{a2,  }\item[{}]{a3,  }\item[{}]{a4,  }\item[{}]{a5,  }\item[{}]{a6,  }\item[{}]{a7,  }\item[{}]{p1,  }\item[{}]{p2,  }\item[{}]{p3,  }\item[{}]{p4,  }\item[{}]{p5,  }\item[{}]{p6,  }\item[{}]{p7 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\mbox{\hyperlink{class_output_generator}{OutputGenerator}}::*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(a1,a2,a3,a4,a5,a6,a7),a1,a2,a3,a4,a5,a6,a7) \(\backslash\)}
+\DoxyCodeLine{\{                                                                                     \(\backslash\)}
+\DoxyCodeLine{  QListIterator<OutputGenerator> it(m\_outputs);                                       \(\backslash\)}
+\DoxyCodeLine{  OutputGenerator *og;                                                                \(\backslash\)}
+\DoxyCodeLine{  for (it.toFirst();(og=it.current());++it)                                           \(\backslash\)}
+\DoxyCodeLine{  \{                                                                                   \(\backslash\)}
+\DoxyCodeLine{    if (og->isEnabled()) (og->*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(p1,p2,p3,p4,p5,p6,p7);                           \(\backslash\)}
+\DoxyCodeLine{  \}                                                                                   \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{outputlist_8cpp_a7696fc1340980d5431ee3a38633d6ac3}\label{outputlist_8cpp_a7696fc1340980d5431ee3a38633d6ac3}} 
+\index{outputlist.cpp@{outputlist.cpp}!FORALL8@{FORALL8}}
+\index{FORALL8@{FORALL8}!outputlist.cpp@{outputlist.cpp}}
+\subsubsection{\texorpdfstring{FORALL8}{FORALL8}}
+{\footnotesize\ttfamily \#define F\+O\+R\+A\+L\+L8(\begin{DoxyParamCaption}\item[{}]{a1,  }\item[{}]{a2,  }\item[{}]{a3,  }\item[{}]{a4,  }\item[{}]{a5,  }\item[{}]{a6,  }\item[{}]{a7,  }\item[{}]{a8,  }\item[{}]{p1,  }\item[{}]{p2,  }\item[{}]{p3,  }\item[{}]{p4,  }\item[{}]{p5,  }\item[{}]{p6,  }\item[{}]{p7,  }\item[{}]{p8 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\mbox{\hyperlink{class_output_generator}{OutputGenerator}}::*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(a1,a2,a3,a4,a5,a6,a7,a8),a1,a2,a3,a4,a5,a6,a7,a8) \(\backslash\)}
+\DoxyCodeLine{\{                                                                                     \(\backslash\)}
+\DoxyCodeLine{  QListIterator<OutputGenerator> it(m\_outputs);                                       \(\backslash\)}
+\DoxyCodeLine{  OutputGenerator *og;                                                                \(\backslash\)}
+\DoxyCodeLine{  for (it.toFirst();(og=it.current());++it)                                           \(\backslash\)}
+\DoxyCodeLine{  \{                                                                                   \(\backslash\)}
+\DoxyCodeLine{    if (og->isEnabled()) (og->*\mbox{\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func}})(p1,p2,p3,p4,p5,p6,p7,p8);                        \(\backslash\)}
+\DoxyCodeLine{  \}                                                                                   \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

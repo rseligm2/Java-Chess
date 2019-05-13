@@ -1,0 +1,133 @@
+\hypertarget{class_q_array}{}\section{Q\+Array$<$ type $>$ Class Template Reference}
+\label{class_q_array}\index{QArray$<$ type $>$@{QArray$<$ type $>$}}
+Inheritance diagram for Q\+Array$<$ type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_array}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_array_a34cdd5c57d2deab1dfd53e0d46e78cee}\label{class_q_array_a34cdd5c57d2deab1dfd53e0d46e78cee}} 
+typedef type $\ast$ {\bfseries Iterator}
+\item 
+\mbox{\Hypertarget{class_q_array_a1bb994357ffeb855b3f19f6562137f93}\label{class_q_array_a1bb994357ffeb855b3f19f6562137f93}} 
+typedef const type $\ast$ {\bfseries Const\+Iterator}
+\item 
+\mbox{\Hypertarget{class_q_array_a8360acb482596a511681e8dd1eadd0f0}\label{class_q_array_a8360acb482596a511681e8dd1eadd0f0}} 
+typedef type {\bfseries Value\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_array_a034f799d9c3453d8c7e43c499d75a27a}\label{class_q_array_a034f799d9c3453d8c7e43c499d75a27a}} 
+{\bfseries Q\+Array} (int size)
+\item 
+\mbox{\Hypertarget{class_q_array_af35399770b255d6736af5abbcc746a86}\label{class_q_array_af35399770b255d6736af5abbcc746a86}} 
+{\bfseries Q\+Array} (const \mbox{\hyperlink{class_q_array}{Q\+Array}}$<$ type $>$ \&a)
+\item 
+\mbox{\Hypertarget{class_q_array_a72ba6a2725a6109e364658414c183595}\label{class_q_array_a72ba6a2725a6109e364658414c183595}} 
+\mbox{\hyperlink{class_q_array}{Q\+Array}}$<$ type $>$ \& {\bfseries operator=} (const \mbox{\hyperlink{class_q_array}{Q\+Array}}$<$ type $>$ \&a)
+\item 
+\mbox{\Hypertarget{class_q_array_acce87486d37d5bef7c28269b2a7dea8b}\label{class_q_array_acce87486d37d5bef7c28269b2a7dea8b}} 
+type $\ast$ {\bfseries data} () const
+\item 
+\mbox{\Hypertarget{class_q_array_a255c502db2feef28b3496c4118312963}\label{class_q_array_a255c502db2feef28b3496c4118312963}} 
+uint {\bfseries nrefs} () const
+\item 
+\mbox{\Hypertarget{class_q_array_ae833f813b8112ccf35302ed14e434a7e}\label{class_q_array_ae833f813b8112ccf35302ed14e434a7e}} 
+uint {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class_q_array_aab5bc9f5e4cc8b634c78d7ae60004579}\label{class_q_array_aab5bc9f5e4cc8b634c78d7ae60004579}} 
+uint {\bfseries count} () const
+\item 
+\mbox{\Hypertarget{class_q_array_aa8b1a6860323f9fe988dc902586cdf14}\label{class_q_array_aa8b1a6860323f9fe988dc902586cdf14}} 
+bool {\bfseries is\+Empty} () const
+\item 
+\mbox{\Hypertarget{class_q_array_a0fb358680cc16b8345cecfe7dba52550}\label{class_q_array_a0fb358680cc16b8345cecfe7dba52550}} 
+bool {\bfseries is\+Null} () const
+\item 
+\mbox{\Hypertarget{class_q_array_a9a2194b00734a01338194cfe5abd6736}\label{class_q_array_a9a2194b00734a01338194cfe5abd6736}} 
+bool {\bfseries resize} (uint size)
+\item 
+\mbox{\Hypertarget{class_q_array_ab628b764c186ec5ae01cdc47d909adbb}\label{class_q_array_ab628b764c186ec5ae01cdc47d909adbb}} 
+bool {\bfseries truncate} (uint pos)
+\item 
+\mbox{\Hypertarget{class_q_array_ac659207d09bbd90d9a31c91ff425490e}\label{class_q_array_ac659207d09bbd90d9a31c91ff425490e}} 
+bool {\bfseries fill} (const type \&d, int size=-\/1)
+\item 
+\mbox{\Hypertarget{class_q_array_aed81a36728344a4d944ca2639d21a162}\label{class_q_array_aed81a36728344a4d944ca2639d21a162}} 
+void {\bfseries detach} ()
+\item 
+\mbox{\Hypertarget{class_q_array_a7278f284d7ff989470176f9dc1ee263e}\label{class_q_array_a7278f284d7ff989470176f9dc1ee263e}} 
+\mbox{\hyperlink{class_q_array}{Q\+Array}}$<$ type $>$ {\bfseries copy} () const
+\item 
+\mbox{\Hypertarget{class_q_array_a4bfb1e75aa87a691f9bcbdb894022f95}\label{class_q_array_a4bfb1e75aa87a691f9bcbdb894022f95}} 
+\mbox{\hyperlink{class_q_array}{Q\+Array}}$<$ type $>$ \& {\bfseries assign} (const \mbox{\hyperlink{class_q_array}{Q\+Array}}$<$ type $>$ \&a)
+\item 
+\mbox{\Hypertarget{class_q_array_a3f38816b5bb61a5846a563900b4f3611}\label{class_q_array_a3f38816b5bb61a5846a563900b4f3611}} 
+\mbox{\hyperlink{class_q_array}{Q\+Array}}$<$ type $>$ \& {\bfseries assign} (const type $\ast$a, uint n)
+\item 
+\mbox{\Hypertarget{class_q_array_a17cb2acfeb58ffb962f5048ee79bcd07}\label{class_q_array_a17cb2acfeb58ffb962f5048ee79bcd07}} 
+\mbox{\hyperlink{class_q_array}{Q\+Array}}$<$ type $>$ \& {\bfseries duplicate} (const \mbox{\hyperlink{class_q_array}{Q\+Array}}$<$ type $>$ \&a)
+\item 
+\mbox{\Hypertarget{class_q_array_a65234c6c937135bb67f96fb2c6ff6553}\label{class_q_array_a65234c6c937135bb67f96fb2c6ff6553}} 
+\mbox{\hyperlink{class_q_array}{Q\+Array}}$<$ type $>$ \& {\bfseries duplicate} (const type $\ast$a, uint n)
+\item 
+\mbox{\Hypertarget{class_q_array_a5d29d910696e670349a33854710f4d1f}\label{class_q_array_a5d29d910696e670349a33854710f4d1f}} 
+\mbox{\hyperlink{class_q_array}{Q\+Array}}$<$ type $>$ \& {\bfseries set\+Raw\+Data} (const type $\ast$a, uint n)
+\item 
+\mbox{\Hypertarget{class_q_array_a7bdf2011fa958db2fe21c50e202125c3}\label{class_q_array_a7bdf2011fa958db2fe21c50e202125c3}} 
+void {\bfseries reset\+Raw\+Data} (const type $\ast$a, uint n)
+\item 
+\mbox{\Hypertarget{class_q_array_aac5cb5ca44c48721fd92957ef06df595}\label{class_q_array_aac5cb5ca44c48721fd92957ef06df595}} 
+int {\bfseries find} (const type \&d, uint i=0) const
+\item 
+\mbox{\Hypertarget{class_q_array_a23e0c02768043bf6ba40300555157339}\label{class_q_array_a23e0c02768043bf6ba40300555157339}} 
+int {\bfseries contains} (const type \&d) const
+\item 
+\mbox{\Hypertarget{class_q_array_a2213d4e7a1bd5d601f3d27b40afa518b}\label{class_q_array_a2213d4e7a1bd5d601f3d27b40afa518b}} 
+void {\bfseries sort} ()
+\item 
+\mbox{\Hypertarget{class_q_array_afb9e235369a325d1c9629edd49d9d209}\label{class_q_array_afb9e235369a325d1c9629edd49d9d209}} 
+int {\bfseries bsearch} (const type \&d) const
+\item 
+\mbox{\Hypertarget{class_q_array_adfcea5a351031bd67939bcc6de558414}\label{class_q_array_adfcea5a351031bd67939bcc6de558414}} 
+type \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int i) const
+\item 
+\mbox{\Hypertarget{class_q_array_a7b077d0281c6abc6c0aa77dfe8239cfb}\label{class_q_array_a7b077d0281c6abc6c0aa77dfe8239cfb}} 
+type \& {\bfseries at} (uint i) const
+\item 
+\mbox{\Hypertarget{class_q_array_a037654cb649b2378f35376267692a0c1}\label{class_q_array_a037654cb649b2378f35376267692a0c1}} 
+{\bfseries operator const type $\ast$} () const
+\item 
+\mbox{\Hypertarget{class_q_array_a084f1c892e945c64c1a82df4b833fb1e}\label{class_q_array_a084f1c892e945c64c1a82df4b833fb1e}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_q_array}{Q\+Array}}$<$ type $>$ \&a) const
+\item 
+\mbox{\Hypertarget{class_q_array_aa92a475443dee2a933f07340bc36a68e}\label{class_q_array_aa92a475443dee2a933f07340bc36a68e}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{class_q_array}{Q\+Array}}$<$ type $>$ \&a) const
+\item 
+\mbox{\Hypertarget{class_q_array_a9e2df6d5b695fb0fa74036b57c82403a}\label{class_q_array_a9e2df6d5b695fb0fa74036b57c82403a}} 
+Iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{class_q_array_a16dfebf13bbbe32f4cf56d90fcd80480}\label{class_q_array_a16dfebf13bbbe32f4cf56d90fcd80480}} 
+Iterator {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{class_q_array_acc7ef85365726cf67699c0310aebce96}\label{class_q_array_acc7ef85365726cf67699c0310aebce96}} 
+Const\+Iterator {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{class_q_array_ac0f673cacf2ba6c0cf284275eabebb5b}\label{class_q_array_ac0f673cacf2ba6c0cf284275eabebb5b}} 
+Const\+Iterator {\bfseries end} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_array_a6597f735b588e282baaf467f4886f94d}\label{class_q_array_a6597f735b588e282baaf467f4886f94d}} 
+{\bfseries Q\+Array} (int, int)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qarray.\+h\end{DoxyCompactItemize}

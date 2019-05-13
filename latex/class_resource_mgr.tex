@@ -1,0 +1,82 @@
+\hypertarget{class_resource_mgr}{}\section{Resource\+Mgr Class Reference}
+\label{class_resource_mgr}\index{ResourceMgr@{ResourceMgr}}
+
+
+Singleton for managing resources compiled into an executable.  
+
+
+
+
+{\ttfamily \#include $<$resourcemgr.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_resource_mgr_1_1_private}{Private}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_resource_mgr_a2894f6f64a5376dfc475bde3f8acd0f3}{register\+Resources}} (const \mbox{\hyperlink{struct_resource}{Resource}} resources\mbox{[}$\,$\mbox{]}, int num\+Resources)
+\item 
+bool \mbox{\hyperlink{class_resource_mgr_a5596fb3e70044fa98520b4d95d5336e1}{write\+Category}} (const char $\ast$category\+Name, const char $\ast$target\+Dir) const
+\item 
+bool \mbox{\hyperlink{class_resource_mgr_add302925074918ff666629dcdd755f97}{copy\+Resource}} (const char $\ast$name, const char $\ast$target\+Dir) const
+\item 
+bool \mbox{\hyperlink{class_resource_mgr_ac6de7e012b820c139b1dc537987cab2c}{copy\+Resource\+As}} (const char $\ast$name, const char $\ast$target\+Dir, const char $\ast$target\+Name) const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_resource_mgr_a0feee9b73a63ad9b9e140624b42ccaee}{get\+As\+String}} (const char $\ast$name) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_resource_mgr}{Resource\+Mgr}} \& \mbox{\hyperlink{class_resource_mgr_a02fb3176893696eaf659d680c8b08064}{instance}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Singleton for managing resources compiled into an executable. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_mgr_add302925074918ff666629dcdd755f97}\label{class_resource_mgr_add302925074918ff666629dcdd755f97}} 
+\index{ResourceMgr@{ResourceMgr}!copyResource@{copyResource}}
+\index{copyResource@{copyResource}!ResourceMgr@{ResourceMgr}}
+\subsubsection{\texorpdfstring{copyResource()}{copyResource()}}
+{\footnotesize\ttfamily bool Resource\+Mgr\+::copy\+Resource (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const char $\ast$}]{target\+Dir }\end{DoxyParamCaption}) const}
+
+Copies a registered resource to a given target directory \mbox{\Hypertarget{class_resource_mgr_ac6de7e012b820c139b1dc537987cab2c}\label{class_resource_mgr_ac6de7e012b820c139b1dc537987cab2c}} 
+\index{ResourceMgr@{ResourceMgr}!copyResourceAs@{copyResourceAs}}
+\index{copyResourceAs@{copyResourceAs}!ResourceMgr@{ResourceMgr}}
+\subsubsection{\texorpdfstring{copyResourceAs()}{copyResourceAs()}}
+{\footnotesize\ttfamily bool Resource\+Mgr\+::copy\+Resource\+As (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const char $\ast$}]{target\+Dir,  }\item[{const char $\ast$}]{target\+Name }\end{DoxyParamCaption}) const}
+
+Copies a registered resource to a given target directory under a given target name \mbox{\Hypertarget{class_resource_mgr_a0feee9b73a63ad9b9e140624b42ccaee}\label{class_resource_mgr_a0feee9b73a63ad9b9e140624b42ccaee}} 
+\index{ResourceMgr@{ResourceMgr}!getAsString@{getAsString}}
+\index{getAsString@{getAsString}!ResourceMgr@{ResourceMgr}}
+\subsubsection{\texorpdfstring{getAsString()}{getAsString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Resource\+Mgr\+::get\+As\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption}) const}
+
+Gets the resource data as a \mbox{\hyperlink{class_c}{C}} string \mbox{\Hypertarget{class_resource_mgr_a02fb3176893696eaf659d680c8b08064}\label{class_resource_mgr_a02fb3176893696eaf659d680c8b08064}} 
+\index{ResourceMgr@{ResourceMgr}!instance@{instance}}
+\index{instance@{instance}!ResourceMgr@{ResourceMgr}}
+\subsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_resource_mgr}{Resource\+Mgr}} \& Resource\+Mgr\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the one and only instance of this class \mbox{\Hypertarget{class_resource_mgr_a2894f6f64a5376dfc475bde3f8acd0f3}\label{class_resource_mgr_a2894f6f64a5376dfc475bde3f8acd0f3}} 
+\index{ResourceMgr@{ResourceMgr}!registerResources@{registerResources}}
+\index{registerResources@{registerResources}!ResourceMgr@{ResourceMgr}}
+\subsubsection{\texorpdfstring{registerResources()}{registerResources()}}
+{\footnotesize\ttfamily void Resource\+Mgr\+::register\+Resources (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_resource}{Resource}}}]{resources\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Resources }\end{DoxyParamCaption})}
+
+Registers an array of resources \mbox{\Hypertarget{class_resource_mgr_a5596fb3e70044fa98520b4d95d5336e1}\label{class_resource_mgr_a5596fb3e70044fa98520b4d95d5336e1}} 
+\index{ResourceMgr@{ResourceMgr}!writeCategory@{writeCategory}}
+\index{writeCategory@{writeCategory}!ResourceMgr@{ResourceMgr}}
+\subsubsection{\texorpdfstring{writeCategory()}{writeCategory()}}
+{\footnotesize\ttfamily bool Resource\+Mgr\+::write\+Category (\begin{DoxyParamCaption}\item[{const char $\ast$}]{category\+Name,  }\item[{const char $\ast$}]{target\+Dir }\end{DoxyParamCaption}) const}
+
+Writes all resource belonging to a given category to a given target directory 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/resourcemgr.\+h\item 
+doxygen/src/resourcemgr.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{class_q_g_dict_iterator}{}\section{Q\+G\+Dict\+Iterator Class Reference}
+\label{class_q_g_dict_iterator}\index{QGDictIterator@{QGDictIterator}}
+
+
+An internal class for implementing Q\+Dict\+Iterator and \mbox{\hyperlink{class_q_int_dict_iterator}{Q\+Int\+Dict\+Iterator}}.  
+
+
+
+
+{\ttfamily \#include $<$qgdict.\+h$>$}
+
+Inheritance diagram for Q\+G\+Dict\+Iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.647059cm]{class_q_g_dict_iterator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_g_dict_iterator_ad3a8cee70c155fb51cdb49f4d0200fff}\label{class_q_g_dict_iterator_ad3a8cee70c155fb51cdb49f4d0200fff}} 
+{\bfseries Q\+G\+Dict\+Iterator} (const \mbox{\hyperlink{class_q_g_dict}{Q\+G\+Dict}} \&)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_iterator_a877692de8c5afd9fbc1cad31022c6bdc}\label{class_q_g_dict_iterator_a877692de8c5afd9fbc1cad31022c6bdc}} 
+{\bfseries Q\+G\+Dict\+Iterator} (const \mbox{\hyperlink{class_q_g_dict_iterator}{Q\+G\+Dict\+Iterator}} \&)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_iterator_a4ae06e135ad6a141c8c682051eea4d89}\label{class_q_g_dict_iterator_a4ae06e135ad6a141c8c682051eea4d89}} 
+\mbox{\hyperlink{class_q_g_dict_iterator}{Q\+G\+Dict\+Iterator}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_q_g_dict_iterator}{Q\+G\+Dict\+Iterator}} \&)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_iterator_a67e4f848a3e0e4577dd862e410b71d5b}\label{class_q_g_dict_iterator_a67e4f848a3e0e4577dd862e410b71d5b}} 
+Q\+Collection\+::\+Item {\bfseries to\+First} ()
+\item 
+\mbox{\Hypertarget{class_q_g_dict_iterator_a1ed95b56163469e44b4b662e2ef384cf}\label{class_q_g_dict_iterator_a1ed95b56163469e44b4b662e2ef384cf}} 
+Q\+Collection\+::\+Item {\bfseries get} () const
+\item 
+\mbox{\Hypertarget{class_q_g_dict_iterator_acb85d719ea0b2f8527871e3cc50a3ffa}\label{class_q_g_dict_iterator_acb85d719ea0b2f8527871e3cc50a3ffa}} 
+\mbox{\hyperlink{class_q_string}{Q\+String}} {\bfseries get\+Key\+String} () const
+\item 
+\mbox{\Hypertarget{class_q_g_dict_iterator_a783dbbe77b2fcab19baa8066a9f7ac47}\label{class_q_g_dict_iterator_a783dbbe77b2fcab19baa8066a9f7ac47}} 
+const char $\ast$ {\bfseries get\+Key\+Ascii} () const
+\item 
+\mbox{\Hypertarget{class_q_g_dict_iterator_ab111cc97aa84e6e6333b0c9664a778a8}\label{class_q_g_dict_iterator_ab111cc97aa84e6e6333b0c9664a778a8}} 
+intptr\+\_\+t {\bfseries get\+Key\+Int} () const
+\item 
+\mbox{\Hypertarget{class_q_g_dict_iterator_a6e457860ab64ae064011949e28359637}\label{class_q_g_dict_iterator_a6e457860ab64ae064011949e28359637}} 
+void $\ast$ {\bfseries get\+Key\+Ptr} () const
+\item 
+\mbox{\Hypertarget{class_q_g_dict_iterator_a3833bbdb7178dbfcbac95547ef4c6bcf}\label{class_q_g_dict_iterator_a3833bbdb7178dbfcbac95547ef4c6bcf}} 
+Q\+Collection\+::\+Item {\bfseries operator()} ()
+\item 
+\mbox{\Hypertarget{class_q_g_dict_iterator_ab4cdd2c2b2ab8714c8144a5bb54a7409}\label{class_q_g_dict_iterator_ab4cdd2c2b2ab8714c8144a5bb54a7409}} 
+Q\+Collection\+::\+Item {\bfseries operator++} ()
+\item 
+\mbox{\Hypertarget{class_q_g_dict_iterator_a71905aff98dbecf1de97bb164d1b3203}\label{class_q_g_dict_iterator_a71905aff98dbecf1de97bb164d1b3203}} 
+Q\+Collection\+::\+Item {\bfseries operator+=} (uint)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_g_dict_iterator_a21c8a54a9eac2887ffa1ab1d801d544f}\label{class_q_g_dict_iterator_a21c8a54a9eac2887ffa1ab1d801d544f}} 
+\mbox{\hyperlink{class_q_g_dict}{Q\+G\+Dict}} $\ast$ {\bfseries dict}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_g_dict_iterator_a97b03fadfd4d68d39a3a5e5aa0e69111}\label{class_q_g_dict_iterator_a97b03fadfd4d68d39a3a5e5aa0e69111}} 
+class {\bfseries Q\+G\+Dict}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An internal class for implementing Q\+Dict\+Iterator and \mbox{\hyperlink{class_q_int_dict_iterator}{Q\+Int\+Dict\+Iterator}}. 
+
+\mbox{\hyperlink{class_q_g_dict_iterator}{Q\+G\+Dict\+Iterator}} is a strictly internal class that does the heavy work for Q\+Dict\+Iterator and \mbox{\hyperlink{class_q_int_dict_iterator}{Q\+Int\+Dict\+Iterator}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qgdict.\+h\item 
+doxygen/qtools/qgdict.\+cpp\end{DoxyCompactItemize}

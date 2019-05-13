@@ -1,0 +1,97 @@
+\hypertarget{class_q_cache}{}\section{Q\+Cache$<$ type $>$ Class Template Reference}
+\label{class_q_cache}\index{QCache$<$ type $>$@{QCache$<$ type $>$}}
+Inheritance diagram for Q\+Cache$<$ type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_q_cache}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_cache_ab3a5d53c5d88b1cddd682a6ea2fedf2b}\label{class_q_cache_ab3a5d53c5d88b1cddd682a6ea2fedf2b}} 
+{\bfseries Q\+Cache} (const \mbox{\hyperlink{class_q_cache}{Q\+Cache}}$<$ type $>$ \&c)
+\item 
+\mbox{\Hypertarget{class_q_cache_a8a7ceeb5474b33dd556cef1285f29aa0}\label{class_q_cache_a8a7ceeb5474b33dd556cef1285f29aa0}} 
+{\bfseries Q\+Cache} (int max\+Cost=100, int size=17, bool case\+Sensitive=T\+R\+UE)
+\item 
+\mbox{\Hypertarget{class_q_cache_ad56788e456b255a08879298d9aeb1cc9}\label{class_q_cache_ad56788e456b255a08879298d9aeb1cc9}} 
+\mbox{\hyperlink{class_q_cache}{Q\+Cache}}$<$ type $>$ \& {\bfseries operator=} (const \mbox{\hyperlink{class_q_cache}{Q\+Cache}}$<$ type $>$ \&c)
+\item 
+\mbox{\Hypertarget{class_q_cache_aee4f439357ece4d56edfe0ab239c0916}\label{class_q_cache_aee4f439357ece4d56edfe0ab239c0916}} 
+int {\bfseries max\+Cost} () const
+\item 
+\mbox{\Hypertarget{class_q_cache_a86162425c85ff459b3666debd321aafb}\label{class_q_cache_a86162425c85ff459b3666debd321aafb}} 
+int {\bfseries total\+Cost} () const
+\item 
+\mbox{\Hypertarget{class_q_cache_afd3387a0f863004c27006015b1e9d71d}\label{class_q_cache_afd3387a0f863004c27006015b1e9d71d}} 
+void {\bfseries set\+Max\+Cost} (int m)
+\item 
+uint \mbox{\hyperlink{class_q_cache_ac2f569c43cd3aeaabf28aef74a1e33b4}{count}} () const
+\item 
+\mbox{\Hypertarget{class_q_cache_a8114e2cd6d136ef827812835a0569e64}\label{class_q_cache_a8114e2cd6d136ef827812835a0569e64}} 
+uint {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class_q_cache_a9c09792d0034e16d875b8597dc7cdd92}\label{class_q_cache_a9c09792d0034e16d875b8597dc7cdd92}} 
+bool {\bfseries is\+Empty} () const
+\item 
+void \mbox{\hyperlink{class_q_cache_a23066e089d1e7de0fc1f5ba85bd05719}{clear}} ()
+\item 
+\mbox{\Hypertarget{class_q_cache_a1ac449cbe4630f5c731ecfaf0662db59}\label{class_q_cache_a1ac449cbe4630f5c731ecfaf0662db59}} 
+bool {\bfseries insert} (const char $\ast$k, const type $\ast$d, int c=1, int p=0)
+\item 
+\mbox{\Hypertarget{class_q_cache_af15e202b424c583974d00e269d782f42}\label{class_q_cache_af15e202b424c583974d00e269d782f42}} 
+bool {\bfseries remove} (const char $\ast$k)
+\item 
+\mbox{\Hypertarget{class_q_cache_ad2af9bf86686f51036cfca7f1c62804f}\label{class_q_cache_ad2af9bf86686f51036cfca7f1c62804f}} 
+type $\ast$ {\bfseries take} (const char $\ast$k)
+\item 
+\mbox{\Hypertarget{class_q_cache_a1d4d4db95a948d64f780b533edccd95b}\label{class_q_cache_a1d4d4db95a948d64f780b533edccd95b}} 
+type $\ast$ {\bfseries find} (const char $\ast$k, bool ref=T\+R\+UE) const
+\item 
+\mbox{\Hypertarget{class_q_cache_a0444fd702f2a39070cbc954704f9918d}\label{class_q_cache_a0444fd702f2a39070cbc954704f9918d}} 
+type $\ast$ {\bfseries operator\mbox{[}$\,$\mbox{]}} (const char $\ast$k) const
+\item 
+\mbox{\Hypertarget{class_q_cache_abb5ced14583833be383387206111a14a}\label{class_q_cache_abb5ced14583833be383387206111a14a}} 
+void {\bfseries statistics} () const
+\item 
+\mbox{\Hypertarget{class_q_cache_a8cb59b27a8a69f06d36d3f94a5aeb669}\label{class_q_cache_a8cb59b27a8a69f06d36d3f94a5aeb669}} 
+int {\bfseries hits} () const
+\item 
+\mbox{\Hypertarget{class_q_cache_aadf0d7de38727d09993b704a7db92cb2}\label{class_q_cache_aadf0d7de38727d09993b704a7db92cb2}} 
+int {\bfseries misses} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_cache_a23066e089d1e7de0fc1f5ba85bd05719}\label{class_q_cache_a23066e089d1e7de0fc1f5ba85bd05719}} 
+\index{QCache$<$ type $>$@{QCache$<$ type $>$}!clear@{clear}}
+\index{clear@{clear}!QCache$<$ type $>$@{QCache$<$ type $>$}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class type$>$ \\
+void \mbox{\hyperlink{class_q_cache}{Q\+Cache}}$<$ type $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes all objects from the collection. The objects will be deleted if auto-\/delete has been enabled. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_collection_a6ed41913c76bfba54be6da26015ee3f3}{set\+Auto\+Delete()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_collection_a92416cc22907550389aad04c26be2f77}{Q\+Collection}}.
+
+\mbox{\Hypertarget{class_q_cache_ac2f569c43cd3aeaabf28aef74a1e33b4}\label{class_q_cache_ac2f569c43cd3aeaabf28aef74a1e33b4}} 
+\index{QCache$<$ type $>$@{QCache$<$ type $>$}!count@{count}}
+\index{count@{count}!QCache$<$ type $>$@{QCache$<$ type $>$}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily template$<$class type$>$ \\
+uint \mbox{\hyperlink{class_q_cache}{Q\+Cache}}$<$ type $>$\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of objects in the collection. 
+
+Implements \mbox{\hyperlink{class_q_collection_a6441adbfb3ffb6f55ed834c0c0bcc6cb}{Q\+Collection}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qcache.\+h\end{DoxyCompactItemize}

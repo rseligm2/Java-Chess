@@ -1,0 +1,149 @@
+\hypertarget{class_store}{}\section{Store Class Reference}
+\label{class_store}\index{Store@{Store}}
+
+
+The \mbox{\hyperlink{class_store}{Store}} is a file based memory manager.  
+
+
+
+
+{\ttfamily \#include $<$store.\+h$>$}
+
+Inheritance diagram for Store\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_store}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_store_a5f58eadcb7385d5a5aa6830daef84f7d}{Store}} ()
+\item 
+\mbox{\hyperlink{class_store_a4fd725fdb2de0632ed98bfbd131c2512}{$\sim$\+Store}} ()
+\item 
+int \mbox{\hyperlink{class_store_a9707050019d12be2db8ea1b38d535f03}{open}} (const char $\ast$name)
+\item 
+portable\+\_\+off\+\_\+t \mbox{\hyperlink{class_store_ac1ce3fb86b3bc46125756b9ef782c095}{alloc}} ()
+\item 
+int \mbox{\hyperlink{class_store_aec754c74cf190cb55281a923db21194a}{write}} (const char $\ast$buf, uint size)
+\item 
+void \mbox{\hyperlink{class_store_a616a1f53fa04d39d505a03b1f49ab7a6}{end}} ()
+\item 
+void \mbox{\hyperlink{class_store_aed5b8a83aa15dfc3f7f1ca930a4d2583}{release}} (portable\+\_\+off\+\_\+t handle)
+\item 
+void \mbox{\hyperlink{class_store_a1a3dd916ae5c4c2e6ca4d13f418344a9}{close}} ()
+\item 
+void \mbox{\hyperlink{class_store_ad77053023f371abfc70f76ee2a14c377}{seek}} (portable\+\_\+off\+\_\+t handle)
+\item 
+int \mbox{\hyperlink{class_store_a02df7a98367838e436f8f8b3367016d1}{read}} (char $\ast$buf, uint size)
+\item 
+\mbox{\Hypertarget{class_store_a3b1a8632a1a6180cbcf210a3bfe51698}\label{class_store_a3b1a8632a1a6180cbcf210a3bfe51698}} 
+void {\bfseries print\+Stats} ()
+\item 
+\mbox{\Hypertarget{class_store_a1585f8a196c1e04ef7b67b9256ae9d0b}\label{class_store_a1585f8a196c1e04ef7b67b9256ae9d0b}} 
+portable\+\_\+off\+\_\+t {\bfseries pos} () const
+\item 
+\mbox{\Hypertarget{class_store_a1aa92a07ee209dcce2542a80aba174be}\label{class_store_a1aa92a07ee209dcce2542a80aba174be}} 
+void {\bfseries dump\+Block} (portable\+\_\+off\+\_\+t start, portable\+\_\+off\+\_\+t \mbox{\hyperlink{class_store_a616a1f53fa04d39d505a03b1f49ab7a6}{end}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_store}{Store}} is a file based memory manager. 
+
+You can open the store using \mbox{\hyperlink{class_store_a9707050019d12be2db8ea1b38d535f03}{open()}}. Then obtain a handle via \mbox{\hyperlink{class_store_ac1ce3fb86b3bc46125756b9ef782c095}{alloc()}} followed by a sequence of \mbox{\hyperlink{class_store_aec754c74cf190cb55281a923db21194a}{write()}} commands to store information, and finalize it using \mbox{\hyperlink{class_store_a616a1f53fa04d39d505a03b1f49ab7a6}{end()}}.
+
+Later on you locate the information with \mbox{\hyperlink{class_store_ad77053023f371abfc70f76ee2a14c377}{seek()}} using the handle obtained with \mbox{\hyperlink{class_store_ac1ce3fb86b3bc46125756b9ef782c095}{alloc()}}, and then use a sequence of \mbox{\hyperlink{class_store_a02df7a98367838e436f8f8b3367016d1}{read()}} calls to read the information back.
+
+If no longer needed the storage space can be freed using \mbox{\hyperlink{class_store_aed5b8a83aa15dfc3f7f1ca930a4d2583}{release()}}.
+
+The store will dynamically grow the file on disk if needed. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_store_a5f58eadcb7385d5a5aa6830daef84f7d}\label{class_store_a5f58eadcb7385d5a5aa6830daef84f7d}} 
+\index{Store@{Store}!Store@{Store}}
+\index{Store@{Store}!Store@{Store}}
+\subsubsection{\texorpdfstring{Store()}{Store()}}
+{\footnotesize\ttfamily Store\+::\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a store. \mbox{\Hypertarget{class_store_a4fd725fdb2de0632ed98bfbd131c2512}\label{class_store_a4fd725fdb2de0632ed98bfbd131c2512}} 
+\index{Store@{Store}!````~Store@{$\sim$Store}}
+\index{````~Store@{$\sim$Store}!Store@{Store}}
+\subsubsection{\texorpdfstring{$\sim$Store()}{~Store()}}
+{\footnotesize\ttfamily Store\+::$\sim$\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Releases the store object. Will close the underlying file if opened. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_store_ac1ce3fb86b3bc46125756b9ef782c095}\label{class_store_ac1ce3fb86b3bc46125756b9ef782c095}} 
+\index{Store@{Store}!alloc@{alloc}}
+\index{alloc@{alloc}!Store@{Store}}
+\subsubsection{\texorpdfstring{alloc()}{alloc()}}
+{\footnotesize\ttfamily portable\+\_\+off\+\_\+t Store\+::alloc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allocates a handle to write to and read from. \mbox{\Hypertarget{class_store_a1a3dd916ae5c4c2e6ca4d13f418344a9}\label{class_store_a1a3dd916ae5c4c2e6ca4d13f418344a9}} 
+\index{Store@{Store}!close@{close}}
+\index{close@{close}!Store@{Store}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Store\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Closes the store \mbox{\Hypertarget{class_store_a616a1f53fa04d39d505a03b1f49ab7a6}\label{class_store_a616a1f53fa04d39d505a03b1f49ab7a6}} 
+\index{Store@{Store}!end@{end}}
+\index{end@{end}!Store@{Store}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily void Store\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ends the sequence of writes. \begin{DoxyNote}{Note}
+After this call, first \mbox{\hyperlink{class_store_ac1ce3fb86b3bc46125756b9ef782c095}{alloc()}} has to be called before new writes can be done. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_store_a9707050019d12be2db8ea1b38d535f03}\label{class_store_a9707050019d12be2db8ea1b38d535f03}} 
+\index{Store@{Store}!open@{open}}
+\index{open@{open}!Store@{Store}}
+\subsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily int Store\+::open (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+Opens the file underlying the store using {\itshape name} as the file name. Returns 0 upon success, or -\/1 otherwise. \mbox{\Hypertarget{class_store_a02df7a98367838e436f8f8b3367016d1}\label{class_store_a02df7a98367838e436f8f8b3367016d1}} 
+\index{Store@{Store}!read@{read}}
+\index{read@{read}!Store@{Store}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily int Store\+::read (\begin{DoxyParamCaption}\item[{char $\ast$}]{buf,  }\item[{uint}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reads {\itshape size} bytes from the store into the array pointed to be {\itshape buf}. \begin{DoxyNote}{Note}
+Before reading \mbox{\hyperlink{class_store_ad77053023f371abfc70f76ee2a14c377}{seek()}} has to be called to set the right start of the store. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_storage_intf_a125b99d1511364f4fe49709feec46bb4}{Storage\+Intf}}.
+
+\mbox{\Hypertarget{class_store_aed5b8a83aa15dfc3f7f1ca930a4d2583}\label{class_store_aed5b8a83aa15dfc3f7f1ca930a4d2583}} 
+\index{Store@{Store}!release@{release}}
+\index{release@{release}!Store@{Store}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily void Store\+::release (\begin{DoxyParamCaption}\item[{portable\+\_\+off\+\_\+t}]{handle }\end{DoxyParamCaption})}
+
+Releases the memory corresponding to the handle returned with \mbox{\hyperlink{class_store_ac1ce3fb86b3bc46125756b9ef782c095}{alloc()}} \mbox{\Hypertarget{class_store_ad77053023f371abfc70f76ee2a14c377}\label{class_store_ad77053023f371abfc70f76ee2a14c377}} 
+\index{Store@{Store}!seek@{seek}}
+\index{seek@{seek}!Store@{Store}}
+\subsubsection{\texorpdfstring{seek()}{seek()}}
+{\footnotesize\ttfamily void Store\+::seek (\begin{DoxyParamCaption}\item[{portable\+\_\+off\+\_\+t}]{handle }\end{DoxyParamCaption})}
+
+Goes to the start of information corresponding to handle {\itshape pos} \mbox{\Hypertarget{class_store_aec754c74cf190cb55281a923db21194a}\label{class_store_aec754c74cf190cb55281a923db21194a}} 
+\index{Store@{Store}!write@{write}}
+\index{write@{write}!Store@{Store}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily int Store\+::write (\begin{DoxyParamCaption}\item[{const char $\ast$}]{buf,  }\item[{uint}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes {\itshape size} bytes in array {\itshape buf} to the store. First \mbox{\hyperlink{class_store_ac1ce3fb86b3bc46125756b9ef782c095}{alloc()}} has to be called. \begin{DoxyNote}{Note}
+The information can only be read after \mbox{\hyperlink{class_store_a616a1f53fa04d39d505a03b1f49ab7a6}{end()}} has been called. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_storage_intf_a97b26023c6cf0590423e428947d6febb}{Storage\+Intf}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/store.\+h\item 
+doxygen/src/store.\+cpp\end{DoxyCompactItemize}

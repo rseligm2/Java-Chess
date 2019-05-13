@@ -1,0 +1,84 @@
+\hypertarget{class_q_stack}{}\section{Q\+Stack$<$ type $>$ Class Template Reference}
+\label{class_q_stack}\index{QStack$<$ type $>$@{QStack$<$ type $>$}}
+Inheritance diagram for Q\+Stack$<$ type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_stack}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_stack_a7da26d860d102eff183135d3fa599870}\label{class_q_stack_a7da26d860d102eff183135d3fa599870}} 
+{\bfseries Q\+Stack} (const \mbox{\hyperlink{class_q_stack}{Q\+Stack}}$<$ type $>$ \&s)
+\item 
+\mbox{\Hypertarget{class_q_stack_a87144ce6ce778c8d76363d68b6129d62}\label{class_q_stack_a87144ce6ce778c8d76363d68b6129d62}} 
+\mbox{\hyperlink{class_q_stack}{Q\+Stack}}$<$ type $>$ \& {\bfseries operator=} (const \mbox{\hyperlink{class_q_stack}{Q\+Stack}}$<$ type $>$ \&s)
+\item 
+\mbox{\Hypertarget{class_q_stack_a4c764d883f551fe2d1ebbaa7b58e7b54}\label{class_q_stack_a4c764d883f551fe2d1ebbaa7b58e7b54}} 
+bool {\bfseries auto\+Delete} () const
+\item 
+\mbox{\Hypertarget{class_q_stack_a55152b44c464b3a9c8104f6173b7cc4f}\label{class_q_stack_a55152b44c464b3a9c8104f6173b7cc4f}} 
+void {\bfseries set\+Auto\+Delete} (bool del)
+\item 
+uint \mbox{\hyperlink{class_q_stack_a39f4fccb4ce975b29f5ed06b78316c24}{count}} () const
+\item 
+\mbox{\Hypertarget{class_q_stack_a2b27bd5722d6b56d14343d93ed142db9}\label{class_q_stack_a2b27bd5722d6b56d14343d93ed142db9}} 
+bool {\bfseries is\+Empty} () const
+\item 
+\mbox{\Hypertarget{class_q_stack_ad21cdb38c5b76acfd3a534fd2a77b478}\label{class_q_stack_ad21cdb38c5b76acfd3a534fd2a77b478}} 
+void {\bfseries push} (const type $\ast$d)
+\item 
+\mbox{\Hypertarget{class_q_stack_a9e5fca8d076435018fbe07efa38f14a2}\label{class_q_stack_a9e5fca8d076435018fbe07efa38f14a2}} 
+type $\ast$ {\bfseries pop} ()
+\item 
+\mbox{\Hypertarget{class_q_stack_a74f126d3f9e6ae6f472ebf5d445633e2}\label{class_q_stack_a74f126d3f9e6ae6f472ebf5d445633e2}} 
+bool {\bfseries remove} ()
+\item 
+void \mbox{\hyperlink{class_q_stack_a07ac0d10d6912270790d0c1a82ee2715}{clear}} ()
+\item 
+\mbox{\Hypertarget{class_q_stack_aa736ac6ceca8bfbc73ddb967accfdf37}\label{class_q_stack_aa736ac6ceca8bfbc73ddb967accfdf37}} 
+type $\ast$ {\bfseries bottom} () const
+\item 
+\mbox{\Hypertarget{class_q_stack_aea7c34d0dbde5dbd136660ea9f20bb92}\label{class_q_stack_aea7c34d0dbde5dbd136660ea9f20bb92}} 
+type $\ast$ {\bfseries top} () const
+\item 
+\mbox{\Hypertarget{class_q_stack_aad864e9760d80296b3ff297a2c706a51}\label{class_q_stack_aad864e9760d80296b3ff297a2c706a51}} 
+{\bfseries operator type $\ast$} () const
+\item 
+\mbox{\Hypertarget{class_q_stack_a94485de1fde26c1dc26fa50aa6cf7c13}\label{class_q_stack_a94485de1fde26c1dc26fa50aa6cf7c13}} 
+type $\ast$ {\bfseries current} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_stack_a07ac0d10d6912270790d0c1a82ee2715}\label{class_q_stack_a07ac0d10d6912270790d0c1a82ee2715}} 
+\index{QStack$<$ type $>$@{QStack$<$ type $>$}!clear@{clear}}
+\index{clear@{clear}!QStack$<$ type $>$@{QStack$<$ type $>$}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class type$>$ \\
+void \mbox{\hyperlink{class_q_stack}{Q\+Stack}}$<$ type $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes all objects from the collection. The objects will be deleted if auto-\/delete has been enabled. \begin{DoxySeeAlso}{See also}
+set\+Auto\+Delete() 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_q_g_list_a9b89540497bfcf674466dcf9e343d981}{Q\+G\+List}}.
+
+\mbox{\Hypertarget{class_q_stack_a39f4fccb4ce975b29f5ed06b78316c24}\label{class_q_stack_a39f4fccb4ce975b29f5ed06b78316c24}} 
+\index{QStack$<$ type $>$@{QStack$<$ type $>$}!count@{count}}
+\index{count@{count}!QStack$<$ type $>$@{QStack$<$ type $>$}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily template$<$class type$>$ \\
+uint \mbox{\hyperlink{class_q_stack}{Q\+Stack}}$<$ type $>$\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of objects in the collection. 
+
+Reimplemented from \mbox{\hyperlink{class_q_g_list_af765260057e85e575adff7fd9f25d062}{Q\+G\+List}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qstack.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\hypertarget{class_doc_html_table}{}\section{Doc\+Html\+Table Class Reference}
+\label{class_doc_html_table}\index{DocHtmlTable@{DocHtmlTable}}
+
+
+{\ttfamily \#include $<$docparser.\+h$>$}
+
+Inheritance diagram for Doc\+Html\+Table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_doc_html_table}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_html_table_a554bdfa1b4ef47b984a15192accd9121}\label{class_doc_html_table_a554bdfa1b4ef47b984a15192accd9121}} 
+{\bfseries Doc\+Html\+Table} (\mbox{\hyperlink{class_doc_node}{Doc\+Node}} $\ast$\mbox{\hyperlink{class_doc_node_a73e8ad29a91cfceb0968eb00db71a23d}{parent}}, const \mbox{\hyperlink{class_html_attrib_list}{Html\+Attrib\+List}} \&attribs)
+\item 
+\mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} \mbox{\hyperlink{class_doc_html_table_affb4a9eac5912bbb97720e9f320d5875}{kind}} () const
+\item 
+\mbox{\Hypertarget{class_doc_html_table_aad31d53a3fa7659d56062f913316fe07}\label{class_doc_html_table_aad31d53a3fa7659d56062f913316fe07}} 
+uint {\bfseries num\+Rows} () const
+\item 
+\mbox{\Hypertarget{class_doc_html_table_a4381899d937402a0c96179b3e54398fa}\label{class_doc_html_table_a4381899d937402a0c96179b3e54398fa}} 
+bool {\bfseries has\+Caption} ()
+\item 
+\mbox{\Hypertarget{class_doc_html_table_a1298564e7844015c7be73d46826a7430}\label{class_doc_html_table_a1298564e7844015c7be73d46826a7430}} 
+const \mbox{\hyperlink{class_html_attrib_list}{Html\+Attrib\+List}} \& {\bfseries attribs} () const
+\item 
+\mbox{\Hypertarget{class_doc_html_table_aa8201d7a0646b92c2c590b83e24f59fb}\label{class_doc_html_table_aa8201d7a0646b92c2c590b83e24f59fb}} 
+int {\bfseries parse} ()
+\item 
+\mbox{\Hypertarget{class_doc_html_table_a88a5c329482d1daa237a23da1821f72a}\label{class_doc_html_table_a88a5c329482d1daa237a23da1821f72a}} 
+int {\bfseries parse\+Xml} ()
+\item 
+\mbox{\Hypertarget{class_doc_html_table_a43a629cf3090a180461a7050a888d98c}\label{class_doc_html_table_a43a629cf3090a180461a7050a888d98c}} 
+uint {\bfseries num\+Columns} () const
+\item 
+void \mbox{\hyperlink{class_doc_html_table_a800ecff89a18489af2a256c1a984e60a}{accept}} (\mbox{\hyperlink{class_doc_visitor}{Doc\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{class_doc_html_table_a00268018fdac28ae9f75f7ac75c87f7b}\label{class_doc_html_table_a00268018fdac28ae9f75f7ac75c87f7b}} 
+\mbox{\hyperlink{class_doc_html_caption}{Doc\+Html\+Caption}} $\ast$ {\bfseries caption} () const
+\item 
+\mbox{\Hypertarget{class_doc_html_table_a5a23ad4deb55ba5dfbffb1b72f827f1a}\label{class_doc_html_table_a5a23ad4deb55ba5dfbffb1b72f827f1a}} 
+\mbox{\hyperlink{class_doc_html_row}{Doc\+Html\+Row}} $\ast$ {\bfseries first\+Row} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Node representing a H\+T\+ML table 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_doc_html_table_a800ecff89a18489af2a256c1a984e60a}\label{class_doc_html_table_a800ecff89a18489af2a256c1a984e60a}} 
+\index{DocHtmlTable@{DocHtmlTable}!accept@{accept}}
+\index{accept@{accept}!DocHtmlTable@{DocHtmlTable}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily void Doc\+Html\+Table\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_doc_visitor}{Doc\+Visitor}} $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Acceptor function for node visitors. Part of the visitor pattern. 
+\begin{DoxyParams}{Parameters}
+{\em v} & Abstract visitor. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_doc_node_a5303a550cbe6395663bf9b9dad28cbf1}{Doc\+Node}}.
+
+\mbox{\Hypertarget{class_doc_html_table_affb4a9eac5912bbb97720e9f320d5875}\label{class_doc_html_table_affb4a9eac5912bbb97720e9f320d5875}} 
+\index{DocHtmlTable@{DocHtmlTable}!kind@{kind}}
+\index{kind@{kind}!DocHtmlTable@{DocHtmlTable}}
+\subsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} Doc\+Html\+Table\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the kind of node. Provides runtime type information 
+
+Implements \mbox{\hyperlink{class_doc_node_a108ffd214a72ba6e93dac084a8f58049}{Doc\+Node}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/docparser.\+h\item 
+doxygen/src/docparser.\+cpp\end{DoxyCompactItemize}

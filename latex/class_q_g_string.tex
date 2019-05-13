@@ -1,0 +1,78 @@
+\hypertarget{class_q_g_string}{}\section{Q\+G\+String Class Reference}
+\label{class_q_g_string}\index{QGString@{QGString}}
+
+
+{\ttfamily \#include $<$qgstring.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_g_string_a4b7f1d7d9196ee284e8613daa3f2e7b4}\label{class_q_g_string_a4b7f1d7d9196ee284e8613daa3f2e7b4}} 
+{\bfseries Q\+G\+String} (uint size)
+\item 
+\mbox{\Hypertarget{class_q_g_string_a100431601206d32a3f272375213c7629}\label{class_q_g_string_a100431601206d32a3f272375213c7629}} 
+{\bfseries Q\+G\+String} (const \mbox{\hyperlink{class_q_g_string}{Q\+G\+String}} \&s)
+\item 
+\mbox{\Hypertarget{class_q_g_string_ac070cab1f8a7e40fb779adb925b63d10}\label{class_q_g_string_ac070cab1f8a7e40fb779adb925b63d10}} 
+{\bfseries Q\+G\+String} (const char $\ast$str)
+\item 
+\mbox{\Hypertarget{class_q_g_string_a6263402a34882078f7f2962d3b1ca13d}\label{class_q_g_string_a6263402a34882078f7f2962d3b1ca13d}} 
+bool {\bfseries resize} (uint newlen)
+\item 
+\mbox{\Hypertarget{class_q_g_string_a099adb917ca8294e71bea0b86ef32857}\label{class_q_g_string_a099adb917ca8294e71bea0b86ef32857}} 
+bool {\bfseries enlarge} (uint newlen)
+\item 
+\mbox{\Hypertarget{class_q_g_string_a892704e70f3b99e36126eccf042a25fa}\label{class_q_g_string_a892704e70f3b99e36126eccf042a25fa}} 
+void {\bfseries set\+Len} (uint newlen)
+\item 
+\mbox{\Hypertarget{class_q_g_string_a171c21ad69a00411e592e386ad4f8852}\label{class_q_g_string_a171c21ad69a00411e592e386ad4f8852}} 
+\mbox{\hyperlink{class_q_g_string}{Q\+G\+String}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_q_g_string}{Q\+G\+String}} \&s)
+\item 
+\mbox{\Hypertarget{class_q_g_string_ade199d24293874d40038ba9ff3a5394b}\label{class_q_g_string_ade199d24293874d40038ba9ff3a5394b}} 
+\mbox{\hyperlink{class_q_g_string}{Q\+G\+String}} \& {\bfseries operator=} (const char $\ast$str)
+\item 
+\mbox{\Hypertarget{class_q_g_string_a34f9c345f72d6d97db605eee76d038da}\label{class_q_g_string_a34f9c345f72d6d97db605eee76d038da}} 
+\mbox{\hyperlink{class_q_g_string}{Q\+G\+String}} \& {\bfseries operator+=} (const \mbox{\hyperlink{class_q_g_string}{Q\+G\+String}} \&s)
+\item 
+\mbox{\Hypertarget{class_q_g_string_a7268b8f2811a4cc43a3a1e7a585af1c8}\label{class_q_g_string_a7268b8f2811a4cc43a3a1e7a585af1c8}} 
+\mbox{\hyperlink{class_q_g_string}{Q\+G\+String}} \& {\bfseries operator+=} (const char $\ast$str)
+\item 
+\mbox{\Hypertarget{class_q_g_string_a8b96e7d6a99e481543294c2a0dd373d3}\label{class_q_g_string_a8b96e7d6a99e481543294c2a0dd373d3}} 
+\mbox{\hyperlink{class_q_g_string}{Q\+G\+String}} \& {\bfseries operator+=} (char c)
+\item 
+\mbox{\Hypertarget{class_q_g_string_a9261b5a52bac741d4c83a0d9ebfd0d6d}\label{class_q_g_string_a9261b5a52bac741d4c83a0d9ebfd0d6d}} 
+bool {\bfseries is\+Null} () const
+\item 
+\mbox{\Hypertarget{class_q_g_string_a1fef86f81795c500e97314ad074b7b13}\label{class_q_g_string_a1fef86f81795c500e97314ad074b7b13}} 
+bool {\bfseries is\+Empty} () const
+\item 
+\mbox{\Hypertarget{class_q_g_string_ad927b768b9204b01c045326cdd8cb363}\label{class_q_g_string_ad927b768b9204b01c045326cdd8cb363}} 
+uint {\bfseries length} () const
+\item 
+\mbox{\Hypertarget{class_q_g_string_a011d0e9db6cf9831f00c817b5d16a963}\label{class_q_g_string_a011d0e9db6cf9831f00c817b5d16a963}} 
+uint {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class_q_g_string_a2474747b7a0a4de99aee41de660eaab5}\label{class_q_g_string_a2474747b7a0a4de99aee41de660eaab5}} 
+char $\ast$ {\bfseries data} () const
+\item 
+\mbox{\Hypertarget{class_q_g_string_a9f35cff72d32aafbb2e08bd0ac59765d}\label{class_q_g_string_a9f35cff72d32aafbb2e08bd0ac59765d}} 
+bool {\bfseries truncate} (uint pos)
+\item 
+\mbox{\Hypertarget{class_q_g_string_a15a1d9a0d88c899a1403545dd5d0a63a}\label{class_q_g_string_a15a1d9a0d88c899a1403545dd5d0a63a}} 
+{\bfseries operator const char $\ast$} () const
+\item 
+\mbox{\Hypertarget{class_q_g_string_a448c5f438c783f7d18059d559991821e}\label{class_q_g_string_a448c5f438c783f7d18059d559991821e}} 
+char \& {\bfseries at} (uint index) const
+\item 
+\mbox{\Hypertarget{class_q_g_string_aa540d6693fac0b4a58880ba200565168}\label{class_q_g_string_aa540d6693fac0b4a58880ba200565168}} 
+char \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int i) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is an alternative implementation of \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qgstring.\+h\item 
+doxygen/qtools/qgstring.\+cpp\end{DoxyCompactItemize}

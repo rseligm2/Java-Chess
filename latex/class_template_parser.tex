@@ -1,0 +1,45 @@
+\hypertarget{class_template_parser}{}\section{Template\+Parser Class Reference}
+\label{class_template_parser}\index{TemplateParser@{TemplateParser}}
+
+
+Parser for templates.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_template_parser_a074067c80442cfb4e103bc5183679073}\label{class_template_parser_a074067c80442cfb4e103bc5183679073}} 
+{\bfseries Template\+Parser} (const \mbox{\hyperlink{class_template_engine}{Template\+Engine}} $\ast$engine, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&template\+Name, \mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{class_template_token}{Template\+Token}} $>$ \&tokens)
+\item 
+\mbox{\Hypertarget{class_template_parser_a09037d32371845f07d8996b0d7b1d24d}\label{class_template_parser_a09037d32371845f07d8996b0d7b1d24d}} 
+void {\bfseries parse} (\mbox{\hyperlink{class_template_node}{Template\+Node}} $\ast$parent, int line, const \mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}} \&stop\+At, \mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{class_template_node}{Template\+Node}} $>$ \&nodes)
+\item 
+\mbox{\Hypertarget{class_template_parser_ac1c96e51a84e8b227749bfababed06d8}\label{class_template_parser_ac1c96e51a84e8b227749bfababed06d8}} 
+bool {\bfseries has\+Next\+Token} () const
+\item 
+\mbox{\Hypertarget{class_template_parser_acbe18fdf2b8306342e283e906826a3ae}\label{class_template_parser_acbe18fdf2b8306342e283e906826a3ae}} 
+\mbox{\hyperlink{class_template_token}{Template\+Token}} $\ast$ {\bfseries take\+Next\+Token} ()
+\item 
+\mbox{\Hypertarget{class_template_parser_ac3e5fb3ee5dfcccbcf85440bd3b59d53}\label{class_template_parser_ac3e5fb3ee5dfcccbcf85440bd3b59d53}} 
+void {\bfseries remove\+Next\+Token} ()
+\item 
+\mbox{\Hypertarget{class_template_parser_a2f48f4d2f14f5cafc4f662613c2046c5}\label{class_template_parser_a2f48f4d2f14f5cafc4f662613c2046c5}} 
+void {\bfseries prepend\+Token} (const \mbox{\hyperlink{class_template_token}{Template\+Token}} $\ast$token)
+\item 
+\mbox{\Hypertarget{class_template_parser_a66dc5fcf5c879960fb540dcb7385f6c6}\label{class_template_parser_a66dc5fcf5c879960fb540dcb7385f6c6}} 
+const \mbox{\hyperlink{class_template_token}{Template\+Token}} $\ast$ {\bfseries current\+Token} () const
+\item 
+\mbox{\Hypertarget{class_template_parser_a5d031c606dc45d7786c1e2239490d5cb}\label{class_template_parser_a5d031c606dc45d7786c1e2239490d5cb}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries template\+Name} () const
+\item 
+\mbox{\Hypertarget{class_template_parser_ae19af6cb0602c3031b39416c3787c02f}\label{class_template_parser_ae19af6cb0602c3031b39416c3787c02f}} 
+void {\bfseries warn} (const char $\ast$file\+Name, int line, const char $\ast$fmt,...) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parser for templates. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/template.\+cpp\end{DoxyCompactItemize}

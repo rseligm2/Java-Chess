@@ -1,0 +1,53 @@
+\hypertarget{class_i_linked_text}{}\section{I\+Linked\+Text Class Reference}
+\label{class_i_linked_text}\index{ILinkedText@{ILinkedText}}
+
+
+Base interface for hyperlinked text.  
+
+
+
+
+{\ttfamily \#include $<$doxmlintf.\+h$>$}
+
+Inheritance diagram for I\+Linked\+Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.745098cm]{class_i_linked_text}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_linked_text_af18c37822f4819c58c07b327b459c5af}\label{class_i_linked_text_af18c37822f4819c58c07b327b459c5af}} 
+enum {\bfseries Kind} \{ {\bfseries Kind\+\_\+\+Text}, 
+{\bfseries Kind\+\_\+\+Ref}, 
+{\bfseries Kind\+\_\+\+Text}, 
+{\bfseries Kind\+\_\+\+Ref}
+ \}
+\item 
+\mbox{\Hypertarget{class_i_linked_text_af18c37822f4819c58c07b327b459c5af}\label{class_i_linked_text_af18c37822f4819c58c07b327b459c5af}} 
+enum {\bfseries Kind} \{ {\bfseries Kind\+\_\+\+Text}, 
+{\bfseries Kind\+\_\+\+Ref}, 
+{\bfseries Kind\+\_\+\+Text}, 
+{\bfseries Kind\+\_\+\+Ref}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_linked_text_a0644b90dc74abe778bf2d58e1f0895bc}\label{class_i_linked_text_a0644b90dc74abe778bf2d58e1f0895bc}} 
+virtual Kind {\bfseries kind} () const =0
+\item 
+\mbox{\Hypertarget{class_i_linked_text_a0644b90dc74abe778bf2d58e1f0895bc}\label{class_i_linked_text_a0644b90dc74abe778bf2d58e1f0895bc}} 
+virtual Kind {\bfseries kind} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base interface for hyperlinked text. 
+
+Depending on the result of kind() the interface is extended by \mbox{\hyperlink{class_i_l_t___text}{I\+L\+T\+\_\+\+Text}} or \mbox{\hyperlink{class_i_l_t___ref}{I\+L\+T\+\_\+\+Ref}}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/addon/doxmlparser/include/\mbox{\hyperlink{include_2doxmlintf_8h}{doxmlintf.\+h}}\end{DoxyCompactItemize}

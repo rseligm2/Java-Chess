@@ -1,0 +1,81 @@
+\hypertarget{namespace_config}{}\section{Config Namespace Reference}
+\label{namespace_config}\index{Config@{Config}}
+
+
+Public function to deal with the configuration file.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_config_a91bcb187ed95ec673137e413a4d77203}{init}} ()
+\item 
+void \mbox{\hyperlink{namespace_config_ad762288cc87bc2cfc411ce419a4453f5}{write\+Template}} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, bool short\+List, bool update\+Only=F\+A\+L\+SE)
+\item 
+void \mbox{\hyperlink{namespace_config_a27aded81204a4486717dcb65efb8f988}{compare\+Doxyfile}} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t)
+\item 
+bool \mbox{\hyperlink{namespace_config_a0a4bebb4ccf9e25679204573753f1a15}{parse}} (const char $\ast$file\+Name, bool update=F\+A\+L\+SE)
+\item 
+void \mbox{\hyperlink{namespace_config_a8cfddad5eb7c03beb96eddf1e78779db}{post\+Process}} (bool clear\+Header\+And\+Footer, bool compare=F\+A\+L\+SE)
+\item 
+void \mbox{\hyperlink{namespace_config_a151a6e9239fe223bebe4eb2d211fb543}{check\+And\+Correct}} ()
+\item 
+void \mbox{\hyperlink{namespace_config_a7b3346b2e70cc73d231d540df5d67e57}{deinit}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Public function to deal with the configuration file. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_config_a151a6e9239fe223bebe4eb2d211fb543}\label{namespace_config_a151a6e9239fe223bebe4eb2d211fb543}} 
+\index{Config@{Config}!checkAndCorrect@{checkAndCorrect}}
+\index{checkAndCorrect@{checkAndCorrect}!Config@{Config}}
+\subsubsection{\texorpdfstring{checkAndCorrect()}{checkAndCorrect()}}
+{\footnotesize\ttfamily void Config\+::check\+And\+Correct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check the validity of the parsed options and correct or warn the user where needed. \mbox{\Hypertarget{namespace_config_a27aded81204a4486717dcb65efb8f988}\label{namespace_config_a27aded81204a4486717dcb65efb8f988}} 
+\index{Config@{Config}!compareDoxyfile@{compareDoxyfile}}
+\index{compareDoxyfile@{compareDoxyfile}!Config@{Config}}
+\subsubsection{\texorpdfstring{compareDoxyfile()}{compareDoxyfile()}}
+{\footnotesize\ttfamily void Config\+::compare\+Doxyfile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&}]{t }\end{DoxyParamCaption})}
+
+Writes a the differences between the current configuration and the template configuration to stream {\itshape t}. \mbox{\Hypertarget{namespace_config_a7b3346b2e70cc73d231d540df5d67e57}\label{namespace_config_a7b3346b2e70cc73d231d540df5d67e57}} 
+\index{Config@{Config}!deinit@{deinit}}
+\index{deinit@{deinit}!Config@{Config}}
+\subsubsection{\texorpdfstring{deinit()}{deinit()}}
+{\footnotesize\ttfamily void Config\+::deinit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clean up any data \mbox{\Hypertarget{namespace_config_a91bcb187ed95ec673137e413a4d77203}\label{namespace_config_a91bcb187ed95ec673137e413a4d77203}} 
+\index{Config@{Config}!init@{init}}
+\index{init@{init}!Config@{Config}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Config\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize configuration variables to their default value \mbox{\Hypertarget{namespace_config_a0a4bebb4ccf9e25679204573753f1a15}\label{namespace_config_a0a4bebb4ccf9e25679204573753f1a15}} 
+\index{Config@{Config}!parse@{parse}}
+\index{parse@{parse}!Config@{Config}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily bool Config\+::parse (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{bool}]{update = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Parses a configuration file with name {\itshape fn}. \begin{DoxyReturn}{Returns}
+T\+R\+UE if successful, F\+A\+L\+SE if the file could not be opened or read. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_config_a8cfddad5eb7c03beb96eddf1e78779db}\label{namespace_config_a8cfddad5eb7c03beb96eddf1e78779db}} 
+\index{Config@{Config}!postProcess@{postProcess}}
+\index{postProcess@{postProcess}!Config@{Config}}
+\subsubsection{\texorpdfstring{postProcess()}{postProcess()}}
+{\footnotesize\ttfamily void Config\+::post\+Process (\begin{DoxyParamCaption}\item[{bool}]{clear\+Header\+And\+Footer,  }\item[{bool}]{compare = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Post processed the parsed data. Replaces raw string values by the actual values. and replaces environment variables. 
+\begin{DoxyParams}{Parameters}
+{\em clear\+Header\+And\+Footer} & set to T\+R\+UE when writing header and footer templates. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_config_ad762288cc87bc2cfc411ce419a4453f5}\label{namespace_config_ad762288cc87bc2cfc411ce419a4453f5}} 
+\index{Config@{Config}!writeTemplate@{writeTemplate}}
+\index{writeTemplate@{writeTemplate}!Config@{Config}}
+\subsubsection{\texorpdfstring{writeTemplate()}{writeTemplate()}}
+{\footnotesize\ttfamily void Config\+::write\+Template (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&}]{t,  }\item[{bool}]{short\+List,  }\item[{bool}]{update\+Only = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Writes a template configuration to stream {\itshape t}. If {\itshape short\+List} is {\ttfamily T\+R\+UE} the description of each configuration option will be omitted. 

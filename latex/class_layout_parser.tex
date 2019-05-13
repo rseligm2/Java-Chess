@@ -1,0 +1,136 @@
+\hypertarget{class_layout_parser}{}\section{Layout\+Parser Class Reference}
+\label{class_layout_parser}\index{LayoutParser@{LayoutParser}}
+Inheritance diagram for Layout\+Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.014389cm]{class_layout_parser}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_layout_parser_a243d5eae295c4957a37c5521a0d677f5}\label{class_layout_parser_a243d5eae295c4957a37c5521a0d677f5}} 
+void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{class_layout_parser_af06bd886b0d723dbc6f9ec2d95c6c8d1}\label{class_layout_parser_af06bd886b0d723dbc6f9ec2d95c6c8d1}} 
+void {\bfseries start\+Simple\+Entry} (Layout\+Doc\+Entry\+::\+Kind k, const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_layout_parser_abc6401e54a9617520571194d40d6c2ec}\label{class_layout_parser_abc6401e54a9617520571194d40d6c2ec}} 
+void {\bfseries start\+Section\+Entry} (Layout\+Doc\+Entry\+::\+Kind k, const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&title)
+\item 
+\mbox{\Hypertarget{class_layout_parser_ac47233901d4ceddb7b53b94335144441}\label{class_layout_parser_ac47233901d4ceddb7b53b94335144441}} 
+void {\bfseries start\+Member\+Decl\+Entry} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib, Member\+List\+Type type, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&title, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&subscript)
+\item 
+\mbox{\Hypertarget{class_layout_parser_a8c394955e0d4748de57bd04d459a8983}\label{class_layout_parser_a8c394955e0d4748de57bd04d459a8983}} 
+void {\bfseries start\+Member\+Def\+Entry} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib, Member\+List\+Type type, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&title, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&)
+\item 
+\mbox{\Hypertarget{class_layout_parser_a1fe962fb0452d1513133f9be74855316}\label{class_layout_parser_a1fe962fb0452d1513133f9be74855316}} 
+void {\bfseries start\+Layout} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&)
+\item 
+\mbox{\Hypertarget{class_layout_parser_ae0812943705504094029aef52414675c}\label{class_layout_parser_ae0812943705504094029aef52414675c}} 
+void {\bfseries end\+Layout} ()
+\item 
+\mbox{\Hypertarget{class_layout_parser_a17a2d4c4d85917fc43d25aaaae562d03}\label{class_layout_parser_a17a2d4c4d85917fc43d25aaaae562d03}} 
+void {\bfseries start\+Nav\+Index} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&)
+\item 
+\mbox{\Hypertarget{class_layout_parser_ac23ebe1f687d00e2de1afe54e9774d6e}\label{class_layout_parser_ac23ebe1f687d00e2de1afe54e9774d6e}} 
+void {\bfseries end\+Nav\+Index} ()
+\item 
+\mbox{\Hypertarget{class_layout_parser_ab1c6a6e8435dfac22c988ca0f1f434c3}\label{class_layout_parser_ab1c6a6e8435dfac22c988ca0f1f434c3}} 
+void {\bfseries start\+Nav\+Entry} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+\mbox{\Hypertarget{class_layout_parser_aeef097868148b046c02b7b2ecdd42e59}\label{class_layout_parser_aeef097868148b046c02b7b2ecdd42e59}} 
+void {\bfseries end\+Nav\+Entry} ()
+\item 
+\mbox{\Hypertarget{class_layout_parser_a43f4c8089b8a9da04be6cbd17672c69a}\label{class_layout_parser_a43f4c8089b8a9da04be6cbd17672c69a}} 
+void {\bfseries start\+Class} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&)
+\item 
+\mbox{\Hypertarget{class_layout_parser_aedfb21bc901f880aa359f2c23f82492a}\label{class_layout_parser_aedfb21bc901f880aa359f2c23f82492a}} 
+void {\bfseries end\+Class} ()
+\item 
+\mbox{\Hypertarget{class_layout_parser_a6fddf2358d18a9caefde0e7e93cdcbd0}\label{class_layout_parser_a6fddf2358d18a9caefde0e7e93cdcbd0}} 
+void {\bfseries start\+Namespace} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&)
+\item 
+\mbox{\Hypertarget{class_layout_parser_aadce9f277dc348593d137d06c79ede26}\label{class_layout_parser_aadce9f277dc348593d137d06c79ede26}} 
+void {\bfseries end\+Namespace} ()
+\item 
+\mbox{\Hypertarget{class_layout_parser_ac6a715c3de3c7eb65dded27f7e667489}\label{class_layout_parser_ac6a715c3de3c7eb65dded27f7e667489}} 
+void {\bfseries start\+File} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&)
+\item 
+\mbox{\Hypertarget{class_layout_parser_a243a2f6da8f80d564283f569f4d3dad7}\label{class_layout_parser_a243a2f6da8f80d564283f569f4d3dad7}} 
+void {\bfseries end\+File} ()
+\item 
+\mbox{\Hypertarget{class_layout_parser_a968de3bc9328f0f0e9a93406001fd293}\label{class_layout_parser_a968de3bc9328f0f0e9a93406001fd293}} 
+void {\bfseries start\+Group} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&)
+\item 
+\mbox{\Hypertarget{class_layout_parser_a07e465e3a3b8f544e0c5857f99200ffa}\label{class_layout_parser_a07e465e3a3b8f544e0c5857f99200ffa}} 
+void {\bfseries end\+Group} ()
+\item 
+\mbox{\Hypertarget{class_layout_parser_abc39b9f2b8f2745fbb9aa66e3cfa0a82}\label{class_layout_parser_abc39b9f2b8f2745fbb9aa66e3cfa0a82}} 
+void {\bfseries start\+Directory} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&)
+\item 
+\mbox{\Hypertarget{class_layout_parser_aedf31ed1122667f92f01ee56e9c62a2e}\label{class_layout_parser_aedf31ed1122667f92f01ee56e9c62a2e}} 
+void {\bfseries end\+Directory} ()
+\item 
+\mbox{\Hypertarget{class_layout_parser_a3f7a37e5a0c26d8fd9ee8e305f574a98}\label{class_layout_parser_a3f7a37e5a0c26d8fd9ee8e305f574a98}} 
+void {\bfseries start\+Member\+Def} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&)
+\item 
+\mbox{\Hypertarget{class_layout_parser_a9962ccd9bdd19597ef89c7b70d4d9b71}\label{class_layout_parser_a9962ccd9bdd19597ef89c7b70d4d9b71}} 
+void {\bfseries end\+Member\+Def} ()
+\item 
+\mbox{\Hypertarget{class_layout_parser_adbb62efccf1bc11e82082034fa0ef6cb}\label{class_layout_parser_adbb62efccf1bc11e82082034fa0ef6cb}} 
+void {\bfseries start\+Member\+Decl} (const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&)
+\item 
+\mbox{\Hypertarget{class_layout_parser_a4619bdb8c07c8e0ccfc55290e0b92303}\label{class_layout_parser_a4619bdb8c07c8e0ccfc55290e0b92303}} 
+void {\bfseries end\+Member\+Decl} ()
+\item 
+bool \mbox{\hyperlink{class_layout_parser_aa870786ef488ce9d300214dab2c497ae}{start\+Element}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&name, const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&attrib)
+\item 
+bool \mbox{\hyperlink{class_layout_parser_aded617e52b2a221ed57c29ac79da360b}{end\+Element}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&name)
+\item 
+bool \mbox{\hyperlink{class_layout_parser_a69ed2ff63a31f160e166ff79c93f5865}{start\+Document}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_layout_parser_a15418df161dd0e336bf07663382f787a}\label{class_layout_parser_a15418df161dd0e336bf07663382f787a}} 
+static \mbox{\hyperlink{class_layout_parser}{Layout\+Parser}} \& {\bfseries instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_layout_parser_aded617e52b2a221ed57c29ac79da360b}\label{class_layout_parser_aded617e52b2a221ed57c29ac79da360b}} 
+\index{LayoutParser@{LayoutParser}!endElement@{endElement}}
+\index{endElement@{endElement}!LayoutParser@{LayoutParser}}
+\subsubsection{\texorpdfstring{endElement()}{endElement()}}
+{\footnotesize\ttfamily bool Layout\+Parser\+::end\+Element (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{namespace\+U\+RI,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{local\+Name,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{q\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Does nothing. 
+
+Reimplemented from \mbox{\hyperlink{class_q_xml_default_handler_ae5d92a2fbae15a793aedf725b62b16c2}{Q\+Xml\+Default\+Handler}}.
+
+\mbox{\Hypertarget{class_layout_parser_a69ed2ff63a31f160e166ff79c93f5865}\label{class_layout_parser_a69ed2ff63a31f160e166ff79c93f5865}} 
+\index{LayoutParser@{LayoutParser}!startDocument@{startDocument}}
+\index{startDocument@{startDocument}!LayoutParser@{LayoutParser}}
+\subsubsection{\texorpdfstring{startDocument()}{startDocument()}}
+{\footnotesize\ttfamily bool Layout\+Parser\+::start\+Document (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Does nothing. 
+
+Reimplemented from \mbox{\hyperlink{class_q_xml_default_handler_a5a1135641cb81d4053ecd4783c7c252b}{Q\+Xml\+Default\+Handler}}.
+
+\mbox{\Hypertarget{class_layout_parser_aa870786ef488ce9d300214dab2c497ae}\label{class_layout_parser_aa870786ef488ce9d300214dab2c497ae}} 
+\index{LayoutParser@{LayoutParser}!startElement@{startElement}}
+\index{startElement@{startElement}!LayoutParser@{LayoutParser}}
+\subsubsection{\texorpdfstring{startElement()}{startElement()}}
+{\footnotesize\ttfamily bool Layout\+Parser\+::start\+Element (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{namespace\+U\+RI,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{local\+Name,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{q\+Name,  }\item[{const \mbox{\hyperlink{class_q_xml_attributes}{Q\+Xml\+Attributes}} \&}]{atts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Does nothing. 
+
+Reimplemented from \mbox{\hyperlink{class_q_xml_default_handler_a0381a337b32a16d2ef2a8df9a29cb215}{Q\+Xml\+Default\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/layout.\+cpp\end{DoxyCompactItemize}

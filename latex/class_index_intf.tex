@@ -1,0 +1,55 @@
+\hypertarget{class_index_intf}{}\section{Index\+Intf Class Reference}
+\label{class_index_intf}\index{IndexIntf@{IndexIntf}}
+
+
+Abstract interface for index generators.  
+
+
+
+
+{\ttfamily \#include $<$index.\+h$>$}
+
+Inheritance diagram for Index\+Intf\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_index_intf}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_index_intf_a0e46b4afa0ed269e2d089c8444590515}\label{class_index_intf_a0e46b4afa0ed269e2d089c8444590515}} 
+virtual void {\bfseries initialize} ()=0
+\item 
+\mbox{\Hypertarget{class_index_intf_aa5532a767c4ac41167d014209b2ea8d7}\label{class_index_intf_aa5532a767c4ac41167d014209b2ea8d7}} 
+virtual void {\bfseries finalize} ()=0
+\item 
+\mbox{\Hypertarget{class_index_intf_ac5ff1647bcf1cc65543258df162a0a7c}\label{class_index_intf_ac5ff1647bcf1cc65543258df162a0a7c}} 
+virtual void {\bfseries inc\+Contents\+Depth} ()=0
+\item 
+\mbox{\Hypertarget{class_index_intf_a920918399556e9afd4d927de3d1f4247}\label{class_index_intf_a920918399556e9afd4d927de3d1f4247}} 
+virtual void {\bfseries dec\+Contents\+Depth} ()=0
+\item 
+\mbox{\Hypertarget{class_index_intf_aab43652b639ce5cd25f5b16e54e20f26}\label{class_index_intf_aab43652b639ce5cd25f5b16e54e20f26}} 
+virtual void {\bfseries add\+Contents\+Item} (bool is\+Dir, const char $\ast$name, const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, bool separate\+Index, bool add\+To\+Nav\+Index, \mbox{\hyperlink{class_definition}{Definition}} $\ast$def)=0
+\item 
+\mbox{\Hypertarget{class_index_intf_a762276e6f0229fb784a592acd2cf6a8b}\label{class_index_intf_a762276e6f0229fb784a592acd2cf6a8b}} 
+virtual void {\bfseries add\+Index\+Item} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$context, \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$md, const char $\ast$section\+Anchor, const char $\ast$title)=0
+\item 
+\mbox{\Hypertarget{class_index_intf_a153c5c5995155d112c33fed544b44094}\label{class_index_intf_a153c5c5995155d112c33fed544b44094}} 
+virtual void {\bfseries add\+Index\+File} (const char $\ast$name)=0
+\item 
+\mbox{\Hypertarget{class_index_intf_ac1650d4596d97cdd1de428b06a76daad}\label{class_index_intf_ac1650d4596d97cdd1de428b06a76daad}} 
+virtual void {\bfseries add\+Image\+File} (const char $\ast$name)=0
+\item 
+\mbox{\Hypertarget{class_index_intf_a3989fce1306feb90e477cb53fd0daee0}\label{class_index_intf_a3989fce1306feb90e477cb53fd0daee0}} 
+virtual void {\bfseries add\+Style\+Sheet\+File} (const char $\ast$name)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract interface for index generators. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/index.\+h\end{DoxyCompactItemize}

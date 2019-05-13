@@ -1,0 +1,759 @@
+\hypertarget{class_q_char}{}\section{Q\+Char Class Reference}
+\label{class_q_char}\index{QChar@{QChar}}
+
+
+The \mbox{\hyperlink{class_q_char}{Q\+Char}} class provides a light-\/weight Unicode character.  
+
+
+
+
+{\ttfamily \#include $<$qstring.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_char_a62908095db0c54f35ff2ae928c621a97}{Category}} \{ \newline
+{\bfseries No\+Category}, 
+{\bfseries Mark\+\_\+\+Non\+Spacing}, 
+{\bfseries Mark\+\_\+\+Spacing\+Combining}, 
+{\bfseries Mark\+\_\+\+Enclosing}, 
+\newline
+{\bfseries Number\+\_\+\+Decimal\+Digit}, 
+{\bfseries Number\+\_\+\+Letter}, 
+{\bfseries Number\+\_\+\+Other}, 
+{\bfseries Separator\+\_\+\+Space}, 
+\newline
+{\bfseries Separator\+\_\+\+Line}, 
+{\bfseries Separator\+\_\+\+Paragraph}, 
+{\bfseries Other\+\_\+\+Control}, 
+{\bfseries Other\+\_\+\+Format}, 
+\newline
+{\bfseries Other\+\_\+\+Surrogate}, 
+{\bfseries Other\+\_\+\+Private\+Use}, 
+{\bfseries Other\+\_\+\+Not\+Assigned}, 
+{\bfseries Letter\+\_\+\+Uppercase}, 
+\newline
+{\bfseries Letter\+\_\+\+Lowercase}, 
+{\bfseries Letter\+\_\+\+Titlecase}, 
+{\bfseries Letter\+\_\+\+Modifier}, 
+{\bfseries Letter\+\_\+\+Other}, 
+\newline
+{\bfseries Punctuation\+\_\+\+Connector}, 
+{\bfseries Punctuation\+\_\+\+Dask}, 
+{\bfseries Punctuation\+\_\+\+Open}, 
+{\bfseries Punctuation\+\_\+\+Close}, 
+\newline
+{\bfseries Punctuation\+\_\+\+Initial\+Quote}, 
+{\bfseries Punctuation\+\_\+\+Final\+Quote}, 
+{\bfseries Punctuation\+\_\+\+Other}, 
+{\bfseries Symbol\+\_\+\+Math}, 
+\newline
+{\bfseries Symbol\+\_\+\+Currency}, 
+{\bfseries Symbol\+\_\+\+Modifier}, 
+{\bfseries Symbol\+\_\+\+Other}
+ \}
+\item 
+enum \mbox{\hyperlink{class_q_char_a54978126be7630b3e85394325a822302}{Direction}} \{ \newline
+{\bfseries DirL}, 
+{\bfseries DirR}, 
+{\bfseries Dir\+EN}, 
+{\bfseries Dir\+ES}, 
+\newline
+{\bfseries Dir\+ET}, 
+{\bfseries Dir\+AN}, 
+{\bfseries Dir\+CS}, 
+{\bfseries DirB}, 
+\newline
+{\bfseries DirS}, 
+{\bfseries Dir\+WS}, 
+{\bfseries Dir\+ON}, 
+{\bfseries Dir\+L\+RE}, 
+\newline
+{\bfseries Dir\+L\+RO}, 
+{\bfseries Dir\+AL}, 
+{\bfseries Dir\+R\+LE}, 
+{\bfseries Dir\+R\+LO}, 
+\newline
+{\bfseries Dir\+P\+DF}, 
+{\bfseries Dir\+N\+SM}, 
+{\bfseries Dir\+BN}
+ \}
+\item 
+enum \mbox{\hyperlink{class_q_char_a13be45046e82a6d2991cef0b7c18d522}{Decomposition}} \{ \newline
+{\bfseries Single}, 
+{\bfseries Canonical}, 
+{\bfseries Font}, 
+{\bfseries No\+Break}, 
+\newline
+{\bfseries Initial}, 
+{\bfseries Medial}, 
+{\bfseries Final}, 
+{\bfseries Isolated}, 
+\newline
+{\bfseries Circle}, 
+{\bfseries Super}, 
+{\bfseries Sub}, 
+{\bfseries Vertical}, 
+\newline
+{\bfseries Wide}, 
+{\bfseries Narrow}, 
+{\bfseries Small}, 
+{\bfseries Square}, 
+\newline
+{\bfseries Compat}, 
+{\bfseries Fraction}
+ \}
+\item 
+enum \mbox{\hyperlink{class_q_char_a086edd55a90ad2cf910ca3ab5fbe7bde}{Joining}} \{ {\bfseries Other\+Joining}, 
+{\bfseries Dual}, 
+{\bfseries Right}, 
+{\bfseries Center}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_char_a982aca321d746686396ab5290955da95}{Q\+Char}} ()
+\item 
+\mbox{\hyperlink{class_q_char_a9d4a3fc3b41479f13c1174995d1390d5}{Q\+Char}} (char c)
+\item 
+\mbox{\hyperlink{class_q_char_a4b67f8efac359d10c3c2b279624d1002}{Q\+Char}} (uchar c)
+\item 
+\mbox{\hyperlink{class_q_char_a7f5f54e09c49f6ea21627b924e9240c1}{Q\+Char}} (uchar c, uchar r)
+\item 
+\mbox{\hyperlink{class_q_char_a66d7c1c6f835a49d4486cb960c43f1da}{Q\+Char}} (const \mbox{\hyperlink{class_q_char}{Q\+Char}} \&c)
+\item 
+\mbox{\hyperlink{class_q_char_a7145ea443cffb41db0d4ed23285831e3}{Q\+Char}} (ushort rc)
+\item 
+\mbox{\hyperlink{class_q_char_a548ce01f65d8afbaff0d03c78d5453da}{Q\+Char}} (short rc)
+\item 
+\mbox{\hyperlink{class_q_char_ab508e623fe37bdcd7d855539baaf846c}{Q\+Char}} (uint rc)
+\item 
+\mbox{\hyperlink{class_q_char_aa16b5930b815ea41ab29112fe3d7a378}{Q\+Char}} (int rc)
+\item 
+int \mbox{\hyperlink{class_q_char_ac23377922296b84ca58ffaaee6d522af}{digit\+Value}} () const
+\item 
+\mbox{\hyperlink{class_q_char}{Q\+Char}} \mbox{\hyperlink{class_q_char_a70eb37a2ce831bffec68645ec51dc77f}{lower}} () const
+\item 
+\mbox{\hyperlink{class_q_char}{Q\+Char}} \mbox{\hyperlink{class_q_char_a4418e0d46d515231d620263cd7fd0c1f}{upper}} () const
+\item 
+\mbox{\hyperlink{class_q_char_a62908095db0c54f35ff2ae928c621a97}{Category}} \mbox{\hyperlink{class_q_char_a4bc1ffcdc40c674015b3bb9e9114637e}{category}} () const
+\item 
+\mbox{\hyperlink{class_q_char_a54978126be7630b3e85394325a822302}{Direction}} \mbox{\hyperlink{class_q_char_ad01050969cdddf81a9d956a93da209c6}{direction}} () const
+\item 
+\mbox{\hyperlink{class_q_char_a086edd55a90ad2cf910ca3ab5fbe7bde}{Joining}} \mbox{\hyperlink{class_q_char_ad009b86964d2cced7c75235f3292b03f}{joining}} () const
+\item 
+bool \mbox{\hyperlink{class_q_char_ace551e353be06621f91e605f33aa49e6}{mirrored}} () const
+\item 
+\mbox{\hyperlink{class_q_char}{Q\+Char}} \mbox{\hyperlink{class_q_char_a163b279dcd9ef33c54f1f8bb0e541609}{mirrored\+Char}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_char_a8b40234fbb8bcb58ba2086a610883b7b}{decomposition}} () const
+\item 
+\mbox{\hyperlink{class_q_char_a13be45046e82a6d2991cef0b7c18d522}{Decomposition}} \mbox{\hyperlink{class_q_char_a1693892912196124bbdbe9b1b14da080}{decomposition\+Tag}} () const
+\item 
+char \mbox{\hyperlink{class_q_char_a1f86dd8a75eb74565a46caf76a41df8f}{latin1}} () const
+\item 
+ushort \mbox{\hyperlink{class_q_char_a0fd3d9a4b10d8f6482c5ebd8053b69a8}{unicode}} () const
+\item 
+\mbox{\hyperlink{class_q_char_a12f9d4ead9f902d34de220b02e5e513d}{operator char}} () const
+\item 
+bool \mbox{\hyperlink{class_q_char_a580c84db3f1208df21a8427a01fc725c}{is\+Null}} () const
+\item 
+bool \mbox{\hyperlink{class_q_char_a569287b3f87942299de440ec40549d94}{is\+Print}} () const
+\item 
+bool \mbox{\hyperlink{class_q_char_a1242013d955d60b26acbba3ed63d556f}{is\+Punct}} () const
+\item 
+bool \mbox{\hyperlink{class_q_char_a67814eae107b451db9def198ae57aa8a}{is\+Space}} () const
+\item 
+bool \mbox{\hyperlink{class_q_char_a5b932436088d0aebdeb8d5ec0d13fe54}{is\+Mark}} () const
+\item 
+bool \mbox{\hyperlink{class_q_char_aa2d2b13b4b6a3c4343c00d28c58b5529}{is\+Letter}} () const
+\item 
+bool \mbox{\hyperlink{class_q_char_a95ea2bc6938379f1e108b44d61133d29}{is\+Number}} () const
+\item 
+bool \mbox{\hyperlink{class_q_char_a4307e02d8de59b2a5c4e7a2fc62aa028}{is\+Letter\+Or\+Number}} () const
+\item 
+bool \mbox{\hyperlink{class_q_char_a5758b5318fe28041c0729dded5b1b44e}{is\+Digit}} () const
+\item 
+uchar \& \mbox{\hyperlink{class_q_char_a2475b4653bed4cf2a3f10395a14cc9c5}{cell}} ()
+\item 
+uchar \& \mbox{\hyperlink{class_q_char_a8f987c65692f95eebc84bf687ea92aff}{row}} ()
+\item 
+uchar \mbox{\hyperlink{class_q_char_a44b4ebc60a4263918bf8f0dfcea49fa6}{cell}} () const
+\item 
+uchar \mbox{\hyperlink{class_q_char_a34a593cf210ef1ab09e09be78bf8ef3e}{row}} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_q_char_a6412de50d41df09c99e4c93ed4b802dc}{network\+Ordered}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_char_afdc80b6130ca162603a5bc20ca74942b}\label{class_q_char_afdc80b6130ca162603a5bc20ca74942b}} 
+Q\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+ST \mbox{\hyperlink{class_q_char}{Q\+Char}} {\bfseries null}
+\item 
+\mbox{\Hypertarget{class_q_char_abdeb014a60f5abbaa2c136f9d746e3a2}\label{class_q_char_abdeb014a60f5abbaa2c136f9d746e3a2}} 
+Q\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+ST \mbox{\hyperlink{class_q_char}{Q\+Char}} {\bfseries replacement}
+\item 
+\mbox{\Hypertarget{class_q_char_a830ccc008bee0a07b0eb57232d347d08}\label{class_q_char_a830ccc008bee0a07b0eb57232d347d08}} 
+Q\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+ST \mbox{\hyperlink{class_q_char}{Q\+Char}} {\bfseries byte\+Order\+Mark}
+\item 
+\mbox{\Hypertarget{class_q_char_ada7e951f45ce64ab6a51b9995d82aaf8}\label{class_q_char_ada7e951f45ce64ab6a51b9995d82aaf8}} 
+Q\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+ST \mbox{\hyperlink{class_q_char}{Q\+Char}} {\bfseries byte\+Order\+Swapped}
+\item 
+\mbox{\Hypertarget{class_q_char_af63d0090d00cf90fe934fb2554a595cb}\label{class_q_char_af63d0090d00cf90fe934fb2554a595cb}} 
+Q\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+ST \mbox{\hyperlink{class_q_char}{Q\+Char}} {\bfseries nbsp}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_q_char_a626d918781f80dcff42d03ff6749930d}{operator==}} (char ch, \mbox{\hyperlink{class_q_char}{Q\+Char}} c)
+\item 
+int \mbox{\hyperlink{class_q_char_a2deebc031e4e7ddaf75f71439b0ec58a}{operator==}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c, char ch)
+\item 
+int \mbox{\hyperlink{class_q_char_acf4eb1b3bdf933d74ba2506bac36c5a0}{operator==}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c1, \mbox{\hyperlink{class_q_char}{Q\+Char}} c2)
+\item 
+int \mbox{\hyperlink{class_q_char_a166bb280e1dab17703d96e00c39c97ab}{operator!=}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c1, \mbox{\hyperlink{class_q_char}{Q\+Char}} c2)
+\item 
+int \mbox{\hyperlink{class_q_char_a1b92f64e5743d28c56a489a5d7ad585b}{operator!=}} (char ch, \mbox{\hyperlink{class_q_char}{Q\+Char}} c)
+\item 
+int \mbox{\hyperlink{class_q_char_adace471124ee79e40a78029bb638ae7a}{operator!=}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c, char ch)
+\item 
+int \mbox{\hyperlink{class_q_char_a509b164e80d1625ab984e0ed147c31c6}{operator$<$=}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c, char ch)
+\item 
+int \mbox{\hyperlink{class_q_char_a93bcb6e42c1ed37d592b901d55f20449}{operator$<$=}} (char ch, \mbox{\hyperlink{class_q_char}{Q\+Char}} c)
+\item 
+int \mbox{\hyperlink{class_q_char_a9abfb242d26e415adaa25d52fd8a93fd}{operator$<$=}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c1, \mbox{\hyperlink{class_q_char}{Q\+Char}} c2)
+\end{DoxyCompactItemize}
+\subsection*{Related Functions}
+(Note that these are not member functions.) \begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_q_char_a4b5fd192cc790217e8be92350c712f96}{operator$>$=}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c1, \mbox{\hyperlink{class_q_char}{Q\+Char}} c2)
+\item 
+int \mbox{\hyperlink{class_q_char_a76a11bfd8c91c16da6b67111e0f425f5}{operator$>$=}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c, char ch)
+\item 
+int \mbox{\hyperlink{class_q_char_acaf747a14f95126f00a60b1e25826449}{operator$>$=}} (char ch, \mbox{\hyperlink{class_q_char}{Q\+Char}} c)
+\item 
+int \mbox{\hyperlink{class_q_char_a15002b2e206a26c172b93257b8502dd5}{operator$<$}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c1, \mbox{\hyperlink{class_q_char}{Q\+Char}} c2)
+\item 
+int \mbox{\hyperlink{class_q_char_a71f5a053f96ceccb5a6cbeb88a164235}{operator$<$}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c, char ch)
+\item 
+int \mbox{\hyperlink{class_q_char_a1337fd200b0e581e8ac7f54460bbbc39}{operator$<$}} (char ch, \mbox{\hyperlink{class_q_char}{Q\+Char}} c)
+\item 
+int \mbox{\hyperlink{class_q_char_abc2415ff906b00a6fd8fda1587a5a8de}{operator$>$}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c1, \mbox{\hyperlink{class_q_char}{Q\+Char}} c2)
+\item 
+int \mbox{\hyperlink{class_q_char_a4c094bd4eb0c8476013d9c453278e66a}{operator$>$}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c, char ch)
+\item 
+int \mbox{\hyperlink{class_q_char_a73c1424f57eae2e721b34e5e242fa39d}{operator$>$}} (char ch, \mbox{\hyperlink{class_q_char}{Q\+Char}} c)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_q_char}{Q\+Char}} class provides a light-\/weight Unicode character. 
+
+Unicode characters are (so far) 16-\/bit entities without any markup or structure. This class represents such an entity. It is rather light-\/weight, so it can be used everywhere. Most compilers treat it approximately like \char`\"{}short int\char`\"{}. (In a few years, it may be necessary to make \mbox{\hyperlink{class_q_char}{Q\+Char}} 32-\/bit, once more than 65536 Unicode code points have been defined and come into use.)
+
+\mbox{\hyperlink{class_q_char}{Q\+Char}} provides a full complement of testing/classification functions, conversion to and from other formats, from composed to decomposed unicode, and will try to compare and case-\/convert if you ask it to.
+
+The classification functions include functions like those in ctype.\+h, but operating on the full range of unicode characters. They all return T\+R\+UE if the character is a certain type of character, and F\+A\+L\+SE otherwise.
+
+These functions are\+: \mbox{\hyperlink{class_q_char_a580c84db3f1208df21a8427a01fc725c}{is\+Null()}} (returns T\+R\+UE if the character is U+0000), \mbox{\hyperlink{class_q_char_a569287b3f87942299de440ec40549d94}{is\+Print()}} (T\+R\+UE if the character is any sort of printable character, including whitespace), \mbox{\hyperlink{class_q_char_a1242013d955d60b26acbba3ed63d556f}{is\+Punct()}} (any sort of punctuation), \mbox{\hyperlink{class_q_char_a5b932436088d0aebdeb8d5ec0d13fe54}{is\+Mark()}} (Unicode Marks), is\+Letter (letters), \mbox{\hyperlink{class_q_char_a95ea2bc6938379f1e108b44d61133d29}{is\+Number()}} (any sort of numeric characters), \mbox{\hyperlink{class_q_char_a4307e02d8de59b2a5c4e7a2fc62aa028}{is\+Letter\+Or\+Number()}}, and \mbox{\hyperlink{class_q_char_a5758b5318fe28041c0729dded5b1b44e}{is\+Digit()}} (decimal digits). All of these are wrappers around \mbox{\hyperlink{class_q_char_a4bc1ffcdc40c674015b3bb9e9114637e}{category()}}, which returns the unicode-\/defined category of each character.
+
+\mbox{\hyperlink{class_q_char}{Q\+Char}} further provides \mbox{\hyperlink{class_q_char_ad01050969cdddf81a9d956a93da209c6}{direction()}}, which indicates the \char`\"{}natural\char`\"{} writing direction of this character, \mbox{\hyperlink{class_q_char_ad009b86964d2cced7c75235f3292b03f}{joining()}}, which indicates how this character joins with its neighbors (needed mostly for Arabic) and finally \mbox{\hyperlink{class_q_char_ace551e353be06621f91e605f33aa49e6}{mirrored()}}, which indicates whether this character needs to be mirrored when it is printed in its unnatural writing direction.
+
+Composed Unicode characters (like \aa) can be converted to decomposed Unicode (\char`\"{}a\char`\"{} followed by \char`\"{}ring above\char`\"{}) using \mbox{\hyperlink{class_q_char_a8b40234fbb8bcb58ba2086a610883b7b}{decomposition()}}.
+
+In Unicode, comparison is not necessarily possible, and case conversion is at best very hard. Unicode, covering the \char`\"{}entire\char`\"{} globe, also includes a globe-\/sized collection of case and sorting problems. Qt tries, but not very hard\+: operator== and friends will do comparison based purely on the numeric Unicode value (code point) of the characters, and \mbox{\hyperlink{class_q_char_a4418e0d46d515231d620263cd7fd0c1f}{upper()}} and \mbox{\hyperlink{class_q_char_a70eb37a2ce831bffec68645ec51dc77f}{lower()}} will do case changes when the character has a well-\/defined upper/lower-\/case equivalent. There is no provision for locale-\/dependent case folding rules or comparison\+: These functions are meant to be fast, so they can be used unambiguously in data structures.
+
+The conversion functions include \mbox{\hyperlink{class_q_char_a0fd3d9a4b10d8f6482c5ebd8053b69a8}{unicode()}} (to a scalar), \mbox{\hyperlink{class_q_char_a1f86dd8a75eb74565a46caf76a41df8f}{latin1()}} (to scalar, but converts all non-\/\+Latin1 characters to 0), \mbox{\hyperlink{class_q_char_a8f987c65692f95eebc84bf687ea92aff}{row()}} (gives the Unicode row), \mbox{\hyperlink{class_q_char_a2475b4653bed4cf2a3f10395a14cc9c5}{cell()}} (gives the unicode cell), \mbox{\hyperlink{class_q_char_ac23377922296b84ca58ffaaee6d522af}{digit\+Value()}} (gives the integer value of any of the numerous digit characters), and a host of constructors.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_char_ref}{Q\+Char\+Ref}} \mbox{\hyperlink{class_q_char_a0fd3d9a4b10d8f6482c5ebd8053b69a8}{About Unicode }} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_q_char_a62908095db0c54f35ff2ae928c621a97}\label{class_q_char_a62908095db0c54f35ff2ae928c621a97}} 
+\index{QChar@{QChar}!Category@{Category}}
+\index{Category@{Category}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{Category}{Category}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_char_a62908095db0c54f35ff2ae928c621a97}{Q\+Char\+::\+Category}}}
+
+This enum maps the Unicode character categories. The currently known categories are\+: 
+\begin{DoxyItemize}
+\item {\ttfamily No\+Category} -\/ used when Qt is dazed and confused and cannot make sense of anything.
+
+
+\item {\ttfamily Mark\+\_\+\+Non\+Spacing} -\/ (Mn) -\/
+
+
+\item {\ttfamily Mark\+\_\+\+Spacing\+Combining} -\/ (Mc) -\/
+
+
+\item {\ttfamily Mark\+\_\+\+Enclosing} -\/ (Me) -\/
+
+
+\item {\ttfamily Number\+\_\+\+Decimal\+Digit} -\/ (Nd) -\/
+
+
+\item {\ttfamily Number\+\_\+\+Letter} -\/ (Nl) -\/
+
+
+\item {\ttfamily Number\+\_\+\+Other} -\/ (No) -\/
+
+
+\item {\ttfamily Separator\+\_\+\+Space} -\/ (Zs) -\/
+
+
+\item {\ttfamily Separator\+\_\+\+Line} -\/ (Zl) -\/
+
+
+\item {\ttfamily Separator\+\_\+\+Paragraph} -\/ (Zp) -\/
+
+
+\item {\ttfamily Other\+\_\+\+Control} -\/ (Cc) -\/
+
+
+\item {\ttfamily Other\+\_\+\+Format} -\/ (Cf) -\/
+
+
+\item {\ttfamily Other\+\_\+\+Surrogate} -\/ (Cs) -\/
+
+
+\item {\ttfamily Other\+\_\+\+Private\+Use} -\/ (Co) -\/
+
+
+\item {\ttfamily Other\+\_\+\+Not\+Assigned} -\/ (Cn) -\/
+
+
+\item {\ttfamily Letter\+\_\+\+Uppercase} -\/ (Lu) -\/
+
+
+\item {\ttfamily Letter\+\_\+\+Lowercase} -\/ (Ll) -\/
+
+
+\item {\ttfamily Letter\+\_\+\+Titlecase} -\/ (Lt) -\/
+
+
+\item {\ttfamily Letter\+\_\+\+Modifier} -\/ (Lm) -\/
+
+
+\item {\ttfamily Letter\+\_\+\+Other} -\/ (Lo) -\/
+
+
+\item {\ttfamily Punctuation\+\_\+\+Connector} -\/ (Pc) -\/
+
+
+\item {\ttfamily Punctuation\+\_\+\+Dask} -\/ (Pd) -\/
+
+
+\item {\ttfamily Punctuation\+\_\+\+Open} -\/ (Ps) -\/
+
+
+\item {\ttfamily Punctuation\+\_\+\+Close} -\/ (Pe) -\/
+
+
+\item {\ttfamily Punctuation\+\_\+\+Initial\+Quote} -\/ (Pi) -\/
+
+
+\item {\ttfamily Punctuation\+\_\+\+Final\+Quote} -\/ (Pf) -\/
+
+
+\item {\ttfamily Punctuation\+\_\+\+Other} -\/ (Po) -\/
+
+
+\item {\ttfamily Symbol\+\_\+\+Math} -\/ (Sm) -\/
+
+
+\item {\ttfamily Symbol\+\_\+\+Currency} -\/ (Sc) -\/
+
+
+\item {\ttfamily Symbol\+\_\+\+Modifier} -\/ (Sk) -\/
+
+
+\item {\ttfamily Symbol\+\_\+\+Other} -\/ (So) -\/
+
+
+\end{DoxyItemize}\mbox{\Hypertarget{class_q_char_a13be45046e82a6d2991cef0b7c18d522}\label{class_q_char_a13be45046e82a6d2991cef0b7c18d522}} 
+\index{QChar@{QChar}!Decomposition@{Decomposition}}
+\index{Decomposition@{Decomposition}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{Decomposition}{Decomposition}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_char_a13be45046e82a6d2991cef0b7c18d522}{Q\+Char\+::\+Decomposition}}}
+
+This enum type defines the Unicode decomposition attributes. See \href{http://www.unicode.org}{\texttt{ the Unicode Standard}} for a description of the values. \mbox{\Hypertarget{class_q_char_a54978126be7630b3e85394325a822302}\label{class_q_char_a54978126be7630b3e85394325a822302}} 
+\index{QChar@{QChar}!Direction@{Direction}}
+\index{Direction@{Direction}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{Direction}{Direction}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_char_a54978126be7630b3e85394325a822302}{Q\+Char\+::\+Direction}}}
+
+This enum type defines the Unicode direction attributes. See \href{http://www.unicode.org}{\texttt{ the Unicode Standard}} for a description of the values.
+
+In order to conform to C/\+C++ naming conventions \char`\"{}\+Dir\char`\"{} is prepended to the codes used in The Unicode Standard. \mbox{\Hypertarget{class_q_char_a086edd55a90ad2cf910ca3ab5fbe7bde}\label{class_q_char_a086edd55a90ad2cf910ca3ab5fbe7bde}} 
+\index{QChar@{QChar}!Joining@{Joining}}
+\index{Joining@{Joining}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{Joining}{Joining}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_char_a086edd55a90ad2cf910ca3ab5fbe7bde}{Q\+Char\+::\+Joining}}}
+
+This enum type defines the Unicode decomposition attributes. See \href{http://www.unicode.org}{\texttt{ the Unicode Standard}} for a description of the values. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_char_a982aca321d746686396ab5290955da95}\label{class_q_char_a982aca321d746686396ab5290955da95}} 
+\index{QChar@{QChar}!QChar@{QChar}}
+\index{QChar@{QChar}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{QChar()}{QChar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/9]}}
+{\footnotesize\ttfamily Q\+Char\+::\+Q\+Char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a null \mbox{\hyperlink{class_q_char}{Q\+Char}} (one that \mbox{\hyperlink{class_q_char_a580c84db3f1208df21a8427a01fc725c}{is\+Null()}}). \mbox{\Hypertarget{class_q_char_a9d4a3fc3b41479f13c1174995d1390d5}\label{class_q_char_a9d4a3fc3b41479f13c1174995d1390d5}} 
+\index{QChar@{QChar}!QChar@{QChar}}
+\index{QChar@{QChar}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{QChar()}{QChar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/9]}}
+{\footnotesize\ttfamily Q\+Char\+::\+Q\+Char (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a \mbox{\hyperlink{class_q_char}{Q\+Char}} corresponding to A\+S\+C\+I\+I/\+Latin1 character {\itshape c}. \mbox{\Hypertarget{class_q_char_a4b67f8efac359d10c3c2b279624d1002}\label{class_q_char_a4b67f8efac359d10c3c2b279624d1002}} 
+\index{QChar@{QChar}!QChar@{QChar}}
+\index{QChar@{QChar}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{QChar()}{QChar()}\hspace{0.1cm}{\footnotesize\ttfamily [3/9]}}
+{\footnotesize\ttfamily Q\+Char\+::\+Q\+Char (\begin{DoxyParamCaption}\item[{uchar}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a \mbox{\hyperlink{class_q_char}{Q\+Char}} corresponding to A\+S\+C\+I\+I/\+Latin1 character {\itshape c}. \mbox{\Hypertarget{class_q_char_a7f5f54e09c49f6ea21627b924e9240c1}\label{class_q_char_a7f5f54e09c49f6ea21627b924e9240c1}} 
+\index{QChar@{QChar}!QChar@{QChar}}
+\index{QChar@{QChar}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{QChar()}{QChar()}\hspace{0.1cm}{\footnotesize\ttfamily [4/9]}}
+{\footnotesize\ttfamily Q\+Char\+::\+Q\+Char (\begin{DoxyParamCaption}\item[{uchar}]{c,  }\item[{uchar}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a \mbox{\hyperlink{class_q_char}{Q\+Char}} for Unicode cell {\itshape c} in row {\itshape r}. \mbox{\Hypertarget{class_q_char_a66d7c1c6f835a49d4486cb960c43f1da}\label{class_q_char_a66d7c1c6f835a49d4486cb960c43f1da}} 
+\index{QChar@{QChar}!QChar@{QChar}}
+\index{QChar@{QChar}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{QChar()}{QChar()}\hspace{0.1cm}{\footnotesize\ttfamily [5/9]}}
+{\footnotesize\ttfamily Q\+Char\+::\+Q\+Char (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_char}{Q\+Char}} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a copy of {\itshape c}. This is a deep copy, if such a light-\/weight object can be said to have deep copies. \mbox{\Hypertarget{class_q_char_a7145ea443cffb41db0d4ed23285831e3}\label{class_q_char_a7145ea443cffb41db0d4ed23285831e3}} 
+\index{QChar@{QChar}!QChar@{QChar}}
+\index{QChar@{QChar}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{QChar()}{QChar()}\hspace{0.1cm}{\footnotesize\ttfamily [6/9]}}
+{\footnotesize\ttfamily Q\+Char\+::\+Q\+Char (\begin{DoxyParamCaption}\item[{ushort}]{rc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a \mbox{\hyperlink{class_q_char}{Q\+Char}} for the character with Unicode code point {\itshape rc}. \mbox{\Hypertarget{class_q_char_a548ce01f65d8afbaff0d03c78d5453da}\label{class_q_char_a548ce01f65d8afbaff0d03c78d5453da}} 
+\index{QChar@{QChar}!QChar@{QChar}}
+\index{QChar@{QChar}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{QChar()}{QChar()}\hspace{0.1cm}{\footnotesize\ttfamily [7/9]}}
+{\footnotesize\ttfamily Q\+Char\+::\+Q\+Char (\begin{DoxyParamCaption}\item[{short}]{rc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a \mbox{\hyperlink{class_q_char}{Q\+Char}} for the character with Unicode code point {\itshape rc}. \mbox{\Hypertarget{class_q_char_ab508e623fe37bdcd7d855539baaf846c}\label{class_q_char_ab508e623fe37bdcd7d855539baaf846c}} 
+\index{QChar@{QChar}!QChar@{QChar}}
+\index{QChar@{QChar}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{QChar()}{QChar()}\hspace{0.1cm}{\footnotesize\ttfamily [8/9]}}
+{\footnotesize\ttfamily Q\+Char\+::\+Q\+Char (\begin{DoxyParamCaption}\item[{uint}]{rc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a \mbox{\hyperlink{class_q_char}{Q\+Char}} for the character with Unicode code point {\itshape rc}. \mbox{\Hypertarget{class_q_char_aa16b5930b815ea41ab29112fe3d7a378}\label{class_q_char_aa16b5930b815ea41ab29112fe3d7a378}} 
+\index{QChar@{QChar}!QChar@{QChar}}
+\index{QChar@{QChar}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{QChar()}{QChar()}\hspace{0.1cm}{\footnotesize\ttfamily [9/9]}}
+{\footnotesize\ttfamily Q\+Char\+::\+Q\+Char (\begin{DoxyParamCaption}\item[{int}]{rc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a \mbox{\hyperlink{class_q_char}{Q\+Char}} for the character with Unicode code point {\itshape rc}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_char_a4bc1ffcdc40c674015b3bb9e9114637e}\label{class_q_char_a4bc1ffcdc40c674015b3bb9e9114637e}} 
+\index{QChar@{QChar}!category@{category}}
+\index{category@{category}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{category()}{category()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_char_a62908095db0c54f35ff2ae928c621a97}{Q\+Char\+::\+Category}} Q\+Char\+::category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the character category.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_char_a62908095db0c54f35ff2ae928c621a97}{Category}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_char_a2475b4653bed4cf2a3f10395a14cc9c5}\label{class_q_char_a2475b4653bed4cf2a3f10395a14cc9c5}} 
+\index{QChar@{QChar}!cell@{cell}}
+\index{cell@{cell}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{cell()}{cell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uchar \& Q\+Char\+::cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the cell (least significant byte) of the Unicode character. \mbox{\Hypertarget{class_q_char_a44b4ebc60a4263918bf8f0dfcea49fa6}\label{class_q_char_a44b4ebc60a4263918bf8f0dfcea49fa6}} 
+\index{QChar@{QChar}!cell@{cell}}
+\index{cell@{cell}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{cell()}{cell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uchar Q\+Char\+::cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the cell (least significant byte) of the Unicode character. \mbox{\Hypertarget{class_q_char_a8b40234fbb8bcb58ba2086a610883b7b}\label{class_q_char_a8b40234fbb8bcb58ba2086a610883b7b}} 
+\index{QChar@{QChar}!decomposition@{decomposition}}
+\index{decomposition@{decomposition}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{decomposition()}{decomposition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Char\+::decomposition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Decomposes a character into its parts. Returns Q\+String\+::null if no decomposition exists. \mbox{\Hypertarget{class_q_char_a1693892912196124bbdbe9b1b14da080}\label{class_q_char_a1693892912196124bbdbe9b1b14da080}} 
+\index{QChar@{QChar}!decompositionTag@{decompositionTag}}
+\index{decompositionTag@{decompositionTag}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{decompositionTag()}{decompositionTag()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_char_a13be45046e82a6d2991cef0b7c18d522}{Q\+Char\+::\+Decomposition}} Q\+Char\+::decomposition\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the tag defining the composition of the character. Returns Q\+Char\+::\+Single if no decomposition exists. \mbox{\Hypertarget{class_q_char_ac23377922296b84ca58ffaaee6d522af}\label{class_q_char_ac23377922296b84ca58ffaaee6d522af}} 
+\index{QChar@{QChar}!digitValue@{digitValue}}
+\index{digitValue@{digitValue}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{digitValue()}{digitValue()}}
+{\footnotesize\ttfamily int Q\+Char\+::digit\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the numeric value of the digit, or -\/1 if the character is not a digit. \mbox{\Hypertarget{class_q_char_ad01050969cdddf81a9d956a93da209c6}\label{class_q_char_ad01050969cdddf81a9d956a93da209c6}} 
+\index{QChar@{QChar}!direction@{direction}}
+\index{direction@{direction}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{direction()}{direction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_char_a54978126be7630b3e85394325a822302}{Q\+Char\+::\+Direction}} Q\+Char\+::direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the characters directionality.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_char_a54978126be7630b3e85394325a822302}{Direction}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_char_a5758b5318fe28041c0729dded5b1b44e}\label{class_q_char_a5758b5318fe28041c0729dded5b1b44e}} 
+\index{QChar@{QChar}!isDigit@{isDigit}}
+\index{isDigit@{isDigit}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{isDigit()}{isDigit()}}
+{\footnotesize\ttfamily bool Q\+Char\+::is\+Digit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns whether the character is a decimal digit (Number\+\_\+\+Decimal\+Digit). \mbox{\Hypertarget{class_q_char_aa2d2b13b4b6a3c4343c00d28c58b5529}\label{class_q_char_aa2d2b13b4b6a3c4343c00d28c58b5529}} 
+\index{QChar@{QChar}!isLetter@{isLetter}}
+\index{isLetter@{isLetter}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{isLetter()}{isLetter()}}
+{\footnotesize\ttfamily bool Q\+Char\+::is\+Letter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns whether the character is a letter (Letter\+\_\+$\ast$ categories). \mbox{\Hypertarget{class_q_char_a4307e02d8de59b2a5c4e7a2fc62aa028}\label{class_q_char_a4307e02d8de59b2a5c4e7a2fc62aa028}} 
+\index{QChar@{QChar}!isLetterOrNumber@{isLetterOrNumber}}
+\index{isLetterOrNumber@{isLetterOrNumber}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{isLetterOrNumber()}{isLetterOrNumber()}}
+{\footnotesize\ttfamily bool Q\+Char\+::is\+Letter\+Or\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns whether the character is a letter or number (Letter\+\_\+$\ast$ or Number\+\_\+$\ast$ categories). \mbox{\Hypertarget{class_q_char_a5b932436088d0aebdeb8d5ec0d13fe54}\label{class_q_char_a5b932436088d0aebdeb8d5ec0d13fe54}} 
+\index{QChar@{QChar}!isMark@{isMark}}
+\index{isMark@{isMark}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{isMark()}{isMark()}}
+{\footnotesize\ttfamily bool Q\+Char\+::is\+Mark (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns whether the character is a mark (Mark\+\_\+$\ast$ categories). \mbox{\Hypertarget{class_q_char_a580c84db3f1208df21a8427a01fc725c}\label{class_q_char_a580c84db3f1208df21a8427a01fc725c}} 
+\index{QChar@{QChar}!isNull@{isNull}}
+\index{isNull@{isNull}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{isNull()}{isNull()}}
+{\footnotesize\ttfamily bool Q\+Char\+::is\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the characters is the unicode character 0x0000, ie. A\+S\+C\+II N\+UL. \mbox{\Hypertarget{class_q_char_a95ea2bc6938379f1e108b44d61133d29}\label{class_q_char_a95ea2bc6938379f1e108b44d61133d29}} 
+\index{QChar@{QChar}!isNumber@{isNumber}}
+\index{isNumber@{isNumber}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{isNumber()}{isNumber()}}
+{\footnotesize\ttfamily bool Q\+Char\+::is\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns whether the character is a number (of any sort -\/ Number\+\_\+$\ast$ categories).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_char_a5758b5318fe28041c0729dded5b1b44e}{is\+Digit()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_char_a569287b3f87942299de440ec40549d94}\label{class_q_char_a569287b3f87942299de440ec40549d94}} 
+\index{QChar@{QChar}!isPrint@{isPrint}}
+\index{isPrint@{isPrint}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{isPrint()}{isPrint()}}
+{\footnotesize\ttfamily bool Q\+Char\+::is\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns whether the character is a printable character. This is any character not of category Cc or Cn. Note that this gives no indication of whether the character is available in some font. \mbox{\Hypertarget{class_q_char_a1242013d955d60b26acbba3ed63d556f}\label{class_q_char_a1242013d955d60b26acbba3ed63d556f}} 
+\index{QChar@{QChar}!isPunct@{isPunct}}
+\index{isPunct@{isPunct}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{isPunct()}{isPunct()}}
+{\footnotesize\ttfamily bool Q\+Char\+::is\+Punct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns whether the character is punctuation (Punctuation\+\_\+$\ast$ categories). \mbox{\Hypertarget{class_q_char_a67814eae107b451db9def198ae57aa8a}\label{class_q_char_a67814eae107b451db9def198ae57aa8a}} 
+\index{QChar@{QChar}!isSpace@{isSpace}}
+\index{isSpace@{isSpace}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{isSpace()}{isSpace()}}
+{\footnotesize\ttfamily bool Q\+Char\+::is\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns whether the character is a separator character (Separator\+\_\+$\ast$ categories). \mbox{\Hypertarget{class_q_char_ad009b86964d2cced7c75235f3292b03f}\label{class_q_char_ad009b86964d2cced7c75235f3292b03f}} 
+\index{QChar@{QChar}!joining@{joining}}
+\index{joining@{joining}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{joining()}{joining()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_char_a086edd55a90ad2cf910ca3ab5fbe7bde}{Q\+Char\+::\+Joining}} Q\+Char\+::joining (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+This function is not supported (it may change to use Unicode character classes).
+
+Returns information about the joining properties of the character (needed for arabic). \mbox{\Hypertarget{class_q_char_a1f86dd8a75eb74565a46caf76a41df8f}\label{class_q_char_a1f86dd8a75eb74565a46caf76a41df8f}} 
+\index{QChar@{QChar}!latin1@{latin1}}
+\index{latin1@{latin1}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{latin1()}{latin1()}}
+{\footnotesize\ttfamily char Q\+Char\+::latin1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a latin-\/1 copy of this character, if this character is in the latin-\/1 character set. If not, this function returns 0. \mbox{\Hypertarget{class_q_char_a70eb37a2ce831bffec68645ec51dc77f}\label{class_q_char_a70eb37a2ce831bffec68645ec51dc77f}} 
+\index{QChar@{QChar}!lower@{lower}}
+\index{lower@{lower}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{lower()}{lower()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_char}{Q\+Char}} Q\+Char\+::lower (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the lowercase equivalent if the character is uppercase, or the character itself otherwise. \mbox{\Hypertarget{class_q_char_ace551e353be06621f91e605f33aa49e6}\label{class_q_char_ace551e353be06621f91e605f33aa49e6}} 
+\index{QChar@{QChar}!mirrored@{mirrored}}
+\index{mirrored@{mirrored}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{mirrored()}{mirrored()}}
+{\footnotesize\ttfamily bool Q\+Char\+::mirrored (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns whether the character is a mirrored character (one that should be reversed if the text direction is reversed). \mbox{\Hypertarget{class_q_char_a163b279dcd9ef33c54f1f8bb0e541609}\label{class_q_char_a163b279dcd9ef33c54f1f8bb0e541609}} 
+\index{QChar@{QChar}!mirroredChar@{mirroredChar}}
+\index{mirroredChar@{mirroredChar}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{mirroredChar()}{mirroredChar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_char}{Q\+Char}} Q\+Char\+::mirrored\+Char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the mirrored char if this character is a mirrored char, the char itself otherwise \mbox{\Hypertarget{class_q_char_a6412de50d41df09c99e4c93ed4b802dc}\label{class_q_char_a6412de50d41df09c99e4c93ed4b802dc}} 
+\index{QChar@{QChar}!networkOrdered@{networkOrdered}}
+\index{networkOrdered@{networkOrdered}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{networkOrdered()}{networkOrdered()}}
+{\footnotesize\ttfamily bool Q\+Char\+::network\+Ordered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns T\+R\+UE if this character is in network byte order (M\+SB first), and F\+A\+L\+SE if it is not. This is a platform-\/dependent property, so we strongly advise against using this function in portable code. \mbox{\Hypertarget{class_q_char_a12f9d4ead9f902d34de220b02e5e513d}\label{class_q_char_a12f9d4ead9f902d34de220b02e5e513d}} 
+\index{QChar@{QChar}!operator char@{operator char}}
+\index{operator char@{operator char}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator char()}{operator char()}}
+{\footnotesize\ttfamily Q\+Char\+::operator char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the Latin1 character equivalent to the \mbox{\hyperlink{class_q_char}{Q\+Char}}, or 0. This is mainly useful for non-\/internationalized software.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_char_a0fd3d9a4b10d8f6482c5ebd8053b69a8}{unicode()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_char_a8f987c65692f95eebc84bf687ea92aff}\label{class_q_char_a8f987c65692f95eebc84bf687ea92aff}} 
+\index{QChar@{QChar}!row@{row}}
+\index{row@{row}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{row()}{row()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uchar \& Q\+Char\+::row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the row (most significant byte) of the Unicode character. \mbox{\Hypertarget{class_q_char_a34a593cf210ef1ab09e09be78bf8ef3e}\label{class_q_char_a34a593cf210ef1ab09e09be78bf8ef3e}} 
+\index{QChar@{QChar}!row@{row}}
+\index{row@{row}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{row()}{row()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uchar Q\+Char\+::row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the row (most significant byte) of the Unicode character. \mbox{\Hypertarget{class_q_char_a0fd3d9a4b10d8f6482c5ebd8053b69a8}\label{class_q_char_a0fd3d9a4b10d8f6482c5ebd8053b69a8}} 
+\index{QChar@{QChar}!unicode@{unicode}}
+\index{unicode@{unicode}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{unicode()}{unicode()}}
+{\footnotesize\ttfamily ushort Q\+Char\+::unicode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the numeric Unicode value equal to the \mbox{\hyperlink{class_q_char}{Q\+Char}}. Normally, you should use \mbox{\hyperlink{class_q_char}{Q\+Char}} objects as they are equivalent, but for some low-\/level tasks (eg. indexing into an array of Unicode information), this function is useful. \mbox{\Hypertarget{class_q_char_a4418e0d46d515231d620263cd7fd0c1f}\label{class_q_char_a4418e0d46d515231d620263cd7fd0c1f}} 
+\index{QChar@{QChar}!upper@{upper}}
+\index{upper@{upper}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{upper()}{upper()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_char}{Q\+Char}} Q\+Char\+::upper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the uppercase equivalent if the character is lowercase, or the character itself otherwise. 
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_q_char_a1b92f64e5743d28c56a489a5d7ad585b}\label{class_q_char_a1b92f64e5743d28c56a489a5d7ad585b}} 
+\index{QChar@{QChar}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator"!=}{operator!=}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int operator!= (\begin{DoxyParamCaption}\item[{char}]{ch,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Returns T\+R\+UE if {\itshape c} is not the A\+S\+C\+I\+I/\+Latin1 character {\itshape ch}. \mbox{\Hypertarget{class_q_char_adace471124ee79e40a78029bb638ae7a}\label{class_q_char_adace471124ee79e40a78029bb638ae7a}} 
+\index{QChar@{QChar}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator"!=}{operator!=}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c,  }\item[{char}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Returns T\+R\+UE if {\itshape c} is not the A\+S\+C\+I\+I/\+Latin1 character {\itshape ch}. \mbox{\Hypertarget{class_q_char_a166bb280e1dab17703d96e00c39c97ab}\label{class_q_char_a166bb280e1dab17703d96e00c39c97ab}} 
+\index{QChar@{QChar}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator"!=}{operator!=}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c1,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Returns T\+R\+UE if {\itshape c1} and {\itshape c2} are not the same Unicode character. \mbox{\Hypertarget{class_q_char_a1337fd200b0e581e8ac7f54460bbbc39}\label{class_q_char_a1337fd200b0e581e8ac7f54460bbbc39}} 
+\index{QChar@{QChar}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int operator$<$ (\begin{DoxyParamCaption}\item[{char}]{ch,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if the numeric Unicode value of the A\+S\+C\+I\+I/\+Latin1 character {\itshape ch} is less than that of {\itshape c}. \mbox{\Hypertarget{class_q_char_a71f5a053f96ceccb5a6cbeb88a164235}\label{class_q_char_a71f5a053f96ceccb5a6cbeb88a164235}} 
+\index{QChar@{QChar}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c,  }\item[{char}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if the numeric Unicode value of {\itshape c} is less than that of the A\+S\+C\+I\+I/\+Latin1 character {\itshape ch}. \mbox{\Hypertarget{class_q_char_a15002b2e206a26c172b93257b8502dd5}\label{class_q_char_a15002b2e206a26c172b93257b8502dd5}} 
+\index{QChar@{QChar}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c1,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if the numeric Unicode value of {\itshape c1} is less than that of {\itshape c2}. \mbox{\Hypertarget{class_q_char_a93bcb6e42c1ed37d592b901d55f20449}\label{class_q_char_a93bcb6e42c1ed37d592b901d55f20449}} 
+\index{QChar@{QChar}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator$<$=}{operator<=}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int operator$<$= (\begin{DoxyParamCaption}\item[{char}]{ch,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Returns T\+R\+UE if the numeric Unicode value of the A\+S\+C\+I\+I/\+Latin1 character {\itshape ch} is less than or equal to that of {\itshape c}. \mbox{\Hypertarget{class_q_char_a509b164e80d1625ab984e0ed147c31c6}\label{class_q_char_a509b164e80d1625ab984e0ed147c31c6}} 
+\index{QChar@{QChar}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator$<$=}{operator<=}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int operator$<$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c,  }\item[{char}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Returns T\+R\+UE if the numeric Unicode value of {\itshape c} is less than or equal to that of the A\+S\+C\+I\+I/\+Latin1 character {\itshape ch}. \mbox{\Hypertarget{class_q_char_a9abfb242d26e415adaa25d52fd8a93fd}\label{class_q_char_a9abfb242d26e415adaa25d52fd8a93fd}} 
+\index{QChar@{QChar}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator$<$=}{operator<=}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int operator$<$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c1,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Returns T\+R\+UE if the numeric Unicode value of {\itshape c1} is less than that of {\itshape c2}, or they are the same Unicode character. \mbox{\Hypertarget{class_q_char_a626d918781f80dcff42d03ff6749930d}\label{class_q_char_a626d918781f80dcff42d03ff6749930d}} 
+\index{QChar@{QChar}!operator==@{operator==}}
+\index{operator==@{operator==}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator==}{operator==}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int operator== (\begin{DoxyParamCaption}\item[{char}]{ch,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Returns T\+R\+UE if {\itshape c} is the A\+S\+C\+I\+I/\+Latin1 character {\itshape ch}. \mbox{\Hypertarget{class_q_char_a2deebc031e4e7ddaf75f71439b0ec58a}\label{class_q_char_a2deebc031e4e7ddaf75f71439b0ec58a}} 
+\index{QChar@{QChar}!operator==@{operator==}}
+\index{operator==@{operator==}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator==}{operator==}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c,  }\item[{char}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Returns T\+R\+UE if {\itshape c} is the A\+S\+C\+I\+I/\+Latin1 character {\itshape ch}. \mbox{\Hypertarget{class_q_char_acf4eb1b3bdf933d74ba2506bac36c5a0}\label{class_q_char_acf4eb1b3bdf933d74ba2506bac36c5a0}} 
+\index{QChar@{QChar}!operator==@{operator==}}
+\index{operator==@{operator==}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator==}{operator==}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c1,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Returns T\+R\+UE if {\itshape c1} and {\itshape c2} are the same Unicode character. \mbox{\Hypertarget{class_q_char_a73c1424f57eae2e721b34e5e242fa39d}\label{class_q_char_a73c1424f57eae2e721b34e5e242fa39d}} 
+\index{QChar@{QChar}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int operator$>$ (\begin{DoxyParamCaption}\item[{char}]{ch,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if the numeric Unicode value of the A\+S\+C\+I\+I/\+Latin1 character {\itshape ch} is greater than that of {\itshape c}. \mbox{\Hypertarget{class_q_char_a4c094bd4eb0c8476013d9c453278e66a}\label{class_q_char_a4c094bd4eb0c8476013d9c453278e66a}} 
+\index{QChar@{QChar}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int operator$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c,  }\item[{char}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if the numeric Unicode value of {\itshape c} is greater than that of the A\+S\+C\+I\+I/\+Latin1 character {\itshape ch}. \mbox{\Hypertarget{class_q_char_abc2415ff906b00a6fd8fda1587a5a8de}\label{class_q_char_abc2415ff906b00a6fd8fda1587a5a8de}} 
+\index{QChar@{QChar}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int operator$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c1,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if the numeric Unicode value of {\itshape c1} is greater than that of {\itshape c2}. \mbox{\Hypertarget{class_q_char_acaf747a14f95126f00a60b1e25826449}\label{class_q_char_acaf747a14f95126f00a60b1e25826449}} 
+\index{QChar@{QChar}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int operator$>$= (\begin{DoxyParamCaption}\item[{char}]{ch,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if the numeric Unicode value of the A\+S\+C\+I\+I/\+Latin1 character {\itshape ch} is greater than or equal to that of {\itshape c}. \mbox{\Hypertarget{class_q_char_a76a11bfd8c91c16da6b67111e0f425f5}\label{class_q_char_a76a11bfd8c91c16da6b67111e0f425f5}} 
+\index{QChar@{QChar}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int operator$>$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c,  }\item[{char}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if the numeric Unicode value of {\itshape c} is greater than or equal to that of the A\+S\+C\+I\+I/\+Latin1 character {\itshape ch}. \mbox{\Hypertarget{class_q_char_a4b5fd192cc790217e8be92350c712f96}\label{class_q_char_a4b5fd192cc790217e8be92350c712f96}} 
+\index{QChar@{QChar}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!QChar@{QChar}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int operator$>$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c1,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if the numeric Unicode value of {\itshape c1} is greater than that of {\itshape c2}, or they are the same Unicode character. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qstring.\+h\item 
+doxygen/qtools/qstring.\+cpp\end{DoxyCompactItemize}

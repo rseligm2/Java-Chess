@@ -1,0 +1,400 @@
+\hypertarget{class_i_compound}{}\section{I\+Compound Class Reference}
+\label{class_i_compound}\index{ICompound@{ICompound}}
+
+
+The interface to a compound in the object model.  
+
+
+
+
+{\ttfamily \#include $<$doxmlintf.\+h$>$}
+
+Inheritance diagram for I\+Compound\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_i_compound}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_i_compound_a6b86be2ca9f6759434c1dd8405be328a}{Compound\+Kind}} \{ \newline
+{\bfseries Invalid} =0, 
+{\bfseries Class}, 
+{\bfseries Struct}, 
+{\bfseries Union}, 
+\newline
+{\bfseries Interface}, 
+{\bfseries Protocol}, 
+{\bfseries Category}, 
+{\bfseries Exception}, 
+\newline
+{\bfseries File}, 
+{\bfseries Namespace}, 
+{\bfseries Group}, 
+{\bfseries Page}, 
+\newline
+{\bfseries Example}, 
+{\bfseries Dir}, 
+{\bfseries Invalid} =0, 
+{\bfseries Class}, 
+\newline
+{\bfseries Struct}, 
+{\bfseries Union}, 
+{\bfseries Interface}, 
+{\bfseries Protocol}, 
+\newline
+{\bfseries Category}, 
+{\bfseries Exception}, 
+{\bfseries File}, 
+{\bfseries Namespace}, 
+\newline
+{\bfseries Group}, 
+{\bfseries Page}, 
+{\bfseries Example}, 
+{\bfseries Dir}
+ \}
+\item 
+enum \mbox{\hyperlink{class_i_compound_a6b86be2ca9f6759434c1dd8405be328a}{Compound\+Kind}} \{ \newline
+{\bfseries Invalid} =0, 
+{\bfseries Class}, 
+{\bfseries Struct}, 
+{\bfseries Union}, 
+\newline
+{\bfseries Interface}, 
+{\bfseries Protocol}, 
+{\bfseries Category}, 
+{\bfseries Exception}, 
+\newline
+{\bfseries File}, 
+{\bfseries Namespace}, 
+{\bfseries Group}, 
+{\bfseries Page}, 
+\newline
+{\bfseries Example}, 
+{\bfseries Dir}, 
+{\bfseries Invalid} =0, 
+{\bfseries Class}, 
+\newline
+{\bfseries Struct}, 
+{\bfseries Union}, 
+{\bfseries Interface}, 
+{\bfseries Protocol}, 
+\newline
+{\bfseries Category}, 
+{\bfseries Exception}, 
+{\bfseries File}, 
+{\bfseries Namespace}, 
+\newline
+{\bfseries Group}, 
+{\bfseries Page}, 
+{\bfseries Example}, 
+{\bfseries Dir}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const \mbox{\hyperlink{class_i_string}{I\+String}} $\ast$ \mbox{\hyperlink{class_i_compound_ae14b5dcf513ef0d263119aeb2e2ffb15}{name}} () const =0
+\item 
+virtual const \mbox{\hyperlink{class_i_string}{I\+String}} $\ast$ \mbox{\hyperlink{class_i_compound_ac5c371dee7e65324518532b0a58c2d9f}{id}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_i_compound_a6b86be2ca9f6759434c1dd8405be328a}{Compound\+Kind}} \mbox{\hyperlink{class_i_compound_ad0d6fb22a48b5bbddae2b88a3cab3640}{kind}} () const =0
+\item 
+virtual const \mbox{\hyperlink{class_i_string}{I\+String}} $\ast$ \mbox{\hyperlink{class_i_compound_a49a7cb96ed8364494bdb7ecc1abb86c9}{kind\+String}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_i_section_iterator}{I\+Section\+Iterator}} $\ast$ \mbox{\hyperlink{class_i_compound_a966a7cac6a4f33f16ef869e74855ab3b}{sections}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_i_doc_root}{I\+Doc\+Root}} $\ast$ \mbox{\hyperlink{class_i_compound_a1ac3073130ef6bdd552c275e488c0658}{brief\+Description}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_i_doc_root}{I\+Doc\+Root}} $\ast$ \mbox{\hyperlink{class_i_compound_a9630b083767887a40040cb4408d538cd}{detailed\+Description}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_i_member}{I\+Member}} $\ast$ \mbox{\hyperlink{class_i_compound_af30652d3b5a43722e9407c8edf9a38fb}{member\+By\+Id}} (const char $\ast$\mbox{\hyperlink{class_i_compound_ac5c371dee7e65324518532b0a58c2d9f}{id}}) const =0
+\item 
+virtual \mbox{\hyperlink{class_i_member_iterator}{I\+Member\+Iterator}} $\ast$ \mbox{\hyperlink{class_i_compound_af94f0805a794ec5f413c9e16347e2591}{member\+By\+Name}} (const char $\ast$\mbox{\hyperlink{class_i_compound_ae14b5dcf513ef0d263119aeb2e2ffb15}{name}}) const =0
+\item 
+virtual void \mbox{\hyperlink{class_i_compound_a5388c74d390323ce610f752a01456b21}{release}} ()=0
+\item 
+virtual const \mbox{\hyperlink{class_i_string}{I\+String}} $\ast$ \mbox{\hyperlink{class_i_compound_ae14b5dcf513ef0d263119aeb2e2ffb15}{name}} () const =0
+\item 
+virtual const \mbox{\hyperlink{class_i_string}{I\+String}} $\ast$ \mbox{\hyperlink{class_i_compound_ac5c371dee7e65324518532b0a58c2d9f}{id}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_i_compound_a6b86be2ca9f6759434c1dd8405be328a}{Compound\+Kind}} \mbox{\hyperlink{class_i_compound_ad0d6fb22a48b5bbddae2b88a3cab3640}{kind}} () const =0
+\item 
+virtual const \mbox{\hyperlink{class_i_string}{I\+String}} $\ast$ \mbox{\hyperlink{class_i_compound_a49a7cb96ed8364494bdb7ecc1abb86c9}{kind\+String}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_i_section_iterator}{I\+Section\+Iterator}} $\ast$ \mbox{\hyperlink{class_i_compound_a966a7cac6a4f33f16ef869e74855ab3b}{sections}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_i_doc_root}{I\+Doc\+Root}} $\ast$ \mbox{\hyperlink{class_i_compound_a1ac3073130ef6bdd552c275e488c0658}{brief\+Description}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_i_doc_root}{I\+Doc\+Root}} $\ast$ \mbox{\hyperlink{class_i_compound_a9630b083767887a40040cb4408d538cd}{detailed\+Description}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_i_member}{I\+Member}} $\ast$ \mbox{\hyperlink{class_i_compound_af30652d3b5a43722e9407c8edf9a38fb}{member\+By\+Id}} (const char $\ast$\mbox{\hyperlink{class_i_compound_ac5c371dee7e65324518532b0a58c2d9f}{id}}) const =0
+\item 
+virtual \mbox{\hyperlink{class_i_member_iterator}{I\+Member\+Iterator}} $\ast$ \mbox{\hyperlink{class_i_compound_af94f0805a794ec5f413c9e16347e2591}{member\+By\+Name}} (const char $\ast$\mbox{\hyperlink{class_i_compound_ae14b5dcf513ef0d263119aeb2e2ffb15}{name}}) const =0
+\item 
+virtual void \mbox{\hyperlink{class_i_compound_a5388c74d390323ce610f752a01456b21}{release}} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The interface to a compound in the object model. 
+
+\mbox{\hyperlink{class_a}{A}} compound has a name which can be obtained via the \mbox{\hyperlink{class_i_compound_ae14b5dcf513ef0d263119aeb2e2ffb15}{name()}} method and a unique id, which is return via the \mbox{\hyperlink{class_i_compound_ac5c371dee7e65324518532b0a58c2d9f}{id()}} method. \mbox{\hyperlink{class_a}{A}} compound consists zero or more members which are grouped into sections. The \mbox{\hyperlink{class_i_compound_a966a7cac6a4f33f16ef869e74855ab3b}{sections()}} method can be used to access the individual sections. Alternatively, members can be obtained by name or id. There are different types of compounds. The \mbox{\hyperlink{class_i_compound_ad0d6fb22a48b5bbddae2b88a3cab3640}{kind()}} method returns what kind of compound this is. Depending on the return value one can dynamically cast an interface pointer to an more specialised interface that provides additional methods. \mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_i_compound}{ICompound}} *comp=...;}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (comp->\mbox{\hyperlink{class_i_compound_ad0d6fb22a48b5bbddae2b88a3cab3640}{kind}}()==ICompound::Class)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \mbox{\hyperlink{class_i_class}{IClass}} *cls = dynamic\_cast<IClass*>(comp);}
+\DoxyCodeLine{  \textcolor{comment}{// use methods of IClass}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ The documentation that is provided by a compound is available via the \mbox{\hyperlink{class_i_compound_a1ac3073130ef6bdd552c275e488c0658}{brief\+Description()}} and \mbox{\hyperlink{class_i_compound_a9630b083767887a40040cb4408d538cd}{detailed\+Description()}} methods. To avoid excessive memory usage, \mbox{\hyperlink{class_i_compound_a5388c74d390323ce610f752a01456b21}{release()}} should be called (once) on each compound interface pointer that is no longer needed. 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_i_compound_a6b86be2ca9f6759434c1dd8405be328a}\label{class_i_compound_a6b86be2ca9f6759434c1dd8405be328a}} 
+\index{ICompound@{ICompound}!CompoundKind@{CompoundKind}}
+\index{CompoundKind@{CompoundKind}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{CompoundKind}{CompoundKind}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_i_compound_a6b86be2ca9f6759434c1dd8405be328a}{I\+Compound\+::\+Compound\+Kind}}}
+
+Represents the kind of compounds recognised by doxygen. \mbox{\Hypertarget{class_i_compound_a6b86be2ca9f6759434c1dd8405be328a}\label{class_i_compound_a6b86be2ca9f6759434c1dd8405be328a}} 
+\index{ICompound@{ICompound}!CompoundKind@{CompoundKind}}
+\index{CompoundKind@{CompoundKind}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{CompoundKind}{CompoundKind}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_i_compound_a6b86be2ca9f6759434c1dd8405be328a}{I\+Compound\+::\+Compound\+Kind}}}
+
+Represents the kind of compounds recognised by doxygen. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_compound_a1ac3073130ef6bdd552c275e488c0658}\label{class_i_compound_a1ac3073130ef6bdd552c275e488c0658}} 
+\index{ICompound@{ICompound}!briefDescription@{briefDescription}}
+\index{briefDescription@{briefDescription}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{briefDescription()}{briefDescription()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_i_doc_root}{I\+Doc\+Root}}$\ast$ I\+Compound\+::brief\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a tree-\/structured representation of the brief description that is attached to this compound. 
+
+Implemented in \mbox{\hyperlink{class_compound_handler_a082a2132828d9949c5889a7d5a225b01}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_a1ac3073130ef6bdd552c275e488c0658}\label{class_i_compound_a1ac3073130ef6bdd552c275e488c0658}} 
+\index{ICompound@{ICompound}!briefDescription@{briefDescription}}
+\index{briefDescription@{briefDescription}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{briefDescription()}{briefDescription()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_i_doc_root}{I\+Doc\+Root}}$\ast$ I\+Compound\+::brief\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a tree-\/structured representation of the brief description that is attached to this compound. 
+
+Implemented in \mbox{\hyperlink{class_compound_handler_a082a2132828d9949c5889a7d5a225b01}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_a9630b083767887a40040cb4408d538cd}\label{class_i_compound_a9630b083767887a40040cb4408d538cd}} 
+\index{ICompound@{ICompound}!detailedDescription@{detailedDescription}}
+\index{detailedDescription@{detailedDescription}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{detailedDescription()}{detailedDescription()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_i_doc_root}{I\+Doc\+Root}}$\ast$ I\+Compound\+::detailed\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a tree-\/structured representation of the detailed description that is attached to this compound. 
+
+Implemented in \mbox{\hyperlink{class_compound_handler_a59b5dcb1da507d212bfc09323832a7b5}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_a9630b083767887a40040cb4408d538cd}\label{class_i_compound_a9630b083767887a40040cb4408d538cd}} 
+\index{ICompound@{ICompound}!detailedDescription@{detailedDescription}}
+\index{detailedDescription@{detailedDescription}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{detailedDescription()}{detailedDescription()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_i_doc_root}{I\+Doc\+Root}}$\ast$ I\+Compound\+::detailed\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a tree-\/structured representation of the detailed description that is attached to this compound. 
+
+Implemented in \mbox{\hyperlink{class_compound_handler_a59b5dcb1da507d212bfc09323832a7b5}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_ac5c371dee7e65324518532b0a58c2d9f}\label{class_i_compound_ac5c371dee7e65324518532b0a58c2d9f}} 
+\index{ICompound@{ICompound}!id@{id}}
+\index{id@{id}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{id()}{id()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{class_i_string}{I\+String}}$\ast$ I\+Compound\+::id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the id of this compound. The id is a unique string representing a specific compound object. 
+
+Implemented in \mbox{\hyperlink{class_compound_handler_ae9331f707437a480334f55471922ae13}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_ac5c371dee7e65324518532b0a58c2d9f}\label{class_i_compound_ac5c371dee7e65324518532b0a58c2d9f}} 
+\index{ICompound@{ICompound}!id@{id}}
+\index{id@{id}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{id()}{id()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{class_i_string}{I\+String}}$\ast$ I\+Compound\+::id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the id of this compound. The id is a unique string representing a specific compound object. 
+
+Implemented in \mbox{\hyperlink{class_compound_handler_ae9331f707437a480334f55471922ae13}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_ad0d6fb22a48b5bbddae2b88a3cab3640}\label{class_i_compound_ad0d6fb22a48b5bbddae2b88a3cab3640}} 
+\index{ICompound@{ICompound}!kind@{kind}}
+\index{kind@{kind}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{kind()}{kind()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_i_compound_a6b86be2ca9f6759434c1dd8405be328a}{Compound\+Kind}} I\+Compound\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the kind of compound. See \mbox{\hyperlink{class_i_compound_a6b86be2ca9f6759434c1dd8405be328a}{Compound\+Kind}} for possible values. 
+
+Implemented in \mbox{\hyperlink{class_compound_handler_a50629ddd5869657b611c3d170dd39cdb}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_ad0d6fb22a48b5bbddae2b88a3cab3640}\label{class_i_compound_ad0d6fb22a48b5bbddae2b88a3cab3640}} 
+\index{ICompound@{ICompound}!kind@{kind}}
+\index{kind@{kind}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{kind()}{kind()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_i_compound_a6b86be2ca9f6759434c1dd8405be328a}{Compound\+Kind}} I\+Compound\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the kind of compound. See \mbox{\hyperlink{class_i_compound_a6b86be2ca9f6759434c1dd8405be328a}{Compound\+Kind}} for possible values. 
+
+Implemented in \mbox{\hyperlink{class_compound_handler_a50629ddd5869657b611c3d170dd39cdb}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_a49a7cb96ed8364494bdb7ecc1abb86c9}\label{class_i_compound_a49a7cb96ed8364494bdb7ecc1abb86c9}} 
+\index{ICompound@{ICompound}!kindString@{kindString}}
+\index{kindString@{kindString}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{kindString()}{kindString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{class_i_string}{I\+String}}$\ast$ I\+Compound\+::kind\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a string representation of the compound kind. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_i_compound_ad0d6fb22a48b5bbddae2b88a3cab3640}{kind()}} 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{class_compound_handler_a8564086585b4054a14ae9548dabed0ca}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_a49a7cb96ed8364494bdb7ecc1abb86c9}\label{class_i_compound_a49a7cb96ed8364494bdb7ecc1abb86c9}} 
+\index{ICompound@{ICompound}!kindString@{kindString}}
+\index{kindString@{kindString}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{kindString()}{kindString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{class_i_string}{I\+String}}$\ast$ I\+Compound\+::kind\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a string representation of the compound kind. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_i_compound_ad0d6fb22a48b5bbddae2b88a3cab3640}{kind()}} 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{class_compound_handler_a8564086585b4054a14ae9548dabed0ca}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_af30652d3b5a43722e9407c8edf9a38fb}\label{class_i_compound_af30652d3b5a43722e9407c8edf9a38fb}} 
+\index{ICompound@{ICompound}!memberById@{memberById}}
+\index{memberById@{memberById}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{memberById()}{memberById()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_i_member}{I\+Member}}$\ast$ I\+Compound\+::member\+By\+Id (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns an interface to a member given its id. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The member id. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_compound_handler_ac73126f245d618162a90bc2f6906c548}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_af30652d3b5a43722e9407c8edf9a38fb}\label{class_i_compound_af30652d3b5a43722e9407c8edf9a38fb}} 
+\index{ICompound@{ICompound}!memberById@{memberById}}
+\index{memberById@{memberById}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{memberById()}{memberById()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_i_member}{I\+Member}}$\ast$ I\+Compound\+::member\+By\+Id (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns an interface to a member given its id. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The member id. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_compound_handler_ac73126f245d618162a90bc2f6906c548}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_af94f0805a794ec5f413c9e16347e2591}\label{class_i_compound_af94f0805a794ec5f413c9e16347e2591}} 
+\index{ICompound@{ICompound}!memberByName@{memberByName}}
+\index{memberByName@{memberByName}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{memberByName()}{memberByName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_i_member_iterator}{I\+Member\+Iterator}}$\ast$ I\+Compound\+::member\+By\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a list of all members within the compound having a certain name. Member overloading is the reason why there can be more than one member. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the member. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_compound_handler_afc374b0797b025ba660c558ca1d73137}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_af94f0805a794ec5f413c9e16347e2591}\label{class_i_compound_af94f0805a794ec5f413c9e16347e2591}} 
+\index{ICompound@{ICompound}!memberByName@{memberByName}}
+\index{memberByName@{memberByName}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{memberByName()}{memberByName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_i_member_iterator}{I\+Member\+Iterator}}$\ast$ I\+Compound\+::member\+By\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a list of all members within the compound having a certain name. Member overloading is the reason why there can be more than one member. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the member. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_compound_handler_afc374b0797b025ba660c558ca1d73137}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_ae14b5dcf513ef0d263119aeb2e2ffb15}\label{class_i_compound_ae14b5dcf513ef0d263119aeb2e2ffb15}} 
+\index{ICompound@{ICompound}!name@{name}}
+\index{name@{name}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{name()}{name()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{class_i_string}{I\+String}}$\ast$ I\+Compound\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the name of this compound 
+
+Implemented in \mbox{\hyperlink{class_compound_handler_ac7c192318d397bf053bb3ee44903aca7}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_ae14b5dcf513ef0d263119aeb2e2ffb15}\label{class_i_compound_ae14b5dcf513ef0d263119aeb2e2ffb15}} 
+\index{ICompound@{ICompound}!name@{name}}
+\index{name@{name}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{name()}{name()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{class_i_string}{I\+String}}$\ast$ I\+Compound\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the name of this compound 
+
+Implemented in \mbox{\hyperlink{class_compound_handler_ac7c192318d397bf053bb3ee44903aca7}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_a5388c74d390323ce610f752a01456b21}\label{class_i_compound_a5388c74d390323ce610f752a01456b21}} 
+\index{ICompound@{ICompound}!release@{release}}
+\index{release@{release}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{release()}{release()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void I\+Compound\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Decreases the reference counter for this compound. If it reaches zero, the memory for the compound will be released. 
+
+Implemented in \mbox{\hyperlink{class_compound_handler_a29f352627cbc021762c72835dfb63778}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_a5388c74d390323ce610f752a01456b21}\label{class_i_compound_a5388c74d390323ce610f752a01456b21}} 
+\index{ICompound@{ICompound}!release@{release}}
+\index{release@{release}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{release()}{release()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void I\+Compound\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Decreases the reference counter for this compound. If it reaches zero, the memory for the compound will be released. 
+
+Implemented in \mbox{\hyperlink{class_compound_handler_a29f352627cbc021762c72835dfb63778}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_a966a7cac6a4f33f16ef869e74855ab3b}\label{class_i_compound_a966a7cac6a4f33f16ef869e74855ab3b}} 
+\index{ICompound@{ICompound}!sections@{sections}}
+\index{sections@{sections}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{sections()}{sections()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_i_section_iterator}{I\+Section\+Iterator}}$\ast$ I\+Compound\+::sections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns an iterator for the different member sections in this compound. 
+
+Implemented in \mbox{\hyperlink{class_compound_handler_ac692ed207cfa36644d6844e77d6d4fc2}{Compound\+Handler}}.
+
+\mbox{\Hypertarget{class_i_compound_a966a7cac6a4f33f16ef869e74855ab3b}\label{class_i_compound_a966a7cac6a4f33f16ef869e74855ab3b}} 
+\index{ICompound@{ICompound}!sections@{sections}}
+\index{sections@{sections}!ICompound@{ICompound}}
+\subsubsection{\texorpdfstring{sections()}{sections()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_i_section_iterator}{I\+Section\+Iterator}}$\ast$ I\+Compound\+::sections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns an iterator for the different member sections in this compound. 
+
+Implemented in \mbox{\hyperlink{class_compound_handler_ac692ed207cfa36644d6844e77d6d4fc2}{Compound\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/addon/doxmlparser/include/\mbox{\hyperlink{include_2doxmlintf_8h}{doxmlintf.\+h}}\end{DoxyCompactItemize}

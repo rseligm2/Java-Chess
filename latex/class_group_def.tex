@@ -1,0 +1,243 @@
+\hypertarget{class_group_def}{}\section{Group\+Def Class Reference}
+\label{class_group_def}\index{GroupDef@{GroupDef}}
+
+
+{\ttfamily \#include $<$groupdef.\+h$>$}
+
+Inheritance diagram for Group\+Def\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_group_def}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_group_def_a38cde7c40f0b6089b99efa85629b6da8}\label{class_group_def_a38cde7c40f0b6089b99efa85629b6da8}} 
+{\bfseries Group\+Def} (const char $\ast$file\+Name, int line, const char $\ast$\mbox{\hyperlink{class_definition_a9324000f785d7b6b098878a3bca4df5b}{name}}, const char $\ast$title, const char $\ast$ref\+File\+Name=0)
+\item 
+\mbox{\hyperlink{class_definition_intf_ada60114bc621669dd8c19edfc6421766}{Def\+Type}} \mbox{\hyperlink{class_group_def_a1b6b622a9adaeb6b2845945ccb1ddd93}{definition\+Type}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_group_def_a6320c7b06b29937039549be13a698e20}{get\+Output\+File\+Base}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_group_def_a924c6e5a6fe495d70383ddc751704095}{anchor}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_group_def_a9707ecaf7f4e7231016b68a7e3f811e8}{display\+Name}} (bool=T\+R\+UE) const
+\item 
+\mbox{\Hypertarget{class_group_def_aeb7f2ffe66a4696a36322de18e605534}\label{class_group_def_aeb7f2ffe66a4696a36322de18e605534}} 
+const char $\ast$ {\bfseries group\+Title} () const
+\item 
+\mbox{\Hypertarget{class_group_def_a0a3c458b0cb95ce838ba7ba9b120ff26}\label{class_group_def_a0a3c458b0cb95ce838ba7ba9b120ff26}} 
+void {\bfseries set\+Group\+Title} (const char $\ast$newtitle)
+\item 
+\mbox{\Hypertarget{class_group_def_a3a3a4f8bfc8ec589a74ead85e6d6c250}\label{class_group_def_a3a3a4f8bfc8ec589a74ead85e6d6c250}} 
+bool {\bfseries has\+Group\+Title} () const
+\item 
+\mbox{\Hypertarget{class_group_def_a9a676ba60547c855e012529a1123e1bf}\label{class_group_def_a9a676ba60547c855e012529a1123e1bf}} 
+void {\bfseries add\+File} (const \mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$def)
+\item 
+\mbox{\Hypertarget{class_group_def_a20aabb4f8669ea993290f1cd79c841f1}\label{class_group_def_a20aabb4f8669ea993290f1cd79c841f1}} 
+bool {\bfseries add\+Class} (const \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$def)
+\item 
+\mbox{\Hypertarget{class_group_def_a4f4ce1086bd99c08ee4fd20537729bdb}\label{class_group_def_a4f4ce1086bd99c08ee4fd20537729bdb}} 
+bool {\bfseries add\+Namespace} (const \mbox{\hyperlink{class_namespace_def}{Namespace\+Def}} $\ast$def)
+\item 
+\mbox{\Hypertarget{class_group_def_a75f4bf0d8f41de50874ed9a633b1cf0f}\label{class_group_def_a75f4bf0d8f41de50874ed9a633b1cf0f}} 
+void {\bfseries add\+Group} (const \mbox{\hyperlink{class_group_def}{Group\+Def}} $\ast$def)
+\item 
+\mbox{\Hypertarget{class_group_def_a6ca14ecf9ec2395e9738b5eb45d01c1a}\label{class_group_def_a6ca14ecf9ec2395e9738b5eb45d01c1a}} 
+void {\bfseries add\+Parent\+Group} (const \mbox{\hyperlink{class_group_def}{Group\+Def}} $\ast$def)
+\item 
+\mbox{\Hypertarget{class_group_def_aafcf9df1cd66bed1e66cbb05f4f3e694}\label{class_group_def_aafcf9df1cd66bed1e66cbb05f4f3e694}} 
+void {\bfseries add\+Page} (\mbox{\hyperlink{class_page_def}{Page\+Def}} $\ast$def)
+\item 
+\mbox{\Hypertarget{class_group_def_aa8a5e75c17e619f7944b67e1f8cb4bab}\label{class_group_def_aa8a5e75c17e619f7944b67e1f8cb4bab}} 
+void {\bfseries add\+Example} (const \mbox{\hyperlink{class_page_def}{Page\+Def}} $\ast$def)
+\item 
+\mbox{\Hypertarget{class_group_def_ad0b6731433cd2c276b7edca31f159aa9}\label{class_group_def_ad0b6731433cd2c276b7edca31f159aa9}} 
+void {\bfseries add\+Dir} (const \mbox{\hyperlink{class_dir_def}{Dir\+Def}} $\ast$dd)
+\item 
+\mbox{\Hypertarget{class_group_def_a88b12bc96a9c8c58ddfd8ee378d1af15}\label{class_group_def_a88b12bc96a9c8c58ddfd8ee378d1af15}} 
+bool {\bfseries insert\+Member} (\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$def, bool doc\+Only=F\+A\+L\+SE)
+\item 
+\mbox{\Hypertarget{class_group_def_a05b7c4875a3ad7ee5789ac6cc5da4be9}\label{class_group_def_a05b7c4875a3ad7ee5789ac6cc5da4be9}} 
+void {\bfseries remove\+Member} (\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$md)
+\item 
+\mbox{\Hypertarget{class_group_def_a099dbc6f67c4395deb7edd89823b8bfd}\label{class_group_def_a099dbc6f67c4395deb7edd89823b8bfd}} 
+bool {\bfseries find\+Group} (const \mbox{\hyperlink{class_group_def}{Group\+Def}} $\ast$def) const
+\item 
+\mbox{\Hypertarget{class_group_def_aab9bf5ba484cedffb49ee38b2f69eb79}\label{class_group_def_aab9bf5ba484cedffb49ee38b2f69eb79}} 
+void {\bfseries write\+Documentation} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol)
+\item 
+\mbox{\Hypertarget{class_group_def_a38ce5bec40660b86d497f2fc13883f24}\label{class_group_def_a38ce5bec40660b86d497f2fc13883f24}} 
+void {\bfseries write\+Member\+Pages} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol)
+\item 
+\mbox{\Hypertarget{class_group_def_abdae0b34fd964d6bfcd56a55c498cf41}\label{class_group_def_abdae0b34fd964d6bfcd56a55c498cf41}} 
+void {\bfseries write\+Quick\+Member\+Links} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$current\+Md) const
+\item 
+\mbox{\Hypertarget{class_group_def_af8ce245c3b6ba9fc5b8e575995205913}\label{class_group_def_af8ce245c3b6ba9fc5b8e575995205913}} 
+void {\bfseries write\+Tag\+File} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&)
+\item 
+\mbox{\Hypertarget{class_group_def_a05b8e6bf1505a6cac7b2a9900cab33a6}\label{class_group_def_a05b8e6bf1505a6cac7b2a9900cab33a6}} 
+int {\bfseries count\+Members} () const
+\item 
+bool \mbox{\hyperlink{class_group_def_a916a94699f6234e2bf5594ff12bbf764}{is\+Linkable\+In\+Project}} () const
+\item 
+bool \mbox{\hyperlink{class_group_def_a6aeb6d9849dfceb7809cfbda4bfb2503}{is\+Linkable}} () const
+\item 
+\mbox{\Hypertarget{class_group_def_a5a4165b8351e635ad6287f9ca92ad8e2}\label{class_group_def_a5a4165b8351e635ad6287f9ca92ad8e2}} 
+bool {\bfseries is\+A\+Sub\+Group} () const
+\item 
+void \mbox{\hyperlink{class_group_def_a2b3099f398ccdb867feab801bcb970cd}{compute\+Anchors}} ()
+\item 
+\mbox{\Hypertarget{class_group_def_a48d0c12da606726845d4c8005127c57e}\label{class_group_def_a48d0c12da606726845d4c8005127c57e}} 
+void {\bfseries add\+Members\+To\+Member\+Group} ()
+\item 
+\mbox{\Hypertarget{class_group_def_a1b4853a1afc605da80f743dfee17b48e}\label{class_group_def_a1b4853a1afc605da80f743dfee17b48e}} 
+void {\bfseries distribute\+Member\+Group\+Documentation} ()
+\item 
+\mbox{\Hypertarget{class_group_def_a66bdfe8ee9631c175ba9433829c0e0a6}\label{class_group_def_a66bdfe8ee9631c175ba9433829c0e0a6}} 
+void {\bfseries find\+Sections\+In\+Documentation} ()
+\item 
+\mbox{\Hypertarget{class_group_def_acef94f92bb7f07b5c8dc03bcfdd7f5b0}\label{class_group_def_acef94f92bb7f07b5c8dc03bcfdd7f5b0}} 
+void {\bfseries add\+List\+References} ()
+\item 
+\mbox{\Hypertarget{class_group_def_af29c5742610869db222c9b093c7fecfd}\label{class_group_def_af29c5742610869db222c9b093c7fecfd}} 
+void {\bfseries sort\+Member\+Lists} ()
+\item 
+\mbox{\Hypertarget{class_group_def_aae42bfde1fb3fa9155a9b28911dd2a18}\label{class_group_def_aae42bfde1fb3fa9155a9b28911dd2a18}} 
+bool {\bfseries sub\+Grouping} () const
+\item 
+\mbox{\Hypertarget{class_group_def_a1d2494fa72857a2328ee5787f03f61a7}\label{class_group_def_a1d2494fa72857a2328ee5787f03f61a7}} 
+void {\bfseries set\+Group\+Scope} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$d)
+\item 
+\mbox{\Hypertarget{class_group_def_a160756d3e3de8da1a60bffe341372a51}\label{class_group_def_a160756d3e3de8da1a60bffe341372a51}} 
+\mbox{\hyperlink{class_definition}{Definition}} $\ast$ {\bfseries get\+Group\+Scope} () const
+\item 
+\mbox{\Hypertarget{class_group_def_a7ce5a66d4d731ad9190b59f8cbbe0849}\label{class_group_def_a7ce5a66d4d731ad9190b59f8cbbe0849}} 
+\mbox{\hyperlink{class_member_list}{Member\+List}} $\ast$ {\bfseries get\+Member\+List} (Member\+List\+Type lt) const
+\item 
+\mbox{\Hypertarget{class_group_def_a3530a320e387ff8014ecda67af65ed4c}\label{class_group_def_a3530a320e387ff8014ecda67af65ed4c}} 
+const \mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{class_member_list}{Member\+List}} $>$ \& {\bfseries get\+Member\+Lists} () const
+\item 
+\mbox{\Hypertarget{class_group_def_a371f2b1ece70b88050f5e380208c10c5}\label{class_group_def_a371f2b1ece70b88050f5e380208c10c5}} 
+\mbox{\hyperlink{class_member_group_s_dict}{Member\+Group\+S\+Dict}} $\ast$ {\bfseries get\+Member\+Group\+S\+Dict} () const
+\item 
+\mbox{\Hypertarget{class_group_def_ae13d020d4270577a4b6514edee2490be}\label{class_group_def_ae13d020d4270577a4b6514edee2490be}} 
+\mbox{\hyperlink{class_file_list}{File\+List}} $\ast$ {\bfseries get\+Files} () const
+\item 
+\mbox{\Hypertarget{class_group_def_a00a79b22e72c1c47b0d758ba76ed4a9e}\label{class_group_def_a00a79b22e72c1c47b0d758ba76ed4a9e}} 
+\mbox{\hyperlink{class_class_s_dict}{Class\+S\+Dict}} $\ast$ {\bfseries get\+Classes} () const
+\item 
+\mbox{\Hypertarget{class_group_def_a552b6af7d888336745407a8a450dd21d}\label{class_group_def_a552b6af7d888336745407a8a450dd21d}} 
+\mbox{\hyperlink{class_namespace_s_dict}{Namespace\+S\+Dict}} $\ast$ {\bfseries get\+Namespaces} () const
+\item 
+\mbox{\Hypertarget{class_group_def_a095bff08155484645c319a8c82d7707e}\label{class_group_def_a095bff08155484645c319a8c82d7707e}} 
+\mbox{\hyperlink{class_group_list}{Group\+List}} $\ast$ {\bfseries get\+Sub\+Groups} () const
+\item 
+\mbox{\Hypertarget{class_group_def_afd087cad1730acf904a43d805e94f366}\label{class_group_def_afd087cad1730acf904a43d805e94f366}} 
+\mbox{\hyperlink{class_page_s_dict}{Page\+S\+Dict}} $\ast$ {\bfseries get\+Pages} () const
+\item 
+\mbox{\Hypertarget{class_group_def_ad84893687f6f7fda9a678186adc4f293}\label{class_group_def_ad84893687f6f7fda9a678186adc4f293}} 
+\mbox{\hyperlink{class_dir_list}{Dir\+List}} $\ast$ {\bfseries get\+Dirs} () const
+\item 
+\mbox{\Hypertarget{class_group_def_ad69a336f4534496fb23ae62ec5936de2}\label{class_group_def_ad69a336f4534496fb23ae62ec5936de2}} 
+\mbox{\hyperlink{class_page_s_dict}{Page\+S\+Dict}} $\ast$ {\bfseries get\+Examples} () const
+\item 
+\mbox{\Hypertarget{class_group_def_af77c291c8ae7b439ea0c6a88c99e2c32}\label{class_group_def_af77c291c8ae7b439ea0c6a88c99e2c32}} 
+bool {\bfseries has\+Detailed\+Description} () const
+\item 
+\mbox{\Hypertarget{class_group_def_a4df309532742545e812bedd9e1656712}\label{class_group_def_a4df309532742545e812bedd9e1656712}} 
+void {\bfseries sort\+Sub\+Groups} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_group_def_aea366de5d581d83de1217487b598b66b}\label{class_group_def_aea366de5d581d83de1217487b598b66b}} 
+bool {\bfseries visited}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_group_def_aa5358a8ca2d0a45c201e91be5647538e}\label{class_group_def_aa5358a8ca2d0a45c201e91be5647538e}} 
+void {\bfseries add\+Member\+List\+To\+Group} (\mbox{\hyperlink{class_member_list}{Member\+List}} $\ast$, bool(Member\+Def\+::$\ast$)() const)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_a}{A}} model of a group of symbols. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_group_def_a924c6e5a6fe495d70383ddc751704095}\label{class_group_def_a924c6e5a6fe495d70383ddc751704095}} 
+\index{GroupDef@{GroupDef}!anchor@{anchor}}
+\index{anchor@{anchor}!GroupDef@{GroupDef}}
+\subsubsection{\texorpdfstring{anchor()}{anchor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Group\+Def\+::anchor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the anchor within a page where this item can be found 
+
+Implements \mbox{\hyperlink{class_definition_a56e91f9b76f41208a22cfb2336871604}{Definition}}.
+
+\mbox{\Hypertarget{class_group_def_a2b3099f398ccdb867feab801bcb970cd}\label{class_group_def_a2b3099f398ccdb867feab801bcb970cd}} 
+\index{GroupDef@{GroupDef}!computeAnchors@{computeAnchors}}
+\index{computeAnchors@{computeAnchors}!GroupDef@{GroupDef}}
+\subsubsection{\texorpdfstring{computeAnchors()}{computeAnchors()}}
+{\footnotesize\ttfamily void Group\+Def\+::compute\+Anchors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Compute the H\+T\+ML anchor names for all members in the group \mbox{\Hypertarget{class_group_def_a1b6b622a9adaeb6b2845945ccb1ddd93}\label{class_group_def_a1b6b622a9adaeb6b2845945ccb1ddd93}} 
+\index{GroupDef@{GroupDef}!definitionType@{definitionType}}
+\index{definitionType@{definitionType}!GroupDef@{GroupDef}}
+\subsubsection{\texorpdfstring{definitionType()}{definitionType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_definition_intf_ada60114bc621669dd8c19edfc6421766}{Def\+Type}} Group\+Def\+::definition\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Use this for dynamic inspection of the type of the derived class 
+
+Implements \mbox{\hyperlink{class_definition_intf_ac8ee00bc1af5558ae37f6896d16f5a3a}{Definition\+Intf}}.
+
+\mbox{\Hypertarget{class_group_def_a9707ecaf7f4e7231016b68a7e3f811e8}\label{class_group_def_a9707ecaf7f4e7231016b68a7e3f811e8}} 
+\index{GroupDef@{GroupDef}!displayName@{displayName}}
+\index{displayName@{displayName}!GroupDef@{GroupDef}}
+\subsubsection{\texorpdfstring{displayName()}{displayName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Group\+Def\+::display\+Name (\begin{DoxyParamCaption}\item[{bool}]{include\+Scope = {\ttfamily TRUE} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the name of the definition as it appears in the output 
+
+Implements \mbox{\hyperlink{class_definition_ac4741f70f06baac174cf71b3e11d06ac}{Definition}}.
+
+\mbox{\Hypertarget{class_group_def_a6320c7b06b29937039549be13a698e20}\label{class_group_def_a6320c7b06b29937039549be13a698e20}} 
+\index{GroupDef@{GroupDef}!getOutputFileBase@{getOutputFileBase}}
+\index{getOutputFileBase@{getOutputFileBase}!GroupDef@{GroupDef}}
+\subsubsection{\texorpdfstring{getOutputFileBase()}{getOutputFileBase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Group\+Def\+::get\+Output\+File\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the base file name (without extension) of this definition. as it is referenced to/written to disk. 
+
+Implements \mbox{\hyperlink{class_definition_acabecdc6bfda2015811eed5f3436322d}{Definition}}.
+
+\mbox{\Hypertarget{class_group_def_a6aeb6d9849dfceb7809cfbda4bfb2503}\label{class_group_def_a6aeb6d9849dfceb7809cfbda4bfb2503}} 
+\index{GroupDef@{GroupDef}!isLinkable@{isLinkable}}
+\index{isLinkable@{isLinkable}!GroupDef@{GroupDef}}
+\subsubsection{\texorpdfstring{isLinkable()}{isLinkable()}}
+{\footnotesize\ttfamily bool Group\+Def\+::is\+Linkable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns T\+R\+UE iff it is possible to link to this item. This can be a link to another project imported via a tag file. 
+
+Implements \mbox{\hyperlink{class_definition_a4002fd79c2d4dcf667c37c83d4214deb}{Definition}}.
+
+\mbox{\Hypertarget{class_group_def_a916a94699f6234e2bf5594ff12bbf764}\label{class_group_def_a916a94699f6234e2bf5594ff12bbf764}} 
+\index{GroupDef@{GroupDef}!isLinkableInProject@{isLinkableInProject}}
+\index{isLinkableInProject@{isLinkableInProject}!GroupDef@{GroupDef}}
+\subsubsection{\texorpdfstring{isLinkableInProject()}{isLinkableInProject()}}
+{\footnotesize\ttfamily bool Group\+Def\+::is\+Linkable\+In\+Project (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns T\+R\+UE iff it is possible to link to this item within this project. 
+
+Implements \mbox{\hyperlink{class_definition_a845891c7206d40c3664b562636cdf9fc}{Definition}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/groupdef.\+h\item 
+doxygen/src/groupdef.\+cpp\end{DoxyCompactItemize}

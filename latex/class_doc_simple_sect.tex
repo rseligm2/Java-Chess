@@ -1,0 +1,110 @@
+\hypertarget{class_doc_simple_sect}{}\section{Doc\+Simple\+Sect Class Reference}
+\label{class_doc_simple_sect}\index{DocSimpleSect@{DocSimpleSect}}
+
+
+{\ttfamily \#include $<$docparser.\+h$>$}
+
+Inheritance diagram for Doc\+Simple\+Sect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_doc_simple_sect}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_simple_sect_a3b9f9dd4952f3d819b347f74a6769a9b}\label{class_doc_simple_sect_a3b9f9dd4952f3d819b347f74a6769a9b}} 
+enum {\bfseries Type} \{ \newline
+{\bfseries Unknown}, 
+{\bfseries See}, 
+{\bfseries Return}, 
+{\bfseries Author}, 
+\newline
+{\bfseries Authors}, 
+{\bfseries Version}, 
+{\bfseries Since}, 
+{\bfseries Date}, 
+\newline
+{\bfseries Note}, 
+{\bfseries Warning}, 
+{\bfseries Copyright}, 
+{\bfseries Pre}, 
+\newline
+{\bfseries Post}, 
+{\bfseries Invar}, 
+{\bfseries Remark}, 
+{\bfseries Attention}, 
+\newline
+{\bfseries User}, 
+{\bfseries Rcs}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doc_simple_sect_a0ef58433b1e5f366b593d17a9ba4b9e1}\label{class_doc_simple_sect_a0ef58433b1e5f366b593d17a9ba4b9e1}} 
+{\bfseries Doc\+Simple\+Sect} (\mbox{\hyperlink{class_doc_node}{Doc\+Node}} $\ast$\mbox{\hyperlink{class_doc_node_a73e8ad29a91cfceb0968eb00db71a23d}{parent}}, Type t)
+\item 
+\mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} \mbox{\hyperlink{class_doc_simple_sect_a9a9f612d6101d0accc815394e5d29e34}{kind}} () const
+\item 
+\mbox{\Hypertarget{class_doc_simple_sect_a1ea4e7672816ad91cf567b2000f1a65c}\label{class_doc_simple_sect_a1ea4e7672816ad91cf567b2000f1a65c}} 
+Type {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{class_doc_simple_sect_a151d09b73379f0fcade95af7ce910250}\label{class_doc_simple_sect_a151d09b73379f0fcade95af7ce910250}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries type\+String} () const
+\item 
+void \mbox{\hyperlink{class_doc_simple_sect_a83c0f2c289b0d15403d1adf94c98982d}{accept}} (\mbox{\hyperlink{class_doc_visitor}{Doc\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{class_doc_simple_sect_a6d4285005170976f90f3aa926a7be8c0}\label{class_doc_simple_sect_a6d4285005170976f90f3aa926a7be8c0}} 
+int {\bfseries parse} (bool user\+Title, bool needs\+Separator)
+\item 
+\mbox{\Hypertarget{class_doc_simple_sect_a781284e66505901d40fd6d9df8663b3e}\label{class_doc_simple_sect_a781284e66505901d40fd6d9df8663b3e}} 
+int {\bfseries parse\+Rcs} ()
+\item 
+\mbox{\Hypertarget{class_doc_simple_sect_a5cdcf0db314a3f9721842c3134550ce2}\label{class_doc_simple_sect_a5cdcf0db314a3f9721842c3134550ce2}} 
+int {\bfseries parse\+Xml} ()
+\item 
+\mbox{\Hypertarget{class_doc_simple_sect_ae538f74c2d44222c9a45ef304c89e041}\label{class_doc_simple_sect_ae538f74c2d44222c9a45ef304c89e041}} 
+void {\bfseries append\+Link\+Word} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&word)
+\item 
+\mbox{\Hypertarget{class_doc_simple_sect_af7bb6fa3996348dc1e211e32eb358f83}\label{class_doc_simple_sect_af7bb6fa3996348dc1e211e32eb358f83}} 
+bool {\bfseries has\+Title} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Node representing a simple section 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_doc_simple_sect_a83c0f2c289b0d15403d1adf94c98982d}\label{class_doc_simple_sect_a83c0f2c289b0d15403d1adf94c98982d}} 
+\index{DocSimpleSect@{DocSimpleSect}!accept@{accept}}
+\index{accept@{accept}!DocSimpleSect@{DocSimpleSect}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily void Doc\+Simple\+Sect\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_doc_visitor}{Doc\+Visitor}} $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Acceptor function for node visitors. Part of the visitor pattern. 
+\begin{DoxyParams}{Parameters}
+{\em v} & Abstract visitor. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_doc_node_a5303a550cbe6395663bf9b9dad28cbf1}{Doc\+Node}}.
+
+\mbox{\Hypertarget{class_doc_simple_sect_a9a9f612d6101d0accc815394e5d29e34}\label{class_doc_simple_sect_a9a9f612d6101d0accc815394e5d29e34}} 
+\index{DocSimpleSect@{DocSimpleSect}!kind@{kind}}
+\index{kind@{kind}!DocSimpleSect@{DocSimpleSect}}
+\subsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_doc_node_aebd16e89ca590d84cbd40543ea5faadb}{Kind}} Doc\+Simple\+Sect\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the kind of node. Provides runtime type information 
+
+Implements \mbox{\hyperlink{class_doc_node_a108ffd214a72ba6e93dac084a8f58049}{Doc\+Node}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/docparser.\+h\item 
+doxygen/src/docparser.\+cpp\end{DoxyCompactItemize}

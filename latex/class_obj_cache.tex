@@ -1,0 +1,112 @@
+\hypertarget{class_obj_cache}{}\section{Obj\+Cache Class Reference}
+\label{class_obj_cache}\index{ObjCache@{ObjCache}}
+
+
+Cache for objects.  
+
+
+
+
+{\ttfamily \#include $<$objcache.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_obj_cache_a1818fcc2b39a5c54a6e2bd9b456b7ccb}{Obj\+Cache}} (unsigned int log\+Size)
+\item 
+\mbox{\hyperlink{class_obj_cache_ae2ea95b2c63b154dd0a068613ba06aff}{$\sim$\+Obj\+Cache}} ()
+\item 
+int \mbox{\hyperlink{class_obj_cache_affd025326493c40ac4e7f5b4c0c3ad9b}{add}} (void $\ast$obj, void $\ast$$\ast$victim)
+\item 
+void \mbox{\hyperlink{class_obj_cache_ac4d9eb810e8f6ca2fbd4cf058ff3fe0e}{use}} (int handle)
+\item 
+void \mbox{\hyperlink{class_obj_cache_a3ac1ae674ea8ff27e436c788f851d303}{del}} (int handle)
+\item 
+void \mbox{\hyperlink{class_obj_cache_aeea7452ce80751d3f8e76038dc44decc}{print\+L\+RU}} ()
+\item 
+void \mbox{\hyperlink{class_obj_cache_a3e4ded7d3342fb02d64bd8d39466a30a}{print\+Stats}} ()
+\item 
+int \mbox{\hyperlink{class_obj_cache_aea030caf627270a451507a3517584bbc}{size}} () const
+\item 
+int \mbox{\hyperlink{class_obj_cache_a134d58930129019d44886eda2bdec41d}{count}} () const
+\item 
+\mbox{\Hypertarget{class_obj_cache_a5fd45d9b6ea78e9e62fedeee39269407}\label{class_obj_cache_a5fd45d9b6ea78e9e62fedeee39269407}} 
+int {\bfseries hits} () const
+\item 
+\mbox{\Hypertarget{class_obj_cache_a66991bb77eb5a52680db3ecebc014fe4}\label{class_obj_cache_a66991bb77eb5a52680db3ecebc014fe4}} 
+int {\bfseries misses} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Cache for objects. 
+
+This cache is used to decide which objects should remain in memory. It uses a least recently used policy (L\+RU) to decide which object should make room for a new object when the cache is full. An object should be added using \mbox{\hyperlink{class_obj_cache_affd025326493c40ac4e7f5b4c0c3ad9b}{add()}}, and then \mbox{\hyperlink{class_obj_cache_ac4d9eb810e8f6ca2fbd4cf058ff3fe0e}{use()}} should be called when the object is used. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_obj_cache_a1818fcc2b39a5c54a6e2bd9b456b7ccb}\label{class_obj_cache_a1818fcc2b39a5c54a6e2bd9b456b7ccb}} 
+\index{ObjCache@{ObjCache}!ObjCache@{ObjCache}}
+\index{ObjCache@{ObjCache}!ObjCache@{ObjCache}}
+\subsubsection{\texorpdfstring{ObjCache()}{ObjCache()}}
+{\footnotesize\ttfamily Obj\+Cache\+::\+Obj\+Cache (\begin{DoxyParamCaption}\item[{unsigned int}]{log\+Size }\end{DoxyParamCaption})}
+
+Creates the cache. The number of elements in the cache is 2 to the power of {\itshape log\+Size}. \mbox{\Hypertarget{class_obj_cache_ae2ea95b2c63b154dd0a068613ba06aff}\label{class_obj_cache_ae2ea95b2c63b154dd0a068613ba06aff}} 
+\index{ObjCache@{ObjCache}!````~ObjCache@{$\sim$ObjCache}}
+\index{````~ObjCache@{$\sim$ObjCache}!ObjCache@{ObjCache}}
+\subsubsection{\texorpdfstring{$\sim$ObjCache()}{~ObjCache()}}
+{\footnotesize\ttfamily Obj\+Cache\+::$\sim$\+Obj\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Deletes the cache and free all internal data-\/structures used. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_obj_cache_affd025326493c40ac4e7f5b4c0c3ad9b}\label{class_obj_cache_affd025326493c40ac4e7f5b4c0c3ad9b}} 
+\index{ObjCache@{ObjCache}!add@{add}}
+\index{add@{add}!ObjCache@{ObjCache}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily int Obj\+Cache\+::add (\begin{DoxyParamCaption}\item[{void $\ast$}]{obj,  }\item[{void $\ast$$\ast$}]{victim }\end{DoxyParamCaption})}
+
+Adds {\itshape obj} to the cache. When victim is not null, this object is removed from the cache to make room for {\itshape obj}. Returns a handle to the object, which can be used by the \mbox{\hyperlink{class_obj_cache_ac4d9eb810e8f6ca2fbd4cf058ff3fe0e}{use()}} function, each time the object is used. \mbox{\Hypertarget{class_obj_cache_a134d58930129019d44886eda2bdec41d}\label{class_obj_cache_a134d58930129019d44886eda2bdec41d}} 
+\index{ObjCache@{ObjCache}!count@{count}}
+\index{count@{count}!ObjCache@{ObjCache}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Obj\+Cache\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+number of elements in the cache \mbox{\Hypertarget{class_obj_cache_a3ac1ae674ea8ff27e436c788f851d303}\label{class_obj_cache_a3ac1ae674ea8ff27e436c788f851d303}} 
+\index{ObjCache@{ObjCache}!del@{del}}
+\index{del@{del}!ObjCache@{ObjCache}}
+\subsubsection{\texorpdfstring{del()}{del()}}
+{\footnotesize\ttfamily void Obj\+Cache\+::del (\begin{DoxyParamCaption}\item[{int}]{handle }\end{DoxyParamCaption})}
+
+Removes the item identified by {\itshape handle} from the cache. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_obj_cache_affd025326493c40ac4e7f5b4c0c3ad9b}{add()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_obj_cache_aeea7452ce80751d3f8e76038dc44decc}\label{class_obj_cache_aeea7452ce80751d3f8e76038dc44decc}} 
+\index{ObjCache@{ObjCache}!printLRU@{printLRU}}
+\index{printLRU@{printLRU}!ObjCache@{ObjCache}}
+\subsubsection{\texorpdfstring{printLRU()}{printLRU()}}
+{\footnotesize\ttfamily void Obj\+Cache\+::print\+L\+RU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_debug}{Debug}} function. Prints the L\+RU list \mbox{\Hypertarget{class_obj_cache_a3e4ded7d3342fb02d64bd8d39466a30a}\label{class_obj_cache_a3e4ded7d3342fb02d64bd8d39466a30a}} 
+\index{ObjCache@{ObjCache}!printStats@{printStats}}
+\index{printStats@{printStats}!ObjCache@{ObjCache}}
+\subsubsection{\texorpdfstring{printStats()}{printStats()}}
+{\footnotesize\ttfamily void Obj\+Cache\+::print\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print miss/hits statistics \mbox{\Hypertarget{class_obj_cache_aea030caf627270a451507a3517584bbc}\label{class_obj_cache_aea030caf627270a451507a3517584bbc}} 
+\index{ObjCache@{ObjCache}!size@{size}}
+\index{size@{size}!ObjCache@{ObjCache}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Obj\+Cache\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+total size of the cache \mbox{\Hypertarget{class_obj_cache_ac4d9eb810e8f6ca2fbd4cf058ff3fe0e}\label{class_obj_cache_ac4d9eb810e8f6ca2fbd4cf058ff3fe0e}} 
+\index{ObjCache@{ObjCache}!use@{use}}
+\index{use@{use}!ObjCache@{ObjCache}}
+\subsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily void Obj\+Cache\+::use (\begin{DoxyParamCaption}\item[{int}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Indicates that this object is used. This will move the object to the front of the internal L\+RU list to make sure it is removed last. The parameter {\itshape handle} is returned when called \mbox{\hyperlink{class_obj_cache_affd025326493c40ac4e7f5b4c0c3ad9b}{add()}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/objcache.\+h\item 
+doxygen/src/objcache.\+cpp\end{DoxyCompactItemize}

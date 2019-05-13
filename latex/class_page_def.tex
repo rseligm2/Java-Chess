@@ -1,0 +1,165 @@
+\hypertarget{class_page_def}{}\section{Page\+Def Class Reference}
+\label{class_page_def}\index{PageDef@{PageDef}}
+
+
+\mbox{\hyperlink{class_a}{A}} model of a page symbol.  
+
+
+
+
+{\ttfamily \#include $<$pagedef.\+h$>$}
+
+Inheritance diagram for Page\+Def\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_page_def}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_page_def_a42a37bcdc01bf39d2488eb8c7303f74c}\label{class_page_def_a42a37bcdc01bf39d2488eb8c7303f74c}} 
+{\bfseries Page\+Def} (const char $\ast$f, int l, const char $\ast$n, const char $\ast$d, const char $\ast$t)
+\item 
+\mbox{\Hypertarget{class_page_def_aa01c796064e41d5487f8f806d69c2db6}\label{class_page_def_aa01c796064e41d5487f8f806d69c2db6}} 
+void {\bfseries set\+File\+Name} (const char $\ast$\mbox{\hyperlink{class_definition_a9324000f785d7b6b098878a3bca4df5b}{name}})
+\item 
+\mbox{\Hypertarget{class_page_def_af39077d1a9498622d73e6d1196140ef8}\label{class_page_def_af39077d1a9498622d73e6d1196140ef8}} 
+void {\bfseries set\+Local\+Toc} (const \mbox{\hyperlink{class_local_toc}{Local\+Toc}} \&tl)
+\item 
+\mbox{\Hypertarget{class_page_def_a635f175421827443109d678527c7f8b3}\label{class_page_def_a635f175421827443109d678527c7f8b3}} 
+void {\bfseries set\+Show\+Line\+No} (bool)
+\item 
+\mbox{\hyperlink{class_definition_intf_ada60114bc621669dd8c19edfc6421766}{Def\+Type}} \mbox{\hyperlink{class_page_def_a4485734f9ef865738e090ff6b122410f}{definition\+Type}} () const
+\item 
+bool \mbox{\hyperlink{class_page_def_a8aeb711470609d0be377c2b56aee9cef}{is\+Linkable\+In\+Project}} () const
+\item 
+bool \mbox{\hyperlink{class_page_def_acb0b424141cbb7c1b6b5a52769cf7b06}{is\+Linkable}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_page_def_a7b72dba48ce4045351aed9a397ce9b0f}{get\+Output\+File\+Base}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_page_def_a1de6c2c0acdb782e053af47271fb0a3d}{anchor}} () const
+\item 
+\mbox{\Hypertarget{class_page_def_ac25a2b575428b1252acf0b71e213a7b4}\label{class_page_def_ac25a2b575428b1252acf0b71e213a7b4}} 
+void {\bfseries find\+Sections\+In\+Documentation} ()
+\item 
+\mbox{\Hypertarget{class_page_def_a11276500630ee5942ca5bab0e69e0601}\label{class_page_def_a11276500630ee5942ca5bab0e69e0601}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries title} () const
+\item 
+\mbox{\Hypertarget{class_page_def_a28a46a21704f59de4ae7fdf410299cf7}\label{class_page_def_a28a46a21704f59de4ae7fdf410299cf7}} 
+\mbox{\hyperlink{class_group_def}{Group\+Def}} $\ast$ {\bfseries get\+Group\+Def} () const
+\item 
+\mbox{\Hypertarget{class_page_def_a45ff8031c22a1fae961a80e1ef5092aa}\label{class_page_def_a45ff8031c22a1fae961a80e1ef5092aa}} 
+\mbox{\hyperlink{class_page_s_dict}{Page\+S\+Dict}} $\ast$ {\bfseries get\+Sub\+Pages} () const
+\item 
+\mbox{\Hypertarget{class_page_def_abe80a9454b6ec60ca084ae1eeb7e29ef}\label{class_page_def_abe80a9454b6ec60ca084ae1eeb7e29ef}} 
+void {\bfseries add\+Inner\+Compound} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$d)
+\item 
+\mbox{\Hypertarget{class_page_def_a1a93ca13f2e7e6aebacda5b821f5f141}\label{class_page_def_a1a93ca13f2e7e6aebacda5b821f5f141}} 
+bool {\bfseries visible\+In\+Index} () const
+\item 
+\mbox{\Hypertarget{class_page_def_a728c6bd8d61e42a8bf1741178b5a5dad}\label{class_page_def_a728c6bd8d61e42a8bf1741178b5a5dad}} 
+bool {\bfseries documented\+Page} () const
+\item 
+\mbox{\Hypertarget{class_page_def_a6f3efe32c12cc22bfc816208268bdb52}\label{class_page_def_a6f3efe32c12cc22bfc816208268bdb52}} 
+bool {\bfseries has\+Sub\+Pages} () const
+\item 
+\mbox{\Hypertarget{class_page_def_a338fe7c80f290e3f8b180fe0070d3885}\label{class_page_def_a338fe7c80f290e3f8b180fe0070d3885}} 
+bool {\bfseries has\+Parent\+Page} () const
+\item 
+\mbox{\Hypertarget{class_page_def_af1e7d95d0ea082e8e7d0cb4bf94cc48c}\label{class_page_def_af1e7d95d0ea082e8e7d0cb4bf94cc48c}} 
+bool {\bfseries has\+Title} () const
+\item 
+\mbox{\Hypertarget{class_page_def_a07e18a4a6d53c04905d5d8a6822e46a2}\label{class_page_def_a07e18a4a6d53c04905d5d8a6822e46a2}} 
+\mbox{\hyperlink{class_local_toc}{Local\+Toc}} {\bfseries local\+Toc} () const
+\item 
+\mbox{\Hypertarget{class_page_def_a8419470bbca997aed992512ddbfefcae}\label{class_page_def_a8419470bbca997aed992512ddbfefcae}} 
+void {\bfseries set\+Page\+Scope} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$d)
+\item 
+\mbox{\Hypertarget{class_page_def_a5c73e687a25ad374e014d6e99da222f9}\label{class_page_def_a5c73e687a25ad374e014d6e99da222f9}} 
+\mbox{\hyperlink{class_definition}{Definition}} $\ast$ {\bfseries get\+Page\+Scope} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_page_def_a29e7f4617718d605639095833d42d0a0}{display\+Name}} (bool=T\+R\+UE) const
+\item 
+\mbox{\Hypertarget{class_page_def_a90452058dc8b09f05bda65d6f09f11f3}\label{class_page_def_a90452058dc8b09f05bda65d6f09f11f3}} 
+bool {\bfseries show\+Line\+No} () const
+\item 
+\mbox{\Hypertarget{class_page_def_a112d939dc57b93ef2e84682e0c54868c}\label{class_page_def_a112d939dc57b93ef2e84682e0c54868c}} 
+void {\bfseries write\+Documentation} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol)
+\item 
+\mbox{\Hypertarget{class_page_def_aae9b036bbdf72ebb7062f3e8952dcca5}\label{class_page_def_aae9b036bbdf72ebb7062f3e8952dcca5}} 
+void {\bfseries write\+Tag\+File} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_a}{A}} model of a page symbol. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_page_def_a1de6c2c0acdb782e053af47271fb0a3d}\label{class_page_def_a1de6c2c0acdb782e053af47271fb0a3d}} 
+\index{PageDef@{PageDef}!anchor@{anchor}}
+\index{anchor@{anchor}!PageDef@{PageDef}}
+\subsubsection{\texorpdfstring{anchor()}{anchor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Page\+Def\+::anchor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the anchor within a page where this item can be found 
+
+Implements \mbox{\hyperlink{class_definition_a56e91f9b76f41208a22cfb2336871604}{Definition}}.
+
+\mbox{\Hypertarget{class_page_def_a4485734f9ef865738e090ff6b122410f}\label{class_page_def_a4485734f9ef865738e090ff6b122410f}} 
+\index{PageDef@{PageDef}!definitionType@{definitionType}}
+\index{definitionType@{definitionType}!PageDef@{PageDef}}
+\subsubsection{\texorpdfstring{definitionType()}{definitionType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_definition_intf_ada60114bc621669dd8c19edfc6421766}{Def\+Type}} Page\+Def\+::definition\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Use this for dynamic inspection of the type of the derived class 
+
+Implements \mbox{\hyperlink{class_definition_intf_ac8ee00bc1af5558ae37f6896d16f5a3a}{Definition\+Intf}}.
+
+\mbox{\Hypertarget{class_page_def_a29e7f4617718d605639095833d42d0a0}\label{class_page_def_a29e7f4617718d605639095833d42d0a0}} 
+\index{PageDef@{PageDef}!displayName@{displayName}}
+\index{displayName@{displayName}!PageDef@{PageDef}}
+\subsubsection{\texorpdfstring{displayName()}{displayName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Page\+Def\+::display\+Name (\begin{DoxyParamCaption}\item[{bool}]{include\+Scope = {\ttfamily TRUE} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the name of the definition as it appears in the output 
+
+Implements \mbox{\hyperlink{class_definition_ac4741f70f06baac174cf71b3e11d06ac}{Definition}}.
+
+\mbox{\Hypertarget{class_page_def_a7b72dba48ce4045351aed9a397ce9b0f}\label{class_page_def_a7b72dba48ce4045351aed9a397ce9b0f}} 
+\index{PageDef@{PageDef}!getOutputFileBase@{getOutputFileBase}}
+\index{getOutputFileBase@{getOutputFileBase}!PageDef@{PageDef}}
+\subsubsection{\texorpdfstring{getOutputFileBase()}{getOutputFileBase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Page\+Def\+::get\+Output\+File\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the base file name (without extension) of this definition. as it is referenced to/written to disk. 
+
+Implements \mbox{\hyperlink{class_definition_acabecdc6bfda2015811eed5f3436322d}{Definition}}.
+
+\mbox{\Hypertarget{class_page_def_acb0b424141cbb7c1b6b5a52769cf7b06}\label{class_page_def_acb0b424141cbb7c1b6b5a52769cf7b06}} 
+\index{PageDef@{PageDef}!isLinkable@{isLinkable}}
+\index{isLinkable@{isLinkable}!PageDef@{PageDef}}
+\subsubsection{\texorpdfstring{isLinkable()}{isLinkable()}}
+{\footnotesize\ttfamily bool Page\+Def\+::is\+Linkable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns T\+R\+UE iff it is possible to link to this item. This can be a link to another project imported via a tag file. 
+
+Implements \mbox{\hyperlink{class_definition_a4002fd79c2d4dcf667c37c83d4214deb}{Definition}}.
+
+\mbox{\Hypertarget{class_page_def_a8aeb711470609d0be377c2b56aee9cef}\label{class_page_def_a8aeb711470609d0be377c2b56aee9cef}} 
+\index{PageDef@{PageDef}!isLinkableInProject@{isLinkableInProject}}
+\index{isLinkableInProject@{isLinkableInProject}!PageDef@{PageDef}}
+\subsubsection{\texorpdfstring{isLinkableInProject()}{isLinkableInProject()}}
+{\footnotesize\ttfamily bool Page\+Def\+::is\+Linkable\+In\+Project (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns T\+R\+UE iff it is possible to link to this item within this project. 
+
+Implements \mbox{\hyperlink{class_definition_a845891c7206d40c3664b562636cdf9fc}{Definition}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/pagedef.\+h\item 
+doxygen/src/pagedef.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,642 @@
+\hypertarget{class_definition}{}\section{Definition Class Reference}
+\label{class_definition}\index{Definition@{Definition}}
+
+
+{\ttfamily \#include $<$definition.\+h$>$}
+
+Inheritance diagram for Definition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.264151cm]{class_definition}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_definition_1_1_cookie}{Cookie}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_definition_afdf318b0b806e2b5b1fcdcf682bc338b}{Definition}} (const char $\ast$def\+File\+Name, int def\+Line, int def\+Column, const char $\ast$\mbox{\hyperlink{class_definition_a9324000f785d7b6b098878a3bca4df5b}{name}}, const char $\ast$b=0, const char $\ast$d=0, bool is\+Symbol=T\+R\+UE)
+\item 
+virtual \mbox{\hyperlink{class_definition_a37def2c2ca8cdc02e9f614657169e654}{$\sim$\+Definition}} ()
+\item 
+const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \& \mbox{\hyperlink{class_definition_a9324000f785d7b6b098878a3bca4df5b}{name}} () const
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_ac4741f70f06baac174cf71b3e11d06ac}{display\+Name}} (bool include\+Scope=T\+R\+UE) const =0
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_a5cff26b8db9bc19c6f61445ed8d88a46}{local\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_a60354ebca3cb065a4a6aa1944a9309d5}{qualified\+Name}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_aeb2dfc3db363a10f4d4cd1150a0ea43e}{symbol\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_acabecdc6bfda2015811eed5f3436322d}{get\+Output\+File\+Base}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_a56e91f9b76f41208a22cfb2336871604}{anchor}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_abdb114d4da6048e834ccae02393790df}{get\+Source\+File\+Base}} () const
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_a7199d0a6628c0883e5797f6b2f9f634c}{get\+Source\+Anchor}} () const
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_a4775976f52978089164213f613dbeb18}{documentation}} () const
+\item 
+int \mbox{\hyperlink{class_definition_a5ecf2e47a19282fbe1dc3413fd73263f}{doc\+Line}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_ab09272aa15b4047f0ab77652172cdd4b}{doc\+File}} () const
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_a5c10fdd766133b46d61d28a77b65426e}{brief\+Description}} (bool abbreviate=F\+A\+L\+SE) const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_a542dc2b80623c11dc2945f6ae1e1a10b}{brief\+Description\+As\+Tooltip}} () const
+\item 
+int \mbox{\hyperlink{class_definition_a1f87d37cefff16dc8a300795543a7059}{brief\+Line}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_a33e09971f67fa820e848b769fb718429}{inbody\+Documentation}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_affe50047c647407853ecc16bd99dc2f8}{inbody\+File}} () const
+\item 
+int \mbox{\hyperlink{class_definition_a59ecd8ca92f7952c598bf01da8ae7582}{inbody\+Line}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_a7517dda8109eca884911ac31b42faf3c}{brief\+File}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_a9484164b01eca0abce92001b2b77f8c3}{get\+Def\+File\+Name}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_a3775acf5b1b6bc11e096896b80fc663e}{get\+Def\+File\+Extension}} () const
+\item 
+int \mbox{\hyperlink{class_definition_ac33f1365555052b2d0861fac453c05e0}{get\+Def\+Line}} () const
+\item 
+int \mbox{\hyperlink{class_definition_a181d60d2e51d5550e5905732cedc51ed}{get\+Def\+Column}} () const
+\item 
+virtual bool \mbox{\hyperlink{class_definition_aa89347609a1643f6c4bc3852d9f773bb}{has\+Documentation}} () const
+\item 
+virtual bool \mbox{\hyperlink{class_definition_ab1af13aa3951df825dea34f1bcf2a7fc}{has\+User\+Documentation}} () const
+\item 
+virtual bool \mbox{\hyperlink{class_definition_a845891c7206d40c3664b562636cdf9fc}{is\+Linkable\+In\+Project}} () const =0
+\item 
+virtual bool \mbox{\hyperlink{class_definition_a4002fd79c2d4dcf667c37c83d4214deb}{is\+Linkable}} () const =0
+\item 
+virtual bool \mbox{\hyperlink{class_definition_af5c5321a920e7ff5fb304b630f51964e}{is\+Visible\+In\+Project}} () const
+\item 
+virtual bool \mbox{\hyperlink{class_definition_adb6bab6d36c2b84b935442a7153b1135}{is\+Visible}} () const
+\item 
+bool \mbox{\hyperlink{class_definition_a4f303fc4a5c9be7ab8160cf1792e7bda}{is\+Hidden}} () const
+\item 
+bool \mbox{\hyperlink{class_definition_a24d80ca0884834c9e767482af37b7248}{is\+Artificial}} () const
+\item 
+virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_a0186c1c36a52590d2c7c9157aaea613f}{get\+Reference}} () const
+\item 
+virtual bool \mbox{\hyperlink{class_definition_a8405121cdc0253ec9633a87500ac47ba}{is\+Reference}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_a0bd1999f66045c290a4b32e3cb8f8e6b}{external\+Reference}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&rel\+Path) const
+\item 
+int \mbox{\hyperlink{class_definition_a5bf4e2d03d7cee134bcd77392cba0e7b}{get\+Start\+Body\+Line}} () const
+\item 
+int \mbox{\hyperlink{class_definition_a139c68919a773cc9c433f077cdbffcc4}{get\+End\+Body\+Line}} () const
+\item 
+\mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$ \mbox{\hyperlink{class_definition_a9854754d60caad76e897b156ba13d992}{get\+Body\+Def}} () const
+\item 
+\mbox{\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\+Lang\+Ext}} \mbox{\hyperlink{class_definition_a3c214d451d86bf8994c9d1503ed2843d}{get\+Language}} () const
+\item 
+\mbox{\Hypertarget{class_definition_a3a32a78e6ecbc7ab4eb105ad989d5ece}\label{class_definition_a3a32a78e6ecbc7ab4eb105ad989d5ece}} 
+\mbox{\hyperlink{class_group_list}{Group\+List}} $\ast$ {\bfseries part\+Of\+Groups} () const
+\item 
+\mbox{\Hypertarget{class_definition_adae0a82b2bd814c0a0fb0f9f98b6ccf6}\label{class_definition_adae0a82b2bd814c0a0fb0f9f98b6ccf6}} 
+bool {\bfseries is\+Linkable\+Via\+Group} () const
+\item 
+\mbox{\Hypertarget{class_definition_a1fa089fda1217c0761cfe4d3eea5998e}\label{class_definition_a1fa089fda1217c0761cfe4d3eea5998e}} 
+\mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{struct_list_item_info}{List\+Item\+Info}} $>$ $\ast$ {\bfseries xref\+List\+Items} () const
+\item 
+\mbox{\Hypertarget{class_definition_aba76f799ba7442f517dbc660ccb249b7}\label{class_definition_aba76f799ba7442f517dbc660ccb249b7}} 
+virtual \mbox{\hyperlink{class_definition}{Definition}} $\ast$ {\bfseries find\+Inner\+Compound} (const char $\ast$\mbox{\hyperlink{class_definition_a9324000f785d7b6b098878a3bca4df5b}{name}}) const
+\item 
+\mbox{\Hypertarget{class_definition_a4a42ce8e8098b06709a4de372a61e8da}\label{class_definition_a4a42ce8e8098b06709a4de372a61e8da}} 
+virtual \mbox{\hyperlink{class_definition}{Definition}} $\ast$ {\bfseries get\+Outer\+Scope} () const
+\item 
+\mbox{\Hypertarget{class_definition_a5e140ad71c529318d4e43c5b4cb7f5fd}\label{class_definition_a5e140ad71c529318d4e43c5b4cb7f5fd}} 
+\mbox{\hyperlink{class_member_s_dict}{Member\+S\+Dict}} $\ast$ {\bfseries get\+References\+Members} () const
+\item 
+\mbox{\Hypertarget{class_definition_a51bb250cf881130f51b1dfdc30137e85}\label{class_definition_a51bb250cf881130f51b1dfdc30137e85}} 
+\mbox{\hyperlink{class_member_s_dict}{Member\+S\+Dict}} $\ast$ {\bfseries get\+Referenced\+By\+Members} () const
+\item 
+\mbox{\Hypertarget{class_definition_a7a19d0634ef60b73213fdbec5609d160}\label{class_definition_a7a19d0634ef60b73213fdbec5609d160}} 
+bool {\bfseries has\+Sections} () const
+\item 
+\mbox{\Hypertarget{class_definition_a5f50feb9bc3bc8fec8bce320187e904a}\label{class_definition_a5f50feb9bc3bc8fec8bce320187e904a}} 
+bool {\bfseries has\+Sources} () const
+\item 
+bool \mbox{\hyperlink{class_definition_a1a4519f06f38904ab1914ecd641c4a36}{has\+Brief\+Description}} () const
+\item 
+\mbox{\Hypertarget{class_definition_acb87b91a8bcb9fdba435ac4e1eec8fca}\label{class_definition_acb87b91a8bcb9fdba435ac4e1eec8fca}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries id} () const
+\item 
+\mbox{\hyperlink{class_section_dict}{Section\+Dict}} $\ast$ \mbox{\hyperlink{class_definition_a6e1082b554fd3077ad96455c7bacf20e}{get\+Section\+Dict}} (void)
+\item 
+virtual void \mbox{\hyperlink{class_definition_aaa3c1632bd89cb3db7c7713df4e36db0}{set\+Name}} (const char $\ast$\mbox{\hyperlink{class_definition_a9324000f785d7b6b098878a3bca4df5b}{name}})
+\item 
+void \mbox{\hyperlink{class_definition_ae653664eee43cfe5992cd91377f8e91b}{set\+Id}} (const char $\ast$\mbox{\hyperlink{class_definition_a9324000f785d7b6b098878a3bca4df5b}{name}})
+\item 
+void \mbox{\hyperlink{class_definition_a101ae2b46d12bd21492863a593d04d90}{set\+Def\+File}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&df, int def\+Line, int def\+Column)
+\item 
+virtual void \mbox{\hyperlink{class_definition_af13e2148f395d2704535e52f50ccc418}{set\+Documentation}} (const char $\ast$d, const char $\ast$\mbox{\hyperlink{class_definition_ab09272aa15b4047f0ab77652172cdd4b}{doc\+File}}, int \mbox{\hyperlink{class_definition_a5ecf2e47a19282fbe1dc3413fd73263f}{doc\+Line}}, bool strip\+White\+Space=T\+R\+UE)
+\item 
+virtual void \mbox{\hyperlink{class_definition_a5f6f7e25d740acb612b57365f9fccfc2}{set\+Brief\+Description}} (const char $\ast$b, const char $\ast$\mbox{\hyperlink{class_definition_a7517dda8109eca884911ac31b42faf3c}{brief\+File}}, int \mbox{\hyperlink{class_definition_a1f87d37cefff16dc8a300795543a7059}{brief\+Line}})
+\item 
+virtual void \mbox{\hyperlink{class_definition_a829959b92985d0264b9fc17277bf91b4}{set\+Inbody\+Documentation}} (const char $\ast$d, const char $\ast$\mbox{\hyperlink{class_definition_ab09272aa15b4047f0ab77652172cdd4b}{doc\+File}}, int \mbox{\hyperlink{class_definition_a5ecf2e47a19282fbe1dc3413fd73263f}{doc\+Line}})
+\item 
+void \mbox{\hyperlink{class_definition_a9548c1e2218ce2730c6c3e31bdac6452}{set\+Reference}} (const char $\ast$r)
+\item 
+void \mbox{\hyperlink{class_definition_a2314524366e46c9d0cd8bcb528d6238d}{add\+Sections\+To\+Definition}} (\mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{struct_section_info}{Section\+Info}} $>$ $\ast$anchor\+List)
+\item 
+\mbox{\Hypertarget{class_definition_a7c5466b95c0544781c25c93d3ed8a543}\label{class_definition_a7c5466b95c0544781c25c93d3ed8a543}} 
+void {\bfseries set\+Body\+Segment} (int bls, int ble)
+\item 
+\mbox{\Hypertarget{class_definition_a11177a4416320b6dd561b314d02c607a}\label{class_definition_a11177a4416320b6dd561b314d02c607a}} 
+void {\bfseries set\+Body\+Def} (\mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$fd)
+\item 
+\mbox{\Hypertarget{class_definition_a06d25c9164855c20278be38829e2d72e}\label{class_definition_a06d25c9164855c20278be38829e2d72e}} 
+void {\bfseries add\+Source\+Referenced\+By} (\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$d)
+\item 
+\mbox{\Hypertarget{class_definition_a153cd19977164802044d4602ee212aa3}\label{class_definition_a153cd19977164802044d4602ee212aa3}} 
+void {\bfseries add\+Source\+References} (\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$d)
+\item 
+\mbox{\Hypertarget{class_definition_afaacdadf442e3e1a33c22c5a2b49ad61}\label{class_definition_afaacdadf442e3e1a33c22c5a2b49ad61}} 
+void {\bfseries set\+Ref\+Items} (const \mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{struct_list_item_info}{List\+Item\+Info}} $>$ $\ast$sli)
+\item 
+\mbox{\Hypertarget{class_definition_ac7a24516e805c39e3f3542c387601790}\label{class_definition_ac7a24516e805c39e3f3542c387601790}} 
+void {\bfseries merge\+Ref\+Items} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$d)
+\item 
+\mbox{\Hypertarget{class_definition_a7acd14f8896e56cc2d6dcadd2cf14be7}\label{class_definition_a7acd14f8896e56cc2d6dcadd2cf14be7}} 
+virtual void {\bfseries add\+Inner\+Compound} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$d)
+\item 
+\mbox{\Hypertarget{class_definition_a222010f3d2b52bf76427034d07e0ff56}\label{class_definition_a222010f3d2b52bf76427034d07e0ff56}} 
+virtual void {\bfseries set\+Outer\+Scope} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$d)
+\item 
+\mbox{\Hypertarget{class_definition_a7166ab248989769fe2dc4f0d56b72a05}\label{class_definition_a7166ab248989769fe2dc4f0d56b72a05}} 
+virtual void {\bfseries set\+Hidden} (bool b)
+\item 
+\mbox{\Hypertarget{class_definition_a3bef4741c9dfa6cd2287ca4c9f30f775}\label{class_definition_a3bef4741c9dfa6cd2287ca4c9f30f775}} 
+void {\bfseries set\+Artificial} (bool b)
+\item 
+\mbox{\Hypertarget{class_definition_abd33a001047f6842f63f551b1ce47942}\label{class_definition_abd33a001047f6842f63f551b1ce47942}} 
+void {\bfseries set\+Language} (\mbox{\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\+Lang\+Ext}} lang)
+\item 
+void \mbox{\hyperlink{class_definition_a0d22dcffc0afca75f8ab31dd6261933f}{write\+Source\+Def}} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const char $\ast$scope\+Name)
+\item 
+void \mbox{\hyperlink{class_definition_ad5ad17068a22165040e5b256c564c603}{write\+Inline\+Code}} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const char $\ast$scope\+Name)
+\item 
+\mbox{\Hypertarget{class_definition_a0ec765eb2dc050ff415a76c5696db3dc}\label{class_definition_a0ec765eb2dc050ff415a76c5696db3dc}} 
+void {\bfseries write\+Source\+Refs} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const char $\ast$scope\+Name)
+\item 
+\mbox{\Hypertarget{class_definition_aa870f9f2ad5bfb0943d8718ace07bf63}\label{class_definition_aa870f9f2ad5bfb0943d8718ace07bf63}} 
+void {\bfseries write\+Source\+Reffed\+By} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const char $\ast$scope\+Name)
+\item 
+\mbox{\Hypertarget{class_definition_aad0c6a6beb616a7f5530c0286b9d4bcc}\label{class_definition_aad0c6a6beb616a7f5530c0286b9d4bcc}} 
+void {\bfseries make\+Part\+Of\+Group} (\mbox{\hyperlink{class_group_def}{Group\+Def}} $\ast$gd)
+\item 
+\mbox{\Hypertarget{class_definition_aeeb612c82bd26d504ef0f0a8758b0837}\label{class_definition_aeeb612c82bd26d504ef0f0a8758b0837}} 
+void {\bfseries write\+Navigation\+Path} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol) const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_abb9c001db23e5560b001814fa44934b9}{navigation\+Path\+As\+String}} () const
+\item 
+\mbox{\Hypertarget{class_definition_a0eb395213620dc7ab67532ea591752c1}\label{class_definition_a0eb395213620dc7ab67532ea591752c1}} 
+virtual void {\bfseries write\+Quick\+Member\+Links} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&, \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$) const
+\item 
+\mbox{\Hypertarget{class_definition_a2ea9c73788e47eeb9eed0c77725cb932}\label{class_definition_a2ea9c73788e47eeb9eed0c77725cb932}} 
+virtual void {\bfseries write\+Summary\+Links} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&)
+\item 
+\mbox{\Hypertarget{class_definition_afd039575cd4a6caede20780d4a65d8ac}\label{class_definition_afd039575cd4a6caede20780d4a65d8ac}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries path\+Fragment} () const
+\item 
+void \mbox{\hyperlink{class_definition_a30b5bc6680190c9d62c090f0627392d5}{write\+Doc\+Anchors\+To\+Tag\+File}} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&)
+\item 
+\mbox{\Hypertarget{class_definition_ac20deb4c9dab79868fa8ec4f42ac84ff}\label{class_definition_ac20deb4c9dab79868fa8ec4f42ac84ff}} 
+void {\bfseries set\+Local\+Name} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_definition_a9324000f785d7b6b098878a3bca4df5b}{name}})
+\item 
+\mbox{\Hypertarget{class_definition_af4b179bb64137b2e0b3da44b7b4d0f24}\label{class_definition_af4b179bb64137b2e0b3da44b7b4d0f24}} 
+void {\bfseries add\+Sections\+To\+Index} ()
+\item 
+\mbox{\Hypertarget{class_definition_a28ddfb02d84dcdcf19513a1f194fc524}\label{class_definition_a28ddfb02d84dcdcf19513a1f194fc524}} 
+void {\bfseries write\+Toc} (\mbox{\hyperlink{class_output_list}{Output\+List}} \&ol, const \mbox{\hyperlink{class_local_toc}{Local\+Toc}} \&lt)
+\item 
+\mbox{\Hypertarget{class_definition_a1f5160ecb8266412bc0948db58b3fa2a}\label{class_definition_a1f5160ecb8266412bc0948db58b3fa2a}} 
+void {\bfseries set\+Cookie} (\mbox{\hyperlink{struct_definition_1_1_cookie}{Cookie}} $\ast$cookie)
+\item 
+\mbox{\Hypertarget{class_definition_a2f324c6507f47c45129c845084266ddf}\label{class_definition_a2f324c6507f47c45129c845084266ddf}} 
+\mbox{\hyperlink{struct_definition_1_1_cookie}{Cookie}} $\ast$ {\bfseries cookie} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_definition_a952d6c4a004165c823988111910e08cd}\label{class_definition_a952d6c4a004165c823988111910e08cd}} 
+{\bfseries Definition} (const \mbox{\hyperlink{class_definition}{Definition}} \&d)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The common base class of all entity definitions found in the sources.
+
+This can be a class or a member function, or a file, or a namespace, etc. Use \mbox{\hyperlink{class_definition_intf_ac8ee00bc1af5558ae37f6896d16f5a3a}{definition\+Type()}} to find which type of definition this is. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_definition_afdf318b0b806e2b5b1fcdcf682bc338b}\label{class_definition_afdf318b0b806e2b5b1fcdcf682bc338b}} 
+\index{Definition@{Definition}!Definition@{Definition}}
+\index{Definition@{Definition}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{Definition()}{Definition()}}
+{\footnotesize\ttfamily Definition\+::\+Definition (\begin{DoxyParamCaption}\item[{const char $\ast$}]{def\+File\+Name,  }\item[{int}]{def\+Line,  }\item[{int}]{def\+Column,  }\item[{const char $\ast$}]{name,  }\item[{const char $\ast$}]{b = {\ttfamily 0},  }\item[{const char $\ast$}]{d = {\ttfamily 0},  }\item[{bool}]{is\+Symbol = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+Create a new definition \mbox{\Hypertarget{class_definition_a37def2c2ca8cdc02e9f614657169e654}\label{class_definition_a37def2c2ca8cdc02e9f614657169e654}} 
+\index{Definition@{Definition}!````~Definition@{$\sim$Definition}}
+\index{````~Definition@{$\sim$Definition}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{$\sim$Definition()}{~Definition()}}
+{\footnotesize\ttfamily Definition\+::$\sim$\+Definition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destroys the definition 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_definition_a2314524366e46c9d0cd8bcb528d6238d}\label{class_definition_a2314524366e46c9d0cd8bcb528d6238d}} 
+\index{Definition@{Definition}!addSectionsToDefinition@{addSectionsToDefinition}}
+\index{addSectionsToDefinition@{addSectionsToDefinition}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{addSectionsToDefinition()}{addSectionsToDefinition()}}
+{\footnotesize\ttfamily void Definition\+::add\+Sections\+To\+Definition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{struct_section_info}{Section\+Info}} $>$ $\ast$}]{anchor\+List }\end{DoxyParamCaption})}
+
+Add the list of anchors that mark the sections that are found in the documentation. \mbox{\Hypertarget{class_definition_a56e91f9b76f41208a22cfb2336871604}\label{class_definition_a56e91f9b76f41208a22cfb2336871604}} 
+\index{Definition@{Definition}!anchor@{anchor}}
+\index{anchor@{anchor}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{anchor()}{anchor()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::anchor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the anchor within a page where this item can be found 
+
+Implemented in \mbox{\hyperlink{class_class_def_af865817aabca93db5792b247ca8dfba6}{Class\+Def}}, \mbox{\hyperlink{class_file_def_a793b9b4a7196fd94226d4fab0a27a12d}{File\+Def}}, \mbox{\hyperlink{class_member_def_a1ef7c726fdd0f1dd2d006782dd6f766a}{Member\+Def}}, \mbox{\hyperlink{class_dir_def_ac28d85c84dbb71901ca49263f65dbdec}{Dir\+Def}}, \mbox{\hyperlink{class_page_def_a1de6c2c0acdb782e053af47271fb0a3d}{Page\+Def}}, \mbox{\hyperlink{class_group_def_a924c6e5a6fe495d70383ddc751704095}{Group\+Def}}, and \mbox{\hyperlink{class_namespace_def_ad315129c7f091c2cec0d611a592d98a2}{Namespace\+Def}}.
+
+\mbox{\Hypertarget{class_definition_a5c10fdd766133b46d61d28a77b65426e}\label{class_definition_a5c10fdd766133b46d61d28a77b65426e}} 
+\index{Definition@{Definition}!briefDescription@{briefDescription}}
+\index{briefDescription@{briefDescription}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{briefDescription()}{briefDescription()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::brief\+Description (\begin{DoxyParamCaption}\item[{bool}]{abbreviate = {\ttfamily FALSE} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the brief description of this definition. This can include commands. 
+
+Reimplemented in \mbox{\hyperlink{class_member_def_ab4ad34e63730bc94f076b920b3b9084e}{Member\+Def}}.
+
+\mbox{\Hypertarget{class_definition_a542dc2b80623c11dc2945f6ae1e1a10b}\label{class_definition_a542dc2b80623c11dc2945f6ae1e1a10b}} 
+\index{Definition@{Definition}!briefDescriptionAsTooltip@{briefDescriptionAsTooltip}}
+\index{briefDescriptionAsTooltip@{briefDescriptionAsTooltip}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{briefDescriptionAsTooltip()}{briefDescriptionAsTooltip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::brief\+Description\+As\+Tooltip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a plain text version of the brief description suitable for use as a tool tip. \mbox{\Hypertarget{class_definition_a7517dda8109eca884911ac31b42faf3c}\label{class_definition_a7517dda8109eca884911ac31b42faf3c}} 
+\index{Definition@{Definition}!briefFile@{briefFile}}
+\index{briefFile@{briefFile}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{briefFile()}{briefFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::brief\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the file in which the brief description was found. This can differ from \mbox{\hyperlink{class_definition_a9484164b01eca0abce92001b2b77f8c3}{get\+Def\+File\+Name()}}. \mbox{\Hypertarget{class_definition_a1f87d37cefff16dc8a300795543a7059}\label{class_definition_a1f87d37cefff16dc8a300795543a7059}} 
+\index{Definition@{Definition}!briefLine@{briefLine}}
+\index{briefLine@{briefLine}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{briefLine()}{briefLine()}}
+{\footnotesize\ttfamily int Definition\+::brief\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the line number at which the brief description was found. \mbox{\Hypertarget{class_definition_ac4741f70f06baac174cf71b3e11d06ac}\label{class_definition_ac4741f70f06baac174cf71b3e11d06ac}} 
+\index{Definition@{Definition}!displayName@{displayName}}
+\index{displayName@{displayName}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{displayName()}{displayName()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::display\+Name (\begin{DoxyParamCaption}\item[{bool}]{include\+Scope = {\ttfamily TRUE} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the name of the definition as it appears in the output 
+
+Implemented in \mbox{\hyperlink{class_member_def_a3c91c8522caa2b1905cd52b3eedad8fa}{Member\+Def}}, \mbox{\hyperlink{class_file_def_ab5973477f072d780c9a184d16b58410b}{File\+Def}}, \mbox{\hyperlink{class_namespace_def_a7893c9a6525e3fc406ddfa9f9dd031f1}{Namespace\+Def}}, \mbox{\hyperlink{class_page_def_a29e7f4617718d605639095833d42d0a0}{Page\+Def}}, \mbox{\hyperlink{class_dir_def_a2771a73e6f4be26be57f2c71f097126c}{Dir\+Def}}, \mbox{\hyperlink{class_group_def_a9707ecaf7f4e7231016b68a7e3f811e8}{Group\+Def}}, and \mbox{\hyperlink{class_class_def_aa891187c2712372f19ee6c202df24fec}{Class\+Def}}.
+
+\mbox{\Hypertarget{class_definition_ab09272aa15b4047f0ab77652172cdd4b}\label{class_definition_ab09272aa15b4047f0ab77652172cdd4b}} 
+\index{Definition@{Definition}!docFile@{docFile}}
+\index{docFile@{docFile}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{docFile()}{docFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::doc\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the file in which the detailed documentation block was found. This can differ from \mbox{\hyperlink{class_definition_a9484164b01eca0abce92001b2b77f8c3}{get\+Def\+File\+Name()}}. \mbox{\Hypertarget{class_definition_a5ecf2e47a19282fbe1dc3413fd73263f}\label{class_definition_a5ecf2e47a19282fbe1dc3413fd73263f}} 
+\index{Definition@{Definition}!docLine@{docLine}}
+\index{docLine@{docLine}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{docLine()}{docLine()}}
+{\footnotesize\ttfamily int Definition\+::doc\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the line number at which the detailed documentation was found. \mbox{\Hypertarget{class_definition_a4775976f52978089164213f613dbeb18}\label{class_definition_a4775976f52978089164213f613dbeb18}} 
+\index{Definition@{Definition}!documentation@{documentation}}
+\index{documentation@{documentation}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{documentation()}{documentation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::documentation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the detailed description of this definition 
+
+Reimplemented in \mbox{\hyperlink{class_member_def_a0a534c3dba8dced3afa746c535afb59b}{Member\+Def}}.
+
+\mbox{\Hypertarget{class_definition_a0bd1999f66045c290a4b32e3cb8f8e6b}\label{class_definition_a0bd1999f66045c290a4b32e3cb8f8e6b}} 
+\index{Definition@{Definition}!externalReference@{externalReference}}
+\index{externalReference@{externalReference}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{externalReference()}{externalReference()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::external\+Reference (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{rel\+Path }\end{DoxyParamCaption}) const}
+
+Convenience method to return a resolved external link \mbox{\Hypertarget{class_definition_a9854754d60caad76e897b156ba13d992}\label{class_definition_a9854754d60caad76e897b156ba13d992}} 
+\index{Definition@{Definition}!getBodyDef@{getBodyDef}}
+\index{getBodyDef@{getBodyDef}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{getBodyDef()}{getBodyDef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$ Definition\+::get\+Body\+Def (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the file in which the body of this item is located or 0 if no body is available. \mbox{\Hypertarget{class_definition_a181d60d2e51d5550e5905732cedc51ed}\label{class_definition_a181d60d2e51d5550e5905732cedc51ed}} 
+\index{Definition@{Definition}!getDefColumn@{getDefColumn}}
+\index{getDefColumn@{getDefColumn}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{getDefColumn()}{getDefColumn()}}
+{\footnotesize\ttfamily int Definition\+::get\+Def\+Column (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns the column number at which the definition was found \mbox{\Hypertarget{class_definition_a3775acf5b1b6bc11e096896b80fc663e}\label{class_definition_a3775acf5b1b6bc11e096896b80fc663e}} 
+\index{Definition@{Definition}!getDefFileExtension@{getDefFileExtension}}
+\index{getDefFileExtension@{getDefFileExtension}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{getDefFileExtension()}{getDefFileExtension()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::get\+Def\+File\+Extension (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+returns the extension of the file in which this definition was found \mbox{\Hypertarget{class_definition_a9484164b01eca0abce92001b2b77f8c3}\label{class_definition_a9484164b01eca0abce92001b2b77f8c3}} 
+\index{Definition@{Definition}!getDefFileName@{getDefFileName}}
+\index{getDefFileName@{getDefFileName}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{getDefFileName()}{getDefFileName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::get\+Def\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+returns the file in which this definition was found \mbox{\Hypertarget{class_definition_ac33f1365555052b2d0861fac453c05e0}\label{class_definition_ac33f1365555052b2d0861fac453c05e0}} 
+\index{Definition@{Definition}!getDefLine@{getDefLine}}
+\index{getDefLine@{getDefLine}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{getDefLine()}{getDefLine()}}
+{\footnotesize\ttfamily int Definition\+::get\+Def\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns the line number at which the definition was found \mbox{\Hypertarget{class_definition_a139c68919a773cc9c433f077cdbffcc4}\label{class_definition_a139c68919a773cc9c433f077cdbffcc4}} 
+\index{Definition@{Definition}!getEndBodyLine@{getEndBodyLine}}
+\index{getEndBodyLine@{getEndBodyLine}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{getEndBodyLine()}{getEndBodyLine()}}
+{\footnotesize\ttfamily int Definition\+::get\+End\+Body\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the last line of the body of this item (applicable to classes and functions). \mbox{\Hypertarget{class_definition_a3c214d451d86bf8994c9d1503ed2843d}\label{class_definition_a3c214d451d86bf8994c9d1503ed2843d}} 
+\index{Definition@{Definition}!getLanguage@{getLanguage}}
+\index{getLanguage@{getLanguage}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{getLanguage()}{getLanguage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\+Lang\+Ext}} Definition\+::get\+Language (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the programming language this definition was written in. \mbox{\Hypertarget{class_definition_acabecdc6bfda2015811eed5f3436322d}\label{class_definition_acabecdc6bfda2015811eed5f3436322d}} 
+\index{Definition@{Definition}!getOutputFileBase@{getOutputFileBase}}
+\index{getOutputFileBase@{getOutputFileBase}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{getOutputFileBase()}{getOutputFileBase()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::get\+Output\+File\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the base file name (without extension) of this definition. as it is referenced to/written to disk. 
+
+Implemented in \mbox{\hyperlink{class_class_def_a0031d083ee93ea5a0337051b4bc97719}{Class\+Def}}, \mbox{\hyperlink{class_file_def_a57496c4b5436110bd66fdfa1fee0eefe}{File\+Def}}, \mbox{\hyperlink{class_member_def_afafa6a560b69558c5d3c8bba0424c939}{Member\+Def}}, \mbox{\hyperlink{class_dir_def_a345c9c6a02715cf7d81315e4154a4a0d}{Dir\+Def}}, \mbox{\hyperlink{class_page_def_a7b72dba48ce4045351aed9a397ce9b0f}{Page\+Def}}, \mbox{\hyperlink{class_group_def_a6320c7b06b29937039549be13a698e20}{Group\+Def}}, and \mbox{\hyperlink{class_namespace_def_a7baf9b0abdda0393ab156d5a9eedf08f}{Namespace\+Def}}.
+
+\mbox{\Hypertarget{class_definition_a0186c1c36a52590d2c7c9157aaea613f}\label{class_definition_a0186c1c36a52590d2c7c9157aaea613f}} 
+\index{Definition@{Definition}!getReference@{getReference}}
+\index{getReference@{getReference}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{getReference()}{getReference()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::get\+Reference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+If this definition was imported via a tag file, this function returns the tagfile for the external project. This can be translated into an external link target via Doxygen\+::tag\+Destination\+Dict 
+
+Reimplemented in \mbox{\hyperlink{class_class_def_aa19a0146566892e3f947698762d6e3e8}{Class\+Def}}, and \mbox{\hyperlink{class_member_def_a96b40b99dcb42feaf5cb9de1bf784f0f}{Member\+Def}}.
+
+\mbox{\Hypertarget{class_definition_a6e1082b554fd3077ad96455c7bacf20e}\label{class_definition_a6e1082b554fd3077ad96455c7bacf20e}} 
+\index{Definition@{Definition}!getSectionDict@{getSectionDict}}
+\index{getSectionDict@{getSectionDict}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{getSectionDict()}{getSectionDict()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_section_dict}{Section\+Dict}} $\ast$ Definition\+::get\+Section\+Dict (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+returns the section dictionary, only of importance for pagedef \mbox{\Hypertarget{class_definition_a7199d0a6628c0883e5797f6b2f9f634c}\label{class_definition_a7199d0a6628c0883e5797f6b2f9f634c}} 
+\index{Definition@{Definition}!getSourceAnchor@{getSourceAnchor}}
+\index{getSourceAnchor@{getSourceAnchor}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{getSourceAnchor()}{getSourceAnchor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::get\+Source\+Anchor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the anchor of the source listing of this definition. \mbox{\Hypertarget{class_definition_abdb114d4da6048e834ccae02393790df}\label{class_definition_abdb114d4da6048e834ccae02393790df}} 
+\index{Definition@{Definition}!getSourceFileBase@{getSourceFileBase}}
+\index{getSourceFileBase@{getSourceFileBase}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{getSourceFileBase()}{getSourceFileBase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::get\+Source\+File\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the name of the source listing of this definition. 
+
+Reimplemented in \mbox{\hyperlink{class_class_def_a35e351146e4ce259ee129551a167f0bd}{Class\+Def}}, and \mbox{\hyperlink{class_file_def_a9ddb22ec1cbae4e2b8d192c455103046}{File\+Def}}.
+
+\mbox{\Hypertarget{class_definition_a5bf4e2d03d7cee134bcd77392cba0e7b}\label{class_definition_a5bf4e2d03d7cee134bcd77392cba0e7b}} 
+\index{Definition@{Definition}!getStartBodyLine@{getStartBodyLine}}
+\index{getStartBodyLine@{getStartBodyLine}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{getStartBodyLine()}{getStartBodyLine()}}
+{\footnotesize\ttfamily int Definition\+::get\+Start\+Body\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the first line of the body of this item (applicable to classes and functions). \mbox{\Hypertarget{class_definition_a1a4519f06f38904ab1914ecd641c4a36}\label{class_definition_a1a4519f06f38904ab1914ecd641c4a36}} 
+\index{Definition@{Definition}!hasBriefDescription@{hasBriefDescription}}
+\index{hasBriefDescription@{hasBriefDescription}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{hasBriefDescription()}{hasBriefDescription()}}
+{\footnotesize\ttfamily bool Definition\+::has\+Brief\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+returns T\+R\+UE if this class has a brief description \mbox{\Hypertarget{class_definition_aa89347609a1643f6c4bc3852d9f773bb}\label{class_definition_aa89347609a1643f6c4bc3852d9f773bb}} 
+\index{Definition@{Definition}!hasDocumentation@{hasDocumentation}}
+\index{hasDocumentation@{hasDocumentation}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{hasDocumentation()}{hasDocumentation()}}
+{\footnotesize\ttfamily bool Definition\+::has\+Documentation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns T\+R\+UE iff the definition is documented (which could be generated documentation) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_definition_ab1af13aa3951df825dea34f1bcf2a7fc}{has\+User\+Documentation()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_member_def_aa92ecbdc1c50f61e84d2af414b551d4c}{Member\+Def}}, and \mbox{\hyperlink{class_class_def_acb106b87cabffd7dcf3c7b692f61454b}{Class\+Def}}.
+
+\mbox{\Hypertarget{class_definition_ab1af13aa3951df825dea34f1bcf2a7fc}\label{class_definition_ab1af13aa3951df825dea34f1bcf2a7fc}} 
+\index{Definition@{Definition}!hasUserDocumentation@{hasUserDocumentation}}
+\index{hasUserDocumentation@{hasUserDocumentation}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{hasUserDocumentation()}{hasUserDocumentation()}}
+{\footnotesize\ttfamily bool Definition\+::has\+User\+Documentation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns T\+R\+UE iff the definition is documented by the user. \mbox{\Hypertarget{class_definition_a33e09971f67fa820e848b769fb718429}\label{class_definition_a33e09971f67fa820e848b769fb718429}} 
+\index{Definition@{Definition}!inbodyDocumentation@{inbodyDocumentation}}
+\index{inbodyDocumentation@{inbodyDocumentation}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{inbodyDocumentation()}{inbodyDocumentation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::inbody\+Documentation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the documentation found inside the body of a member \mbox{\Hypertarget{class_definition_affe50047c647407853ecc16bd99dc2f8}\label{class_definition_affe50047c647407853ecc16bd99dc2f8}} 
+\index{Definition@{Definition}!inbodyFile@{inbodyFile}}
+\index{inbodyFile@{inbodyFile}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{inbodyFile()}{inbodyFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::inbody\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the file in which the in body documentation was found \mbox{\Hypertarget{class_definition_a59ecd8ca92f7952c598bf01da8ae7582}\label{class_definition_a59ecd8ca92f7952c598bf01da8ae7582}} 
+\index{Definition@{Definition}!inbodyLine@{inbodyLine}}
+\index{inbodyLine@{inbodyLine}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{inbodyLine()}{inbodyLine()}}
+{\footnotesize\ttfamily int Definition\+::inbody\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the line at which the first in body documentation part was found \mbox{\Hypertarget{class_definition_a24d80ca0884834c9e767482af37b7248}\label{class_definition_a24d80ca0884834c9e767482af37b7248}} 
+\index{Definition@{Definition}!isArtificial@{isArtificial}}
+\index{isArtificial@{isArtificial}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{isArtificial()}{isArtificial()}}
+{\footnotesize\ttfamily bool Definition\+::is\+Artificial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+returns T\+R\+UE if this entity was artificially introduced, for instance because it is used to show a template instantiation relation. \mbox{\Hypertarget{class_definition_a4f303fc4a5c9be7ab8160cf1792e7bda}\label{class_definition_a4f303fc4a5c9be7ab8160cf1792e7bda}} 
+\index{Definition@{Definition}!isHidden@{isHidden}}
+\index{isHidden@{isHidden}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{isHidden()}{isHidden()}}
+{\footnotesize\ttfamily bool Definition\+::is\+Hidden (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns T\+R\+UE iff this item is supposed to be hidden from the output. \mbox{\Hypertarget{class_definition_a4002fd79c2d4dcf667c37c83d4214deb}\label{class_definition_a4002fd79c2d4dcf667c37c83d4214deb}} 
+\index{Definition@{Definition}!isLinkable@{isLinkable}}
+\index{isLinkable@{isLinkable}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{isLinkable()}{isLinkable()}}
+{\footnotesize\ttfamily virtual bool Definition\+::is\+Linkable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns T\+R\+UE iff it is possible to link to this item. This can be a link to another project imported via a tag file. 
+
+Implemented in \mbox{\hyperlink{class_member_def_a2a703ac083e9314dc800df330f3eb683}{Member\+Def}}, \mbox{\hyperlink{class_class_def_ab42c120a9326e77882857bc53ab2b7e0}{Class\+Def}}, \mbox{\hyperlink{class_file_def_a4d175f205d548fa28fc9c5aed8095aee}{File\+Def}}, \mbox{\hyperlink{class_namespace_def_a733e21e2422707a338b42b2c4e2ab37b}{Namespace\+Def}}, \mbox{\hyperlink{class_group_def_a6aeb6d9849dfceb7809cfbda4bfb2503}{Group\+Def}}, \mbox{\hyperlink{class_dir_def_a7f8f2ffe405a82ee00982ccf7d1fd750}{Dir\+Def}}, and \mbox{\hyperlink{class_page_def_acb0b424141cbb7c1b6b5a52769cf7b06}{Page\+Def}}.
+
+\mbox{\Hypertarget{class_definition_a845891c7206d40c3664b562636cdf9fc}\label{class_definition_a845891c7206d40c3664b562636cdf9fc}} 
+\index{Definition@{Definition}!isLinkableInProject@{isLinkableInProject}}
+\index{isLinkableInProject@{isLinkableInProject}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{isLinkableInProject()}{isLinkableInProject()}}
+{\footnotesize\ttfamily virtual bool Definition\+::is\+Linkable\+In\+Project (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns T\+R\+UE iff it is possible to link to this item within this project. 
+
+Implemented in \mbox{\hyperlink{class_member_def_ab53677dd2218300ee758263ec23e8cbd}{Member\+Def}}, \mbox{\hyperlink{class_class_def_a54fd0971529bf396c31a2a5c67acbea7}{Class\+Def}}, \mbox{\hyperlink{class_file_def_ad8195d5d5b2be4f11d37e8d75f9e4659}{File\+Def}}, \mbox{\hyperlink{class_namespace_def_a3d9655e111c40aa7005ded973d6a8e89}{Namespace\+Def}}, \mbox{\hyperlink{class_group_def_a916a94699f6234e2bf5594ff12bbf764}{Group\+Def}}, \mbox{\hyperlink{class_dir_def_a9d0906d74985d67bbeccc91d7068d99c}{Dir\+Def}}, and \mbox{\hyperlink{class_page_def_a8aeb711470609d0be377c2b56aee9cef}{Page\+Def}}.
+
+\mbox{\Hypertarget{class_definition_a8405121cdc0253ec9633a87500ac47ba}\label{class_definition_a8405121cdc0253ec9633a87500ac47ba}} 
+\index{Definition@{Definition}!isReference@{isReference}}
+\index{isReference@{isReference}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{isReference()}{isReference()}}
+{\footnotesize\ttfamily bool Definition\+::is\+Reference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns T\+R\+UE if this definition is imported via a tag file. 
+
+Reimplemented in \mbox{\hyperlink{class_member_def_a285b80c1f135ce6ed9fa3a52e1435538}{Member\+Def}}, and \mbox{\hyperlink{class_class_def_a9a6dbef98acabb06d9e1792e3c82c800}{Class\+Def}}.
+
+\mbox{\Hypertarget{class_definition_adb6bab6d36c2b84b935442a7153b1135}\label{class_definition_adb6bab6d36c2b84b935442a7153b1135}} 
+\index{Definition@{Definition}!isVisible@{isVisible}}
+\index{isVisible@{isVisible}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{isVisible()}{isVisible()}}
+{\footnotesize\ttfamily bool Definition\+::is\+Visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns T\+R\+UE iff the name may appear in the output \mbox{\Hypertarget{class_definition_af5c5321a920e7ff5fb304b630f51964e}\label{class_definition_af5c5321a920e7ff5fb304b630f51964e}} 
+\index{Definition@{Definition}!isVisibleInProject@{isVisibleInProject}}
+\index{isVisibleInProject@{isVisibleInProject}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{isVisibleInProject()}{isVisibleInProject()}}
+{\footnotesize\ttfamily bool Definition\+::is\+Visible\+In\+Project (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns T\+R\+UE iff the name is part of this project and may appear in the output \mbox{\Hypertarget{class_definition_a5cff26b8db9bc19c6f61445ed8d88a46}\label{class_definition_a5cff26b8db9bc19c6f61445ed8d88a46}} 
+\index{Definition@{Definition}!localName@{localName}}
+\index{localName@{localName}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{localName()}{localName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::local\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the local name without any scope qualifiers. \mbox{\Hypertarget{class_definition_a9324000f785d7b6b098878a3bca4df5b}\label{class_definition_a9324000f785d7b6b098878a3bca4df5b}} 
+\index{Definition@{Definition}!name@{name}}
+\index{name@{name}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}}\& Definition\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the name of the definition \mbox{\Hypertarget{class_definition_abb9c001db23e5560b001814fa44934b9}\label{class_definition_abb9c001db23e5560b001814fa44934b9}} 
+\index{Definition@{Definition}!navigationPathAsString@{navigationPathAsString}}
+\index{navigationPathAsString@{navigationPathAsString}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{navigationPathAsString()}{navigationPathAsString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::navigation\+Path\+As\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the string used in the footer for \$navpath when G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+T\+R\+E\+E\+V\+I\+EW is enabled \mbox{\Hypertarget{class_definition_a60354ebca3cb065a4a6aa1944a9309d5}\label{class_definition_a60354ebca3cb065a4a6aa1944a9309d5}} 
+\index{Definition@{Definition}!qualifiedName@{qualifiedName}}
+\index{qualifiedName@{qualifiedName}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{qualifiedName()}{qualifiedName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::qualified\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the fully qualified name of this definition 
+
+Reimplemented in \mbox{\hyperlink{class_member_def_a910beace3eb5065c82c9c9f452532dfc}{Member\+Def}}.
+
+\mbox{\Hypertarget{class_definition_a5f6f7e25d740acb612b57365f9fccfc2}\label{class_definition_a5f6f7e25d740acb612b57365f9fccfc2}} 
+\index{Definition@{Definition}!setBriefDescription@{setBriefDescription}}
+\index{setBriefDescription@{setBriefDescription}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{setBriefDescription()}{setBriefDescription()}}
+{\footnotesize\ttfamily void Definition\+::set\+Brief\+Description (\begin{DoxyParamCaption}\item[{const char $\ast$}]{b,  }\item[{const char $\ast$}]{brief\+File,  }\item[{int}]{brief\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the brief description of this definition to {\itshape b}. \mbox{\hyperlink{class_a}{A}} dot is added to the sentence if not available. 
+
+Reimplemented in \mbox{\hyperlink{class_member_def_ac4a25886f70c3888e60c8e5d736720e5}{Member\+Def}}.
+
+\mbox{\Hypertarget{class_definition_a101ae2b46d12bd21492863a593d04d90}\label{class_definition_a101ae2b46d12bd21492863a593d04d90}} 
+\index{Definition@{Definition}!setDefFile@{setDefFile}}
+\index{setDefFile@{setDefFile}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{setDefFile()}{setDefFile()}}
+{\footnotesize\ttfamily void Definition\+::set\+Def\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{df,  }\item[{int}]{def\+Line,  }\item[{int}]{def\+Column }\end{DoxyParamCaption})}
+
+Set a new file name and position \mbox{\Hypertarget{class_definition_af13e2148f395d2704535e52f50ccc418}\label{class_definition_af13e2148f395d2704535e52f50ccc418}} 
+\index{Definition@{Definition}!setDocumentation@{setDocumentation}}
+\index{setDocumentation@{setDocumentation}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{setDocumentation()}{setDocumentation()}}
+{\footnotesize\ttfamily void Definition\+::set\+Documentation (\begin{DoxyParamCaption}\item[{const char $\ast$}]{d,  }\item[{const char $\ast$}]{doc\+File,  }\item[{int}]{doc\+Line,  }\item[{bool}]{strip\+White\+Space = {\ttfamily TRUE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the documentation of this definition to {\itshape d}. 
+
+Reimplemented in \mbox{\hyperlink{class_member_def_a357486962b5d04cf93dbb52a7a2f2bf6}{Member\+Def}}.
+
+\mbox{\Hypertarget{class_definition_ae653664eee43cfe5992cd91377f8e91b}\label{class_definition_ae653664eee43cfe5992cd91377f8e91b}} 
+\index{Definition@{Definition}!setId@{setId}}
+\index{setId@{setId}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void Definition\+::set\+Id (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+Sets a unique id for the symbol. Used for libclang integration. \mbox{\Hypertarget{class_definition_a829959b92985d0264b9fc17277bf91b4}\label{class_definition_a829959b92985d0264b9fc17277bf91b4}} 
+\index{Definition@{Definition}!setInbodyDocumentation@{setInbodyDocumentation}}
+\index{setInbodyDocumentation@{setInbodyDocumentation}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{setInbodyDocumentation()}{setInbodyDocumentation()}}
+{\footnotesize\ttfamily void Definition\+::set\+Inbody\+Documentation (\begin{DoxyParamCaption}\item[{const char $\ast$}]{d,  }\item[{const char $\ast$}]{doc\+File,  }\item[{int}]{doc\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set the documentation that was found inside the body of an item. If there was already some documentation set, the new documentation will be appended. 
+
+Reimplemented in \mbox{\hyperlink{class_member_def_a6c64c400180a47b04ad9a1d18a535184}{Member\+Def}}.
+
+\mbox{\Hypertarget{class_definition_aaa3c1632bd89cb3db7c7713df4e36db0}\label{class_definition_aaa3c1632bd89cb3db7c7713df4e36db0}} 
+\index{Definition@{Definition}!setName@{setName}}
+\index{setName@{setName}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Definition\+::set\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets a new {\itshape name} for the definition 
+
+Reimplemented in \mbox{\hyperlink{class_class_def_a3e64e04797c5b3e0c8d3f83ed9f606df}{Class\+Def}}.
+
+\mbox{\Hypertarget{class_definition_a9548c1e2218ce2730c6c3e31bdac6452}\label{class_definition_a9548c1e2218ce2730c6c3e31bdac6452}} 
+\index{Definition@{Definition}!setReference@{setReference}}
+\index{setReference@{setReference}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{setReference()}{setReference()}}
+{\footnotesize\ttfamily void Definition\+::set\+Reference (\begin{DoxyParamCaption}\item[{const char $\ast$}]{r }\end{DoxyParamCaption})}
+
+Sets the tag file id via which this definition was imported. \mbox{\Hypertarget{class_definition_aeb2dfc3db363a10f4d4cd1150a0ea43e}\label{class_definition_aeb2dfc3db363a10f4d4cd1150a0ea43e}} 
+\index{Definition@{Definition}!symbolName@{symbolName}}
+\index{symbolName@{symbolName}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{symbolName()}{symbolName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Definition\+::symbol\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the name of this definition as it appears in the symbol map. \mbox{\Hypertarget{class_definition_a30b5bc6680190c9d62c090f0627392d5}\label{class_definition_a30b5bc6680190c9d62c090f0627392d5}} 
+\index{Definition@{Definition}!writeDocAnchorsToTagFile@{writeDocAnchorsToTagFile}}
+\index{writeDocAnchorsToTagFile@{writeDocAnchorsToTagFile}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{writeDocAnchorsToTagFile()}{writeDocAnchorsToTagFile()}}
+{\footnotesize\ttfamily void Definition\+::write\+Doc\+Anchors\+To\+Tag\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&}]{tag\+File }\end{DoxyParamCaption})}
+
+Writes the documentation anchors of the definition to the Doxygen\+::tag\+File stream. \mbox{\Hypertarget{class_definition_ad5ad17068a22165040e5b256c564c603}\label{class_definition_ad5ad17068a22165040e5b256c564c603}} 
+\index{Definition@{Definition}!writeInlineCode@{writeInlineCode}}
+\index{writeInlineCode@{writeInlineCode}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{writeInlineCode()}{writeInlineCode()}}
+{\footnotesize\ttfamily void Definition\+::write\+Inline\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_list}{Output\+List}} \&}]{ol,  }\item[{const char $\ast$}]{scope\+Name }\end{DoxyParamCaption})}
+
+Write code of this definition into the documentation \mbox{\Hypertarget{class_definition_a0d22dcffc0afca75f8ab31dd6261933f}\label{class_definition_a0d22dcffc0afca75f8ab31dd6261933f}} 
+\index{Definition@{Definition}!writeSourceDef@{writeSourceDef}}
+\index{writeSourceDef@{writeSourceDef}!Definition@{Definition}}
+\subsubsection{\texorpdfstring{writeSourceDef()}{writeSourceDef()}}
+{\footnotesize\ttfamily void Definition\+::write\+Source\+Def (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_list}{Output\+List}} \&}]{ol,  }\item[{const char $\ast$}]{scope\+Name }\end{DoxyParamCaption})}
+
+Write a reference to the source code defining this definition 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/definition.\+h\item 
+doxygen/src/definition.\+cpp\end{DoxyCompactItemize}

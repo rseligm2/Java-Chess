@@ -1,0 +1,88 @@
+\hypertarget{class_q_int_dict}{}\section{Q\+Int\+Dict$<$ type $>$ Class Template Reference}
+\label{class_q_int_dict}\index{QIntDict$<$ type $>$@{QIntDict$<$ type $>$}}
+Inheritance diagram for Q\+Int\+Dict$<$ type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_q_int_dict}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_int_dict_a8e08f6bd27944aba2448a7d46599344e}\label{class_q_int_dict_a8e08f6bd27944aba2448a7d46599344e}} 
+{\bfseries Q\+Int\+Dict} (int size=17)
+\item 
+\mbox{\Hypertarget{class_q_int_dict_af742692f072b38878864d47294cc82f0}\label{class_q_int_dict_af742692f072b38878864d47294cc82f0}} 
+{\bfseries Q\+Int\+Dict} (const \mbox{\hyperlink{class_q_int_dict}{Q\+Int\+Dict}}$<$ type $>$ \&d)
+\item 
+\mbox{\Hypertarget{class_q_int_dict_a4244a6c344ab404ca576d343ae6613fb}\label{class_q_int_dict_a4244a6c344ab404ca576d343ae6613fb}} 
+\mbox{\hyperlink{class_q_int_dict}{Q\+Int\+Dict}}$<$ type $>$ \& {\bfseries operator=} (const \mbox{\hyperlink{class_q_int_dict}{Q\+Int\+Dict}}$<$ type $>$ \&d)
+\item 
+uint \mbox{\hyperlink{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}{count}} () const
+\item 
+\mbox{\Hypertarget{class_q_int_dict_a45d9b5244cd17b50ccb61564693e6c3d}\label{class_q_int_dict_a45d9b5244cd17b50ccb61564693e6c3d}} 
+uint {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class_q_int_dict_a3eb4a75ac5b10a1a0625784124e16d2d}\label{class_q_int_dict_a3eb4a75ac5b10a1a0625784124e16d2d}} 
+bool {\bfseries is\+Empty} () const
+\item 
+\mbox{\Hypertarget{class_q_int_dict_a35741cb744a4a35802f63157a8ca35d8}\label{class_q_int_dict_a35741cb744a4a35802f63157a8ca35d8}} 
+void {\bfseries insert} (long k, const type $\ast$d)
+\item 
+\mbox{\Hypertarget{class_q_int_dict_a799b08f520ac7f188d8d602cc9ecdeb8}\label{class_q_int_dict_a799b08f520ac7f188d8d602cc9ecdeb8}} 
+void {\bfseries replace} (long k, const type $\ast$d)
+\item 
+\mbox{\Hypertarget{class_q_int_dict_aac763816e720327cb6f5a66817bf2484}\label{class_q_int_dict_aac763816e720327cb6f5a66817bf2484}} 
+bool {\bfseries remove} (long k)
+\item 
+\mbox{\Hypertarget{class_q_int_dict_ae6e5a142ad8e220108189547163c488d}\label{class_q_int_dict_ae6e5a142ad8e220108189547163c488d}} 
+type $\ast$ {\bfseries take} (long k)
+\item 
+\mbox{\Hypertarget{class_q_int_dict_a5e91883c9f5aba671e04b0fb8a0f80de}\label{class_q_int_dict_a5e91883c9f5aba671e04b0fb8a0f80de}} 
+type $\ast$ {\bfseries find} (long k) const
+\item 
+\mbox{\Hypertarget{class_q_int_dict_ad3350419f03eb644e2b5216b2430bc3d}\label{class_q_int_dict_ad3350419f03eb644e2b5216b2430bc3d}} 
+type $\ast$ {\bfseries operator\mbox{[}$\,$\mbox{]}} (long k) const
+\item 
+void \mbox{\hyperlink{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}{clear}} ()
+\item 
+\mbox{\Hypertarget{class_q_int_dict_a08817cee21fcf121cd45ede3e5f36e69}\label{class_q_int_dict_a08817cee21fcf121cd45ede3e5f36e69}} 
+void {\bfseries resize} (uint n)
+\item 
+\mbox{\Hypertarget{class_q_int_dict_a9483fd2d820470dd50e3ba2ec0186706}\label{class_q_int_dict_a9483fd2d820470dd50e3ba2ec0186706}} 
+void {\bfseries statistics} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}\label{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}} 
+\index{QIntDict$<$ type $>$@{QIntDict$<$ type $>$}!clear@{clear}}
+\index{clear@{clear}!QIntDict$<$ type $>$@{QIntDict$<$ type $>$}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class type$>$ \\
+void \mbox{\hyperlink{class_q_int_dict}{Q\+Int\+Dict}}$<$ type $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes all objects from the collection. The objects will be deleted if auto-\/delete has been enabled. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_collection_a6ed41913c76bfba54be6da26015ee3f3}{set\+Auto\+Delete()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_q_g_dict_a991443b3568622b97772e234fe61dfd7}{Q\+G\+Dict}}.
+
+\mbox{\Hypertarget{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}\label{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}} 
+\index{QIntDict$<$ type $>$@{QIntDict$<$ type $>$}!count@{count}}
+\index{count@{count}!QIntDict$<$ type $>$@{QIntDict$<$ type $>$}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily template$<$class type$>$ \\
+uint \mbox{\hyperlink{class_q_int_dict}{Q\+Int\+Dict}}$<$ type $>$\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of objects in the collection. 
+
+Reimplemented from \mbox{\hyperlink{class_q_g_dict_a13f6cc9bdbfe37db323b47947c1e017c}{Q\+G\+Dict}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qintdict.\+h\end{DoxyCompactItemize}

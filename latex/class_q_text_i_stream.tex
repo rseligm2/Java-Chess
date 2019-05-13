@@ -1,0 +1,72 @@
+\hypertarget{class_q_text_i_stream}{}\section{Q\+Text\+I\+Stream Class Reference}
+\label{class_q_text_i_stream}\index{QTextIStream@{QTextIStream}}
+
+
+\mbox{\hyperlink{class_a}{A}} convenience class for input streams.  
+
+
+
+
+{\ttfamily \#include $<$qtextstream.\+h$>$}
+
+Inheritance diagram for Q\+Text\+I\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_text_i_stream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_text_i_stream_ab28dbfb8b102119b18d71bb9676863e4}{Q\+Text\+I\+Stream}} (\mbox{\hyperlink{class_q_string}{Q\+String}} $\ast$s)
+\item 
+\mbox{\hyperlink{class_q_text_i_stream_a4b612259aaacfd1d63d30f7a1f8f92dc}{Q\+Text\+I\+Stream}} (\mbox{\hyperlink{class_q_array}{Q\+Byte\+Array}} ba)
+\item 
+\mbox{\hyperlink{class_q_text_i_stream_a1b287a75019206027b1d7fd7f175600e}{Q\+Text\+I\+Stream}} (F\+I\+LE $\ast$f)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_a}{A}} convenience class for input streams. 
+
+For simple tasks, code should be simple. Hence this class is a shorthand to avoid passing the {\itshape mode} argument to the normal \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} constructors.
+
+This makes it easy for example, to write things like this\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} data = \textcolor{stringliteral}{"123 456"};}
+\DoxyCodeLine{\textcolor{keywordtype}{int} a, b;}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_text_i_stream_ab28dbfb8b102119b18d71bb9676863e4}{QTextIStream}}(\&data) >> a >> b;}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_text_o_stream}{Q\+Text\+O\+Stream}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_text_i_stream_ab28dbfb8b102119b18d71bb9676863e4}\label{class_q_text_i_stream_ab28dbfb8b102119b18d71bb9676863e4}} 
+\index{QTextIStream@{QTextIStream}!QTextIStream@{QTextIStream}}
+\index{QTextIStream@{QTextIStream}!QTextIStream@{QTextIStream}}
+\subsubsection{\texorpdfstring{QTextIStream()}{QTextIStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Q\+Text\+I\+Stream\+::\+Q\+Text\+I\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_string}{Q\+String}} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a stream to read from string {\itshape s}. \mbox{\Hypertarget{class_q_text_i_stream_a4b612259aaacfd1d63d30f7a1f8f92dc}\label{class_q_text_i_stream_a4b612259aaacfd1d63d30f7a1f8f92dc}} 
+\index{QTextIStream@{QTextIStream}!QTextIStream@{QTextIStream}}
+\index{QTextIStream@{QTextIStream}!QTextIStream@{QTextIStream}}
+\subsubsection{\texorpdfstring{QTextIStream()}{QTextIStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Q\+Text\+I\+Stream\+::\+Q\+Text\+I\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_array}{Q\+Byte\+Array}}}]{ba }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a stream to read from the array {\itshape ba}. \mbox{\Hypertarget{class_q_text_i_stream_a1b287a75019206027b1d7fd7f175600e}\label{class_q_text_i_stream_a1b287a75019206027b1d7fd7f175600e}} 
+\index{QTextIStream@{QTextIStream}!QTextIStream@{QTextIStream}}
+\index{QTextIStream@{QTextIStream}!QTextIStream@{QTextIStream}}
+\subsubsection{\texorpdfstring{QTextIStream()}{QTextIStream()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Q\+Text\+I\+Stream\+::\+Q\+Text\+I\+Stream (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a stream to read from the file {\itshape f}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qtextstream.\+h\item 
+doxygen/qtools/qtextstream.\+cpp\end{DoxyCompactItemize}

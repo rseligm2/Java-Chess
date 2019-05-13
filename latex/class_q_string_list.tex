@@ -1,0 +1,201 @@
+\hypertarget{class_q_string_list}{}\section{Q\+String\+List Class Reference}
+\label{class_q_string_list}\index{QStringList@{QStringList}}
+
+
+\mbox{\hyperlink{class_a}{A}} list of strings.  
+
+
+
+
+{\ttfamily \#include $<$qstringlist.\+h$>$}
+
+Inheritance diagram for Q\+String\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_string_list}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_string_list_a3e6ca70816297d8ad4b7baa749a0b8e2}{Q\+String\+List}} ()
+\item 
+\mbox{\hyperlink{class_q_string_list_a81b4d15aba319a62202e2b5c53212c5d}{Q\+String\+List}} (const \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} \&l)
+\item 
+\mbox{\hyperlink{class_q_string_list_ab94a73fead9d31d023d4fc0816542f33}{Q\+String\+List}} (const \mbox{\hyperlink{class_q_value_list}{Q\+Value\+List}}$<$ \mbox{\hyperlink{class_q_string}{Q\+String}} $>$ \&l)
+\item 
+\mbox{\hyperlink{class_q_string_list_ae2fcb3e62bfc329f6f4609cb387cb52d}{Q\+String\+List}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&i)
+\item 
+\mbox{\hyperlink{class_q_string_list_acc4b2b8e5b8b04da731af0657491c963}{Q\+String\+List}} (const char $\ast$i)
+\item 
+void \mbox{\hyperlink{class_q_string_list_a1b3bf672d6dd980fb487e9392fdd9bd6}{sort}} ()
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_list_a4d14f4987725926a5c812991a27d0f91}{join}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&sep) const
+\item 
+\mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} \mbox{\hyperlink{class_q_string_list_ae22f5a9cd58ef6b7f99946f800625344}{grep}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&str, bool cs=T\+R\+UE) const
+\item 
+\mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} \mbox{\hyperlink{class_q_string_list_ae04b71725ca03fd3bace74af83df48fa}{grep}} (const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&expr) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} \mbox{\hyperlink{class_q_string_list_a8afc2284556889d4ab1930626b55f8a2}{from\+Str\+List}} (const \mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}} \&)
+\item 
+static \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} \mbox{\hyperlink{class_q_string_list_a2c21b167a54aa8a8082996d7f18ca5bd}{split}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&sep, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&str, bool allow\+Empty\+Entries=F\+A\+L\+SE)
+\item 
+\mbox{\Hypertarget{class_q_string_list_aa77dd3d336a00364cc748851d9b52398}\label{class_q_string_list_aa77dd3d336a00364cc748851d9b52398}} 
+static \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} {\bfseries split} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&sep, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&str, bool allow\+Empty\+Entries=F\+A\+L\+SE)
+\item 
+static \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} \mbox{\hyperlink{class_q_string_list_a57bbbd781091ae194b64138970497a87}{split}} (const \mbox{\hyperlink{class_q_char}{Q\+Char}} \&sep, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&str, bool allow\+Empty\+Entries=F\+A\+L\+SE)
+\item 
+static \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} \mbox{\hyperlink{class_q_string_list_a9392a3dfe579b24ee51cd4bd754801e1}{split}} (const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&sep, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&str, bool allow\+Empty\+Entries=F\+A\+L\+SE)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_a}{A}} list of strings. 
+
+\mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} is basically a \mbox{\hyperlink{class_q_value_list}{Q\+Value\+List}} of \mbox{\hyperlink{class_q_string}{Q\+String}} objects. As opposed to \mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}}, that stores pointers to characters, \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} deals with real \mbox{\hyperlink{class_q_string}{Q\+String}} objects. It is the class of choice whenever you work with unicode strings.
+
+Like \mbox{\hyperlink{class_q_string}{Q\+String}} itself, \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} objects are implicit shared. Passing them around as value-\/parameters is both fast and safe.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string_list}{QStringList}} list;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// three different ways of appending values:}}
+\DoxyCodeLine{list.append( \textcolor{stringliteral}{"Torben"});}
+\DoxyCodeLine{list += \textcolor{stringliteral}{"Warwick"};}
+\DoxyCodeLine{list << \textcolor{stringliteral}{"Matthias"} << \textcolor{stringliteral}{"Arnt"} << \textcolor{stringliteral}{"Paul"};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// sort the list, Arnt's now first}}
+\DoxyCodeLine{list.\mbox{\hyperlink{class_q_string_list_a1b3bf672d6dd980fb487e9392fdd9bd6}{sort}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// print it out}}
+\DoxyCodeLine{\textcolor{keywordflow}{for} ( \mbox{\hyperlink{class_q_value_list_iterator}{QStringList::Iterator}} it = list.begin(); it != list.end(); ++it ) \{}
+\DoxyCodeLine{    printf( \textcolor{stringliteral}{"\%s \(\backslash\)n"}, (*it).latin1() );}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+Convenience methods such as \mbox{\hyperlink{class_q_string_list_a1b3bf672d6dd980fb487e9392fdd9bd6}{sort()}}, \mbox{\hyperlink{class_q_string_list_a2c21b167a54aa8a8082996d7f18ca5bd}{split()}}, \mbox{\hyperlink{class_q_string_list_a4d14f4987725926a5c812991a27d0f91}{join()}} and \mbox{\hyperlink{class_q_string_list_ae22f5a9cd58ef6b7f99946f800625344}{grep()}} make working with \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} easy. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_string_list_a3e6ca70816297d8ad4b7baa749a0b8e2}\label{class_q_string_list_a3e6ca70816297d8ad4b7baa749a0b8e2}} 
+\index{QStringList@{QStringList}!QStringList@{QStringList}}
+\index{QStringList@{QStringList}!QStringList@{QStringList}}
+\subsubsection{\texorpdfstring{QStringList()}{QStringList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Q\+String\+List\+::\+Q\+String\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates an empty list. \mbox{\Hypertarget{class_q_string_list_a81b4d15aba319a62202e2b5c53212c5d}\label{class_q_string_list_a81b4d15aba319a62202e2b5c53212c5d}} 
+\index{QStringList@{QStringList}!QStringList@{QStringList}}
+\index{QStringList@{QStringList}!QStringList@{QStringList}}
+\subsubsection{\texorpdfstring{QStringList()}{QStringList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Q\+String\+List\+::\+Q\+String\+List (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} \&}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a copy of the list. This function is very fast since \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} is implicit shared. However, for the programmer this is the same as a deep copy. If this list or the original one or some other list referencing the same shared data is modified, then the modifying list makes a copy first. \mbox{\Hypertarget{class_q_string_list_ab94a73fead9d31d023d4fc0816542f33}\label{class_q_string_list_ab94a73fead9d31d023d4fc0816542f33}} 
+\index{QStringList@{QStringList}!QStringList@{QStringList}}
+\index{QStringList@{QStringList}!QStringList@{QStringList}}
+\subsubsection{\texorpdfstring{QStringList()}{QStringList()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Q\+String\+List\+::\+Q\+String\+List (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_value_list}{Q\+Value\+List}}$<$ \mbox{\hyperlink{class_q_string}{Q\+String}} $>$ \&}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a new string list that is a copy of {\itshape l}. \mbox{\Hypertarget{class_q_string_list_ae2fcb3e62bfc329f6f4609cb387cb52d}\label{class_q_string_list_ae2fcb3e62bfc329f6f4609cb387cb52d}} 
+\index{QStringList@{QStringList}!QStringList@{QStringList}}
+\index{QStringList@{QStringList}!QStringList@{QStringList}}
+\subsubsection{\texorpdfstring{QStringList()}{QStringList()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Q\+String\+List\+::\+Q\+String\+List (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a string list consisting of the single string {\itshape i}. To make longer lists easily, use\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s1,s2,s3;}
+\DoxyCodeLine{...}
+\DoxyCodeLine{QStringList mylist = \mbox{\hyperlink{class_q_string_list_a3e6ca70816297d8ad4b7baa749a0b8e2}{QStringList}}() << s1 << s2 << s3;}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_q_string_list_acc4b2b8e5b8b04da731af0657491c963}\label{class_q_string_list_acc4b2b8e5b8b04da731af0657491c963}} 
+\index{QStringList@{QStringList}!QStringList@{QStringList}}
+\index{QStringList@{QStringList}!QStringList@{QStringList}}
+\subsubsection{\texorpdfstring{QStringList()}{QStringList()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Q\+String\+List\+::\+Q\+String\+List (\begin{DoxyParamCaption}\item[{const char $\ast$}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a string list consisting of the single latin-\/1 string {\itshape i}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_string_list_a8afc2284556889d4ab1930626b55f8a2}\label{class_q_string_list_a8afc2284556889d4ab1930626b55f8a2}} 
+\index{QStringList@{QStringList}!fromStrList@{fromStrList}}
+\index{fromStrList@{fromStrList}!QStringList@{QStringList}}
+\subsubsection{\texorpdfstring{fromStrList()}{fromStrList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} Q\+String\+List\+::from\+Str\+List (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}} \&}]{ascii }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts from a \mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}} (A\+S\+C\+II) to a \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} (Unicode). \mbox{\Hypertarget{class_q_string_list_ae04b71725ca03fd3bace74af83df48fa}\label{class_q_string_list_ae04b71725ca03fd3bace74af83df48fa}} 
+\index{QStringList@{QStringList}!grep@{grep}}
+\index{grep@{grep}!QStringList@{QStringList}}
+\subsubsection{\texorpdfstring{grep()}{grep()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} Q\+String\+List\+::grep (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&}]{expr }\end{DoxyParamCaption}) const}
+
+Returns a list of all strings containing a substring that matches the regular expression {\itshape expr}. \mbox{\Hypertarget{class_q_string_list_ae22f5a9cd58ef6b7f99946f800625344}\label{class_q_string_list_ae22f5a9cd58ef6b7f99946f800625344}} 
+\index{QStringList@{QStringList}!grep@{grep}}
+\index{grep@{grep}!QStringList@{QStringList}}
+\subsubsection{\texorpdfstring{grep()}{grep()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} Q\+String\+List\+::grep (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{str,  }\item[{bool}]{cs = {\ttfamily TRUE} }\end{DoxyParamCaption}) const}
+
+Returns a list of all strings containing the substring {\itshape str}.
+
+If {\itshape cs} is T\+R\+UE, the grep is done case sensitively, else not. \mbox{\Hypertarget{class_q_string_list_a4d14f4987725926a5c812991a27d0f91}\label{class_q_string_list_a4d14f4987725926a5c812991a27d0f91}} 
+\index{QStringList@{QStringList}!join@{join}}
+\index{join@{join}!QStringList@{QStringList}}
+\subsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+List\+::join (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{sep }\end{DoxyParamCaption}) const}
+
+Joins the stringlist into a single string with each element separated by {\itshape sep}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_list_a2c21b167a54aa8a8082996d7f18ca5bd}{split()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_list_a1b3bf672d6dd980fb487e9392fdd9bd6}\label{class_q_string_list_a1b3bf672d6dd980fb487e9392fdd9bd6}} 
+\index{QStringList@{QStringList}!sort@{sort}}
+\index{sort@{sort}!QStringList@{QStringList}}
+\subsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily void Q\+String\+List\+::sort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sorts the list of strings in ascending order.
+
+Sorting is very fast. It uses the Qt \mbox{\hyperlink{class_template}{Template}} Library\textquotesingle{}s efficient Heap\+Sort implementation that operates in O(n$\ast$log n). \mbox{\Hypertarget{class_q_string_list_a57bbbd781091ae194b64138970497a87}\label{class_q_string_list_a57bbbd781091ae194b64138970497a87}} 
+\index{QStringList@{QStringList}!split@{split}}
+\index{split@{split}!QStringList@{QStringList}}
+\subsubsection{\texorpdfstring{split()}{split()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} Q\+String\+List\+::split (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_char}{Q\+Char}} \&}]{sep,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{str,  }\item[{bool}]{allow\+Empty\+Entries = {\ttfamily FALSE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Splits the string {\itshape str} using {\itshape sep} as separator. Returns the list of strings. If {\itshape allow\+Empty\+Entries} is T\+R\+UE, also empty entries are inserted into the list, else not. So if you have a string \textquotesingle{}abc..d.\+e.\textquotesingle{}, a list which contains \textquotesingle{}abc\textquotesingle{}, \textquotesingle{}d\textquotesingle{}, and \textquotesingle{}e\textquotesingle{} would be returned if {\itshape allow\+Empty\+Entries} is F\+A\+L\+SE, but a list containing \textquotesingle{}abc\textquotesingle{}, \textquotesingle{}\textquotesingle{}, \textquotesingle{}d\textquotesingle{}, \textquotesingle{}e\textquotesingle{} and \textquotesingle{}\textquotesingle{} would be returned if {\itshape allow\+Empty\+Entries} is T\+R\+UE. If {\itshape str} doesn\textquotesingle{}t contain {\itshape sep}, a stringlist with one item, which is the same as {\itshape str}, is returned.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_list_a4d14f4987725926a5c812991a27d0f91}{join()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_list_a9392a3dfe579b24ee51cd4bd754801e1}\label{class_q_string_list_a9392a3dfe579b24ee51cd4bd754801e1}} 
+\index{QStringList@{QStringList}!split@{split}}
+\index{split@{split}!QStringList@{QStringList}}
+\subsubsection{\texorpdfstring{split()}{split()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} Q\+String\+List\+::split (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&}]{sep,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{str,  }\item[{bool}]{allow\+Empty\+Entries = {\ttfamily FALSE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Splits the string {\itshape str} using the regular expression {\itshape sep} as separator. Returns the list of strings. If {\itshape allow\+Empty\+Entries} is T\+R\+UE, also empty entries are inserted into the list, else not. So if you have a string \textquotesingle{}abc..d.\+e.\textquotesingle{}, a list which contains \textquotesingle{}abc\textquotesingle{}, \textquotesingle{}d\textquotesingle{}, and \textquotesingle{}e\textquotesingle{} would be returned if {\itshape allow\+Empty\+Entries} is F\+A\+L\+SE, but a list containing \textquotesingle{}abc\textquotesingle{}, \textquotesingle{}\textquotesingle{}, \textquotesingle{}d\textquotesingle{}, \textquotesingle{}e\textquotesingle{} and \textquotesingle{}\textquotesingle{} would be returned if {\itshape allow\+Empty\+Entries} is T\+R\+UE. If {\itshape str} doesn\textquotesingle{}t contain {\itshape sep}, a stringlist with one item, which is the same as {\itshape str}, is returned.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_list_a4d14f4987725926a5c812991a27d0f91}{join()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_list_a2c21b167a54aa8a8082996d7f18ca5bd}\label{class_q_string_list_a2c21b167a54aa8a8082996d7f18ca5bd}} 
+\index{QStringList@{QStringList}!split@{split}}
+\index{split@{split}!QStringList@{QStringList}}
+\subsubsection{\texorpdfstring{split()}{split()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string_list}{Q\+String\+List}} Q\+String\+List\+::split (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{sep,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{str,  }\item[{bool}]{allow\+Empty\+Entries = {\ttfamily FALSE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Splits the string {\itshape str} using {\itshape sep} as separator. Returns the list of strings. If {\itshape allow\+Empty\+Entries} is T\+R\+UE, also empty entries are inserted into the list, else not. So if you have a string \textquotesingle{}abc..d.\+e.\textquotesingle{}, a list which contains \textquotesingle{}abc\textquotesingle{}, \textquotesingle{}d\textquotesingle{}, and \textquotesingle{}e\textquotesingle{} would be returned if {\itshape allow\+Empty\+Entries} is F\+A\+L\+SE, but a list containing \textquotesingle{}abc\textquotesingle{}, \textquotesingle{}\textquotesingle{}, \textquotesingle{}d\textquotesingle{}, \textquotesingle{}e\textquotesingle{} and \textquotesingle{}\textquotesingle{} would be returned if {\itshape allow\+Empty\+Entries} is T\+R\+UE. If {\itshape str} doesn\textquotesingle{}t contain {\itshape sep}, a stringlist with one item, which is the same as {\itshape str}, is returned.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_list_a4d14f4987725926a5c812991a27d0f91}{join()}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qstringlist.\+h\item 
+doxygen/qtools/qstringlist.\+cpp\end{DoxyCompactItemize}

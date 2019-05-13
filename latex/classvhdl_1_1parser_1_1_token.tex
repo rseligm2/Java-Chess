@@ -1,0 +1,160 @@
+\hypertarget{classvhdl_1_1parser_1_1_token}{}\section{vhdl\+::parser\+::Token Class Reference}
+\label{classvhdl_1_1parser_1_1_token}\index{vhdl::parser::Token@{vhdl::parser::Token}}
+
+
+{\ttfamily \#include $<$Token.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_adf2e437f6aeef2e6d195ebfe51ae2bb0}{get\+Value}} ()
+\item 
+\mbox{\hyperlink{classvhdl_1_1parser_1_1_token_af4c8d87a0456cd4ce8a65662fa507bb1}{Token}} ()
+\item 
+\mbox{\hyperlink{classvhdl_1_1parser_1_1_token_a3111dc253c0e2eb0a0cf128914ec4a44}{Token}} (int \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_a021bfae89b9eec39a87db9577508916c}{kind}})
+\item 
+\mbox{\hyperlink{classvhdl_1_1parser_1_1_token_a3a25de73b579708d1b82f2ad247816d8}{Token}} (int \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_a021bfae89b9eec39a87db9577508916c}{kind}}, J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_abafca7a99f0aca2f76d1d9094bf22e9c}{image}})
+\item 
+J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_a1642fdaf589e2f0158e101d9a335d75a}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}} $\ast$ \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_af4f2850e46715e5ec1ddd430f9c5aaff}{new\+Token}} (int of\+Kind, J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_abafca7a99f0aca2f76d1d9094bf22e9c}{image}})
+\item 
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_token_ad7dc0d02c87d8c1fc1a31f048b98f188}\label{classvhdl_1_1parser_1_1_token_ad7dc0d02c87d8c1fc1a31f048b98f188}} 
+static \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}} $\ast$ {\bfseries new\+Token} (int of\+Kind)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_a021bfae89b9eec39a87db9577508916c}{kind}}
+\item 
+int \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_a7fdeaf5cb35f8a5ecab251ddcd4b5909}{begin\+Line}}
+\item 
+int \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_a6fc8fab679c3f9110cb17c520836d02c}{begin\+Column}}
+\item 
+int \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_ae891f2c047fc387a551a1ef49036a685}{end\+Line}}
+\item 
+int \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_ac61778db323adf6f0b89f9eed2b672cf}{end\+Column}}
+\item 
+J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_abafca7a99f0aca2f76d1d9094bf22e9c}{image}}
+\item 
+\mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}} $\ast$ \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_a82b2c4853d3ce100b0fee664d8460b69}{next}}
+\item 
+\mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}} $\ast$ \mbox{\hyperlink{classvhdl_1_1parser_1_1_token_a9d02434823908bf848cdc9bb14f52b73}{special\+Token}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describes the input token stream. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_token_af4c8d87a0456cd4ce8a65662fa507bb1}\label{classvhdl_1_1parser_1_1_token_af4c8d87a0456cd4ce8a65662fa507bb1}} 
+\index{vhdl::parser::Token@{vhdl::parser::Token}!Token@{Token}}
+\index{Token@{Token}!vhdl::parser::Token@{vhdl::parser::Token}}
+\subsubsection{\texorpdfstring{Token()}{Token()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily vhdl\+::parser\+::\+Token\+::\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+No-\/argument constructor \mbox{\Hypertarget{classvhdl_1_1parser_1_1_token_a3111dc253c0e2eb0a0cf128914ec4a44}\label{classvhdl_1_1parser_1_1_token_a3111dc253c0e2eb0a0cf128914ec4a44}} 
+\index{vhdl::parser::Token@{vhdl::parser::Token}!Token@{Token}}
+\index{Token@{Token}!vhdl::parser::Token@{vhdl::parser::Token}}
+\subsubsection{\texorpdfstring{Token()}{Token()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily vhdl\+::parser\+::\+Token\+::\+Token (\begin{DoxyParamCaption}\item[{int}]{kind }\end{DoxyParamCaption})}
+
+Constructs a new token for the specified \mbox{\hyperlink{class_image}{Image}}. \mbox{\Hypertarget{classvhdl_1_1parser_1_1_token_a3a25de73b579708d1b82f2ad247816d8}\label{classvhdl_1_1parser_1_1_token_a3a25de73b579708d1b82f2ad247816d8}} 
+\index{vhdl::parser::Token@{vhdl::parser::Token}!Token@{Token}}
+\index{Token@{Token}!vhdl::parser::Token@{vhdl::parser::Token}}
+\subsubsection{\texorpdfstring{Token()}{Token()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily vhdl\+::parser\+::\+Token\+::\+Token (\begin{DoxyParamCaption}\item[{int}]{kind,  }\item[{J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}]{image }\end{DoxyParamCaption})}
+
+Constructs a new token for the specified \mbox{\hyperlink{class_image}{Image}} and Kind. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_token_adf2e437f6aeef2e6d195ebfe51ae2bb0}\label{classvhdl_1_1parser_1_1_token_adf2e437f6aeef2e6d195ebfe51ae2bb0}} 
+\index{vhdl::parser::Token@{vhdl::parser::Token}!getValue@{getValue}}
+\index{getValue@{getValue}!vhdl::parser::Token@{vhdl::parser::Token}}
+\subsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily void $\ast$ vhdl\+::parser\+::\+Token\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+An optional attribute value of the \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}}. Tokens which are not used as syntactic sugar will often contain meaningful values that will be used later on by the compiler or interpreter. This attribute value is often different from the image. Any subclass of \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}} that actually wants to return a non-\/\+N\+U\+LL value can override this method as appropriate.
+
+Describes the input token stream.\+An optional attribute value of the \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}}. Tokens which are not used as syntactic sugar will often contain meaningful values that will be used later on by the compiler or interpreter. This attribute value is often different from the image. Any subclass of \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}} that actually wants to return a non-\/\+N\+U\+LL value can override this method as appropriate. \mbox{\Hypertarget{classvhdl_1_1parser_1_1_token_af4f2850e46715e5ec1ddd430f9c5aaff}\label{classvhdl_1_1parser_1_1_token_af4f2850e46715e5ec1ddd430f9c5aaff}} 
+\index{vhdl::parser::Token@{vhdl::parser::Token}!newToken@{newToken}}
+\index{newToken@{newToken}!vhdl::parser::Token@{vhdl::parser::Token}}
+\subsubsection{\texorpdfstring{newToken()}{newToken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}} $\ast$ vhdl\+::parser\+::\+Token\+::new\+Token (\begin{DoxyParamCaption}\item[{int}]{of\+Kind,  }\item[{J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a new \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}} void $\ast$, by default. However, if you want, you can create and return subclass objects based on the value of of\+Kind. Simply add the cases to the switch for all those special cases. For example, if you have a subclass of \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}} called I\+D\+Token that you want to create if of\+Kind is ID, simply add something like \+:
+
+case My\+Parser\+Constants.\+ID \+: return new I\+D\+Token(of\+Kind, image);
+
+to the following switch statement. Then you can cast matched\+Token variable to the appropriate type and use sit in your lexical actions.
+
+Returns a new \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}} object, by default. However, if you want, you can create and return subclass objects based on the value of of\+Kind. Simply add the cases to the switch for all those special cases. For example, if you have a subclass of \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}} called I\+D\+Token that you want to create if of\+Kind is ID, simply add something like \+:
+
+case My\+Parser\+Constants.\+ID \+: return new I\+D\+Token(of\+Kind, image);
+
+to the following switch statement. Then you can cast matched\+Token variable to the appropriate type and use sit in your lexical actions. \mbox{\Hypertarget{classvhdl_1_1parser_1_1_token_a1642fdaf589e2f0158e101d9a335d75a}\label{classvhdl_1_1parser_1_1_token_a1642fdaf589e2f0158e101d9a335d75a}} 
+\index{vhdl::parser::Token@{vhdl::parser::Token}!toString@{toString}}
+\index{toString@{toString}!vhdl::parser::Token@{vhdl::parser::Token}}
+\subsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE vhdl\+::parser\+::\+Token\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the image. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classvhdl_1_1parser_1_1_token_a6fc8fab679c3f9110cb17c520836d02c}\label{classvhdl_1_1parser_1_1_token_a6fc8fab679c3f9110cb17c520836d02c}} 
+\index{vhdl::parser::Token@{vhdl::parser::Token}!beginColumn@{beginColumn}}
+\index{beginColumn@{beginColumn}!vhdl::parser::Token@{vhdl::parser::Token}}
+\subsubsection{\texorpdfstring{beginColumn}{beginColumn}}
+{\footnotesize\ttfamily int vhdl\+::parser\+::\+Token\+::begin\+Column}
+
+The column number of the first character of this \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}}. \mbox{\Hypertarget{classvhdl_1_1parser_1_1_token_a7fdeaf5cb35f8a5ecab251ddcd4b5909}\label{classvhdl_1_1parser_1_1_token_a7fdeaf5cb35f8a5ecab251ddcd4b5909}} 
+\index{vhdl::parser::Token@{vhdl::parser::Token}!beginLine@{beginLine}}
+\index{beginLine@{beginLine}!vhdl::parser::Token@{vhdl::parser::Token}}
+\subsubsection{\texorpdfstring{beginLine}{beginLine}}
+{\footnotesize\ttfamily int vhdl\+::parser\+::\+Token\+::begin\+Line}
+
+The line number of the first character of this \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}}. \mbox{\Hypertarget{classvhdl_1_1parser_1_1_token_ac61778db323adf6f0b89f9eed2b672cf}\label{classvhdl_1_1parser_1_1_token_ac61778db323adf6f0b89f9eed2b672cf}} 
+\index{vhdl::parser::Token@{vhdl::parser::Token}!endColumn@{endColumn}}
+\index{endColumn@{endColumn}!vhdl::parser::Token@{vhdl::parser::Token}}
+\subsubsection{\texorpdfstring{endColumn}{endColumn}}
+{\footnotesize\ttfamily int vhdl\+::parser\+::\+Token\+::end\+Column}
+
+The column number of the last character of this \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}}. \mbox{\Hypertarget{classvhdl_1_1parser_1_1_token_ae891f2c047fc387a551a1ef49036a685}\label{classvhdl_1_1parser_1_1_token_ae891f2c047fc387a551a1ef49036a685}} 
+\index{vhdl::parser::Token@{vhdl::parser::Token}!endLine@{endLine}}
+\index{endLine@{endLine}!vhdl::parser::Token@{vhdl::parser::Token}}
+\subsubsection{\texorpdfstring{endLine}{endLine}}
+{\footnotesize\ttfamily int vhdl\+::parser\+::\+Token\+::end\+Line}
+
+The line number of the last character of this \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}}. \mbox{\Hypertarget{classvhdl_1_1parser_1_1_token_abafca7a99f0aca2f76d1d9094bf22e9c}\label{classvhdl_1_1parser_1_1_token_abafca7a99f0aca2f76d1d9094bf22e9c}} 
+\index{vhdl::parser::Token@{vhdl::parser::Token}!image@{image}}
+\index{image@{image}!vhdl::parser::Token@{vhdl::parser::Token}}
+\subsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily J\+A\+V\+A\+C\+C\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+PE vhdl\+::parser\+::\+Token\+::image}
+
+The string image of the token. \mbox{\Hypertarget{classvhdl_1_1parser_1_1_token_a021bfae89b9eec39a87db9577508916c}\label{classvhdl_1_1parser_1_1_token_a021bfae89b9eec39a87db9577508916c}} 
+\index{vhdl::parser::Token@{vhdl::parser::Token}!kind@{kind}}
+\index{kind@{kind}!vhdl::parser::Token@{vhdl::parser::Token}}
+\subsubsection{\texorpdfstring{kind}{kind}}
+{\footnotesize\ttfamily int vhdl\+::parser\+::\+Token\+::kind}
+
+An integer that describes the kind of this token. This numbering system is determined by Java\+C\+C\+Parser, and a table of these numbers is stored in the file ...Constants.\+java. \mbox{\Hypertarget{classvhdl_1_1parser_1_1_token_a82b2c4853d3ce100b0fee664d8460b69}\label{classvhdl_1_1parser_1_1_token_a82b2c4853d3ce100b0fee664d8460b69}} 
+\index{vhdl::parser::Token@{vhdl::parser::Token}!next@{next}}
+\index{next@{next}!vhdl::parser::Token@{vhdl::parser::Token}}
+\subsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}}$\ast$ vhdl\+::parser\+::\+Token\+::next}
+
+\mbox{\hyperlink{class_a}{A}} reference to the next regular (non-\/special) token from the input stream. If this is the last token from the input stream, or if the token manager has not read tokens beyond this one, this field is set to N\+U\+LL. This is true only if this token is also a regular token. Otherwise, see below for a description of the contents of this field. \mbox{\Hypertarget{classvhdl_1_1parser_1_1_token_a9d02434823908bf848cdc9bb14f52b73}\label{classvhdl_1_1parser_1_1_token_a9d02434823908bf848cdc9bb14f52b73}} 
+\index{vhdl::parser::Token@{vhdl::parser::Token}!specialToken@{specialToken}}
+\index{specialToken@{specialToken}!vhdl::parser::Token@{vhdl::parser::Token}}
+\subsubsection{\texorpdfstring{specialToken}{specialToken}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvhdl_1_1parser_1_1_token}{Token}}$\ast$ vhdl\+::parser\+::\+Token\+::special\+Token}
+
+This field is used to access special tokens that occur prior to this token, but after the immediately preceding regular (non-\/special) token. If there are no such special tokens, this field is set to N\+U\+LL. When there are more than one such special token, this field refers to the last of these special tokens, which in turn refers to the next previous special token through its special\+Token field, and so on until the first special token (whose special\+Toke\+\_\+ field is N\+U\+LL). The next fields of special tokens refer to other special tokens that immediately follow it (without an intervening regular token). If there is no such token, this field is N\+U\+LL. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/vhdlparser/Token.\+h\item 
+doxygen/vhdlparser/Token.\+cc\end{DoxyCompactItemize}

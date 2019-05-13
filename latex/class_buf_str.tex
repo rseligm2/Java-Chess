@@ -1,0 +1,63 @@
+\hypertarget{class_buf_str}{}\section{Buf\+Str Class Reference}
+\label{class_buf_str}\index{BufStr@{BufStr}}
+
+
+Buffer used to store strings.  
+
+
+
+
+{\ttfamily \#include $<$bufstr.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_buf_str_ad752ce74eb8d9ca7d546836f09ba448b}\label{class_buf_str_ad752ce74eb8d9ca7d546836f09ba448b}} 
+{\bfseries Buf\+Str} (int size)
+\item 
+\mbox{\Hypertarget{class_buf_str_a36ec062edea86b33b794eeab37f32b1c}\label{class_buf_str_a36ec062edea86b33b794eeab37f32b1c}} 
+void {\bfseries add\+Char} (char c)
+\item 
+\mbox{\Hypertarget{class_buf_str_a81957fec77e64ad1a7c75e2994d903ec}\label{class_buf_str_a81957fec77e64ad1a7c75e2994d903ec}} 
+void {\bfseries add\+Array} (const char $\ast$a, int len)
+\item 
+\mbox{\Hypertarget{class_buf_str_a9cc2457c5bf9f46db797dbf5c86f7be2}\label{class_buf_str_a9cc2457c5bf9f46db797dbf5c86f7be2}} 
+void {\bfseries skip} (uint s)
+\item 
+\mbox{\Hypertarget{class_buf_str_a11fc0e89dd066db9395751269c6a761f}\label{class_buf_str_a11fc0e89dd066db9395751269c6a761f}} 
+void {\bfseries shrink} (uint newlen)
+\item 
+\mbox{\Hypertarget{class_buf_str_af87ab9881190162554a0ace539be4b75}\label{class_buf_str_af87ab9881190162554a0ace539be4b75}} 
+void {\bfseries resize} (uint newlen)
+\item 
+\mbox{\Hypertarget{class_buf_str_acfa0b96f6973b4f2f9a73173ae2494c5}\label{class_buf_str_acfa0b96f6973b4f2f9a73173ae2494c5}} 
+int {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class_buf_str_a2b840e5cf1ce94a93f66e2f4ac803949}\label{class_buf_str_a2b840e5cf1ce94a93f66e2f4ac803949}} 
+char $\ast$ {\bfseries data} () const
+\item 
+\mbox{\Hypertarget{class_buf_str_a2b15eb265305b14503a2acb86e065b69}\label{class_buf_str_a2b15eb265305b14503a2acb86e065b69}} 
+char \& {\bfseries at} (uint i) const
+\item 
+\mbox{\Hypertarget{class_buf_str_a5dae2d2677e172a6bbe67c3dead0437d}\label{class_buf_str_a5dae2d2677e172a6bbe67c3dead0437d}} 
+bool {\bfseries is\+Empty} () const
+\item 
+\mbox{\Hypertarget{class_buf_str_a9241dfbe73acd385748fe62694ad940b}\label{class_buf_str_a9241dfbe73acd385748fe62694ad940b}} 
+{\bfseries operator const char $\ast$} () const
+\item 
+\mbox{\Hypertarget{class_buf_str_aa9b6a7bdc35082b38465fa56cf2a8906}\label{class_buf_str_aa9b6a7bdc35082b38465fa56cf2a8906}} 
+uint {\bfseries cur\+Pos} () const
+\item 
+\mbox{\Hypertarget{class_buf_str_a583b684f2a7ad02fadbe9caef14af656}\label{class_buf_str_a583b684f2a7ad02fadbe9caef14af656}} 
+void {\bfseries drop\+From\+Start} (uint bytes)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Buffer used to store strings. 
+
+This buffer is used append characters and strings. It will automatically resize itself, yet provide efficient random access to the content. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/bufstr.\+h\end{DoxyCompactItemize}

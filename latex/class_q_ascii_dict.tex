@@ -1,0 +1,88 @@
+\hypertarget{class_q_ascii_dict}{}\section{Q\+Ascii\+Dict$<$ type $>$ Class Template Reference}
+\label{class_q_ascii_dict}\index{QAsciiDict$<$ type $>$@{QAsciiDict$<$ type $>$}}
+Inheritance diagram for Q\+Ascii\+Dict$<$ type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_q_ascii_dict}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_ascii_dict_a45f3a7163f016feff94ec40fc2d16556}\label{class_q_ascii_dict_a45f3a7163f016feff94ec40fc2d16556}} 
+{\bfseries Q\+Ascii\+Dict} (int size=17, bool case\+Sensitive=T\+R\+UE, bool copy\+Keys=T\+R\+UE)
+\item 
+\mbox{\Hypertarget{class_q_ascii_dict_a78f2d7f76559477666281122c28cb3a3}\label{class_q_ascii_dict_a78f2d7f76559477666281122c28cb3a3}} 
+{\bfseries Q\+Ascii\+Dict} (const \mbox{\hyperlink{class_q_ascii_dict}{Q\+Ascii\+Dict}}$<$ type $>$ \&d)
+\item 
+\mbox{\Hypertarget{class_q_ascii_dict_a70f70bfeacefca74f3e4c1f50eb48a16}\label{class_q_ascii_dict_a70f70bfeacefca74f3e4c1f50eb48a16}} 
+\mbox{\hyperlink{class_q_ascii_dict}{Q\+Ascii\+Dict}}$<$ type $>$ \& {\bfseries operator=} (const \mbox{\hyperlink{class_q_ascii_dict}{Q\+Ascii\+Dict}}$<$ type $>$ \&d)
+\item 
+uint \mbox{\hyperlink{class_q_ascii_dict_a2241b13419dc0fcb6da3bcd159219404}{count}} () const
+\item 
+\mbox{\Hypertarget{class_q_ascii_dict_add47ad4cee8cf35e79864a06dede3ca4}\label{class_q_ascii_dict_add47ad4cee8cf35e79864a06dede3ca4}} 
+uint {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class_q_ascii_dict_a3ece5970afa914f554824bef5e8e67c4}\label{class_q_ascii_dict_a3ece5970afa914f554824bef5e8e67c4}} 
+bool {\bfseries is\+Empty} () const
+\item 
+\mbox{\Hypertarget{class_q_ascii_dict_acc5f4b40410413caaa443c0fc3207642}\label{class_q_ascii_dict_acc5f4b40410413caaa443c0fc3207642}} 
+void {\bfseries insert} (const char $\ast$k, const type $\ast$d)
+\item 
+\mbox{\Hypertarget{class_q_ascii_dict_a96d9b7c85141e7215bad0d371a347a40}\label{class_q_ascii_dict_a96d9b7c85141e7215bad0d371a347a40}} 
+void {\bfseries replace} (const char $\ast$k, const type $\ast$d)
+\item 
+\mbox{\Hypertarget{class_q_ascii_dict_aeb5f3b47e98054b30ccb2b29fac03b47}\label{class_q_ascii_dict_aeb5f3b47e98054b30ccb2b29fac03b47}} 
+bool {\bfseries remove} (const char $\ast$k)
+\item 
+\mbox{\Hypertarget{class_q_ascii_dict_a7a8d7b8be1c0c1212f15c287ec927be9}\label{class_q_ascii_dict_a7a8d7b8be1c0c1212f15c287ec927be9}} 
+type $\ast$ {\bfseries take} (const char $\ast$k)
+\item 
+\mbox{\Hypertarget{class_q_ascii_dict_ab37ced8dc0e034d6a6797a054d433cb5}\label{class_q_ascii_dict_ab37ced8dc0e034d6a6797a054d433cb5}} 
+type $\ast$ {\bfseries find} (const char $\ast$k) const
+\item 
+\mbox{\Hypertarget{class_q_ascii_dict_a1fac101acb5ecb55be15d81f0b90ec6f}\label{class_q_ascii_dict_a1fac101acb5ecb55be15d81f0b90ec6f}} 
+type $\ast$ {\bfseries operator\mbox{[}$\,$\mbox{]}} (const char $\ast$k) const
+\item 
+void \mbox{\hyperlink{class_q_ascii_dict_a544cec757a84773073971b0a9d3e5e55}{clear}} ()
+\item 
+\mbox{\Hypertarget{class_q_ascii_dict_aa783796d001af64fecedf110d8116d60}\label{class_q_ascii_dict_aa783796d001af64fecedf110d8116d60}} 
+void {\bfseries resize} (uint n)
+\item 
+\mbox{\Hypertarget{class_q_ascii_dict_a2eb5f15ad2ff083ab7509887037d0675}\label{class_q_ascii_dict_a2eb5f15ad2ff083ab7509887037d0675}} 
+void {\bfseries statistics} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_ascii_dict_a544cec757a84773073971b0a9d3e5e55}\label{class_q_ascii_dict_a544cec757a84773073971b0a9d3e5e55}} 
+\index{QAsciiDict$<$ type $>$@{QAsciiDict$<$ type $>$}!clear@{clear}}
+\index{clear@{clear}!QAsciiDict$<$ type $>$@{QAsciiDict$<$ type $>$}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class type$>$ \\
+void \mbox{\hyperlink{class_q_ascii_dict}{Q\+Ascii\+Dict}}$<$ type $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes all objects from the collection. The objects will be deleted if auto-\/delete has been enabled. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_collection_a6ed41913c76bfba54be6da26015ee3f3}{set\+Auto\+Delete()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_collection_a92416cc22907550389aad04c26be2f77}{Q\+Collection}}.
+
+\mbox{\Hypertarget{class_q_ascii_dict_a2241b13419dc0fcb6da3bcd159219404}\label{class_q_ascii_dict_a2241b13419dc0fcb6da3bcd159219404}} 
+\index{QAsciiDict$<$ type $>$@{QAsciiDict$<$ type $>$}!count@{count}}
+\index{count@{count}!QAsciiDict$<$ type $>$@{QAsciiDict$<$ type $>$}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily template$<$class type$>$ \\
+uint \mbox{\hyperlink{class_q_ascii_dict}{Q\+Ascii\+Dict}}$<$ type $>$\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of objects in the collection. 
+
+Implements \mbox{\hyperlink{class_q_collection_a6441adbfb3ffb6f55ed834c0c0bcc6cb}{Q\+Collection}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qasciidict.\+h\end{DoxyCompactItemize}

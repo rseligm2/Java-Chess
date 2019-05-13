@@ -1,0 +1,93 @@
+\hypertarget{class_input_string}{}\section{Input\+String Class Reference}
+\label{class_input_string}\index{InputString@{InputString}}
+Inheritance diagram for Input\+String\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_input_string}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_input_string_a7cfa8b8ad573f92ac8a7c850cf63b04b}\label{class_input_string_a7cfa8b8ad573f92ac8a7c850cf63b04b}} 
+enum {\bfseries String\+Mode} \{ \newline
+{\bfseries String\+Free} =0, 
+{\bfseries String\+File} =1, 
+{\bfseries String\+Dir} =2, 
+{\bfseries String\+Fixed} =3, 
+\newline
+{\bfseries String\+Image} =4
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_input_string_a1ef14657fbc414a6f15ca1f624d7da92}\label{class_input_string_a1ef14657fbc414a6f15ca1f624d7da92}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{class_input_string_aa5dd91fe260eb01b911a4206e6653449}\label{class_input_string_aa5dd91fe260eb01b911a4206e6653449}} 
+void {\bfseries set\+Value} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&)
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_input_string_a652dc4c0483d77606295f32febcb746b}\label{class_input_string_a652dc4c0483d77606295f32febcb746b}} 
+void {\bfseries changed} ()
+\item 
+\mbox{\Hypertarget{class_input_string_a9699d3bf0385d30c100c5cf2fb63012d}\label{class_input_string_a9699d3bf0385d30c100c5cf2fb63012d}} 
+void {\bfseries show\+Help} (\mbox{\hyperlink{class_input}{Input}} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_input_string_adacf356342e5fa2e55f5774364614dab}\label{class_input_string_adacf356342e5fa2e55f5774364614dab}} 
+{\bfseries Input\+String} (Q\+Grid\+Layout $\ast$layout, int \&row, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&id, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s, String\+Mode m, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&docs, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&abs\+Path=\mbox{\hyperlink{class_q_string}{Q\+String}}())
+\item 
+\mbox{\Hypertarget{class_input_string_aa8cc8ac64be65a059936950ad1e65ba8}\label{class_input_string_aa8cc8ac64be65a059936950ad1e65ba8}} 
+void {\bfseries add\+Value} (\mbox{\hyperlink{class_q_string}{Q\+String}} s)
+\item 
+\mbox{\Hypertarget{class_input_string_a943d2ad1525a07c3b8852de90ac04d00}\label{class_input_string_a943d2ad1525a07c3b8852de90ac04d00}} 
+void {\bfseries set\+Default} ()
+\item 
+\mbox{\Hypertarget{class_input_string_a9c3a16a3861e950f8790d8c7e157cdc1}\label{class_input_string_a9c3a16a3861e950f8790d8c7e157cdc1}} 
+Q\+Variant \& {\bfseries value} ()
+\item 
+\mbox{\Hypertarget{class_input_string_a0f19d3ccb9191a54b94e1b290b525742}\label{class_input_string_a0f19d3ccb9191a54b94e1b290b525742}} 
+void {\bfseries update} ()
+\item 
+\mbox{\Hypertarget{class_input_string_a0fc1a614d9ba6384b2a2376b14e88fc5}\label{class_input_string_a0fc1a614d9ba6384b2a2376b14e88fc5}} 
+Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{class_input_string_a09913222e1500aeb77adb0cc2ce0de5a}\label{class_input_string_a09913222e1500aeb77adb0cc2ce0de5a}} 
+\mbox{\hyperlink{class_q_string}{Q\+String}} {\bfseries docs} () const
+\item 
+\mbox{\Hypertarget{class_input_string_ac62ec8b4e6efe5d2fbfcc1c87be2e0da}\label{class_input_string_ac62ec8b4e6efe5d2fbfcc1c87be2e0da}} 
+\mbox{\hyperlink{class_q_string}{Q\+String}} {\bfseries id} () const
+\item 
+\mbox{\Hypertarget{class_input_string_ae307131faf3f1bfce80b0e97ef6d50e6}\label{class_input_string_ae307131faf3f1bfce80b0e97ef6d50e6}} 
+\mbox{\hyperlink{class_q_string}{Q\+String}} {\bfseries template\+Docs} () const
+\item 
+\mbox{\Hypertarget{class_input_string_a46b5ce5badcf1c6df3a891810cb91e41}\label{class_input_string_a46b5ce5badcf1c6df3a891810cb91e41}} 
+void {\bfseries add\+Dependency} (\mbox{\hyperlink{class_input}{Input}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_input_string_add9620f611a4e69090232a7b15c7e74e}\label{class_input_string_add9620f611a4e69090232a7b15c7e74e}} 
+void {\bfseries set\+Enabled} (bool)
+\item 
+\mbox{\Hypertarget{class_input_string_afc5b4853b2226058f4b996c114967f81}\label{class_input_string_afc5b4853b2226058f4b996c114967f81}} 
+void {\bfseries update\+Dependencies} ()
+\item 
+\mbox{\Hypertarget{class_input_string_ae515cffbe50507d2c97ffa3ea36cade0}\label{class_input_string_ae515cffbe50507d2c97ffa3ea36cade0}} 
+void {\bfseries write\+Value} (\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \&t, \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} $\ast$codec)
+\item 
+\mbox{\Hypertarget{class_input_string_af6b070828f85757ca6cf565288ab1dd1}\label{class_input_string_af6b070828f85757ca6cf565288ab1dd1}} 
+void {\bfseries set\+Template\+Docs} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&docs)
+\item 
+\mbox{\Hypertarget{class_input_string_acba78bfffcdd66d9b0c49291a0511f49}\label{class_input_string_acba78bfffcdd66d9b0c49291a0511f49}} 
+bool {\bfseries is\+Empty} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/addon/doxywizard/inputstring.\+h\item 
+doxygen/addon/doxywizard/inputstring.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,1880 @@
+\hypertarget{class_q_string}{}\section{Q\+String Class Reference}
+\label{class_q_string}\index{QString@{QString}}
+
+
+The \mbox{\hyperlink{class_q_string}{Q\+String}} class provides an abstraction of Unicode text and the classic \mbox{\hyperlink{class_c}{C}} null-\/terminated char array ({\itshape char$\ast$}).  
+
+
+
+
+{\ttfamily \#include $<$qstring.\+h$>$}
+
+Inheritance diagram for Q\+String\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_string}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_q_string_1_1_null}{Null}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_string_acaff43b133319ea651f19aac6b967406}{Direction}} \{ \mbox{\hyperlink{class_q_string_acaff43b133319ea651f19aac6b967406aa9e64c5b47ed1e0cb5badd8ebbcc2907}{Dir\+Neutral}} = 0x0, 
+\mbox{\hyperlink{class_q_string_acaff43b133319ea651f19aac6b967406a3d016d8ec10d90bf372aee5bf8ae890c}{Dir\+L\+TR}} = 0x1, 
+\mbox{\hyperlink{class_q_string_acaff43b133319ea651f19aac6b967406affa060e9d0531d7b5a4f5839ba536833}{Dir\+R\+TL}} = 0x2, 
+\mbox{\hyperlink{class_q_string_acaff43b133319ea651f19aac6b967406a3b734051e36983018c3a38a3b3da66c7}{Dir\+Mixed}} = 0x3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_string_ac17675a27c6e32a31e04f07a5308a9cb}{Q\+String}} ()
+\item 
+\mbox{\hyperlink{class_q_string_aca2e82d8b16be0e3c61ede2c1f5a83b2}{Q\+String}} (\mbox{\hyperlink{class_q_char}{Q\+Char}})
+\item 
+\mbox{\hyperlink{class_q_string_ae6ff6f22247f503dbd0d49ecae567527}{Q\+String}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&)
+\item 
+\mbox{\hyperlink{class_q_string_a247768790b0c679fde77b0b1bf511581}{Q\+String}} (const \mbox{\hyperlink{class_q_array}{Q\+Byte\+Array}} \&)
+\item 
+\mbox{\Hypertarget{class_q_string_abc4fc66157abf50671aeaf47d4ceacc9}\label{class_q_string_abc4fc66157abf50671aeaf47d4ceacc9}} 
+{\bfseries Q\+String} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&)
+\item 
+\mbox{\hyperlink{class_q_string_a1c92cd2bae630f25ed8516a7bc8c8258}{Q\+String}} (const \mbox{\hyperlink{class_q_char}{Q\+Char}} $\ast$\mbox{\hyperlink{class_q_string_af653a95345ba3cd5bade2a1e07f2bb58}{unicode}}, uint \mbox{\hyperlink{class_q_string_ac431a733d01111059c8364c62ed53270}{length}})
+\item 
+\mbox{\hyperlink{class_q_string_ac86c64fc0edc5d4c7347180dfa51e1d0}{Q\+String}} (const char $\ast$str)
+\item 
+\mbox{\hyperlink{class_q_string_afa89b9f5bbd0f59d390ddfae4972c34e}{$\sim$\+Q\+String}} ()
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_ac5c900af262dc166252f0866b6fa8d0e}{operator=}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a16f43f6efe6e1bf2d089d1915429b415}{operator=}} (const char $\ast$)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_ad15235dbb2ee65e25be1104f88ee348d}{operator=}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a69c0fc9ce4fc282c90c76bdf1af8ce55}{operator=}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a8de95eb7bffbe1a58c5fb586192066e1}{operator=}} (char c)
+\item 
+\mbox{\Hypertarget{class_q_string_a8f4ed13204d5e42853176c0116a6e098}\label{class_q_string_a8f4ed13204d5e42853176c0116a6e098}} 
+{\bfseries Q\+String} (const \mbox{\hyperlink{struct_q_string_1_1_null}{Null}} \&)
+\item 
+\mbox{\Hypertarget{class_q_string_a70791ce01404480adbac0c524c3bd90a}\label{class_q_string_a70791ce01404480adbac0c524c3bd90a}} 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& {\bfseries operator=} (const \mbox{\hyperlink{struct_q_string_1_1_null}{Null}} \&)
+\item 
+bool \mbox{\hyperlink{class_q_string_a6a6da156364a32ef91e35f83b1955acc}{is\+Null}} () const
+\item 
+bool \mbox{\hyperlink{class_q_string_aa032d4b5892338beb575a85e59bbbf38}{is\+Empty}} () const
+\item 
+uint \mbox{\hyperlink{class_q_string_ac431a733d01111059c8364c62ed53270}{length}} () const
+\item 
+void \mbox{\hyperlink{class_q_string_a6a7546dfb7ad7b0e5d982078c03595db}{truncate}} (uint pos)
+\item 
+void \mbox{\hyperlink{class_q_string_a261151b9ce7096b9af4a9588bb5d038a}{fill}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c, int len=-\/1)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a235ce7da570a43b49839a1cd00c91936}{copy}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a16bc2c0a1d3e66872697a0d772aac0cf}{arg}} (long a, int fieldwidth=0, int base=10) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_af1d2de1335207cb1999634fa8cd98141}{arg}} (ulong a, int fieldwidth=0, int base=10) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a6c3b33e3eb30057769fb89490a20de5e}{arg}} (int a, int fieldwidth=0, int base=10) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a9ba06d783305c502518f516e035788d1}{arg}} (uint a, int fieldwidth=0, int base=10) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a96b851d9db810c260225311bd1a1f1dc}{arg}} (short a, int fieldwidth=0, int base=10) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_aac4ae5c7abbd2646418249eaea3dc53b}{arg}} (ushort a, int fieldwidth=0, int base=10) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_ad7e8aa4fbe9f9c654bce5c370779b533}{arg}} (char a, int fieldwidth=0) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a740e64a8e6502d50572c63b789ee73e7}{arg}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} a, int fieldwidth=0) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_ac7bcea77370989a0da1a1952d8d763ec}{arg}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&a, int fieldwidth=0) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a6b112797e9accc6a76ec0f8eee68f98f}{arg}} (double a, int fieldwidth=0, char fmt=\textquotesingle{}g\textquotesingle{}, int prec=-\/1) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a0b6622a8335cdd080e8b1685b7e0fde0}{sprintf}} (const char $\ast$format,...)
+\item 
+int \mbox{\hyperlink{class_q_string_a675617012888ffd3acc8aef4aed05690}{find}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c, int index=0, bool cs=T\+R\+UE) const
+\item 
+int \mbox{\hyperlink{class_q_string_a5c6efe54d7b27611879cfbac15ee4736}{find}} (char c, int index=0, bool cs=T\+R\+UE) const
+\item 
+int \mbox{\hyperlink{class_q_string_a669b2ce308f70c955801fa7b44329aeb}{find}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&str, int index=0, bool cs=T\+R\+UE) const
+\item 
+int \mbox{\hyperlink{class_q_string_a8d0cb0b0f4448e196443561020e1438c}{find}} (const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&, int index=0) const
+\item 
+int \mbox{\hyperlink{class_q_string_a78f93a65d91bb0fd659ff9af5b82f956}{find}} (const char $\ast$str, int index=0) const
+\item 
+int \mbox{\hyperlink{class_q_string_a97b5c9712f3f145d52f91d816763ceea}{find\+Rev}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c, int index=-\/1, bool cs=T\+R\+UE) const
+\item 
+int \mbox{\hyperlink{class_q_string_aeb1cbae47f31c7f116751f45bf01d60a}{find\+Rev}} (char c, int index=-\/1, bool cs=T\+R\+UE) const
+\item 
+int \mbox{\hyperlink{class_q_string_abd18b44d7313c0ef3160d69d1b936ad5}{find\+Rev}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&str, int index=-\/1, bool cs=T\+R\+UE) const
+\item 
+int \mbox{\hyperlink{class_q_string_a678d778450575709d552d7be4316d68c}{find\+Rev}} (const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&, int index=-\/1) const
+\item 
+int \mbox{\hyperlink{class_q_string_a1feec4e6b662ef6dee407ec85ffee9d9}{find\+Rev}} (const char $\ast$str, int index=-\/1) const
+\item 
+int \mbox{\hyperlink{class_q_string_addd0afccd10afee3a1b42ceaaf3206b8}{contains}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c, bool cs=T\+R\+UE) const
+\item 
+int \mbox{\hyperlink{class_q_string_adf600f28026a425717c0b06b73eb6647}{contains}} (char c, bool cs=T\+R\+UE) const
+\item 
+int \mbox{\hyperlink{class_q_string_aeee533389b8072c556a9d479fb27c01f}{contains}} (const char $\ast$str, bool cs=T\+R\+UE) const
+\item 
+int \mbox{\hyperlink{class_q_string_a587310c93b5f81eb250075f50f3210d2}{contains}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&str, bool cs=T\+R\+UE) const
+\item 
+int \mbox{\hyperlink{class_q_string_af8e35ae76218246a857e68e105981726}{contains}} (const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a02545407c8e65afbf6bd22324f9ed517}{left}} (uint len) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_aa77ad91688915fed22e4150b00b5fd92}{right}} (uint len) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a1ef65644b1885a7003d5c2a8e88df479}{mid}} (uint index, uint len=0xffffffff) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a5a4d00c06bb265d1d91100c816ce1ba2}{left\+Justify}} (uint width, \mbox{\hyperlink{class_q_char}{Q\+Char}} \mbox{\hyperlink{class_q_string_a261151b9ce7096b9af4a9588bb5d038a}{fill}}=\textquotesingle{} \textquotesingle{}, bool trunc=F\+A\+L\+SE) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a77e73231263538edb5b62675471c5e78}{right\+Justify}} (uint width, \mbox{\hyperlink{class_q_char}{Q\+Char}} \mbox{\hyperlink{class_q_string_a261151b9ce7096b9af4a9588bb5d038a}{fill}}=\textquotesingle{} \textquotesingle{}, bool trunc=F\+A\+L\+SE) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a77d8e8901007cdda3a71b40d42dbc32c}{lower}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a4830365186780874b6e160213a422af8}{upper}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_abc241c312bf04d7556ae830fc0f53d31}{strip\+White\+Space}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_ad8e481726eb5a5f368eb1bb23c875847}{simplify\+White\+Space}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a3733066010481ab1e8f037bd99045269}{insert}} (uint index, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_aa1047c2887779c9bce2e6c09adf53432}{insert}} (uint index, const \mbox{\hyperlink{class_q_char}{Q\+Char}} $\ast$, uint len)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_add1ccd76184e93c88d2941cf6e5cd22e}{insert}} (uint index, \mbox{\hyperlink{class_q_char}{Q\+Char}})
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a2a54fe338baa21cba270e207f9edef97}{insert}} (uint index, char c)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a5e251de7eb95440be1fed6e0afef0638}{append}} (char)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a1f09a541ae63558a63be07fb2c6b6e58}{append}} (\mbox{\hyperlink{class_q_char}{Q\+Char}})
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a212b80401444eb3f67321fb55ddf64d5}{append}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a960e7c9c3ead447bd3da1332ca06a796}{prepend}} (char)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a31c38932a11a53c4d56bd286786cb1ed}{prepend}} (\mbox{\hyperlink{class_q_char}{Q\+Char}})
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a105a5d5c7d527ecdc01b0e3e34edfc52}{prepend}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_afd08aabf1d9b04a3fef298290af04cbd}{remove}} (uint index, uint len)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_aa785aa8e254ae8704f1a960245f3337e}{replace}} (uint index, uint len, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a61605f13535774a3b048370a04aff78c}{replace}} (uint index, uint len, const \mbox{\hyperlink{class_q_char}{Q\+Char}} $\ast$, uint clen)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_aaee914b4744ada084543c212bc1b3a21}{replace}} (const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&)
+\item 
+short \mbox{\hyperlink{class_q_string_aba480e0d80d25f65e2acebb03d0d7ab5}{to\+Short}} (bool $\ast$ok=0, int base=10) const
+\item 
+ushort \mbox{\hyperlink{class_q_string_a1ef1df5d1b79c0bd01115f39078f1334}{to\+U\+Short}} (bool $\ast$ok=0, int base=10) const
+\item 
+int \mbox{\hyperlink{class_q_string_a98f691fb039c264a986142c833223efc}{to\+Int}} (bool $\ast$ok=0, int base=10) const
+\item 
+uint \mbox{\hyperlink{class_q_string_abe1e887f24348b6b7ef69b7036707b6b}{to\+U\+Int}} (bool $\ast$ok=0, int base=10) const
+\item 
+long \mbox{\hyperlink{class_q_string_a3b79d2babc06fcbaec011fd9113e75ab}{to\+Long}} (bool $\ast$ok=0, int base=10) const
+\item 
+ulong \mbox{\hyperlink{class_q_string_aad9a32a624e392837a639b418f243c67}{to\+U\+Long}} (bool $\ast$ok=0, int base=10) const
+\item 
+uint64 \mbox{\hyperlink{class_q_string_a3f39cb56a6f77eabc5e3e81cb483fabc}{to\+U\+Int64}} (bool $\ast$ok=0, int base=10) const
+\item 
+float \mbox{\hyperlink{class_q_string_a42b5e7fb62765d02dae680c179e402e8}{to\+Float}} (bool $\ast$ok=0) const
+\item 
+double \mbox{\hyperlink{class_q_string_aab75ed74d8b5db046acbe9562e3ae1ec}{to\+Double}} (bool $\ast$ok=0) const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_accbb06e3141abc70c20ccee59a20b1f5}{set\+Num}} (short, int base=10)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a74b4eb9f51f1b59e2fedcb24bb52ceae}{set\+Num}} (ushort, int base=10)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_ad8a0d9546beed24f51af855a024af9a8}{set\+Num}} (int, int base=10)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_adc4a9618d3977b917fb7e83135b0a4e9}{set\+Num}} (uint, int base=10)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a8258f5a8bf47b4690bc7ea8790dcdb73}{set\+Num}} (long, int base=10)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_af59c75f4897bf1f709a9ca83255ab2a0}{set\+Num}} (ulong, int base=10)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a3cadb18e23db15cdd65c699d8b427100}{set\+Num}} (float, char f=\textquotesingle{}g\textquotesingle{}, int prec=6)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a5b30e9bb5310afb39f770db5fd5bf646}{set\+Num}} (double, char f=\textquotesingle{}g\textquotesingle{}, int prec=6)
+\item 
+void \mbox{\hyperlink{class_q_string_a8aa3d770063602b60782a1a77946af22}{set\+Expand}} (uint index, \mbox{\hyperlink{class_q_char}{Q\+Char}} c)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a01ef0a41636e87e459fc42f2bb2c0a70}{operator+=}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&str)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a312daeba499225f6475b25cf3824d597}{operator+=}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} c)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a44ea6d9b60995e1147f887a4e5543a1c}{operator+=}} (char c)
+\item 
+\mbox{\hyperlink{class_q_char}{Q\+Char}} \mbox{\hyperlink{class_q_string_a5e35837892a410c0396af0cb5cd4a517}{at}} (uint i) const
+\item 
+\mbox{\hyperlink{class_q_char}{Q\+Char}} \mbox{\hyperlink{class_q_string_a2568867dc7f994e05c0e582fc510bbc2}{operator\mbox{[}$\,$\mbox{]}}} (int i) const
+\item 
+\mbox{\hyperlink{class_q_char_ref}{Q\+Char\+Ref}} \mbox{\hyperlink{class_q_string_a36f6c3019eb2c130513c0bbb6ec8ac35}{at}} (uint i)
+\item 
+\mbox{\hyperlink{class_q_char_ref}{Q\+Char\+Ref}} \mbox{\hyperlink{class_q_string_a9c1610733a6421ee92252b056a4e9288}{operator\mbox{[}$\,$\mbox{]}}} (int i)
+\item 
+\mbox{\hyperlink{class_q_char}{Q\+Char}} \mbox{\hyperlink{class_q_string_a4eb0e1874ad0605cfdaee56eda991ed1}{constref}} (uint i) const
+\item 
+\mbox{\hyperlink{class_q_char}{Q\+Char}} \& \mbox{\hyperlink{class_q_string_aeed075cd66817a54e5a2d55ec0e68f4d}{ref}} (uint i)
+\item 
+const \mbox{\hyperlink{class_q_char}{Q\+Char}} $\ast$ \mbox{\hyperlink{class_q_string_af653a95345ba3cd5bade2a1e07f2bb58}{unicode}} () const
+\item 
+const char $\ast$ \mbox{\hyperlink{class_q_string_aa86d59b310f60f4b0178f46eb6cb64d2}{ascii}} () const
+\item 
+const char $\ast$ \mbox{\hyperlink{class_q_string_af9cb186d8ba117c42f31e8235478fe68}{latin1}} () const
+\item 
+const unsigned short $\ast$ \mbox{\hyperlink{class_q_string_a25bed3caa16f09a748d9da0fdf4cea4a}{ucs2}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_q_string_a6da42912db630af419d216aa0d321ebd}{utf8}} () const
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_q_string_ac8aa3324210f474d9f515ba9f80b0f68}{local8\+Bit}} () const
+\item 
+bool \mbox{\hyperlink{class_q_string_a3c2e731ef300d9d649d976148f60f47c}{operator!}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a220282acc5997df4e71e4e3a402bc8c4}{set\+Unicode}} (const \mbox{\hyperlink{class_q_char}{Q\+Char}} $\ast$\mbox{\hyperlink{class_q_string_af653a95345ba3cd5bade2a1e07f2bb58}{unicode}}, uint len)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_a0c39790333795768528b58602afb36b9}{set\+Unicode\+Codes}} (const ushort $\ast$unicode\+\_\+as\+\_\+ushorts, uint len)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_string_ab7df9df250d260fd19067f9c921c0047}{set\+Latin1}} (const char $\ast$, int len=-\/1)
+\item 
+int \mbox{\hyperlink{class_q_string_ac679c7d23beb9bf676e58fc0a36528f1}{compare}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s) const
+\item 
+void \mbox{\hyperlink{class_q_string_a1b04937a2233337016aafaa546ef83a9}{compose}} ()
+\item 
+\mbox{\hyperlink{class_q_string_acaff43b133319ea651f19aac6b967406}{Q\+String\+::\+Direction}} \mbox{\hyperlink{class_q_string_a0fc0ce8cad187317ef119383e38c6457}{direction}} () const
+\item 
+\mbox{\hyperlink{class_q_string_acaff43b133319ea651f19aac6b967406}{Q\+String\+::\+Direction}} \mbox{\hyperlink{class_q_string_aa457fbe724b457a57950db1de0b42aca}{basic\+Direction}} () const
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_aaadfa2ae50754aa87fed66d04b4f8e2b}{visual}} (int index=0, int len=-\/1)
+\item 
+const char $\ast$ \mbox{\hyperlink{class_q_string_a3fd84b8263c26c6539fe6f5ea1055ee5}{data}} () const
+\item 
+bool \mbox{\hyperlink{class_q_string_abce31b19d1051891f32f90b05a3a5eae}{starts\+With}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_ac6eeb4543ef6aa8e4b165ed947039cd8}{number}} (long, int base=10)
+\item 
+static \mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a8d0965cab4025b7babc1aaa7d84aeb69}{number}} (ulong, int base=10)
+\item 
+static \mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_ac00103ffd860cbe3448ace2b490800cf}{number}} (int, int base=10)
+\item 
+static \mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a38addca1148502aad34f7ee85eb1d344}{number}} (uint, int base=10)
+\item 
+static \mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a653e603580c5e150e99997e12ddaddf5}{number}} (double, char f=\textquotesingle{}g\textquotesingle{}, int prec=6)
+\item 
+static \mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_ab8e9aa9ff378aa3f3e531b26598712e3}{from\+Latin1}} (const char $\ast$, int len=-\/1)
+\item 
+static \mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_acc31424e78107f6f711db5a2b9f7b8f4}{from\+Ucs2}} (const unsigned short $\ast$\mbox{\hyperlink{class_q_string_a25bed3caa16f09a748d9da0fdf4cea4a}{ucs2}})
+\item 
+static \mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a3e1b40400c137f234bfd2fd73405bca7}{from\+Utf8}} (const char $\ast$, int len=-\/1)
+\item 
+static \mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_ad1175d375e2a8fee8e6411b855c63afb}{from\+Local8\+Bit}} (const char $\ast$, int len=-\/1)
+\item 
+static int \mbox{\hyperlink{class_q_string_ac8f4c4a5a71bab250e9021c6511269dd}{compare}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s1, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s2)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_string_ad5c6b3d92cd7034d555365fd39bfdf4b}\label{class_q_string_ad5c6b3d92cd7034d555365fd39bfdf4b}} 
+static const \mbox{\hyperlink{struct_q_string_1_1_null}{Null}} {\bfseries null} = \{ \}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_string_aff7e2646af69210685c894cbc1646332}\label{class_q_string_aff7e2646af69210685c894cbc1646332}} 
+class {\bfseries Q\+Const\+String}
+\item 
+Q\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& \mbox{\hyperlink{class_q_string_ae8d642385fbe1a96358fe7432baf546b}{operator$>$$>$}} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&, \mbox{\hyperlink{class_q_string}{Q\+String}} \&)
+\end{DoxyCompactItemize}
+\subsection*{Related Functions}
+(Note that these are not member functions.) \begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_q_string_acdeb7d77a324fe69b0e5889ff8575400}{operator==}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s1, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s2)
+\item 
+bool \mbox{\hyperlink{class_q_string_af35a5ca71a731a8ecf66c62a74123be2}{operator==}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s1, const char $\ast$s2)
+\item 
+bool \mbox{\hyperlink{class_q_string_af13dfeb5517343bb511393c74f18a3b6}{operator==}} (const char $\ast$s1, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s2)
+\item 
+bool \mbox{\hyperlink{class_q_string_aaeae05f02ef07005a07ac285706920dd}{operator!=}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s1, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s2)
+\item 
+bool \mbox{\hyperlink{class_q_string_a77e694c60b1699442a3f13e8bbc0c4a9}{operator!=}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s1, const char $\ast$s2)
+\item 
+bool \mbox{\hyperlink{class_q_string_aba83e5b91872eeb6af5f55d7b96ab50b}{operator!=}} (const char $\ast$s1, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s2)
+\item 
+bool \mbox{\hyperlink{class_q_string_abe479c7e9bb723be856c1bcc388fb50f}{operator$<$}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s1, const char $\ast$s2)
+\item 
+bool \mbox{\hyperlink{class_q_string_ad25d50b4f92864191c30a5a76e7894b8}{operator$<$}} (const char $\ast$s1, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s2)
+\item 
+bool \mbox{\hyperlink{class_q_string_a12eb758cb95c371ba27ef75d82c2ec86}{operator$<$=}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s1, const char $\ast$s2)
+\item 
+bool \mbox{\hyperlink{class_q_string_a98d7107dd1903d01a5fabeab999fe398}{operator$<$=}} (const char $\ast$s1, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s2)
+\item 
+bool \mbox{\hyperlink{class_q_string_ab0ce893122b9d85769be403013196aed}{operator$>$}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s1, const char $\ast$s2)
+\item 
+bool \mbox{\hyperlink{class_q_string_a382b1ef4a8de8768259b825b534fcda1}{operator$>$}} (const char $\ast$s1, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s2)
+\item 
+bool \mbox{\hyperlink{class_q_string_a19a6ef539052453895b39db1f25ec5a2}{operator$>$=}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s1, const char $\ast$s2)
+\item 
+bool \mbox{\hyperlink{class_q_string_a9f4787df63780750a94f131e7a35ac6c}{operator$>$=}} (const char $\ast$s1, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s2)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_ae485733155e818a24470bab6b39007a3}{operator+}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s1, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s2)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_aeebc8da866e999cf9d98f409149a7274}{operator+}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s1, const char $\ast$s2)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_ad31066c16adb556c4e773939da16a894}{operator+}} (const char $\ast$s1, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s2)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_a646dae5a832bf142e3fd6eed4cd29263}{operator+}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s, char c)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_string_ab79668b32f01247149267b5b77669165}{operator+}} (char c, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&s)
+\item 
+\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& \mbox{\hyperlink{class_q_string_a5d8281fc5ce5c2b6e6e9fd2b9f66c32c}{operator$<$$<$}} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&s, const \mbox{\hyperlink{class_q_string}{Q\+String}} \&str)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_q_string}{Q\+String}} class provides an abstraction of Unicode text and the classic \mbox{\hyperlink{class_c}{C}} null-\/terminated char array ({\itshape char$\ast$}). 
+
+\mbox{\hyperlink{class_q_string}{Q\+String}} uses \mbox{\hyperlink{}{implicit sharing}}, and so it is very efficient and easy to use.
+
+In all \mbox{\hyperlink{class_q_string}{Q\+String}} methods that take {\itshape const char$\ast$} parameters, the {\itshape const char$\ast$} is interpreted as a classic C-\/style 0-\/terminated A\+S\+C\+II string. It is legal for the {\itshape const char$\ast$} parameter to be 0. The results are undefined if the {\itshape const char$\ast$} string is not 0-\/terminated. Functions that copy classic \mbox{\hyperlink{class_c}{C}} strings into a \mbox{\hyperlink{class_q_string}{Q\+String}} will not copy the terminating 0-\/character. The \mbox{\hyperlink{class_q_char}{Q\+Char}} array of the \mbox{\hyperlink{class_q_string}{Q\+String}} (as returned by \mbox{\hyperlink{class_q_string_af653a95345ba3cd5bade2a1e07f2bb58}{unicode()}}) is not terminated by a null.
+
+\mbox{\hyperlink{class_a}{A}} \mbox{\hyperlink{class_q_string}{Q\+String}} that has not been assigned to anything is {\itshape null}, i.\+e. both the length and data pointer is 0. \mbox{\hyperlink{class_a}{A}} \mbox{\hyperlink{class_q_string}{Q\+String}} that references the empty string (\char`\"{}\char`\"{}, a single \textquotesingle{}\textbackslash{}0\textquotesingle{} char) is {\itshape empty}. Both null and empty Q\+Strings are legal parameters to the methods. Assigning {\itshape const char 0} to \mbox{\hyperlink{class_q_string}{Q\+String}} gives a null \mbox{\hyperlink{class_q_string}{Q\+String}}.
+
+Note that if you find that you are mixing usage of \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}}, \mbox{\hyperlink{class_q_string}{Q\+String}}, and Q\+Byte\+Array, this causes lots of unnecessary copying and might indicate that the true nature of the data you are dealing with is uncertain. If the data is N\+U\+L-\/terminated 8-\/bit data, use \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}}; if it is unterminated (ie. contains N\+U\+Ls) 8-\/bit data, use Q\+Byte\+Array; if it is text, use \mbox{\hyperlink{class_q_string}{Q\+String}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_char}{Q\+Char}} \mbox{\hyperlink{}{Shared classes}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_q_string_acaff43b133319ea651f19aac6b967406}\label{class_q_string_acaff43b133319ea651f19aac6b967406}} 
+\index{QString@{QString}!Direction@{Direction}}
+\index{Direction@{Direction}!QString@{QString}}
+\subsubsection{\texorpdfstring{Direction}{Direction}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_string_acaff43b133319ea651f19aac6b967406}{Q\+String\+::\+Direction}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DirNeutral@{DirNeutral}!QString@{QString}}\index{QString@{QString}!DirNeutral@{DirNeutral}}}\mbox{\Hypertarget{class_q_string_acaff43b133319ea651f19aac6b967406aa9e64c5b47ed1e0cb5badd8ebbcc2907}\label{class_q_string_acaff43b133319ea651f19aac6b967406aa9e64c5b47ed1e0cb5badd8ebbcc2907}} 
+Dir\+Neutral&No strongly directional text. As return value for \mbox{\hyperlink{class_q_string_a0fc0ce8cad187317ef119383e38c6457}{direction()}} or base\+Direction(), it means that the source string is missing or empty, or contains neither left-\/to-\/right nor right-\/to-\/left characters. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DirLTR@{DirLTR}!QString@{QString}}\index{QString@{QString}!DirLTR@{DirLTR}}}\mbox{\Hypertarget{class_q_string_acaff43b133319ea651f19aac6b967406a3d016d8ec10d90bf372aee5bf8ae890c}\label{class_q_string_acaff43b133319ea651f19aac6b967406a3d016d8ec10d90bf372aee5bf8ae890c}} 
+Dir\+L\+TR&Left-\/to-\/right text. 
+\begin{DoxyItemize}
+\item As return value for \mbox{\hyperlink{class_q_string_a0fc0ce8cad187317ef119383e38c6457}{direction()}}, it means that the source string contains no right-\/to-\/left characters.
+\item As return value for \mbox{\hyperlink{class_q_string_aa457fbe724b457a57950db1de0b42aca}{basic\+Direction()}}, it means that the first strong character of the source string has a left-\/to-\/right direction. 
+\end{DoxyItemize}\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DirRTL@{DirRTL}!QString@{QString}}\index{QString@{QString}!DirRTL@{DirRTL}}}\mbox{\Hypertarget{class_q_string_acaff43b133319ea651f19aac6b967406affa060e9d0531d7b5a4f5839ba536833}\label{class_q_string_acaff43b133319ea651f19aac6b967406affa060e9d0531d7b5a4f5839ba536833}} 
+Dir\+R\+TL&Right-\/to-\/left text. 
+\begin{DoxyItemize}
+\item As return value for \mbox{\hyperlink{class_q_string_a0fc0ce8cad187317ef119383e38c6457}{direction()}}, it means that the source string contains no left-\/to-\/right characters.
+\item As return value for \mbox{\hyperlink{class_q_string_aa457fbe724b457a57950db1de0b42aca}{basic\+Direction()}}, it means that the first strong character of the source string has a right-\/to-\/left direction. 
+\end{DoxyItemize}\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DirMixed@{DirMixed}!QString@{QString}}\index{QString@{QString}!DirMixed@{DirMixed}}}\mbox{\Hypertarget{class_q_string_acaff43b133319ea651f19aac6b967406a3b734051e36983018c3a38a3b3da66c7}\label{class_q_string_acaff43b133319ea651f19aac6b967406a3b734051e36983018c3a38a3b3da66c7}} 
+Dir\+Mixed&Mixed-\/directional text. As return value for \mbox{\hyperlink{class_q_string_a0fc0ce8cad187317ef119383e38c6457}{direction()}}, it means that the source string contains both left-\/to-\/right and right-\/to-\/left characters. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_string_ac17675a27c6e32a31e04f07a5308a9cb}\label{class_q_string_ac17675a27c6e32a31e04f07a5308a9cb}} 
+\index{QString@{QString}!QString@{QString}}
+\index{QString@{QString}!QString@{QString}}
+\subsubsection{\texorpdfstring{QString()}{QString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Q\+String\+::\+Q\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a null string. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a6a6da156364a32ef91e35f83b1955acc}{is\+Null()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_aca2e82d8b16be0e3c61ede2c1f5a83b2}\label{class_q_string_aca2e82d8b16be0e3c61ede2c1f5a83b2}} 
+\index{QString@{QString}!QString@{QString}}
+\index{QString@{QString}!QString@{QString}}
+\subsubsection{\texorpdfstring{QString()}{QString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Q\+String\+::\+Q\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{ch }\end{DoxyParamCaption})}
+
+Constructs a string containing the one character {\itshape ch}. \mbox{\Hypertarget{class_q_string_ae6ff6f22247f503dbd0d49ecae567527}\label{class_q_string_ae6ff6f22247f503dbd0d49ecae567527}} 
+\index{QString@{QString}!QString@{QString}}
+\index{QString@{QString}!QString@{QString}}
+\subsubsection{\texorpdfstring{QString()}{QString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Q\+String\+::\+Q\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s }\end{DoxyParamCaption})}
+
+Constructs an implicitly-\/shared copy of {\itshape s}. \mbox{\Hypertarget{class_q_string_a247768790b0c679fde77b0b1bf511581}\label{class_q_string_a247768790b0c679fde77b0b1bf511581}} 
+\index{QString@{QString}!QString@{QString}}
+\index{QString@{QString}!QString@{QString}}
+\subsubsection{\texorpdfstring{QString()}{QString()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Q\+String\+::\+Q\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_array}{Q\+Byte\+Array}} \&}]{ba }\end{DoxyParamCaption})}
+
+Constructs a string that is a deep copy of {\itshape ba} interpreted as a classic \mbox{\hyperlink{class_c}{C}} string. \mbox{\Hypertarget{class_q_string_a1c92cd2bae630f25ed8516a7bc8c8258}\label{class_q_string_a1c92cd2bae630f25ed8516a7bc8c8258}} 
+\index{QString@{QString}!QString@{QString}}
+\index{QString@{QString}!QString@{QString}}
+\subsubsection{\texorpdfstring{QString()}{QString()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Q\+String\+::\+Q\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_char}{Q\+Char}} $\ast$}]{unicode,  }\item[{uint}]{length }\end{DoxyParamCaption})}
+
+Constructs a string that is a deep copy of the first {\itshape length} \mbox{\hyperlink{class_q_char}{Q\+Char}} in the array {\itshape unicode}.
+
+If {\itshape unicode} and {\itshape length} are 0, a null string is created.
+
+If only {\itshape unicode} is 0, the string is empty, but has {\itshape length} characters of space preallocated -\/ \mbox{\hyperlink{class_q_string}{Q\+String}} expands automatically anyway, but this may speed some cases up a little.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a6a6da156364a32ef91e35f83b1955acc}{is\+Null()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_ac86c64fc0edc5d4c7347180dfa51e1d0}\label{class_q_string_ac86c64fc0edc5d4c7347180dfa51e1d0}} 
+\index{QString@{QString}!QString@{QString}}
+\index{QString@{QString}!QString@{QString}}
+\subsubsection{\texorpdfstring{QString()}{QString()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Q\+String\+::\+Q\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+Constructs a string that is a deep copy of {\itshape str}, interpreted as a classic \mbox{\hyperlink{class_c}{C}} string.
+
+If {\itshape str} is 0 a null string is created.
+
+This is a cast constructor, but it is perfectly safe\+: converting a Latin1 const char$\ast$ to \mbox{\hyperlink{class_q_string}{Q\+String}} preserves all the information. You can disable this constructor by defining Q\+T\+\_\+\+N\+O\+\_\+\+C\+A\+S\+T\+\_\+\+A\+S\+C\+II when you compile your applications. You can also make \mbox{\hyperlink{class_q_string}{Q\+String}} objects by using \mbox{\hyperlink{class_q_string_ab7df9df250d260fd19067f9c921c0047}{set\+Latin1()}}/from\+Latin1(), or \mbox{\hyperlink{class_q_string_ad1175d375e2a8fee8e6411b855c63afb}{from\+Local8\+Bit()}}, \mbox{\hyperlink{class_q_string_a3e1b40400c137f234bfd2fd73405bca7}{from\+Utf8()}}, or whatever encoding is appropriate for the 8-\/bit data you have.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a6a6da156364a32ef91e35f83b1955acc}{is\+Null()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_afa89b9f5bbd0f59d390ddfae4972c34e}\label{class_q_string_afa89b9f5bbd0f59d390ddfae4972c34e}} 
+\index{QString@{QString}!````~QString@{$\sim$QString}}
+\index{````~QString@{$\sim$QString}!QString@{QString}}
+\subsubsection{\texorpdfstring{$\sim$QString()}{~QString()}}
+{\footnotesize\ttfamily Q\+String\+::$\sim$\+Q\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destroys the string and frees the \char`\"{}real\char`\"{} string, if this was the last copy of that string. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_string_a5e251de7eb95440be1fed6e0afef0638}\label{class_q_string_a5e251de7eb95440be1fed6e0afef0638}} 
+\index{QString@{QString}!append@{append}}
+\index{append@{append}!QString@{QString}}
+\subsubsection{\texorpdfstring{append()}{append()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::append (\begin{DoxyParamCaption}\item[{char}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Appends {\itshape ch} to the string and returns a reference to the result. Equivalent to \mbox{\hyperlink{class_q_string_a01ef0a41636e87e459fc42f2bb2c0a70}{operator+=()}}. \mbox{\Hypertarget{class_q_string_a212b80401444eb3f67321fb55ddf64d5}\label{class_q_string_a212b80401444eb3f67321fb55ddf64d5}} 
+\index{QString@{QString}!append@{append}}
+\index{append@{append}!QString@{QString}}
+\subsubsection{\texorpdfstring{append()}{append()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::append (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Appends {\itshape str} to the string and returns a reference to the result. Equivalent to \mbox{\hyperlink{class_q_string_a01ef0a41636e87e459fc42f2bb2c0a70}{operator+=()}}. \mbox{\Hypertarget{class_q_string_a1f09a541ae63558a63be07fb2c6b6e58}\label{class_q_string_a1f09a541ae63558a63be07fb2c6b6e58}} 
+\index{QString@{QString}!append@{append}}
+\index{append@{append}!QString@{QString}}
+\subsubsection{\texorpdfstring{append()}{append()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Appends {\itshape ch} to the string and returns a reference to the result. Equivalent to \mbox{\hyperlink{class_q_string_a01ef0a41636e87e459fc42f2bb2c0a70}{operator+=()}}. \mbox{\Hypertarget{class_q_string_ad7e8aa4fbe9f9c654bce5c370779b533}\label{class_q_string_ad7e8aa4fbe9f9c654bce5c370779b533}} 
+\index{QString@{QString}!arg@{arg}}
+\index{arg@{arg}!QString@{QString}}
+\subsubsection{\texorpdfstring{arg()}{arg()}\hspace{0.1cm}{\footnotesize\ttfamily [1/10]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::arg (\begin{DoxyParamCaption}\item[{char}]{a,  }\item[{int}]{fieldwidth = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+{\itshape a} is assumed to be in the Latin1 character set. \mbox{\Hypertarget{class_q_string_ac7bcea77370989a0da1a1952d8d763ec}\label{class_q_string_ac7bcea77370989a0da1a1952d8d763ec}} 
+\index{QString@{QString}!arg@{arg}}
+\index{arg@{arg}!QString@{QString}}
+\subsubsection{\texorpdfstring{arg()}{arg()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::arg (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{a,  }\item[{int}]{fieldwidth = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+Returns a string equal to this one, but with the lowest-\/numbered occurrence of {\ttfamily i} (for a positive integer i) replaced by {\itshape a}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{label.setText( tr(\textcolor{stringliteral}{"Rename \%1 to \%2?"}).\mbox{\hyperlink{class_q_string_a16bc2c0a1d3e66872697a0d772aac0cf}{arg}}(oldName).\mbox{\hyperlink{class_q_string_a16bc2c0a1d3e66872697a0d772aac0cf}{arg}}(newName) );}
+\end{DoxyCode}
+
+
+{\itshape fieldwidth} is the minimum amount of space {\itshape a} is padded to. \mbox{\hyperlink{class_a}{A}} positive value produces right-\/aligned text, while a negative value produces left aligned text.
+
+\begin{DoxyWarning}{Warning}
+Using \mbox{\hyperlink{class_q_string_a16bc2c0a1d3e66872697a0d772aac0cf}{arg()}} for constructing \char`\"{}real\char`\"{} sentences programmatically is likely to lead to translation problems. Inserting objects like numbers or file names is fairly safe.
+
+Relying on spaces to create alignment is prone to lead to translation problems.
+\end{DoxyWarning}
+If there is no {\ttfamily i} pattern, a warning message (q\+Warning()) is printed and the text as appended at the end of the string. This is error recovery and should not occur in correct code.
+
+\begin{DoxySeeAlso}{See also}
+Q\+Object\+::tr() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a6b112797e9accc6a76ec0f8eee68f98f}\label{class_q_string_a6b112797e9accc6a76ec0f8eee68f98f}} 
+\index{QString@{QString}!arg@{arg}}
+\index{arg@{arg}!QString@{QString}}
+\subsubsection{\texorpdfstring{arg()}{arg()}\hspace{0.1cm}{\footnotesize\ttfamily [3/10]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::arg (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{int}]{fieldwidth = {\ttfamily 0},  }\item[{char}]{fmt = {\ttfamily \textquotesingle{}g\textquotesingle{}},  }\item[{int}]{prec = {\ttfamily -\/1} }\end{DoxyParamCaption}) const}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+{\itshape is} formatted according to the {\itshape fmt} format specified, which is \textquotesingle{}g\textquotesingle{} by default and can be any of \textquotesingle{}f\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{class_e}{E}}\textquotesingle{}, \textquotesingle{}g\textquotesingle{} or \textquotesingle{}G\textquotesingle{}, all of which have the same meaning as for \mbox{\hyperlink{class_q_string_a0b6622a8335cdd080e8b1685b7e0fde0}{sprintf()}}. {\itshape prec} determines the precision, just as for \mbox{\hyperlink{class_q_string_ac6eeb4543ef6aa8e4b165ed947039cd8}{number()}} and \mbox{\hyperlink{class_q_string_a0b6622a8335cdd080e8b1685b7e0fde0}{sprintf()}}. \mbox{\Hypertarget{class_q_string_a6c3b33e3eb30057769fb89490a20de5e}\label{class_q_string_a6c3b33e3eb30057769fb89490a20de5e}} 
+\index{QString@{QString}!arg@{arg}}
+\index{arg@{arg}!QString@{QString}}
+\subsubsection{\texorpdfstring{arg()}{arg()}\hspace{0.1cm}{\footnotesize\ttfamily [4/10]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::arg (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{fieldwidth = {\ttfamily 0},  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+{\itshape a} is expressed in to {\itshape base} notation, which is decimal by default and must be in the range 2-\/36 inclusive. \mbox{\Hypertarget{class_q_string_a16bc2c0a1d3e66872697a0d772aac0cf}\label{class_q_string_a16bc2c0a1d3e66872697a0d772aac0cf}} 
+\index{QString@{QString}!arg@{arg}}
+\index{arg@{arg}!QString@{QString}}
+\subsubsection{\texorpdfstring{arg()}{arg()}\hspace{0.1cm}{\footnotesize\ttfamily [5/10]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::arg (\begin{DoxyParamCaption}\item[{long}]{a,  }\item[{int}]{fieldwidth = {\ttfamily 0},  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption}) const}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+{\itshape a} is expressed in to {\itshape base} notation, which is decimal by default and must be in the range 2-\/36 inclusive. \mbox{\Hypertarget{class_q_string_a740e64a8e6502d50572c63b789ee73e7}\label{class_q_string_a740e64a8e6502d50572c63b789ee73e7}} 
+\index{QString@{QString}!arg@{arg}}
+\index{arg@{arg}!QString@{QString}}
+\subsubsection{\texorpdfstring{arg()}{arg()}\hspace{0.1cm}{\footnotesize\ttfamily [6/10]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::arg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{a,  }\item[{int}]{fieldwidth = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \mbox{\Hypertarget{class_q_string_a96b851d9db810c260225311bd1a1f1dc}\label{class_q_string_a96b851d9db810c260225311bd1a1f1dc}} 
+\index{QString@{QString}!arg@{arg}}
+\index{arg@{arg}!QString@{QString}}
+\subsubsection{\texorpdfstring{arg()}{arg()}\hspace{0.1cm}{\footnotesize\ttfamily [7/10]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::arg (\begin{DoxyParamCaption}\item[{short}]{a,  }\item[{int}]{fieldwidth = {\ttfamily 0},  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+{\itshape a} is expressed in to {\itshape base} notation, which is decimal by default and must be in the range 2-\/36 inclusive. \mbox{\Hypertarget{class_q_string_a9ba06d783305c502518f516e035788d1}\label{class_q_string_a9ba06d783305c502518f516e035788d1}} 
+\index{QString@{QString}!arg@{arg}}
+\index{arg@{arg}!QString@{QString}}
+\subsubsection{\texorpdfstring{arg()}{arg()}\hspace{0.1cm}{\footnotesize\ttfamily [8/10]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::arg (\begin{DoxyParamCaption}\item[{uint}]{a,  }\item[{int}]{fieldwidth = {\ttfamily 0},  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+{\itshape a} is expressed in to {\itshape base} notation, which is decimal by default and must be in the range 2-\/36 inclusive. \mbox{\Hypertarget{class_q_string_af1d2de1335207cb1999634fa8cd98141}\label{class_q_string_af1d2de1335207cb1999634fa8cd98141}} 
+\index{QString@{QString}!arg@{arg}}
+\index{arg@{arg}!QString@{QString}}
+\subsubsection{\texorpdfstring{arg()}{arg()}\hspace{0.1cm}{\footnotesize\ttfamily [9/10]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::arg (\begin{DoxyParamCaption}\item[{ulong}]{a,  }\item[{int}]{fieldwidth = {\ttfamily 0},  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption}) const}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+{\itshape a} is expressed in to {\itshape base} notation, which is decimal by default and must be in the range 2-\/36 inclusive. \mbox{\Hypertarget{class_q_string_aac4ae5c7abbd2646418249eaea3dc53b}\label{class_q_string_aac4ae5c7abbd2646418249eaea3dc53b}} 
+\index{QString@{QString}!arg@{arg}}
+\index{arg@{arg}!QString@{QString}}
+\subsubsection{\texorpdfstring{arg()}{arg()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::arg (\begin{DoxyParamCaption}\item[{ushort}]{a,  }\item[{int}]{fieldwidth = {\ttfamily 0},  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+{\itshape a} is expressed in to {\itshape base} notation, which is decimal by default and must be in the range 2-\/36 inclusive. \mbox{\Hypertarget{class_q_string_aa86d59b310f60f4b0178f46eb6cb64d2}\label{class_q_string_aa86d59b310f60f4b0178f46eb6cb64d2}} 
+\index{QString@{QString}!ascii@{ascii}}
+\index{ascii@{ascii}!QString@{QString}}
+\subsubsection{\texorpdfstring{ascii()}{ascii()}}
+{\footnotesize\ttfamily const char $\ast$ Q\+String\+::ascii (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\textbackslash{}obsolete
+
+This functions simply calls \mbox{\hyperlink{class_q_string_af9cb186d8ba117c42f31e8235478fe68}{latin1()}} and returns the result. \mbox{\Hypertarget{class_q_string_a36f6c3019eb2c130513c0bbb6ec8ac35}\label{class_q_string_a36f6c3019eb2c130513c0bbb6ec8ac35}} 
+\index{QString@{QString}!at@{at}}
+\index{at@{at}!QString@{QString}}
+\subsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_char_ref}{Q\+Char\+Ref}} Q\+String\+::at (\begin{DoxyParamCaption}\item[{uint}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the character at {\itshape i}, expanding the string with Q\+Char\+::null if necessary. The resulting reference can then be assigned to, or otherwise used immediately, but becomes invalid once further modifications are made to the string. \mbox{\Hypertarget{class_q_string_a5e35837892a410c0396af0cb5cd4a517}\label{class_q_string_a5e35837892a410c0396af0cb5cd4a517}} 
+\index{QString@{QString}!at@{at}}
+\index{at@{at}!QString@{QString}}
+\subsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_char}{Q\+Char}} Q\+String\+::at (\begin{DoxyParamCaption}\item[{uint}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the character at {\itshape i}, or 0 if {\itshape i} is beyond the length of the string.
+
+Note\+: If this \mbox{\hyperlink{class_q_string}{Q\+String}} is not const or const\&, the non-\/const \mbox{\hyperlink{class_q_string_a5e35837892a410c0396af0cb5cd4a517}{at()}} will be used instead, which will expand the string if {\itshape i} is beyond the length of the string. \mbox{\Hypertarget{class_q_string_aa457fbe724b457a57950db1de0b42aca}\label{class_q_string_aa457fbe724b457a57950db1de0b42aca}} 
+\index{QString@{QString}!basicDirection@{basicDirection}}
+\index{basicDirection@{basicDirection}!QString@{QString}}
+\subsubsection{\texorpdfstring{basicDirection()}{basicDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string_acaff43b133319ea651f19aac6b967406}{Q\+String\+::\+Direction}} Q\+String\+::basic\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+This function returns the basic directionality of the string. Useful to find the right alignment.
+
+The base direction is derived from the first character in the string with bidirectional character type L, R, or AL. If the first such character has type L, Dir\+L\+TR is returned. If the first such character has type R or AL, Dir\+R\+TL is returned. If the string does not contain any character of these types, then Dir\+Neutral is returned. This is a lightweight function for use when only the base direction is needed and no further bidi processing of the text is needed.
+
+\begin{DoxyReturn}{Returns}
+Dir\+R\+TL, Dir\+L\+TR or Dir\+Neutral 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_q_string_ac679c7d23beb9bf676e58fc0a36528f1}\label{class_q_string_ac679c7d23beb9bf676e58fc0a36528f1}} 
+\index{QString@{QString}!compare@{compare}}
+\index{compare@{compare}!QString@{QString}}
+\subsubsection{\texorpdfstring{compare()}{compare()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Q\+String\+::compare (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s }\end{DoxyParamCaption}) const}
+
+Compares this string to {\itshape s}, returning an integer less than, equal to, or greater than zero if it is, respectively, lexically less than, equal to, or greater than {\itshape s}. \mbox{\Hypertarget{class_q_string_ac8f4c4a5a71bab250e9021c6511269dd}\label{class_q_string_ac8f4c4a5a71bab250e9021c6511269dd}} 
+\index{QString@{QString}!compare@{compare}}
+\index{compare@{compare}!QString@{QString}}
+\subsubsection{\texorpdfstring{compare()}{compare()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Q\+String\+::compare (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s1,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Compare {\itshape s1} to {\itshape s2} returning an integer less than, equal to, or greater than zero if s1 is, respectively, lexically less than, equal to, or greater than s2. \mbox{\Hypertarget{class_q_string_a1b04937a2233337016aafaa546ef83a9}\label{class_q_string_a1b04937a2233337016aafaa546ef83a9}} 
+\index{QString@{QString}!compose@{compose}}
+\index{compose@{compose}!QString@{QString}}
+\subsubsection{\texorpdfstring{compose()}{compose()}}
+{\footnotesize\ttfamily void Q\+String\+::compose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Note that this function is not supported in Qt 2.\+0, and is merely for experimental and illustrative purposes. It is mainly of interest to those experimenting with Arabic and other composition-\/rich texts.
+
+Applies possible ligatures to a \mbox{\hyperlink{class_q_string}{Q\+String}}, useful when composition-\/rich text requires rendering with glyph-\/poor fonts, but also makes compositions such as \mbox{\hyperlink{class_q_char}{Q\+Char(0x0041)}} (\textquotesingle{}\mbox{\hyperlink{class_a}{A}}\textquotesingle{}) and \mbox{\hyperlink{class_q_char}{Q\+Char(0x0308)}} (Unicode accent diaresis) giving \mbox{\hyperlink{class_q_char}{Q\+Char(0x00c4)}} (German \mbox{\hyperlink{class_a}{A}} Umlaut). \mbox{\Hypertarget{class_q_string_a4eb0e1874ad0605cfdaee56eda991ed1}\label{class_q_string_a4eb0e1874ad0605cfdaee56eda991ed1}} 
+\index{QString@{QString}!constref@{constref}}
+\index{constref@{constref}!QString@{QString}}
+\subsubsection{\texorpdfstring{constref()}{constref()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_char}{Q\+Char}} Q\+String\+::constref (\begin{DoxyParamCaption}\item[{uint}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Equivalent to at(i), this returns the \mbox{\hyperlink{class_q_char}{Q\+Char}} at {\itshape i} by value.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_aeed075cd66817a54e5a2d55ec0e68f4d}{ref()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_adf600f28026a425717c0b06b73eb6647}\label{class_q_string_adf600f28026a425717c0b06b73eb6647}} 
+\index{QString@{QString}!contains@{contains}}
+\index{contains@{contains}!QString@{QString}}
+\subsubsection{\texorpdfstring{contains()}{contains()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily int Q\+String\+::contains (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{bool}]{cs = {\ttfamily TRUE} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.\mbox{\Hypertarget{class_q_string_aeee533389b8072c556a9d479fb27c01f}\label{class_q_string_aeee533389b8072c556a9d479fb27c01f}} 
+\index{QString@{QString}!contains@{contains}}
+\index{contains@{contains}!QString@{QString}}
+\subsubsection{\texorpdfstring{contains()}{contains()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily int Q\+String\+::contains (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str,  }\item[{bool}]{cs = {\ttfamily TRUE} }\end{DoxyParamCaption}) const}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \mbox{\Hypertarget{class_q_string_af8e35ae76218246a857e68e105981726}\label{class_q_string_af8e35ae76218246a857e68e105981726}} 
+\index{QString@{QString}!contains@{contains}}
+\index{contains@{contains}!QString@{QString}}
+\subsubsection{\texorpdfstring{contains()}{contains()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily int Q\+String\+::contains (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&}]{rx }\end{DoxyParamCaption}) const}
+
+Counts the number of overlapping occurrences of {\itshape rx} in the string.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s = \textcolor{stringliteral}{"banana and panama"};}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_reg_exp}{QRegExp}} r = \mbox{\hyperlink{class_q_reg_exp}{QRegExp}}(\textcolor{stringliteral}{"a[nm]a"}, TRUE, FALSE);}
+\DoxyCodeLine{s.contains( r );              \textcolor{comment}{// 4 matches}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a675617012888ffd3acc8aef4aed05690}{find()}} \mbox{\hyperlink{class_q_string_a97b5c9712f3f145d52f91d816763ceea}{find\+Rev()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a587310c93b5f81eb250075f50f3210d2}\label{class_q_string_a587310c93b5f81eb250075f50f3210d2}} 
+\index{QString@{QString}!contains@{contains}}
+\index{contains@{contains}!QString@{QString}}
+\subsubsection{\texorpdfstring{contains()}{contains()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily int Q\+String\+::contains (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{str,  }\item[{bool}]{cs = {\ttfamily TRUE} }\end{DoxyParamCaption}) const}
+
+Returns the number of times {\itshape str} occurs in the string.
+
+The match is case sensitive if {\itshape cs} is T\+R\+UE, or case insensitive if {\itshape cs} is F\+A\+L\+SE.
+
+This function counts overlapping substrings, for example, \char`\"{}banana\char`\"{} contains two occurrences of \char`\"{}ana\char`\"{}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a97b5c9712f3f145d52f91d816763ceea}{find\+Rev()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_addd0afccd10afee3a1b42ceaaf3206b8}\label{class_q_string_addd0afccd10afee3a1b42ceaaf3206b8}} 
+\index{QString@{QString}!contains@{contains}}
+\index{contains@{contains}!QString@{QString}}
+\subsubsection{\texorpdfstring{contains()}{contains()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily int Q\+String\+::contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c,  }\item[{bool}]{cs = {\ttfamily TRUE} }\end{DoxyParamCaption}) const}
+
+Returns the number of times the character {\itshape c} occurs in the string.
+
+The match is case sensitive if {\itshape cs} is T\+R\+UE, or case insensitive if {\itshape cs} is F\+A\+L\+SE. \mbox{\Hypertarget{class_q_string_a235ce7da570a43b49839a1cd00c91936}\label{class_q_string_a235ce7da570a43b49839a1cd00c91936}} 
+\index{QString@{QString}!copy@{copy}}
+\index{copy@{copy}!QString@{QString}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\textbackslash{}obsolete
+
+Returns a deep copy of this string.
+
+Doing this is redundant in Qt 2.\+x, since \mbox{\hyperlink{class_q_string}{Q\+String}} is implicitly shared, and so will automatically be deeply copied as necessary. \mbox{\Hypertarget{class_q_string_a3fd84b8263c26c6539fe6f5ea1055ee5}\label{class_q_string_a3fd84b8263c26c6539fe6f5ea1055ee5}} 
+\index{QString@{QString}!data@{data}}
+\index{data@{data}!QString@{QString}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily const char $\ast$ Q\+String\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\textbackslash{}obsolete
+
+Returns a pointer to a 0-\/terminated classic \mbox{\hyperlink{class_c}{C}} string.
+
+In Qt 1.\+x, this returned a char$\ast$ allowing direct manipulation of the string as a sequence of bytes. In Qt 2.\+x where \mbox{\hyperlink{class_q_string}{Q\+String}} is a Unicode string, char$\ast$ conversion constructs a temporary string, and hence direct character operations are meaningless. \mbox{\Hypertarget{class_q_string_a0fc0ce8cad187317ef119383e38c6457}\label{class_q_string_a0fc0ce8cad187317ef119383e38c6457}} 
+\index{QString@{QString}!direction@{direction}}
+\index{direction@{direction}!QString@{QString}}
+\subsubsection{\texorpdfstring{direction()}{direction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string_acaff43b133319ea651f19aac6b967406}{Q\+String\+::\+Direction}} Q\+String\+::direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+This function returns the directionality of the string.
+
+\begin{DoxyReturn}{Returns}
+a value of Dir\+L\+TR, Dir\+R\+TL, Dir\+Mixed or Dir\+Neutral that indicates if the entire text represented by this text is unidirectional, and which direction, or if it is mixed-\/directional or all characters are neutral. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_q_string_a261151b9ce7096b9af4a9588bb5d038a}\label{class_q_string_a261151b9ce7096b9af4a9588bb5d038a}} 
+\index{QString@{QString}!fill@{fill}}
+\index{fill@{fill}!QString@{QString}}
+\subsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily void Q\+String\+::fill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c,  }\item[{int}]{len = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Fills the string with {\itshape len} characters of value {\itshape c}.
+
+If {\itshape len} is negative, the current string length is used. \mbox{\Hypertarget{class_q_string_a5c6efe54d7b27611879cfbac15ee4736}\label{class_q_string_a5c6efe54d7b27611879cfbac15ee4736}} 
+\index{QString@{QString}!find@{find}}
+\index{find@{find}!QString@{QString}}
+\subsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily int Q\+String\+::find (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{int}]{index = {\ttfamily 0},  }\item[{bool}]{cs = {\ttfamily TRUE} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \mbox{\Hypertarget{class_q_string_a78f93a65d91bb0fd659ff9af5b82f956}\label{class_q_string_a78f93a65d91bb0fd659ff9af5b82f956}} 
+\index{QString@{QString}!find@{find}}
+\index{find@{find}!QString@{QString}}
+\subsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily int Q\+String\+::find (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str,  }\item[{int}]{index = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Equivalent to find(\+Q\+String(str), index). \mbox{\Hypertarget{class_q_string_a8d0cb0b0f4448e196443561020e1438c}\label{class_q_string_a8d0cb0b0f4448e196443561020e1438c}} 
+\index{QString@{QString}!find@{find}}
+\index{find@{find}!QString@{QString}}
+\subsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily int Q\+String\+::find (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&}]{rx,  }\item[{int}]{index = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+Finds the first occurrence of the regular expression {\itshape rx}, starting at position {\itshape index}. If {\itshape index} is -\/1, the search starts at the last character; if -\/2, at the next to last character; etc.
+
+Returns the position of the next match, or -\/1 if {\itshape rx} was not found.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a97b5c9712f3f145d52f91d816763ceea}{find\+Rev()}} \mbox{\hyperlink{class_q_string_aa785aa8e254ae8704f1a960245f3337e}{replace()}} \mbox{\hyperlink{class_q_string_addd0afccd10afee3a1b42ceaaf3206b8}{contains()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a669b2ce308f70c955801fa7b44329aeb}\label{class_q_string_a669b2ce308f70c955801fa7b44329aeb}} 
+\index{QString@{QString}!find@{find}}
+\index{find@{find}!QString@{QString}}
+\subsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily int Q\+String\+::find (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{str,  }\item[{int}]{index = {\ttfamily 0},  }\item[{bool}]{cs = {\ttfamily TRUE} }\end{DoxyParamCaption}) const}
+
+Finds the first occurrence of the string {\itshape str}, starting at position {\itshape index}. If {\itshape index} is -\/1, the search starts at the last character; if -\/2, at the next to last character; etc.
+
+The search is case sensitive if {\itshape cs} is T\+R\+UE, or case insensitive if {\itshape cs} is F\+A\+L\+SE.
+
+Returns the position of {\itshape str}, or -\/1 if {\itshape str} could not be found. \mbox{\Hypertarget{class_q_string_a675617012888ffd3acc8aef4aed05690}\label{class_q_string_a675617012888ffd3acc8aef4aed05690}} 
+\index{QString@{QString}!find@{find}}
+\index{find@{find}!QString@{QString}}
+\subsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily int Q\+String\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c,  }\item[{int}]{index = {\ttfamily 0},  }\item[{bool}]{cs = {\ttfamily TRUE} }\end{DoxyParamCaption}) const}
+
+Finds the first occurrence of the character {\itshape c}, starting at position {\itshape index}. If {\itshape index} is -\/1, the search starts at the last character; if -\/2, at the next to last character; etc.
+
+The search is case sensitive if {\itshape cs} is T\+R\+UE, or case insensitive if {\itshape cs} is F\+A\+L\+SE.
+
+Returns the position of {\itshape c}, or -\/1 if {\itshape c} could not be found. \mbox{\Hypertarget{class_q_string_aeb1cbae47f31c7f116751f45bf01d60a}\label{class_q_string_aeb1cbae47f31c7f116751f45bf01d60a}} 
+\index{QString@{QString}!findRev@{findRev}}
+\index{findRev@{findRev}!QString@{QString}}
+\subsubsection{\texorpdfstring{findRev()}{findRev()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily int Q\+String\+::find\+Rev (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{int}]{index = {\ttfamily -\/1},  }\item[{bool}]{cs = {\ttfamily TRUE} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \mbox{\Hypertarget{class_q_string_a1feec4e6b662ef6dee407ec85ffee9d9}\label{class_q_string_a1feec4e6b662ef6dee407ec85ffee9d9}} 
+\index{QString@{QString}!findRev@{findRev}}
+\index{findRev@{findRev}!QString@{QString}}
+\subsubsection{\texorpdfstring{findRev()}{findRev()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily int Q\+String\+::find\+Rev (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str,  }\item[{int}]{index = {\ttfamily -\/1} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Equivalent to find\+Rev(\+Q\+String(str), index). \mbox{\Hypertarget{class_q_string_a678d778450575709d552d7be4316d68c}\label{class_q_string_a678d778450575709d552d7be4316d68c}} 
+\index{QString@{QString}!findRev@{findRev}}
+\index{findRev@{findRev}!QString@{QString}}
+\subsubsection{\texorpdfstring{findRev()}{findRev()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily int Q\+String\+::find\+Rev (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&}]{rx,  }\item[{int}]{index = {\ttfamily -\/1} }\end{DoxyParamCaption}) const}
+
+Finds the first occurrence of the regular expression {\itshape rx}, starting at position {\itshape index} and searching backwards. If {\itshape index} is -\/1, the search starts at the last character; if -\/2, at the next to last character; etc.
+
+Returns the position of the next match (backwards), or -\/1 if {\itshape rx} was not found.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a675617012888ffd3acc8aef4aed05690}{find()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_abd18b44d7313c0ef3160d69d1b936ad5}\label{class_q_string_abd18b44d7313c0ef3160d69d1b936ad5}} 
+\index{QString@{QString}!findRev@{findRev}}
+\index{findRev@{findRev}!QString@{QString}}
+\subsubsection{\texorpdfstring{findRev()}{findRev()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily int Q\+String\+::find\+Rev (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{str,  }\item[{int}]{index = {\ttfamily -\/1},  }\item[{bool}]{cs = {\ttfamily TRUE} }\end{DoxyParamCaption}) const}
+
+Finds the first occurrence of the string {\itshape str}, starting at position {\itshape index} and searching backwards. If {\itshape index} is -\/1, the search starts at the last character; -\/2, at the next to last character; etc.
+
+The search is case sensitive if {\itshape cs} is T\+R\+UE, or case insensitive if {\itshape cs} is F\+A\+L\+SE.
+
+Returns the position of {\itshape str}, or -\/1 if {\itshape str} could not be found. \mbox{\Hypertarget{class_q_string_a97b5c9712f3f145d52f91d816763ceea}\label{class_q_string_a97b5c9712f3f145d52f91d816763ceea}} 
+\index{QString@{QString}!findRev@{findRev}}
+\index{findRev@{findRev}!QString@{QString}}
+\subsubsection{\texorpdfstring{findRev()}{findRev()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily int Q\+String\+::find\+Rev (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c,  }\item[{int}]{index = {\ttfamily -\/1},  }\item[{bool}]{cs = {\ttfamily TRUE} }\end{DoxyParamCaption}) const}
+
+Finds the first occurrence of the character {\itshape c}, starting at position {\itshape index} and searching backwards. If {\itshape index} is -\/1, the search starts at the last character; if -\/2, at the next to last character; etc.
+
+The search is case sensitive if {\itshape cs} is T\+R\+UE, or case insensitive if {\itshape cs} is F\+A\+L\+SE.
+
+Returns the position of {\itshape c}, or -\/1 if {\itshape c} could not be found. \mbox{\Hypertarget{class_q_string_ab8e9aa9ff378aa3f3e531b26598712e3}\label{class_q_string_ab8e9aa9ff378aa3f3e531b26598712e3}} 
+\index{QString@{QString}!fromLatin1@{fromLatin1}}
+\index{fromLatin1@{fromLatin1}!QString@{QString}}
+\subsubsection{\texorpdfstring{fromLatin1()}{fromLatin1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::from\+Latin1 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{chars,  }\item[{int}]{len = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a \mbox{\hyperlink{class_q_string}{Q\+String}} from Latin1 text. This is the same as the \mbox{\hyperlink{class_q_string_ac86c64fc0edc5d4c7347180dfa51e1d0}{Q\+String(const char$\ast$)}} constructor, but you can make that constructor invisible if you compile with the define Q\+T\+\_\+\+N\+O\+\_\+\+C\+A\+S\+T\+\_\+\+A\+S\+C\+II, in which case you can explicitly create a \mbox{\hyperlink{class_q_string}{Q\+String}} from Latin-\/1 text using this function. \mbox{\Hypertarget{class_q_string_ad1175d375e2a8fee8e6411b855c63afb}\label{class_q_string_ad1175d375e2a8fee8e6411b855c63afb}} 
+\index{QString@{QString}!fromLocal8Bit@{fromLocal8Bit}}
+\index{fromLocal8Bit@{fromLocal8Bit}!QString@{QString}}
+\subsubsection{\texorpdfstring{fromLocal8Bit()}{fromLocal8Bit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::from\+Local8\+Bit (\begin{DoxyParamCaption}\item[{const char $\ast$}]{local8\+Bit,  }\item[{int}]{len = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the unicode string decoded from the first {\itshape len} bytes of {\itshape local8\+Bit}. If {\itshape len} is -\/1 (the default), the length of {\itshape local8\+Bit} is used. If trailing partial characters are in {\itshape local8\+Bit}, they are ignored.
+
+{\itshape local8\+Bit} is assumed to be encoded in a locale-\/specific format.
+
+See \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} for more diverse coding/decoding of Unicode strings. \mbox{\Hypertarget{class_q_string_acc31424e78107f6f711db5a2b9f7b8f4}\label{class_q_string_acc31424e78107f6f711db5a2b9f7b8f4}} 
+\index{QString@{QString}!fromUcs2@{fromUcs2}}
+\index{fromUcs2@{fromUcs2}!QString@{QString}}
+\subsubsection{\texorpdfstring{fromUcs2()}{fromUcs2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::from\+Ucs2 (\begin{DoxyParamCaption}\item[{const unsigned short $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Constructs a string that is a deep copy of {\itshape str}, interpreted as a U\+C\+S2 encoded, zero terminated, Unicode string.
+
+If {\itshape str} is 0, then a null string is created. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a6a6da156364a32ef91e35f83b1955acc}{is\+Null()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a3e1b40400c137f234bfd2fd73405bca7}\label{class_q_string_a3e1b40400c137f234bfd2fd73405bca7}} 
+\index{QString@{QString}!fromUtf8@{fromUtf8}}
+\index{fromUtf8@{fromUtf8}!QString@{QString}}
+\subsubsection{\texorpdfstring{fromUtf8()}{fromUtf8()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::from\+Utf8 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{utf8,  }\item[{int}]{len = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the unicode string decoded from the first {\itshape len} bytes of {\itshape utf8}. If {\itshape len} is -\/1 (the default), the length of {\itshape utf8} is used. If trailing partial characters are in {\itshape utf8}, they are ignored.
+
+See \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} for more diverse coding/decoding of Unicode strings. \mbox{\Hypertarget{class_q_string_a2a54fe338baa21cba270e207f9edef97}\label{class_q_string_a2a54fe338baa21cba270e207f9edef97}} 
+\index{QString@{QString}!insert@{insert}}
+\index{insert@{insert}!QString@{QString}}
+\subsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::insert (\begin{DoxyParamCaption}\item[{uint}]{index,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.\mbox{\Hypertarget{class_q_string_aa1047c2887779c9bce2e6c09adf53432}\label{class_q_string_aa1047c2887779c9bce2e6c09adf53432}} 
+\index{QString@{QString}!insert@{insert}}
+\index{insert@{insert}!QString@{QString}}
+\subsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::insert (\begin{DoxyParamCaption}\item[{uint}]{index,  }\item[{const \mbox{\hyperlink{class_q_char}{Q\+Char}} $\ast$}]{s,  }\item[{uint}]{len }\end{DoxyParamCaption})}
+
+Insert {\itshape len} units of \mbox{\hyperlink{class_q_char}{Q\+Char}} data from {\itshape s} into the string before position {\itshape index}. \mbox{\Hypertarget{class_q_string_a3733066010481ab1e8f037bd99045269}\label{class_q_string_a3733066010481ab1e8f037bd99045269}} 
+\index{QString@{QString}!insert@{insert}}
+\index{insert@{insert}!QString@{QString}}
+\subsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::insert (\begin{DoxyParamCaption}\item[{uint}]{index,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s }\end{DoxyParamCaption})}
+
+Insert {\itshape s} into the string before position {\itshape index}.
+
+If {\itshape index} is beyond the end of the string, the string is extended with spaces (A\+S\+C\+II 32) to length {\itshape index} and {\itshape s} is then appended.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s = \textcolor{stringliteral}{"I like fish"};}
+\DoxyCodeLine{s.insert( 2, \textcolor{stringliteral}{"don't "});   \textcolor{comment}{// s == "I don't like fish"}}
+\DoxyCodeLine{s = \textcolor{stringliteral}{"x"};}
+\DoxyCodeLine{s.insert( 3, \textcolor{stringliteral}{"yz"} );  \textcolor{comment}{// s == "x  yz"}}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_q_string_add1ccd76184e93c88d2941cf6e5cd22e}\label{class_q_string_add1ccd76184e93c88d2941cf6e5cd22e}} 
+\index{QString@{QString}!insert@{insert}}
+\index{insert@{insert}!QString@{QString}}
+\subsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::insert (\begin{DoxyParamCaption}\item[{uint}]{index,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c }\end{DoxyParamCaption})}
+
+Insert {\itshape c} into the string at (before) position {\itshape index} and returns a reference to the string.
+
+If {\itshape index} is beyond the end of the string, the string is extended with spaces (A\+S\+C\+II 32) to length {\itshape index} and {\itshape c} is then appended.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s = \textcolor{stringliteral}{"Ys"};}
+\DoxyCodeLine{s.insert( 1, \textcolor{charliteral}{'e'} );       \textcolor{comment}{// s == "Yes"}}
+\DoxyCodeLine{s.insert( 3, \textcolor{charliteral}{'!'});        \textcolor{comment}{// s == "Yes!"}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_afd08aabf1d9b04a3fef298290af04cbd}{remove()}}, \mbox{\hyperlink{class_q_string_aa785aa8e254ae8704f1a960245f3337e}{replace()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_aa032d4b5892338beb575a85e59bbbf38}\label{class_q_string_aa032d4b5892338beb575a85e59bbbf38}} 
+\index{QString@{QString}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!QString@{QString}}
+\subsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Q\+String\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the string is empty, i.\+e. if \mbox{\hyperlink{class_q_string_ac431a733d01111059c8364c62ed53270}{length()}} == 0. An empty string is not always a null string.
+
+See example in \mbox{\hyperlink{class_q_string_a6a6da156364a32ef91e35f83b1955acc}{is\+Null()}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a6a6da156364a32ef91e35f83b1955acc}{is\+Null()}}, \mbox{\hyperlink{class_q_string_ac431a733d01111059c8364c62ed53270}{length()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a6a6da156364a32ef91e35f83b1955acc}\label{class_q_string_a6a6da156364a32ef91e35f83b1955acc}} 
+\index{QString@{QString}!isNull@{isNull}}
+\index{isNull@{isNull}!QString@{QString}}
+\subsubsection{\texorpdfstring{isNull()}{isNull()}}
+{\footnotesize\ttfamily bool Q\+String\+::is\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the string is null. \mbox{\hyperlink{class_a}{A}} null string is also an empty string.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} a;        \textcolor{comment}{// a.unicode() == 0,  a.length() == 0}}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} b = \textcolor{stringliteral}{""};   \textcolor{comment}{// b.unicode() == "", b.length() == 0}}
+\DoxyCodeLine{a.isNull();       \textcolor{comment}{// TRUE, because a.unicode() == 0}}
+\DoxyCodeLine{a.isEmpty();  \textcolor{comment}{// TRUE, because a.length() == 0}}
+\DoxyCodeLine{b.isNull();       \textcolor{comment}{// FALSE, because b.unicode() != 0}}
+\DoxyCodeLine{b.isEmpty();  \textcolor{comment}{// TRUE, because b.length() == 0}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_aa032d4b5892338beb575a85e59bbbf38}{is\+Empty()}}, \mbox{\hyperlink{class_q_string_ac431a733d01111059c8364c62ed53270}{length()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_af9cb186d8ba117c42f31e8235478fe68}\label{class_q_string_af9cb186d8ba117c42f31e8235478fe68}} 
+\index{QString@{QString}!latin1@{latin1}}
+\index{latin1@{latin1}!QString@{QString}}
+\subsubsection{\texorpdfstring{latin1()}{latin1()}}
+{\footnotesize\ttfamily const char $\ast$ Q\+String\+::latin1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a Latin-\/1 representation of the string. Note that the returned value is undefined if the string contains non-\/\+Latin-\/1 characters. If you want to convert strings into formats other than Unicode, see the \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} classes.
+
+This function is mainly useful for boot-\/strapping legacy code to use Unicode.
+
+The result remains valid so long as one unmodified copy of the source string exists.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a6da42912db630af419d216aa0d321ebd}{utf8()}}, \mbox{\hyperlink{class_q_string_ac8aa3324210f474d9f515ba9f80b0f68}{local8\+Bit()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a02545407c8e65afbf6bd22324f9ed517}\label{class_q_string_a02545407c8e65afbf6bd22324f9ed517}} 
+\index{QString@{QString}!left@{left}}
+\index{left@{left}!QString@{QString}}
+\subsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::left (\begin{DoxyParamCaption}\item[{uint}]{len }\end{DoxyParamCaption}) const}
+
+Returns a substring that contains the {\itshape len} leftmost characters of the string.
+
+The whole string is returned if {\itshape len} exceeds the length of the string.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s = \textcolor{stringliteral}{"Pineapple"};}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} t = s.left( 4 );  \textcolor{comment}{// t == "Pine"}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_aa77ad91688915fed22e4150b00b5fd92}{right()}}, \mbox{\hyperlink{class_q_string_a1ef65644b1885a7003d5c2a8e88df479}{mid()}}, \mbox{\hyperlink{class_q_string_aa032d4b5892338beb575a85e59bbbf38}{is\+Empty()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a5a4d00c06bb265d1d91100c816ce1ba2}\label{class_q_string_a5a4d00c06bb265d1d91100c816ce1ba2}} 
+\index{QString@{QString}!leftJustify@{leftJustify}}
+\index{leftJustify@{leftJustify}!QString@{QString}}
+\subsubsection{\texorpdfstring{leftJustify()}{leftJustify()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::left\+Justify (\begin{DoxyParamCaption}\item[{uint}]{width,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{fill = {\ttfamily \textquotesingle{}~\textquotesingle{}},  }\item[{bool}]{truncate = {\ttfamily FALSE} }\end{DoxyParamCaption}) const}
+
+Returns a string of length {\itshape width} that contains this string and padded by the {\itshape fill} character.
+
+If the length of the string exceeds {\itshape width} and {\itshape truncate} is F\+A\+L\+SE, then the returned string is a copy of the string. If the length of the string exceeds {\itshape width} and {\itshape truncate} is T\+R\+UE, then the returned string is a left({\itshape width}).
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s(\textcolor{stringliteral}{"apple"});}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} t = s.leftJustify(8, \textcolor{charliteral}{'.'});        \textcolor{comment}{// t == "apple..."}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a77e73231263538edb5b62675471c5e78}{right\+Justify()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_ac431a733d01111059c8364c62ed53270}\label{class_q_string_ac431a733d01111059c8364c62ed53270}} 
+\index{QString@{QString}!length@{length}}
+\index{length@{length}!QString@{QString}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily uint Q\+String\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the length of the string.
+
+\mbox{\hyperlink{struct_q_string_1_1_null}{Null}} strings and empty strings have zero length.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a6a6da156364a32ef91e35f83b1955acc}{is\+Null()}}, \mbox{\hyperlink{class_q_string_aa032d4b5892338beb575a85e59bbbf38}{is\+Empty()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_ac8aa3324210f474d9f515ba9f80b0f68}\label{class_q_string_ac8aa3324210f474d9f515ba9f80b0f68}} 
+\index{QString@{QString}!local8Bit@{local8Bit}}
+\index{local8Bit@{local8Bit}!QString@{QString}}
+\subsubsection{\texorpdfstring{local8Bit()}{local8Bit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Q\+String\+::local8\+Bit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the string encoded in a locale-\/specific format. On X11, this is the \mbox{\hyperlink{class_q_text_codec_af21be033ce39428087bb853054f15ff5}{Q\+Text\+Codec\+::codec\+For\+Locale()}}. On Windows, it is a system-\/defined encoding.
+
+See \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} for more diverse coding/decoding of Unicode strings.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_ad1175d375e2a8fee8e6411b855c63afb}{Q\+String\+::from\+Local8\+Bit()}}, \mbox{\hyperlink{class_q_string_af9cb186d8ba117c42f31e8235478fe68}{latin1()}}, \mbox{\hyperlink{class_q_string_a6da42912db630af419d216aa0d321ebd}{utf8()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a77d8e8901007cdda3a71b40d42dbc32c}\label{class_q_string_a77d8e8901007cdda3a71b40d42dbc32c}} 
+\index{QString@{QString}!lower@{lower}}
+\index{lower@{lower}!QString@{QString}}
+\subsubsection{\texorpdfstring{lower()}{lower()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::lower (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a new string that is the string converted to lower case.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s(\textcolor{stringliteral}{"TeX"});}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} t = s.lower();    \textcolor{comment}{// t == "tex"}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a4830365186780874b6e160213a422af8}{upper()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a1ef65644b1885a7003d5c2a8e88df479}\label{class_q_string_a1ef65644b1885a7003d5c2a8e88df479}} 
+\index{QString@{QString}!mid@{mid}}
+\index{mid@{mid}!QString@{QString}}
+\subsubsection{\texorpdfstring{mid()}{mid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::mid (\begin{DoxyParamCaption}\item[{uint}]{index,  }\item[{uint}]{len = {\ttfamily 0xffffffff} }\end{DoxyParamCaption}) const}
+
+Returns a substring that contains the {\itshape len} characters of this string, starting at position {\itshape index}.
+
+Returns a null string if the string is empty or {\itshape index} is out of range. Returns the whole string from {\itshape index} if {\itshape index+len} exceeds the length of the string.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s = \textcolor{stringliteral}{"Five pineapples"};}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} t = s.mid( 5, 4 );            \textcolor{comment}{// t == "pine"}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a02545407c8e65afbf6bd22324f9ed517}{left()}}, \mbox{\hyperlink{class_q_string_aa77ad91688915fed22e4150b00b5fd92}{right()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a653e603580c5e150e99997e12ddaddf5}\label{class_q_string_a653e603580c5e150e99997e12ddaddf5}} 
+\index{QString@{QString}!number@{number}}
+\index{number@{number}!QString@{QString}}
+\subsubsection{\texorpdfstring{number()}{number()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::number (\begin{DoxyParamCaption}\item[{double}]{n,  }\item[{char}]{f = {\ttfamily \textquotesingle{}g\textquotesingle{}},  }\item[{int}]{prec = {\ttfamily 6} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This static function returns the printed value of {\itshape n}, formatted in the {\itshape f} format with {\itshape prec} precision.
+
+{\itshape f} can be \textquotesingle{}f\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{class_e}{E}}\textquotesingle{}, \textquotesingle{}g\textquotesingle{} or \textquotesingle{}G\textquotesingle{}, all of which have the same meaning as for \mbox{\hyperlink{class_q_string_a0b6622a8335cdd080e8b1685b7e0fde0}{sprintf()}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_accbb06e3141abc70c20ccee59a20b1f5}{set\+Num()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_ac00103ffd860cbe3448ace2b490800cf}\label{class_q_string_ac00103ffd860cbe3448ace2b490800cf}} 
+\index{QString@{QString}!number@{number}}
+\index{number@{number}!QString@{QString}}
+\subsubsection{\texorpdfstring{number()}{number()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::number (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\hyperlink{class_a}{A}} convenience factory function that returns a string representation of the number {\itshape n}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_accbb06e3141abc70c20ccee59a20b1f5}{set\+Num()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_ac6eeb4543ef6aa8e4b165ed947039cd8}\label{class_q_string_ac6eeb4543ef6aa8e4b165ed947039cd8}} 
+\index{QString@{QString}!number@{number}}
+\index{number@{number}!QString@{QString}}
+\subsubsection{\texorpdfstring{number()}{number()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::number (\begin{DoxyParamCaption}\item[{long}]{n,  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\hyperlink{class_a}{A}} convenience factory function that returns a string representation of the number {\itshape n}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_accbb06e3141abc70c20ccee59a20b1f5}{set\+Num()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a38addca1148502aad34f7ee85eb1d344}\label{class_q_string_a38addca1148502aad34f7ee85eb1d344}} 
+\index{QString@{QString}!number@{number}}
+\index{number@{number}!QString@{QString}}
+\subsubsection{\texorpdfstring{number()}{number()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::number (\begin{DoxyParamCaption}\item[{uint}]{n,  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\hyperlink{class_a}{A}} convenience factory function that returns a string representation of the number {\itshape n}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_accbb06e3141abc70c20ccee59a20b1f5}{set\+Num()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a8d0965cab4025b7babc1aaa7d84aeb69}\label{class_q_string_a8d0965cab4025b7babc1aaa7d84aeb69}} 
+\index{QString@{QString}!number@{number}}
+\index{number@{number}!QString@{QString}}
+\subsubsection{\texorpdfstring{number()}{number()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::number (\begin{DoxyParamCaption}\item[{ulong}]{n,  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\hyperlink{class_a}{A}} convenience factory function that returns a string representation of the number {\itshape n}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_accbb06e3141abc70c20ccee59a20b1f5}{set\+Num()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a3c2e731ef300d9d649d976148f60f47c}\label{class_q_string_a3c2e731ef300d9d649d976148f60f47c}} 
+\index{QString@{QString}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator"!()}{operator!()}}
+{\footnotesize\ttfamily bool Q\+String\+::operator! (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if it is a null string, otherwise F\+A\+L\+SE. Thus you can write\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} name = getName();}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( !name )}
+\DoxyCodeLine{  name = \textcolor{stringliteral}{"Rodney"};}
+\end{DoxyCode}
+
+
+Note that if you say\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} name = getName();}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( name )}
+\DoxyCodeLine{  doSomethingWith(name);}
+\end{DoxyCode}
+
+
+Then this will call {\ttfamily operator const char$\ast$()}, which will do what you want, but rather inefficiently -\/ you may wish to define the macro Q\+T\+\_\+\+N\+O\+\_\+\+A\+S\+C\+I\+I\+\_\+\+C\+A\+ST when writing code which you wish to strictly remain Unicode-\/clean.
+
+When you want the above semantics, use {\ttfamily !is\+Null()} or even {\ttfamily !!}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} name = getName();}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( !!name )}
+\DoxyCodeLine{  doSomethingWith(name);}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_q_string_a44ea6d9b60995e1147f887a4e5543a1c}\label{class_q_string_a44ea6d9b60995e1147f887a4e5543a1c}} 
+\index{QString@{QString}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::operator+= (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+Appends {\itshape c} to the string and returns a reference to the string. \mbox{\Hypertarget{class_q_string_a01ef0a41636e87e459fc42f2bb2c0a70}\label{class_q_string_a01ef0a41636e87e459fc42f2bb2c0a70}} 
+\index{QString@{QString}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{str }\end{DoxyParamCaption})}
+
+Appends {\itshape str} to the string and returns a reference to the string. \mbox{\Hypertarget{class_q_string_a312daeba499225f6475b25cf3824d597}\label{class_q_string_a312daeba499225f6475b25cf3824d597}} 
+\index{QString@{QString}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c }\end{DoxyParamCaption})}
+
+Appends {\itshape c} to the string and returns a reference to the string. \mbox{\Hypertarget{class_q_string_a8de95eb7bffbe1a58c5fb586192066e1}\label{class_q_string_a8de95eb7bffbe1a58c5fb586192066e1}} 
+\index{QString@{QString}!operator=@{operator=}}
+\index{operator=@{operator=}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::operator= (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the string to contain just the single character {\itshape c}. \mbox{\Hypertarget{class_q_string_a16f43f6efe6e1bf2d089d1915429b415}\label{class_q_string_a16f43f6efe6e1bf2d089d1915429b415}} 
+\index{QString@{QString}!operator=@{operator=}}
+\index{operator=@{operator=}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::operator= (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+Assigns a deep copy of {\itshape str}, interpreted as a classic \mbox{\hyperlink{class_c}{C}} string, to this string and returns a reference to this string.
+
+If {\itshape str} is 0 a null string is created.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a6a6da156364a32ef91e35f83b1955acc}{is\+Null()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_ad15235dbb2ee65e25be1104f88ee348d}\label{class_q_string_ad15235dbb2ee65e25be1104f88ee348d}} 
+\index{QString@{QString}!operator=@{operator=}}
+\index{operator=@{operator=}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{cs }\end{DoxyParamCaption})}
+
+Assigns a deep copy of {\itshape cs}, interpreted as a classic \mbox{\hyperlink{class_c}{C}} string, to this string and returns a reference to this string. \mbox{\Hypertarget{class_q_string_ac5c900af262dc166252f0866b6fa8d0e}\label{class_q_string_ac5c900af262dc166252f0866b6fa8d0e}} 
+\index{QString@{QString}!operator=@{operator=}}
+\index{operator=@{operator=}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s }\end{DoxyParamCaption})}
+
+Assigns a shallow copy of {\itshape s} to this string and returns a reference to this string. \mbox{\Hypertarget{class_q_string_a69c0fc9ce4fc282c90c76bdf1af8ce55}\label{class_q_string_a69c0fc9ce4fc282c90c76bdf1af8ce55}} 
+\index{QString@{QString}!operator=@{operator=}}
+\index{operator=@{operator=}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the string to contain just the single character {\itshape c}. \mbox{\Hypertarget{class_q_string_a9c1610733a6421ee92252b056a4e9288}\label{class_q_string_a9c1610733a6421ee92252b056a4e9288}} 
+\index{QString@{QString}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_char_ref}{Q\+Char\+Ref}} Q\+String\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns an object that references the character at {\itshape i}. This reference can then be assigned to, or otherwise used immediately, but becomes invalid once further modifications are made to the string. The \mbox{\hyperlink{class_q_char_ref}{Q\+Char\+Ref}} internal class can be used much like a constant \mbox{\hyperlink{class_q_char}{Q\+Char}}, but if you assign to it, you change the original string (which enlarges and detaches itself). You will get compilation errors if you try to use the result as anything but a \mbox{\hyperlink{class_q_char}{Q\+Char}}. \mbox{\Hypertarget{class_q_string_a2568867dc7f994e05c0e582fc510bbc2}\label{class_q_string_a2568867dc7f994e05c0e582fc510bbc2}} 
+\index{QString@{QString}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_char}{Q\+Char}} Q\+String\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the character at {\itshape i}, or Q\+Char\+::null if {\itshape i} is beyond the length of the string.
+
+Note\+: If this \mbox{\hyperlink{class_q_string}{Q\+String}} is not const or const\&, the non-\/const operator\mbox{[}\mbox{]} will be used instead, which will expand the string if {\itshape i} is beyond the length of the string. \mbox{\Hypertarget{class_q_string_a960e7c9c3ead447bd3da1332ca06a796}\label{class_q_string_a960e7c9c3ead447bd3da1332ca06a796}} 
+\index{QString@{QString}!prepend@{prepend}}
+\index{prepend@{prepend}!QString@{QString}}
+\subsubsection{\texorpdfstring{prepend()}{prepend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::prepend (\begin{DoxyParamCaption}\item[{char}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prepends {\itshape ch} to the string and returns a reference to the result.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a3733066010481ab1e8f037bd99045269}{insert()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a105a5d5c7d527ecdc01b0e3e34edfc52}\label{class_q_string_a105a5d5c7d527ecdc01b0e3e34edfc52}} 
+\index{QString@{QString}!prepend@{prepend}}
+\index{prepend@{prepend}!QString@{QString}}
+\subsubsection{\texorpdfstring{prepend()}{prepend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::prepend (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prepend {\itshape s} to the string. Equivalent to insert(0,s).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a3733066010481ab1e8f037bd99045269}{insert()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a31c38932a11a53c4d56bd286786cb1ed}\label{class_q_string_a31c38932a11a53c4d56bd286786cb1ed}} 
+\index{QString@{QString}!prepend@{prepend}}
+\index{prepend@{prepend}!QString@{QString}}
+\subsubsection{\texorpdfstring{prepend()}{prepend()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::prepend (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prepends {\itshape ch} to the string and returns a reference to the result.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a3733066010481ab1e8f037bd99045269}{insert()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_aeed075cd66817a54e5a2d55ec0e68f4d}\label{class_q_string_aeed075cd66817a54e5a2d55ec0e68f4d}} 
+\index{QString@{QString}!ref@{ref}}
+\index{ref@{ref}!QString@{QString}}
+\subsubsection{\texorpdfstring{ref()}{ref()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_char}{Q\+Char}} \& Q\+String\+::ref (\begin{DoxyParamCaption}\item[{uint}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the \mbox{\hyperlink{class_q_char}{Q\+Char}} at {\itshape i} by reference.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a4eb0e1874ad0605cfdaee56eda991ed1}{constref()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_afd08aabf1d9b04a3fef298290af04cbd}\label{class_q_string_afd08aabf1d9b04a3fef298290af04cbd}} 
+\index{QString@{QString}!remove@{remove}}
+\index{remove@{remove}!QString@{QString}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::remove (\begin{DoxyParamCaption}\item[{uint}]{index,  }\item[{uint}]{len }\end{DoxyParamCaption})}
+
+Removes {\itshape len} characters starting at position {\itshape index} from the string and returns a reference to the string.
+
+If {\itshape index} is too big, nothing happens. If {\itshape index} is valid, but {\itshape len} is too large, the rest of the string is removed.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s = \textcolor{stringliteral}{"Montreal"};}
+\DoxyCodeLine{s.remove( 1, 4 );}
+\DoxyCodeLine{\textcolor{comment}{// s == "Meal"}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a3733066010481ab1e8f037bd99045269}{insert()}}, \mbox{\hyperlink{class_q_string_aa785aa8e254ae8704f1a960245f3337e}{replace()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_aaee914b4744ada084543c212bc1b3a21}\label{class_q_string_aaee914b4744ada084543c212bc1b3a21}} 
+\index{QString@{QString}!replace@{replace}}
+\index{replace@{replace}!QString@{QString}}
+\subsubsection{\texorpdfstring{replace()}{replace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::replace (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_reg_exp}{Q\+Reg\+Exp}} \&}]{rx,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{str }\end{DoxyParamCaption})}
+
+Replaces every occurrence of {\itshape rx} in the string with {\itshape str}. Returns a reference to the string.
+
+Examples\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s = \textcolor{stringliteral}{"banana"};}
+\DoxyCodeLine{s.replace( \mbox{\hyperlink{class_q_reg_exp}{QRegExp}}(\textcolor{stringliteral}{"a.*a"}), \textcolor{stringliteral}{""} );     \textcolor{comment}{// becomes "b"}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s = \textcolor{stringliteral}{"banana"};}
+\DoxyCodeLine{s.replace( \mbox{\hyperlink{class_q_reg_exp}{QRegExp}}(\textcolor{stringliteral}{"\string^[bn]a"}), \textcolor{stringliteral}{" "} );  \textcolor{comment}{// becomes " nana"}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s = \textcolor{stringliteral}{"banana"};}
+\DoxyCodeLine{s.replace( \mbox{\hyperlink{class_q_reg_exp}{QRegExp}}(\textcolor{stringliteral}{"\string^[bn]a"}), \textcolor{stringliteral}{""} );       \textcolor{comment}{// NOTE! becomes ""}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a675617012888ffd3acc8aef4aed05690}{find()}} \mbox{\hyperlink{class_q_string_a97b5c9712f3f145d52f91d816763ceea}{find\+Rev()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a61605f13535774a3b048370a04aff78c}\label{class_q_string_a61605f13535774a3b048370a04aff78c}} 
+\index{QString@{QString}!replace@{replace}}
+\index{replace@{replace}!QString@{QString}}
+\subsubsection{\texorpdfstring{replace()}{replace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::replace (\begin{DoxyParamCaption}\item[{uint}]{index,  }\item[{uint}]{len,  }\item[{const \mbox{\hyperlink{class_q_char}{Q\+Char}} $\ast$}]{s,  }\item[{uint}]{slen }\end{DoxyParamCaption})}
+
+Replaces {\itshape len} characters starting at position {\itshape index} by {\itshape slen} units to \mbox{\hyperlink{class_q_char}{Q\+Char}} data from {\itshape s}, and returns a reference to the string.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a3733066010481ab1e8f037bd99045269}{insert()}}, \mbox{\hyperlink{class_q_string_afd08aabf1d9b04a3fef298290af04cbd}{remove()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_aa785aa8e254ae8704f1a960245f3337e}\label{class_q_string_aa785aa8e254ae8704f1a960245f3337e}} 
+\index{QString@{QString}!replace@{replace}}
+\index{replace@{replace}!QString@{QString}}
+\subsubsection{\texorpdfstring{replace()}{replace()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::replace (\begin{DoxyParamCaption}\item[{uint}]{index,  }\item[{uint}]{len,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s }\end{DoxyParamCaption})}
+
+Replaces {\itshape len} characters starting at position {\itshape index} from the string with {\itshape s}, and returns a reference to the string.
+
+If {\itshape index} is too big, nothing is deleted and {\itshape s} is inserted at the end of the string. If {\itshape index} is valid, but {\itshape len} is too large, {\itshape str} replaces the rest of the string.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s = \textcolor{stringliteral}{"Say yes!"};}
+\DoxyCodeLine{s.replace( 4, 3, \textcolor{stringliteral}{"NO"} );          \textcolor{comment}{// s == "Say NO!"}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a3733066010481ab1e8f037bd99045269}{insert()}}, \mbox{\hyperlink{class_q_string_afd08aabf1d9b04a3fef298290af04cbd}{remove()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_aa77ad91688915fed22e4150b00b5fd92}\label{class_q_string_aa77ad91688915fed22e4150b00b5fd92}} 
+\index{QString@{QString}!right@{right}}
+\index{right@{right}!QString@{QString}}
+\subsubsection{\texorpdfstring{right()}{right()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::right (\begin{DoxyParamCaption}\item[{uint}]{len }\end{DoxyParamCaption}) const}
+
+Returns a substring that contains the {\itshape len} rightmost characters of the string.
+
+The whole string is returned if {\itshape len} exceeds the length of the string.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s = \textcolor{stringliteral}{"Pineapple"};}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} t = s.right( 5 ); \textcolor{comment}{// t == "apple"}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a02545407c8e65afbf6bd22324f9ed517}{left()}}, \mbox{\hyperlink{class_q_string_a1ef65644b1885a7003d5c2a8e88df479}{mid()}}, \mbox{\hyperlink{class_q_string_aa032d4b5892338beb575a85e59bbbf38}{is\+Empty()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a77e73231263538edb5b62675471c5e78}\label{class_q_string_a77e73231263538edb5b62675471c5e78}} 
+\index{QString@{QString}!rightJustify@{rightJustify}}
+\index{rightJustify@{rightJustify}!QString@{QString}}
+\subsubsection{\texorpdfstring{rightJustify()}{rightJustify()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::right\+Justify (\begin{DoxyParamCaption}\item[{uint}]{width,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{fill = {\ttfamily \textquotesingle{}~\textquotesingle{}},  }\item[{bool}]{truncate = {\ttfamily FALSE} }\end{DoxyParamCaption}) const}
+
+Returns a string of length {\itshape width} that contains pad characters followed by the string.
+
+If the length of the string exceeds {\itshape width} and {\itshape truncate} is F\+A\+L\+SE, then the returned string is a copy of the string. If the length of the string exceeds {\itshape width} and {\itshape truncate} is T\+R\+UE, then the returned string is a left({\itshape width}).
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s(\textcolor{stringliteral}{"pie"});}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} t = s.rightJustify(8, \textcolor{charliteral}{'.'});       \textcolor{comment}{// t == ".....pie"}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a5a4d00c06bb265d1d91100c816ce1ba2}{left\+Justify()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a8aa3d770063602b60782a1a77946af22}\label{class_q_string_a8aa3d770063602b60782a1a77946af22}} 
+\index{QString@{QString}!setExpand@{setExpand}}
+\index{setExpand@{setExpand}!QString@{QString}}
+\subsubsection{\texorpdfstring{setExpand()}{setExpand()}}
+{\footnotesize\ttfamily void Q\+String\+::set\+Expand (\begin{DoxyParamCaption}\item[{uint}]{index,  }\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c }\end{DoxyParamCaption})}
+
+\textbackslash{}obsolete
+
+Sets the character at position {\itshape index} to {\itshape c} and expands the string if necessary, filling with spaces.
+
+This method is redundant in Qt 2.\+x, because operator\mbox{[}\mbox{]} will expand the string as necessary. \mbox{\Hypertarget{class_q_string_ab7df9df250d260fd19067f9c921c0047}\label{class_q_string_ab7df9df250d260fd19067f9c921c0047}} 
+\index{QString@{QString}!setLatin1@{setLatin1}}
+\index{setLatin1@{setLatin1}!QString@{QString}}
+\subsubsection{\texorpdfstring{setLatin1()}{setLatin1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::set\+Latin1 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str,  }\item[{int}]{len = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Sets this string to {\itshape str}, interpreted as a classic Latin 1 \mbox{\hyperlink{class_c}{C}} string. If the {\itshape len} argument is negative (default), it is set to strlen(str).
+
+If {\itshape str} is 0 a null string is created. If {\itshape str} is \char`\"{}\char`\"{} an empty string is created.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a6a6da156364a32ef91e35f83b1955acc}{is\+Null()}}, \mbox{\hyperlink{class_q_string_aa032d4b5892338beb575a85e59bbbf38}{is\+Empty()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a5b30e9bb5310afb39f770db5fd5bf646}\label{class_q_string_a5b30e9bb5310afb39f770db5fd5bf646}} 
+\index{QString@{QString}!setNum@{setNum}}
+\index{setNum@{setNum}!QString@{QString}}
+\subsubsection{\texorpdfstring{setNum()}{setNum()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::set\+Num (\begin{DoxyParamCaption}\item[{double}]{n,  }\item[{char}]{f = {\ttfamily \textquotesingle{}g\textquotesingle{}},  }\item[{int}]{prec = {\ttfamily 6} }\end{DoxyParamCaption})}
+
+Sets the string to the printed value of {\itshape n}, formatted in the {\itshape f} format with {\itshape prec} precision, and returns a reference to the string.
+
+{\itshape f} can be \textquotesingle{}f\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{class_e}{E}}\textquotesingle{}, \textquotesingle{}g\textquotesingle{} or \textquotesingle{}G\textquotesingle{}, all of which have the same meaning as for \mbox{\hyperlink{class_q_string_a0b6622a8335cdd080e8b1685b7e0fde0}{sprintf()}}. \mbox{\Hypertarget{class_q_string_a3cadb18e23db15cdd65c699d8b427100}\label{class_q_string_a3cadb18e23db15cdd65c699d8b427100}} 
+\index{QString@{QString}!setNum@{setNum}}
+\index{setNum@{setNum}!QString@{QString}}
+\subsubsection{\texorpdfstring{setNum()}{setNum()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::set\+Num (\begin{DoxyParamCaption}\item[{float}]{n,  }\item[{char}]{f = {\ttfamily \textquotesingle{}g\textquotesingle{}},  }\item[{int}]{prec = {\ttfamily 6} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.\mbox{\Hypertarget{class_q_string_ad8a0d9546beed24f51af855a024af9a8}\label{class_q_string_ad8a0d9546beed24f51af855a024af9a8}} 
+\index{QString@{QString}!setNum@{setNum}}
+\index{setNum@{setNum}!QString@{QString}}
+\subsubsection{\texorpdfstring{setNum()}{setNum()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::set\+Num (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the string to the printed value of {\itshape n} and returns a reference to the string. \mbox{\Hypertarget{class_q_string_a8258f5a8bf47b4690bc7ea8790dcdb73}\label{class_q_string_a8258f5a8bf47b4690bc7ea8790dcdb73}} 
+\index{QString@{QString}!setNum@{setNum}}
+\index{setNum@{setNum}!QString@{QString}}
+\subsubsection{\texorpdfstring{setNum()}{setNum()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::set\+Num (\begin{DoxyParamCaption}\item[{long}]{n,  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+Sets the string to the printed value of {\itshape n} and returns a reference to the string.
+
+The value is converted to {\itshape base} notation (default is decimal). The base must be a value from 2 to 36. \mbox{\Hypertarget{class_q_string_accbb06e3141abc70c20ccee59a20b1f5}\label{class_q_string_accbb06e3141abc70c20ccee59a20b1f5}} 
+\index{QString@{QString}!setNum@{setNum}}
+\index{setNum@{setNum}!QString@{QString}}
+\subsubsection{\texorpdfstring{setNum()}{setNum()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::set\+Num (\begin{DoxyParamCaption}\item[{short}]{n,  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the string to the printed value of {\itshape n} and returns a reference to the string. \mbox{\Hypertarget{class_q_string_adc4a9618d3977b917fb7e83135b0a4e9}\label{class_q_string_adc4a9618d3977b917fb7e83135b0a4e9}} 
+\index{QString@{QString}!setNum@{setNum}}
+\index{setNum@{setNum}!QString@{QString}}
+\subsubsection{\texorpdfstring{setNum()}{setNum()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::set\+Num (\begin{DoxyParamCaption}\item[{uint}]{n,  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the string to the printed unsigned value of {\itshape n} and returns a reference to the string. \mbox{\Hypertarget{class_q_string_af59c75f4897bf1f709a9ca83255ab2a0}\label{class_q_string_af59c75f4897bf1f709a9ca83255ab2a0}} 
+\index{QString@{QString}!setNum@{setNum}}
+\index{setNum@{setNum}!QString@{QString}}
+\subsubsection{\texorpdfstring{setNum()}{setNum()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::set\+Num (\begin{DoxyParamCaption}\item[{ulong}]{n,  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+Sets the string to the printed unsigned value of {\itshape n} and returns a reference to the string.
+
+The value is converted to {\itshape base} notation (default is decimal). The base must be a value from 2 to 36. \mbox{\Hypertarget{class_q_string_a74b4eb9f51f1b59e2fedcb24bb52ceae}\label{class_q_string_a74b4eb9f51f1b59e2fedcb24bb52ceae}} 
+\index{QString@{QString}!setNum@{setNum}}
+\index{setNum@{setNum}!QString@{QString}}
+\subsubsection{\texorpdfstring{setNum()}{setNum()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::set\+Num (\begin{DoxyParamCaption}\item[{ushort}]{n,  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the string to the printed unsigned value of {\itshape n} and returns a reference to the string. \mbox{\Hypertarget{class_q_string_a220282acc5997df4e71e4e3a402bc8c4}\label{class_q_string_a220282acc5997df4e71e4e3a402bc8c4}} 
+\index{QString@{QString}!setUnicode@{setUnicode}}
+\index{setUnicode@{setUnicode}!QString@{QString}}
+\subsubsection{\texorpdfstring{setUnicode()}{setUnicode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::set\+Unicode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_char}{Q\+Char}} $\ast$}]{unicode,  }\item[{uint}]{len }\end{DoxyParamCaption})}
+
+Resizes the string to {\itshape len} unicode characters and copies {\itshape unicode} into the string. If {\itshape unicode} is null, nothing is copied, but the string is resized to {\itshape len} anyway. If {\itshape len} is zero, the string becomes a \mbox{\hyperlink{class_q_string_a6a6da156364a32ef91e35f83b1955acc}{null}} string.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_ab7df9df250d260fd19067f9c921c0047}{set\+Latin1()}}, \mbox{\hyperlink{class_q_string_a6a6da156364a32ef91e35f83b1955acc}{is\+Null()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a0c39790333795768528b58602afb36b9}\label{class_q_string_a0c39790333795768528b58602afb36b9}} 
+\index{QString@{QString}!setUnicodeCodes@{setUnicodeCodes}}
+\index{setUnicodeCodes@{setUnicodeCodes}!QString@{QString}}
+\subsubsection{\texorpdfstring{setUnicodeCodes()}{setUnicodeCodes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::set\+Unicode\+Codes (\begin{DoxyParamCaption}\item[{const ushort $\ast$}]{unicode\+\_\+as\+\_\+ushorts,  }\item[{uint}]{len }\end{DoxyParamCaption})}
+
+Resizes the string to {\itshape len} unicode characters and copies {\itshape unicode\+\_\+as\+\_\+ushorts} into the string (on some X11 client platforms this will involve a byte-\/swapping pass).
+
+If {\itshape unicode} is null, nothing is copied, but the string is resized to {\itshape len} anyway. If {\itshape len} is zero, the string becomes a \mbox{\hyperlink{class_q_string_a6a6da156364a32ef91e35f83b1955acc}{null}} string.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_ab7df9df250d260fd19067f9c921c0047}{set\+Latin1()}}, \mbox{\hyperlink{class_q_string_a6a6da156364a32ef91e35f83b1955acc}{is\+Null()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_ad8e481726eb5a5f368eb1bb23c875847}\label{class_q_string_ad8e481726eb5a5f368eb1bb23c875847}} 
+\index{QString@{QString}!simplifyWhiteSpace@{simplifyWhiteSpace}}
+\index{simplifyWhiteSpace@{simplifyWhiteSpace}!QString@{QString}}
+\subsubsection{\texorpdfstring{simplifyWhiteSpace()}{simplifyWhiteSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::simplify\+White\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a new string that has white space removed from the start and the end, plus any sequence of internal white space replaced with a single space (A\+S\+C\+II 32).
+
+White space means any character for which \mbox{\hyperlink{class_q_char_a67814eae107b451db9def198ae57aa8a}{Q\+Char\+::is\+Space()}} returns T\+R\+UE. This includes A\+S\+C\+II characters 9 (T\+AB), 10 (LF), 11 (VT), 12 (FF), 13 (CR), and 32 (\mbox{\hyperlink{class_space}{Space}}).
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s = \textcolor{stringliteral}{"  lots\(\backslash\)t of\(\backslash\)nwhite    space "};}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} t = s.simplifyWhiteSpace();       \textcolor{comment}{// t == "lots of white space"}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_abc241c312bf04d7556ae830fc0f53d31}{strip\+White\+Space()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a0b6622a8335cdd080e8b1685b7e0fde0}\label{class_q_string_a0b6622a8335cdd080e8b1685b7e0fde0}} 
+\index{QString@{QString}!sprintf@{sprintf}}
+\index{sprintf@{sprintf}!QString@{QString}}
+\subsubsection{\texorpdfstring{sprintf()}{sprintf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+String\+::sprintf (\begin{DoxyParamCaption}\item[{const char $\ast$}]{cformat,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+Safely builds a formatted string from a format string and an arbitrary list of arguments. The format string supports all the escape sequences of printf() in the standard \mbox{\hyperlink{class_c}{C}} library.
+
+The s escape sequence expects a \mbox{\hyperlink{class_q_string_a6da42912db630af419d216aa0d321ebd}{utf8()}} encoded string. The format string {\itshape cformat} is expected to be in latin1. If you need a unicode format string, use \mbox{\hyperlink{class_q_string_a16bc2c0a1d3e66872697a0d772aac0cf}{Q\+String\+::arg()}} instead. For typesafe string building, with full Unicode support, you can use \mbox{\hyperlink{class_q_text_o_stream}{Q\+Text\+O\+Stream}} like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} str;}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s = ...;}
+\DoxyCodeLine{\textcolor{keywordtype}{int} x = ...;}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_text_o_stream}{QTextOStream}}(\&str) << s << \textcolor{stringliteral}{" : "} << x;}
+\end{DoxyCode}
+
+
+For \mbox{\hyperlink{}{translations,}} especially if the strings contains more than one escape sequence, you should consider using the \mbox{\hyperlink{class_q_string_a16bc2c0a1d3e66872697a0d772aac0cf}{arg()}} function instead. This allows the order of the replacements to be controlled by the translator, and has Unicode support.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a16bc2c0a1d3e66872697a0d772aac0cf}{arg()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_abce31b19d1051891f32f90b05a3a5eae}\label{class_q_string_abce31b19d1051891f32f90b05a3a5eae}} 
+\index{QString@{QString}!startsWith@{startsWith}}
+\index{startsWith@{startsWith}!QString@{QString}}
+\subsubsection{\texorpdfstring{startsWith()}{startsWith()}}
+{\footnotesize\ttfamily bool Q\+String\+::starts\+With (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s }\end{DoxyParamCaption}) const}
+
+Returns whether the strings starts with {\itshape s}, or not. \mbox{\Hypertarget{class_q_string_abc241c312bf04d7556ae830fc0f53d31}\label{class_q_string_abc241c312bf04d7556ae830fc0f53d31}} 
+\index{QString@{QString}!stripWhiteSpace@{stripWhiteSpace}}
+\index{stripWhiteSpace@{stripWhiteSpace}!QString@{QString}}
+\subsubsection{\texorpdfstring{stripWhiteSpace()}{stripWhiteSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::strip\+White\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a new string that has white space removed from the start and the end.
+
+White space means any character for which \mbox{\hyperlink{class_q_char_a67814eae107b451db9def198ae57aa8a}{Q\+Char\+::is\+Space()}} returns T\+R\+UE. This includes A\+S\+C\+II characters 9 (T\+AB), 10 (LF), 11 (VT), 12 (FF), 13 (CR), and 32 (\mbox{\hyperlink{class_space}{Space}}).
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s = \textcolor{stringliteral}{" space "};}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} t = s.stripWhiteSpace();      \textcolor{comment}{// t == "space"}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_ad8e481726eb5a5f368eb1bb23c875847}{simplify\+White\+Space()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_aab75ed74d8b5db046acbe9562e3ae1ec}\label{class_q_string_aab75ed74d8b5db046acbe9562e3ae1ec}} 
+\index{QString@{QString}!toDouble@{toDouble}}
+\index{toDouble@{toDouble}!QString@{QString}}
+\subsubsection{\texorpdfstring{toDouble()}{toDouble()}}
+{\footnotesize\ttfamily double Q\+String\+::to\+Double (\begin{DoxyParamCaption}\item[{bool $\ast$}]{ok = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+Returns the string converted to a {\ttfamily double} value.
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\+R\+UE if there are no conceivable errors, and F\+A\+L\+SE if the string is not a number at all, or if it has trailing garbage. \mbox{\Hypertarget{class_q_string_a42b5e7fb62765d02dae680c179e402e8}\label{class_q_string_a42b5e7fb62765d02dae680c179e402e8}} 
+\index{QString@{QString}!toFloat@{toFloat}}
+\index{toFloat@{toFloat}!QString@{QString}}
+\subsubsection{\texorpdfstring{toFloat()}{toFloat()}}
+{\footnotesize\ttfamily float Q\+String\+::to\+Float (\begin{DoxyParamCaption}\item[{bool $\ast$}]{ok = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+Returns the string converted to a {\ttfamily float} value.
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\+R\+UE if there are no conceivable errors, and F\+A\+L\+SE if the string is not a number at all, or if it has trailing garbage. \mbox{\Hypertarget{class_q_string_a98f691fb039c264a986142c833223efc}\label{class_q_string_a98f691fb039c264a986142c833223efc}} 
+\index{QString@{QString}!toInt@{toInt}}
+\index{toInt@{toInt}!QString@{QString}}
+\subsubsection{\texorpdfstring{toInt()}{toInt()}}
+{\footnotesize\ttfamily int Q\+String\+::to\+Int (\begin{DoxyParamCaption}\item[{bool $\ast$}]{ok = {\ttfamily 0},  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption}) const}
+
+Returns the string converted to a {\ttfamily int} value.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} str(\textcolor{stringliteral}{"FF"});}
+\DoxyCodeLine{\textcolor{keywordtype}{bool} ok;}
+\DoxyCodeLine{\textcolor{keywordtype}{int} hex = str.\mbox{\hyperlink{class_q_string_a98f691fb039c264a986142c833223efc}{toInt}}( \&ok, 16 ); \textcolor{comment}{// will return 255, and ok set to TRUE}}
+\DoxyCodeLine{\textcolor{keywordtype}{int} dec = str.\mbox{\hyperlink{class_q_string_a98f691fb039c264a986142c833223efc}{toInt}}( \&ok, 10 ); \textcolor{comment}{// will return 0, and ok set to FALSE}}
+\end{DoxyCode}
+
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\+R\+UE if there are no conceivable errors, and F\+A\+L\+SE if the string is not a number at all, or if it has trailing garbage. \mbox{\Hypertarget{class_q_string_a3b79d2babc06fcbaec011fd9113e75ab}\label{class_q_string_a3b79d2babc06fcbaec011fd9113e75ab}} 
+\index{QString@{QString}!toLong@{toLong}}
+\index{toLong@{toLong}!QString@{QString}}
+\subsubsection{\texorpdfstring{toLong()}{toLong()}}
+{\footnotesize\ttfamily long Q\+String\+::to\+Long (\begin{DoxyParamCaption}\item[{bool $\ast$}]{ok = {\ttfamily 0},  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption}) const}
+
+Returns the string converted to a {\ttfamily long} value.
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\+R\+UE if there are no conceivable errors, and F\+A\+L\+SE if the string is not a number at all, or if it has trailing garbage. \mbox{\Hypertarget{class_q_string_aba480e0d80d25f65e2acebb03d0d7ab5}\label{class_q_string_aba480e0d80d25f65e2acebb03d0d7ab5}} 
+\index{QString@{QString}!toShort@{toShort}}
+\index{toShort@{toShort}!QString@{QString}}
+\subsubsection{\texorpdfstring{toShort()}{toShort()}}
+{\footnotesize\ttfamily short Q\+String\+::to\+Short (\begin{DoxyParamCaption}\item[{bool $\ast$}]{ok = {\ttfamily 0},  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption}) const}
+
+Returns the string converted to a {\ttfamily short} value.
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\+R\+UE if there are no conceivable errors, and F\+A\+L\+SE if the string is not a number at all, or if it has trailing garbage. \mbox{\Hypertarget{class_q_string_abe1e887f24348b6b7ef69b7036707b6b}\label{class_q_string_abe1e887f24348b6b7ef69b7036707b6b}} 
+\index{QString@{QString}!toUInt@{toUInt}}
+\index{toUInt@{toUInt}!QString@{QString}}
+\subsubsection{\texorpdfstring{toUInt()}{toUInt()}}
+{\footnotesize\ttfamily uint Q\+String\+::to\+U\+Int (\begin{DoxyParamCaption}\item[{bool $\ast$}]{ok = {\ttfamily 0},  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption}) const}
+
+Returns the string converted to an {\ttfamily unsigned int} value.
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\+R\+UE if there are no conceivable errors, and F\+A\+L\+SE if the string is not a number at all, or if it has trailing garbage. \mbox{\Hypertarget{class_q_string_a3f39cb56a6f77eabc5e3e81cb483fabc}\label{class_q_string_a3f39cb56a6f77eabc5e3e81cb483fabc}} 
+\index{QString@{QString}!toUInt64@{toUInt64}}
+\index{toUInt64@{toUInt64}!QString@{QString}}
+\subsubsection{\texorpdfstring{toUInt64()}{toUInt64()}}
+{\footnotesize\ttfamily uint64 Q\+String\+::to\+U\+Int64 (\begin{DoxyParamCaption}\item[{bool $\ast$}]{ok = {\ttfamily 0},  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption}) const}
+
+Returns the string converted to an {\ttfamily unsigned long} value.
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\+R\+UE if there are no conceivable errors, and F\+A\+L\+SE if the string is not a number at all, or if it has trailing garbage. \mbox{\Hypertarget{class_q_string_aad9a32a624e392837a639b418f243c67}\label{class_q_string_aad9a32a624e392837a639b418f243c67}} 
+\index{QString@{QString}!toULong@{toULong}}
+\index{toULong@{toULong}!QString@{QString}}
+\subsubsection{\texorpdfstring{toULong()}{toULong()}}
+{\footnotesize\ttfamily ulong Q\+String\+::to\+U\+Long (\begin{DoxyParamCaption}\item[{bool $\ast$}]{ok = {\ttfamily 0},  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption}) const}
+
+Returns the string converted to an {\ttfamily unsigned long} value.
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\+R\+UE if there are no conceivable errors, and F\+A\+L\+SE if the string is not a number at all, or if it has trailing garbage. \mbox{\Hypertarget{class_q_string_a1ef1df5d1b79c0bd01115f39078f1334}\label{class_q_string_a1ef1df5d1b79c0bd01115f39078f1334}} 
+\index{QString@{QString}!toUShort@{toUShort}}
+\index{toUShort@{toUShort}!QString@{QString}}
+\subsubsection{\texorpdfstring{toUShort()}{toUShort()}}
+{\footnotesize\ttfamily ushort Q\+String\+::to\+U\+Short (\begin{DoxyParamCaption}\item[{bool $\ast$}]{ok = {\ttfamily 0},  }\item[{int}]{base = {\ttfamily 10} }\end{DoxyParamCaption}) const}
+
+Returns the string converted to an {\ttfamily unsigned short} value.
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\+R\+UE if there are no conceivable errors, and F\+A\+L\+SE if the string is not a number at all, or if it has trailing garbage. \mbox{\Hypertarget{class_q_string_a6a7546dfb7ad7b0e5d982078c03595db}\label{class_q_string_a6a7546dfb7ad7b0e5d982078c03595db}} 
+\index{QString@{QString}!truncate@{truncate}}
+\index{truncate@{truncate}!QString@{QString}}
+\subsubsection{\texorpdfstring{truncate()}{truncate()}}
+{\footnotesize\ttfamily void Q\+String\+::truncate (\begin{DoxyParamCaption}\item[{uint}]{new\+Len }\end{DoxyParamCaption})}
+
+Truncates the string at position {\itshape new\+Len} if new\+Len is less than the current length . Otherwise, nothing happens.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s = \textcolor{stringliteral}{"truncate this string"};}
+\DoxyCodeLine{s.truncate( 5 );              \textcolor{comment}{// s == "trunc"}}
+\end{DoxyCode}
+
+
+In Qt 1.\+x, it was possible to \char`\"{}truncate\char`\"{} a string to a longer length. This is no longer possible. \mbox{\Hypertarget{class_q_string_a25bed3caa16f09a748d9da0fdf4cea4a}\label{class_q_string_a25bed3caa16f09a748d9da0fdf4cea4a}} 
+\index{QString@{QString}!ucs2@{ucs2}}
+\index{ucs2@{ucs2}!QString@{QString}}
+\subsubsection{\texorpdfstring{ucs2()}{ucs2()}}
+{\footnotesize\ttfamily const unsigned short $\ast$ Q\+String\+::ucs2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the \mbox{\hyperlink{class_q_string}{Q\+String}} as a zero terminated array of unsigned shorts if the string is not null; otherwise returns zero.
+
+The result remains valid so long as one unmodified copy of the source string exists. \mbox{\Hypertarget{class_q_string_af653a95345ba3cd5bade2a1e07f2bb58}\label{class_q_string_af653a95345ba3cd5bade2a1e07f2bb58}} 
+\index{QString@{QString}!unicode@{unicode}}
+\index{unicode@{unicode}!QString@{QString}}
+\subsubsection{\texorpdfstring{unicode()}{unicode()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_q_char}{Q\+Char}} $\ast$ Q\+String\+::unicode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the Unicode representation of the string. The result remains valid until the string is modified. \mbox{\Hypertarget{class_q_string_a4830365186780874b6e160213a422af8}\label{class_q_string_a4830365186780874b6e160213a422af8}} 
+\index{QString@{QString}!upper@{upper}}
+\index{upper@{upper}!QString@{QString}}
+\subsubsection{\texorpdfstring{upper()}{upper()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::upper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a new string that is the string converted to upper case.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} s(\textcolor{stringliteral}{"TeX"});}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} t = s.upper();            \textcolor{comment}{// t == "TEX"}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a77d8e8901007cdda3a71b40d42dbc32c}{lower()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a6da42912db630af419d216aa0d321ebd}\label{class_q_string_a6da42912db630af419d216aa0d321ebd}} 
+\index{QString@{QString}!utf8@{utf8}}
+\index{utf8@{utf8}!QString@{QString}}
+\subsubsection{\texorpdfstring{utf8()}{utf8()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} Q\+String\+::utf8 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the string encoded in U\+T\+F8 format.
+
+See \mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} for more diverse coding/decoding of Unicode strings.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_string_a3e1b40400c137f234bfd2fd73405bca7}{Q\+String\+::from\+Utf8()}}, \mbox{\hyperlink{class_q_string_ac8aa3324210f474d9f515ba9f80b0f68}{local8\+Bit()}}, \mbox{\hyperlink{class_q_string_af9cb186d8ba117c42f31e8235478fe68}{latin1()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_aaadfa2ae50754aa87fed66d04b4f8e2b}\label{class_q_string_aaadfa2ae50754aa87fed66d04b4f8e2b}} 
+\index{QString@{QString}!visual@{visual}}
+\index{visual@{visual}!QString@{QString}}
+\subsubsection{\texorpdfstring{visual()}{visual()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+String\+::visual (\begin{DoxyParamCaption}\item[{int}]{index = {\ttfamily 0},  }\item[{int}]{len = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+This function returns the \mbox{\hyperlink{class_q_string}{Q\+String}} ordered visually. Useful for painting the string or when transforming to a visually ordered encoding. 
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_q_string_aba83e5b91872eeb6af5f55d7b96ab50b}\label{class_q_string_aba83e5b91872eeb6af5f55d7b96ab50b}} 
+\index{QString@{QString}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_q_string_a3c2e731ef300d9d649d976148f60f47c}{operator!}}= (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s1,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if the two strings are different, or F\+A\+L\+SE if they are equal.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) != 0}. \mbox{\Hypertarget{class_q_string_a77e694c60b1699442a3f13e8bbc0c4a9}\label{class_q_string_a77e694c60b1699442a3f13e8bbc0c4a9}} 
+\index{QString@{QString}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_q_string_a3c2e731ef300d9d649d976148f60f47c}{operator!}}= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s1,  }\item[{const char $\ast$}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if the two strings are different, or F\+A\+L\+SE if they are equal.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) != 0}. \mbox{\Hypertarget{class_q_string_aaeae05f02ef07005a07ac285706920dd}\label{class_q_string_aaeae05f02ef07005a07ac285706920dd}} 
+\index{QString@{QString}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_q_string_a3c2e731ef300d9d649d976148f60f47c}{operator!}}= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s1,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if the two strings are different, or F\+A\+L\+SE if they are equal.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) != 0}. \mbox{\Hypertarget{class_q_string_ab79668b32f01247149267b5b77669165}\label{class_q_string_ab79668b32f01247149267b5b77669165}} 
+\index{QString@{QString}!operator+@{operator+}}
+\index{operator+@{operator+}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} operator+ (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns the concatenated string of c and s. \mbox{\Hypertarget{class_q_string_ad31066c16adb556c4e773939da16a894}\label{class_q_string_ad31066c16adb556c4e773939da16a894}} 
+\index{QString@{QString}!operator+@{operator+}}
+\index{operator+@{operator+}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} operator+ (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s1,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns the concatenated string of s1 and s2. \mbox{\Hypertarget{class_q_string_a646dae5a832bf142e3fd6eed4cd29263}\label{class_q_string_a646dae5a832bf142e3fd6eed4cd29263}} 
+\index{QString@{QString}!operator+@{operator+}}
+\index{operator+@{operator+}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns the concatenated string of s and c. \mbox{\Hypertarget{class_q_string_aeebc8da866e999cf9d98f409149a7274}\label{class_q_string_aeebc8da866e999cf9d98f409149a7274}} 
+\index{QString@{QString}!operator+@{operator+}}
+\index{operator+@{operator+}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s1,  }\item[{const char $\ast$}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns the concatenated string of s1 and s2. \mbox{\Hypertarget{class_q_string_ae485733155e818a24470bab6b39007a3}\label{class_q_string_ae485733155e818a24470bab6b39007a3}} 
+\index{QString@{QString}!operator+@{operator+}}
+\index{operator+@{operator+}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s1,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns the concatenated string of s1 and s2. \mbox{\Hypertarget{class_q_string_ad25d50b4f92864191c30a5a76e7894b8}\label{class_q_string_ad25d50b4f92864191c30a5a76e7894b8}} 
+\index{QString@{QString}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s1,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if {\itshape s1} is alphabetically less than {\itshape s2}, otherwise F\+A\+L\+SE.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $<$ 0}. \mbox{\Hypertarget{class_q_string_abe479c7e9bb723be856c1bcc388fb50f}\label{class_q_string_abe479c7e9bb723be856c1bcc388fb50f}} 
+\index{QString@{QString}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s1,  }\item[{const char $\ast$}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if {\itshape s1} is alphabetically less than {\itshape s2}, otherwise F\+A\+L\+SE.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $<$ 0}. \mbox{\Hypertarget{class_q_string_a5d8281fc5ce5c2b6e6e9fd2b9f66c32c}\label{class_q_string_a5d8281fc5ce5c2b6e6e9fd2b9f66c32c}} 
+\index{QString@{QString}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&}]{s,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Writes a string to the stream.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{}{Format of the Q\+Data\+Stream operators }} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_string_a98d7107dd1903d01a5fabeab999fe398}\label{class_q_string_a98d7107dd1903d01a5fabeab999fe398}} 
+\index{QString@{QString}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool operator$<$= (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s1,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if {\itshape s1} is alphabetically less than or equal to {\itshape s2}, otherwise F\+A\+L\+SE.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $<$= 0}. \mbox{\Hypertarget{class_q_string_a12eb758cb95c371ba27ef75d82c2ec86}\label{class_q_string_a12eb758cb95c371ba27ef75d82c2ec86}} 
+\index{QString@{QString}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s1,  }\item[{const char $\ast$}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if {\itshape s1} is alphabetically less than or equal to {\itshape s2}, otherwise F\+A\+L\+SE.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $<$= 0}. \mbox{\Hypertarget{class_q_string_af13dfeb5517343bb511393c74f18a3b6}\label{class_q_string_af13dfeb5517343bb511393c74f18a3b6}} 
+\index{QString@{QString}!operator==@{operator==}}
+\index{operator==@{operator==}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s1,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if the two strings are equal, or F\+A\+L\+SE if they are different.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) == 0}. \mbox{\Hypertarget{class_q_string_af35a5ca71a731a8ecf66c62a74123be2}\label{class_q_string_af35a5ca71a731a8ecf66c62a74123be2}} 
+\index{QString@{QString}!operator==@{operator==}}
+\index{operator==@{operator==}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s1,  }\item[{const char $\ast$}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if the two strings are equal, or F\+A\+L\+SE if they are different.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) == 0}. \mbox{\Hypertarget{class_q_string_acdeb7d77a324fe69b0e5889ff8575400}\label{class_q_string_acdeb7d77a324fe69b0e5889ff8575400}} 
+\index{QString@{QString}!operator==@{operator==}}
+\index{operator==@{operator==}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s1,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if the two strings are equal, or F\+A\+L\+SE if they are different. \mbox{\hyperlink{class_a}{A}} null string is different from an empty, non-\/null string.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) == 0}. \mbox{\Hypertarget{class_q_string_a382b1ef4a8de8768259b825b534fcda1}\label{class_q_string_a382b1ef4a8de8768259b825b534fcda1}} 
+\index{QString@{QString}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool operator$>$ (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s1,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if {\itshape s1} is alphabetically greater than {\itshape s2}, otherwise F\+A\+L\+SE.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $>$ 0}. \mbox{\Hypertarget{class_q_string_ab0ce893122b9d85769be403013196aed}\label{class_q_string_ab0ce893122b9d85769be403013196aed}} 
+\index{QString@{QString}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s1,  }\item[{const char $\ast$}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if {\itshape s1} is alphabetically greater than {\itshape s2}, otherwise F\+A\+L\+SE.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $>$ 0}. \mbox{\Hypertarget{class_q_string_a9f4787df63780750a94f131e7a35ac6c}\label{class_q_string_a9f4787df63780750a94f131e7a35ac6c}} 
+\index{QString@{QString}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool operator$>$= (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s1,  }\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if {\itshape s1} is alphabetically greater than or equal to {\itshape s2}, otherwise F\+A\+L\+SE.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $>$= 0}. \mbox{\Hypertarget{class_q_string_a19a6ef539052453895b39db1f25ec5a2}\label{class_q_string_a19a6ef539052453895b39db1f25ec5a2}} 
+\index{QString@{QString}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s1,  }\item[{const char $\ast$}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Returns T\+R\+UE if {\itshape s1} is alphabetically greater than or equal to {\itshape s2}, otherwise F\+A\+L\+SE.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $>$= 0}. \mbox{\Hypertarget{class_q_string_ae8d642385fbe1a96358fe7432baf546b}\label{class_q_string_ae8d642385fbe1a96358fe7432baf546b}} 
+\index{QString@{QString}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QString@{QString}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&}]{s,  }\item[{\mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Reads a string from the stream.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{}{Format of the Q\+Data\+Stream operators }} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qstring.\+h\item 
+doxygen/qtools/qstring.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,45 @@
+\hypertarget{class_dot_call_graph}{}\section{Dot\+Call\+Graph Class Reference}
+\label{class_dot_call_graph}\index{DotCallGraph@{DotCallGraph}}
+
+
+{\ttfamily \#include $<$dot.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dot_call_graph_acb6d03dcd52cf3a4d3e8ea623bdb2da0}\label{class_dot_call_graph_acb6d03dcd52cf3a4d3e8ea623bdb2da0}} 
+{\bfseries Dot\+Call\+Graph} (\mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$md, bool inverse)
+\item 
+\mbox{\Hypertarget{class_dot_call_graph_a495ccb0c2c8b1dfca2732f3f36c3d947}\label{class_dot_call_graph_a495ccb0c2c8b1dfca2732f3f36c3d947}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries write\+Graph} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, Graph\+Output\+Format gf, Embedded\+Output\+Format ef, const char $\ast$path, const char $\ast$file\+Name, const char $\ast$rel\+Path, bool write\+Image\+Map=T\+R\+UE, int graph\+Id=-\/1) const
+\item 
+\mbox{\Hypertarget{class_dot_call_graph_a37d014d7543ae64f653abdae4988d617}\label{class_dot_call_graph_a37d014d7543ae64f653abdae4988d617}} 
+void {\bfseries build\+Graph} (\mbox{\hyperlink{class_dot_node}{Dot\+Node}} $\ast$n, \mbox{\hyperlink{class_member_def}{Member\+Def}} $\ast$md, int distance)
+\item 
+\mbox{\Hypertarget{class_dot_call_graph_ae7f297903a3fe6ea2ac638f381125767}\label{class_dot_call_graph_ae7f297903a3fe6ea2ac638f381125767}} 
+bool {\bfseries is\+Trivial} () const
+\item 
+\mbox{\Hypertarget{class_dot_call_graph_a1f0c9cfab017f669e5c83e4ecd9ef760}\label{class_dot_call_graph_a1f0c9cfab017f669e5c83e4ecd9ef760}} 
+bool {\bfseries is\+Too\+Big} () const
+\item 
+\mbox{\Hypertarget{class_dot_call_graph_addf14efc1a3021713c31070fe7e75641}\label{class_dot_call_graph_addf14efc1a3021713c31070fe7e75641}} 
+void {\bfseries determine\+Visible\+Nodes} (\mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{class_dot_node}{Dot\+Node}} $>$ \&queue, int \&max\+Nodes)
+\item 
+\mbox{\Hypertarget{class_dot_call_graph_a1bcba0cd9ce18996902651b8d306033d}\label{class_dot_call_graph_a1bcba0cd9ce18996902651b8d306033d}} 
+void {\bfseries determine\+Truncated\+Nodes} (\mbox{\hyperlink{class_q_list}{Q\+List}}$<$ \mbox{\hyperlink{class_dot_node}{Dot\+Node}} $>$ \&queue)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dot_call_graph_aa2f923dbf1cf7d4f5481666741b675c4}\label{class_dot_call_graph_aa2f923dbf1cf7d4f5481666741b675c4}} 
+static void {\bfseries reset\+Numbering} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Representation of an call graph 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/dot.\+h\item 
+doxygen/src/dot.\+cpp\end{DoxyCompactItemize}

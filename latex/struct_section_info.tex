@@ -1,0 +1,68 @@
+\hypertarget{struct_section_info}{}\section{Section\+Info Struct Reference}
+\label{struct_section_info}\index{SectionInfo@{SectionInfo}}
+
+
+{\ttfamily \#include $<$section.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_section_info_a32308f52dd59422b14fb75a92c90ebf1}\label{struct_section_info_a32308f52dd59422b14fb75a92c90ebf1}} 
+enum {\bfseries Section\+Type} \{ \newline
+{\bfseries Page} = 0, 
+{\bfseries Section} = 1, 
+{\bfseries Subsection} = 2, 
+{\bfseries Subsubsection} = 3, 
+\newline
+{\bfseries Paragraph} = 4, 
+{\bfseries Anchor} = 5, 
+{\bfseries Table} = 6
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_section_info_a32f7bf6d4f16717331867621b5753fe1}\label{struct_section_info_a32f7bf6d4f16717331867621b5753fe1}} 
+{\bfseries Section\+Info} (const char $\ast$f, const int lin, const char $\ast$l, const char $\ast$t, Section\+Type st, int lev, const char $\ast$r=0)
+\item 
+\mbox{\Hypertarget{struct_section_info_acd07dd13cd3d649a7a103e91d5c59cd9}\label{struct_section_info_acd07dd13cd3d649a7a103e91d5c59cd9}} 
+{\bfseries Section\+Info} (const \mbox{\hyperlink{struct_section_info}{Section\+Info}} \&s)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_section_info_a3f1540ed748f49b622915063e97a0a9c}\label{struct_section_info_a3f1540ed748f49b622915063e97a0a9c}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries label}
+\item 
+\mbox{\Hypertarget{struct_section_info_a6351881d52095f7bbe11e96a7102f9a6}\label{struct_section_info_a6351881d52095f7bbe11e96a7102f9a6}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries title}
+\item 
+\mbox{\Hypertarget{struct_section_info_a028667b2061a4cfa8a5ed9765e0583d2}\label{struct_section_info_a028667b2061a4cfa8a5ed9765e0583d2}} 
+Section\+Type {\bfseries type}
+\item 
+\mbox{\Hypertarget{struct_section_info_ad0f4c1f86263d2a044d2b5a183bb3387}\label{struct_section_info_ad0f4c1f86263d2a044d2b5a183bb3387}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries ref}
+\item 
+\mbox{\Hypertarget{struct_section_info_aae5dcda2890356ecfcb2cd21f12c2ef7}\label{struct_section_info_aae5dcda2890356ecfcb2cd21f12c2ef7}} 
+\mbox{\hyperlink{class_definition}{Definition}} $\ast$ {\bfseries definition}
+\item 
+\mbox{\Hypertarget{struct_section_info_a8973ffe375fd2b350a04f51f0785fd58}\label{struct_section_info_a8973ffe375fd2b350a04f51f0785fd58}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries file\+Name}
+\item 
+\mbox{\Hypertarget{struct_section_info_ae57cb5b4a832c3768cf3f59fc1469846}\label{struct_section_info_ae57cb5b4a832c3768cf3f59fc1469846}} 
+int {\bfseries line\+Nr}
+\item 
+\mbox{\Hypertarget{struct_section_info_a6f1606b8414caf31008f55d8b33d4fcc}\label{struct_section_info_a6f1606b8414caf31008f55d8b33d4fcc}} 
+bool {\bfseries generated}
+\item 
+\mbox{\Hypertarget{struct_section_info_ac215add41d774d87dfd6a56acb4570c5}\label{struct_section_info_ac215add41d774d87dfd6a56acb4570c5}} 
+int {\bfseries level}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing a section in a page 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/section.\+h\end{DoxyCompactItemize}

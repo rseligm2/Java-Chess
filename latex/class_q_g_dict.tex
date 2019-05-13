@@ -1,0 +1,189 @@
+\hypertarget{class_q_g_dict}{}\section{Q\+G\+Dict Class Reference}
+\label{class_q_g_dict}\index{QGDict@{QGDict}}
+
+
+The \mbox{\hyperlink{class_q_g_dict}{Q\+G\+Dict}} class is an internal class for implementing Q\+Dict template classes.  
+
+
+
+
+{\ttfamily \#include $<$qgdict.\+h$>$}
+
+Inheritance diagram for Q\+G\+Dict\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_q_g_dict}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint \mbox{\hyperlink{class_q_g_dict_a13f6cc9bdbfe37db323b47947c1e017c}{count}} () const
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a0844214b5a0f6f3d3df655c1f84e7f4a}\label{class_q_g_dict_a0844214b5a0f6f3d3df655c1f84e7f4a}} 
+uint {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a1de8c35b775f7918acdf148b5df41fe4}\label{class_q_g_dict_a1de8c35b775f7918acdf148b5df41fe4}} 
+Q\+Collection\+::\+Item {\bfseries look\+\_\+string} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&key, Q\+Collection\+::\+Item, int)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a6ad3fe3b248746cb4689f884f36404a0}\label{class_q_g_dict_a6ad3fe3b248746cb4689f884f36404a0}} 
+Q\+Collection\+::\+Item {\bfseries look\+\_\+ascii} (const char $\ast$key, Q\+Collection\+::\+Item, int)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a4d517bb4a5a9d6257d6ffd60597f7621}\label{class_q_g_dict_a4d517bb4a5a9d6257d6ffd60597f7621}} 
+Q\+Collection\+::\+Item {\bfseries look\+\_\+int} (long key, Q\+Collection\+::\+Item, int)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a9ee35841e4c40a244c54cc7fcf519649}\label{class_q_g_dict_a9ee35841e4c40a244c54cc7fcf519649}} 
+Q\+Collection\+::\+Item {\bfseries look\+\_\+ptr} (void $\ast$key, Q\+Collection\+::\+Item, int)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a698c24588a7688bd9c618c17ba2fd7bb}\label{class_q_g_dict_a698c24588a7688bd9c618c17ba2fd7bb}} 
+\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& {\bfseries read} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a258bcd2d51646c8a81ec27c024650447}\label{class_q_g_dict_a258bcd2d51646c8a81ec27c024650447}} 
+\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& {\bfseries write} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a4eced3c3c4e5c52360bc2f1bab85412e}\label{class_q_g_dict_a4eced3c3c4e5c52360bc2f1bab85412e}} 
+enum {\bfseries Key\+Type} \{ {\bfseries String\+Key}, 
+{\bfseries Ascii\+Key}, 
+{\bfseries Int\+Key}, 
+{\bfseries Ptr\+Key}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a9dd35b06699b4527dd7e66d1b962b475}\label{class_q_g_dict_a9dd35b06699b4527dd7e66d1b962b475}} 
+{\bfseries Q\+G\+Dict} (uint len, Key\+Type kt, bool cs, bool ck)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a137d355f22abdcbda8ded8b8736ec117}\label{class_q_g_dict_a137d355f22abdcbda8ded8b8736ec117}} 
+{\bfseries Q\+G\+Dict} (const \mbox{\hyperlink{class_q_g_dict}{Q\+G\+Dict}} \&)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a8c4e70b0dee22ada9bf8a41e3c92280d}\label{class_q_g_dict_a8c4e70b0dee22ada9bf8a41e3c92280d}} 
+\mbox{\hyperlink{class_q_g_dict}{Q\+G\+Dict}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_q_g_dict}{Q\+G\+Dict}} \&)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a50cd12c84c03da6cd92d413908d1a001}\label{class_q_g_dict_a50cd12c84c03da6cd92d413908d1a001}} 
+bool {\bfseries remove\+\_\+string} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&key, Q\+Collection\+::\+Item item=0)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a65224d18f945fa28a1300526fd4b5903}\label{class_q_g_dict_a65224d18f945fa28a1300526fd4b5903}} 
+bool {\bfseries remove\+\_\+ascii} (const char $\ast$key, Q\+Collection\+::\+Item item=0)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a32023e3d50d6f8b81935655b66f0bdc4}\label{class_q_g_dict_a32023e3d50d6f8b81935655b66f0bdc4}} 
+bool {\bfseries remove\+\_\+int} (long key, Q\+Collection\+::\+Item item=0)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_abc3fd70fe1c1f6523e3ce4258672a4ca}\label{class_q_g_dict_abc3fd70fe1c1f6523e3ce4258672a4ca}} 
+bool {\bfseries remove\+\_\+ptr} (void $\ast$key, Q\+Collection\+::\+Item item=0)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a17b54499d2315700966df4ad58381b79}\label{class_q_g_dict_a17b54499d2315700966df4ad58381b79}} 
+Q\+Collection\+::\+Item {\bfseries take\+\_\+string} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&key)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a63d62bbf56ae87af66f3c6c61b8c5bf7}\label{class_q_g_dict_a63d62bbf56ae87af66f3c6c61b8c5bf7}} 
+Q\+Collection\+::\+Item {\bfseries take\+\_\+ascii} (const char $\ast$key)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a1cd50eb19f0817df17350a978aa759d9}\label{class_q_g_dict_a1cd50eb19f0817df17350a978aa759d9}} 
+Q\+Collection\+::\+Item {\bfseries take\+\_\+int} (long key)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a96016e0d21a045d9901ba45182fdd80f}\label{class_q_g_dict_a96016e0d21a045d9901ba45182fdd80f}} 
+Q\+Collection\+::\+Item {\bfseries take\+\_\+ptr} (void $\ast$key)
+\item 
+void \mbox{\hyperlink{class_q_g_dict_a991443b3568622b97772e234fe61dfd7}{clear}} ()
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a926ff48cc6b011ab9d40dd930c5eb8e7}\label{class_q_g_dict_a926ff48cc6b011ab9d40dd930c5eb8e7}} 
+void {\bfseries resize} (uint)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_ad27652d613a6df366a5135ea8c4a8231}\label{class_q_g_dict_ad27652d613a6df366a5135ea8c4a8231}} 
+int {\bfseries hash\+Key\+String} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_ad3c9ab38e145042373e329e9ecbf8f25}\label{class_q_g_dict_ad3c9ab38e145042373e329e9ecbf8f25}} 
+int {\bfseries hash\+Key\+Ascii} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a6293553459bc0566a6043cc0d4f8be7c}\label{class_q_g_dict_a6293553459bc0566a6043cc0d4f8be7c}} 
+void {\bfseries statistics} () const
+\item 
+virtual \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& \mbox{\hyperlink{class_q_g_dict_a236bd95bec134d7de77c0037b177ca8c}{read}} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&, Q\+Collection\+::\+Item \&)
+\item 
+virtual \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& \mbox{\hyperlink{class_q_g_dict_a0d6ba72de05ffbd4b935316cb901287e}{write}} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&, Q\+Collection\+::\+Item) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_g_dict_a2335fdd735e908a9e6f4f32d38da15f4}\label{class_q_g_dict_a2335fdd735e908a9e6f4f32d38da15f4}} 
+class {\bfseries Q\+G\+Dict\+Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_q_g_dict}{Q\+G\+Dict}} class is an internal class for implementing Q\+Dict template classes. 
+
+\mbox{\hyperlink{class_q_g_dict}{Q\+G\+Dict}} is a strictly internal class that acts as a base class for the \mbox{\hyperlink{}{collection classes}} Q\+Dict and \mbox{\hyperlink{class_q_int_dict}{Q\+Int\+Dict}}.
+
+\mbox{\hyperlink{class_q_g_dict}{Q\+G\+Dict}} has some virtual functions that can be reimplemented to customize the subclasses. 
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{structcmd_8h_a9c7b76d5266903891c803132d51ccb90}{read()}} reads a collection/dictionary item from a \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}}. 
+\item \mbox{\hyperlink{structcmd_8h_af2a3ea719b83f672637febdd87c36c36}{write()}} writes a collection/dictionary item to a \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}}. 
+\end{DoxyItemize}Normally, you do not have to reimplement any of these functions. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_g_dict_a991443b3568622b97772e234fe61dfd7}\label{class_q_g_dict_a991443b3568622b97772e234fe61dfd7}} 
+\index{QGDict@{QGDict}!clear@{clear}}
+\index{clear@{clear}!QGDict@{QGDict}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Q\+G\+Dict\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Removes all objects from the collection. The objects will be deleted if auto-\/delete has been enabled. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_collection_a6ed41913c76bfba54be6da26015ee3f3}{set\+Auto\+Delete()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_collection_a92416cc22907550389aad04c26be2f77}{Q\+Collection}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_q_ascii_dict_a544cec757a84773073971b0a9d3e5e55}{Q\+Ascii\+Dict$<$ Entry $>$}}, \mbox{\hyperlink{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}{Q\+Int\+Dict$<$ type $>$}}, \mbox{\hyperlink{class_q_ptr_dict_a26c647f903df9b82bc131b482f7d6900}{Q\+Ptr\+Dict$<$ type $>$}}, \mbox{\hyperlink{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}{Q\+Int\+Dict$<$ Member\+Def $>$}}, \mbox{\hyperlink{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}{Q\+Int\+Dict$<$ Definition $>$}}, \mbox{\hyperlink{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}{Q\+Int\+Dict$<$ Member\+Group $>$}}, \mbox{\hyperlink{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}{Q\+Int\+Dict$<$ T $>$}}, \mbox{\hyperlink{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}{Q\+Int\+Dict$<$ Member\+Group\+Info $>$}}, \mbox{\hyperlink{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}{Q\+Int\+Dict$<$ U\+R\+L $>$}}, \mbox{\hyperlink{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}{Q\+Int\+Dict$<$ U\+R\+L\+Info $>$}}, \mbox{\hyperlink{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}{Q\+Int\+Dict$<$ Class\+Def $>$}}, \mbox{\hyperlink{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}{Q\+Int\+Dict$<$ Ref\+Item $>$}}, \mbox{\hyperlink{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}{Q\+Int\+Dict$<$ char $>$}}, \mbox{\hyperlink{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}{Q\+Int\+Dict$<$ uint $>$}}, and \mbox{\hyperlink{class_q_int_dict_a7cc8164a6c6865c52151920c428d13ed}{Q\+Int\+Dict$<$ Search\+Index\+List $>$}}.
+
+\mbox{\Hypertarget{class_q_g_dict_a13f6cc9bdbfe37db323b47947c1e017c}\label{class_q_g_dict_a13f6cc9bdbfe37db323b47947c1e017c}} 
+\index{QGDict@{QGDict}!count@{count}}
+\index{count@{count}!QGDict@{QGDict}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily uint Q\+G\+Dict\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of objects in the collection. 
+
+Implements \mbox{\hyperlink{class_q_collection_a6441adbfb3ffb6f55ed834c0c0bcc6cb}{Q\+Collection}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_q_ascii_dict_a2241b13419dc0fcb6da3bcd159219404}{Q\+Ascii\+Dict$<$ Entry $>$}}, \mbox{\hyperlink{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}{Q\+Int\+Dict$<$ type $>$}}, \mbox{\hyperlink{class_q_ptr_dict_a05675b8aa91387dd5cbb74eb881e17d1}{Q\+Ptr\+Dict$<$ type $>$}}, \mbox{\hyperlink{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}{Q\+Int\+Dict$<$ Member\+Def $>$}}, \mbox{\hyperlink{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}{Q\+Int\+Dict$<$ Definition $>$}}, \mbox{\hyperlink{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}{Q\+Int\+Dict$<$ Member\+Group $>$}}, \mbox{\hyperlink{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}{Q\+Int\+Dict$<$ T $>$}}, \mbox{\hyperlink{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}{Q\+Int\+Dict$<$ Member\+Group\+Info $>$}}, \mbox{\hyperlink{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}{Q\+Int\+Dict$<$ U\+R\+L $>$}}, \mbox{\hyperlink{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}{Q\+Int\+Dict$<$ U\+R\+L\+Info $>$}}, \mbox{\hyperlink{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}{Q\+Int\+Dict$<$ Class\+Def $>$}}, \mbox{\hyperlink{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}{Q\+Int\+Dict$<$ Ref\+Item $>$}}, \mbox{\hyperlink{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}{Q\+Int\+Dict$<$ char $>$}}, \mbox{\hyperlink{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}{Q\+Int\+Dict$<$ uint $>$}}, and \mbox{\hyperlink{class_q_int_dict_acba9c2286ecaab46e0231e145ef5e471}{Q\+Int\+Dict$<$ Search\+Index\+List $>$}}.
+
+\mbox{\Hypertarget{class_q_g_dict_a236bd95bec134d7de77c0037b177ca8c}\label{class_q_g_dict_a236bd95bec134d7de77c0037b177ca8c}} 
+\index{QGDict@{QGDict}!read@{read}}
+\index{read@{read}!QGDict@{QGDict}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& Q\+G\+Dict\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&}]{s,  }\item[{Q\+Collection\+::\+Item \&}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Reads a collection/dictionary item from the stream {\itshape s} and returns a reference to the stream.
+
+The default implementation sets {\itshape item} to 0.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structcmd_8h_af2a3ea719b83f672637febdd87c36c36}{write()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_g_dict_a0d6ba72de05ffbd4b935316cb901287e}\label{class_q_g_dict_a0d6ba72de05ffbd4b935316cb901287e}} 
+\index{QGDict@{QGDict}!write@{write}}
+\index{write@{write}!QGDict@{QGDict}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& Q\+G\+Dict\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&}]{s,  }\item[{Q\+Collection\+::\+Item}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Writes a collection/dictionary item to the stream {\itshape s} and returns a reference to the stream.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structcmd_8h_a9c7b76d5266903891c803132d51ccb90}{read()}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qgdict.\+h\item 
+doxygen/qtools/qgdict.\+cpp\end{DoxyCompactItemize}

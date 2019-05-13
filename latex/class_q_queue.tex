@@ -1,0 +1,81 @@
+\hypertarget{class_q_queue}{}\section{Q\+Queue$<$ type $>$ Class Template Reference}
+\label{class_q_queue}\index{QQueue$<$ type $>$@{QQueue$<$ type $>$}}
+Inheritance diagram for Q\+Queue$<$ type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_queue}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_queue_aab79e1e35254c162e46d07c41f7e1385}\label{class_q_queue_aab79e1e35254c162e46d07c41f7e1385}} 
+{\bfseries Q\+Queue} (const \mbox{\hyperlink{class_q_queue}{Q\+Queue}}$<$ type $>$ \&q)
+\item 
+\mbox{\Hypertarget{class_q_queue_ab99ae42c4827b7b95028794a94c0cbb4}\label{class_q_queue_ab99ae42c4827b7b95028794a94c0cbb4}} 
+\mbox{\hyperlink{class_q_queue}{Q\+Queue}}$<$ type $>$ \& {\bfseries operator=} (const \mbox{\hyperlink{class_q_queue}{Q\+Queue}}$<$ type $>$ \&q)
+\item 
+\mbox{\Hypertarget{class_q_queue_a90e1f5aa90f602586e6bd3159ea4bc45}\label{class_q_queue_a90e1f5aa90f602586e6bd3159ea4bc45}} 
+bool {\bfseries auto\+Delete} () const
+\item 
+\mbox{\Hypertarget{class_q_queue_aa376db4c36968c2718aaf0e4d380515a}\label{class_q_queue_aa376db4c36968c2718aaf0e4d380515a}} 
+void {\bfseries set\+Auto\+Delete} (bool del)
+\item 
+uint \mbox{\hyperlink{class_q_queue_aa01eca1beb057eb3055272a528e4ee01}{count}} () const
+\item 
+\mbox{\Hypertarget{class_q_queue_a0bf2142fc038af86f2bde60e40faa98c}\label{class_q_queue_a0bf2142fc038af86f2bde60e40faa98c}} 
+bool {\bfseries is\+Empty} () const
+\item 
+\mbox{\Hypertarget{class_q_queue_a23eabd2eb37ec3e2c82f6303e030f24f}\label{class_q_queue_a23eabd2eb37ec3e2c82f6303e030f24f}} 
+void {\bfseries enqueue} (const type $\ast$d)
+\item 
+\mbox{\Hypertarget{class_q_queue_aed04c9f7a9e7f0b9657e41c8e7cadaf4}\label{class_q_queue_aed04c9f7a9e7f0b9657e41c8e7cadaf4}} 
+type $\ast$ {\bfseries dequeue} ()
+\item 
+\mbox{\Hypertarget{class_q_queue_aff4e8f7ace255c44b706f056c01e7845}\label{class_q_queue_aff4e8f7ace255c44b706f056c01e7845}} 
+bool {\bfseries remove} ()
+\item 
+void \mbox{\hyperlink{class_q_queue_a39841ee54f380f58fb96be30eb5e7c89}{clear}} ()
+\item 
+\mbox{\Hypertarget{class_q_queue_a0101b4f342cbc0451ea0a47fa0fec470}\label{class_q_queue_a0101b4f342cbc0451ea0a47fa0fec470}} 
+type $\ast$ {\bfseries head} () const
+\item 
+\mbox{\Hypertarget{class_q_queue_a0c40eecbcb312964075e604f5050a5d0}\label{class_q_queue_a0c40eecbcb312964075e604f5050a5d0}} 
+{\bfseries operator type $\ast$} () const
+\item 
+\mbox{\Hypertarget{class_q_queue_a2cb7cbfed550317d4937cea728bbe2a9}\label{class_q_queue_a2cb7cbfed550317d4937cea728bbe2a9}} 
+type $\ast$ {\bfseries current} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_queue_a39841ee54f380f58fb96be30eb5e7c89}\label{class_q_queue_a39841ee54f380f58fb96be30eb5e7c89}} 
+\index{QQueue$<$ type $>$@{QQueue$<$ type $>$}!clear@{clear}}
+\index{clear@{clear}!QQueue$<$ type $>$@{QQueue$<$ type $>$}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class type$>$ \\
+void \mbox{\hyperlink{class_q_queue}{Q\+Queue}}$<$ type $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes all objects from the collection. The objects will be deleted if auto-\/delete has been enabled. \begin{DoxySeeAlso}{See also}
+set\+Auto\+Delete() 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_q_g_list_a9b89540497bfcf674466dcf9e343d981}{Q\+G\+List}}.
+
+\mbox{\Hypertarget{class_q_queue_aa01eca1beb057eb3055272a528e4ee01}\label{class_q_queue_aa01eca1beb057eb3055272a528e4ee01}} 
+\index{QQueue$<$ type $>$@{QQueue$<$ type $>$}!count@{count}}
+\index{count@{count}!QQueue$<$ type $>$@{QQueue$<$ type $>$}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily template$<$class type$>$ \\
+uint \mbox{\hyperlink{class_q_queue}{Q\+Queue}}$<$ type $>$\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of objects in the collection. 
+
+Reimplemented from \mbox{\hyperlink{class_q_g_list_af765260057e85e575adff7fd9f25d062}{Q\+G\+List}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qqueue.\+h\end{DoxyCompactItemize}

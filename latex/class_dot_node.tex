@@ -1,0 +1,132 @@
+\hypertarget{class_dot_node}{}\section{Dot\+Node Class Reference}
+\label{class_dot_node}\index{DotNode@{DotNode}}
+
+
+{\ttfamily \#include $<$dot.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dot_node_ac4e8b27d54919cd0afa73f4c8c7d569c}\label{class_dot_node_ac4e8b27d54919cd0afa73f4c8c7d569c}} 
+enum {\bfseries Graph\+Type} \{ \newline
+{\bfseries Dependency}, 
+{\bfseries Inheritance}, 
+{\bfseries Collaboration}, 
+{\bfseries Hierarchy}, 
+\newline
+{\bfseries Call\+Graph}
+ \}
+\item 
+\mbox{\Hypertarget{class_dot_node_ac40de94762a7659599b2056942373102}\label{class_dot_node_ac40de94762a7659599b2056942373102}} 
+enum {\bfseries Trunc\+State} \{ {\bfseries Unknown}, 
+{\bfseries Truncated}, 
+{\bfseries Untruncated}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dot_node_aa7e58f70787b510d19e060ef6197d262}\label{class_dot_node_aa7e58f70787b510d19e060ef6197d262}} 
+{\bfseries Dot\+Node} (int n, const char $\ast$lab, const char $\ast$tip, const char $\ast$url, bool root\+Node=F\+A\+L\+SE, \mbox{\hyperlink{class_class_def}{Class\+Def}} $\ast$cd=0)
+\item 
+\mbox{\Hypertarget{class_dot_node_a6ecb5ecd5496056f827fc28c2889f922}\label{class_dot_node_a6ecb5ecd5496056f827fc28c2889f922}} 
+void {\bfseries add\+Child} (\mbox{\hyperlink{class_dot_node}{Dot\+Node}} $\ast$n, int edge\+Color=Edge\+Info\+::\+Purple, int edge\+Style=Edge\+Info\+::\+Solid, const char $\ast$edge\+Lab=0, const char $\ast$edge\+U\+RL=0, int edge\+Lab\+Col=-\/1)
+\item 
+\mbox{\Hypertarget{class_dot_node_a98f7fc0d1caa3e53622039e86903b04e}\label{class_dot_node_a98f7fc0d1caa3e53622039e86903b04e}} 
+void {\bfseries add\+Parent} (\mbox{\hyperlink{class_dot_node}{Dot\+Node}} $\ast$n)
+\item 
+\mbox{\Hypertarget{class_dot_node_af941a78a95b973318ccd12882760a3d4}\label{class_dot_node_af941a78a95b973318ccd12882760a3d4}} 
+void {\bfseries delete\+Node} (\mbox{\hyperlink{class_dot_node_list}{Dot\+Node\+List}} \&deleted\+List, \mbox{\hyperlink{class_s_dict}{S\+Dict}}$<$ \mbox{\hyperlink{class_dot_node}{Dot\+Node}} $>$ $\ast$skip\+Nodes=0)
+\item 
+\mbox{\Hypertarget{class_dot_node_a62686e145c94129d85409214fb3e0571}\label{class_dot_node_a62686e145c94129d85409214fb3e0571}} 
+void {\bfseries remove\+Child} (\mbox{\hyperlink{class_dot_node}{Dot\+Node}} $\ast$n)
+\item 
+\mbox{\Hypertarget{class_dot_node_a2a36f34067293e7428ae7ea527678fee}\label{class_dot_node_a2a36f34067293e7428ae7ea527678fee}} 
+void {\bfseries remove\+Parent} (\mbox{\hyperlink{class_dot_node}{Dot\+Node}} $\ast$n)
+\item 
+\mbox{\Hypertarget{class_dot_node_a05f42851921caf9442ed2c4e4468b695}\label{class_dot_node_a05f42851921caf9442ed2c4e4468b695}} 
+int {\bfseries find\+Parent} (\mbox{\hyperlink{class_dot_node}{Dot\+Node}} $\ast$n)
+\item 
+\mbox{\Hypertarget{class_dot_node_a099beb5b92fe76fbffaf1095363198f8}\label{class_dot_node_a099beb5b92fe76fbffaf1095363198f8}} 
+void {\bfseries write} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, Graph\+Type gt, Graph\+Output\+Format f, bool top\+Down, bool to\+Children, bool back\+Arrows)
+\item 
+\mbox{\Hypertarget{class_dot_node_a27692f33c86a577ad85ab7176539d4de}\label{class_dot_node_a27692f33c86a577ad85ab7176539d4de}} 
+void {\bfseries clear\+Write\+Flag} ()
+\item 
+\mbox{\Hypertarget{class_dot_node_a464ac9eb20e6e99d33113aada31850b3}\label{class_dot_node_a464ac9eb20e6e99d33113aada31850b3}} 
+void {\bfseries write\+X\+ML} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, bool is\+Class\+Graph)
+\item 
+\mbox{\Hypertarget{class_dot_node_a41493056afa14c885fbd66b090ce6f91}\label{class_dot_node_a41493056afa14c885fbd66b090ce6f91}} 
+void {\bfseries write\+Docbook} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t, bool is\+Class\+Graph)
+\item 
+\mbox{\Hypertarget{class_dot_node_ac3caa4673ba1c6325c1763985ceb4481}\label{class_dot_node_ac3caa4673ba1c6325c1763985ceb4481}} 
+void {\bfseries write\+D\+EF} (\mbox{\hyperlink{class_f_text_stream}{F\+Text\+Stream}} \&t)
+\item 
+\mbox{\Hypertarget{class_dot_node_aead1705f4e6586bd7ba613fdda2e7241}\label{class_dot_node_aead1705f4e6586bd7ba613fdda2e7241}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries label} () const
+\item 
+\mbox{\Hypertarget{class_dot_node_a3c08a5ee367bbf4c58c719ff7f8e0fc7}\label{class_dot_node_a3c08a5ee367bbf4c58c719ff7f8e0fc7}} 
+int {\bfseries number} () const
+\item 
+\mbox{\Hypertarget{class_dot_node_a9e97a698e9e6460cd7fac782e38f0ce7}\label{class_dot_node_a9e97a698e9e6460cd7fac782e38f0ce7}} 
+bool {\bfseries is\+Visible} () const
+\item 
+\mbox{\Hypertarget{class_dot_node_adcfb83215c88dcdd5c39391547e3882b}\label{class_dot_node_adcfb83215c88dcdd5c39391547e3882b}} 
+Trunc\+State {\bfseries is\+Truncated} () const
+\item 
+\mbox{\Hypertarget{class_dot_node_a196e6efc147272506e3e0564dfe47bfe}\label{class_dot_node_a196e6efc147272506e3e0564dfe47bfe}} 
+int {\bfseries distance} () const
+\item 
+\mbox{\Hypertarget{class_dot_node_a4e9da1f53e500d73aa8997ead79093fb}\label{class_dot_node_a4e9da1f53e500d73aa8997ead79093fb}} 
+void {\bfseries renumber\+Nodes} (int \&number)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dot_node_afa257c0a638d14c60ba4714df5a9845b}\label{class_dot_node_afa257c0a638d14c60ba4714df5a9845b}} 
+int {\bfseries m\+\_\+subgraph\+Id}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dot_node_a17f4bf1cb76060fb23b5d2e4d49a578c}\label{class_dot_node_a17f4bf1cb76060fb23b5d2e4d49a578c}} 
+class {\bfseries Dot\+Gfx\+Hierarchy\+Table}
+\item 
+\mbox{\Hypertarget{class_dot_node_aa0285f25f08e09a51d2d402e2f7f697f}\label{class_dot_node_aa0285f25f08e09a51d2d402e2f7f697f}} 
+class {\bfseries Dot\+Class\+Graph}
+\item 
+\mbox{\Hypertarget{class_dot_node_af4dd0198d517a07b979a10cb13a77148}\label{class_dot_node_af4dd0198d517a07b979a10cb13a77148}} 
+class {\bfseries Dot\+Incl\+Dep\+Graph}
+\item 
+\mbox{\Hypertarget{class_dot_node_a8782e47c20d8314fd3b24f1dc3fe081a}\label{class_dot_node_a8782e47c20d8314fd3b24f1dc3fe081a}} 
+class {\bfseries Dot\+Node\+List}
+\item 
+\mbox{\Hypertarget{class_dot_node_a6dc1c2df4e772dc9740f210dc2a7e522}\label{class_dot_node_a6dc1c2df4e772dc9740f210dc2a7e522}} 
+class {\bfseries Dot\+Call\+Graph}
+\item 
+\mbox{\Hypertarget{class_dot_node_a32f81573a55b09d3b8f7d8b7ce6b2fbf}\label{class_dot_node_a32f81573a55b09d3b8f7d8b7ce6b2fbf}} 
+class {\bfseries Dot\+Group\+Collaboration}
+\item 
+\mbox{\Hypertarget{class_dot_node_afe8663d3231ffb700d56ef6eedb99208}\label{class_dot_node_afe8663d3231ffb700d56ef6eedb99208}} 
+class {\bfseries Dot\+Inheritance\+Graph}
+\item 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \mbox{\hyperlink{class_dot_node_a0cd029184c5ab8f66d35ddce33339550}{compute\+Md5\+Signature}} (\mbox{\hyperlink{class_dot_node}{Dot\+Node}} $\ast$root, Graph\+Type gt, Graph\+Output\+Format f, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&rank, bool render\+Parents, bool back\+Arrows, const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&title, \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&graph\+Str)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_a}{A}} node in a dot graph 
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_dot_node_a0cd029184c5ab8f66d35ddce33339550}\label{class_dot_node_a0cd029184c5ab8f66d35ddce33339550}} 
+\index{DotNode@{DotNode}!computeMd5Signature@{computeMd5Signature}}
+\index{computeMd5Signature@{computeMd5Signature}!DotNode@{DotNode}}
+\subsubsection{\texorpdfstring{computeMd5Signature}{computeMd5Signature}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} compute\+Md5\+Signature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dot_node}{Dot\+Node}} $\ast$}]{root,  }\item[{Dot\+Node\+::\+Graph\+Type}]{gt,  }\item[{Graph\+Output\+Format}]{f,  }\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{rank,  }\item[{bool}]{render\+Parents,  }\item[{bool}]{back\+Arrows,  }\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{title,  }\item[{\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{graph\+Str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Computes a 16 byte md5 checksum for a given dot graph. The md5 checksum is returned as a 32 character A\+S\+C\+II string. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/dot.\+h\item 
+doxygen/src/dot.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,275 @@
+\hypertarget{class_q_g_list}{}\section{Q\+G\+List Class Reference}
+\label{class_q_g_list}\index{QGList@{QGList}}
+
+
+The \mbox{\hyperlink{class_q_g_list}{Q\+G\+List}} class is an internal class for implementing Qt collection classes.  
+
+
+
+
+{\ttfamily \#include $<$qglist.\+h$>$}
+
+Inheritance diagram for Q\+G\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_q_g_list}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint \mbox{\hyperlink{class_q_g_list_af765260057e85e575adff7fd9f25d062}{count}} () const
+\item 
+\mbox{\Hypertarget{class_q_g_list_a92e5a02569162c5951a90bca606223a2}\label{class_q_g_list_a92e5a02569162c5951a90bca606223a2}} 
+\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& {\bfseries read} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&)
+\item 
+\mbox{\Hypertarget{class_q_g_list_ae522fc8c2df7736e847d93e561daffae}\label{class_q_g_list_ae522fc8c2df7736e847d93e561daffae}} 
+\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& {\bfseries write} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_g_list_a5215004b76329c79a02ae01134acc946}\label{class_q_g_list_a5215004b76329c79a02ae01134acc946}} 
+{\bfseries Q\+G\+List} (const \mbox{\hyperlink{class_q_g_list}{Q\+G\+List}} \&)
+\item 
+\mbox{\Hypertarget{class_q_g_list_a4703bb593e7ccd0936cef358ded96080}\label{class_q_g_list_a4703bb593e7ccd0936cef358ded96080}} 
+\mbox{\hyperlink{class_q_g_list}{Q\+G\+List}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_q_g_list}{Q\+G\+List}} \&)
+\item 
+bool \mbox{\hyperlink{class_q_g_list_a66d00b29e3ce5513eed4b28652039a4c}{operator==}} (const \mbox{\hyperlink{class_q_g_list}{Q\+G\+List}} \&) const
+\item 
+\mbox{\Hypertarget{class_q_g_list_a1613bab545e4e7d3e5c68de22e024128}\label{class_q_g_list_a1613bab545e4e7d3e5c68de22e024128}} 
+void {\bfseries in\+Sort} (Q\+Collection\+::\+Item)
+\item 
+\mbox{\Hypertarget{class_q_g_list_a3fc7fb06dc2347dc27fdeea23e8abffc}\label{class_q_g_list_a3fc7fb06dc2347dc27fdeea23e8abffc}} 
+void {\bfseries append} (Q\+Collection\+::\+Item)
+\item 
+\mbox{\Hypertarget{class_q_g_list_a2404fe31bb1b1e57fb530e3ad5059b0e}\label{class_q_g_list_a2404fe31bb1b1e57fb530e3ad5059b0e}} 
+bool {\bfseries insert\+At} (uint index, Q\+Collection\+::\+Item)
+\item 
+\mbox{\Hypertarget{class_q_g_list_a8962d8770498694d0805a5003f160776}\label{class_q_g_list_a8962d8770498694d0805a5003f160776}} 
+void {\bfseries relink\+Node} (\mbox{\hyperlink{class_q_l_node}{Q\+L\+Node}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_q_g_list_af146dd013966d2571f182dc9f1eca10b}\label{class_q_g_list_af146dd013966d2571f182dc9f1eca10b}} 
+bool {\bfseries remove\+Node} (\mbox{\hyperlink{class_q_l_node}{Q\+L\+Node}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_q_g_list_a2110da1b8f8b1a3ab1d9063deb31055e}\label{class_q_g_list_a2110da1b8f8b1a3ab1d9063deb31055e}} 
+bool {\bfseries remove} (Q\+Collection\+::\+Item=0)
+\item 
+\mbox{\Hypertarget{class_q_g_list_aa14205a4214d12b86c133255c094affd}\label{class_q_g_list_aa14205a4214d12b86c133255c094affd}} 
+bool {\bfseries remove\+Ref} (Q\+Collection\+::\+Item=0)
+\item 
+\mbox{\Hypertarget{class_q_g_list_a8fac66ae43bc16f0721d9a3ec63a3cf5}\label{class_q_g_list_a8fac66ae43bc16f0721d9a3ec63a3cf5}} 
+bool {\bfseries remove\+First} ()
+\item 
+\mbox{\Hypertarget{class_q_g_list_ae92ecdd681011d8ab6f4e8517b5e24b9}\label{class_q_g_list_ae92ecdd681011d8ab6f4e8517b5e24b9}} 
+bool {\bfseries remove\+Last} ()
+\item 
+\mbox{\Hypertarget{class_q_g_list_a2d91e82edec9c97315c3b3b237fbb492}\label{class_q_g_list_a2d91e82edec9c97315c3b3b237fbb492}} 
+bool {\bfseries remove\+At} (uint index)
+\item 
+\mbox{\Hypertarget{class_q_g_list_a256c045c464961c22f30259083c80a3c}\label{class_q_g_list_a256c045c464961c22f30259083c80a3c}} 
+Q\+Collection\+::\+Item {\bfseries take\+Node} (\mbox{\hyperlink{class_q_l_node}{Q\+L\+Node}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_q_g_list_a4b926803feca834f03fefa6bf614dcb1}\label{class_q_g_list_a4b926803feca834f03fefa6bf614dcb1}} 
+Q\+Collection\+::\+Item {\bfseries take} ()
+\item 
+\mbox{\Hypertarget{class_q_g_list_a7bcc304d043e120dc97c09e0253da756}\label{class_q_g_list_a7bcc304d043e120dc97c09e0253da756}} 
+Q\+Collection\+::\+Item {\bfseries take\+At} (uint index)
+\item 
+\mbox{\Hypertarget{class_q_g_list_ab9dccfb30688be7b75f330bf78268c11}\label{class_q_g_list_ab9dccfb30688be7b75f330bf78268c11}} 
+Q\+Collection\+::\+Item {\bfseries take\+First} ()
+\item 
+\mbox{\Hypertarget{class_q_g_list_a7e31eb310e365d503d6286f5fb1b0b49}\label{class_q_g_list_a7e31eb310e365d503d6286f5fb1b0b49}} 
+Q\+Collection\+::\+Item {\bfseries take\+Last} ()
+\item 
+void \mbox{\hyperlink{class_q_g_list_aafb785818e1ff9a3a72daacabd549b54}{sort}} ()
+\item 
+void \mbox{\hyperlink{class_q_g_list_a9b89540497bfcf674466dcf9e343d981}{clear}} ()
+\item 
+\mbox{\Hypertarget{class_q_g_list_a67bc1cdeeadadd5c0c6fd976c62892b8}\label{class_q_g_list_a67bc1cdeeadadd5c0c6fd976c62892b8}} 
+int {\bfseries find\+Ref} (Q\+Collection\+::\+Item, bool=T\+R\+UE)
+\item 
+\mbox{\Hypertarget{class_q_g_list_a604fb543fc8b0f989e7fde06bdb3ea9c}\label{class_q_g_list_a604fb543fc8b0f989e7fde06bdb3ea9c}} 
+int {\bfseries find} (Q\+Collection\+::\+Item, bool=T\+R\+UE)
+\item 
+\mbox{\Hypertarget{class_q_g_list_ab852b3da6d4bacdbac6eec813dad5b01}\label{class_q_g_list_ab852b3da6d4bacdbac6eec813dad5b01}} 
+uint {\bfseries contains\+Ref} (Q\+Collection\+::\+Item) const
+\item 
+\mbox{\Hypertarget{class_q_g_list_ae251f1aef8fdcd1637638e54bb1faadc}\label{class_q_g_list_ae251f1aef8fdcd1637638e54bb1faadc}} 
+uint {\bfseries contains} (Q\+Collection\+::\+Item) const
+\item 
+\mbox{\Hypertarget{class_q_g_list_a11d85e4fabaa06c2329798884825f850}\label{class_q_g_list_a11d85e4fabaa06c2329798884825f850}} 
+Q\+Collection\+::\+Item {\bfseries at} (uint index)
+\item 
+\mbox{\Hypertarget{class_q_g_list_aa44a6e180d90e5fc3d2b0e9cccbde9d1}\label{class_q_g_list_aa44a6e180d90e5fc3d2b0e9cccbde9d1}} 
+int {\bfseries at} () const
+\item 
+\mbox{\Hypertarget{class_q_g_list_ae8276f7d2e1d4e6312ed34eee27700b3}\label{class_q_g_list_ae8276f7d2e1d4e6312ed34eee27700b3}} 
+\mbox{\hyperlink{class_q_l_node}{Q\+L\+Node}} $\ast$ {\bfseries current\+Node} () const
+\item 
+\mbox{\Hypertarget{class_q_g_list_a91c9e7afb5aa4ec795b0745e5b5b77d9}\label{class_q_g_list_a91c9e7afb5aa4ec795b0745e5b5b77d9}} 
+Q\+Collection\+::\+Item {\bfseries get} () const
+\item 
+\mbox{\Hypertarget{class_q_g_list_a05a0b3d2e5bd955ae191206c3b1c1176}\label{class_q_g_list_a05a0b3d2e5bd955ae191206c3b1c1176}} 
+Q\+Collection\+::\+Item {\bfseries cfirst} () const
+\item 
+\mbox{\Hypertarget{class_q_g_list_aaa4e903d79c3fb897aea2f5affae1e42}\label{class_q_g_list_aaa4e903d79c3fb897aea2f5affae1e42}} 
+Q\+Collection\+::\+Item {\bfseries clast} () const
+\item 
+\mbox{\Hypertarget{class_q_g_list_a94d8739e67879c5d61350d18e7747e2b}\label{class_q_g_list_a94d8739e67879c5d61350d18e7747e2b}} 
+Q\+Collection\+::\+Item {\bfseries first} ()
+\item 
+\mbox{\Hypertarget{class_q_g_list_afa40286cb52ff6fce42f9f7306283d9a}\label{class_q_g_list_afa40286cb52ff6fce42f9f7306283d9a}} 
+Q\+Collection\+::\+Item {\bfseries last} ()
+\item 
+\mbox{\Hypertarget{class_q_g_list_a16d0f7ae73881b4bfe6757e58b74d38a}\label{class_q_g_list_a16d0f7ae73881b4bfe6757e58b74d38a}} 
+Q\+Collection\+::\+Item {\bfseries next} ()
+\item 
+\mbox{\Hypertarget{class_q_g_list_a6dc328630d029edac6f0af6ce896be20}\label{class_q_g_list_a6dc328630d029edac6f0af6ce896be20}} 
+Q\+Collection\+::\+Item {\bfseries prev} ()
+\item 
+\mbox{\Hypertarget{class_q_g_list_ab353a126b1fbdec96f4c6189f8623e2f}\label{class_q_g_list_ab353a126b1fbdec96f4c6189f8623e2f}} 
+void {\bfseries to\+Vector} (\mbox{\hyperlink{class_q_g_vector}{Q\+G\+Vector}} $\ast$) const
+\item 
+virtual int \mbox{\hyperlink{class_q_g_list_a9a9c5fa3888371979c12e3207b3f9ec5}{compare\+Items}} (Q\+Collection\+::\+Item, Q\+Collection\+::\+Item)
+\item 
+virtual \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& \mbox{\hyperlink{class_q_g_list_a96dd0ec54d1aca071fa29432dc0c2e8e}{read}} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&, Q\+Collection\+::\+Item \&)
+\item 
+virtual \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& \mbox{\hyperlink{class_q_g_list_a6804cb8250461f60694d80debb473855}{write}} (\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&, Q\+Collection\+::\+Item) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_g_list_a13dc100371e8931a394e57af8df9fbb3}\label{class_q_g_list_a13dc100371e8931a394e57af8df9fbb3}} 
+class {\bfseries Q\+G\+List\+Iterator}
+\item 
+\mbox{\Hypertarget{class_q_g_list_add83e2909bfdb7817ab2363440f946de}\label{class_q_g_list_add83e2909bfdb7817ab2363440f946de}} 
+class {\bfseries Q\+G\+Vector}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_q_g_list}{Q\+G\+List}} class is an internal class for implementing Qt collection classes. 
+
+\mbox{\hyperlink{class_q_g_list}{Q\+G\+List}} is a strictly internal class that acts as a base class for several \mbox{\hyperlink{}{collection classes}}; \mbox{\hyperlink{class_q_list}{Q\+List}}, \mbox{\hyperlink{class_q_queue}{Q\+Queue}} and \mbox{\hyperlink{class_q_stack}{Q\+Stack}}.
+
+\mbox{\hyperlink{class_q_g_list}{Q\+G\+List}} has some virtual functions that can be reimplemented to customize the subclasses. 
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_q_g_list_a9a9c5fa3888371979c12e3207b3f9ec5}{compare\+Items()}} compares two collection/list items. 
+\item \mbox{\hyperlink{structcmd_8h_a9c7b76d5266903891c803132d51ccb90}{read()}} reads a collection/list item from a \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}}. 
+\item \mbox{\hyperlink{structcmd_8h_af2a3ea719b83f672637febdd87c36c36}{write()}} writes a collection/list item to a \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}}. 
+\end{DoxyItemize}Normally, you do not have to reimplement any of these functions. If you still want to reimplement them, see the \mbox{\hyperlink{class_q_str_list}{Q\+Str\+List}} class (\mbox{\hyperlink{qstrlist_8h_source}{qstrlist.\+h}}), which is a good example. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_g_list_a9b89540497bfcf674466dcf9e343d981}\label{class_q_g_list_a9b89540497bfcf674466dcf9e343d981}} 
+\index{QGList@{QGList}!clear@{clear}}
+\index{clear@{clear}!QGList@{QGList}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Q\+G\+List\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Removes all objects from the collection. The objects will be deleted if auto-\/delete has been enabled. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_collection_a6ed41913c76bfba54be6da26015ee3f3}{set\+Auto\+Delete()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_collection_a92416cc22907550389aad04c26be2f77}{Q\+Collection}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ type $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Py\+Variable\+Context\+::\+Scope $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Py\+Call\+Context\+::\+Ctx $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Member\+Name $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Member\+Name\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Page\+Def $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Doc\+Node $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Tag\+File\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Grouping $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ List\+Item\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Q\+C\+String $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Definition $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Member\+Def $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Tag\+Package\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Section\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Dir\+Relation $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Member\+Reference $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Dot\+Node $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Html\+Attrib $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Tag\+Page\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Variable\+Context\+::\+Scope $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Index\+Intf $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Entry $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Member\+Group $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Diagram\+Item $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Dot\+Group\+Collaboration\+::\+Link $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Tag\+Dir\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Entry\+Nav $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Include\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Q\+String $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Related\+Compound $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Dot\+File\+Patcher $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ tcl\+\_\+scan $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Parameter\+Item\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Variable\+List\+Entry\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ stat $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Tag\+Namespace\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Node\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Entry\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Template\+Variant $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Member\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Tag\+Group\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Child\+Node\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Dot\+Worker\+Thread $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Expr\+Ast $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Template\+Node $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Namespace\+Def $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ T $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ void $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Param\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Output\+Generator $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Q\+Dict$<$ Template\+Variant $>$ $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Group\+Def $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Index\+Field $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ List\+Elem $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Call\+Context\+::\+Ctx $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Dot\+Const\+String $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Row\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Dot\+Runner\+::\+Cleanup\+Item $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Formula $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Template\+Token $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Generics\+Collection $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Dot\+Group\+Collaboration\+::\+Edge $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Tag\+Include\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Active\+Row\+Span $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ File\+Pair $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Class\+Def $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Include\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Guarded\+Nodes $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Filter\+Cache\+Item $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Define $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Base\+Class\+Def $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Edge\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Node\+Def $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Include\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Tag\+Member\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Dot\+Runner $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Ref\+Item $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ File\+Name $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Search\+Doc\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Flow\+Chart $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Search\+Definition\+List $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Section\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Code\+Line\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Doc\+Para $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Input $\ast$ $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Config\+Option $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Edge\+Label\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Layout\+Nav\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ uint $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Alpha\+Index\+Table\+Cell $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Use\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Define\+Name $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Dir\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Parameter\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Member\+List $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Layout\+Doc\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Compound\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Argument $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Tag\+Anchor\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ File\+List $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ File\+Def $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Tag\+Class\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Member\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Dot\+File\+Patcher\+::\+Map $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Doc\+Impl $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Argument\+List $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ F\+T\+V\+Node $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Base\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Mapping $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Tag\+Enum\+Value\+Info $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Linked\+Text\+Impl $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Search\+Index\+List $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Diagram\+Row $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Alpha\+Index\+Table\+Rows $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Nav\+Index\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Example $>$}}, \mbox{\hyperlink{class_q_list_a3cc1e3b2eb4a0db55eb5a594bd67d059}{Q\+List$<$ Dir\+Def $>$}}, \mbox{\hyperlink{class_q_internal_list_a253a49ac0bce39e819358a602cf16c20}{Q\+Internal\+List$<$ type $>$}}, \mbox{\hyperlink{class_q_internal_list_a253a49ac0bce39e819358a602cf16c20}{Q\+Internal\+List$<$ Q\+G\+Dict\+Iterator $>$}}, \mbox{\hyperlink{class_q_internal_list_a253a49ac0bce39e819358a602cf16c20}{Q\+Internal\+List$<$ Q\+Wait\+Condition\+Event $>$}}, \mbox{\hyperlink{class_q_internal_list_a253a49ac0bce39e819358a602cf16c20}{Q\+Internal\+List$<$ Q\+Cache\+Item $>$}}, \mbox{\hyperlink{class_q_queue_a39841ee54f380f58fb96be30eb5e7c89}{Q\+Queue$<$ type $>$}}, \mbox{\hyperlink{class_q_stack_a07ac0d10d6912270790d0c1a82ee2715}{Q\+Stack$<$ type $>$}}, \mbox{\hyperlink{class_q_queue_a39841ee54f380f58fb96be30eb5e7c89}{Q\+Queue$<$ Dot\+Runner $>$}}, \mbox{\hyperlink{class_q_stack_a07ac0d10d6912270790d0c1a82ee2715}{Q\+Stack$<$ Doc\+Node $>$}}, \mbox{\hyperlink{class_q_stack_a07ac0d10d6912270790d0c1a82ee2715}{Q\+Stack$<$ Perl\+Mod\+Output\+Stream $>$}}, \mbox{\hyperlink{class_q_stack_a07ac0d10d6912270790d0c1a82ee2715}{Q\+Stack$<$ Table\+State $>$}}, \mbox{\hyperlink{class_q_stack_a07ac0d10d6912270790d0c1a82ee2715}{Q\+Stack$<$ bool $>$}}, \mbox{\hyperlink{class_q_stack_a07ac0d10d6912270790d0c1a82ee2715}{Q\+Stack$<$ Doc\+Style\+Change $>$}}, and \mbox{\hyperlink{class_q_stack_a07ac0d10d6912270790d0c1a82ee2715}{Q\+Stack$<$ State $>$}}.
+
+\mbox{\Hypertarget{class_q_g_list_a9a9c5fa3888371979c12e3207b3f9ec5}\label{class_q_g_list_a9a9c5fa3888371979c12e3207b3f9ec5}} 
+\index{QGList@{QGList}!compareItems@{compareItems}}
+\index{compareItems@{compareItems}!QGList@{QGList}}
+\subsubsection{\texorpdfstring{compareItems()}{compareItems()}}
+{\footnotesize\ttfamily int Q\+G\+List\+::compare\+Items (\begin{DoxyParamCaption}\item[{Q\+Collection\+::\+Item}]{item1,  }\item[{Q\+Collection\+::\+Item}]{item2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+This virtual function compares two list items.
+
+Returns\+: 
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item non-\/zero if {\itshape item1} != {\itshape item2} 
+\end{DoxyItemize}
+
+This function returns {\itshape int} rather than {\itshape bool} so that reimplementations can return three values and use it to sort by\+:
+
+
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item $>$ 0 (positive integer) if {\itshape item1} $>$ {\itshape item2} 
+\item $<$ 0 (negative integer) if {\itshape item1} $<$ {\itshape item2} 
+\end{DoxyItemize}
+
+The Q\+List\+::in\+Sort() function requires that \mbox{\hyperlink{class_q_g_list_a9a9c5fa3888371979c12e3207b3f9ec5}{compare\+Items()}} is implemented as described here.
+
+This function should not modify the list because some const functions call \mbox{\hyperlink{class_q_g_list_a9a9c5fa3888371979c12e3207b3f9ec5}{compare\+Items()}}.
+
+The default implementation compares the pointers\+: 
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ 
+
+Reimplemented in \mbox{\hyperlink{class_q_sorted_list_ac668d73e64708886064106eebecf33ae}{Q\+Sorted\+List$<$ type $>$}}.
+
+\mbox{\Hypertarget{class_q_g_list_af765260057e85e575adff7fd9f25d062}\label{class_q_g_list_af765260057e85e575adff7fd9f25d062}} 
+\index{QGList@{QGList}!count@{count}}
+\index{count@{count}!QGList@{QGList}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily uint Q\+G\+List\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of objects in the collection. 
+
+Implements \mbox{\hyperlink{class_q_collection_a6441adbfb3ffb6f55ed834c0c0bcc6cb}{Q\+Collection}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ type $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Py\+Variable\+Context\+::\+Scope $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Py\+Call\+Context\+::\+Ctx $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Member\+Name $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Member\+Name\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Page\+Def $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Doc\+Node $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Tag\+File\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Grouping $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ List\+Item\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Q\+C\+String $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Definition $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Member\+Def $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Tag\+Package\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Section\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Dir\+Relation $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Member\+Reference $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Dot\+Node $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Html\+Attrib $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Tag\+Page\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Variable\+Context\+::\+Scope $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Index\+Intf $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Entry $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Member\+Group $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Diagram\+Item $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Dot\+Group\+Collaboration\+::\+Link $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Tag\+Dir\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Entry\+Nav $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Include\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Q\+String $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Related\+Compound $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Dot\+File\+Patcher $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ tcl\+\_\+scan $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Parameter\+Item\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Variable\+List\+Entry\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ stat $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Tag\+Namespace\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Node\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Entry\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Template\+Variant $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Member\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Tag\+Group\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Child\+Node\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Dot\+Worker\+Thread $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Expr\+Ast $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Template\+Node $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Namespace\+Def $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ T $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ void $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Param\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Output\+Generator $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Q\+Dict$<$ Template\+Variant $>$ $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Group\+Def $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Index\+Field $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ List\+Elem $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Call\+Context\+::\+Ctx $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Dot\+Const\+String $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Row\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Dot\+Runner\+::\+Cleanup\+Item $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Formula $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Template\+Token $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Generics\+Collection $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Dot\+Group\+Collaboration\+::\+Edge $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Tag\+Include\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Active\+Row\+Span $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ File\+Pair $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Class\+Def $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Include\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Guarded\+Nodes $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Filter\+Cache\+Item $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Define $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Base\+Class\+Def $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Edge\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Node\+Def $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Include\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Tag\+Member\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Dot\+Runner $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Ref\+Item $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ File\+Name $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Search\+Doc\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Flow\+Chart $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Search\+Definition\+List $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Section\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Code\+Line\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Doc\+Para $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Input $\ast$ $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Config\+Option $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Edge\+Label\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Layout\+Nav\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ uint $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Alpha\+Index\+Table\+Cell $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Use\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Define\+Name $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Dir\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Parameter\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Member\+List $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Layout\+Doc\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Compound\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Argument $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Tag\+Anchor\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ File\+List $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ File\+Def $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Tag\+Class\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Member\+Handler $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Dot\+File\+Patcher\+::\+Map $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Doc\+Impl $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Argument\+List $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ F\+T\+V\+Node $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Base\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Mapping $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Tag\+Enum\+Value\+Info $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Linked\+Text\+Impl $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Search\+Index\+List $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Diagram\+Row $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Alpha\+Index\+Table\+Rows $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Nav\+Index\+Entry $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Example $>$}}, \mbox{\hyperlink{class_q_list_a1b95250082189972f4b499a529920180}{Q\+List$<$ Dir\+Def $>$}}, \mbox{\hyperlink{class_q_internal_list_af64a4279703a3aeb1954937cdf2fa1f2}{Q\+Internal\+List$<$ type $>$}}, \mbox{\hyperlink{class_q_queue_aa01eca1beb057eb3055272a528e4ee01}{Q\+Queue$<$ type $>$}}, \mbox{\hyperlink{class_q_stack_a39f4fccb4ce975b29f5ed06b78316c24}{Q\+Stack$<$ type $>$}}, \mbox{\hyperlink{class_q_internal_list_af64a4279703a3aeb1954937cdf2fa1f2}{Q\+Internal\+List$<$ Q\+G\+Dict\+Iterator $>$}}, \mbox{\hyperlink{class_q_internal_list_af64a4279703a3aeb1954937cdf2fa1f2}{Q\+Internal\+List$<$ Q\+Wait\+Condition\+Event $>$}}, \mbox{\hyperlink{class_q_internal_list_af64a4279703a3aeb1954937cdf2fa1f2}{Q\+Internal\+List$<$ Q\+Cache\+Item $>$}}, \mbox{\hyperlink{class_q_queue_aa01eca1beb057eb3055272a528e4ee01}{Q\+Queue$<$ Dot\+Runner $>$}}, \mbox{\hyperlink{class_q_stack_a39f4fccb4ce975b29f5ed06b78316c24}{Q\+Stack$<$ Doc\+Node $>$}}, \mbox{\hyperlink{class_q_stack_a39f4fccb4ce975b29f5ed06b78316c24}{Q\+Stack$<$ Perl\+Mod\+Output\+Stream $>$}}, \mbox{\hyperlink{class_q_stack_a39f4fccb4ce975b29f5ed06b78316c24}{Q\+Stack$<$ Table\+State $>$}}, \mbox{\hyperlink{class_q_stack_a39f4fccb4ce975b29f5ed06b78316c24}{Q\+Stack$<$ bool $>$}}, \mbox{\hyperlink{class_q_stack_a39f4fccb4ce975b29f5ed06b78316c24}{Q\+Stack$<$ Doc\+Style\+Change $>$}}, \mbox{\hyperlink{class_q_stack_a39f4fccb4ce975b29f5ed06b78316c24}{Q\+Stack$<$ State $>$}}, and \mbox{\hyperlink{class_member_list_a38422e3b6e288256a4e3375c90a0a4a4}{Member\+List}}.
+
+\mbox{\Hypertarget{class_q_g_list_a66d00b29e3ce5513eed4b28652039a4c}\label{class_q_g_list_a66d00b29e3ce5513eed4b28652039a4c}} 
+\index{QGList@{QGList}!operator==@{operator==}}
+\index{operator==@{operator==}!QGList@{QGList}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Q\+G\+List\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_g_list}{Q\+G\+List}} \&}]{list }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compares this list with {\itshape list}. Returns T\+R\+UE if the lists contain the same data, else F\+A\+L\+SE. \mbox{\Hypertarget{class_q_g_list_a96dd0ec54d1aca071fa29432dc0c2e8e}\label{class_q_g_list_a96dd0ec54d1aca071fa29432dc0c2e8e}} 
+\index{QGList@{QGList}!read@{read}}
+\index{read@{read}!QGList@{QGList}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& Q\+G\+List\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&}]{s,  }\item[{Q\+Collection\+::\+Item \&}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Reads a collection/list item from the stream {\itshape s} and returns a reference to the stream.
+
+The default implementation sets {\itshape item} to 0.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structcmd_8h_af2a3ea719b83f672637febdd87c36c36}{write()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_g_list_aafb785818e1ff9a3a72daacabd549b54}\label{class_q_g_list_aafb785818e1ff9a3a72daacabd549b54}} 
+\index{QGList@{QGList}!sort@{sort}}
+\index{sort@{sort}!QGList@{QGList}}
+\subsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily void Q\+G\+List\+::sort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sorts the list by the result of the virtual \mbox{\hyperlink{class_q_g_list_a9a9c5fa3888371979c12e3207b3f9ec5}{compare\+Items()}} function.
+
+The Heap-\/\+Sort algorithm is used for sorting. It sorts n items with O(n$\ast$log n) compares. This is the asymptotic optimal solution of the sorting problem. \mbox{\Hypertarget{class_q_g_list_a6804cb8250461f60694d80debb473855}\label{class_q_g_list_a6804cb8250461f60694d80debb473855}} 
+\index{QGList@{QGList}!write@{write}}
+\index{write@{write}!QGList@{QGList}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \& Q\+G\+List\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} \&}]{s,  }\item[{Q\+Collection\+::\+Item}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Writes a collection/list item to the stream {\itshape s} and returns a reference to the stream.
+
+The default implementation does nothing.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structcmd_8h_a9c7b76d5266903891c803132d51ccb90}{read()}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qglist.\+h\item 
+doxygen/qtools/qglist.\+cpp\end{DoxyCompactItemize}

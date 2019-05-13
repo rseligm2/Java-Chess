@@ -1,0 +1,805 @@
+\hypertarget{class_q_text_stream}{}\section{Q\+Text\+Stream Class Reference}
+\label{class_q_text_stream}\index{QTextStream@{QTextStream}}
+
+
+The \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} class provides basic functions for reading and writing text using a \mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}}.  
+
+
+
+
+{\ttfamily \#include $<$qtextstream.\+h$>$}
+
+Inheritance diagram for Q\+Text\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_text_stream}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_text_stream_aeaa17ac9a577eb636e8fd337115da817}\label{class_q_text_stream_aeaa17ac9a577eb636e8fd337115da817}} 
+enum {\bfseries Encoding} \{ \newline
+{\bfseries Locale}, 
+{\bfseries Latin1}, 
+{\bfseries Unicode}, 
+{\bfseries Unicode\+Network\+Order}, 
+\newline
+{\bfseries Unicode\+Reverse}, 
+{\bfseries Raw\+Unicode}, 
+{\bfseries Unicode\+U\+T\+F8}
+ \}
+\item 
+\mbox{\Hypertarget{class_q_text_stream_acec251f58a9b0a3a44e51f11459489fd}\label{class_q_text_stream_acec251f58a9b0a3a44e51f11459489fd}} 
+enum \{ \newline
+{\bfseries skipws} = 0x0001, 
+{\bfseries left} = 0x0002, 
+{\bfseries right} = 0x0004, 
+{\bfseries internal} = 0x0008, 
+\newline
+{\bfseries bin} = 0x0010, 
+{\bfseries oct} = 0x0020, 
+{\bfseries dec} = 0x0040, 
+{\bfseries hex} = 0x0080, 
+\newline
+{\bfseries showbase} = 0x0100, 
+{\bfseries showpoint} = 0x0200, 
+{\bfseries uppercase} = 0x0400, 
+{\bfseries showpos} = 0x0800, 
+\newline
+{\bfseries scientific} = 0x1000, 
+{\bfseries fixed} = 0x2000
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_q_text_stream_ad06dc1f99476aed01fa8a822e871dc44}{set\+Encoding}} (Encoding)
+\item 
+void \mbox{\hyperlink{class_q_text_stream_a18bdd4ae41cd9b37ec06827658fbf447}{set\+Codec}} (\mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} $\ast$)
+\item 
+\mbox{\hyperlink{class_q_text_stream_aa7bbd71ba288daceba843f54f0c306a4}{Q\+Text\+Stream}} ()
+\item 
+\mbox{\hyperlink{class_q_text_stream_a431c964c498560a2459d55808ccaff89}{Q\+Text\+Stream}} (\mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} $\ast$)
+\item 
+\mbox{\hyperlink{class_q_text_stream_a7abe6ca8fe34120632550a88c6f67cc5}{Q\+Text\+Stream}} (\mbox{\hyperlink{class_q_string}{Q\+String}} $\ast$, int mode)
+\item 
+\mbox{\hyperlink{class_q_text_stream_a917a19a834861178ce1a7c57ee37ec41}{Q\+Text\+Stream}} (\mbox{\hyperlink{class_q_string}{Q\+String}} \&, int mode)
+\item 
+\mbox{\hyperlink{class_q_text_stream_a00d490a0530b4bcd9554b9316815d35a}{Q\+Text\+Stream}} (\mbox{\hyperlink{class_q_array}{Q\+Byte\+Array}}, int mode)
+\item 
+\mbox{\hyperlink{class_q_text_stream_a53439eda88c78b200b675b7909343b10}{Q\+Text\+Stream}} (F\+I\+LE $\ast$, int mode)
+\item 
+virtual \mbox{\hyperlink{class_q_text_stream_a5c3a2ab73dceff949ec36db41df64944}{$\sim$\+Q\+Text\+Stream}} ()
+\item 
+\mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} $\ast$ \mbox{\hyperlink{class_q_text_stream_a50f5712b3231e41af256c5faadf69512}{device}} () const
+\item 
+void \mbox{\hyperlink{class_q_text_stream_a20bb0f4064d19330d4ed6bb56299fba7}{set\+Device}} (\mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} $\ast$)
+\item 
+void \mbox{\hyperlink{class_q_text_stream_a6d8aeebd7f4b1cc9f2dce27f6a0d9bd9}{unset\+Device}} ()
+\item 
+bool \mbox{\hyperlink{class_q_text_stream_a07ba00c9cec9d02ccb9bef9832932c9e}{at\+End}} () const
+\item 
+bool \mbox{\hyperlink{class_q_text_stream_ad872bf98aaeea64f9e0f45aaf2a59213}{eof}} () const
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a4d06cd74325e6420974f01156bdfc52a}{operator$>$$>$}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} \&)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a71c417d8225d836e27b1854751f5ff5a}{operator$>$$>$}} (char \&)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a075cf521ee2f67e28c246cba2aa50102}{operator$>$$>$}} (signed short \&)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a5066c61f0e08736f3b99fffd02041a1f}{operator$>$$>$}} (unsigned short \&)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a220a232b218047c458f9e0a445b76831}{operator$>$$>$}} (signed int \&)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_ae591ec4f654abd8450583b3a60a5015a}{operator$>$$>$}} (unsigned int \&)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_aecfdad0a90cd7b4093b08a9d032d8563}{operator$>$$>$}} (signed long \&)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a68deb1875213bffc9334eb83c73210c2}{operator$>$$>$}} (unsigned long \&)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_abd9ed695feef50e0dc72f0f366b5a4d8}{operator$>$$>$}} (float \&)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a7c671bbb530d2187da84d51141b540cd}{operator$>$$>$}} (double \&)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a52cffa4947a97d83d13aae06575820f4}{operator$>$$>$}} (char $\ast$)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a5f007c3a4d7d63a260048cf73ba19acc}{operator$>$$>$}} (\mbox{\hyperlink{class_q_string}{Q\+String}} \&)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_aea7cbf9e70a47fa15f3091fb26d7263d}{operator$>$$>$}} (\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a8382325a2a4bd29dc51bf49d8756fc66}{operator$<$$<$}} (\mbox{\hyperlink{class_q_char}{Q\+Char}})
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_aa4ca816ce1b8a1cb25e3d9dfc1d7c4df}{operator$<$$<$}} (char)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a09fa4090716c81548496f5f344c61a61}{operator$<$$<$}} (signed short)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a678a728c8ea87eacb59c32f58bf33d9a}{operator$<$$<$}} (unsigned short)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_af4d8f73d592e7dbf1009381c3795bc0b}{operator$<$$<$}} (signed int)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_aff4f8bd3513a371838b5ec20be5a5889}{operator$<$$<$}} (unsigned int)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a35f51b32c584d1e703e1127c8273510d}{operator$<$$<$}} (signed long)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a867f2838d846bc4472ddb5a48f254885}{operator$<$$<$}} (unsigned long)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a96b4cb3f67559c1e464f3b03c83a1d67}{operator$<$$<$}} (float)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a1e5488fd0334c9fe8200fb1727e3a72e}{operator$<$$<$}} (double)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a7c02cd21c226d98bfb1dc18851f500a9}{operator$<$$<$}} (const char $\ast$)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a71fe2107025a308c699e666522a83b8f}{operator$<$$<$}} (const \mbox{\hyperlink{class_q_string}{Q\+String}} \&)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a8fca116d77fdc9359d44e1d3c4aade70}{operator$<$$<$}} (const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a2ec702def0e5ee2c6167cc7accfb8119}{operator$<$$<$}} (void $\ast$)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_a5320c9f2058d72a264aa2152cc69852e}{read\+Raw\+Bytes}} (char $\ast$, uint len)
+\item 
+\mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& \mbox{\hyperlink{class_q_text_stream_ac92bd94165a60152f12905deed163189}{write\+Raw\+Bytes}} (const char $\ast$, uint len)
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_text_stream_a0bed0242d7c3f17289df88fdecad6afa}{read\+Line}} ()
+\item 
+\mbox{\hyperlink{class_q_string}{Q\+String}} \mbox{\hyperlink{class_q_text_stream_a1c74ba05c6e63e88303852e07dbbcaa3}{read}} ()
+\item 
+void \mbox{\hyperlink{class_q_text_stream_a0c8656a473fe2b6e26c459e5840e7d07}{skip\+White\+Space}} ()
+\item 
+int \mbox{\hyperlink{class_q_text_stream_ab6cf395446ba04973dff067ab8b36978}{flags}} () const
+\item 
+int \mbox{\hyperlink{class_q_text_stream_a280a244baaf87d825ec50bd83c14488c}{flags}} (int f)
+\item 
+int \mbox{\hyperlink{class_q_text_stream_adb71ee168e670b470bcbc547b994c5df}{setf}} (int bits)
+\item 
+int \mbox{\hyperlink{class_q_text_stream_a9d039c1d26bfd52f47b4595dc30a628a}{setf}} (int bits, int mask)
+\item 
+int \mbox{\hyperlink{class_q_text_stream_a7f7cb71e79749c7d13217dec5599e627}{unsetf}} (int bits)
+\item 
+void \mbox{\hyperlink{class_q_text_stream_ac92d855fc3fa8b5d1c7421e2a0654a83}{reset}} ()
+\item 
+int \mbox{\hyperlink{class_q_text_stream_a2ac246266f7cdeb3e14c2964c369fa86}{width}} () const
+\item 
+int \mbox{\hyperlink{class_q_text_stream_a359d4bd2600d1169fb5c667e23c03f76}{width}} (int)
+\item 
+int \mbox{\hyperlink{class_q_text_stream_a485699c07b1ea6104a84627876cc2cd9}{fill}} () const
+\item 
+int \mbox{\hyperlink{class_q_text_stream_a36c4e45d5090252b3a0e335fd98f66d1}{fill}} (int)
+\item 
+int \mbox{\hyperlink{class_q_text_stream_a180cd0f2bd8796ba012d338537a2005b}{precision}} () const
+\item 
+int \mbox{\hyperlink{class_q_text_stream_afed018ad42135061a188a45d265516ad}{precision}} (int)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_text_stream_af3f86710e9a559feb59d4b5e08017bed}\label{class_q_text_stream_af3f86710e9a559feb59d4b5e08017bed}} 
+static const int {\bfseries basefield} = I\+\_\+\+B\+A\+S\+E\+\_\+\+M\+A\+SK
+\item 
+static const int {\bfseries adjustfield}
+\item 
+static const int {\bfseries floatfield}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} class provides basic functions for reading and writing text using a \mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}}. 
+
+\textbackslash{}define endl \textbackslash{}define bin \textbackslash{}define oct \textbackslash{}define dec \textbackslash{}define hex \textbackslash{}define flush \textbackslash{}define ws
+
+The text stream class has a functional interface that is very similar to that of the standard C++ iostream class. The difference between iostream and \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} is that our stream operates on a \mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}}, which is easily subclassed, while iostream operates on F\+I\+LE $\ast$ pointers, which can not be subclassed.
+
+Qt provides several global functions similar to the ones in iostream\+: 
+\begin{DoxyItemize}
+\item {\ttfamily bin} sets the \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} to read/write binary numbers 
+\item {\ttfamily oct} sets the \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} to read/write octal numbers 
+\item {\ttfamily dec} sets the \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} to read/write decimal numbers 
+\item {\ttfamily hex} sets the \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} to read/write hexadecimal numbers 
+\item {\ttfamily endl} forces a line break 
+\item {\ttfamily flush} forces the \mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} to flush any buffered data 
+\item {\ttfamily ws} eats any available white space (on input) 
+\item {\ttfamily reset} resets the \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} to its default mode (see \mbox{\hyperlink{class_q_text_stream_ac92d855fc3fa8b5d1c7421e2a0654a83}{reset()}}). 
+\end{DoxyItemize}
+
+\begin{DoxyWarning}{Warning}
+By default, \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} will automatically detect whether integers in the stream are in decimal, octal, hexadecimal or binary format when reading from the stream. In particular, a leading \textquotesingle{}0\textquotesingle{} signifies octal, ie. the sequence \char`\"{}0100\char`\"{} will be interpreted as 64.
+\end{DoxyWarning}
+The \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} class reads and writes text and it is not appropriate for dealing with binary data (but \mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} is).
+
+By default output of Unicode text (ie. \mbox{\hyperlink{class_q_string}{Q\+String}}) is done using the local 8-\/bit encoding. This can be changed using the \mbox{\hyperlink{class_q_text_stream_ad06dc1f99476aed01fa8a822e871dc44}{set\+Encoding()}} method. For input, the \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} will auto-\/detect standard Unicode \char`\"{}byte order marked\char`\"{} text files, but otherwise the local 8-\/bit encoding is used.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_data_stream}{Q\+Data\+Stream}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_text_stream_aa7bbd71ba288daceba843f54f0c306a4}\label{class_q_text_stream_aa7bbd71ba288daceba843f54f0c306a4}} 
+\index{QTextStream@{QTextStream}!QTextStream@{QTextStream}}
+\index{QTextStream@{QTextStream}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{QTextStream()}{QTextStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Q\+Text\+Stream\+::\+Q\+Text\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a data stream that has no IO device. \mbox{\Hypertarget{class_q_text_stream_a431c964c498560a2459d55808ccaff89}\label{class_q_text_stream_a431c964c498560a2459d55808ccaff89}} 
+\index{QTextStream@{QTextStream}!QTextStream@{QTextStream}}
+\index{QTextStream@{QTextStream}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{QTextStream()}{QTextStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Q\+Text\+Stream\+::\+Q\+Text\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} $\ast$}]{iod }\end{DoxyParamCaption})}
+
+Constructs a text stream that uses the IO device {\itshape iod}. \mbox{\Hypertarget{class_q_text_stream_a7abe6ca8fe34120632550a88c6f67cc5}\label{class_q_text_stream_a7abe6ca8fe34120632550a88c6f67cc5}} 
+\index{QTextStream@{QTextStream}!QTextStream@{QTextStream}}
+\index{QTextStream@{QTextStream}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{QTextStream()}{QTextStream()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Q\+Text\+Stream\+::\+Q\+Text\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_string}{Q\+String}} $\ast$}]{str,  }\item[{int}]{filemode }\end{DoxyParamCaption})}
+
+Constructs a text stream that operates on a Unicode \mbox{\hyperlink{class_q_string}{Q\+String}} through an internal device.
+
+If you set an encoding or codec with \mbox{\hyperlink{class_q_text_stream_ad06dc1f99476aed01fa8a822e871dc44}{set\+Encoding()}} or \mbox{\hyperlink{class_q_text_stream_a18bdd4ae41cd9b37ec06827658fbf447}{set\+Codec()}}, this setting is ignored for text streams that operate on \mbox{\hyperlink{class_q_string}{Q\+String}}.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} str;}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_text_stream}{QTextStream}} ts( \&str, IO\_WriteOnly );}
+\DoxyCodeLine{ts << \textcolor{stringliteral}{"pi = "} << 3.14;            \textcolor{comment}{// str == "pi = 3.14"}}
+\end{DoxyCode}
+
+
+Writing data to the text stream will modify the contents of the string. The string will be expanded when data is written beyond the end of the string. Note that the string will not be truncated\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_string}{QString}} str = \textcolor{stringliteral}{"pi = 3.14"};}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_text_stream}{QTextStream}} ts( \&str, IO\_WriteOnly );}
+\DoxyCodeLine{ts <<  \textcolor{stringliteral}{"2+2 = "} << 2+2;       \textcolor{comment}{// str == "2+2 = 414"}}
+\end{DoxyCode}
+
+
+Note that since \mbox{\hyperlink{class_q_string}{Q\+String}} is Unicode, you should not use \mbox{\hyperlink{class_q_text_stream_a5320c9f2058d72a264aa2152cc69852e}{read\+Raw\+Bytes()}} or \mbox{\hyperlink{class_q_text_stream_ac92bd94165a60152f12905deed163189}{write\+Raw\+Bytes()}} on such a stream. \mbox{\Hypertarget{class_q_text_stream_a917a19a834861178ce1a7c57ee37ec41}\label{class_q_text_stream_a917a19a834861178ce1a7c57ee37ec41}} 
+\index{QTextStream@{QTextStream}!QTextStream@{QTextStream}}
+\index{QTextStream@{QTextStream}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{QTextStream()}{QTextStream()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Q\+Text\+Stream\+::\+Q\+Text\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{str,  }\item[{int}]{filemode }\end{DoxyParamCaption})}
+
+\textbackslash{}obsolete
+
+This constructor is equivalent to the constructor taking a Q\+String$\ast$ parameter. \mbox{\Hypertarget{class_q_text_stream_a00d490a0530b4bcd9554b9316815d35a}\label{class_q_text_stream_a00d490a0530b4bcd9554b9316815d35a}} 
+\index{QTextStream@{QTextStream}!QTextStream@{QTextStream}}
+\index{QTextStream@{QTextStream}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{QTextStream()}{QTextStream()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Q\+Text\+Stream\+::\+Q\+Text\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_array}{Q\+Byte\+Array}}}]{a,  }\item[{int}]{mode }\end{DoxyParamCaption})}
+
+Constructs a text stream that operates on a byte array through an internal \mbox{\hyperlink{class_q_buffer}{Q\+Buffer}} device.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_array}{QByteArray}} array;}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_text_stream}{QTextStream}} ts( array, IO\_WriteOnly );}
+\DoxyCodeLine{ts << \textcolor{stringliteral}{"pi = "} << 3.14 << \textcolor{charliteral}{'\(\backslash\)0'};        \textcolor{comment}{// array == "pi = 3.14"}}
+\end{DoxyCode}
+
+
+Writing data to the text stream will modify the contents of the array. The array will be expanded when data is written beyond the end of the string.
+
+Same example, using a \mbox{\hyperlink{class_q_buffer}{Q\+Buffer}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_array}{QByteArray}} array;}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_buffer}{QBuffer}} buf( array );}
+\DoxyCodeLine{buf.open( IO\_WriteOnly );}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_text_stream}{QTextStream}} ts( \&buf );}
+\DoxyCodeLine{ts << \textcolor{stringliteral}{"pi = "} << 3.14 << \textcolor{charliteral}{'\(\backslash\)0'};        \textcolor{comment}{// array == "pi = 3.14"}}
+\DoxyCodeLine{buf.close();}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_q_text_stream_a53439eda88c78b200b675b7909343b10}\label{class_q_text_stream_a53439eda88c78b200b675b7909343b10}} 
+\index{QTextStream@{QTextStream}!QTextStream@{QTextStream}}
+\index{QTextStream@{QTextStream}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{QTextStream()}{QTextStream()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Q\+Text\+Stream\+::\+Q\+Text\+Stream (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fh,  }\item[{int}]{mode }\end{DoxyParamCaption})}
+
+Constructs a text stream that operates on an existing file handle {\itshape fh} through an internal \mbox{\hyperlink{class_q_file}{Q\+File}} device.
+
+\mbox{\hyperlink{struct_example}{Example}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_text_stream}{QTextStream}} cout( stdout, IO\_WriteOnly );}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_text_stream}{QTextStream}} cin ( stdin,  IO\_ReadOnly );}
+\DoxyCodeLine{\mbox{\hyperlink{class_q_text_stream}{QTextStream}} cerr( stderr, IO\_WriteOnly );}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_q_text_stream_a5c3a2ab73dceff949ec36db41df64944}\label{class_q_text_stream_a5c3a2ab73dceff949ec36db41df64944}} 
+\index{QTextStream@{QTextStream}!````~QTextStream@{$\sim$QTextStream}}
+\index{````~QTextStream@{$\sim$QTextStream}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{$\sim$QTextStream()}{~QTextStream()}}
+{\footnotesize\ttfamily Q\+Text\+Stream\+::$\sim$\+Q\+Text\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructs the text stream.
+
+The destructor does not affect the current IO device. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_text_stream_a07ba00c9cec9d02ccb9bef9832932c9e}\label{class_q_text_stream_a07ba00c9cec9d02ccb9bef9832932c9e}} 
+\index{QTextStream@{QTextStream}!atEnd@{atEnd}}
+\index{atEnd@{atEnd}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{atEnd()}{atEnd()}}
+{\footnotesize\ttfamily bool Q\+Text\+Stream\+::at\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns T\+R\+UE if the IO device has reached the end position (end of stream or file) or if there is no IO device set.
+
+Returns F\+A\+L\+SE if the current position of the read/write head of the IO device is somewhere before the end position.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_ac5a3fcc9349a98d8f260039c5fd58812}{Q\+I\+O\+Device\+::at\+End()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_a50f5712b3231e41af256c5faadf69512}\label{class_q_text_stream_a50f5712b3231e41af256c5faadf69512}} 
+\index{QTextStream@{QTextStream}!device@{device}}
+\index{device@{device}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{device()}{device()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} $\ast$ Q\+Text\+Stream\+::device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the IO device currently set. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_text_stream_a20bb0f4064d19330d4ed6bb56299fba7}{set\+Device()}}, \mbox{\hyperlink{class_q_text_stream_a6d8aeebd7f4b1cc9f2dce27f6a0d9bd9}{unset\+Device()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_ad872bf98aaeea64f9e0f45aaf2a59213}\label{class_q_text_stream_ad872bf98aaeea64f9e0f45aaf2a59213}} 
+\index{QTextStream@{QTextStream}!eof@{eof}}
+\index{eof@{eof}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{eof()}{eof()}}
+{\footnotesize\ttfamily bool Q\+Text\+Stream\+::eof (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\textbackslash{}obsolete
+
+This function has been renamed to \mbox{\hyperlink{class_q_text_stream_a07ba00c9cec9d02ccb9bef9832932c9e}{at\+End()}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_ac5a3fcc9349a98d8f260039c5fd58812}{Q\+I\+O\+Device\+::at\+End()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_a485699c07b1ea6104a84627876cc2cd9}\label{class_q_text_stream_a485699c07b1ea6104a84627876cc2cd9}} 
+\index{QTextStream@{QTextStream}!fill@{fill}}
+\index{fill@{fill}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{fill()}{fill()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Q\+Text\+Stream\+::fill (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the fill character. The default value is \textquotesingle{} \textquotesingle{} (space). \mbox{\Hypertarget{class_q_text_stream_a36c4e45d5090252b3a0e335fd98f66d1}\label{class_q_text_stream_a36c4e45d5090252b3a0e335fd98f66d1}} 
+\index{QTextStream@{QTextStream}!fill@{fill}}
+\index{fill@{fill}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{fill()}{fill()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Q\+Text\+Stream\+::fill (\begin{DoxyParamCaption}\item[{int}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the fill character to {\itshape f}. Returns the previous fill character. \mbox{\Hypertarget{class_q_text_stream_ab6cf395446ba04973dff067ab8b36978}\label{class_q_text_stream_ab6cf395446ba04973dff067ab8b36978}} 
+\index{QTextStream@{QTextStream}!flags@{flags}}
+\index{flags@{flags}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{flags()}{flags()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Q\+Text\+Stream\+::flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current stream flags. The default value is 0.
+
+The meaning of the flags are\+: 
+\begin{DoxyItemize}
+\item {\itshape skipws} -\/ Not currently used -\/ whitespace always skipped 
+\item {\itshape left} -\/ Numeric fields are left-\/aligned 
+\item {\itshape right} -\/ Not currently used (by default numerics are right aligned) 
+\item {\itshape internal} -\/ Put any padding spaces between +/-\/ and value 
+\item {\itshape bin} -\/ Output {\itshape and} input only in binary 
+\item {\itshape oct} -\/ Output {\itshape and} input only in octal 
+\item {\itshape dec} -\/ Output {\itshape and} input only in decimal 
+\item {\itshape hex} -\/ Output {\itshape and} input only in hexadecimal 
+\item {\itshape showbase} -\/ Annotate numeric outputs with 0b, 0, or 0x if in {\itshape bin}, {\itshape oct}, or {\itshape hex} format 
+\item {\itshape showpoint} -\/ Not currently used 
+\item {\itshape uppercase} -\/ Use 0\mbox{\hyperlink{class_b}{B}} and 0X rather than 0b and 0x 
+\item {\itshape showpos} -\/ Show + for positive numeric values 
+\item {\itshape scientific} -\/ Use scientific notation for floating point values 
+\item {\itshape fixed} -\/ Use fixed-\/point notation for floating point values 
+\end{DoxyItemize}
+
+Note that unless {\itshape bin}, {\itshape oct}, {\itshape dec}, or {\itshape hex} is set, the input base is octal if the value starts with 0, hexadecimal if it starts with 0x, binary if the value starts with 0b, and decimal otherwise.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_text_stream_adb71ee168e670b470bcbc547b994c5df}{setf()}}, \mbox{\hyperlink{class_q_text_stream_a7f7cb71e79749c7d13217dec5599e627}{unsetf()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_a280a244baaf87d825ec50bd83c14488c}\label{class_q_text_stream_a280a244baaf87d825ec50bd83c14488c}} 
+\index{QTextStream@{QTextStream}!flags@{flags}}
+\index{flags@{flags}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{flags()}{flags()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Q\+Text\+Stream\+::flags (\begin{DoxyParamCaption}\item[{int}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the stream flags to {\itshape f}. Returns the previous stream flags.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_text_stream_adb71ee168e670b470bcbc547b994c5df}{setf()}}, \mbox{\hyperlink{class_q_text_stream_a7f7cb71e79749c7d13217dec5599e627}{unsetf()}}, \mbox{\hyperlink{class_q_text_stream_ab6cf395446ba04973dff067ab8b36978}{flags()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_aa4ca816ce1b8a1cb25e3d9dfc1d7c4df}\label{class_q_text_stream_aa4ca816ce1b8a1cb25e3d9dfc1d7c4df}} 
+\index{QTextStream@{QTextStream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/14]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+Writes a {\ttfamily char} to the stream and returns a reference to the stream. \mbox{\Hypertarget{class_q_text_stream_a7c02cd21c226d98bfb1dc18851f500a9}\label{class_q_text_stream_a7c02cd21c226d98bfb1dc18851f500a9}} 
+\index{QTextStream@{QTextStream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/14]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s }\end{DoxyParamCaption})}
+
+Writes a string to the stream and returns a reference to the stream.
+
+The string {\itshape s} is assumed to be Latin1 encoded independent of the Encoding set for the \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}}. \mbox{\Hypertarget{class_q_text_stream_a8fca116d77fdc9359d44e1d3c4aade70}\label{class_q_text_stream_a8fca116d77fdc9359d44e1d3c4aade70}} 
+\index{QTextStream@{QTextStream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/14]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{s }\end{DoxyParamCaption})}
+
+Writes {\itshape s} to the stream and returns a reference to the stream.
+
+The string {\itshape s} is assumed to be Latin1 encoded independent of the Encoding set for the \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}}. \mbox{\Hypertarget{class_q_text_stream_a71fe2107025a308c699e666522a83b8f}\label{class_q_text_stream_a71fe2107025a308c699e666522a83b8f}} 
+\index{QTextStream@{QTextStream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [4/14]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{s }\end{DoxyParamCaption})}
+
+Writes {\itshape s} to the stream and returns a reference to the stream. \mbox{\Hypertarget{class_q_text_stream_a1e5488fd0334c9fe8200fb1727e3a72e}\label{class_q_text_stream_a1e5488fd0334c9fe8200fb1727e3a72e}} 
+\index{QTextStream@{QTextStream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [5/14]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{double}]{f }\end{DoxyParamCaption})}
+
+Writes a {\ttfamily double} to the stream and returns a reference to the stream. \mbox{\Hypertarget{class_q_text_stream_a96b4cb3f67559c1e464f3b03c83a1d67}\label{class_q_text_stream_a96b4cb3f67559c1e464f3b03c83a1d67}} 
+\index{QTextStream@{QTextStream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [6/14]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})}
+
+Writes a {\ttfamily float} to the stream and returns a reference to the stream. \mbox{\Hypertarget{class_q_text_stream_a8382325a2a4bd29dc51bf49d8756fc66}\label{class_q_text_stream_a8382325a2a4bd29dc51bf49d8756fc66}} 
+\index{QTextStream@{QTextStream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [7/14]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}}}]{c }\end{DoxyParamCaption})}
+
+Writes a {\ttfamily char} to the stream and returns a reference to the stream.
+
+The character {\itshape c} is assumed to be Latin1 encoded independent of the Encoding set for the \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}}. \mbox{\Hypertarget{class_q_text_stream_af4d8f73d592e7dbf1009381c3795bc0b}\label{class_q_text_stream_af4d8f73d592e7dbf1009381c3795bc0b}} 
+\index{QTextStream@{QTextStream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [8/14]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{signed int}]{i }\end{DoxyParamCaption})}
+
+Writes an {\ttfamily int} to the stream and returns a reference to the stream. \mbox{\Hypertarget{class_q_text_stream_a35f51b32c584d1e703e1127c8273510d}\label{class_q_text_stream_a35f51b32c584d1e703e1127c8273510d}} 
+\index{QTextStream@{QTextStream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [9/14]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{signed long}]{i }\end{DoxyParamCaption})}
+
+Writes a {\ttfamily long} {\ttfamily int} to the stream and returns a reference to the stream. \mbox{\Hypertarget{class_q_text_stream_a09fa4090716c81548496f5f344c61a61}\label{class_q_text_stream_a09fa4090716c81548496f5f344c61a61}} 
+\index{QTextStream@{QTextStream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [10/14]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{signed short}]{i }\end{DoxyParamCaption})}
+
+Writes a {\ttfamily short} integer to the stream and returns a reference to the stream. \mbox{\Hypertarget{class_q_text_stream_aff4f8bd3513a371838b5ec20be5a5889}\label{class_q_text_stream_aff4f8bd3513a371838b5ec20be5a5889}} 
+\index{QTextStream@{QTextStream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [11/14]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{unsigned int}]{i }\end{DoxyParamCaption})}
+
+Writes an {\ttfamily unsigned} {\ttfamily int} to the stream and returns a reference to the stream. \mbox{\Hypertarget{class_q_text_stream_a867f2838d846bc4472ddb5a48f254885}\label{class_q_text_stream_a867f2838d846bc4472ddb5a48f254885}} 
+\index{QTextStream@{QTextStream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [12/14]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{unsigned long}]{i }\end{DoxyParamCaption})}
+
+Writes an {\ttfamily unsigned} {\ttfamily long} {\ttfamily int} to the stream and returns a reference to the stream. \mbox{\Hypertarget{class_q_text_stream_a678a728c8ea87eacb59c32f58bf33d9a}\label{class_q_text_stream_a678a728c8ea87eacb59c32f58bf33d9a}} 
+\index{QTextStream@{QTextStream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [13/14]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{unsigned short}]{i }\end{DoxyParamCaption})}
+
+Writes an {\ttfamily unsigned} {\ttfamily short} integer to the stream and returns a reference to the stream. \mbox{\Hypertarget{class_q_text_stream_a2ec702def0e5ee2c6167cc7accfb8119}\label{class_q_text_stream_a2ec702def0e5ee2c6167cc7accfb8119}} 
+\index{QTextStream@{QTextStream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [14/14]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+Writes a pointer to the stream and returns a reference to the stream.
+
+The {\itshape ptr} is output as an unsigned long hexadecimal integer. \mbox{\Hypertarget{class_q_text_stream_a71c417d8225d836e27b1854751f5ff5a}\label{class_q_text_stream_a71c417d8225d836e27b1854751f5ff5a}} 
+\index{QTextStream@{QTextStream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/13]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{char \&}]{c }\end{DoxyParamCaption})}
+
+Reads a {\ttfamily char} from the stream and returns a reference to the stream. Note that whitespace is skipped. \mbox{\Hypertarget{class_q_text_stream_a52cffa4947a97d83d13aae06575820f4}\label{class_q_text_stream_a52cffa4947a97d83d13aae06575820f4}} 
+\index{QTextStream@{QTextStream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/13]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{char $\ast$}]{s }\end{DoxyParamCaption})}
+
+Reads a word from the stream and returns a reference to the stream. \mbox{\Hypertarget{class_q_text_stream_a7c671bbb530d2187da84d51141b540cd}\label{class_q_text_stream_a7c671bbb530d2187da84d51141b540cd}} 
+\index{QTextStream@{QTextStream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [3/13]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{double \&}]{f }\end{DoxyParamCaption})}
+
+Reads a {\ttfamily double} from the stream and returns a reference to the stream. See \mbox{\hyperlink{class_q_text_stream_ab6cf395446ba04973dff067ab8b36978}{flags()}} for an explanation of expected input format. \mbox{\Hypertarget{class_q_text_stream_abd9ed695feef50e0dc72f0f366b5a4d8}\label{class_q_text_stream_abd9ed695feef50e0dc72f0f366b5a4d8}} 
+\index{QTextStream@{QTextStream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [4/13]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{float \&}]{f }\end{DoxyParamCaption})}
+
+Reads a {\ttfamily float} from the stream and returns a reference to the stream. See \mbox{\hyperlink{class_q_text_stream_ab6cf395446ba04973dff067ab8b36978}{flags()}} for an explanation of expected input format. \mbox{\Hypertarget{class_q_text_stream_a4d06cd74325e6420974f01156bdfc52a}\label{class_q_text_stream_a4d06cd74325e6420974f01156bdfc52a}} 
+\index{QTextStream@{QTextStream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [5/13]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}} \&}]{c }\end{DoxyParamCaption})}
+
+Reads a {\ttfamily char} from the stream and returns a reference to the stream. Note that whitespace is {\itshape not} skipped. \mbox{\Hypertarget{class_q_text_stream_aea7cbf9e70a47fa15f3091fb26d7263d}\label{class_q_text_stream_aea7cbf9e70a47fa15f3091fb26d7263d}} 
+\index{QTextStream@{QTextStream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [6/13]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} \&}]{str }\end{DoxyParamCaption})}
+
+Reads a word from the stream and returns a reference to the stream. \mbox{\Hypertarget{class_q_text_stream_a5f007c3a4d7d63a260048cf73ba19acc}\label{class_q_text_stream_a5f007c3a4d7d63a260048cf73ba19acc}} 
+\index{QTextStream@{QTextStream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [7/13]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_string}{Q\+String}} \&}]{str }\end{DoxyParamCaption})}
+
+Reads a word from the stream and returns a reference to the stream. \mbox{\Hypertarget{class_q_text_stream_a220a232b218047c458f9e0a445b76831}\label{class_q_text_stream_a220a232b218047c458f9e0a445b76831}} 
+\index{QTextStream@{QTextStream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [8/13]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{signed int \&}]{i }\end{DoxyParamCaption})}
+
+Reads a signed {\ttfamily int} from the stream and returns a reference to the stream. See \mbox{\hyperlink{class_q_text_stream_ab6cf395446ba04973dff067ab8b36978}{flags()}} for an explanation of expected input format. \mbox{\Hypertarget{class_q_text_stream_aecfdad0a90cd7b4093b08a9d032d8563}\label{class_q_text_stream_aecfdad0a90cd7b4093b08a9d032d8563}} 
+\index{QTextStream@{QTextStream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [9/13]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{signed long \&}]{i }\end{DoxyParamCaption})}
+
+Reads a signed {\ttfamily long} int from the stream and returns a reference to the stream. See \mbox{\hyperlink{class_q_text_stream_ab6cf395446ba04973dff067ab8b36978}{flags()}} for an explanation of expected input format. \mbox{\Hypertarget{class_q_text_stream_a075cf521ee2f67e28c246cba2aa50102}\label{class_q_text_stream_a075cf521ee2f67e28c246cba2aa50102}} 
+\index{QTextStream@{QTextStream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [10/13]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{signed short \&}]{i }\end{DoxyParamCaption})}
+
+Reads a signed {\ttfamily short} integer from the stream and returns a reference to the stream. See \mbox{\hyperlink{class_q_text_stream_ab6cf395446ba04973dff067ab8b36978}{flags()}} for an explanation of expected input format. \mbox{\Hypertarget{class_q_text_stream_ae591ec4f654abd8450583b3a60a5015a}\label{class_q_text_stream_ae591ec4f654abd8450583b3a60a5015a}} 
+\index{QTextStream@{QTextStream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [11/13]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{unsigned int \&}]{i }\end{DoxyParamCaption})}
+
+Reads an unsigned {\ttfamily int} from the stream and returns a reference to the stream. See \mbox{\hyperlink{class_q_text_stream_ab6cf395446ba04973dff067ab8b36978}{flags()}} for an explanation of expected input format. \mbox{\Hypertarget{class_q_text_stream_a68deb1875213bffc9334eb83c73210c2}\label{class_q_text_stream_a68deb1875213bffc9334eb83c73210c2}} 
+\index{QTextStream@{QTextStream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [12/13]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{unsigned long \&}]{i }\end{DoxyParamCaption})}
+
+Reads an unsigned {\ttfamily long} int from the stream and returns a reference to the stream. See \mbox{\hyperlink{class_q_text_stream_ab6cf395446ba04973dff067ab8b36978}{flags()}} for an explanation of expected input format. \mbox{\Hypertarget{class_q_text_stream_a5066c61f0e08736f3b99fffd02041a1f}\label{class_q_text_stream_a5066c61f0e08736f3b99fffd02041a1f}} 
+\index{QTextStream@{QTextStream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [13/13]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{unsigned short \&}]{i }\end{DoxyParamCaption})}
+
+Reads an unsigned {\ttfamily short} integer from the stream and returns a reference to the stream. See \mbox{\hyperlink{class_q_text_stream_ab6cf395446ba04973dff067ab8b36978}{flags()}} for an explanation of expected input format. \mbox{\Hypertarget{class_q_text_stream_a180cd0f2bd8796ba012d338537a2005b}\label{class_q_text_stream_a180cd0f2bd8796ba012d338537a2005b}} 
+\index{QTextStream@{QTextStream}!precision@{precision}}
+\index{precision@{precision}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{precision()}{precision()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Q\+Text\+Stream\+::precision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the precision. The default value is 6. \mbox{\Hypertarget{class_q_text_stream_afed018ad42135061a188a45d265516ad}\label{class_q_text_stream_afed018ad42135061a188a45d265516ad}} 
+\index{QTextStream@{QTextStream}!precision@{precision}}
+\index{precision@{precision}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{precision()}{precision()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Q\+Text\+Stream\+::precision (\begin{DoxyParamCaption}\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the precision to {\itshape p}. Returns the previous precision setting. \mbox{\Hypertarget{class_q_text_stream_a1c74ba05c6e63e88303852e07dbbcaa3}\label{class_q_text_stream_a1c74ba05c6e63e88303852e07dbbcaa3}} 
+\index{QTextStream@{QTextStream}!read@{read}}
+\index{read@{read}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Text\+Stream\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reads the entire stream and returns a string containing the text.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a4dc865ffcb5b7896ff8f9a1d828e4c0e}{Q\+I\+O\+Device\+::read\+Line()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_a0bed0242d7c3f17289df88fdecad6afa}\label{class_q_text_stream_a0bed0242d7c3f17289df88fdecad6afa}} 
+\index{QTextStream@{QTextStream}!readLine@{readLine}}
+\index{readLine@{readLine}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{readLine()}{readLine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_string}{Q\+String}} Q\+Text\+Stream\+::read\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reads a line from the stream and returns a string containing the text.
+
+The returned string does not contain any trailing newline or carriage return. Note that this is different from \mbox{\hyperlink{class_q_i_o_device_a4dc865ffcb5b7896ff8f9a1d828e4c0e}{Q\+I\+O\+Device\+::read\+Line()}}, which does not strip the newline at the end of the line.
+
+On E\+OF you will get a \mbox{\hyperlink{class_q_string}{Q\+String}} that is null. On reading an empty line the returned \mbox{\hyperlink{class_q_string}{Q\+String}} is empty but not null.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a4dc865ffcb5b7896ff8f9a1d828e4c0e}{Q\+I\+O\+Device\+::read\+Line()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_a5320c9f2058d72a264aa2152cc69852e}\label{class_q_text_stream_a5320c9f2058d72a264aa2152cc69852e}} 
+\index{QTextStream@{QTextStream}!readRawBytes@{readRawBytes}}
+\index{readRawBytes@{readRawBytes}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{readRawBytes()}{readRawBytes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::read\+Raw\+Bytes (\begin{DoxyParamCaption}\item[{char $\ast$}]{s,  }\item[{uint}]{len }\end{DoxyParamCaption})}
+
+Reads {\itshape len} bytes from the stream into {\itshape e} s and returns a reference to the stream.
+
+The buffer {\itshape s} must be preallocated.
+
+Note that no encoding is done by this function.
+
+\begin{DoxyWarning}{Warning}
+The behaviour of this function is undefined unless the stream\textquotesingle{}s encoding is set to Unicode or Latin1.
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a71f10647e4bd98141f45362b9a06983a}{Q\+I\+O\+Device\+::read\+Block()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_ac92d855fc3fa8b5d1c7421e2a0654a83}\label{class_q_text_stream_ac92d855fc3fa8b5d1c7421e2a0654a83}} 
+\index{QTextStream@{QTextStream}!reset@{reset}}
+\index{reset@{reset}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Q\+Text\+Stream\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets the text stream.
+
+
+\begin{DoxyItemize}
+\item All flags are set to 0. 
+\item The field width is set to 0. 
+\item The fill character is set to \textquotesingle{} \textquotesingle{} (space). 
+\item The precision is set to 6. 
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_text_stream_adb71ee168e670b470bcbc547b994c5df}{setf()}}, \mbox{\hyperlink{class_q_text_stream_a2ac246266f7cdeb3e14c2964c369fa86}{width()}}, \mbox{\hyperlink{class_q_text_stream_a485699c07b1ea6104a84627876cc2cd9}{fill()}}, \mbox{\hyperlink{class_q_text_stream_a180cd0f2bd8796ba012d338537a2005b}{precision()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_a18bdd4ae41cd9b37ec06827658fbf447}\label{class_q_text_stream_a18bdd4ae41cd9b37ec06827658fbf447}} 
+\index{QTextStream@{QTextStream}!setCodec@{setCodec}}
+\index{setCodec@{setCodec}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{setCodec()}{setCodec()}}
+{\footnotesize\ttfamily void Q\+Text\+Stream\+::set\+Codec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_text_codec}{Q\+Text\+Codec}} $\ast$}]{codec }\end{DoxyParamCaption})}
+
+Sets the codec for this stream to {\itshape codec}. Will not try to autodetect Unicode.
+
+Note that this function should be called before any data is read to/written from the stream.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_text_stream_ad06dc1f99476aed01fa8a822e871dc44}{set\+Encoding()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_a20bb0f4064d19330d4ed6bb56299fba7}\label{class_q_text_stream_a20bb0f4064d19330d4ed6bb56299fba7}} 
+\index{QTextStream@{QTextStream}!setDevice@{setDevice}}
+\index{setDevice@{setDevice}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{setDevice()}{setDevice()}}
+{\footnotesize\ttfamily void Q\+Text\+Stream\+::set\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_i_o_device}{Q\+I\+O\+Device}} $\ast$}]{iod }\end{DoxyParamCaption})}
+
+Sets the IO device to {\itshape iod}. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_text_stream_a50f5712b3231e41af256c5faadf69512}{device()}}, \mbox{\hyperlink{class_q_text_stream_a6d8aeebd7f4b1cc9f2dce27f6a0d9bd9}{unset\+Device()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_ad06dc1f99476aed01fa8a822e871dc44}\label{class_q_text_stream_ad06dc1f99476aed01fa8a822e871dc44}} 
+\index{QTextStream@{QTextStream}!setEncoding@{setEncoding}}
+\index{setEncoding@{setEncoding}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{setEncoding()}{setEncoding()}}
+{\footnotesize\ttfamily void Q\+Text\+Stream\+::set\+Encoding (\begin{DoxyParamCaption}\item[{Encoding}]{e }\end{DoxyParamCaption})}
+
+Sets the encoding of this stream to {\itshape e}, where {\itshape e} is one of\+: 
+\begin{DoxyItemize}
+\item {\ttfamily Locale} Using local file format (Latin1 if locale is not set), but autodetecting Unicode(utf16) on input. 
+\item {\ttfamily Unicode} Using Unicode(utf16) for input and output. Output will be written in the order most efficient for the current platform (i.\+e. the order used internally in \mbox{\hyperlink{class_q_string}{Q\+String}}). 
+\item {\ttfamily Unicode\+U\+T\+F8} Using Unicode(utf8) for input and output. If you use it for input it will autodetect utf16 and use it instead of utf8. 
+\item {\ttfamily Latin1} I\+S\+O-\/8859-\/1. Will not autodetect utf16. 
+\item {\ttfamily Unicode\+Network\+Order} Using network order Unicode(utf16) for input and output. Useful when reading Unicode data that does not start with the byte order marker. 
+\item {\ttfamily Unicode\+Reverse} Using reverse network order Unicode(utf16) for input and output. Useful when reading Unicode data that does not start with the byte order marker, or writing data that should be read by buggy Windows applications. 
+\item {\ttfamily Raw\+Unicode} Like Unicode, but does not write the byte order marker, nor does it autodetect the byte order. Only useful when writing to non-\/persistent storage used by a single process. 
+\end{DoxyItemize}
+
+{\ttfamily Locale} and all Unicode encodings, except {\ttfamily Raw\+Unicode}, will look at the first two bytes in a input stream to determine the byte order. The initial byte order marker will be stripped off before data is read.
+
+Note that this function should be called before any data is read to/written from the stream. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_text_stream_a18bdd4ae41cd9b37ec06827658fbf447}{set\+Codec()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_adb71ee168e670b470bcbc547b994c5df}\label{class_q_text_stream_adb71ee168e670b470bcbc547b994c5df}} 
+\index{QTextStream@{QTextStream}!setf@{setf}}
+\index{setf@{setf}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{setf()}{setf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Q\+Text\+Stream\+::setf (\begin{DoxyParamCaption}\item[{int}]{bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the stream flag bits {\itshape bits}. Returns the previous stream flags.
+
+Equivalent to {\ttfamily flags( \mbox{\hyperlink{class_q_text_stream_ab6cf395446ba04973dff067ab8b36978}{flags()}} $\vert$ bits )}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_text_stream_adb71ee168e670b470bcbc547b994c5df}{setf()}}, \mbox{\hyperlink{class_q_text_stream_a7f7cb71e79749c7d13217dec5599e627}{unsetf()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_a9d039c1d26bfd52f47b4595dc30a628a}\label{class_q_text_stream_a9d039c1d26bfd52f47b4595dc30a628a}} 
+\index{QTextStream@{QTextStream}!setf@{setf}}
+\index{setf@{setf}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{setf()}{setf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Q\+Text\+Stream\+::setf (\begin{DoxyParamCaption}\item[{int}]{bits,  }\item[{int}]{mask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the stream flag bits {\itshape bits} with a bit mask {\itshape mask}. Returns the previous stream flags.
+
+Equivalent to {\ttfamily flags( (\mbox{\hyperlink{class_q_text_stream_ab6cf395446ba04973dff067ab8b36978}{flags()}} \& $\sim$mask) $\vert$ (bits \& mask) )}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_text_stream_adb71ee168e670b470bcbc547b994c5df}{setf()}}, \mbox{\hyperlink{class_q_text_stream_a7f7cb71e79749c7d13217dec5599e627}{unsetf()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_a0c8656a473fe2b6e26c459e5840e7d07}\label{class_q_text_stream_a0c8656a473fe2b6e26c459e5840e7d07}} 
+\index{QTextStream@{QTextStream}!skipWhiteSpace@{skipWhiteSpace}}
+\index{skipWhiteSpace@{skipWhiteSpace}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{skipWhiteSpace()}{skipWhiteSpace()}}
+{\footnotesize\ttfamily void Q\+Text\+Stream\+::skip\+White\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Positions the read pointer at the first non-\/whitespace character. \mbox{\Hypertarget{class_q_text_stream_a6d8aeebd7f4b1cc9f2dce27f6a0d9bd9}\label{class_q_text_stream_a6d8aeebd7f4b1cc9f2dce27f6a0d9bd9}} 
+\index{QTextStream@{QTextStream}!unsetDevice@{unsetDevice}}
+\index{unsetDevice@{unsetDevice}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{unsetDevice()}{unsetDevice()}}
+{\footnotesize\ttfamily void Q\+Text\+Stream\+::unset\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Unsets the IO device. Equivalent to set\+Device( 0 ). \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_text_stream_a50f5712b3231e41af256c5faadf69512}{device()}}, \mbox{\hyperlink{class_q_text_stream_a20bb0f4064d19330d4ed6bb56299fba7}{set\+Device()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_a7f7cb71e79749c7d13217dec5599e627}\label{class_q_text_stream_a7f7cb71e79749c7d13217dec5599e627}} 
+\index{QTextStream@{QTextStream}!unsetf@{unsetf}}
+\index{unsetf@{unsetf}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{unsetf()}{unsetf()}}
+{\footnotesize\ttfamily int Q\+Text\+Stream\+::unsetf (\begin{DoxyParamCaption}\item[{int}]{bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clears the stream flag bits {\itshape bits}. Returns the previous stream flags.
+
+Equivalent to {\ttfamily flags( \mbox{\hyperlink{class_q_text_stream_ab6cf395446ba04973dff067ab8b36978}{flags()}} \& $\sim$mask )}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_text_stream_adb71ee168e670b470bcbc547b994c5df}{setf()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_text_stream_a2ac246266f7cdeb3e14c2964c369fa86}\label{class_q_text_stream_a2ac246266f7cdeb3e14c2964c369fa86}} 
+\index{QTextStream@{QTextStream}!width@{width}}
+\index{width@{width}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{width()}{width()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Q\+Text\+Stream\+::width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the field width. The default value is 0. \mbox{\Hypertarget{class_q_text_stream_a359d4bd2600d1169fb5c667e23c03f76}\label{class_q_text_stream_a359d4bd2600d1169fb5c667e23c03f76}} 
+\index{QTextStream@{QTextStream}!width@{width}}
+\index{width@{width}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{width()}{width()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Q\+Text\+Stream\+::width (\begin{DoxyParamCaption}\item[{int}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the field width to {\itshape w}. Returns the previous field width. \mbox{\Hypertarget{class_q_text_stream_ac92bd94165a60152f12905deed163189}\label{class_q_text_stream_ac92bd94165a60152f12905deed163189}} 
+\index{QTextStream@{QTextStream}!writeRawBytes@{writeRawBytes}}
+\index{writeRawBytes@{writeRawBytes}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{writeRawBytes()}{writeRawBytes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_text_stream}{Q\+Text\+Stream}} \& Q\+Text\+Stream\+::write\+Raw\+Bytes (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s,  }\item[{uint}]{len }\end{DoxyParamCaption})}
+
+Writes the {\itshape len} bytes from {\itshape s} to the stream and returns a reference to the stream.
+
+Note that no encoding is done by this function.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_i_o_device_a5d937df1bde2f956872dd54e077807d1}{Q\+I\+O\+Device\+::write\+Block()}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_q_text_stream_a22f60cd97e89709d1f32e9d2555d85a9}\label{class_q_text_stream_a22f60cd97e89709d1f32e9d2555d85a9}} 
+\index{QTextStream@{QTextStream}!adjustfield@{adjustfield}}
+\index{adjustfield@{adjustfield}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{adjustfield}{adjustfield}}
+{\footnotesize\ttfamily const int Q\+Text\+Stream\+::adjustfield\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= ( QTextStream::left |}
+\DoxyCodeLine{                       QTextStream::right |}
+\DoxyCodeLine{                       QTextStream::internal )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_text_stream_a01b7c551fcbc8389b7dffa2348a57066}\label{class_q_text_stream_a01b7c551fcbc8389b7dffa2348a57066}} 
+\index{QTextStream@{QTextStream}!floatfield@{floatfield}}
+\index{floatfield@{floatfield}!QTextStream@{QTextStream}}
+\subsubsection{\texorpdfstring{floatfield}{floatfield}}
+{\footnotesize\ttfamily const int Q\+Text\+Stream\+::floatfield\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= ( QTextStream::scientific |}
+\DoxyCodeLine{                       QTextStream::fixed )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qtextstream.\+h\item 
+doxygen/qtools/qtextstream.\+cpp\end{DoxyCompactItemize}

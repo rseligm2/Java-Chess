@@ -1,0 +1,64 @@
+\hypertarget{class_q_const_string}{}\section{Q\+Const\+String Class Reference}
+\label{class_q_const_string}\index{QConstString@{QConstString}}
+
+
+\mbox{\hyperlink{class_a}{A}} \mbox{\hyperlink{class_q_string}{Q\+String}} which uses constant Unicode data.  
+
+
+
+
+{\ttfamily \#include $<$qstring.\+h$>$}
+
+Inheritance diagram for Q\+Const\+String\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_const_string}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_const_string_afb12679c48e62fbd2ffc14f9ef8b9159}{Q\+Const\+String}} (\mbox{\hyperlink{class_q_char}{Q\+Char}} $\ast$\mbox{\hyperlink{class_q_string_af653a95345ba3cd5bade2a1e07f2bb58}{unicode}}, uint \mbox{\hyperlink{class_q_string_ac431a733d01111059c8364c62ed53270}{length}})
+\item 
+\mbox{\hyperlink{class_q_const_string_a60c8ed0e36b404ed3d39ab399033facc}{$\sim$\+Q\+Const\+String}} ()
+\item 
+const \mbox{\hyperlink{class_q_string}{Q\+String}} \& \mbox{\hyperlink{class_q_const_string_a4a47c57ddfdf6d2ed902839f54101f57}{string}} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_a}{A}} \mbox{\hyperlink{class_q_string}{Q\+String}} which uses constant Unicode data. 
+
+In order to minimize copying, highly optimized applications can use \mbox{\hyperlink{class_q_const_string}{Q\+Const\+String}} to provide a Q\+String-\/compatible object from existing Unicode data. It is then the user\textquotesingle{}s responsibility to make sure that the Unicode data must exist for the entire lifetime of the \mbox{\hyperlink{class_q_const_string}{Q\+Const\+String}} object. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_const_string_afb12679c48e62fbd2ffc14f9ef8b9159}\label{class_q_const_string_afb12679c48e62fbd2ffc14f9ef8b9159}} 
+\index{QConstString@{QConstString}!QConstString@{QConstString}}
+\index{QConstString@{QConstString}!QConstString@{QConstString}}
+\subsubsection{\texorpdfstring{QConstString()}{QConstString()}}
+{\footnotesize\ttfamily Q\+Const\+String\+::\+Q\+Const\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_char}{Q\+Char}} $\ast$}]{unicode,  }\item[{uint}]{length }\end{DoxyParamCaption})}
+
+Constructs a \mbox{\hyperlink{class_q_const_string}{Q\+Const\+String}} that uses the first {\itshape length} Unicode characters in the array {\itshape unicode}. Any attempt to modify copies of the string will cause it to create a copy of the data, thus it remains forever unmodified.
+
+Note that {\itshape unicode} is {\itshape not} {\itshape copied}. The caller {\itshape must} be able to guarantee that {\itshape unicode} will not be deleted or modified. Since that is generally not the case with {\ttfamily const} strings (they are references), this constructor demands a non-\/const pointer even though it never modifies {\itshape unicode}. \mbox{\Hypertarget{class_q_const_string_a60c8ed0e36b404ed3d39ab399033facc}\label{class_q_const_string_a60c8ed0e36b404ed3d39ab399033facc}} 
+\index{QConstString@{QConstString}!````~QConstString@{$\sim$QConstString}}
+\index{````~QConstString@{$\sim$QConstString}!QConstString@{QConstString}}
+\subsubsection{\texorpdfstring{$\sim$QConstString()}{~QConstString()}}
+{\footnotesize\ttfamily Q\+Const\+String\+::$\sim$\+Q\+Const\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destroys the \mbox{\hyperlink{class_q_const_string}{Q\+Const\+String}}, creating a copy of the data if other strings are still using it. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_const_string_a4a47c57ddfdf6d2ed902839f54101f57}\label{class_q_const_string_a4a47c57ddfdf6d2ed902839f54101f57}} 
+\index{QConstString@{QConstString}!string@{string}}
+\index{string@{string}!QConstString@{QConstString}}
+\subsubsection{\texorpdfstring{string()}{string()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_q_string}{Q\+String}} \& Q\+Const\+String\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a constant string referencing the data passed during construction. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/qtools/qstring.\+h\item 
+doxygen/qtools/qstring.\+cpp\end{DoxyCompactItemize}

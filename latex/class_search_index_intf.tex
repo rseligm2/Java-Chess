@@ -1,0 +1,39 @@
+\hypertarget{class_search_index_intf}{}\section{Search\+Index\+Intf Class Reference}
+\label{class_search_index_intf}\index{SearchIndexIntf@{SearchIndexIntf}}
+Inheritance diagram for Search\+Index\+Intf\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_search_index_intf}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_search_index_intf_ade3dd4c1f8bc6487f0f3dccba5c6f9ea}\label{class_search_index_intf_ade3dd4c1f8bc6487f0f3dccba5c6f9ea}} 
+enum {\bfseries Kind} \{ {\bfseries Internal}, 
+{\bfseries External}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_search_index_intf_acf0114aef9108626eacc8c3fa065a46d}\label{class_search_index_intf_acf0114aef9108626eacc8c3fa065a46d}} 
+{\bfseries Search\+Index\+Intf} (Kind k)
+\item 
+\mbox{\Hypertarget{class_search_index_intf_afb1f4d8ad5e2f24848f902ae82e38d31}\label{class_search_index_intf_afb1f4d8ad5e2f24848f902ae82e38d31}} 
+virtual void {\bfseries set\+Current\+Doc} (\mbox{\hyperlink{class_definition}{Definition}} $\ast$ctx, const char $\ast$anchor, bool is\+Source\+File)=0
+\item 
+\mbox{\Hypertarget{class_search_index_intf_abc2c1e940b5b534bbcec2b8a2356a7be}\label{class_search_index_intf_abc2c1e940b5b534bbcec2b8a2356a7be}} 
+virtual void {\bfseries add\+Word} (const char $\ast$word, bool hi\+Priority)=0
+\item 
+\mbox{\Hypertarget{class_search_index_intf_a58f5360b72b2379373e3efd001b7287a}\label{class_search_index_intf_a58f5360b72b2379373e3efd001b7287a}} 
+virtual void {\bfseries write} (const char $\ast$file)=0
+\item 
+\mbox{\Hypertarget{class_search_index_intf_a7cc55c10e28715c334a3e51fb5003c08}\label{class_search_index_intf_a7cc55c10e28715c334a3e51fb5003c08}} 
+Kind {\bfseries kind} () const
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/searchindex.\+h\end{DoxyCompactItemize}

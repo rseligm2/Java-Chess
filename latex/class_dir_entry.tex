@@ -1,0 +1,67 @@
+\hypertarget{class_dir_entry}{}\section{Dir\+Entry Class Reference}
+\label{class_dir_entry}\index{DirEntry@{DirEntry}}
+
+
+{\ttfamily \#include $<$filedef.\+h$>$}
+
+Inheritance diagram for Dir\+Entry\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dir_entry}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dir_entry_a1edafe219ba585326221f2fbe66afaf0}\label{class_dir_entry_a1edafe219ba585326221f2fbe66afaf0}} 
+enum {\bfseries Entry\+Kind} \{ {\bfseries Dir}, 
+{\bfseries File}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dir_entry_a04dfc1cc4766297488f75f58ea999ea3}\label{class_dir_entry_a04dfc1cc4766297488f75f58ea999ea3}} 
+{\bfseries Dir\+Entry} (\mbox{\hyperlink{class_dir_entry}{Dir\+Entry}} $\ast$parent, \mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$fd)
+\item 
+\mbox{\Hypertarget{class_dir_entry_aca2fc76af0b968b01bc465bf22da4f19}\label{class_dir_entry_aca2fc76af0b968b01bc465bf22da4f19}} 
+{\bfseries Dir\+Entry} (\mbox{\hyperlink{class_dir_entry}{Dir\+Entry}} $\ast$parent, \mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} name)
+\item 
+\mbox{\Hypertarget{class_dir_entry_ad90535bd922234007d55c5aeecacd4c2}\label{class_dir_entry_ad90535bd922234007d55c5aeecacd4c2}} 
+Entry\+Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{class_dir_entry_a066c1571da499e877d59c0817b593d91}\label{class_dir_entry_a066c1571da499e877d59c0817b593d91}} 
+\mbox{\hyperlink{class_file_def}{File\+Def}} $\ast$ {\bfseries file} () const
+\item 
+\mbox{\Hypertarget{class_dir_entry_af12f7f39e982fa37e9003ebcbf85a234}\label{class_dir_entry_af12f7f39e982fa37e9003ebcbf85a234}} 
+bool {\bfseries is\+Last} () const
+\item 
+\mbox{\Hypertarget{class_dir_entry_afe7c7ba2399a45fff693a00c8390510f}\label{class_dir_entry_afe7c7ba2399a45fff693a00c8390510f}} 
+void {\bfseries set\+Last} (bool b)
+\item 
+\mbox{\Hypertarget{class_dir_entry_a4fc3f450cb8c57275a576899489233cf}\label{class_dir_entry_a4fc3f450cb8c57275a576899489233cf}} 
+\mbox{\hyperlink{class_dir_entry}{Dir\+Entry}} $\ast$ {\bfseries parent} () const
+\item 
+\mbox{\Hypertarget{class_dir_entry_a0c9adc1d60c0c04a270456c3517b6f81}\label{class_dir_entry_a0c9adc1d60c0c04a270456c3517b6f81}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries name} () const
+\item 
+\mbox{\Hypertarget{class_dir_entry_a106d84dd4fac3cb3d34959ddaf2c9323}\label{class_dir_entry_a106d84dd4fac3cb3d34959ddaf2c9323}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries path} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dir_entry_ac43bb4a66667c2dc67c40152b6c17975}\label{class_dir_entry_ac43bb4a66667c2dc67c40152b6c17975}} 
+\mbox{\hyperlink{class_dir_entry}{Dir\+Entry}} $\ast$ {\bfseries m\+\_\+parent}
+\item 
+\mbox{\Hypertarget{class_dir_entry_a6d177d497073ab12cbc88611027f62e9}\label{class_dir_entry_a6d177d497073ab12cbc88611027f62e9}} 
+\mbox{\hyperlink{class_q_c_string}{Q\+C\+String}} {\bfseries m\+\_\+name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing an entry (file or sub directory) in a directory 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doxygen/src/filedef.\+h\end{DoxyCompactItemize}
